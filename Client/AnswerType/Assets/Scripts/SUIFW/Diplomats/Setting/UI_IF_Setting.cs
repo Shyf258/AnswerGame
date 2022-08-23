@@ -12,7 +12,6 @@ using UnityEditor;
 public class UI_IF_Setting : BaseUIForm
 {
     private Transform _audioBtn;
-    public List<Sprite> _icon;
 
     private Transform _aboutUs;
     private Button _exit;
@@ -44,6 +43,8 @@ public class UI_IF_Setting : BaseUIForm
         this.CurrentUIType.UIForms_Type = UIFormType.PopUp;
         this.CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Dark;
 
+        FreshProduction();
+        
         _aboutUs = UnityHelper.FindTheChildNode(gameObject, "AboutUS");
         _exit = UnityHelper.GetTheChildNodeComponetScripts<Button>(_aboutUs.gameObject, "ExitPage");
         RigisterButtonObjectEvent(_exit, go =>
@@ -226,10 +227,14 @@ public class UI_IF_Setting : BaseUIForm
 
     private void ShowPlayerMessage()
     {
+        //显示游戏图标
+        Sprite sprite =  GetIcon();
+        _playerIcon.sprite = sprite;
+        _logo.sprite = sprite;
+        
         if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
         {
             _logIn.text = "退出游戏";
-           
         }
       
         if (GL_PlayerData._instance.IsLoginWeChat())
@@ -244,36 +249,24 @@ public class UI_IF_Setting : BaseUIForm
         }
         else
         {
-          
             _playerName.text = "游客";
             _logIn.text = "登录微信";
             _playerId.text = "11962344";
         }
         
-          
-        switch (AppSetting.BuildApp)
-        {
-            case EBuildApp.RSDYJ:
-                _playerIcon.sprite = _icon[0];
-                _logo.sprite = _icon[0];
-                break;
-            case EBuildApp.ZYXLZ:
-                _playerIcon.sprite = _icon[1];
-                _logo.sprite = _icon[1];
-                break;
-        }
-        
-        // string iconPath = "Assets/Art/UI/Image/Icon/" + "icon_"+ AppSetting.BuildApp.ToString();
-        // Sprite icon = GetIcon(iconPath);
-        // _playerIcon.sprite = icon;
-        // _logo.sprite = icon;
+    }
+
+    private TableBuildAppData _tableBuildAppData;
+    private void FreshProduction()
+    {
+        int appId = (int)AppSetting.BuildApp;
+        _tableBuildAppData = DataModuleManager._instance.TableBuildAppData_Dictionary[appId];
     }
 
     private void ShowGameName()
     {
         
-        int appId = (int)AppSetting.BuildApp;
-        var _tableBuildAppData = DataModuleManager._instance.TableBuildAppData_Dictionary[appId];
+
         _productName.text = _tableBuildAppData.ProductName;
 
          _version.text = $"当前版本{GL_SDK._instance.GetAppVersion()}";
@@ -410,6 +403,16 @@ public class UI_IF_Setting : BaseUIForm
         }
     }
 
-  
+
+    private Sprite GetIcon()
+    {
+        // GL_ConstData.WeChatAppId = appData.WeChatAppID;
+        // GL_ConstData.PackageName = appData.PackageName;
+        string iconPath = "Assets/Art/UI/Image/Icon/" + _tableBuildAppData.IconPath + ".png";
+        Sprite texture = AssetDatabase.LoadAssetAtPath<Sprite>(iconPath);
+        return texture;
+    }
+    
+    
     
 }
