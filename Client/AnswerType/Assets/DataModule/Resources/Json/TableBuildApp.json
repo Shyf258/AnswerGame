@@ -23,5 +23,10 @@
     "IconPath": "icon_zyxlz",
     "LoadingImage": "LoadingIcon_04",
     "TitleImage": "LoadingTitle_04"
+  },
+  "4": {
+    "ID": 4,
+    "ProductName": "成语赚多多",
+    "PackageName": "com.ciyunjinchan.cyzdda"
   }
 }
