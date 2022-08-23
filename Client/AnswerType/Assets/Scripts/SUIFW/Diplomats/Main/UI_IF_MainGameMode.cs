@@ -26,6 +26,7 @@ public partial class UI_IF_Main
     private Text _btnAText;
     private Button _btnB;
     private Text _btnBText;
+
     // /// <summary>
     // /// 当前题目序号
     // /// </summary>
