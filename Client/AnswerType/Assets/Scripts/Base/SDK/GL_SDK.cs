@@ -360,7 +360,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     
     public string GetProductName()
     {
-        string result = GL_ConstData.PackageName;
+        string result = Application.productName;
 #if UNITY_ANDROID && !UNITY_EDITOR
         if (_javaObject != null)
              result = _javaObject.Call<string>("getProductName");
