@@ -11,7 +11,6 @@ using System.Linq;
 
 public class GL_SceneManager : Singleton<GL_SceneManager>
 {
-
     #region 表数据
 
     #endregion
@@ -19,15 +18,6 @@ public class GL_SceneManager : Singleton<GL_SceneManager>
     public GL_LevelAudio _levelAudio;
     private GL_GameMode _curGameMode; //当前关卡
     public GL_GameMode_Answer CurGameMode => _curGameMode as GL_GameMode_Answer;
-
-    //private SLevelInfo _levelInfo; //当前关卡信息
-    private int _settleWait;
-    //结算等待关卡
-    public int SettleWait
-    {
-        get => _settleWait;
-        set => _settleWait = value;
-    }
 
     public void Init()
     {
@@ -125,11 +115,6 @@ public class GL_SceneManager : Singleton<GL_SceneManager>
     #endregion
 
     #region 接口
-
-    //public GL_GameMode CurGameMode => _curGameMode;
-
-    //当前关卡信息
-    //public SLevelInfo CurLevelInfo => _levelInfo;
 
     public void LevelReplay()
     {

@@ -39,7 +39,7 @@ public class GL_Analytics_Logic : Singleton<GL_Analytics_Logic>
 public enum EAnalyticsType
 {
     /// <summary> 首次获取appconfig </summary>
-    FirstGetAppConfig,
+    GetAppConfig,
     /// <summary> appconfig结果</summary>
     AppConfigResult,
     /// <summary> 首次登陆</summary>
@@ -56,11 +56,11 @@ public enum EAnalyticsType
     CompleteLevel,
     /// <summary>/// 激活上报/// </summary>
     ActiveGame,
-    /// <summary>/// 微信登录/// </summary>
-    WeChatLog,
+    /// <summary>/// 微信登录成功/// </summary>
+    WeChatLoginResult,
 
     /// <summary>/// 跳关/// </summary>
-    NextLevel,
+    //NextLevel,
     /// <summary>/// 财神进入/// </summary>
     EnterMoneyPool,
     /// <summary>/// 财神充能/// </summary>
@@ -207,8 +207,8 @@ public static class AnalyticsEvents
 {
     public static Dictionary<EAnalyticsType, string> stores = new Dictionary<EAnalyticsType, string>()
     {
-        {EAnalyticsType.FirstGetAppConfig,"shouci_APPCONFIG_01"},
-        {EAnalyticsType.AppConfigResult,"AppConfig_Rusult"},
+        {EAnalyticsType.GetAppConfig,"GetAppConfig"},
+        {EAnalyticsType.AppConfigResult,"AppConfigRusult"},
         {EAnalyticsType.FirstSendLogin,"FirstSendLogin"},
         {EAnalyticsType.LoginResult,"LoginResult"},
         {EAnalyticsType.CkeckFCM,"CkeckFCM"},
@@ -217,15 +217,14 @@ public static class AnalyticsEvents
         {EAnalyticsType.CompleteLevel,"CompleteLevel"},
 
         {EAnalyticsType.ActiveGame,"jihuoxinxi_anjian_01"},
-        {EAnalyticsType.WeChatLog,"weixindenglu_001"},
-        
+        {EAnalyticsType.WeChatLoginResult,"weixindengluchenggong_001"},
+
         {EAnalyticsType.EnterMoneyPool,"caishen_001"}, 
         {EAnalyticsType.MoneyPoolGrow,"caishen_002"}, 
 
         
         {EAnalyticsType.MilestoneClick,"lichengbei_dianji_01"},
         {EAnalyticsType.MilestonceGet,"lichengbei_dianji_02"},
-        {EAnalyticsType.NextLevel,"tiaoguan_anjian_01"},
         
         
         {EAnalyticsType.LevelUp,"chuangguan_renjun_01"},

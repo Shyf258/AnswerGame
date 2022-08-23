@@ -574,7 +574,8 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     /// <param name="param"></param>
     public void onWeChatLoginSuccess(string param)
     {
-        DDebug.LogError("~~~onWeChatLoginSuccess");
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatLoginResult);
+        //DDebug.LogError("~~~onWeChatLoginSuccess");
         _loginCallback?.Invoke(param);
         _loginCallback = null;
 

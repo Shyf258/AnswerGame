@@ -301,6 +301,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     
     public void GetAppConfig(Action<int> action)
     {
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetAppConfig);
         _appConfigCallback = action;
         MethodExeTool.Loop(SendAppConfig, 5f, -1);
     }
@@ -316,6 +317,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         Net_CB_AppConfig msg = JsonUtility.FromJson<Net_CB_AppConfig>(json);
         if (msg == null)
             return;
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.AppConfigResult);
         MethodExeTool.CancelInvoke(SendAppConfig);
         AppConfig = msg;
         GL_CoreData._instance._archivedData.checker = msg.isNotice;
