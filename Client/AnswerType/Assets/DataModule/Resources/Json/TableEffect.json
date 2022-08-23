@@ -1,0 +1,517 @@
+{
+  "1": {
+    "ID": 1,
+    "Life": -1.0,
+    "Path": "Freeze/Freeze_FX_1"
+  },
+  "2": {
+    "ID": 2,
+    "Life": 1.0,
+    "Path": "Freeze/Freeze_FX_2"
+  },
+  "3": {
+    "ID": 3,
+    "Life": 1.0,
+    "Path": "Element/Item_jelly_2"
+  },
+  "4": {
+    "ID": 4,
+    "Life": 1.0,
+    "Path": "Element/Item_nail_1_fx"
+  },
+  "5": {
+    "ID": 5,
+    "Life": 1.0,
+    "Path": "Element/Honey_Boom_fx1"
+  },
+  "6": {
+    "ID": 6,
+    "Life": 1.0,
+    "Path": "Element/Honey_Boom_fx2"
+  },
+  "7": {
+    "ID": 7,
+    "Life": 1.0,
+    "Path": "Element/Honey_Boom_fx3"
+  },
+  "8": {
+    "ID": 8,
+    "Life": 2.0,
+    "Path": "Element/UpWaterEffect"
+  },
+  "9": {
+    "ID": 9,
+    "Life": 1.0,
+    "Path": "Element/DownWaterEffect"
+  },
+  "10": {
+    "ID": 10,
+    "Life": 1.0,
+    "Path": "Element/Item_web_fx"
+  },
+  "11": {
+    "ID": 11,
+    "Life": -1.0,
+    "Path": "Element/Shredder_L"
+  },
+  "12": {
+    "ID": 12,
+    "Life": -1.0,
+    "Path": "Element/Shredder_R"
+  },
+  "13": {
+    "ID": 13,
+    "Life": -1.0,
+    "Path": "Element/Shredder_U"
+  },
+  "14": {
+    "ID": 14,
+    "Life": 1.0,
+    "Path": "Element/Honey_Boom_fx4"
+  },
+  "15": {
+    "ID": 15,
+    "Life": 1.0,
+    "Path": "Element/Item_lawn_FX"
+  },
+  "16": {
+    "ID": 16,
+    "Life": 1.0,
+    "Path": "Element/WoodenBoxBroken"
+  },
+  "101": {
+    "ID": 101,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_01"
+  },
+  "102": {
+    "ID": 102,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_02"
+  },
+  "103": {
+    "ID": 103,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_03"
+  },
+  "104": {
+    "ID": 104,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_04"
+  },
+  "105": {
+    "ID": 105,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_05"
+  },
+  "106": {
+    "ID": 106,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_06"
+  },
+  "107": {
+    "ID": 107,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_07"
+  },
+  "108": {
+    "ID": 108,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_08"
+  },
+  "109": {
+    "ID": 109,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_09"
+  },
+  "110": {
+    "ID": 110,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_10"
+  },
+  "111": {
+    "ID": 111,
+    "Life": 1.0,
+    "Path": "Animal/Animal_Fx_Comp_11"
+  },
+  "1001": {
+    "ID": 1001,
+    "Life": 1.0,
+    "Path": "SpecialBall/PropColour_Fx_Comp"
+  },
+  "1002": {
+    "ID": 1002,
+    "Life": 1.0,
+    "Path": "SpecialBall/Wupin_Upgrade_Same"
+  },
+  "1003": {
+    "ID": 1003,
+    "Life": 1.0,
+    "Path": "SpecialBall/Wupin_Upgrade"
+  },
+  "1004": {
+    "ID": 1004,
+    "Life": 1.0,
+    "Path": "SpecialBall/CapChange"
+  },
+  "1100": {
+    "ID": 1100,
+    "Life": 2.0,
+    "Path": "Item/BombRollForwardEffect"
+  },
+  "1101": {
+    "ID": 1101,
+    "Life": 2.0,
+    "Path": "Item/planeComposeEffect"
+  },
+  "1102": {
+    "ID": 1102,
+    "Life": 2.0,
+    "Path": "Item/planeBoomEffect"
+  },
+  "1103": {
+    "ID": 1103,
+    "Life": 2.0,
+    "Path": "Item/triggerPropEffect"
+  },
+  "1104": {
+    "ID": 1104,
+    "Life": -1.0,
+    "Path": "Item/DottedLine"
+  },
+  "1105": {
+    "ID": 1105,
+    "Life": 1.0,
+    "Path": "Item/Round2Bomb"
+  },
+  "1106": {
+    "ID": 1106,
+    "Life": 1.0,
+    "Path": "Item/TriggerBoomHorizontal"
+  },
+  "1107": {
+    "ID": 1107,
+    "Life": 1.0,
+    "Path": "Item/TriggerBoomVertical"
+  },
+  "1108": {
+    "ID": 1108,
+    "Life": 1.0,
+    "Path": "Item/TriggerBoomCenter"
+  },
+  "1109": {
+    "ID": 1109,
+    "Life": 1.0,
+    "Path": "Item/BombBoomArea"
+  },
+  "1110": {
+    "ID": 1110,
+    "Life": 1.0,
+    "Path": "Item/TriggerLineEffect"
+  },
+  "1111": {
+    "ID": 1111,
+    "Life": 1.0,
+    "Path": "Item/TriggerLineEffectBig"
+  },
+  "1112": {
+    "ID": 1112,
+    "Life": 1.0,
+    "Path": "PlaneEffect/planeLevel1Effect"
+  },
+  "1113": {
+    "ID": 1113,
+    "Life": 1.0,
+    "Path": "PlaneEffect/planeLevel2Effect"
+  },
+  "1114": {
+    "ID": 1114,
+    "Life": 1.0,
+    "Path": "PlaneEffect/planeLevel3Effect"
+  },
+  "1115": {
+    "ID": 1115,
+    "Life": 1.0,
+    "Path": "PlaneEffect/planeLevel4Effect"
+  },
+  "1116": {
+    "ID": 1116,
+    "Life": 1.0,
+    "Path": "Item/BombAndTriggerEffect"
+  },
+  "1117": {
+    "ID": 1117,
+    "Life": 1.0,
+    "Path": "Item/takeOffEffect"
+  },
+  "1118": {
+    "ID": 1118,
+    "Life": -1.0,
+    "Path": "Item/bomb_bomb_Effect"
+  },
+  "1119": {
+    "ID": 1119,
+    "Life": -1.0,
+    "Path": "Item/TriggerToUpgrade"
+  },
+  "1200": {
+    "ID": 1200,
+    "Life": 2.0,
+    "Path": "Item/PredictEffect"
+  },
+  "1201": {
+    "ID": 1201,
+    "Life": 1.0,
+    "Path": "FlyEffect/PrePropShowEff"
+  },
+  "1202": {
+    "ID": 1202,
+    "Life": 1.0,
+    "Path": "FlyEffect/PrePropReplaceEff"
+  },
+  "1203": {
+    "ID": 1203,
+    "Life": 1.0,
+    "Path": "Item/takeOffEffect_2"
+  },
+  "2000": {
+    "ID": 2000,
+    "Life": 1.0,
+    "Path": "UIEffect/flyRoot_fx"
+  },
+  "2002": {
+    "ID": 2002,
+    "Life": 1.0,
+    "Path": "UIEffect/Hit"
+  },
+  "2003": {
+    "ID": 2003,
+    "Life": 1.0,
+    "Path": "UIEffect/coinFx"
+  },
+  "2004": {
+    "ID": 2004,
+    "Life": 1.0,
+    "Path": "UIEffect/Item_Root_fx"
+  },
+  "2005": {
+    "ID": 2005,
+    "Life": 1.0,
+    "Path": "UIEffect/eggEffect"
+  },
+  "2006": {
+    "ID": 2006,
+    "Life": 1.0,
+    "Path": "UIEffect/SunGlassCollect"
+  },
+  "2100": {
+    "ID": 2100,
+    "Life": 1.0,
+    "Path": "UIEffect/keyEffect"
+  },
+  "3000": {
+    "ID": 3000,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day1"
+  },
+  "3001": {
+    "ID": 3001,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day2"
+  },
+  "3002": {
+    "ID": 3002,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day3"
+  },
+  "3003": {
+    "ID": 3003,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day4"
+  },
+  "3004": {
+    "ID": 3004,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day5"
+  },
+  "3005": {
+    "ID": 3005,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day6"
+  },
+  "3006": {
+    "ID": 3006,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_day7"
+  },
+  "3007": {
+    "ID": 3007,
+    "Life": 3.0,
+    "Path": "UIEffect/refreshPostCardEffect"
+  },
+  "3008": {
+    "ID": 3008,
+    "Life": -1.0,
+    "Path": "UIEffect/fx_name"
+  },
+  "3009": {
+    "ID": 3009,
+    "Life": 1.0,
+    "Path": "UIEffect/StarEffect"
+  },
+  "3010": {
+    "ID": 3010,
+    "Life": 1.4,
+    "Path": "UIEffect/postcardHighLightEffect"
+  },
+  "3011": {
+    "ID": 3011,
+    "Life": 1.0,
+    "Path": "UIEffect/progressFullEffect"
+  },
+  "3012": {
+    "ID": 3012,
+    "Life": 1.0,
+    "Path": "UIEffect/AnimalBuddyCollectBgglow"
+  },
+  "3013": {
+    "ID": 3013,
+    "Life": 1.0,
+    "Path": "UIEffect/AnimalCollectHit"
+  },
+  "3014": {
+    "ID": 3014,
+    "Life": 1.0,
+    "Path": "UIEffect/P_fx_replace"
+  },
+  "4001": {
+    "ID": 4001,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_gemstone/P_fx_item_gemstone"
+  },
+  "4002": {
+    "ID": 4002,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_gemstone/P_fx_iem_gemstone_boom"
+  },
+  "4003": {
+    "ID": 4003,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_gemstone/P_fx_item_gemstone_fly"
+  },
+  "4101": {
+    "ID": 4101,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_TNT/P_fx_item_tnt_boom"
+  },
+  "4201": {
+    "ID": 4201,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Statue/P_fx_Item_statue_3_2"
+  },
+  "4202": {
+    "ID": 4202,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Statue/P_fx_Item_statue_2_1"
+  },
+  "4203": {
+    "ID": 4203,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Statue/P_fx_Item_statue_1_0"
+  },
+  "4204": {
+    "ID": 4204,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Statue/P_fx_Item_statue_change"
+  },
+  "4205": {
+    "ID": 4205,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Statue/P_fx_Item_statue_change_yellow"
+  },
+  "4301": {
+    "ID": 4301,
+    "Life": 1.5,
+    "Path": "Element/FX_Item_Jigsaw/P_fx_Item_packageboom"
+  },
+  "4302": {
+    "ID": 4302,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Jigsaw/P_fx_Item_jigsaw_particle"
+  },
+  "5001": {
+    "ID": 5001,
+    "Life": 1.0,
+    "Path": "Team/P_fx_coin_hit"
+  },
+  "4401": {
+    "ID": 4401,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_GiftBox/P_fx_item_giftbox_1-0"
+  },
+  "4402": {
+    "ID": 4402,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_GiftBox/P_fx_item_giftbox_2-1"
+  },
+  "4403": {
+    "ID": 4403,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_GiftBox/P_fx_item_giftbox_3-2"
+  },
+  "4404": {
+    "ID": 4404,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_GiftBox/P_fx_item_giftbox_4-3"
+  },
+  "4501": {
+    "ID": 4501,
+    "Life": 1.0,
+    "Path": "Element/Fx_Item_IconCage/P_fx_item_ironcage_1-0"
+  },
+  "4502": {
+    "ID": 4502,
+    "Life": 1.0,
+    "Path": "Element/Fx_Item_IconCage/P_fx_item_ironcage_2-1"
+  },
+  "4503": {
+    "ID": 4503,
+    "Life": 1.0,
+    "Path": "Element/Fx_Item_IconCage/P_fx_item_ironcage_3-2"
+  },
+  "4504": {
+    "ID": 4504,
+    "Life": 1.0,
+    "Path": "Element/Fx_Item_IconCage/P_fx_item_ironcage_4-3"
+  },
+  "4601": {
+    "ID": 4601,
+    "Life": 1.0,
+    "Path": "Element/Fx_Item_Frozen/P_fx_item_frozenemitter_freezing"
+  },
+  "4602": {
+    "ID": 4602,
+    "Life": 1.0,
+    "Path": "Element/Fx_Item_Frozen/P_fx_item_frozenemitter_unfreeze"
+  },
+  "4701": {
+    "ID": 4701,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Haystack/P_fx_item_haystack_1-0"
+  },
+  "4702": {
+    "ID": 4702,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Haystack/P_fx_item_haystack_2-1"
+  },
+  "4703": {
+    "ID": 4703,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Haystack/P_fx_item_haystack_3-2"
+  },
+  "4704": {
+    "ID": 4704,
+    "Life": 1.0,
+    "Path": "Element/FX_Item_Haystack/P_fx_item_haystack_4-3"
+  }
+}

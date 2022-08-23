@@ -1,0 +1,133 @@
+{
+  "1": {
+    "ID": 1,
+    "Group": 1,
+    "UnlockLevel": 1,
+    "ForceNext": true,
+    "TriggerType": 1,
+    "IsForce": false,
+    "GuideType": 4,
+    "IsShowMask": false,
+    "IsClickOtherClose": false,
+    "ObjectName": "SurpriseRedpack",
+    "PreFunc": [
+      "OnShowOpenRedPack"
+    ]
+  },
+  "2": {
+    "ID": 2,
+    "Group": 2,
+    "UnlockLevel": 1,
+    "ForceNext": false,
+    "TriggerType": 11,
+    "IsForce": false,
+    "GuideType": 4,
+    "IsShowMask": false,
+    "IsClickOtherClose": false,
+    "ObjectName": "NewbieSign",
+    "PreFunc": [
+      "OnShowNewbieSign"
+    ]
+  },
+  "3": {
+    "ID": 3,
+    "Group": 2,
+    "UnlockLevel": 10000,
+    "ForceNext": false,
+    "TriggerType": 2,
+    "IsForce": true,
+    "GuideType": 4,
+    "IsShowMask": false,
+    "IsClickOtherClose": false,
+    "IsShowFinger": false,
+    "FingerOffset": [
+      0,
+      0
+    ],
+    "IsShowDialog": false,
+    "ObjectName": "GuideTip",
+    "PreFunc": [
+      "OnShowGuideTip"
+    ]
+  },
+  "4": {
+    "ID": 4,
+    "Group": 3,
+    "UnlockLevel": 10000,
+    "ForceNext": true,
+    "TriggerType": 2,
+    "IsForce": true,
+    "GuideType": 1,
+    "IsShowMask": true,
+    "IsClickOtherClose": true,
+    "IsShowFinger": true,
+    "FingerOffset": [
+      0,
+      50
+    ],
+    "IsShowDialog": true,
+    "DialogOffset": 300.0,
+    "Dialog": "本游戏是真实提现，完成关卡目标或领取视频奖励，可直接兑换微信到账现金，快来试试吧！",
+    "ObjectName": "LevelTips"
+  },
+  "5": {
+    "ID": 5,
+    "Group": 4,
+    "UnlockLevel": 10000,
+    "ForceNext": false,
+    "TriggerType": 2,
+    "GuideType": 1,
+    "IsShowMask": true,
+    "IsClickOtherClose": true,
+    "IsShowFinger": true,
+    "FingerOffset": [
+      0,
+      200
+    ],
+    "IsShowDialog": true,
+    "DialogOffset": -400.0,
+    "Dialog": "“大家来赚钱”是专门为喜欢直接赚取零花钱的玩家设计的，在其中只要您参与了游戏，当时就会将钱发给您，随时可以提现没有其他限制。",
+    "ObjectName": "ProductionPageToggle"
+  },
+  "6": {
+    "ID": 6,
+    "Group": 5,
+    "UnlockLevel": 10000,
+    "ForceNext": false,
+    "TriggerType": 7,
+    "GuideType": 1,
+    "IsShowMask": true,
+    "IsClickOtherClose": true,
+    "IsShowFinger": true,
+    "FingerOffset": [
+      0,
+      50
+    ],
+    "IsShowDialog": true,
+    "DialogOffset": 100.0,
+    "Dialog": "点击立即发钱按键，直接可以参与，满足0.3元随时可以提现到微信，赶快参加吧",
+    "ObjectName": "GrowMoney",
+    "PreFunc": [
+      "OnRemoveLastGroud"
+    ]
+  },
+  "7": {
+    "ID": 7,
+    "Group": 6,
+    "UnlockLevel": 1,
+    "ForceNext": false,
+    "TriggerType": 6,
+    "GuideType": 1,
+    "IsShowMask": true,
+    "IsClickOtherClose": true,
+    "IsShowFinger": true,
+    "FingerOffset": [
+      0,
+      50
+    ],
+    "IsShowDialog": true,
+    "DialogOffset": -500.0,
+    "Dialog": "您已经完成了新手阶段的目标，感觉如何？上面就是您的奖金，赶快领取提现吧！记得查看微信到账信息哦！",
+    "ObjectName": "BtnWithdraw"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "1": {
+    "ID": 1,
+    "MoneyNumber": 0,
+    "ADIntervalTime": 25,
+    "MaxEnergy": 5,
+    "PassMaxEnergy": 8,
+    "EnergyDuration": 1800.0,
+    "GainPropCount": 1,
+    "GainEnergyPreDay": 5,
+    "GainEnergyPreTime": 1,
+    "GainGoldPreDay": 5,
+    "GainGoldPreTime": 400,
+    "GainDiamondPreDay": 10,
+    "GainDiamondPreTime": 20,
+    "ComboTime": 1.0,
+    "PassLevelRewardRate": 1.5,
+    "VipFreeEnergyTime": 1.0,
+    "RotateDrawCD": 30,
+    "RotateDrawMaxCount": 5,
+    "CoinDrawMaxCount": 3,
+    "CoinDrawOpenValue": 50,
+    "CoinDrawMult": [
+      3,
+      4,
+      5,
+      10
+    ],
+    "CoinDrawMultWeight": [
+      40,
+      30,
+      20,
+      10
+    ],
+    "CoinDrawBaseValue": [
+      15,
+      20,
+      30,
+      35,
+      40
+    ],
+    "CoinDrawBaseValueWeight": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "FirstReviveCost": 900,
+    "SecondReviveCost": 1200,
+    "ThirdReviveCost": 2000,
+    "ReviveStepCount": 5,
+    "ReviveStepPassCount": 10,
+    "GetKeyProbability": 0.05,
+    "GetKeyMaxCount": 2,
+    "NumberKeysNeededChest": 3,
+    "PiggyBankMaxCapacity": 5000,
+    "PiggyBankRewardPreLevel": 500,
+    "RemindGiftRate": [
+      1.0,
+      0.8,
+      0.7,
+      0.6,
+      0.5
+    ],
+    "FullStrength": 900,
+    "WarningReviveCost": 900,
+    "PrePropAddCombo": 1,
+    "PrePropCopyMo": [
+      103,
+      103,
+      103,
+      103,
+      103
+    ],
+    "SingleStepScore": 100.0,
+    "SingleCompositeGold": 1,
+    "HammerBombRange_X": 1.2,
+    "HammerBombRange_Y": 1.2,
+    "HammerBombRange_Radius": 1.2,
+    "DialogPrintSpeed": 0.05,
+    "UsTotalScoreA": [
+      1500.0,
+      600.0,
+      850.0,
+      750.0,
+      1000.0
+    ],
+    "UsTotalScoreB": [
+      400.0,
+      650.0,
+      500.0,
+      600.0,
+      800.0
+    ],
+    "CommentBeginLevel": 14,
+    "CommentLoopLevel": 10,
+    "CommentEndLevel": 44,
+    "AccPropCreateNumber": 6,
+    "NormalPassKeyAdd": 1,
+    "HardPassKeyAdd": 3,
+    "SuperHardPassKeyAdd": 5,
+    "TeamPassReward": 50,
+    "CrystalBallTransformCoin": 10,
+    "UnLockAccPropGetCount": 2,
+    "BoosterBattleRankNum": 30,
+    "NewUserUnlockLevels": [
+      7,
+      100,
+      200,
+      300,
+      400
+    ],
+    "NewUserStayTimes": 48,
+    "ReviveVipAndPassCount": 5,
+    "QuestionDuration": 5
+  }
+}

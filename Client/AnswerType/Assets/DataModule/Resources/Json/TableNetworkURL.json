@@ -1,0 +1,16 @@
+{
+  "1": {
+    "ID": 1,
+    "TestURL": "logsapi.test.ciyunjinchan.com",
+    "IntranetTest": "192.168.10.221:6657",
+    "URL_CN": "logsapi.ciyunjinchan.com",
+    "URL_USA": "logsapi.ciyunjinchan.com"
+  },
+  "2": {
+    "ID": 2,
+    "TestURL": "gameapi.test.ciyunjinchan.com",
+    "IntranetTest": "192.168.10.221:6657",
+    "URL_CN": "gameapi.ciyunjinchan.com",
+    "URL_USA": "gameapi.ciyunjinchan.com"
+  }
+}

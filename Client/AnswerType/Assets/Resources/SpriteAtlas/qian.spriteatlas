@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: qian
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 26de83def98dad44999bf9fdd7b55836, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 04930030e7ad9f24cb5006e7a1f6eadf, type: 3}
+  - {fileID: 21300000, guid: 7941fbb28d34ed94684aa41707bbe717, type: 3}
+  - {fileID: 21300000, guid: 5effae037ef6c0f4da8b5824832339ba, type: 3}
+  - {fileID: 21300000, guid: 242b20b3f9d84ee468af7fd9692dc15f, type: 3}
+  - {fileID: 21300000, guid: 429c5dd4256771b489f7f879a062ff85, type: 3}
+  - {fileID: 21300000, guid: ced6cc45fc44c1846902877242c84364, type: 3}
+  - {fileID: 21300000, guid: 42939e27482568645a5ac9f7791d88a4, type: 3}
+  - {fileID: 21300000, guid: 94c40a47ff4c2c0439def2379a860055, type: 3}
+  - {fileID: 21300000, guid: 844f18878135e73449757a639c80aca9, type: 3}
+  - {fileID: 21300000, guid: 497d55b727b496242aa5d4158c3371ff, type: 3}
+  - {fileID: 21300000, guid: fc8041d89cb65814b941e1f618414e46, type: 3}
+  - {fileID: 21300000, guid: cf9c0969ab72d2b4996130a0b5a4f9ce, type: 3}
+  - {fileID: 21300000, guid: 757a4969eda67b74a83d58cbd4b51e16, type: 3}
+  - {fileID: 21300000, guid: 5bd2ac99bb9920a4d9b0e9cd9785dfa7, type: 3}
+  - {fileID: 21300000, guid: b8342be9d8e86ab428a5e44aa2d2cd2d, type: 3}
+  - {fileID: 21300000, guid: 16cec6aac96cf9447aa97bcf6016825a, type: 3}
+  - {fileID: 21300000, guid: 43db9eea70c25f146a19fcfee3c251a4, type: 3}
+  - {fileID: 21300000, guid: 690e513c36c60004aaff50079b08d3b7, type: 3}
+  - {fileID: 21300000, guid: 8653c68c5e9322c4aa68c17aff16d357, type: 3}
+  - {fileID: 21300000, guid: 87e1a43e987b2ef4da4919c77b28439f, type: 3}
+  - {fileID: 21300000, guid: 7aa4bc4ede5572c4b9f512edc8a33fcb, type: 3}
+  - {fileID: 21300000, guid: c2426f5e2ee6c1840be5ce53e809115a, type: 3}
+  - {fileID: 21300000, guid: af0971be821adb24895dfd61e91d182a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - qian_08
+  - jinbi_01-1
+  - jinbi_04-3
+  - jinbi_03-3
+  - qian_01
+  - qian_05
+  - jinbi_08
+  - jinbi_07
+  - qian_04
+  - jinbi_02
+  - jinbi_00
+  - jinbi_04-2
+  - qian_06
+  - qian_09
+  - qian_07
+  - qian_03
+  - jinbi_04
+  - jinbi_01
+  - jinbi_05
+  - jinbi_03-2
+  - jinbi_03
+  - jinbi_06
+  - qian_02
+  m_Tag: qian
+  m_IsVariant: 0
+  m_IsPlaceholder: 0

@@ -1,0 +1,1005 @@
+{
+  "1": {
+    "ID": 1,
+    "TitleText": "小苏打对牙齿有什么作用？",
+    "Select1": "小苏打好吃",
+    "Select2": "清除牙垢",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_001",
+    "Audio": "zyxlz_"
+  },
+  "2": {
+    "ID": 2,
+    "TitleText": "正常人的心率是？",
+    "Select1": "75次/m",
+    "Select2": "2500次/m",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "3": {
+    "ID": 3,
+    "TitleText": "下方哪个是人体正常体温？",
+    "Select1": "36℃",
+    "Select2": "63℃",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "4": {
+    "ID": 4,
+    "TitleText": "血小板有什么用？",
+    "Select1": "卖萌",
+    "Select2": "维护血管壁完整",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_002",
+    "Audio": "zyxlz_"
+  },
+  "5": {
+    "ID": 5,
+    "TitleText": "两大血型系统分别是？",
+    "Select1": "ABO和RH",
+    "Select2": "安卓和苹果",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "6": {
+    "ID": 6,
+    "TitleText": "不管是服用什么药物都要忌什么？",
+    "Select1": "忌吸烟",
+    "Select2": "忌吃饭",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "7": {
+    "ID": 7,
+    "TitleText": "有机整体是指？",
+    "Select1": "五脏",
+    "Select2": "脚指甲",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_003",
+    "Audio": "zyxlz_"
+  },
+  "8": {
+    "ID": 8,
+    "TitleText": "大蒜可以预防什么？",
+    "Select1": "口臭",
+    "Select2": "感冒",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "9": {
+    "ID": 9,
+    "TitleText": "饮酒时不宜吃下列哪种？",
+    "Select1": "鹅卵石",
+    "Select2": "下酒菜",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "10": {
+    "ID": 10,
+    "TitleText": "冰箱里的茶叶有什么作用？",
+    "Select1": "去腥味",
+    "Select2": "省电",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_004",
+    "Audio": "zyxlz_"
+  },
+  "11": {
+    "ID": 11,
+    "TitleText": "绿茶可以预防什么？",
+    "Select1": "肝病",
+    "Select2": "狐臭",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "12": {
+    "ID": 12,
+    "TitleText": "胖大海可以长期泡茶吗？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "13": {
+    "ID": 13,
+    "TitleText": "感冒时不宜喝下列的什么？",
+    "Select1": "伏特加",
+    "Select2": "感冒茶",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_005",
+    "Audio": "zyxlz_"
+  },
+  "14": {
+    "ID": 14,
+    "TitleText": "肉食过多是否对身体有害？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "15": {
+    "ID": 15,
+    "TitleText": "骨折初期喝骨头汤合适吗？",
+    "Select1": "合适",
+    "Select2": "不合适",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "16": {
+    "ID": 16,
+    "TitleText": "常喝豆浆有益身体健康吗？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_006",
+    "Audio": "zyxlz_"
+  },
+  "17": {
+    "ID": 17,
+    "TitleText": "人参的作用是？",
+    "Select1": "拌凉菜",
+    "Select2": "补气养血",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "18": {
+    "ID": 18,
+    "TitleText": "运动后可以喝牛奶吗？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "19": {
+    "ID": 19,
+    "TitleText": "下列哪一个可以预防肾结石？",
+    "Select1": "多喝水",
+    "Select2": "熬夜",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_007",
+    "Audio": "zyxlz_"
+  },
+  "20": {
+    "ID": 20,
+    "TitleText": "下列有益身体健康的是？",
+    "Select1": "天天小烧烤",
+    "Select2": "充足的睡眠",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "21": {
+    "ID": 21,
+    "TitleText": "下列有助预防冠心病的是？",
+    "Select1": "午睡",
+    "Select2": "熬夜",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "22": {
+    "ID": 22,
+    "TitleText": "能否使用浓度为95%的酒精消毒？",
+    "Select1": "能",
+    "Select2": "不能",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_008",
+    "Audio": "zyxlz_"
+  },
+  "23": {
+    "ID": 23,
+    "TitleText": "蜂蜜可以解酒吗？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "24": {
+    "ID": 24,
+    "TitleText": "下列可以预防高血压的是？",
+    "Select1": "海带",
+    "Select2": "多吃肥肉",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "25": {
+    "ID": 25,
+    "TitleText": "白开水过多久不能喝？",
+    "Select1": "放凉后",
+    "Select2": "刚开锅",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_009",
+    "Audio": "zyxlz_"
+  },
+  "26": {
+    "ID": 26,
+    "TitleText": "养生的第一要素是？",
+    "Select1": "睡觉",
+    "Select2": "吃饭",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "27": {
+    "ID": 27,
+    "TitleText": "洗头时加入盐是为了什么?",
+    "Select1": "防止脱发",
+    "Select2": "淹头发",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "28": {
+    "ID": 28,
+    "TitleText": "风油精可以治疗烫伤吗？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_010",
+    "Audio": "zyxlz_"
+  },
+  "29": {
+    "ID": 29,
+    "TitleText": "脏衣服洗的时候撒盐作用是？",
+    "Select1": "洗的更清洁",
+    "Select2": "洗衣水做菜",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "30": {
+    "ID": 30,
+    "TitleText": "大蒜有什么作用？",
+    "Select1": "败毒止痒",
+    "Select2": "清新口气",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "31": {
+    "ID": 31,
+    "TitleText": "长期面对电脑的应该吃下列哪个水果",
+    "Select1": "苹果",
+    "Select2": "人参果",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_011",
+    "Audio": "zyxlz_"
+  },
+  "32": {
+    "ID": 32,
+    "TitleText": "吸烟会让人缺乏什么维生素？",
+    "Select1": "C",
+    "Select2": "X",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "33": {
+    "ID": 33,
+    "TitleText": "蜂蜜是药材吗？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "34": {
+    "ID": 34,
+    "TitleText": "口腔溃疡可以选用什么加速治疗？",
+    "Select1": "蜂蜜",
+    "Select2": "吸烟",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_012",
+    "Audio": "zyxlz_"
+  },
+  "35": {
+    "ID": 35,
+    "TitleText": "阴阳五行是中医里的吗？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "36": {
+    "ID": 36,
+    "TitleText": "蔬菜有什么功效？",
+    "Select1": "防止便秘",
+    "Select2": "没什么效果",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "37": {
+    "ID": 37,
+    "TitleText": "葡萄和葡萄干哪一个补血更好？",
+    "Select1": "一样",
+    "Select2": "葡萄干",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_013",
+    "Audio": "zyxlz_"
+  },
+  "38": {
+    "ID": 38,
+    "TitleText": "情绪是诱发疾病最大的隐患吗？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "39": {
+    "ID": 39,
+    "TitleText": "下列属于中医医书的是？",
+    "Select1": "《伤寒杂病论》",
+    "Select2": "《三字经》",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "40": {
+    "ID": 40,
+    "TitleText": "下列不属于五味的是？",
+    "Select1": "辛",
+    "Select2": "色",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_014",
+    "Audio": "zyxlz_"
+  },
+  "41": {
+    "ID": 41,
+    "TitleText": "一张纸最多折叠几次？",
+    "Select1": "8",
+    "Select2": "10008",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "42": {
+    "ID": 42,
+    "TitleText": "苹果比咖啡更加提神？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "43": {
+    "ID": 43,
+    "TitleText": "床下的尘埃中更多的是？",
+    "Select1": "你的死皮",
+    "Select2": "土",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_015",
+    "Audio": "zyxlz_"
+  },
+  "44": {
+    "ID": 44,
+    "TitleText": "珍珠在醋中会不会溶解？",
+    "Select1": "会",
+    "Select2": "不会",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "45": {
+    "ID": 45,
+    "TitleText": "有异物进入眼睛吐口水有用吗？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "46": {
+    "ID": 46,
+    "TitleText": "咖啡比薯片更致胖？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_016",
+    "Audio": "zyxlz_"
+  },
+  "47": {
+    "ID": 47,
+    "TitleText": "花生有消除异味的效果吗？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "48": {
+    "ID": 48,
+    "TitleText": "牙膏对烧伤有效果吗？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "49": {
+    "ID": 49,
+    "TitleText": "把脉是否有科学依据？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_017",
+    "Audio": "zyxlz_"
+  },
+  "50": {
+    "ID": 50,
+    "TitleText": "好的情绪会对女性痛经有帮助吗？",
+    "Select1": "会",
+    "Select2": "不会",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "51": {
+    "ID": 51,
+    "TitleText": "中医中的四气是指？",
+    "Select1": "热温寒凉",
+    "Select2": "喜怒哀乐",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "52": {
+    "ID": 52,
+    "TitleText": "人参对胸闷有帮助吗？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_018",
+    "Audio": "zyxlz_"
+  },
+  "53": {
+    "ID": 53,
+    "TitleText": "长期吃宵夜会得什么病？",
+    "Select1": "胃病",
+    "Select2": "脊椎病",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "54": {
+    "ID": 54,
+    "TitleText": "痛经时宜喝茶吗？",
+    "Select1": "不宜",
+    "Select2": "宜",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "55": {
+    "ID": 55,
+    "TitleText": "每日的食盐不宜超过多少？",
+    "Select1": "6克",
+    "Select2": "1公斤",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_019",
+    "Audio": "zyxlz_"
+  },
+  "56": {
+    "ID": 56,
+    "TitleText": "贫血是否可以根治？",
+    "Select1": "不可以",
+    "Select2": "可以",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "57": {
+    "ID": 57,
+    "TitleText": "刚被蚊子咬了涂上肥皂是否有效果？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "58": {
+    "ID": 58,
+    "TitleText": "在土豆中放一个苹果，土豆就不会发芽？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_020",
+    "Audio": "zyxlz_"
+  },
+  "59": {
+    "ID": 59,
+    "TitleText": "中医是不是迷信？",
+    "Select1": "不是",
+    "Select2": "是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "60": {
+    "ID": 60,
+    "TitleText": "中医讲究“望什么问切”",
+    "Select1": "闻",
+    "Select2": "听",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "61": {
+    "ID": 61,
+    "TitleText": "中医是中国的医术吗？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_021",
+    "Audio": "zyxlz_"
+  },
+  "62": {
+    "ID": 62,
+    "TitleText": "固本培元是指？",
+    "Select1": "养生",
+    "Select2": "菜名",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "63": {
+    "ID": 63,
+    "TitleText": "中医中的“气”是指？",
+    "Select1": "空气",
+    "Select2": "状态",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "64": {
+    "ID": 64,
+    "TitleText": "“一人一方”的方是什么？",
+    "Select1": "方式",
+    "Select2": "药方",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_022",
+    "Audio": "zyxlz_"
+  },
+  "65": {
+    "ID": 65,
+    "TitleText": "中医中在人体中的“气”是什么？",
+    "Select1": "元气",
+    "Select2": "精气",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "66": {
+    "ID": 66,
+    "TitleText": "闻诊主要是看？",
+    "Select1": "声音，气味",
+    "Select2": "味道",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "67": {
+    "ID": 67,
+    "TitleText": "拔火罐是不是中医疗法？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_023",
+    "Audio": "zyxlz_"
+  },
+  "68": {
+    "ID": 68,
+    "TitleText": "望诊主要是看？",
+    "Select1": "脸",
+    "Select2": "屁股",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "69": {
+    "ID": 69,
+    "TitleText": "中医中用手触碰属于？",
+    "Select1": "耍流氓",
+    "Select2": "切诊",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "70": {
+    "ID": 70,
+    "TitleText": "针灸之祖是？",
+    "Select1": "黄帝",
+    "Select2": "玉皇大帝",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_024",
+    "Audio": "zyxlz_"
+  },
+  "71": {
+    "ID": 71,
+    "TitleText": "中医中一般分为几科？",
+    "Select1": "108",
+    "Select2": "7",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "72": {
+    "ID": 72,
+    "TitleText": "医圣是？",
+    "Select1": "张仲景",
+    "Select2": "张柏芝",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "73": {
+    "ID": 73,
+    "TitleText": "张仲景的著作是？",
+    "Select1": "《伤寒杂病论》",
+    "Select2": "《论天体的运行》",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_025",
+    "Audio": "zyxlz_"
+  },
+  "74": {
+    "ID": 74,
+    "TitleText": "古代史上外科最出名的医生是？",
+    "Select1": "华佗",
+    "Select2": "孔子",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "75": {
+    "ID": 75,
+    "TitleText": "古代史上法医最出名的是？",
+    "Select1": "宋慈",
+    "Select2": "宋青书",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "76": {
+    "ID": 76,
+    "TitleText": "药王是谁？",
+    "Select1": "孙思邈",
+    "Select2": "孙悟空",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_026",
+    "Audio": "zyxlz_"
+  },
+  "77": {
+    "ID": 77,
+    "TitleText": "脉学介导者是？",
+    "Select1": "扁鹊",
+    "Select2": "喜鹊",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "78": {
+    "ID": 78,
+    "TitleText": "黄帝内经又叫？",
+    "Select1": "素问",
+    "Select2": "一本书",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "79": {
+    "ID": 79,
+    "TitleText": "历史上的医者卢氏是指？",
+    "Select1": "扁鹊",
+    "Select2": "西施",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_027",
+    "Audio": "zyxlz_"
+  },
+  "80": {
+    "ID": 80,
+    "TitleText": "问诊主要是看？",
+    "Select1": "病史",
+    "Select2": "闲聊",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "81": {
+    "ID": 81,
+    "TitleText": "调整气血实际上就是？",
+    "Select1": "调整生活方式",
+    "Select2": "猛吃药",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "82": {
+    "ID": 82,
+    "TitleText": "内伤病主要是指？",
+    "Select1": "脏腑经络病",
+    "Select2": "摔伤",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_028",
+    "Audio": "zyxlz_"
+  },
+  "83": {
+    "ID": 83,
+    "TitleText": "皮肤病属于什么科？",
+    "Select1": "外科",
+    "Select2": "杂病",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "84": {
+    "ID": 84,
+    "TitleText": "“正体”属于什么科",
+    "Select1": "骨科",
+    "Select2": "痔疮",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "85": {
+    "ID": 85,
+    "TitleText": "当代中医代表是谁",
+    "Select1": "张建银",
+    "Select2": "李时珍",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_029",
+    "Audio": "zyxlz_"
+  },
+  "86": {
+    "ID": 86,
+    "TitleText": "神农本草又叫?",
+    "Select1": "本草经",
+    "Select2": "草雉京",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "87": {
+    "ID": 87,
+    "TitleText": "儿科之祖是？",
+    "Select1": "钱乙",
+    "Select2": "路人甲",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "88": {
+    "ID": 88,
+    "TitleText": "“本草纲目”是谁写的？",
+    "Select1": "李时珍",
+    "Select2": "霍元甲",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_030",
+    "Audio": "zyxlz_"
+  },
+  "89": {
+    "ID": 89,
+    "TitleText": "针刺法和炙法统称为？",
+    "Select1": "针灸",
+    "Select2": "锥刺股",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "90": {
+    "ID": 90,
+    "TitleText": "如果我们骨关节出现问题应该找？",
+    "Select1": "外卖点餐",
+    "Select2": "骨伤科",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "91": {
+    "ID": 91,
+    "TitleText": "一息波动4到5次属于？",
+    "Select1": "多动症",
+    "Select2": "平脉",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "zysc_031",
+    "Audio": "zyxlz_"
+  },
+  "92": {
+    "ID": 92,
+    "TitleText": "古代药方是固定的吗？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "93": {
+    "ID": 93,
+    "TitleText": "中医中讲究什么合一？",
+    "Select1": "天人",
+    "Select2": "双手",
+    "CorrectAnswer": [
+      1
+    ],
+    "Audio": "zyxlz_"
+  },
+  "94": {
+    "ID": 94,
+    "TitleText": "“辩证”是什么？",
+    "Select1": "望闻问切",
+    "Select2": "吃喝玩乐",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_032",
+    "Audio": "zyxlz_"
+  },
+  "95": {
+    "ID": 95,
+    "TitleText": "中医中人与自然是否是一体？",
+    "Select1": "不是",
+    "Select2": "是",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "96": {
+    "ID": 96,
+    "TitleText": "华佗给谁刮骨疗伤？",
+    "Select1": "张飞",
+    "Select2": "关羽",
+    "CorrectAnswer": [
+      2
+    ],
+    "Audio": "zyxlz_"
+  },
+  "97": {
+    "ID": 97,
+    "TitleText": "论治又叫？",
+    "Select1": "施治",
+    "Select2": "倒班",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "zysc_033",
+    "Audio": "zyxlz_"
+  }
+}

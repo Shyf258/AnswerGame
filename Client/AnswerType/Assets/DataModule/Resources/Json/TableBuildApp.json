@@ -1,0 +1,27 @@
+{
+  "1": {
+    "ID": 1,
+    "ProductName": "人生大赢家",
+    "PackageName": "com.ciyunjinchan.rsdyjzj",
+    "WeChatAppID": "wx082f10652f21b01f",
+    "IconPath": "icon_rsdyjzj",
+    "LoadingImage": "LoadingIcon_02",
+    "TitleImage": "LoadingTitle_02"
+  },
+  "2": {
+    "ID": 2,
+    "ProductName": "冰雪大赢家",
+    "PackageName": "com.ciyunjinchan.bxdyjx",
+    "IconPath": "icon_bxdyjx",
+    "LoadingImage": "LoadingIcon_03",
+    "TitleImage": "LoadingTitle_03"
+  },
+  "3": {
+    "ID": 3,
+    "ProductName": "中药小郎中",
+    "PackageName": "com.ciyunjinchan.zyxlz",
+    "IconPath": "icon_zyxlz",
+    "LoadingImage": "LoadingIcon_04",
+    "TitleImage": "LoadingTitle_04"
+  }
+}

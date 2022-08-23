@@ -1,0 +1,35 @@
+{
+  "1": {
+    "ID": 1,
+    "TotalDays": 7,
+    "IsPlayAD": true,
+    "FirstDay": 3,
+    "AddNumber": 3,
+    "Contents": [
+      "<color=#ff9920>{0}天</color>到账，自动打款",
+      "常规签到{0}天，快速获得"
+    ]
+  },
+  "2": {
+    "ID": 2,
+    "TotalDays": 14,
+    "IsPlayAD": true,
+    "FirstDay": 1,
+    "AddNumber": 2,
+    "Contents": [
+      "<color=#ff9920>{0}天</color>到账，无需审核",
+      "日常签到{0}天，快速获得"
+    ]
+  },
+  "3": {
+    "ID": 3,
+    "TotalDays": 360,
+    "IsPlayAD": false,
+    "FirstDay": 1,
+    "AddNumber": 0,
+    "Contents": [
+      "<color=#ff9920>{0}天</color>到账",
+      "每日登陆"
+    ]
+  }
+}

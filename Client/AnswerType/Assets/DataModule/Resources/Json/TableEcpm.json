@@ -1,0 +1,67 @@
+{
+  "1": {
+    "ID": 1,
+    "MaxECPM": 10,
+    "InterstitialProbability": 1.0
+  },
+  "2": {
+    "ID": 2,
+    "MaxECPM": 25,
+    "InterstitialProbability": 1.0
+  },
+  "3": {
+    "ID": 3,
+    "MaxECPM": 50,
+    "InterstitialProbability": 0.5
+  },
+  "4": {
+    "ID": 4,
+    "MaxECPM": 100,
+    "InterstitialProbability": 0.2
+  },
+  "5": {
+    "ID": 5,
+    "MaxECPM": 150,
+    "InterstitialProbability": 0.2
+  },
+  "6": {
+    "ID": 6,
+    "MaxECPM": 200,
+    "InterstitialProbability": 0.15
+  },
+  "7": {
+    "ID": 7,
+    "MaxECPM": 300,
+    "InterstitialProbability": 0.1
+  },
+  "8": {
+    "ID": 8,
+    "MaxECPM": 400,
+    "InterstitialProbability": 0.1
+  },
+  "9": {
+    "ID": 9,
+    "MaxECPM": 500,
+    "InterstitialProbability": 0.1
+  },
+  "10": {
+    "ID": 10,
+    "MaxECPM": 600,
+    "InterstitialProbability": 0.15
+  },
+  "11": {
+    "ID": 11,
+    "MaxECPM": 800,
+    "InterstitialProbability": 0.2
+  },
+  "12": {
+    "ID": 12,
+    "MaxECPM": 1000,
+    "InterstitialProbability": 0.5
+  },
+  "13": {
+    "ID": 13,
+    "MaxECPM": 100000,
+    "InterstitialProbability": 1.0
+  }
+}

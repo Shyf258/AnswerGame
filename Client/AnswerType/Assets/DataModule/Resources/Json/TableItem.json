@@ -1,0 +1,37 @@
+{
+  "1": {
+    "ID": 1,
+    "ItemType": 1,
+    "IconPath": "Home_icon_tubiao_7"
+  },
+  "2": {
+    "ID": 2,
+    "ItemType": 3,
+    "IconPath": "Home_icon_tubiao_9"
+  },
+  "3": {
+    "ID": 3,
+    "ItemType": 4,
+    "IconPath": "PopupIcon_03"
+  },
+  "4": {
+    "ID": 4,
+    "ItemType": 5,
+    "IconPath": "PopupIcon_01"
+  },
+  "5": {
+    "ID": 5,
+    "ItemType": 7,
+    "IconPath": "PopupIcon_05"
+  },
+  "6": {
+    "ID": 6,
+    "ItemType": 9,
+    "IconPath": "PopupIcon_013"
+  },
+  "7": {
+    "ID": 7,
+    "ItemType": 8,
+    "IconPath": "Home_icon_tubiao_8"
+  }
+}
