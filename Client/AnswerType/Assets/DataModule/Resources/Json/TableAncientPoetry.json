@@ -1,0 +1,1802 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "白头吟",
+    "Author": "卓文君",
+    "TheFirst": "愿得一人心，",
+    "TheSecond": "白首不相离。",
+    "TheThird": "竹竿何袅袅，",
+    "TheFourth": "鱼尾何簁簁。"
+  },
+  "2": {
+    "ID": 2,
+    "Name": "风",
+    "Author": "李峤",
+    "TheFirst": "解落三秋叶，",
+    "TheSecond": "能开二月花。",
+    "TheThird": "过江千尺浪，",
+    "TheFourth": "入竹万竿斜。"
+  },
+  "3": {
+    "ID": 3,
+    "Name": "静夜思",
+    "Author": "李白",
+    "TheFirst": "床前明月光，",
+    "TheSecond": "疑是地上霜。",
+    "TheThird": "举头望明月，",
+    "TheFourth": "低头思故乡。"
+  },
+  "4": {
+    "ID": 4,
+    "Name": "登鹳雀楼",
+    "Author": "王之焕",
+    "TheFirst": "白日依山尽，",
+    "TheSecond": "黄河入海流。",
+    "TheThird": "欲穷千里目，",
+    "TheFourth": "更上一层楼。"
+  },
+  "5": {
+    "ID": 5,
+    "Name": "春晓",
+    "Author": "孟浩然",
+    "TheFirst": "春眠不觉晓，",
+    "TheSecond": "处处闻啼鸟。",
+    "TheThird": "夜来风雨声，",
+    "TheFourth": "花落知多少。"
+  },
+  "6": {
+    "ID": 6,
+    "Name": "鹿柴",
+    "Author": "王维",
+    "TheFirst": "空山不见人，",
+    "TheSecond": "但闻人语响。",
+    "TheThird": "返景入深林，",
+    "TheFourth": "复照青苔上。"
+  },
+  "7": {
+    "ID": 7,
+    "Name": "绝句",
+    "Author": "杜甫",
+    "TheFirst": "江碧鸟逾白，",
+    "TheSecond": "山青花欲燃。",
+    "TheThird": "今春看又过，",
+    "TheFourth": "何日是归年。"
+  },
+  "8": {
+    "ID": 8,
+    "Name": "绝句",
+    "Author": "杜甫",
+    "TheFirst": "迟日江山丽，",
+    "TheSecond": "春风花草香。",
+    "TheThird": "泥融飞燕子，",
+    "TheFourth": "沙暖睡鸳鸯。"
+  },
+  "9": {
+    "ID": 9,
+    "Name": "游子吟",
+    "Author": "孟郊",
+    "TheFirst": "慈母手中线，",
+    "TheSecond": "游子身上衣。",
+    "TheThird": "临行密密缝，",
+    "TheFourth": "意恐迟迟归。"
+  },
+  "10": {
+    "ID": 10,
+    "Name": "江雪",
+    "Author": "柳宗元",
+    "TheFirst": "千山鸟飞绝，",
+    "TheSecond": "万径人踪灭。",
+    "TheThird": "孤舟蓑笠翁，",
+    "TheFourth": "独钓寒江雪。"
+  },
+  "11": {
+    "ID": 11,
+    "Name": "塞下曲",
+    "Author": "卢纶",
+    "TheFirst": "林暗草惊风，",
+    "TheSecond": "将军夜引弓。",
+    "TheThird": "平明寻白羽，",
+    "TheFourth": "没在石棱中。"
+  },
+  "12": {
+    "ID": 12,
+    "Name": "塞下曲",
+    "Author": "卢纶",
+    "TheFirst": "月黑雁飞高，",
+    "TheSecond": "单于夜遁逃。",
+    "TheThird": "欲将轻骑逐，",
+    "TheFourth": "大雪满弓刀。"
+  },
+  "13": {
+    "ID": 13,
+    "Name": "池上",
+    "Author": "白居易",
+    "TheFirst": "小娃撑小艇，",
+    "TheSecond": "偷采白莲回。",
+    "TheThird": "不解藏踪迹，",
+    "TheFourth": "浮萍一道开。"
+  },
+  "14": {
+    "ID": 14,
+    "Name": "忆江南",
+    "Author": "白居易",
+    "TheFirst": "风景旧曾谙，",
+    "TheSecond": "日出江花红胜火。",
+    "TheThird": "春来江水绿如蓝，",
+    "TheFourth": "能不忆江南。"
+  },
+  "15": {
+    "ID": 15,
+    "Name": "悯农",
+    "Author": "李绅",
+    "TheFirst": "锄禾日当午，",
+    "TheSecond": "汗滴禾下土。",
+    "TheThird": "谁知盘中餐，",
+    "TheFourth": "粒粒皆辛苦。"
+  },
+  "16": {
+    "ID": 16,
+    "Name": "悯农",
+    "Author": "李绅",
+    "TheFirst": "春种一粒粟，",
+    "TheSecond": "秋收万颗子。",
+    "TheThird": "四海无闲田，",
+    "TheFourth": "农夫犹饿死"
+  },
+  "17": {
+    "ID": 17,
+    "Name": "寻隐者不遇",
+    "Author": "贾岛",
+    "TheFirst": "松下问童子，",
+    "TheSecond": "言师采药去。",
+    "TheThird": "只在此山中，",
+    "TheFourth": "云深不知处。"
+  },
+  "18": {
+    "ID": 18,
+    "Name": "乐游原",
+    "Author": "李商隐",
+    "TheFirst": "向晚意不适，",
+    "TheSecond": "驱车登古原。",
+    "TheThird": "夕阳无限好，",
+    "TheFourth": "只是近黄昏。"
+  },
+  "19": {
+    "ID": 19,
+    "Name": "江上渔者",
+    "Author": "范仲淹",
+    "TheFirst": "江上往来人，",
+    "TheSecond": "但爱鲈鱼美。",
+    "TheThird": "君看一叶舟，",
+    "TheFourth": "出没风波里。"
+  },
+  "20": {
+    "ID": 20,
+    "Name": "夏日绝句",
+    "Author": "李清照",
+    "TheFirst": "生当作人杰，",
+    "TheSecond": "死亦为鬼雄。",
+    "TheThird": "至今思项羽，",
+    "TheFourth": "不肯过江东。"
+  },
+  "21": {
+    "ID": 21,
+    "Name": "独坐敬亭山",
+    "Author": "李白",
+    "TheFirst": "众鸟高飞尽，",
+    "TheSecond": "孤云独去闲。",
+    "TheThird": "相看两不厌，",
+    "TheFourth": "只有敬亭山。"
+  },
+  "22": {
+    "ID": 22,
+    "Name": "竹里馆",
+    "Author": "王维",
+    "TheFirst": "独坐幽篁里，",
+    "TheSecond": "弹琴复长啸。",
+    "TheThird": "深林人不知，",
+    "TheFourth": "明月来相照。"
+  },
+  "23": {
+    "ID": 23,
+    "Name": "咏风",
+    "Author": "虞世南",
+    "TheFirst": "逐舞飘轻袖，",
+    "TheSecond": "传歌共绕梁。",
+    "TheThird": "动枝生乱影，",
+    "TheFourth": "吹花送远香。"
+  },
+  "24": {
+    "ID": 24,
+    "Name": "蝉",
+    "Author": "虞世南",
+    "TheFirst": "垂缕饮清露，",
+    "TheSecond": "流响出疏桐。",
+    "TheThird": "居高声自远，",
+    "TheFourth": "非是藉秋风。"
+  },
+  "25": {
+    "ID": 25,
+    "Name": "送兄",
+    "Author": "七岁女",
+    "TheFirst": "别路云初起，",
+    "TheSecond": "离亭叶正稀。",
+    "TheThird": "所嗟人亦雁，",
+    "TheFourth": "不作一行飞。"
+  },
+  "26": {
+    "ID": 26,
+    "Name": "易水送别",
+    "Author": "骆宾王",
+    "TheFirst": "此地别燕丹，",
+    "TheSecond": "壮士发冲冠。",
+    "TheThird": "昔时人已没，",
+    "TheFourth": "今日水犹寒。"
+  },
+  "27": {
+    "ID": 27,
+    "Name": "中秋夜",
+    "Author": "李峤",
+    "TheFirst": "圆魄上寒空，",
+    "TheSecond": "皆言四海同。",
+    "TheThird": "安知千里外，",
+    "TheFourth": "不有雨兼风。"
+  },
+  "28": {
+    "ID": 28,
+    "Name": "山中",
+    "Author": "王勃",
+    "TheFirst": "长江悲已滞，",
+    "TheSecond": "万里念将归。",
+    "TheThird": "况属高风晚，",
+    "TheFourth": "山山黄叶飞。"
+  },
+  "29": {
+    "ID": 29,
+    "Name": "渡汉江",
+    "Author": "宋之问",
+    "TheFirst": "岭外音书断，",
+    "TheSecond": "经冬复立春。",
+    "TheThird": "近乡情更怯，",
+    "TheFourth": "不敢问来人。"
+  },
+  "30": {
+    "ID": 30,
+    "Name": "登幽州台歌",
+    "Author": "陈子昂",
+    "TheFirst": "前不见古人，",
+    "TheSecond": "后不见来者。",
+    "TheThird": "念天地之悠悠，",
+    "TheFourth": "独怆然而涕下。"
+  },
+  "31": {
+    "ID": 31,
+    "Name": "照镜见白发",
+    "Author": "张九龄",
+    "TheFirst": "宿昔青云志，",
+    "TheSecond": "蹉跎白发年。",
+    "TheThird": "谁知明镜里，",
+    "TheFourth": "形影自相怜。"
+  },
+  "32": {
+    "ID": 32,
+    "Name": "送朱大人入秦",
+    "Author": "孟浩然",
+    "TheFirst": "游人五陵去，",
+    "TheSecond": "宝剑值千金。",
+    "TheThird": "分手脱相赠，",
+    "TheFourth": "平生一片心。"
+  },
+  "33": {
+    "ID": 33,
+    "Name": "中南望馀雪",
+    "Author": "祖咏",
+    "TheFirst": "终南阴岭秀，",
+    "TheSecond": "积雪浮云端。",
+    "TheThird": "林表明霁色，",
+    "TheFourth": "城中增暮寒。"
+  },
+  "34": {
+    "ID": 34,
+    "Name": "相思",
+    "Author": "王维",
+    "TheFirst": "红豆生南国，",
+    "TheSecond": "春来发几枝。",
+    "TheThird": "愿君多采撷，",
+    "TheFourth": "此物最相思。"
+  },
+  "35": {
+    "ID": 35,
+    "Name": "莲花坞",
+    "Author": "王维",
+    "TheFirst": "日日采莲去，",
+    "TheSecond": "洲长多暮归。",
+    "TheThird": "弄篙莫溅水，",
+    "TheFourth": "畏湿红莲衣。"
+  },
+  "36": {
+    "ID": 36,
+    "Name": "杂诗",
+    "Author": "王维",
+    "TheFirst": "君自故乡来，",
+    "TheSecond": "应知故乡事。",
+    "TheThird": "来日绮窗前，",
+    "TheFourth": "寒梅著花未。"
+  },
+  "37": {
+    "ID": 37,
+    "Name": "夜宿山寺",
+    "Author": "李白",
+    "TheFirst": "危楼高百尺，",
+    "TheSecond": "手可摘星辰。",
+    "TheThird": "不敢高声语，",
+    "TheFourth": "恐惊天上人。"
+  },
+  "38": {
+    "ID": 38,
+    "Name": "陪侍郎叔游洞庭醉后",
+    "Author": "李白",
+    "TheFirst": "刬却君山好，",
+    "TheSecond": "平铺湘水流。",
+    "TheThird": "巴陵无限酒，",
+    "TheFourth": "醉杀洞庭秋。"
+  },
+  "39": {
+    "ID": 39,
+    "Name": "听弹琴",
+    "Author": "刘长卿",
+    "TheFirst": "泠泠七弦上，",
+    "TheSecond": "静听松风寒。",
+    "TheThird": "古调虽自爱，",
+    "TheFourth": "今人多不弹。"
+  },
+  "40": {
+    "ID": 40,
+    "Name": "送灵澈上人",
+    "Author": "刘长卿",
+    "TheFirst": "苍苍竹林寺，",
+    "TheSecond": "杳杳钟声晚。",
+    "TheThird": "荷笠带夕阳，",
+    "TheFourth": "青山独归远。"
+  },
+  "41": {
+    "ID": 41,
+    "Name": "拜新月",
+    "Author": "李端",
+    "TheFirst": "开帘见新月，",
+    "TheSecond": "便即下阶拜。",
+    "TheThird": "细语人不闻，",
+    "TheFourth": "北风吹裙带。"
+  },
+  "42": {
+    "ID": 42,
+    "Name": "问刘十九",
+    "Author": "白居易",
+    "TheFirst": "绿蚁新醅酒，",
+    "TheSecond": "红泥小火炉。",
+    "TheThird": "晚来天欲雪，",
+    "TheFourth": "能饮一杯无。"
+  },
+  "43": {
+    "ID": 43,
+    "Name": "瀑布",
+    "Author": "施肩吾",
+    "TheFirst": "豁开青冥颠，",
+    "TheSecond": "泻出万丈泉。",
+    "TheThird": "如裁一条素，",
+    "TheFourth": "白日悬中天。"
+  },
+  "44": {
+    "ID": 44,
+    "Name": "题西施石",
+    "Author": "王轩",
+    "TheFirst": "岭上千峰秀，",
+    "TheSecond": "江边细草春。",
+    "TheThird": "今逢浣纱石，",
+    "TheFourth": "不见浣纱人。"
+  },
+  "45": {
+    "ID": 45,
+    "Name": "剑客",
+    "Author": "贾岛",
+    "TheFirst": "十年磨一剑，",
+    "TheSecond": "霜刃未曾试。",
+    "TheThird": "今日把示君，",
+    "TheFourth": "谁有不平事。"
+  },
+  "46": {
+    "ID": 46,
+    "Name": "题诗后",
+    "Author": "贾岛",
+    "TheFirst": "两句三年得，",
+    "TheSecond": "一吟双泪流。",
+    "TheThird": "知音如不赏，",
+    "TheFourth": "归卧故山秋。"
+  },
+  "47": {
+    "ID": 47,
+    "Name": "马诗",
+    "Author": "李贺",
+    "TheFirst": "大漠沙如雪，",
+    "TheSecond": "燕山月似钩。",
+    "TheThird": "何当金络脑，",
+    "TheFourth": "快走踏清秋。"
+  },
+  "48": {
+    "ID": 48,
+    "Name": "雪",
+    "Author": "罗隐",
+    "TheFirst": "尽道丰年瑞，",
+    "TheSecond": "丰年事若何。",
+    "TheThird": "长安有贫者，",
+    "TheFourth": "为瑞不宜多。"
+  },
+  "49": {
+    "ID": 49,
+    "Name": "五岁咏花",
+    "Author": "陈知玄",
+    "TheFirst": "花开满树红，",
+    "TheSecond": "花落万枝空。",
+    "TheThird": "唯余一朵在，",
+    "TheFourth": "明日定随风。"
+  },
+  "50": {
+    "ID": 50,
+    "Name": "田家",
+    "Author": "聂夷中",
+    "TheFirst": "父耕原上田，",
+    "TheSecond": "子劚山下荒。",
+    "TheThird": "六月禾未秀，",
+    "TheFourth": "官家已修仓。"
+  },
+  "51": {
+    "ID": 51,
+    "Name": "公子家",
+    "Author": "聂夷中",
+    "TheFirst": "种花满西园，",
+    "TheSecond": "花发青楼道。",
+    "TheThird": "花下一禾生，",
+    "TheFourth": "去之为恶草。"
+  },
+  "52": {
+    "ID": 52,
+    "Name": "江行无题",
+    "Author": "钱珝",
+    "TheFirst": "万木已清霜，",
+    "TheSecond": "江边村事忙。",
+    "TheThird": "故溪黄稻熟，",
+    "TheFourth": "一夜梦中香。"
+  },
+  "53": {
+    "ID": 53,
+    "Name": "田上",
+    "Author": "崔道融",
+    "TheFirst": "雨足高田白，",
+    "TheSecond": "披蓑半夜耕。",
+    "TheThird": "人牛力俱尽，",
+    "TheFourth": "东方殊未明。"
+  },
+  "54": {
+    "ID": 54,
+    "Name": "宿建德江",
+    "Author": "孟浩然",
+    "TheFirst": "移舟泊烟渚，",
+    "TheSecond": "日暮客愁新。",
+    "TheThird": "野旷天低树，",
+    "TheFourth": "江清月近人。"
+  },
+  "55": {
+    "ID": 55,
+    "Name": "鸟鸣涧",
+    "Author": "王维",
+    "TheFirst": "人闲桂花落，",
+    "TheSecond": "夜静春山空。",
+    "TheThird": "月出惊山鸟，",
+    "TheFourth": "时鸣春涧中。"
+  },
+  "56": {
+    "ID": 56,
+    "Name": "山中送别",
+    "Author": "王维",
+    "TheFirst": "山中相送罢，",
+    "TheSecond": "日暮掩柴扉。",
+    "TheThird": "春草明年绿，",
+    "TheFourth": "王孙归不归。"
+  },
+  "57": {
+    "ID": 57,
+    "Name": "田园乐",
+    "Author": "王维",
+    "TheFirst": "桃红复含宿雨，",
+    "TheSecond": "柳绿更带朝烟。",
+    "TheThird": "花落家童未扫，",
+    "TheFourth": "莺啼山客犹眠。"
+  },
+  "58": {
+    "ID": 58,
+    "Name": "越女词",
+    "Author": "李白",
+    "TheFirst": "耶溪采莲女，",
+    "TheSecond": "见客棹歌回。",
+    "TheThird": "笑入荷花去，",
+    "TheFourth": "佯羞不出来。"
+  },
+  "59": {
+    "ID": 59,
+    "Name": "秋浦歌",
+    "Author": "李白",
+    "TheFirst": "白发三千丈，",
+    "TheSecond": "缘愁似个长。",
+    "TheThird": "不知明镜里，",
+    "TheFourth": "何处得秋霜。"
+  },
+  "60": {
+    "ID": 60,
+    "Name": "逢雪宿芙蓉山主人",
+    "Author": "贺知章",
+    "TheFirst": "日暮苍山远，",
+    "TheSecond": "天寒白屋贫。",
+    "TheThird": "柴门闻犬吠，",
+    "TheFourth": "风雪夜归人。"
+  },
+  "61": {
+    "ID": 61,
+    "Name": "八阵图",
+    "Author": "杜甫",
+    "TheFirst": "功盖三分国，",
+    "TheSecond": "名成八阵图。",
+    "TheThird": "江流石不转，",
+    "TheFourth": "遗恨失吞吴。"
+  },
+  "62": {
+    "ID": 62,
+    "Name": "江南曲",
+    "Author": "李益",
+    "TheFirst": "嫁得瞿塘贾，",
+    "TheSecond": "朝朝误妾期。",
+    "TheThird": "早知潮有信，",
+    "TheFourth": "嫁与弄潮儿。"
+  },
+  "63": {
+    "ID": 63,
+    "Name": "春怨",
+    "Author": "金昌绪",
+    "TheFirst": "打起黄莺儿，",
+    "TheSecond": "莫教枝上啼。",
+    "TheThird": "啼时惊妾梦，",
+    "TheFourth": "不得到辽西。"
+  },
+  "64": {
+    "ID": 64,
+    "Name": "曲池荷",
+    "Author": "卢照邻",
+    "TheFirst": "浮香绕曲岸，",
+    "TheSecond": "圆影覆华池。",
+    "TheThird": "常恐秋风早，",
+    "TheFourth": "飘零君不知。"
+  },
+  "65": {
+    "ID": 65,
+    "Name": "送上人",
+    "Author": "刘长卿",
+    "TheFirst": "孤云将野鹤，",
+    "TheSecond": "岂向人间住。",
+    "TheThird": "莫买沃洲山，",
+    "TheFourth": "时人已知处。"
+  },
+  "66": {
+    "ID": 66,
+    "Name": "渡汉江",
+    "Author": "宋之问",
+    "TheFirst": "岭外音书断，",
+    "TheSecond": "经冬复历春。",
+    "TheThird": "近乡情更怯，",
+    "TheFourth": "不敢问来人。"
+  },
+  "67": {
+    "ID": 67,
+    "Name": "赠范晔",
+    "Author": "陆凯",
+    "TheFirst": "折花逢驿使，",
+    "TheSecond": "寄与陇头人。",
+    "TheThird": "江南无所有，",
+    "TheFourth": "聊赠一枝春。"
+  },
+  "68": {
+    "ID": 68,
+    "Name": "哥舒歌",
+    "Author": "无名氏",
+    "TheFirst": "北斗七星高，",
+    "TheSecond": "哥舒夜带刀。",
+    "TheThird": "至今窥牧马，",
+    "TheFourth": "不敢过临洮。"
+  },
+  "69": {
+    "ID": 69,
+    "Name": "新嫁娘",
+    "Author": "王建",
+    "TheFirst": "三日入厨下，",
+    "TheSecond": "洗手作羹汤。",
+    "TheThird": "未谙姑食性，",
+    "TheFourth": "先遣小姑尝。"
+  },
+  "70": {
+    "ID": 70,
+    "Name": "行宫",
+    "Author": "元稹",
+    "TheFirst": "寥落古行宫，",
+    "TheSecond": "宫花寂寞红。",
+    "TheThird": "白头宫女在，",
+    "TheFourth": "闲坐说玄宗。"
+  },
+  "71": {
+    "ID": 71,
+    "Name": "宫词",
+    "Author": "张祜",
+    "TheFirst": "故国三千里，",
+    "TheSecond": "深宫二十年。",
+    "TheThird": "一声何满子，",
+    "TheFourth": "双泪落君前。"
+  },
+  "72": {
+    "ID": 72,
+    "Name": "蚕妇",
+    "Author": "张俞",
+    "TheFirst": "昨日入城市，",
+    "TheSecond": "归来泪满襟。",
+    "TheThird": "遍身罗绮者，",
+    "TheFourth": "不是养蚕人。"
+  },
+  "73": {
+    "ID": 73,
+    "Name": "梅花",
+    "Author": "王安石",
+    "TheFirst": "墙角数枝梅，",
+    "TheSecond": "凌寒独自开。",
+    "TheThird": "遥知不是雪，",
+    "TheFourth": "为有暗香来。"
+  },
+  "74": {
+    "ID": 74,
+    "Name": "画",
+    "Author": "佚名",
+    "TheFirst": "远看山有色，",
+    "TheSecond": "近听水无声。",
+    "TheThird": "春去花还在，",
+    "TheFourth": "人来鸟不惊。"
+  },
+  "75": {
+    "ID": 75,
+    "Name": "秋夜寄邱十二员外",
+    "Author": "韦应物",
+    "TheFirst": "怀君属秋夜，",
+    "TheSecond": "散步咏凉天。",
+    "TheThird": "空山松子落，",
+    "TheFourth": "幽人应未眠。"
+  },
+  "76": {
+    "ID": 76,
+    "Name": "逢侠者",
+    "Author": "钱起",
+    "TheFirst": "燕赵悲歌士，",
+    "TheSecond": "相逢剧孟家。",
+    "TheThird": "寸心言不尽，",
+    "TheFourth": "前路日将斜。"
+  },
+  "77": {
+    "ID": 77,
+    "Name": "三闾庙",
+    "Author": "戴叔伦",
+    "TheFirst": "沅湘流不尽，",
+    "TheSecond": "屈子怨何深。",
+    "TheThird": "日暮秋风起，",
+    "TheFourth": "萧萧枫树林。"
+  },
+  "78": {
+    "ID": 78,
+    "Name": "赐萧瑀",
+    "Author": "李世民",
+    "TheFirst": "疾风知劲草，",
+    "TheSecond": "板荡识诚臣。",
+    "TheThird": "勇夫安知义，",
+    "TheFourth": "智者必怀仁。"
+  },
+  "79": {
+    "ID": 79,
+    "Name": "古离别",
+    "Author": "孟郊",
+    "TheFirst": "欲别牵郎衣，",
+    "TheSecond": "郎今到何处。",
+    "TheThird": "不恨归来迟，",
+    "TheFourth": "莫向临邛去。"
+  },
+  "80": {
+    "ID": 80,
+    "Name": "岭上逢久别者又别",
+    "Author": "权德舆",
+    "TheFirst": "十年曾一别，",
+    "TheSecond": "征路此相逢。",
+    "TheThird": "马首向何处，",
+    "TheFourth": "夕阳千万峰。"
+  },
+  "81": {
+    "ID": 81,
+    "Name": "陈情上韦令公",
+    "Author": "薛涛",
+    "TheFirst": "闻说边城苦，",
+    "TheSecond": "今来到始知。",
+    "TheThird": "羞将筵上曲，",
+    "TheFourth": "唱与陇头儿。"
+  },
+  "82": {
+    "ID": 82,
+    "Name": "秋风引",
+    "Author": "刘禹锡",
+    "TheFirst": "何处秋风至，",
+    "TheSecond": "萧萧送雁群。",
+    "TheThird": "朝来入庭树，",
+    "TheFourth": "孤客最先闻。"
+  },
+  "83": {
+    "ID": 83,
+    "Name": "夜雨",
+    "Author": "白居易",
+    "TheFirst": "早蛩蹄复歇，",
+    "TheSecond": "残灯灭又明。",
+    "TheThird": "隔窗知夜雨，",
+    "TheFourth": "芭蕉先有声。"
+  },
+  "84": {
+    "ID": 84,
+    "Name": "遗爱寺",
+    "Author": "白居易",
+    "TheFirst": "弄石临溪坐，",
+    "TheSecond": "寻花绕寺行。",
+    "TheThird": "时时闻鸟语，",
+    "TheFourth": "处处是泉声。"
+  },
+  "85": {
+    "ID": 85,
+    "Name": "离骚",
+    "Author": "陆龟蒙",
+    "TheFirst": "天问复招魂，",
+    "TheSecond": "无因彻帝阍。",
+    "TheThird": "岂知千句丽，",
+    "TheFourth": "不敌一谗言。"
+  },
+  "86": {
+    "ID": 86,
+    "Name": "垓下歌",
+    "Author": "项羽",
+    "TheFirst": "力拔山兮气盖世，",
+    "TheSecond": "时不利兮骓不逝。",
+    "TheThird": "骓不逝兮可奈何，",
+    "TheFourth": "虞兮虞兮奈若何。"
+  },
+  "87": {
+    "ID": 87,
+    "Name": "所见",
+    "Author": "袁枚",
+    "TheFirst": "牧童骑黄牛，",
+    "TheSecond": "歌声振林樾。",
+    "TheThird": "意欲捕鸣蝉，",
+    "TheFourth": "忽然闭口立。"
+  },
+  "88": {
+    "ID": 88,
+    "Name": "劝学",
+    "Author": "颜真卿",
+    "TheFirst": "三更灯火五更鸡，",
+    "TheSecond": "正是男儿读书时。",
+    "TheThird": "黑发不知勤学早，",
+    "TheFourth": "白首方悔读书迟。"
+  },
+  "89": {
+    "ID": 89,
+    "Name": "凉州词",
+    "Author": "王翰",
+    "TheFirst": "葡萄美酒夜光杯，",
+    "TheSecond": "欲饮琵琶马上催。",
+    "TheThird": "醉卧沙场君莫笑，",
+    "TheFourth": "古来征战几人回。"
+  },
+  "90": {
+    "ID": 90,
+    "Name": "出塞",
+    "Author": "王昌龄",
+    "TheFirst": "秦时明月汉时关，",
+    "TheSecond": "万里长征人未还。",
+    "TheThird": "但使龙城飞将在，",
+    "TheFourth": "不教胡马度阴山。"
+  },
+  "91": {
+    "ID": 91,
+    "Name": "芙蓉楼送辛渐",
+    "Author": "王昌龄",
+    "TheFirst": "寒雨连江夜入吴，",
+    "TheSecond": "平明送客楚山孤。",
+    "TheThird": "洛阳亲友如相问，",
+    "TheFourth": "一片冰心在玉壶。"
+  },
+  "92": {
+    "ID": 92,
+    "Name": "咏柳",
+    "Author": "贺知章",
+    "TheFirst": "碧玉妆成一树高，",
+    "TheSecond": "万条垂下绿丝绦。",
+    "TheThird": "不知细叶谁裁出，",
+    "TheFourth": "二月春风似剪刀。"
+  },
+  "93": {
+    "ID": 93,
+    "Name": "凉州词",
+    "Author": "王之焕",
+    "TheFirst": "黄河远上白云间，",
+    "TheSecond": "一片孤城万仞山。",
+    "TheThird": "羌笛何须怨杨柳，",
+    "TheFourth": "春风不度玉门关。"
+  },
+  "94": {
+    "ID": 94,
+    "Name": "九月九日忆山东兄弟",
+    "Author": "王维",
+    "TheFirst": "独在异乡为异客，",
+    "TheSecond": "每逢佳节倍思亲。",
+    "TheThird": "遥知兄弟登高处，",
+    "TheFourth": "遍插茱萸少一人。"
+  },
+  "95": {
+    "ID": 95,
+    "Name": "望洞庭",
+    "Author": "唐)刘禹锡",
+    "TheFirst": "湖光秋月两相和，",
+    "TheSecond": "潭面无风镜未磨。",
+    "TheThird": "遥望洞庭山水翠，",
+    "TheFourth": "白银盘里一青螺。"
+  },
+  "96": {
+    "ID": 96,
+    "Name": "浪淘沙",
+    "Author": "刘禹锡",
+    "TheFirst": "九曲黄河万里沙，",
+    "TheSecond": "浪淘风簸自天涯。",
+    "TheThird": "如今直上银河去，",
+    "TheFourth": "同到牵牛织女家。"
+  },
+  "97": {
+    "ID": 97,
+    "Name": "送元二使安西",
+    "Author": "王维",
+    "TheFirst": "渭城朝雨浥轻尘，",
+    "TheSecond": "客舍青青柳色新。",
+    "TheThird": "劝君更尽一杯酒，",
+    "TheFourth": "西出阳关无故人。"
+  },
+  "98": {
+    "ID": 98,
+    "Name": "望庐山瀑布",
+    "Author": "李白",
+    "TheFirst": "日照香炉生紫烟，",
+    "TheSecond": "遥看瀑布挂前川。",
+    "TheThird": "飞流直下三千尺，",
+    "TheFourth": "疑是银河落九天。"
+  },
+  "99": {
+    "ID": 99,
+    "Name": "赠汪伦",
+    "Author": "李白",
+    "TheFirst": "李白乘舟将欲行，",
+    "TheSecond": "忽闻岸上踏歌声。",
+    "TheThird": "桃花潭水深千尺，",
+    "TheFourth": "不及汪伦送我情。"
+  },
+  "100": {
+    "ID": 100,
+    "Name": "黄鹤楼送孟浩然之广陵",
+    "Author": "李白",
+    "TheFirst": "故人西辞黄鹤楼，",
+    "TheSecond": "烟花三月下扬州。",
+    "TheThird": "孤帆远影碧空尽，",
+    "TheFourth": "惟见长江天际流。"
+  },
+  "101": {
+    "ID": 101,
+    "Name": "早发白帝城",
+    "Author": "李白",
+    "TheFirst": "朝辞白帝彩云间，",
+    "TheSecond": "千里江陵一日还。",
+    "TheThird": "两岸猿声啼不住，",
+    "TheFourth": "轻舟已过万重山。"
+  },
+  "102": {
+    "ID": 102,
+    "Name": "望天门山",
+    "Author": "李白",
+    "TheFirst": "天门中断楚江开，",
+    "TheSecond": "碧水东流至此回。",
+    "TheThird": "两岸青山相对出，",
+    "TheFourth": "孤帆一片日边来。"
+  },
+  "103": {
+    "ID": 103,
+    "Name": "别董大",
+    "Author": "高适",
+    "TheFirst": "千里黄云白日曛，",
+    "TheSecond": "水风吹雁雪纷纷。",
+    "TheThird": "莫愁前路无知己，",
+    "TheFourth": "天下谁人不识君。"
+  },
+  "104": {
+    "ID": 104,
+    "Name": "绝句",
+    "Author": "杜甫",
+    "TheFirst": "两个黄鹂鸣翠柳，",
+    "TheSecond": "一行白鹭上青天。",
+    "TheThird": "窗含西岭千秋雪，",
+    "TheFourth": "门泊东吴万里船。"
+  },
+  "105": {
+    "ID": 105,
+    "Name": "小儿垂钓",
+    "Author": "胡令能",
+    "TheFirst": "蓬头稚子学垂纶，",
+    "TheSecond": "侧坐莓苔草映身。",
+    "TheThird": "路人借问遥招手，",
+    "TheFourth": "怕得鱼惊不应人。"
+  },
+  "106": {
+    "ID": 106,
+    "Name": "十一月四日风雨大作",
+    "Author": "陆游",
+    "TheFirst": "僵卧孤村不自哀，",
+    "TheSecond": "尚思为国戍轮台。",
+    "TheThird": "夜阑卧听风吹雨，",
+    "TheFourth": "铁马冰河入梦来。"
+  },
+  "107": {
+    "ID": 107,
+    "Name": "枫桥夜泊",
+    "Author": "张继",
+    "TheFirst": "月落乌啼霜满天，",
+    "TheSecond": "江枫渔火对愁眠。",
+    "TheThird": "姑苏城外寒山寺，",
+    "TheFourth": "夜半钟声到客船。"
+  },
+  "108": {
+    "ID": 108,
+    "Name": "山行",
+    "Author": "杜牧",
+    "TheFirst": "远上寒山石径斜，",
+    "TheSecond": "白云深处有人家。",
+    "TheThird": "停车坐爱枫林晚，",
+    "TheFourth": "霜叶红于二月花。"
+  },
+  "109": {
+    "ID": 109,
+    "Name": "清明",
+    "Author": "杜牧",
+    "TheFirst": "清明时节雨纷纷，",
+    "TheSecond": "路上行人欲断魂。",
+    "TheThird": "借问酒家何处有，",
+    "TheFourth": "牧童遥指杏花村。"
+  },
+  "110": {
+    "ID": 110,
+    "Name": "江南春",
+    "Author": "杜牧",
+    "TheFirst": "千里莺啼绿映红，",
+    "TheSecond": "水村山郭酒旗风。",
+    "TheThird": "南朝四百八十寺，",
+    "TheFourth": "多少楼台烟雨中。"
+  },
+  "111": {
+    "ID": 111,
+    "Name": "蜂",
+    "Author": "罗隐",
+    "TheFirst": "不论平地与山尖，",
+    "TheSecond": "无限风光尽被占。",
+    "TheThird": "采得百花成蜜后，",
+    "TheFourth": "为谁辛苦为谁甜。"
+  },
+  "112": {
+    "ID": 112,
+    "Name": "元日",
+    "Author": "王安石",
+    "TheFirst": "爆竹声中一岁除，",
+    "TheSecond": "春风送暖入屠苏。",
+    "TheThird": "千门万户瞳瞳日，",
+    "TheFourth": "总把新桃换旧符。"
+  },
+  "113": {
+    "ID": 113,
+    "Name": "泊船瓜洲",
+    "Author": "王安石",
+    "TheFirst": "京口瓜洲一水间，",
+    "TheSecond": "钟山只隔数重山。",
+    "TheThird": "春风又绿江南岸，",
+    "TheFourth": "明月何时照我还。"
+  },
+  "114": {
+    "ID": 114,
+    "Name": "书湖阴先生壁",
+    "Author": "王安石",
+    "TheFirst": "茅檐长扫净无苔，",
+    "TheSecond": "花木成畦手自栽。",
+    "TheThird": "一水护田将绿绕，",
+    "TheFourth": "两山排闼送青来。"
+  },
+  "115": {
+    "ID": 115,
+    "Name": "六月二十七日望湖楼醉书",
+    "Author": "苏轼",
+    "TheFirst": "黑云翻墨未遮山，",
+    "TheSecond": "白雨跳珠乱入船。",
+    "TheThird": "卷地风来忽吹散，",
+    "TheFourth": "望湖楼下水如天。"
+  },
+  "116": {
+    "ID": 116,
+    "Name": "饮湖上初晴后雨",
+    "Author": "苏轼",
+    "TheFirst": "水光潋艳晴方好，",
+    "TheSecond": "山色空朦雨欲奇。",
+    "TheThird": "欲把西湖比西子，",
+    "TheFourth": "淡妆浓抹总相宜。"
+  },
+  "117": {
+    "ID": 117,
+    "Name": "惠崇春江晚景",
+    "Author": "苏轼",
+    "TheFirst": "竹外桃花三两枝，",
+    "TheSecond": "春江水暖鸭先知。",
+    "TheThird": "蒌蒿满地芦芽短，",
+    "TheFourth": "正是河豚欲上时。"
+  },
+  "118": {
+    "ID": 118,
+    "Name": "题西林壁",
+    "Author": "苏轼",
+    "TheFirst": "横看成岭侧成峰，",
+    "TheSecond": "远近高低各不同。",
+    "TheThird": "不识庐山真面目，",
+    "TheFourth": "只缘身在此山中。"
+  },
+  "119": {
+    "ID": 119,
+    "Name": "示儿",
+    "Author": "陆游",
+    "TheFirst": "死去元知万事空，",
+    "TheSecond": "但悲不见九州同。",
+    "TheThird": "王师北定中原日，",
+    "TheFourth": "家祭无忘告乃翁。"
+  },
+  "120": {
+    "ID": 120,
+    "Name": "秋夜将晓出篱门迎凉有感",
+    "Author": "陆游",
+    "TheFirst": "三万里河东入海，",
+    "TheSecond": "五千仞岳上摩天。",
+    "TheThird": "遗民泪尽胡尘里，",
+    "TheFourth": "难望王师又一年。"
+  },
+  "121": {
+    "ID": 121,
+    "Name": "四时田园杂兴",
+    "Author": "范成大",
+    "TheFirst": "昼出耘田夜绩麻，",
+    "TheSecond": "村庄儿女各当家。",
+    "TheThird": "童孙未解供耕织，",
+    "TheFourth": "也傍桑阴学种瓜。"
+  },
+  "122": {
+    "ID": 122,
+    "Name": "四时田园杂兴",
+    "Author": "范成大",
+    "TheFirst": "梅子金黄杏子肥，",
+    "TheSecond": "麦花雪白菜花稀。",
+    "TheThird": "日长篱落无人过，",
+    "TheFourth": "唯有蜻蜓蛱蝶飞。"
+  },
+  "123": {
+    "ID": 123,
+    "Name": "小池",
+    "Author": "杨万里",
+    "TheFirst": "泉眼无声惜细流，",
+    "TheSecond": "树阴照水爱晴柔。",
+    "TheThird": "小荷才露尖尖角，",
+    "TheFourth": "早有蜻蜓立上头。"
+  },
+  "124": {
+    "ID": 124,
+    "Name": "晓出净慈寺送林子方",
+    "Author": "杨万里",
+    "TheFirst": "毕竟西湖六月中，",
+    "TheSecond": "风光不与四时同。",
+    "TheThird": "接天莲叶无穷碧，",
+    "TheFourth": "映日荷花别样红。"
+  },
+  "125": {
+    "ID": 125,
+    "Name": "春日",
+    "Author": "朱熹",
+    "TheFirst": "胜日寻芳泗水滨，",
+    "TheSecond": "无边光景一时新。",
+    "TheThird": "等闲识得东风面，",
+    "TheFourth": "万紫千红总是春。"
+  },
+  "126": {
+    "ID": 126,
+    "Name": "题临安邸",
+    "Author": "林升",
+    "TheFirst": "山外青山楼外楼，",
+    "TheSecond": "西湖歌舞几时休。",
+    "TheThird": "暖风熏得游人醉，",
+    "TheFourth": "直把杭州做汴州。"
+  },
+  "127": {
+    "ID": 127,
+    "Name": "游园不值",
+    "Author": "叶绍翁",
+    "TheFirst": "应怜屐齿印苍苔，",
+    "TheSecond": "小扣柴扉久不开。",
+    "TheThird": "春色满园关不住，",
+    "TheFourth": "一枝红杏出墙来。"
+  },
+  "128": {
+    "ID": 128,
+    "Name": "乡村四月",
+    "Author": "翁卷",
+    "TheFirst": "绿遍山原白满川，",
+    "TheSecond": "子规声里雨如烟。",
+    "TheThird": "乡村四月闲人少，",
+    "TheFourth": "才了蚕桑又插田。"
+  },
+  "129": {
+    "ID": 129,
+    "Name": "墨梅",
+    "Author": "王冕",
+    "TheFirst": "我家洗砚池头树，",
+    "TheSecond": "朵朵花开淡墨痕。",
+    "TheThird": "不要人夸颜色好，",
+    "TheFourth": "只留清气满乾坤。"
+  },
+  "130": {
+    "ID": 130,
+    "Name": "石灰吟",
+    "Author": "于谦",
+    "TheFirst": "千锤万凿出深山，",
+    "TheSecond": "烈火焚烧若等闲。",
+    "TheThird": "粉身碎骨浑不怕，",
+    "TheFourth": "要留清白在人间。"
+  },
+  "131": {
+    "ID": 131,
+    "Name": "竹石",
+    "Author": "郑燮",
+    "TheFirst": "咬定青山不放松，",
+    "TheSecond": "立根原在破岩中。",
+    "TheThird": "千磨万击还坚韧，",
+    "TheFourth": "任尔东西南北风。"
+  },
+  "132": {
+    "ID": 132,
+    "Name": "村居",
+    "Author": "高鼎",
+    "TheFirst": "草长莺飞二月天，",
+    "TheSecond": "拂提杨柳醉春烟。",
+    "TheThird": "儿童散学归来早，",
+    "TheFourth": "忙趁东风放纸鸢。"
+  },
+  "133": {
+    "ID": 133,
+    "Name": "己亥杂诗",
+    "Author": "龚自珍",
+    "TheFirst": "九州生气恃风雷，",
+    "TheSecond": "万马齐喑究可哀。",
+    "TheThird": "我劝天公重抖擞，",
+    "TheFourth": "不拘一格降人才。"
+  },
+  "134": {
+    "ID": 134,
+    "Name": "己亥杂诗",
+    "Author": "龚自珍",
+    "TheFirst": "浩荡离愁白日斜，",
+    "TheSecond": "吟鞭东指即天涯。",
+    "TheThird": "落红不是无情物，",
+    "TheFourth": "化作春泥更护花"
+  },
+  "135": {
+    "ID": 135,
+    "Name": "江畔独步寻花",
+    "Author": "杜甫",
+    "TheFirst": "黄师塔前江水东，",
+    "TheSecond": "春光懒困倚微风。",
+    "TheThird": "桃花一簇开无主，",
+    "TheFourth": "可爱深红爱浅红。"
+  },
+  "136": {
+    "ID": 136,
+    "Name": "江畔独步寻花",
+    "Author": "杜甫",
+    "TheFirst": "黄四娘家花满蹊，",
+    "TheSecond": "千朵万朵压枝低。",
+    "TheThird": "流连戏蝶时时舞，",
+    "TheFourth": "自在娇莺恰恰啼。"
+  },
+  "137": {
+    "ID": 137,
+    "Name": "城东早春",
+    "Author": "杨巨源",
+    "TheFirst": "诗家清景在新春，",
+    "TheSecond": "绿柳才黄半未匀。",
+    "TheThird": "若待上林花似锦，",
+    "TheFourth": "出门俱是看花人。"
+  },
+  "138": {
+    "ID": 138,
+    "Name": "早春",
+    "Author": "韩愈",
+    "TheFirst": "天街小雨润如酥，",
+    "TheSecond": "草色遥看近却无。",
+    "TheThird": "最是一年春好处，",
+    "TheFourth": "绝胜烟柳满皇都。"
+  },
+  "139": {
+    "ID": 139,
+    "Name": "清平调",
+    "Author": "李白",
+    "TheFirst": "云想衣裳花想容，",
+    "TheSecond": "春风拂槛露华浓。",
+    "TheThird": "若非群玉山头见，",
+    "TheFourth": "会向瑶台月下逢。"
+  },
+  "140": {
+    "ID": 140,
+    "Name": "清平调",
+    "Author": "李白",
+    "TheFirst": "一枝红艳露凝香，",
+    "TheSecond": "云雨巫山枉断肠。",
+    "TheThird": "借问汉宫谁得似，",
+    "TheFourth": "可怜飞燕倚新妆。"
+  },
+  "141": {
+    "ID": 141,
+    "Name": "清平调",
+    "Author": "李白",
+    "TheFirst": "名花倾国两相欢，",
+    "TheSecond": "常得君王带笑看。",
+    "TheThird": "解释春风无限恨，",
+    "TheFourth": "沈香亭北倚阑干。"
+  },
+  "142": {
+    "ID": 142,
+    "Name": "江南逢李龟年",
+    "Author": "杜甫",
+    "TheFirst": "岐王宅里寻常见，",
+    "TheSecond": "崔九堂前几度闻。",
+    "TheThird": "正是江南好风景，",
+    "TheFourth": "落花时节又逢君。"
+  },
+  "143": {
+    "ID": 143,
+    "Name": "秋夕",
+    "Author": "杜牧",
+    "TheFirst": "银烛秋光冷画屏，",
+    "TheSecond": "轻罗小扇扑流萤。",
+    "TheThird": "天阶夜色凉如水，",
+    "TheFourth": "卧看牵牛织女星。"
+  },
+  "144": {
+    "ID": 144,
+    "Name": "泊秦淮",
+    "Author": "杜牧",
+    "TheFirst": "烟笼寒水月笼沙，",
+    "TheSecond": "夜泊秦淮近酒家。",
+    "TheThird": "商女不知亡国恨，",
+    "TheFourth": "隔江犹唱后庭花。"
+  },
+  "145": {
+    "ID": 145,
+    "Name": "寄扬州绰判官",
+    "Author": "杜牧",
+    "TheFirst": "青山隐隐水迢迢，",
+    "TheSecond": "秋尽江南草木凋。",
+    "TheThird": "二十四桥明月夜，",
+    "TheFourth": "玉人何处教吹箫。"
+  },
+  "146": {
+    "ID": 146,
+    "Name": "寒食",
+    "Author": "韩翃",
+    "TheFirst": "春城无处不飞花，",
+    "TheSecond": "寒食东风御柳斜。",
+    "TheThird": "日暮汉宫传蜡烛，",
+    "TheFourth": "轻烟散入五侯家。"
+  },
+  "147": {
+    "ID": 147,
+    "Name": "乌衣巷",
+    "Author": "刘禹锡",
+    "TheFirst": "朱雀桥边野草花，",
+    "TheSecond": "乌衣巷口夕阳斜。",
+    "TheThird": "旧时王谢堂前燕，",
+    "TheFourth": "飞入寻常百姓家。"
+  },
+  "148": {
+    "ID": 148,
+    "Name": "滁州西涧",
+    "Author": "韦应物",
+    "TheFirst": "独怜幽草涧边生，",
+    "TheSecond": "上有黄鹂深树鸣。",
+    "TheThird": "春潮带雨晚来急，",
+    "TheFourth": "野渡无人舟自横。"
+  },
+  "149": {
+    "ID": 149,
+    "Name": "春晴",
+    "Author": "王驾",
+    "TheFirst": "雨前初见花间蕊，",
+    "TheSecond": "雨后全无叶底花。",
+    "TheThird": "蜂蝶纷纷过墙去，",
+    "TheFourth": "却疑春色在邻家。"
+  },
+  "150": {
+    "ID": 150,
+    "Name": "登山",
+    "Author": "李涉",
+    "TheFirst": "终日昏昏醉梦间，",
+    "TheSecond": "忽闻春尽强登山。",
+    "TheThird": "因过竹院逢僧话，",
+    "TheFourth": "又得浮生半日闲。"
+  },
+  "151": {
+    "ID": 151,
+    "Name": "春日偶成",
+    "Author": "程颢",
+    "TheFirst": "云淡风轻近午天，",
+    "TheSecond": "傍花随柳过前川。",
+    "TheThird": "时人不识余心乐，",
+    "TheFourth": "将谓偷闲学少年。"
+  },
+  "152": {
+    "ID": 152,
+    "Name": "观书有感",
+    "Author": "朱熹",
+    "TheFirst": "半亩方塘一鉴开，",
+    "TheSecond": "天光云影共徘徊。",
+    "TheThird": "问渠那得清如许，",
+    "TheFourth": "为有源头活水来。"
+  },
+  "153": {
+    "ID": 153,
+    "Name": "立春偶成",
+    "Author": "张栻",
+    "TheFirst": "律回岁晚冰霜少，",
+    "TheSecond": "春到人间草木知。",
+    "TheThird": "便觉眼前生意满，",
+    "TheFourth": "东风吹水绿参差。"
+  },
+  "154": {
+    "ID": 154,
+    "Name": "咏华清宫",
+    "Author": "杜常",
+    "TheFirst": "行尽江南数十程，",
+    "TheSecond": "晓风残月入华清。",
+    "TheThird": "朝元阁上西风急，",
+    "TheFourth": "都入长杨作雨声。"
+  },
+  "155": {
+    "ID": 155,
+    "Name": "绝句",
+    "Author": "志南",
+    "TheFirst": "古木阴中系短篷，",
+    "TheSecond": "杖藜扶我过桥东。",
+    "TheThird": "沾衣欲湿杏花雨，",
+    "TheFourth": "吹面不寒杨柳风。"
+  },
+  "156": {
+    "ID": 156,
+    "Name": "春暮",
+    "Author": "曹",
+    "TheFirst": "门外无人问落花，",
+    "TheSecond": "绿阴冉冉遍天涯。",
+    "TheThird": "林莺蹄到无声处，",
+    "TheFourth": "青草池塘独听蛙。"
+  },
+  "157": {
+    "ID": 157,
+    "Name": "送春",
+    "Author": "王令",
+    "TheFirst": "三月残花落更开，",
+    "TheSecond": "小檐日日燕飞来。",
+    "TheThird": "子规夜半犹啼血，",
+    "TheFourth": "不信东风唤不回。"
+  },
+  "158": {
+    "ID": 158,
+    "Name": "初夏睡起",
+    "Author": "杨万里",
+    "TheFirst": "梅子流酸溅牙齿，",
+    "TheSecond": "芭蕉分绿上窗纱。",
+    "TheThird": "日长睡起无情思，",
+    "TheFourth": "闲看儿童捉柳花。"
+  },
+  "159": {
+    "ID": 159,
+    "Name": "雪梅",
+    "Author": "卢梅坡",
+    "TheFirst": "梅雪争春未肯降，",
+    "TheSecond": "骚人阁笔费评章。",
+    "TheThird": "梅须逊雪三分白，",
+    "TheFourth": "雪却输梅一段香。"
+  },
+  "160": {
+    "ID": 160,
+    "Name": "雪梅",
+    "Author": "卢梅坡",
+    "TheFirst": "有梅无雪不精神，",
+    "TheSecond": "有雪无诗俗了人。",
+    "TheThird": "日暮诗成天又雪，",
+    "TheFourth": "与梅并作十分春。"
+  },
+  "161": {
+    "ID": 161,
+    "Name": "嫦娥",
+    "Author": "李商隐",
+    "TheFirst": "云母屏风烛影深，",
+    "TheSecond": "长河渐落晓星沉。",
+    "TheThird": "嫦娥应悔偷灵药，",
+    "TheFourth": "碧海青天夜夜心。"
+  },
+  "162": {
+    "ID": 162,
+    "Name": "金缕衣",
+    "Author": "杜秋娘",
+    "TheFirst": "劝君莫惜金缕衣，",
+    "TheSecond": "劝君惜取少年时。",
+    "TheThird": "花开堪折直须折，",
+    "TheFourth": "莫待无花空折枝。"
+  },
+  "163": {
+    "ID": 163,
+    "Name": "闺怨",
+    "Author": "王昌龄",
+    "TheFirst": "闺中少妇不知愁，",
+    "TheSecond": "春日凝妆上翠楼。",
+    "TheThird": "忽见陌头杨柳色，",
+    "TheFourth": "悔教夫婿觅封侯。"
+  },
+  "164": {
+    "ID": 164,
+    "Name": "逢入京使",
+    "Author": "岑参",
+    "TheFirst": "故园东望路漫漫，",
+    "TheSecond": "双袖龙钟泪不干。",
+    "TheThird": "马上相逢无纸笔，",
+    "TheFourth": "凭君传语报平安。"
+  },
+  "165": {
+    "ID": 165,
+    "Name": "月夜",
+    "Author": "刘方平",
+    "TheFirst": "更深月色半人家，",
+    "TheSecond": "北斗阑干南斗斜。",
+    "TheThird": "今夜偏知春气暖，",
+    "TheFourth": "虫声新透绿窗纱。"
+  },
+  "166": {
+    "ID": 166,
+    "Name": "从军行",
+    "Author": "王昌龄",
+    "TheFirst": "青海长云暗雪山，",
+    "TheSecond": "孤城遥望雁门关。",
+    "TheThird": "黄沙百战穿金甲，",
+    "TheFourth": "不破楼兰终不还。"
+  },
+  "167": {
+    "ID": 167,
+    "Name": "从军行",
+    "Author": "王昌龄大",
+    "TheFirst": "漠风尘日色昏，",
+    "TheSecond": "红旗半卷出辕门。",
+    "TheThird": "前军夜战洮河北，",
+    "TheFourth": "已报生擒吐谷浑。"
+  },
+  "168": {
+    "ID": 168,
+    "Name": "从军行",
+    "Author": "王昌龄",
+    "TheFirst": "琵琶起舞换新声，",
+    "TheSecond": "总是关山旧别情。",
+    "TheThird": "撩乱边愁听不尽，",
+    "TheFourth": "高高明月照长城。"
+  },
+  "169": {
+    "ID": 169,
+    "Name": "客中行",
+    "Author": "李白",
+    "TheFirst": "兰陵美酒郁金香，",
+    "TheSecond": "玉碗盛来琥珀光。",
+    "TheThird": "但使主人能醉客，",
+    "TheFourth": "不知何处是他乡。"
+  },
+  "170": {
+    "ID": 170,
+    "Name": "春夜洛城闻笛",
+    "Author": "李白",
+    "TheFirst": "谁家玉笛暗飞声，",
+    "TheSecond": "散入春风满洛城。",
+    "TheThird": "此夜曲中闻折柳，",
+    "TheFourth": "何人不起故园情。"
+  },
+  "171": {
+    "ID": 171,
+    "Name": "军行",
+    "Author": "李白",
+    "TheFirst": "骝马新跨白玉鞍，",
+    "TheSecond": "战罢沙场月色寒。",
+    "TheThird": "城头铁鼓声犹震，",
+    "TheFourth": "匣里金刀血未干。"
+  },
+  "172": {
+    "ID": 172,
+    "Name": "与史郎中钦听黄鹤楼吹笛",
+    "Author": "李白",
+    "TheFirst": "一为迁客去长沙，",
+    "TheSecond": "西望长安不见家。",
+    "TheThird": "黄鹤楼中吹玉笛，",
+    "TheFourth": "江城五月落梅花。"
+  },
+  "173": {
+    "ID": 173,
+    "Name": "塞上听吹笛",
+    "Author": "高适",
+    "TheFirst": "雪净胡天牧马还，",
+    "TheSecond": "月明羌笛戍楼间。",
+    "TheThird": "借问梅花何处落，",
+    "TheFourth": "风吹一夜满关山。"
+  },
+  "174": {
+    "ID": 174,
+    "Name": "送李判官之润州行营",
+    "Author": "刘长卿",
+    "TheFirst": "万里辞家事鼓鼙，",
+    "TheSecond": "金陵驿路楚云西。",
+    "TheThird": "江春不肯留行客，",
+    "TheFourth": "草色青青送马蹄。"
+  },
+  "175": {
+    "ID": 175,
+    "Name": "赠花卿",
+    "Author": "杜甫",
+    "TheFirst": "锦城丝管日纷纷，",
+    "TheSecond": "半入江风半入云。",
+    "TheThird": "此曲只应天上有，",
+    "TheFourth": "人间那得几回闻。"
+  },
+  "176": {
+    "ID": 176,
+    "Name": "春行即兴",
+    "Author": "李华",
+    "TheFirst": "宜阳城下草萋萋，",
+    "TheSecond": "涧水东流复向西。",
+    "TheThird": "芳树无人花自落，",
+    "TheFourth": "春山一路鸟空啼。"
+  },
+  "177": {
+    "ID": 177,
+    "Name": "冬夜读书示子聿",
+    "Author": "陆游",
+    "TheFirst": "古人学问无遗力，",
+    "TheSecond": "少壮工夫老始成。",
+    "TheThird": "纸上得来终觉浅，",
+    "TheFourth": "绝知此事要躬行。"
+  },
+  "178": {
+    "ID": 178,
+    "Name": "戏问花门酒家翁",
+    "Author": "岑参",
+    "TheFirst": "老人七十仍沽酒，",
+    "TheSecond": "千壶百瓮花门口。",
+    "TheThird": "道旁榆荚巧似钱，",
+    "TheFourth": "摘来沽酒君肯否。"
+  },
+  "179": {
+    "ID": 179,
+    "Name": "登科后",
+    "Author": "孟郊",
+    "TheFirst": "昔日龌龊不足夸，",
+    "TheSecond": "今朝放荡思无涯。",
+    "TheThird": "春风得意马蹄疾，",
+    "TheFourth": "一日看尽长安花。"
+  },
+  "180": {
+    "ID": 180,
+    "Name": "春雪",
+    "Author": "韩愈",
+    "TheFirst": "新年都未有芳华，",
+    "TheSecond": "二月初惊见草芽。",
+    "TheThird": "白雪却嫌春色晚，",
+    "TheFourth": "故穿庭树作飞花。"
+  },
+  "181": {
+    "ID": 181,
+    "Name": "竹枝词",
+    "Author": "刘禹锡",
+    "TheFirst": "杨柳青青江水平，",
+    "TheSecond": "闻郎江上唱歌声。",
+    "TheThird": "东边日出西边雨，",
+    "TheFourth": "道是无晴却有晴。"
+  },
+  "182": {
+    "ID": 182,
+    "Name": "秋词",
+    "Author": "刘禹锡",
+    "TheFirst": "自古逢秋悲寂寥，",
+    "TheSecond": "我言秋日胜春朝。",
+    "TheThird": "晴空一鹤排云上，",
+    "TheFourth": "便引诗情到碧霄。"
+  },
+  "183": {
+    "ID": 183,
+    "Name": "暮江吟",
+    "Author": "白居易",
+    "TheFirst": "一道残阳铺水中，",
+    "TheSecond": "半江瑟瑟半江红。",
+    "TheThird": "可怜九月初三夜，",
+    "TheFourth": "露似真珠月似弓。"
+  },
+  "184": {
+    "ID": 184,
+    "Name": "惜牡丹花",
+    "Author": "白居易",
+    "TheFirst": "惆怅阶前红牡丹，",
+    "TheSecond": "晚来唯有两枝残。",
+    "TheThird": "明朝风起应吹尽，",
+    "TheFourth": "夜惜衰红把火看。"
+  },
+  "185": {
+    "ID": 185,
+    "Name": "白云泉",
+    "Author": "白居易",
+    "TheFirst": "天平山上白云泉，",
+    "TheSecond": "云自无心水自闲。",
+    "TheThird": "何必奔冲山下去，",
+    "TheFourth": "更添波浪向人间。"
+  },
+  "186": {
+    "ID": 186,
+    "Name": "离思",
+    "Author": "元稹",
+    "TheFirst": "曾经沧海难为水，",
+    "TheSecond": "除却巫山不是云。",
+    "TheThird": "取次花丛懒回顾，",
+    "TheFourth": "半缘修道半缘君。"
+  },
+  "187": {
+    "ID": 187,
+    "Name": "菊花",
+    "Author": "元稹",
+    "TheFirst": "秋丛绕舍似陶家，",
+    "TheSecond": "遍绕篱边日渐斜。",
+    "TheThird": "不是花中偏爱菊，",
+    "TheFourth": "此花开尽更无花。"
+  },
+  "188": {
+    "ID": 188,
+    "Name": "题乌江亭",
+    "Author": "杜牧",
+    "TheFirst": "胜败兵家事不期，",
+    "TheSecond": "包羞忍耻是男儿。",
+    "TheThird": "江东子弟多才俊，",
+    "TheFourth": "卷土重来未可知。"
+  },
+  "189": {
+    "ID": 189,
+    "Name": "陇西行",
+    "Author": "陈陶",
+    "TheFirst": "誓扫匈奴不顾身，",
+    "TheSecond": "五千貂锦丧胡尘。",
+    "TheThird": "可怜无定河边骨，",
+    "TheFourth": "犹是春闺梦里人。"
+  },
+  "190": {
+    "ID": 190,
+    "Name": "夜雨寄北",
+    "Author": "李商隐",
+    "TheFirst": "君问归期未有期，",
+    "TheSecond": "巴山夜雨涨秋池。",
+    "TheThird": "何当共剪西窗烛，",
+    "TheFourth": "却话巴山夜雨时。"
+  },
+  "191": {
+    "ID": 191,
+    "Name": "霜月",
+    "Author": "李商隐",
+    "TheFirst": "初闻征雁已无蝉，",
+    "TheSecond": "百尺楼高水接天。",
+    "TheThird": "青女素娥俱耐冷，",
+    "TheFourth": "月中霜里斗婵娟。"
+  },
+  "192": {
+    "ID": 192,
+    "Name": "官仓鼠",
+    "Author": "曹邺",
+    "TheFirst": "官仓老鼠大如斗，",
+    "TheSecond": "见人开仓亦不走。",
+    "TheThird": "健儿五粮百姓饥，",
+    "TheFourth": "谁遣朝朝入君口。"
+  },
+  "193": {
+    "ID": 193,
+    "Name": "山亭夏日",
+    "Author": "高骈",
+    "TheFirst": "绿树阴浓夏日长，",
+    "TheSecond": "楼台倒影入池塘。",
+    "TheThird": "水晶帘动微风起，",
+    "TheFourth": "满架蔷薇一院香。"
+  },
+  "194": {
+    "ID": 194,
+    "Name": "台城",
+    "Author": "韦庄",
+    "TheFirst": "江雨霏霏江草齐，",
+    "TheSecond": "六朝如梦鸟空啼。",
+    "TheThird": "无情最是台城柳，",
+    "TheFourth": "依旧烟笼十里堤。"
+  },
+  "195": {
+    "ID": 195,
+    "Name": "云",
+    "Author": "来鹄",
+    "TheFirst": "千形万象竟还空，",
+    "TheSecond": "映水藏山片复重。",
+    "TheThird": "无限旱苗枯欲尽，",
+    "TheFourth": "悠悠闲处作奇峰。"
+  },
+  "196": {
+    "ID": 196,
+    "Name": "焚书坑",
+    "Author": "章碣",
+    "TheFirst": "竹帛烟消帝业虚，",
+    "TheSecond": "关河空锁祖龙居。",
+    "TheThird": "坑灰未冷山东乱，",
+    "TheFourth": "刘项原来不读书。"
+  },
+  "197": {
+    "ID": 197,
+    "Name": "己亥岁",
+    "Author": "曹松",
+    "TheFirst": "泽国江山入战图，",
+    "TheSecond": "生民何计乐樵苏。",
+    "TheThird": "凭君莫话封侯事，",
+    "TheFourth": "一将功成万骨枯。"
+  },
+  "198": {
+    "ID": 198,
+    "Name": "淮上与友人别",
+    "Author": "郑谷",
+    "TheFirst": "扬子江头杨柳春，",
+    "TheSecond": "杨花愁杀渡江人。",
+    "TheThird": "数声风笛离亭晚，",
+    "TheFourth": "君向潇湘我向秦。"
+  },
+  "199": {
+    "ID": 199,
+    "Name": "淮上渔者",
+    "Author": "郑谷",
+    "TheFirst": "白头波上白头翁，",
+    "TheSecond": "家逐船移浦浦风。",
+    "TheThird": "一尺鲈鱼新钓得，",
+    "TheFourth": "儿孙吹火荻花中。"
+  },
+  "200": {
+    "ID": 200,
+    "Name": "再经胡城县",
+    "Author": "杜荀鹤",
+    "TheFirst": "去岁曾经此县城，",
+    "TheSecond": "县民无口不冤声。",
+    "TheThird": "今来县宰加朱绂，",
+    "TheFourth": "便是生灵血染成。"
+  }
+}

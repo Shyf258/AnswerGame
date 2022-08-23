@@ -27,6 +27,7 @@
   "4": {
     "ID": 4,
     "ProductName": "成语赚多多",
-    "PackageName": "com.ciyunjinchan.cyzdda"
+    "PackageName": "com.ciyunjinchan.cyzdda",
+    "IconPath": "icon_CYZDD"
   }
 }

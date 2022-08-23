@@ -12,7 +12,7 @@ using UnityEngine.Networking;
 public class GL_VersionManager : Singleton<GL_VersionManager>
 {
     #region 资源配置
-    public const string TotalUrl = "https://static.ciyunjinchan.com/Unity/LifeWinnerGold/";
+    public const string TotalUrl = "https://static.ciyunjinchan.com/Unity/idiomsGame/";
 
     private List<string> _resList = new List<string>()
     {
@@ -29,7 +29,7 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
 
     #region 图片下载
     //音频下载地址
-    public const string PictureUrl = "/Picture/{0}.jpg";
+    public const string PictureUrl = "/Picture/{0}.png";
     private int _curDownloadPictureIndex = 11;
 
 
@@ -108,13 +108,13 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
         int level = GL_PlayerData._instance.CurLevel;
         for (int i = level; i <= level+ 10; i++)
         {
-            string audio = i.ToString();
-            if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio!=null)
-            {
-                audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio + audio;
-            }
-            // DDebug.LogError("加载语音文件："+ audio);
-            _resList.Add(string.Format(AudioUrl,  audio));
+            // string audio = i.ToString();
+            // if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio!=null)
+            // {
+            //     audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio + audio;
+            // }
+            // // DDebug.LogError("加载语音文件："+ audio);
+            // _resList.Add(string.Format(AudioUrl,  audio));
 
             //计算图片
             string pPath = CalculatePictureUrl(i);

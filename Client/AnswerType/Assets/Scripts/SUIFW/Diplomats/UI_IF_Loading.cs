@@ -198,6 +198,11 @@ public class UI_IF_Loading : BaseUIForm
                 Transform zyxlz = UnityHelper.FindTheChildNode(gameObject, "ZYXLZ");
                 zyxlz.SetActive(true);
                 break;
+            case EBuildApp.CYZDD:
+                _bgImage.sprite = _bg[2];
+                Transform cyzdd = UnityHelper.FindTheChildNode(gameObject, "CYZDD");
+                cyzdd.SetActive(true);
+                break;
         }
 
     }

@@ -22,6 +22,7 @@ public enum EBuildApp
     RSDYJ = 1, //人生大赢家赚金
     BXDYJ = 2, //冰雪大赢家
     ZYXLZ = 3, //中药小郎中
+    CYZDD = 4, //成语赚多多
 }
 
 #endregion
@@ -91,6 +92,13 @@ public enum EGameModeType
     //HexaPuzzle = 0,  
     //ChipsMode = 1,
     Answer = 0,
+}
+
+public enum EGameUIType
+{
+    GuessFromExplain = 1,   //看释义猜成语
+    GuessFromPictures,  //看图猜成语
+    AncientPoetryCrossword, //古诗填字
 }
 
 #region 常用

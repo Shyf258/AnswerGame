@@ -74,6 +74,8 @@ namespace DataModule
         public Dictionary<int, TableActivityData> TableActivityData_Dictionary { get; set; }
         public Dictionary<int, TableActivitySignData> TableActivitySignData_Dictionary { get; set; }
         public Dictionary<int, TableNewbieSignData> TableNewbieSignData_Dictionary { get; set; }
+        public Dictionary<int, TableIdiomInfoData> TableIdiomInfoData_Dictionary { get; set; }
+        public Dictionary<int, TableAncientPoetryData> TableAncientPoetryData_Dictionary { get; set; }
 
         #region 单例
 
