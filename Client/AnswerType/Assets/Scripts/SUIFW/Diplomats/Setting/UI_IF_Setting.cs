@@ -11,6 +11,9 @@ using UnityEditor;
 
 public class UI_IF_Setting : BaseUIForm
 {
+    
+    public List<Sprite> _icon;
+    
     private Transform _audioBtn;
 
     private Transform _aboutUs;
@@ -228,9 +231,17 @@ public class UI_IF_Setting : BaseUIForm
     private void ShowPlayerMessage()
     {
         //显示游戏图标
-        Sprite sprite =  GetIcon();
-        _playerIcon.sprite = sprite;
-        _logo.sprite = sprite;
+        switch (AppSetting.BuildApp)
+        {
+            case EBuildApp.RSDYJ:
+                _playerIcon.sprite = _icon[0];
+                _logo.sprite = _icon[0];
+                break;
+            case EBuildApp.ZYXLZ:
+                _playerIcon.sprite = _icon[1];
+                _logo.sprite = _icon[1];
+                break;
+        }
         
         if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
         {
@@ -403,16 +414,5 @@ public class UI_IF_Setting : BaseUIForm
         }
     }
 
-
-    private Sprite GetIcon()
-    {
-        // GL_ConstData.WeChatAppId = appData.WeChatAppID;
-        // GL_ConstData.PackageName = appData.PackageName;
-        string iconPath = "Assets/Art/UI/Icon/" + _tableBuildAppData.IconPath + ".png";
-        Sprite texture = AssetDatabase.LoadAssetAtPath<Sprite>(iconPath);
-        return texture;
-    }
-    
-    
     
 }
