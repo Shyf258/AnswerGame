@@ -66,15 +66,6 @@ namespace SUIFW.Diplomats.Agreement
                 CloseUIForm();
             }));
             
-            RigisterButtonObjectEvent("UserAgree", go =>
-            {
-                GL_AD_Logic._instance.Open_TermsOfUse();
-            });
-            RigisterButtonObjectEvent("PrivacyAgree", go =>
-            {
-                GL_AD_Logic._instance.Open_Privacy();
-            });
-            
         }
 
         public override void OnHide()
