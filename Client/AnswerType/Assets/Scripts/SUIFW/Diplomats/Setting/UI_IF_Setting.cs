@@ -408,7 +408,7 @@ public class UI_IF_Setting : BaseUIForm
     {
         // GL_ConstData.WeChatAppId = appData.WeChatAppID;
         // GL_ConstData.PackageName = appData.PackageName;
-        string iconPath = "Assets/Art/UI/Image/Icon/" + _tableBuildAppData.IconPath + ".png";
+        string iconPath = "Assets/Art/UI/Icon/" + _tableBuildAppData.IconPath + ".png";
         Sprite texture = AssetDatabase.LoadAssetAtPath<Sprite>(iconPath);
         return texture;
     }
