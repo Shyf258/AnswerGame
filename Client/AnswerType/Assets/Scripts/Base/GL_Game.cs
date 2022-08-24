@@ -50,7 +50,7 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
         UI_Diplomats._instance.Init();
 
         //提前下载资源
-        GL_VersionManager._instance.StartCheckVersion();
+        //GL_VersionManager._instance.StartCheckVersion();
 
         _sceneSwitch = new GL_SceneSwitch();
         _sceneSwitch.Init();
