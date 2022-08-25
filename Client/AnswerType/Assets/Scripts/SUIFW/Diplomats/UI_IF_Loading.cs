@@ -198,6 +198,7 @@ public class UI_IF_Loading : BaseUIForm
                 Transform zyxlz = UnityHelper.FindTheChildNode(gameObject, "ZYXLZ");
                 zyxlz.SetActive(true);
                 break;
+            
         }
 
     }

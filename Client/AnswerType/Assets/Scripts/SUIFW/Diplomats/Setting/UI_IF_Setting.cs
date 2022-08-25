@@ -241,6 +241,10 @@ public class UI_IF_Setting : BaseUIForm
                 _playerIcon.sprite = _icon[1];
                 _logo.sprite = _icon[1];
                 break;
+            case EBuildApp.BXDYJ:
+                _playerIcon.sprite = _icon[2];
+                _logo.sprite = _icon[2];
+                break;
         }
         
         if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
