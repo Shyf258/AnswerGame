@@ -433,11 +433,13 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     //打开红包界面
     private void OnShowOpenRedPack()
     {
+        FinishGuide();
+        OnShowLimitNewGift();
         
-        Action<bool> ac1 = (bool set) => { CB_OnShowOpenRedPack(set); };
-        var conifg = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Guide);
-        object[] objects = { ac1, false, true, ERewardSource.Guide, conifg.rewards };
-        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_SurpriseRedpack, objects);
+        // Action<bool> ac1 = (bool set) => { CB_OnShowOpenRedPack(set); };
+        // var conifg = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Guide);
+        // object[] objects = { ac1, false, true, ERewardSource.Guide, conifg.rewards };
+        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_SurpriseRedpack, objects);
     }
     private void CB_OnShowOpenRedPack(bool set)
     {
