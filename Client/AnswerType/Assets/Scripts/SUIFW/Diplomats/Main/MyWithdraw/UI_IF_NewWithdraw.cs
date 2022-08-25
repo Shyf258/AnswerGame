@@ -747,10 +747,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 {
                     _playerIcon.sprite = t;
                     _txtNickName.text = GL_PlayerData._instance.WeChatName;
-                    _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
+                
                 });
             }
-         
+            _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
         }
         
         #endregion
