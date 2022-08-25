@@ -558,6 +558,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
                 break;
         }
 #endif
+
 #if UNITY_ANDROID && !UNITY_EDITOR
                 if (_javaObject != null)
                     _javaObject.Call("login",loginType);
