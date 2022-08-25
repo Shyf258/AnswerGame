@@ -75,15 +75,10 @@ public class GL_GameMode_Answer : GL_GameMode
 
     public void CreateLevel(int levelIndex)
     {
-
+        levelIndex = GL_SceneManager._instance.CalculateReallevelIndex(levelIndex);
         //创建新关卡
         levelIndex -= 1;
-        if (levelIndex > _levelList.Count)
-        {
-            //1-500
-            levelIndex = UnityEngine.Random.Range(0, _levelList.Count);
-        }
-        else if(levelIndex < 0) 
+        if(levelIndex < 0) 
         {
             levelIndex = 0;
         }
@@ -118,6 +113,7 @@ public class GL_GameMode_Answer : GL_GameMode
     private void CB_SettleWait(string json)
     {
         GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LevelUp);
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.CompleteLevel + GL_PlayerData._instance.UserDayLevel);
         //GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.ActiveGame);
         LevelState = ELevelState.Settle1;
         if (GL_PlayerData._instance.SystemConfig != null)

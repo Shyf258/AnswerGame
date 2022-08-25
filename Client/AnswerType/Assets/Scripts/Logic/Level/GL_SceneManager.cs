@@ -112,6 +112,16 @@ public class GL_SceneManager : Singleton<GL_SceneManager>
         //UI_Diplomats._instance.RefreshGame();
     }
 
+    //计算真实关卡id
+    public int CalculateReallevelIndex(int level)
+    {
+        int count = DataModuleManager._instance.TableAnswerInfoData_Dictionary.Count;
+        int result = level % count;
+        if (result == 0)
+            result = level;
+        return result;
+    }
+
     #endregion
 
     #region 接口
