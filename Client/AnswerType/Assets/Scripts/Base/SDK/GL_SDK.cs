@@ -554,7 +554,6 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
                 break;
             case "qq":
                 {
-
                 }
                 break;
         }
