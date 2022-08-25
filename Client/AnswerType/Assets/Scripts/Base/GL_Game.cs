@@ -189,6 +189,7 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
                 GL_CoreData._instance.AntiTime ++;
             }
         }
+        GL_CoreData._instance.RealSaveData();
     }
     public void ShowTips()
     {
