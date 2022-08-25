@@ -25,6 +25,8 @@ public class UI_IF_LimitNewGift : BaseUIForm
         RigisterButtonObjectEvent("Button2", (go => { OnClickButton(); }));
         RigisterButtonObjectEvent("Button3", (go => { OnClickButton(); }));
 
+        RigisterButtonObjectEvent("Exit", go => { OnClickButton(); });
+        
         _timer = _totalTime;
     }
 
