@@ -420,7 +420,7 @@ MonoBehaviour:
   _isOpenMainUp: 0
   Sprites:
   - {fileID: 21300000, guid: e572e08a5e35deb4698a631d47220259, type: 3}
-  - {fileID: 21300000, guid: 6c91a4fe6ccd46541b134b14b845b2cf, type: 3}
+  - {fileID: 21300000, guid: 5a254f92a5a6ef040b1a8e885dbb767d, type: 3}
 --- !u!1 &3405970350187631748
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +451,7 @@ RectTransform:
   m_GameObject: {fileID: 3405970350187631748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0874138, y: 1.0874138, z: 1.0874138}
   m_Children:
   - {fileID: 8654142735570783815}
   m_Father: {fileID: 1645266799897997459}
@@ -1177,7 +1177,7 @@ PrefabInstance:
     - target: {fileID: 5888716894833389143, guid: 786b7ed9906243840a412180b7112896,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5958763470500458719, guid: 786b7ed9906243840a412180b7112896,
         type: 3}
@@ -1382,7 +1382,7 @@ PrefabInstance:
     - target: {fileID: 8236281690526217211, guid: c63ea5a76cd89f64889a020a517383d3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 329.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8236281690526217211, guid: c63ea5a76cd89f64889a020a517383d3,
         type: 3}
