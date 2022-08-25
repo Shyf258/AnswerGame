@@ -18,9 +18,9 @@ public class GL_Analytics_Logic : Singleton<GL_Analytics_Logic>
         GL_SDK._instance.LogEvent(GetAnalyticsData(type) + suffix, string.Empty);
     }
 
-    public void SendLogEvent(string type, int value)
+    public void SendLogEvent(string type)
     {
-        GL_SDK._instance.LogEvent(type, value.ToString());
+        GL_SDK._instance.LogEvent(type, "");
     }
 
     public void SendLogEvent(EAnalyticsType type)
