@@ -741,12 +741,16 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void RefreshPlayer()
         {
-            GL_PlayerData._instance.GetWeChatIcon((t) =>
+            if (GL_PlayerData._instance.IsLoginWeChat())
             {
-                _playerIcon.sprite = t;
-                _txtNickName.text = GL_PlayerData._instance.WeChatName;
-                _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
-            });
+                GL_PlayerData._instance.GetWeChatIcon((t) =>
+                {
+                    _playerIcon.sprite = t;
+                    _txtNickName.text = GL_PlayerData._instance.WeChatName;
+                    _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
+                });
+            }
+         
         }
         
         #endregion
