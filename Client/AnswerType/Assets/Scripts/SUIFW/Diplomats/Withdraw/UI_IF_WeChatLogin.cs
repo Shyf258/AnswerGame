@@ -84,6 +84,8 @@ public class UI_IF_WeChatLogin : BaseUIForm
         {
             if (!string.IsNullOrEmpty(msg))
             {
+                
+                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatSuccess);
                 SUIFW.Diplomats.Common.UI_HintMessage._.ShowMessage(/*transform.parent, */"登陆成功");
                 GL_PlayerData._instance.CB_WeChatLoginSuccess(msg);
                 //YS_NetLogic._instance.InviteConfig();
@@ -91,6 +93,8 @@ public class UI_IF_WeChatLogin : BaseUIForm
             }
             else
             {
+                
+                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatFails);
                 SUIFW.Diplomats.Common.UI_HintMessage._.ShowMessage(/*transform.parent,*/ "登陆失败");
             }
          
