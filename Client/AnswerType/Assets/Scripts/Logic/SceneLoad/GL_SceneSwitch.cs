@@ -57,7 +57,7 @@ public class GL_SceneSwitch
         if(AppSetting.BuildTime > 0)
         {
             double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
-            if (time >= 12 * 60 * 60)
+            if (time >= AppSetting.BuildHour * 60 * 60)
             {
                 GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
                 isAgreeGDPR = 1;

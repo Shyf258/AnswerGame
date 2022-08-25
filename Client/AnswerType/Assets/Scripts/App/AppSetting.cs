@@ -17,6 +17,7 @@ public static class AppSetting
     public static bool Check;
     public static bool IsSikpWechatLogin;
     public static double BuildTime;
+    public static int BuildHour;
     public static void Init()
     {
         AppSettingConfig config = Resources.Load<AppSettingConfig>("AppSettingConfig");
@@ -33,6 +34,7 @@ public static class AppSetting
             BuildApp = EBuildApp.RSDYJ;
             Check = false;
             IsSikpWechatLogin = false;
+            BuildHour = 0;
         }
         else
         {
@@ -48,6 +50,7 @@ public static class AppSetting
             Check = config._check;
             IsSikpWechatLogin = config._skipWeChatLogin;
             BuildTime = config._buildTime;
+            BuildHour = config._buildHour;
         }
         
     }
