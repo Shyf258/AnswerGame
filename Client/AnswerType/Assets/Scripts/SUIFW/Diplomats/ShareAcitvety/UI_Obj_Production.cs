@@ -318,7 +318,7 @@ public class UI_Obj_Production : UIObjectBase
     
     private void GetMoney()
     {
-        GL_SDK._instance.PopUp();
+        //GL_SDK._instance.PopUp();
         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_ProductionGrow, (set) =>
         {
             if (set)

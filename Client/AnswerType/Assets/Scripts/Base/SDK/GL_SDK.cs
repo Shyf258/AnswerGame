@@ -202,25 +202,25 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     public void PopUp()
     {
         string str = "观看完整视频可获得高额奖励";
-        try
-        {
-            if (GL_PlayerData._instance.CbPlayAd != null)
-            {
-                if (GL_PlayerData._instance.CbPlayAd.induceRate>=Random.Range(1,10000) )
-                {
-                    str =  "点击广告可以获得更高额度奖励哟！";
-                }
-            }
-            else
-            {
-                str =   "观看完整视频可获得高额奖励";
-            }
-        }
-        catch
-        {
-            str = "观看完整视频可获得高额奖励";
-            GL_PlayerData._instance.GetPlayAdConfig();
-        }
+        //try
+        //{
+        //    if (GL_PlayerData._instance.CbPlayAd != null)
+        //    {
+        //        if (GL_PlayerData._instance.CbPlayAd.induceRate>=Random.Range(1,10000) )
+        //        {
+        //            str =  "点击广告可以获得更高额度奖励哟！";
+        //        }
+        //    }
+        //    else
+        //    {
+        //        str =   "观看完整视频可获得高额奖励";
+        //    }
+        //}
+        //catch
+        //{
+        //    str = "观看完整视频可获得高额奖励";
+        //    GL_PlayerData._instance.GetPlayAdConfig();
+        //}
         
         
         
