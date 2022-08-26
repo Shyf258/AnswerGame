@@ -1,0 +1,102 @@
+{
+  "1": {
+    "ID": 1,
+    "TitleText": "小苏打对牙齿有什么作用？",
+    "Select1": "小苏打好吃",
+    "Select2": "清除牙垢",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "2": {
+    "ID": 2,
+    "TitleText": "正常人的心率是？",
+    "Select1": "75次/m",
+    "Select2": "2500次/m",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "3": {
+    "ID": 3,
+    "TitleText": "下方哪个是人体正常体温？",
+    "Select1": "36℃",
+    "Select2": "63℃",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "4": {
+    "ID": 4,
+    "TitleText": "血小板有什么用？",
+    "Select1": "卖萌",
+    "Select2": "维护血管壁完整",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "5": {
+    "ID": 5,
+    "TitleText": "两大血型系统分别是？",
+    "Select1": "ABO和RH",
+    "Select2": "安卓和苹果",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "6": {
+    "ID": 6,
+    "TitleText": "不管是服用什么药物都要忌什么？",
+    "Select1": "忌吸烟",
+    "Select2": "忌吃饭",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "7": {
+    "ID": 7,
+    "TitleText": "有机整体是指？",
+    "Select1": "五脏",
+    "Select2": "脚指甲",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "8": {
+    "ID": 8,
+    "TitleText": "大蒜可以预防什么？",
+    "Select1": "口臭",
+    "Select2": "感冒",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "9": {
+    "ID": 9,
+    "TitleText": "饮酒时不宜吃下列哪种？",
+    "Select1": "鹅卵石",
+    "Select2": "下酒菜",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  },
+  "10": {
+    "ID": 10,
+    "TitleText": "冰箱里的茶叶有什么作用？",
+    "Select1": "去腥味",
+    "Select2": "省电",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "TestVideo.mp4"
+  }
+}

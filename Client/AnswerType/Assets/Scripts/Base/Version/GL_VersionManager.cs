@@ -103,6 +103,8 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
     /// </summary>
     public void StartCheckVersion()
     {
+        IsDone = true;
+        return;
         // 初始化状态
         IsDone = false;
 

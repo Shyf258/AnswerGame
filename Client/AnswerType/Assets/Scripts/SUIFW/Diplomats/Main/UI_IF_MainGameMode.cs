@@ -5,18 +5,19 @@ using DG.Tweening;
 using SUIFW;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public partial class UI_IF_Main
 {
 
     #region 答题玩法
 
-    private Transform _imageMode;   //图片题目
-    private Image _imImage;
-    private Text _imText;
+    //private Transform _imageMode;   //图片题目
+    //private Image _imImage;
+    //private Text _imText;
 
-    private Transform _textMode;    //文字题目
-    private Text _tmText;
+    //private Transform _textMode;    //文字题目
+    //private Text _tmText;
 
     /// <summary>
     /// 选择按键组
@@ -43,19 +44,12 @@ public partial class UI_IF_Main
 
     #endregion
 
+    private VideoPlayer _videoPlayer;
     protected void InitGameMode()
     {
 
         #region 游戏玩法初始化
         _nowAnswer = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "UserLevel");
-        _imageMode = UnityHelper.FindTheChildNode(gameObject, "ImageMode");
-        _imImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(_imageMode.gameObject, "IM_Image");
-        _imText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_imageMode.gameObject, "IM_Text");
-
-
-        _textMode = UnityHelper.FindTheChildNode(gameObject, "TextMode");
-        _tmText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_textMode.gameObject, "TM_Text");
-
 
         _choiceGroup = UnityHelper.FindTheChildNode(gameObject, "ChoiceBtnGroup");
         _btnA = UnityHelper.GetTheChildNodeComponetScripts<Button>(_choiceGroup.gameObject, "ChoiceBtn1");
@@ -80,6 +74,9 @@ public partial class UI_IF_Main
         _showRight = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowRight");
         _showWrong = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowWrong");
 
+        _videoPlayer = UnityHelper.GetTheChildNodeComponetScripts<VideoPlayer>(_answerPageShow.gameObject, "Video");
+
+
         //财神
         _moneyPool = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "MoneyPool");
         RigisterButtonObjectEvent(_moneyPool, gp =>
@@ -98,6 +95,7 @@ public partial class UI_IF_Main
 
     }
 
+    private string PATH = "https://static.ciyunjinchan.com/Unity/Video/Short/";
     #region 答题玩法
     //刷新题目
     public void RefreshGameMode(EventParam param)
@@ -107,49 +105,9 @@ public partial class UI_IF_Main
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
         if (info == null)
             return;
-        Sprite s;
-        if (!string.IsNullOrEmpty(info.Picture))
-        {
-            //var sa = GL_LoadAssetMgr._instance.LoadAB<Texture2D>(GL_ConstData.LevelImagePath, info.Picture);
-            //s = Sprite.Create(sa, new Rect(0, 0, sa.width, sa.height), Vector2.zero); 
-
-            //s = GL_LoadAssetMgr._instance.Load<Sprite>(GL_ConstData.LevelImagePath + info.Picture);
-
-            string path = DownloadConfig.downLoadPath + string.Format(GL_VersionManager.PictureUrl, info.Picture);
-#if UNITY_ANDROID && !UNITY_EDITOR || UNITY_EDITOR_OSX
-        path = "file://" + path;
-#endif
-            GL_ServerCommunication._instance.GetTexturePic(path, (t) =>
-            {
-                if (t == null)
-                {
-                    _imageMode.gameObject.SetActive(false);
-                    _textMode.gameObject.SetActive(true);
-
-                    _tmText.text = info.TitleText;
-                }
-                else
-                {
-                    s = Sprite.Create(t, new Rect(0, 0, t.width, t.height), Vector2.zero);
-
-                    //图片题目
-                    _imageMode.gameObject.SetActive(true);
-                    _textMode.gameObject.SetActive(false);
-
-                    _imImage.sprite = s;
-                    _imImage.SetNativeSize();
-                    _imText.text = info.TitleText;
-                }
-            });
-        }
-        else
-        {
-            //文字题目
-            _imageMode.gameObject.SetActive(false);
-            _textMode.gameObject.SetActive(true);
-
-            _tmText.text = info.TitleText;
-        }
+        //刷新视频
+        _videoPlayer.url = PATH + info.Picture;
+        _videoPlayer.Play();
 
         //刷新选项
         _btnAText.text = info.Select1;
