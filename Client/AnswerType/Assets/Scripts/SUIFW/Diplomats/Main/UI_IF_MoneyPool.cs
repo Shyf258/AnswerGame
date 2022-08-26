@@ -162,7 +162,7 @@ namespace SUIFW.Diplomats.Main
             }
             else 
             {
-                GL_SDK._instance.PopUp();
+                //GL_SDK._instance.PopUp();
                 GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawPool, (set) => 
                 {
                     if (set)

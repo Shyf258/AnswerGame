@@ -250,7 +250,7 @@ public class FF_Task_Config
     /// </summary>
     private void Video(Action callback=null)
     {
-        GL_SDK._instance.PopUp();
+        //GL_SDK._instance.PopUp();
         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_GetLevelReward,(delegate(bool b)
         {
             if (b)

@@ -164,7 +164,7 @@ namespace SUIFW.Diplomats.Common
                     adsite = GL_AD_Interface.AD_Reward_GetLevelReward;
                     break;
             }
-            GL_SDK._instance.PopUp();
+            //GL_SDK._instance.PopUp();
             GL_AD_Logic._instance.PlayAD(adsite, go =>
             {
                 _action?.Invoke();

@@ -113,6 +113,7 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
 
         if (GL_SDK._instance.GetADType(ad) == EADType.Reward)
         {
+            GL_SDK._instance.PopUp();
             if (sceneID == 0)
                 sceneID = GL_ConstData.SceneID_Normal;
             
