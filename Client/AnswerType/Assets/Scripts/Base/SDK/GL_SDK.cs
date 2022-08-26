@@ -538,6 +538,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     /// <param name="type">wx:微信登陆  qq:qq登陆</param>
     public void Login(string loginType, Action<string> action)
     {
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatClick);
         _loginCallback = action;
 #if UNITY_EDITOR
         //模拟
