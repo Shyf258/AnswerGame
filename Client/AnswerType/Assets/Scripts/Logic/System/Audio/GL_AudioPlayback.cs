@@ -62,22 +62,20 @@ public class GL_AudioPlayback : Mono_Singleton_DontDestroyOnLoad<GL_AudioPlaybac
     //刷新背景音
     private void PlayBGM(bool set)
     {
-        if (_bgmAudio == null)
-        {
-            _bgmAudio = PlayAudio(1);
-            if(_bgmAudio != null)
-                _bgmAudio.transform.parent = transform;
-        }
-        if (set)
-        {
-            _bgmAudio?.RefreshAudio();
-        }
-        else
-        {
-            _bgmAudio?.StopAudio();
-        }
-
-
+        // if (_bgmAudio == null)
+        // {
+        //     _bgmAudio = PlayAudio(1);
+        //     if(_bgmAudio != null)
+        //         _bgmAudio.transform.parent = transform;
+        // }
+        // if (set)
+        // {
+        //     _bgmAudio?.RefreshAudio();
+        // }
+        // else
+        // {
+        //     _bgmAudio?.StopAudio();
+        // }
     }
     // private void PlayGameBGM(bool set)
     // {

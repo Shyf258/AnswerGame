@@ -231,6 +231,17 @@ public class GL_CoreData : Singleton<GL_CoreData>
         set { _archivedData._nowRewardCount = value; }
     }
 
+
+    public bool VideoVolume
+    {
+        get { return _archivedData._videoVolume; }
+        set
+        {
+            _archivedData._videoVolume = value;
+            SaveData();
+        }
+    }
+
     //背景音乐开关
     public bool BGMAudioOn
     {
@@ -447,7 +458,8 @@ public class ArchivedData_Character
     public bool anti = false;
     
     public bool _nonage = false;
-
+    
+    public bool _videoVolume;
 
 }
 

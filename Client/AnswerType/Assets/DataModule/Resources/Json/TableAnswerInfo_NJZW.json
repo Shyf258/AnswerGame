@@ -17,7 +17,7 @@
     "CorrectAnswer": [
       1
     ],
-    "Picture": "TestVideo.mp4"
+    "Picture": "testWidth.mp4"
   },
   "3": {
     "ID": 3,
@@ -37,7 +37,7 @@
     "CorrectAnswer": [
       2
     ],
-    "Picture": "TestVideo.mp4"
+    "Picture": "testWidth.mp4"
   },
   "5": {
     "ID": 5,
@@ -57,7 +57,7 @@
     "CorrectAnswer": [
       1
     ],
-    "Picture": "TestVideo.mp4"
+    "Picture": "testWidth.mp4"
   },
   "7": {
     "ID": 7,
@@ -77,7 +77,7 @@
     "CorrectAnswer": [
       2
     ],
-    "Picture": "TestVideo.mp4"
+    "Picture": "testWidth.mp4"
   },
   "9": {
     "ID": 9,
@@ -97,6 +97,6 @@
     "CorrectAnswer": [
       1
     ],
-    "Picture": "TestVideo.mp4"
+    "Picture": "testWidth.mp4"
   }
 }
