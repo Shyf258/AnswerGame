@@ -24,7 +24,7 @@ public class GL_ConstData
 
 
     public static string PackageName = "com.ciyunjinchan.rsbzsk";
-    public static string WeChatAppId = "wx082f10652f21b01f";
+    public static string WeChatAppId = "wx9016768c8f632e0c";
 
     //音效 路径
     public const string Path_AudioPrefab = "Prefab/Audio/";
