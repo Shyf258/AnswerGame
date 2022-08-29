@@ -141,7 +141,7 @@ namespace SUIFW.Diplomats.Main
         
         public void OnBtnWithdraw()
         {
-            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolGrow);
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolGrowBTN);
             if(_isCoolDown > 0)
             {
                 UI_HintMessage._.ShowMessage("冷却中，可观看其他视频充能");
@@ -162,11 +162,13 @@ namespace SUIFW.Diplomats.Main
             }
             else 
             {
-                //GL_SDK._instance.PopUp();
+                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolPlayVideo);
                 GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawPool, (set) => 
                 {
                     if (set)
                     {
+                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolVideoFinish);
+                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolVideoCBFinish);
                         _isCoolDown = Time.time + 9.9f;
                         
                 
@@ -179,6 +181,11 @@ namespace SUIFW.Diplomats.Main
                         {
                             RefreshData();
                         }
+                    }
+                    else
+                    {
+                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolVideoFail);
+                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolVideoCBFail);
                     }
                 },GL_ConstData.SceneID_MoneyPool);
             }
