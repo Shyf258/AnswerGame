@@ -44,6 +44,14 @@ public partial class UI_IF_Main
 
     #endregion
 
+    #region ÔÝÍ£
+
+    private Transform _pause;
+
+    private Button _pauseBtn;
+    
+    #endregion
+    
     private Toggle _volume;
     
     private VideoPlayer _videoPlayer;
@@ -105,6 +113,22 @@ public partial class UI_IF_Main
         _volume.isOn = GL_CoreData._instance.VideoVolume;
         _videoPlayer.loopPointReached += VideoFinish;
 
+        Button _playBtn;
+        _playBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "Video");
+        RigisterButtonObjectEvent(_playBtn, go =>
+        {
+            _pause.SetActive(true);
+            _videoPlayer.Pause();
+        });
+        
+        //ÔÝÍ£
+        _pause = UnityHelper.FindTheChildNode(_answerPageShow.gameObject, "Pause");
+        _pauseBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "Pause");
+        RigisterButtonObjectEvent(_pauseBtn, go =>
+        {
+            _pause.SetActive(false);
+            _videoPlayer.Play();
+        });
     }
 
     private string PATH = "https://static.ciyunjinchan.com/Unity/Video/Short/";
@@ -239,5 +263,6 @@ public partial class UI_IF_Main
     private void VideoFinish(VideoPlayer videoSource)
     {
         DDebug.LogError("Íê³É²¥·Å¡£");
+        _pause.SetActive(true);
     }
 }

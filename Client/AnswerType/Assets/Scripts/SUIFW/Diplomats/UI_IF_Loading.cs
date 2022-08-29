@@ -125,7 +125,7 @@ public class UI_IF_Loading : BaseUIForm
 
     public override void Refresh(bool recall)
     {
-        SetPackage();
+        
     }
 
     public override void RefreshLanguage()
