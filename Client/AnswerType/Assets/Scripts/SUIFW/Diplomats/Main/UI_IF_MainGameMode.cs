@@ -84,7 +84,7 @@ public partial class UI_IF_Main
         _moneyPool = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "MoneyPool");
         RigisterButtonObjectEvent(_moneyPool, gp =>
         {
-            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.EnterMoneyPool);
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolIcon);
             UI_Diplomats._instance.ShowUI(SysDefine.UI_IF_MoneyPool);
         });
 
