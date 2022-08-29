@@ -44,6 +44,8 @@ public partial class UI_IF_Main
 
     #endregion
 
+    private Toggle _volume;
+    
     private VideoPlayer _videoPlayer;
     protected void InitGameMode()
     {
@@ -93,6 +95,16 @@ public partial class UI_IF_Main
         #endregion
 
 
+        _volume = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(_answerPageShow.gameObject, "Volume");
+        _volume.onValueChanged.AddListener(set =>
+        {
+            GL_CoreData._instance.VideoVolume = set;
+           VideoVolume(set);
+        });
+
+        _volume.isOn = GL_CoreData._instance.VideoVolume;
+        _videoPlayer.loopPointReached += VideoFinish;
+
     }
 
     private string PATH = "https://static.ciyunjinchan.com/Unity/Video/Short/";
@@ -113,14 +125,14 @@ public partial class UI_IF_Main
         _btnAText.text = info.Select1;
         _btnBText.text = info.Select2;
 
-        GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
+        // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
 
         _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
     }
     private void OnClickChoice(int index)
     {
         GL_SceneManager._instance.CurGameMode.UI_Choice(index);
-        GL_SceneManager._instance._levelAudio.StopAudio();
+        // GL_SceneManager._instance._levelAudio.StopAudio();
         // MoveChoiceGroup(false);
     }
 
@@ -210,4 +222,22 @@ public partial class UI_IF_Main
         // _growBtn.SetActive(false);
     }
     #endregion
+    
+    //声音开关
+    private void VideoVolume(bool set)
+    {
+        if (set)
+        {
+             _videoPlayer.SetDirectAudioVolume(0,1);
+        }
+        else
+        {
+            _videoPlayer.SetDirectAudioVolume(0,0);
+        }
+    }
+
+    private void VideoFinish(VideoPlayer videoSource)
+    {
+        DDebug.LogError("完成播放。");
+    }
 }
