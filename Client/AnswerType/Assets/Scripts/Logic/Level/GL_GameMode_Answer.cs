@@ -113,8 +113,7 @@ public class GL_GameMode_Answer : GL_GameMode
     private void CB_SettleWait(string json)
     {
         GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LevelUp);
-        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.CompleteLevel + GL_PlayerData._instance.UserDayLevel);
-        //GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.ActiveGame);
+  GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.CompleteLevel + GL_PlayerData._instance.UserDayLevel);        //GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.ActiveGame);
         LevelState = ELevelState.Settle1;
         if (GL_PlayerData._instance.SystemConfig != null)
         {
@@ -164,6 +163,7 @@ public class GL_GameMode_Answer : GL_GameMode
     /// </summary>
     private void Cb_ShowCashCoin(int value)
     {
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.CompleteLevel.ToString() + (GL_PlayerData._instance.UserDayLevel));
         GetRed(value);
         // _withdrawCallback ?.Invoke();
         if (value == 1)

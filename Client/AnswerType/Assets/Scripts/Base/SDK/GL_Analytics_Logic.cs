@@ -18,9 +18,9 @@ public class GL_Analytics_Logic : Singleton<GL_Analytics_Logic>
         GL_SDK._instance.LogEvent(GetAnalyticsData(type) + suffix, string.Empty);
     }
 
-    public void SendLogEvent(string type, int value)
+    public void SendLogEvent(string type)
     {
-        GL_SDK._instance.LogEvent(type, value.ToString());
+        GL_SDK._instance.LogEvent(type, "");
     }
 
     public void SendLogEvent(EAnalyticsType type)
@@ -59,6 +59,7 @@ public enum EAnalyticsType
     /// <summary>/// 微信登录成功/// </summary>
     WeChatLoginResult,
 
+ 
     /// <summary>/// 里程碑奖励手动领取/// </summary>
     MilestoneClick,
     /// <summary>/// 里程碑奖励领取/// </summary>
@@ -191,7 +192,6 @@ public enum EAnalyticsType
     /// <summary>/// 0.88提现成功/// </summary>
     WithDrawHighSuccess,
     
-    
     //财神
     /// <summary>/// 财神ICON点击/// </summary>
     MoneyPoolIcon,
@@ -228,7 +228,7 @@ public static class AnalyticsEvents
 
         {EAnalyticsType.ActiveGame,"jihuoxinxi_anjian_01"},
         {EAnalyticsType.WeChatLoginResult,"weixindengluchenggong_001"},
-
+        
         {EAnalyticsType.MilestoneClick,"lichengbei_dianji_01"},
         {EAnalyticsType.MilestonceGet,"lichengbei_dianji_02"},
         
@@ -305,7 +305,6 @@ public static class AnalyticsEvents
         {EAnalyticsType.WithDrawHigh,"tixian_0.88_anjian"},
         {EAnalyticsType.WithDrawHighSuccess,"tixian_0.88_chenggong"},
         
-         
         //财神  MoneyPoolIcon,
         {EAnalyticsType.MoneyPoolIcon,"caishen_icon_01"},
         {EAnalyticsType.MoneyPoolGrowBTN,"caishen_duobeidianji_01"},
