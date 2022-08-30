@@ -134,7 +134,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 Init(EnumMyWithdraw.Gold);
 
                 //因为需要排序, 所以延迟一会检测
-                Invoke(nameof(TriggerGuide), 0.05f);
+                if(GL_PlayerData._instance.IsEnoughCoin())
+                    Invoke(nameof(TriggerGuide), 0.05f);
             });
         }
         
