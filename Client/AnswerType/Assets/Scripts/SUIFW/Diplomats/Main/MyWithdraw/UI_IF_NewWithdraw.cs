@@ -74,6 +74,12 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshRedCd();
             RefreshGoldCd();
             _scrollRect.verticalNormalizedPosition = 1;
+            //因为需要排序, 所以延迟一会检测
+            Invoke(nameof(TriggerGuide), 0.05f);
+        }
+        private void TriggerGuide()
+        {
+            GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIWithdraw);
         }
 
         private void RefreshRed()
