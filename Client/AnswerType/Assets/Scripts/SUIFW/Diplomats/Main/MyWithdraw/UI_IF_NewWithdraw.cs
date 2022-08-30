@@ -77,7 +77,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         }
         private void TriggerGuide()
         {
-            //GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIWithdraw);
+            GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIWithdraw);
         }
         public void DoChangeScrollRect()
         {
