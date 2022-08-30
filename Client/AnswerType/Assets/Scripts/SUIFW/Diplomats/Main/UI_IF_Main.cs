@@ -47,17 +47,24 @@ public partial class UI_IF_Main : BaseUIForm
     [HideInInspector]
     public Transform _withdrawPageShow ;   //提现区
     [HideInInspector]
-    public Toggle _answerPageToggle;       //答题按钮
-    [HideInInspector]
-    public Toggle _taskPageToggle;         //任务按钮
-    [HideInInspector]
-    public Toggle _withdrawPageToggle;     //提现按钮
+    public Transform _activityPageShow;    //活动区
+    
+    
     [HideInInspector]
     public Button _productionPageToggle;   //全民大生产按钮
+    
+    [HideInInspector]
+    public Toggle _answerPageToggle;       //答题按钮
+    private Text _answerToggleText;
+    [HideInInspector]
+    public Toggle _taskPageToggle;         //任务按钮
+    private Text _taskToggleText;
+    [HideInInspector]
+    public Toggle _withdrawPageToggle;     //提现按钮
+    private Text _withdrawToggleText;
     [HideInInspector]
     public Toggle _activityPageToggle;     //活动按钮
-    [HideInInspector]
-    public Transform _activityPageShow;    //活动区
+    private Text _activityToggleText;
 
     //签到按键
     [HideInInspector]
@@ -124,14 +131,22 @@ public partial class UI_IF_Main : BaseUIForm
         #region 底部导航
 
         Transform bottom = UnityHelper.FindTheChildNode(gameObject, "Bottom");
-        _answerPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "AnswerPageToggle");
-      
-        _taskPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "TaskPageToggle");
-        _tipsTaskText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_taskPageToggle.gameObject, "TipsText");
+        
+        
         _productionPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Button>(bottom.gameObject, "ProductionPageToggle");
         
+        _answerPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "AnswerPageToggle");
+        _answerToggleText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_answerPageToggle.gameObject, "Text");
+        
+        _taskPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "TaskPageToggle");
+        _taskToggleText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_taskPageToggle.gameObject, "Text");
+        _tipsTaskText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_taskPageToggle.gameObject, "TipsText");
+        
         _withdrawPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "WithDrawToggle");
+        _withdrawToggleText = UnityHelper.GetTheChildNodeComponetScripts<Text>( _withdrawPageToggle.gameObject, "Text");
+        
         _activityPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "ActivityPageToggle");
+        _activityToggleText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_activityPageToggle.gameObject, "Text");
         
         #region 主页打卡按键 
 
@@ -151,6 +166,8 @@ public partial class UI_IF_Main : BaseUIForm
             // answerSelect.SetActive(go);
             if (go)
             {
+              
+                _answerToggleText.text= $"<color=#ffffff>{"关卡"}</color>";
                 // answerPage.SetAsLastSibling();
                 ShowNow = _answerPageShow;
                 UIManager.GetInstance().GetMainUp().SetActive(true);
@@ -159,6 +176,10 @@ public partial class UI_IF_Main : BaseUIForm
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_NewWithdraw);
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_Activity);
             }
+            else
+            {
+                _answerToggleText.text = $"<color=#7e7e7e>{"关卡"}</color>";
+            }
          
         });
         _taskPageToggle.onValueChanged.AddListener(go =>
@@ -166,6 +187,7 @@ public partial class UI_IF_Main : BaseUIForm
             // taskSelect.SetActive(go);
             if (go)
             {
+                _taskToggleText.text= $"<color=#ffffff>{"任务"}</color>";
                 _tipsTaskText.transform.parent.SetActive(false);
                 UIManager.GetInstance().GetMainUp().SetActive(true);
                 FreshPage();
@@ -177,6 +199,7 @@ public partial class UI_IF_Main : BaseUIForm
             else
             {
                 _tipsTaskText.transform.parent.SetActive(ShowTask());
+                _taskToggleText.text = $"<color=#7e7e7e>{"任务"}</color>";
             }
           
         });    
@@ -185,10 +208,15 @@ public partial class UI_IF_Main : BaseUIForm
         {
             if (go)
             {
+                _withdrawToggleText.text= $"<color=#ffffff>{"提现"}</color>";
                 ShowNow = _withdrawPageShow;
                 UIManager.GetInstance().GetMainUp().SetActive(false);
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewWithdraw);
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_Activity);
+            }
+            else
+            {
+                _withdrawToggleText.text = $"<color=#7e7e7e>{"提现"}</color>";
             }
         });
         
@@ -196,10 +224,15 @@ public partial class UI_IF_Main : BaseUIForm
         {
             if (go)
             {
+                _activityToggleText.text= $"<color=#ffffff>{"活动"}</color>";
                 ShowNow = _activityPageShow;
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Activity);
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_NewWithdraw);
                 UIManager.GetInstance().GetMainUp().SetActive(true);
+            }
+            else
+            {
+                _activityToggleText.text = $"<color=#7e7e7e>{"活动"}</color>";
             }
         });
         
