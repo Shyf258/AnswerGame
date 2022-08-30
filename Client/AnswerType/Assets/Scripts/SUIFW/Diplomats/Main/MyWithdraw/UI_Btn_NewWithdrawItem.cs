@@ -47,6 +47,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         private Animation _animation;
 
+        public Color32[] Colors = {new Color32(255, 255, 255,255), new Color32(127,33,0,255)};
+
         #endregion
 
         #region Override
@@ -109,11 +111,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         public void Selectable(bool isSelect)
         {
             _isSelected = isSelect;
-            
+
             if (isSelect)
+            {
                 _imgBtn.sprite = _btnItem.spriteState.selectedSprite;
+                _txtMoney.color = Colors[0];
+            }
             else
+            {
                 _imgBtn.sprite = _btnItem.spriteState.disabledSprite;
+                _txtMoney.color = Colors[1];
+            }
         }
         
         public bool IsSelected()

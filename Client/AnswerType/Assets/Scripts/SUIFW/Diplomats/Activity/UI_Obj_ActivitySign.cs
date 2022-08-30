@@ -16,6 +16,7 @@
 using System;
 using DataModule;
 using SUIFW.Diplomats.Common;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace SUIFW.Diplomats.Main
@@ -35,6 +36,10 @@ namespace SUIFW.Diplomats.Main
 
         /// <summary> 签到按钮 </summary>
         private UI_Button _btn;
+
+        private Image _imgReward;
+
+        public Sprite SprGift; //第七天🎁
         
         #endregion
 
@@ -45,12 +50,17 @@ namespace SUIFW.Diplomats.Main
             _txtCoin = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "_txtCoin");
             _txtDay = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "_txtDay");
             _btn = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(gameObject, "_btn");
+            _imgReward = UnityHelper.GetTheChildNodeComponetScripts<Image>(gameObject, "Image");
             RigisterButtonObjectEvent(_btn,(go => OnBtnItem()));
         }
 
         public void RefreshNode(TableActivitySignData data,int signProgress)
         {
             _txtCoin.text = data.Reward.ToString();
+            if (data.ID == 7)
+            {
+                _imgReward.sprite = SprGift;
+            }
             int curDay = GL_CoreData._instance.ActivitySignDay + 1;
             if (signProgress != 0 && GL_CoreData._instance.ActivitySignDay != 0) //规避已签到清除缓存
                 curDay = GL_CoreData._instance.ActivitySignDay;
