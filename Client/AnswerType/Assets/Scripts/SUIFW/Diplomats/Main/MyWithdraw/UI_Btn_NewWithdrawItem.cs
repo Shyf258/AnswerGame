@@ -205,7 +205,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             if(data.EnumMyWithdraw == EnumMyWithdraw.Gold 
                 && data.Index == 0)
             {
-                GL_Tools.GetComponent<UI_GuideObject>(gameObject);
+                GL_Tools.GetComponent<UI_GuideObject>(_btnItem.gameObject);
             }
         }
 
