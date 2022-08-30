@@ -69,7 +69,10 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
                     audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio + audio;
                 }
                 // DDebug.LogError("加载语音文件："+ audio);
-                _resList.Add(string.Format(AudioUrl,  audio));
+                if (audio != i.ToString())
+                {
+                    _resList.Add(string.Format(AudioUrl,  audio));
+                }
 
                 string pPath = CalculatePictureUrl(i);
                 if (!string.IsNullOrEmpty(pPath))
