@@ -1,6 +1,7 @@
 //2022.8.23 管理
 //主页面玩法相关初始化
 
+using System.Collections.Generic;
 using DG.Tweening;
 using SUIFW;
 using UnityEngine;
@@ -17,15 +18,19 @@ public partial class UI_IF_Main
     //private Text _imText;
 
     //private Transform _textMode;    //文字题目
-    //private Text _tmText;
+    
+    
+    private Text _tmText;   //题目
 
     /// <summary>
     /// 选择按键组
     /// </summary>
     private Transform _choiceGroup;
     private Button _btnA;
+    private Image _imageA;
     private Text _btnAText;
     private Button _btnB;
+    private Image _imageB;
     private Text _btnBText;
 
     // /// <summary>
@@ -38,10 +43,15 @@ public partial class UI_IF_Main
 
     #region 显示答案
 
-    private Transform _showAnswer;
-    private Transform _showRight;
-    private Transform _showWrong;
+    // private Transform _showAnswer;
+    // private Transform _showRight;
+    // private Transform _showWrong;
 
+    /// <summary>
+    /// 0.待选择 1.正确  2.错误
+    /// </summary>
+    public List<Sprite> _btnIcon;
+    
     #endregion
 
     #region 暂停
@@ -52,7 +62,7 @@ public partial class UI_IF_Main
     
     #endregion
     
-    private Toggle _volume;
+    private Button _volume;
     
     private VideoPlayer _videoPlayer;
     protected void InitGameMode()
@@ -62,27 +72,30 @@ public partial class UI_IF_Main
         _nowAnswer = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "UserLevel");
 
         _choiceGroup = UnityHelper.FindTheChildNode(gameObject, "ChoiceBtnGroup");
+
+        _tmText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_choiceGroup.gameObject, "TM_Text");
+        
         _btnA = UnityHelper.GetTheChildNodeComponetScripts<Button>(_choiceGroup.gameObject, "ChoiceBtn1");
+        _imageA = UnityHelper.GetTheChildNodeComponetScripts<Image>(_choiceGroup.gameObject, "ChoiceBtn1");
         _btnAText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnA.gameObject, "ChoiceText1");
         _btnB = UnityHelper.GetTheChildNodeComponetScripts<Button>(_choiceGroup.gameObject, "ChoiceBtn2");
+        _imageB = UnityHelper.GetTheChildNodeComponetScripts<Image>(_choiceGroup.gameObject, "ChoiceBtn2");
         _btnBText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnB.gameObject, "ChoiceText2");
 
         RigisterButtonObjectEvent(_btnA, (go) =>
         {
-            ChoiceBtn = _btnA.transform;
+            _chanceBtn = _imageA;
             OnClickChoice(1);
-
         });
         RigisterButtonObjectEvent(_btnB, (go) =>
         {
-            ChoiceBtn = _btnB.transform;
+            _chanceBtn = _imageB;
             OnClickChoice(2);
-
         });
         //显示答案
-        _showAnswer = UnityHelper.FindTheChildNode(_choiceGroup.gameObject, "ShowAnswer");
-        _showRight = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowRight");
-        _showWrong = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowWrong");
+        // _showAnswer = UnityHelper.FindTheChildNode(_choiceGroup.gameObject, "ShowAnswer");
+        // _showRight = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowRight");
+        // _showWrong = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowWrong");
 
         _videoPlayer = UnityHelper.GetTheChildNodeComponetScripts<VideoPlayer>(_answerPageShow.gameObject, "Video");
 
@@ -103,14 +116,16 @@ public partial class UI_IF_Main
         #endregion
 
 
-        _volume = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(_answerPageShow.gameObject, "Volume");
-        _volume.onValueChanged.AddListener(set =>
+        _volume = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "Volume");
+        
+        RigisterButtonObjectEvent(_volume, go =>
         {
-            GL_CoreData._instance.VideoVolume = set;
-           VideoVolume(set);
+            GL_CoreData._instance.VideoVolume = !GL_CoreData._instance.VideoVolume;
+            VideoVolume(GL_CoreData._instance.VideoVolume);
         });
 
-        _volume.isOn = GL_CoreData._instance.VideoVolume;
+        //旋转
+        
         _videoPlayer.loopPointReached += VideoFinish;
 
         Button _playBtn;
@@ -145,6 +160,8 @@ public partial class UI_IF_Main
         _videoPlayer.url = PATH + info.Picture;
         _videoPlayer.Play();
 
+        _tmText.text = info.TitleText;
+        
         //刷新选项
         _btnAText.text = info.Select1;
         _btnBText.text = info.Select2;
@@ -161,8 +178,6 @@ public partial class UI_IF_Main
     }
 
 
-    private Transform ChoiceBtn;
-    private Transform _showResult;
     /// <summary>
     /// 结果展示
     /// </summary>
@@ -170,37 +185,26 @@ public partial class UI_IF_Main
     {
         if (choice)
         {
-            _showResult = _showRight;
-            // _showRight.SetParent(ChoiceBtn);
-            // _showRight.localPosition=Vector3.zero;
-            answer = true;
+            _chanceBtn.sprite = _btnIcon[1];
         }
         else
         {
-            _showResult = _showWrong;
-            answer = false;
+            _chanceBtn.sprite = _btnIcon[2];
         }
-        _showResult.SetParent(ChoiceBtn);
-        _showResult.localPosition = Vector3.zero;
+        answer = choice;
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
         InvokeRepeating("GetResult", 0.3f, 0);
     }
 
+    /// <summary>
+    /// 按键恢复显示
+    /// </summary>
     public void MoveBack()
     {
-        try
-        {
-            _showResult.SetParent(_showAnswer);
-            _showResult.localPosition = Vector3.zero;
-            _showResult.localScale = Vector3.one;
-        }
-        catch
-        {
-
-        }
-
+        _chanceBtn.sprite = _btnIcon[0];
     }
 
+    private Image _chanceBtn;
     private bool answer;
     private void GetResult()
     {
@@ -252,10 +256,12 @@ public partial class UI_IF_Main
     {
         if (set)
         {
+            //打开声音
              _videoPlayer.SetDirectAudioVolume(0,1);
         }
         else
         {
+            //关闭声音
             _videoPlayer.SetDirectAudioVolume(0,0);
         }
     }

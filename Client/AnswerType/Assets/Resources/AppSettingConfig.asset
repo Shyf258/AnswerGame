@@ -17,7 +17,7 @@ MonoBehaviour:
   _isCloseGuide: 0
   _isLog: 1
   _isTestUnity: 1
-  _enterType: 2
+  _enterType: 0
   _abTest: b
   _isSkipAD: 0
   _buildApp: 4

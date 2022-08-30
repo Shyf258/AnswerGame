@@ -458,8 +458,8 @@ public class ArchivedData_Character
     public bool anti = false;
     
     public bool _nonage = false;
-    
-    public bool _videoVolume;
+
+    public bool _videoVolume = true;
 
 }
 

@@ -142,7 +142,7 @@ public class GL_GameMode_Answer : GL_GameMode
             //刷新关卡
             GL_SceneManager._instance.CreateGame();
 
-            _uiIfMain.MoveChoiceGroup(true);
+          
             _uiIfMain.MoveBack();
 
             //领取奖励
@@ -408,7 +408,6 @@ public class GL_GameMode_Answer : GL_GameMode
             {
                 //刷新关卡
                 GL_SceneManager._instance.CreateGame();
-                _uiIfMain.MoveChoiceGroup(true);
                 _uiIfMain.MoveBack();
                 //领取奖励
                 Cb_ShowCashCoin(value);

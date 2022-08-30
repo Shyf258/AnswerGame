@@ -18,7 +18,7 @@ public partial class UI_IF_Main
     //进度部分
     private List<string> _explainList = new List<string>()
     {
-        "还差<color=#fdff3c>{0}关</color>即可领取奖励",
+        "还差<color=#fdff3c>{0}关</color>即可领取奖励<color=#fdff3c>{1}</color>金币",
     };
 
     private Text _contentText;  //内容
@@ -27,7 +27,7 @@ public partial class UI_IF_Main
     private Transform _fillEffect;  //进度条特效
 
     private Button _btnSlider;    //进度条按钮
-    private Image _buttonIcon;    //进度条按钮 图标
+    // private Image _buttonIcon;    //进度条按钮 图标
     private Text _buttonText;     //进度条按钮文本
     private ParticleSystem _positionEffect;  //按钮特效
 
@@ -46,7 +46,7 @@ public partial class UI_IF_Main
         _fillEffect = UnityHelper.FindTheChildNode(down.gameObject, "FillEffect");
 
         _btnSlider = UnityHelper.GetTheChildNodeComponetScripts<Button>(down.gameObject, "Button");
-        _buttonIcon = UnityHelper.GetTheChildNodeComponetScripts<Image>(_btnSlider.gameObject, "Icon");
+        // _buttonIcon = UnityHelper.GetTheChildNodeComponetScripts<Image>(_btnSlider.gameObject, "Icon");
         _buttonText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnSlider.gameObject, "Text");
         _positionEffect = UnityHelper.GetTheChildNodeComponetScripts<ParticleSystem>(_btnSlider.gameObject, "Sun_Shines_03");
         _brokenEffect = UnityHelper.GetTheChildNodeComponetScripts<ParticleSystem>(_btnSlider.gameObject, "ParticleBroken");
@@ -98,10 +98,10 @@ public partial class UI_IF_Main
 
         int value = Mathf.Clamp((targetValue - curValue), 0, 10000);
         EItemType type = (EItemType)_milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].type;
-        _buttonIcon.sprite = GL_RewardLogic._instance.GetItemSprite(type);
-        _buttonIcon.rectTransform.sizeDelta = new Vector2(240, 240);
-        _buttonText.text = GL_RewardLogic._instance.GetItemNumber(type, _milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].num);
-        _contentText.text = string.Format(_explainList[0], value);
+        // _buttonIcon.sprite = GL_RewardLogic._instance.GetItemSprite(type);
+        // _buttonIcon.rectTransform.sizeDelta = new Vector2(240, 240);
+        // _buttonText.text = GL_RewardLogic._instance.GetItemNumber(type, _milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].num);
+        _contentText.text = string.Format(_explainList[0], value,GL_RewardLogic._instance.GetItemNumber(type, _milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].num));
     }
 
 
