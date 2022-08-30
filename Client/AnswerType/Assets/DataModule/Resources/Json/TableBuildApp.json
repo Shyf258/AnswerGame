@@ -28,6 +28,7 @@
     "ID": 4,
     "ProductName": "成语赚多多",
     "PackageName": "com.ciyunjinchan.cyzdda",
-    "IconPath": "icon_CYZDD"
+    "WeChatAppID": "wx4bd13a08b94ab598",
+    "IconPath": "icon_cyzdd"
   }
 }
