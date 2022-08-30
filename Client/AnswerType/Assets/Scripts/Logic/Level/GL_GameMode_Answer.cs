@@ -418,8 +418,10 @@ public class GL_GameMode_Answer : GL_GameMode
                 GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
             };
 
-            Object[] objects = { ac1, _curRewards.num};
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
+            // Object[] objects = { ac1, _curRewards.num};
+            // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
+            Object[] objects = { ac1};
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_FailTips, objects);
         });
     }
 
