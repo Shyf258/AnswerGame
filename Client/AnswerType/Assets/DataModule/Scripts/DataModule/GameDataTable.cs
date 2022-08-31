@@ -90,4 +90,9 @@ public class GameDataTable
         }
         return DataModuleManager._instance.TableItemData_Dictionary[1];
     }
+    public static TableBuildAppData GetTableBuildAppData(int id)
+    {
+        DataModuleManager._instance.TableBuildAppData_Dictionary.TryGetValue(id, out var data);
+        return data;
+    }
 }

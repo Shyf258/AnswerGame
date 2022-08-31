@@ -46,6 +46,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _tfEffectCanWithdraw;
 
         private Animation _animation;
+        
+        /*奖励金额颜色*/
+        public Color32[] textColors = {new Color32(255, 255, 255,255), new Color32(127,33,0,255)};
 
         /*奖励金额颜色*/
         public Color32[] textColors = {new Color32(255, 255, 255,255), new Color32(127,33,0,255)};
@@ -208,6 +211,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                         _txtLimit.text = string.Format(_formatLimits[0],data.WithDraw.withDrawLimit);
                     }
                     break;
+            }
+
+            //金币的第一个 需要新手引导
+            if(data.EnumMyWithdraw == EnumMyWithdraw.Gold 
+                && data.Index == 0)
+            {
+                GL_Tools.GetComponent<UI_GuideObject>(_btnItem.gameObject);
             }
         }
 
