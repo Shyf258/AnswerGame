@@ -475,6 +475,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 };
                 data.WithDraw = list[i];
                 data.IsCanWithdraw = IsRedCanWithdraw(data, false);
+                data.ViewNum = config.viewNum;
                 if (data.Index == 0)
                 {
                     _curRedWithdrawData = data;
@@ -538,28 +539,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[6]);
                 return false;
             }
-            if (withdrawData.WithDraw.money>=30000)
-            {
-                if (withdrawData.WithDraw.money>=35000)
-                {
-                    if (isHint) UI_HintMessage._.ShowMessage("请先提取上一额度");
-                }
-                else
-                {
-                    if (GL_PlayerData._instance.UserDayLevel>80)
-                    {
-                        if (isHint) UI_HintMessage._.ShowMessage("提现300元需要连续登录7天，且每天答对80道题目");
-                    }
-                    else
-                    {
-                        if (isHint) UI_HintMessage._.ShowMessage("每日答对80道题目即可提现300元");
-                    }
-                   
-                }
-                return false;
-            }
+            
             //2.广告数量不满足时
-            int num = withdrawData.WithDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
+            int num = withdrawData.WithDraw.viewAdTimes - withdrawData.ViewNum;
             
             if (num > 0)
             {
@@ -615,15 +597,14 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 return false;
             }
 
-            //1.检测关卡等级
-            if (GL_PlayerData._instance.CurLevel - 1 < withDraw.WithDraw.level)
-            {
-                if (isHint) UI_HintMessage._.ShowMessage(_tipsList[4]);
-                return false;
-            }
+            // //1.检测关卡等级
+            // if (GL_PlayerData._instance.CurLevel - 1 < withDraw.WithDraw.level)
+            // {
+            //     if (isHint) UI_HintMessage._.ShowMessage(_tipsList[4]);
+            //     return false;
+            // }
             //2.广告数量不满足时
-            int num = withDraw.WithDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
-            num = 0;
+            int num = withDraw.WithDraw.viewAdTimes - withDraw.ViewNum;
             if (num > 0)
             {
                 string tips = string.Format(_tipsList[1], num);
@@ -794,6 +775,7 @@ public class MyWithdrawData
     /// <summary> 是否能提现 </summary>
     public bool IsCanWithdraw;
     public Net_CB_WithDraw WithDraw = new Net_CB_WithDraw();
+    public int ViewNum; //已获得视频币数量
 }
 
 public enum EnumMyWithdraw

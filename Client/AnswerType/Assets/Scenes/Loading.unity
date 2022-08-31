@@ -187,11 +187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e491929964a664984a2a26a0d44b50bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onlineTime: 0
   _antiTime: 0
   _isInitialize: 0
   _isStartGame: 1
-  _freeGetTime: 0
 --- !u!114 &742528199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +423,9 @@ MonoBehaviour:
   - ActivitySign
   - RedGroupOpenRed
   - Reright
+  - MoreRedChance
+  - MoreCoinChance
+  - MoneyShort
   _interstitialList:
   - AllDialog
   _nativeList:

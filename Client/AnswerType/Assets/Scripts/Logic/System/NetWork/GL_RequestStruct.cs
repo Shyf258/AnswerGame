@@ -195,6 +195,7 @@ public class Net_CB_WithDrawList
 {
     public List<Net_CB_WithDraw> couponWithDraws;
     public int arpu;
+    public int viewNum; //已获得视频币数量
 }
 
 //提现配置
