@@ -18,9 +18,9 @@ public class GL_Analytics_Logic : Singleton<GL_Analytics_Logic>
         GL_SDK._instance.LogEvent(GetAnalyticsData(type) + suffix, string.Empty);
     }
 
-    public void SendLogEvent(string type, int value)
+    public void SendLogEvent(string type)
     {
-        GL_SDK._instance.LogEvent(type, value.ToString());
+        GL_SDK._instance.LogEvent(type, "");
     }
 
     public void SendLogEvent(EAnalyticsType type)
@@ -59,13 +59,7 @@ public enum EAnalyticsType
     /// <summary>/// 微信登录成功/// </summary>
     WeChatLoginResult,
 
-    /// <summary>/// 跳关/// </summary>
-    //NextLevel,
-    /// <summary>/// 财神进入/// </summary>
-    EnterMoneyPool,
-    /// <summary>/// 财神充能/// </summary>
-    MoneyPoolGrow,
-    
+ 
     /// <summary>/// 里程碑奖励手动领取/// </summary>
     MilestoneClick,
     /// <summary>/// 里程碑奖励领取/// </summary>
@@ -197,6 +191,22 @@ public enum EAnalyticsType
     WithDrawHigh,
     /// <summary>/// 0.88提现成功/// </summary>
     WithDrawHighSuccess,
+    
+    //财神
+    /// <summary>/// 财神ICON点击/// </summary>
+    MoneyPoolIcon,
+    /// <summary>/// 财神点击多倍领取按键/// </summary>
+    MoneyPoolGrowBTN,
+    /// <summary>/// 财神视频播放广告请求/// </summary>
+    MoneyPoolPlayVideo,
+    /// <summary>/// 财神视频回调成功/// </summary>
+    MoneyPoolVideoCBFinish,
+    /// <summary>/// 财神视频回调失败/// </summary>
+    MoneyPoolVideoCBFail,
+    /// <summary>/// 财神视频播放失败/// </summary>
+    MoneyPoolVideoFinish,
+    /// <summary>/// 财神视频播放成功/// </summary>
+    MoneyPoolVideoFail,
 }
 
 
@@ -218,10 +228,6 @@ public static class AnalyticsEvents
 
         {EAnalyticsType.ActiveGame,"jihuoxinxi_anjian_01"},
         {EAnalyticsType.WeChatLoginResult,"weixindengluchenggong_001"},
-
-        {EAnalyticsType.EnterMoneyPool,"caishen_001"}, 
-        {EAnalyticsType.MoneyPoolGrow,"caishen_002"}, 
-
         
         {EAnalyticsType.MilestoneClick,"lichengbei_dianji_01"},
         {EAnalyticsType.MilestonceGet,"lichengbei_dianji_02"},
@@ -298,5 +304,14 @@ public static class AnalyticsEvents
         {EAnalyticsType.WithDrawMediumSuccess,"tixian_0.68_chenggong"},
         {EAnalyticsType.WithDrawHigh,"tixian_0.88_anjian"},
         {EAnalyticsType.WithDrawHighSuccess,"tixian_0.88_chenggong"},
+        
+        //财神  MoneyPoolIcon,
+        {EAnalyticsType.MoneyPoolIcon,"caishen_icon_01"},
+        {EAnalyticsType.MoneyPoolGrowBTN,"caishen_duobeidianji_01"},
+        {EAnalyticsType.MoneyPoolPlayVideo,"caishen_bofang_qingqiu_01"},
+        {EAnalyticsType.MoneyPoolVideoCBFinish,"caishen_huidiaochenggong_01"},
+        {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
+        {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
+        {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
     };
 }

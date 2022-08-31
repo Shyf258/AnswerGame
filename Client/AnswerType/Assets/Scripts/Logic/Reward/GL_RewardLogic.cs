@@ -82,7 +82,7 @@ public class GL_RewardLogic : Singleton<GL_RewardLogic>
 public class SRewardData
 {
     public EItemType _rewardType; //奖励类型
-    public Sprite _rewardSprite;    //奖励的图标
+    //public Sprite _rewardSprite;    //奖励的图标
     public string _rewardDes;        //奖励描述
     public ERewardSource _rewardSource; //奖励来源
 
@@ -112,7 +112,7 @@ public class SRewardData
     private void Init(EItemType type, string path)
     {
         _rewardType = type;
-        _rewardSprite = GL_SpriteAtlasPool._instance.GetSprite("PopIcon", path);
+        //_rewardSprite = GL_SpriteAtlasPool._instance.GetSprite("PopIcon", path);
     }
 }
 

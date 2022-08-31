@@ -57,7 +57,7 @@ public class GL_SceneSwitch
         if(AppSetting.BuildTime > 0)
         {
             double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
-            if (time >= 12 * 60 * 60)
+            if (time >= AppSetting.BuildHour * 60 * 60)
             {
                 GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
                 isAgreeGDPR = 1;
@@ -194,7 +194,7 @@ public class GL_SceneSwitch
             }
             else
             {
-                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatClick);
+          
                 //微信登陆
                 if ((GL_PlayerData._instance.AppConfig != null && GL_PlayerData._instance.AppConfig.isNotice == 1)
                 || !GL_PlayerData._instance.IsLoginWeChat())
@@ -433,7 +433,6 @@ public class GL_SceneSwitch
                     GL_PlayerData._instance.CB_WeChatLoginSuccess(msg);
                     uiLoading.ShowSlider(true);
                     Status = EStatus.Init;
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatSuccess);
                 }
                 else
                 {

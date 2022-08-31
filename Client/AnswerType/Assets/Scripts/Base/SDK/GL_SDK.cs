@@ -202,25 +202,25 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     public void PopUp()
     {
         string str = "观看完整视频可获得高额奖励";
-        try
-        {
-            if (GL_PlayerData._instance.CbPlayAd != null)
-            {
-                if (GL_PlayerData._instance.CbPlayAd.induceRate>=Random.Range(1,10000) )
-                {
-                    str =  "点击广告可以获得更高额度奖励哟！";
-                }
-            }
-            else
-            {
-                str =   "观看完整视频可获得高额奖励";
-            }
-        }
-        catch
-        {
-            str = "观看完整视频可获得高额奖励";
-            GL_PlayerData._instance.GetPlayAdConfig();
-        }
+        //try
+        //{
+        //    if (GL_PlayerData._instance.CbPlayAd != null)
+        //    {
+        //        if (GL_PlayerData._instance.CbPlayAd.induceRate>=Random.Range(1,10000) )
+        //        {
+        //            str =  "点击广告可以获得更高额度奖励哟！";
+        //        }
+        //    }
+        //    else
+        //    {
+        //        str =   "观看完整视频可获得高额奖励";
+        //    }
+        //}
+        //catch
+        //{
+        //    str = "观看完整视频可获得高额奖励";
+        //    GL_PlayerData._instance.GetPlayAdConfig();
+        //}
         
         
         
@@ -538,6 +538,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     /// <param name="type">wx:微信登陆  qq:qq登陆</param>
     public void Login(string loginType, Action<string> action)
     {
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatClick);
         _loginCallback = action;
 #if UNITY_EDITOR
         //模拟
@@ -554,7 +555,6 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
                 break;
             case "qq":
                 {
-
                 }
                 break;
         }

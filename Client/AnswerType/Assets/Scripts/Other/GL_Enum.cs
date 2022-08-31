@@ -191,7 +191,11 @@ public enum EItemType
 public enum ERewardSource
 {
     None = 0,
-    DragRedpack = 1,    //拖拽红包
+    VideoRedpack = 1,
+    DragRedpack = 2,
+    WithdrawRedpack = 3,
+    WithdrawCoin = 4,
+    WithDrawGrow = 5,
     TaskReward,         //任务
     OpenRed,            //红包
     Guide,              //新手引导

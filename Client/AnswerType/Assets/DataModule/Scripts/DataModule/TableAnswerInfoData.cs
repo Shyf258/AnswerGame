@@ -21,10 +21,6 @@ namespace DataModule
 		/// </summary>
 		public int ID;
 		/// <summary>
-		/// 类型
-		/// </summary>
-		public int Type;
-		/// <summary>
 		/// 题目文本
 		/// </summary>
 		public string TitleText;

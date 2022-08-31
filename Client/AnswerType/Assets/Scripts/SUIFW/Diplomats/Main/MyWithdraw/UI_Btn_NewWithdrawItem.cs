@@ -200,6 +200,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     }
                     break;
             }
+
+            //金币的第一个 需要新手引导
+            if(data.EnumMyWithdraw == EnumMyWithdraw.Gold 
+                && data.Index == 0)
+            {
+                GL_Tools.GetComponent<UI_GuideObject>(_btnItem.gameObject);
+            }
         }
 
         public MyWithdrawData GetWithdrawData()
