@@ -315,3 +315,10 @@ public enum EGamecoreType
     PureAnswer = 4, //答题进度红包
     ActivityVideo = 5, //活动看视频
 }
+
+public enum EGameUIType
+{
+    GuessFromExplain = 1,   //看释义猜成语
+    GuessFromPictures,  //看图猜成语
+    AncientPoetryCrossword, //古诗填字
+}
