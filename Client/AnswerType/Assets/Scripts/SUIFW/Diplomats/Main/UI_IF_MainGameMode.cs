@@ -63,6 +63,8 @@ public partial class UI_IF_Main
     #endregion
     
     private Button _volume;
+
+    public Transform _rotate;
     
     private VideoPlayer _videoPlayer;
     protected void InitGameMode()
@@ -120,12 +122,12 @@ public partial class UI_IF_Main
         
         RigisterButtonObjectEvent(_volume, go =>
         {
+            
             GL_CoreData._instance.VideoVolume = !GL_CoreData._instance.VideoVolume;
             VideoVolume(GL_CoreData._instance.VideoVolume);
         });
 
         //旋转
-        
         _videoPlayer.loopPointReached += VideoFinish;
 
         Button _playBtn;
@@ -151,13 +153,13 @@ public partial class UI_IF_Main
     //刷新题目
     public void RefreshGameMode(EventParam param)
     {
-
+        _pause.SetActive(false);
         // MoveBack();
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
         if (info == null)
             return;
         //刷新视频
-        _videoPlayer.url = PATH + info.Picture;
+        _videoPlayer.url = PATH + info.Picture /*+".mp4"*/;
         _videoPlayer.Play();
 
         _tmText.text = info.TitleText;

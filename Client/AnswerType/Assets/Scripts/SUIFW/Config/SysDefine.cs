@@ -98,7 +98,7 @@ namespace SUIFW
         //遮罩透明度 深色
         public const float UiMask_Dark_Color_A = 0.7f;
         //遮罩透明度 浅色
-        public const float UiMask_Light_Color_A = 0.5f;
+        public const float UiMask_Light_Color_A = 0.0f;
 
         /* 摄像机层深的常量 */
 
@@ -143,6 +143,8 @@ namespace SUIFW
         // public const string UI_Path_Success = "Success";
         public const string UI_Path_AnswerRight = "AnswerRight";
         public const string UI_Path_Fail = "Fail";
+        public const string UI_Path_FailTips = "FailTips";
+        
         public const string UI_Path_NoEnergy = "NoEnergy";
         public const string UI_Path_Cash = "Cash";
         public const string UI_Path_Coin = "Coin";

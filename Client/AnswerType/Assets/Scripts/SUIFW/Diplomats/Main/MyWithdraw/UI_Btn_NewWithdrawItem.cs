@@ -46,6 +46,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _tfEffectCanWithdraw;
 
         private Animation _animation;
+        
+        /*奖励金额颜色*/
+        public Color32[] textColors = {new Color32(255, 255, 255,255), new Color32(127,33,0,255)};
 
         #endregion
 
@@ -71,11 +74,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void OnDisable()
         {
             //排除假现金第三个不显示的
-            if (_myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 2 ||
-                _myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 0)
-            {
-                return;
-            }
+            // if (_myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 2 ||
+            //     _myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 0)
+            // {
+            //     return;
+            // }
             
             // if (!gameObject.activeSelf)
             //     gameObject.SetActive(true);
@@ -109,11 +112,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         public void Selectable(bool isSelect)
         {
             _isSelected = isSelect;
-            
+
             if (isSelect)
-                _imgBtn.sprite = _btnItem.spriteState.selectedSprite;
+            {
+                _imgBtn.sprite = _btnItem.spriteState.pressedSprite;
+                _txtMoney.color = textColors[0];
+            }
             else
+            {
                 _imgBtn.sprite = _btnItem.spriteState.disabledSprite;
+                _txtMoney.color = textColors[1];
+            }
         }
         
         public bool IsSelected()
@@ -199,6 +208,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                         _txtLimit.text = string.Format(_formatLimits[0],data.WithDraw.withDrawLimit);
                     }
                     break;
+            }
+
+            //金币的第一个 需要新手引导
+            if(data.EnumMyWithdraw == EnumMyWithdraw.Gold 
+                && data.Index == 0)
+            {
+                GL_Tools.GetComponent<UI_GuideObject>(_btnItem.gameObject);
             }
         }
 

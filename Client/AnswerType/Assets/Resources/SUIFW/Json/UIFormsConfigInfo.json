@@ -134,6 +134,10 @@
       "Value": "SUIFW\\Prefab\\Game\\UI_IF_Fail"
     },
     {
+      "Key": "FailTips",
+      "Value": "SUIFW\\Prefab\\Game\\UI_IF_FailTips"
+    },
+    {
       "Key": "NoEnergy",
       "Value": "SUIFW\\Prefab\\Game\\UI_IF_NoEnergy"
     },

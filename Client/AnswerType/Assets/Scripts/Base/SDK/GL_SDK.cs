@@ -228,6 +228,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
         {
 #if UNITY_ANDROID && !UNITY_EDITOR
         _javaObject.Call("showToastDialog", str);
+        _javaObject.Call("showFloatingRewardMsg", "观看完成视频可获取奖励",AppSetting.BuildApp == EBuildApp.BXDYJ);
 #elif UNITY_IOS && !UNITY_EDITOR
 
 #endif
