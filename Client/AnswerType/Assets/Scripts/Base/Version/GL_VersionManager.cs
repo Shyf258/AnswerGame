@@ -32,7 +32,7 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
 
     #region 图片下载
     //音频下载地址
-    public const string PictureUrl = "/Picture/{0}.jpg";
+    public const string PictureUrl = "/Picture/{0}.png";
     private int _curDownloadPictureIndex = 11;
 
 
