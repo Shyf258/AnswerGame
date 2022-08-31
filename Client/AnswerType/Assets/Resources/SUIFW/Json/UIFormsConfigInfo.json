@@ -137,6 +137,10 @@
       "Key": "NoEnergy",
       "Value": "SUIFW\\Prefab\\Game\\UI_IF_NoEnergy"
     },
+    {
+      "Key": "WithDrawJudge",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithDrawJudge"
+    },
 	{
       "Key": "Withdraw",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_Withdraw"

@@ -522,6 +522,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 if (data.Index == 0)
                 {
                     _curGoldWithdrawData = data;
+                    //_curGoldWithdrawData.WithDraw.viewAdTimes = 2; //测试用
                     SetGoldSelectState();
                 }
                 item.Init(this,data);
@@ -557,6 +558,18 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         {
             if (!IsRedCanWithdraw(_curRedWithdrawData,true))
             {
+                if (!IsFirstDay(_curRedWithdrawData))
+                {
+                    Action action = RefreshRed;
+                    EWithDrawType type =  EWithDrawType.CashWithDraw;
+                    Object[] obj = 
+                    {
+                        _curRedWithdrawData,
+                        type,
+                        action,
+                    };
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithDrawJudge,obj);
+                }
                 return;
             }
 
@@ -633,6 +646,18 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             
             if (!IsGoldCanWithdraw(_curGoldWithdrawData, true))
             {
+                if (!IsFirstDay(_curGoldWithdrawData))
+                {
+                    Action action = RefreshGold;
+                    EWithDrawType type =  EWithDrawType.DailyWithDraw;
+                    Object[] obj = 
+                    {
+                        _curGoldWithdrawData,
+                        type,
+                        action,
+                    };
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithDrawJudge,obj);
+                }
                 return;
             }
 
@@ -650,32 +675,54 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
         }
 
+        /// <summary>
+        /// 是否是第一天
+        /// </summary>
+        /// <returns></returns>
+        private bool IsFirstDay(MyWithdrawData withdrawData)
+        {
+            //第一天所有广告次数为0
+            return withdrawData.WithDraw.viewAdTimes == 0;
+        }
+
         private void PlayAD(MyWithdrawData withdrawData)
         {
             //提现广告播放成功
             Net_WithDraw draw = new Net_WithDraw();
             draw.withDrawId = withdrawData.WithDraw.id;
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (set) =>
+            Action action = () =>
             {
-                if (set)
+                if (withdrawData.EnumMyWithdraw == EnumMyWithdraw.Red)
                 {
-                    if (withdrawData.EnumMyWithdraw == EnumMyWithdraw.Red)
-                    {
-                        draw.withDrawType = 3;
-                        draw.type = 2;
-                        GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_RedWithDraw);
+                    draw.withDrawType = 3;
+                    draw.type = 2;
+                    GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_RedWithDraw);
 
-                    }
-                    else if (withdrawData.EnumMyWithdraw == EnumMyWithdraw.Gold)
-                    {
-                        draw.withDrawType = 7;
-                        draw.type = 2;
-                        GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_GoldWithDraw);
-                    }
                 }
-            });
+                else if (withdrawData.EnumMyWithdraw == EnumMyWithdraw.Gold)
+                {
+                    draw.withDrawType = 7;
+                    draw.type = 2;
+                    GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_GoldWithDraw);
+                }
+            };
+            //第一天播放广告
+            if (IsFirstDay(withdrawData))
+            {
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (set) =>
+                {
+                    if (set)
+                    {
+                        action.Invoke();
+                    }
+                });
+            }
+            else
+            {
+                action.Invoke();
+            }
         }
-        
+
         //提现回调
         private void CB_RedWithDraw(string param)
         {
