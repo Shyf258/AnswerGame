@@ -3,36 +3,45 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DataModule;
+using DG.Tweening;
 using SUIFW;
 using SUIFW.Diplomats.Common;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class UI_IF_PureGame : BaseUIForm
 {
-    // public TableAnswerInfoData _levelInfo; //关卡信息
-    // public List<TableAnswerInfoData> _levelList;
-    //
-    // private Transform _dateGroup; //日期显示
-    // private Button _setting;
-    //
-    // private Transform _imageMode;   //图片题目
-    // private Image _imImage;
-    // private Text _imText;
-    //
-    // private Transform _textMode;    //文字题目
-    // private Text _tmText;
-    //
-    // private Button _btnA;
-    // private Text _btnAText;
-    // private Button _btnB;
-    // private Text _btnBText;
-    //
-    // private Toggle _answerPage;
-    // private Toggle _taskPage;
 
-    private Text _level;
-    private Text _textHint;
+  
+    
+    private Transform _pause;
+
+    private Button _pauseBtn;
+    
+    private VideoPlayer _videoPlayer;
+    
+    private Text _tmText;   //题目
+    
+    /// <summary>
+    /// 选择按键组
+    /// </summary>
+    private Transform _choiceGroup;
+    private Button _btnA;
+    private Image _imageA;
+    private Text _btnAText;
+    private Button _btnB;
+    private Image _imageB;
+    private Text _btnBText;
+    
+    /// <summary>
+    /// 0.待选择 1.正确  2.错误
+    /// </summary>
+    public List<Sprite> _btnIcon;
+    
+    private Image _chanceBtn;
+    
+    private Button _volume;
     public override void RefreshLanguage()
     {
  
@@ -65,52 +74,187 @@ public class UI_IF_PureGame : BaseUIForm
         
         _isFullScreen = false;
 
-        _level = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "Level");
-       RigisterButtonObjectEvent("Replay", go =>
-       {
-           OnClickReplay();
-       });
-       RigisterButtonObjectEvent("Hint", go =>
-       {
-           OnClickHint();
-       });
-       _textHint = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "NumHint");
+
+        ParseTable();
+        
+        _choiceGroup = UnityHelper.FindTheChildNode(gameObject, "ChoiceBtnGroup");
+        _tmText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_choiceGroup.gameObject, "TM_Text");
+        _btnA = UnityHelper.GetTheChildNodeComponetScripts<Button>(_choiceGroup.gameObject, "ChoiceBtn1");
+        _imageA = UnityHelper.GetTheChildNodeComponetScripts<Image>(_choiceGroup.gameObject, "ChoiceBtn1");
+        _btnAText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnA.gameObject, "ChoiceText1");
+        _btnB = UnityHelper.GetTheChildNodeComponetScripts<Button>(_choiceGroup.gameObject, "ChoiceBtn2");
+        _imageB = UnityHelper.GetTheChildNodeComponetScripts<Image>(_choiceGroup.gameObject, "ChoiceBtn2");
+        _btnBText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnB.gameObject, "ChoiceText2");
+        
+        RigisterButtonObjectEvent(_btnA, (go) =>
+        {
+            _chanceBtn = _imageA;
+            OnClickChoice(1);
+        });
+        RigisterButtonObjectEvent(_btnB, (go) =>
+        {
+            _chanceBtn = _imageB;
+            OnClickChoice(2);
+        });
+        
+        RigisterButtonObjectEvent("Setting", go =>
+        {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
+        });
+        _videoPlayer = UnityHelper.GetTheChildNodeComponetScripts<VideoPlayer>(gameObject, "Video");
+        //暂停
+        _pause = UnityHelper.FindTheChildNode(gameObject, "Pause");
+        _pauseBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "Pause");
+        RigisterButtonObjectEvent(_pauseBtn, go =>
+        {
+            _pause.SetActive(false);
+            _videoPlayer.Play();
+        });
+        
+        _tmText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "TM_Text");
+        
+        Button _playBtn;
+        _playBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "Video");
+        RigisterButtonObjectEvent(_playBtn, go =>
+        {
+            _pause.SetActive(true);
+            _videoPlayer.Pause();
+        });
+        
+        //暂停
+        _pause = UnityHelper.FindTheChildNode(gameObject, "Pause");
+        _pauseBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "Pause");
+        RigisterButtonObjectEvent(_pauseBtn, go =>
+        {
+            _pause.SetActive(false);
+            _videoPlayer.Play();
+        });
+        
+        RigisterButtonObjectEvent(_volume, go =>
+        {
+            
+            GL_CoreData._instance.VideoVolume = !GL_CoreData._instance.VideoVolume;
+            VideoVolume(GL_CoreData._instance.VideoVolume);
+        });
+
+        //旋转
+        VideoVolume(GL_CoreData._instance.VideoVolume);
+        _videoPlayer.loopPointReached += VideoFinish;
+
     }
     
 
 
 
-    public void FreshLevel()
-    {
-        _level.text = string.Format("第{0}关", GL_PlayerData._instance.CurLevel);
-    }
-
-
+ 
+    private string PATH = "https://static.ciyunjinchan.com/Unity/Video/Short/";
+    private TableAnswerInfoData _info;
     public void RefreshAnswerMode(EventParam param)
     {
-        //GL_TileRegion._instance.Load();
-        FreshLevel();
-        _textHint.text = GL_CoreData._instance.TipsCount.ToString();
-    }
-    
-    private void OnClickReplay()
-    {
-        GL_SceneManager._instance.LevelReplay();
-    }
+        CreateLevel(GL_PlayerData._instance.AnswerCount);
+        if (_info == null)
+            return;
+        _pause.SetActive(false);
+        //刷新视频
+        _videoPlayer.url = PATH + _info.Picture /*+".mp4"*/;
+        _videoPlayer.Play();
 
-    private void OnClickHint()
+        _tmText.text = _info.TitleText;
+        
+        //刷新选项
+        _btnAText.text = _info.Select1;
+        _btnBText.text = _info.Select2;
+
+        // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
+
+       
+    }
+    public List<TableAnswerInfoData> _levelList;
+    private void ParseTable()
+    { 
+        _levelList = DataModuleManager._instance.TableAnswerInfoData_Dictionary.Values.ToList();
+    }
+    /// <summary>
+    /// 创建关卡
+    /// </summary>
+    /// <param name="levelIndex"></param>
+    public void CreateLevel(int levelIndex) 
     {
-        //先检测次数, 扣除次数
-        if (GL_CoreData._instance.TipsCount>0)
+        //DDebug.LogError("读取关卡："+GL_PlayerData._instance.AnswerCount);
+        //创建新关卡
+        if (levelIndex > _levelList.Count)
         {
-            GL_CoreData._instance.TipsCount--;
-            GL_SceneManager._instance.LevelHint();
-            _textHint.text = GL_CoreData._instance.TipsCount.ToString();
+            //1-500
+            levelIndex = UnityEngine.Random.Range(0, _levelList.Count);
         }
         else
         {
-            UI_HintMessage._.ShowMessage("提示次数不足");
+         
         }
+        _info = _levelList[levelIndex];
+        
+    }
+    
+    private void OnClickChoice(int index)
+    {
+        //DDebug.LogError("回答问题" + _levelInfo.CorrectAnswer);
+        if (_info == null)
+            return;
+        if (_info.CorrectAnswer.Contains(index))
+        {
+            UI_HintMessage._.ShowMessage("回答正确");
+            _chanceBtn.sprite = _btnIcon[1];
+        }
+        else
+        {
+            UI_HintMessage._.ShowMessage("回答错误");
+            _chanceBtn.sprite = _btnIcon[2];
+        }
+
+        GL_PlayerData._instance.AnswerCount++;
+        Invoke("FreshGame",1f);
+    }
+    /// <summary>
+    /// 按键恢复显示
+    /// </summary>
+    public void MoveBack()
+    {
+        _chanceBtn.sprite = _btnIcon[0];
     }
 
+    private void FreshGame()
+    {
+        MoveBack();
+        RefreshAnswerMode(null);
+    }
+    
+    /// <summary>
+    /// 完成播放
+    /// </summary>
+    /// <param name="videoSource"></param>
+    private void VideoFinish(VideoPlayer videoSource)
+    {
+        DDebug.LogError("完成播放。");
+        _pause.SetActive(true);
+    }
+    
+    /// <summary>
+    /// 音频控制
+    /// </summary>
+    /// <param name="set"></param>
+    private void VideoVolume(bool set)
+    {
+        if (set)
+        {
+            //打开声音
+            _videoPlayer.SetDirectAudioVolume(0,1);
+            _volume.transform.DORotate(new Vector3(0, 0, 36000), 400f, RotateMode.LocalAxisAdd).SetLoops(-1,LoopType.Restart);
+        }
+        else
+        {
+            //关闭声音
+            _videoPlayer.SetDirectAudioVolume(0,0);
+            _volume.transform.DOPause();
+        }
+    }
 }

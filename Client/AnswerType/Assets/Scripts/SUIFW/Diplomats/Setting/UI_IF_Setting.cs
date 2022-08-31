@@ -103,7 +103,7 @@ public class UI_IF_Setting : BaseUIForm
         
         _audioControl.onValueChanged.AddListener((delegate(bool set)
         {
-            SetAudio(set); 
+            SetAudio(!set); 
         }));
 
 
@@ -394,8 +394,6 @@ public class UI_IF_Setting : BaseUIForm
 #else
             Application.Quit();
 #endif
-            
-        
         }
         //判断是否微信登陆
         if(GL_PlayerData._instance.IsLoginWeChat())

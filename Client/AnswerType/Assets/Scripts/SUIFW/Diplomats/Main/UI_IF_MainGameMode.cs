@@ -128,6 +128,7 @@ public partial class UI_IF_Main
         });
 
         //旋转
+        VideoVolume(GL_CoreData._instance.VideoVolume);
         _videoPlayer.loopPointReached += VideoFinish;
 
         Button _playBtn;
@@ -170,7 +171,7 @@ public partial class UI_IF_Main
 
         // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
 
-        _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
+        // _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
     }
     private void OnClickChoice(int index)
     {
@@ -260,11 +261,13 @@ public partial class UI_IF_Main
         {
             //打开声音
              _videoPlayer.SetDirectAudioVolume(0,1);
+             _volume.transform.DORotate(new Vector3(0, 0, -36000), 400f, RotateMode.LocalAxisAdd).SetLoops(-1,LoopType.Restart);
         }
         else
         {
             //关闭声音
             _videoPlayer.SetDirectAudioVolume(0,0);
+            _volume.transform.DOPause();
         }
     }
 
