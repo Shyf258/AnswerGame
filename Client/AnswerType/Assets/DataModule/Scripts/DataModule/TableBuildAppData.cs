@@ -25,6 +25,10 @@ namespace DataModule
 		/// </summary>
 		public string ProductName;
 		/// <summary>
+		/// 产品英文名(用于七牛下载区分)
+		/// </summary>
+		public string ProductEnName;
+		/// <summary>
 		/// 包名
 		/// </summary>
 		public string PackageName;

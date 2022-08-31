@@ -471,6 +471,17 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
         object[] datas = { _guideCallback };
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewbieSign, datas);
     }
+
+    private void OnChangeWithdraw()
+    {
+        SUIFW.Diplomats.Main.MyWithdraw.UI_IF_NewWithdraw wd = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw) 
+            as SUIFW.Diplomats.Main.MyWithdraw.UI_IF_NewWithdraw;
+        if (wd == null)
+            return;
+        wd.DoChangeScrollRect();
+
+    }
+
     #endregion
 }
 
