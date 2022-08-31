@@ -160,7 +160,7 @@ public partial class UI_IF_Main
         if (info == null)
             return;
         //Ë¢ÐÂÊÓÆµ
-        _videoPlayer.url = PATH + info.Picture /*+".mp4"*/;
+        _videoPlayer.url = PATH + info.Picture +".mp4";
         _videoPlayer.Play();
 
         _tmText.text = info.TitleText;

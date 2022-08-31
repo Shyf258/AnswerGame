@@ -156,7 +156,7 @@ public class UI_IF_PureGame : BaseUIForm
             return;
         _pause.SetActive(false);
         //刷新视频
-        _videoPlayer.url = PATH + _info.Picture /*+".mp4"*/;
+        _videoPlayer.url = PATH + _info.Picture +".mp4";
         _videoPlayer.Play();
 
         _tmText.text = _info.TitleText;
