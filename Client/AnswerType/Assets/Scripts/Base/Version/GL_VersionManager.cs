@@ -74,7 +74,10 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
                     {
                         audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
                     }
-                    _resList.Add(string.Format(AudioUrl, audio));
+                    if (!audio.Equals(index.ToString()))
+                    {
+                        _resList.Add(string.Format(AudioUrl, audio));
+                    }
                 }
 
                 string pPath = CalculatePictureUrl(index);
@@ -122,7 +125,10 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
                 {
                     audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
                 }
-                _resList.Add(string.Format(AudioUrl, audio));
+                if (!audio.Equals(index.ToString()))
+                {
+                    _resList.Add(string.Format(AudioUrl, audio));
+                }
             }
 
             //计算图片
