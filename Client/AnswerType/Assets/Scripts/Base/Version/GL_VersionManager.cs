@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using DataModule;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -12,7 +13,9 @@ using UnityEngine.Networking;
 public class GL_VersionManager : Singleton<GL_VersionManager>
 {
     #region 资源配置
-    public const string TotalUrl = "https://static.ciyunjinchan.com/Unity/LifeWinnerGold/";
+
+    public static readonly string TotalUrl = "https://static.ciyunjinchan.com/Unity/"+ QNDownloadAppEnName +"/";
+    public static readonly string QNDownloadAppEnName = GameDataTable.GetTableBuildAppData((int) AppSetting.BuildApp).ProductEnName;
 
     private List<string> _resList = new List<string>()
     {
