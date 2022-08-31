@@ -75,6 +75,14 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshGoldCd();
             _scrollRect.verticalNormalizedPosition = 1;
         }
+        private void TriggerGuide()
+        {
+            //GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIWithdraw);
+        }
+        public void DoChangeScrollRect()
+        {
+            _scrollRect.verticalNormalizedPosition = 0.5f;
+        }
 
         private void RefreshRed()
         {
@@ -124,6 +132,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
                 Init(EnumMyWithdraw.Gold);
+
+                //因为需要排序, 所以延迟一会检测
+                if(GL_PlayerData._instance.IsEnoughCoin())
+                    Invoke(nameof(TriggerGuide), 0.05f);
             });
         }
         
