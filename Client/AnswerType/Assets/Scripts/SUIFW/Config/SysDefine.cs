@@ -118,7 +118,6 @@ namespace SUIFW
         public const string UI_Path_Main = "Main";
         public const string UI_Path_MainUp = "MainUp";
         public const string UI_Path_PositionDetail = "PositionDetail";
-
         public const string UI_Path_WithDrawJudge = "WithDrawJudge";
         public const string UI_Path_RedWithdraw = "RedWithdraw";      //提现界面
         public const string UI_Path_Withdraw = "Withdraw";      //提现界面

@@ -314,4 +314,5 @@ public enum EGamecoreType
     ActivitySign = 3,   //活动页签到
     PureAnswer = 4, //答题进度红包
     ActivityVideo = 5, //活动看视频
+    Turntable =9, //抽奖
 }

@@ -426,6 +426,7 @@ MonoBehaviour:
   - MoreRedChance
   - MoreCoinChance
   - MoneyShort
+  - WithDrawTurn
   _interstitialList:
   - AllDialog
   _nativeList:

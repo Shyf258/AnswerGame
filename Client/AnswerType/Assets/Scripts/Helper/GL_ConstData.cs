@@ -52,6 +52,9 @@ public class GL_ConstData
     public const int SceneID_Production = 1000004;
     //广告场景-打卡
     public const int SceneID_Sign =  1000005;
+    
+    //广告场景-装盘
+    public const int SceneID_Turn = 1000008;
        
 
     #region 游戏数值设定

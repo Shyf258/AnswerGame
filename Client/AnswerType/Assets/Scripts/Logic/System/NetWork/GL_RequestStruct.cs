@@ -898,6 +898,10 @@ public class Net_CB_GamecoreConfig
     public int acceptTimes;     //总限制次数 0为无限制
     public List<Rewards> rewards;     //奖励
     public int intervalTime; //间隔时间
+    /// <summary>
+    /// 阶段 对不同业务有不同的阶段 抽奖: 1.未提现5角 2.已提现5角
+    /// </summary>
+    public int stage; 
 }
 
 public class Net_GamecoreAccept : Net_RequesetCommon
