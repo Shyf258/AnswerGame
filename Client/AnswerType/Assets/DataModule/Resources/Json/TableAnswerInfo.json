@@ -1,8339 +1,5002 @@
 {
   "1": {
     "ID": 1,
-    "TitleText": "今年是哪一年？",
-    "Select1": "2022",
-    "Select2": "2023",
+    "Type": 1,
+    "TitleText": "5125",
+    "Select1": "易如反掌",
+    "Select2": "易于拾遗",
     "CorrectAnswer": [
       1
     ]
   },
   "2": {
     "ID": 2,
-    "TitleText": "我国的国旗是什么图案？",
-    "Select1": "六芒星",
-    "Select2": "五星红旗",
+    "Type": 1,
+    "TitleText": "3321",
+    "Select1": "狼子野心",
+    "Select2": "狼烟四起",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "3": {
     "ID": 3,
-    "TitleText": "美国现任总统是谁？",
-    "Select1": "懂王",
-    "Select2": "拜登",
+    "Type": 1,
+    "TitleText": "3168",
+    "Select1": "两袖清风",
+    "Select2": "两小无猜",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc001"
+    ]
   },
   "4": {
     "ID": 4,
-    "TitleText": "我国教师节是哪一天？",
-    "Select1": "9月10日",
-    "Select2": "10月9日",
+    "Type": 2,
+    "Select1": "按兵部队",
+    "Select2": "暗度陈仓",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "abbd"
   },
   "5": {
     "ID": 5,
-    "TitleText": "世界上最大的海洋是什么？",
-    "Select1": "太平洋",
-    "Select2": "喜洋洋",
+    "Type": 2,
+    "Select1": "爱财如命",
+    "Select2": "爱才如命",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "acrm"
   },
   "6": {
     "ID": 6,
-    "TitleText": "我国有多少个民族？",
-    "Select1": "10086",
-    "Select2": "56",
+    "Type": 2,
+    "Select1": "暗箭伤人",
+    "Select2": "背后一箭",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "tpsc002"
+    "Picture": "ajsr"
   },
   "7": {
     "ID": 7,
-    "TitleText": "建军节是哪一天？",
-    "Select1": "8月1日",
-    "Select2": "1月8日",
+    "Type": 3,
+    "TitleText": "15-2",
+    "Select1": "万径人踪灭。",
+    "Select2": "汗滴禾下土。",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "8": {
     "ID": 8,
-    "TitleText": "先看见闪电还是先听到雷声",
-    "Select1": "闪电",
-    "Select2": "雷声",
+    "Type": 3,
+    "TitleText": "4-2",
+    "Select1": "黄河入海流。",
+    "Select2": "处处闻啼鸟。",
     "CorrectAnswer": [
       1
     ]
   },
   "9": {
     "ID": 9,
-    "TitleText": "中国第一个奥运会冠军是？",
-    "Select1": "江疏影",
-    "Select2": "许海峰",
+    "Type": 3,
+    "TitleText": "3-2",
+    "Select1": "疑是地上霜。",
+    "Select2": "鱼尾何簁簁。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc003"
+      1
+    ]
   },
   "10": {
     "ID": 10,
-    "TitleText": "诗仙是谁？",
-    "Select1": "李白",
-    "Select2": "韩寒",
+    "Type": 1,
+    "TitleText": "4119",
+    "Select1": "甜言蜜语",
+    "Select2": "鬼计多端",
     "CorrectAnswer": [
       1
     ]
   },
   "11": {
     "ID": 11,
-    "TitleText": "太阳系最小的星星是?",
-    "Select1": "周星星",
-    "Select2": "冥王星",
+    "Type": 1,
+    "TitleText": "2690",
+    "Select1": "鸟语花香",
+    "Select2": "鸟枪换炮",
     "CorrectAnswer": [
       2
     ]
   },
   "12": {
     "ID": 12,
-    "TitleText": "“万园之园”是指？",
-    "Select1": "圆明园",
-    "Select2": "陈圆圆",
+    "Type": 1,
+    "TitleText": "3102",
+    "Select1": "龙飞凤舞",
+    "Select2": "六月飞霜",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc004"
+      2
+    ]
   },
   "13": {
     "ID": 13,
-    "TitleText": "世界使用人口最多的语言是？",
-    "Select1": "汉语",
-    "Select2": "英语",
+    "Type": 2,
+    "Select1": "鞍前马后",
+    "Select2": "前后夹击",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "aqmh"
   },
   "14": {
     "ID": 14,
-    "TitleText": "九月九是什么节日？",
-    "Select1": "圣诞节",
-    "Select2": "重阳节",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "15": {
-    "ID": 15,
-    "TitleText": "法国的首都是？",
-    "Select1": "洛杉矶",
-    "Select2": "巴黎",
+    "Type": 2,
+    "Select1": "前胸后背",
+    "Select2": "昂首挺胸",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "tpsc005"
+    "Picture": "astx"
+  },
+  "15": {
+    "ID": 15,
+    "Type": 2,
+    "Select1": "心心的家",
+    "Select2": "爱屋及乌",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "awjw"
   },
   "16": {
     "ID": 16,
-    "TitleText": "“泼水节”是哪个少数民族的节日？",
-    "Select1": "傣族",
-    "Select2": "上班族",
+    "Type": 3,
+    "TitleText": "34-2",
+    "Select1": "春来发几枝。",
+    "Select2": "今日把示君，",
     "CorrectAnswer": [
       1
     ]
   },
   "17": {
     "ID": 17,
-    "TitleText": "我国的国土面积是多少？",
-    "Select1": "960万平方千米",
-    "Select2": "1光年",
+    "Type": 3,
+    "TitleText": "2-2",
+    "Select1": "能开二月花。",
+    "Select2": "春风花草香。",
     "CorrectAnswer": [
       1
     ]
   },
   "18": {
     "ID": 18,
-    "TitleText": "中国历史上第一个朝代是？",
-    "Select1": "夏",
-    "Select2": "唐",
+    "Type": 3,
+    "TitleText": "20-1",
+    "Select1": "生当作人杰，",
+    "Select2": "众鸟高飞尽，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc006"
+    ]
   },
   "19": {
     "ID": 19,
-    "TitleText": "香港那一年回归的？",
-    "Select1": "1997年",
-    "Select2": "2007年",
+    "Type": 1,
+    "TitleText": "3411",
+    "Select1": "哭笑不得",
+    "Select2": "苦大仇深",
     "CorrectAnswer": [
       1
     ]
   },
   "20": {
     "ID": 20,
-    "TitleText": "古代第一位皇帝是？",
-    "Select1": "嬴政",
-    "Select2": "碎星",
+    "Type": 1,
+    "TitleText": "4686",
+    "Select1": "众说纷纭",
+    "Select2": "众矢之的",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "21": {
     "ID": 21,
-    "TitleText": "端午节是为了纪念谁？",
-    "Select1": "菈妮",
-    "Select2": "屈原",
+    "Type": 1,
+    "TitleText": "4528",
+    "Select1": "自讨苦吃",
+    "Select2": "自投罗网",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc007"
+      1
+    ]
   },
   "22": {
     "ID": 22,
-    "TitleText": "“世界环境日”是哪一天？",
-    "Select1": "6月5日",
-    "Select2": "2月30日",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "23": {
-    "ID": 23,
-    "TitleText": "下列哪个不属于中国四大发明？",
-    "Select1": "指南针",
-    "Select2": "艾尔登法环",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "24": {
-    "ID": 24,
-    "TitleText": "NBA是哪个国家的篮球联赛？",
-    "Select1": "美国",
-    "Select2": "非洲",
+    "Type": 2,
+    "Select1": "爱恨分明",
+    "Select2": "白天黑夜",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc008"
+    "Picture": "azfm"
+  },
+  "23": {
+    "ID": 23,
+    "Type": 2,
+    "Select1": "百步穿杨",
+    "Select2": "后羿射日",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "bbcy"
+  },
+  "24": {
+    "ID": 24,
+    "Type": 2,
+    "Select1": "掩耳盗铃",
+    "Select2": "步步为营",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "bbwy"
   },
   "25": {
     "ID": 25,
-    "TitleText": "世界上最大面积的国家是？",
-    "Select1": "俄罗斯",
-    "Select2": "日本",
+    "Type": 3,
+    "TitleText": "59-3",
+    "Select1": "不知明镜里，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       1
     ]
   },
   "26": {
     "ID": 26,
-    "TitleText": "布达拉宫是哪个民族的建筑？",
-    "Select1": "汉族",
-    "Select2": "藏族",
+    "Type": 3,
+    "TitleText": "9-1",
+    "Select1": "慈母手中线，",
+    "Select2": "欲穷千里目，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "27": {
     "ID": 27,
-    "TitleText": "英国的首都是？",
-    "Select1": "伦敦",
-    "Select2": "东京",
+    "Type": 3,
+    "TitleText": "10-2",
+    "Select1": "万径人踪灭。",
+    "Select2": "游子身上衣。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc009"
+    ]
   },
   "28": {
     "ID": 28,
-    "TitleText": "一天之计在于晨，一年之计在于？",
-    "Select1": "春",
-    "Select2": "冬",
+    "Type": 1,
+    "TitleText": "2666",
+    "Select1": "藕断丝连",
+    "Select2": "拍案而起",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "29": {
     "ID": 29,
-    "TitleText": "我国最大的岛屿是？",
-    "Select1": "台湾岛",
-    "Select2": "不知岛",
+    "Type": 1,
+    "TitleText": "3117",
+    "Select1": "安邦定国",
+    "Select2": "临危不惧",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "30": {
     "ID": 30,
-    "TitleText": "“风车王国”是指？",
-    "Select1": "荷兰",
-    "Select2": "非洲共和国",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc010"
-  },
-  "31": {
-    "ID": 31,
-    "TitleText": "世界上使用地铁最早的国家是？",
-    "Select1": "英国",
-    "Select2": "中国",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "32": {
-    "ID": 32,
-    "TitleText": "洗澡搓背用的工具是？",
-    "Select1": "石灰石",
-    "Select2": "搓澡巾",
+    "Type": 1,
+    "TitleText": "3023",
+    "Select1": "落荒而逃",
+    "Select2": "落花流水",
     "CorrectAnswer": [
       2
     ]
   },
-  "33": {
-    "ID": 33,
-    "TitleText": "我国被称为诗圣是谁？",
-    "Select1": "杜甫",
-    "Select2": "曾小贤",
+  "31": {
+    "ID": 31,
+    "Type": 2,
+    "Select1": "别出心裁",
+    "Select2": "别剪真心",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc011"
+    "Picture": "bcxc"
+  },
+  "32": {
+    "ID": 32,
+    "Type": 2,
+    "Select1": "你我相连",
+    "Select2": "不分彼此",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "bfbc"
+  },
+  "33": {
+    "ID": 33,
+    "Type": 2,
+    "Select1": "自盗家门",
+    "Select2": "闭关锁国",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "bgsg"
   },
   "34": {
     "ID": 34,
-    "TitleText": "音乐之都是哪里？",
-    "Select1": "维也纳",
-    "Select2": "康庄子",
+    "Type": 3,
+    "TitleText": "90-1",
+    "Select1": "寒雨连江夜入吴，",
+    "Select2": "秦时明月汉时关，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "35": {
     "ID": 35,
-    "TitleText": "世界水城是哪里？",
-    "Select1": "北戴河",
-    "Select2": "威尼斯",
+    "Type": 3,
+    "TitleText": "98-3",
+    "Select1": "飞流直下三千尺，",
+    "Select2": "劝君更尽一杯酒，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "36": {
     "ID": 36,
-    "TitleText": "《丑小鸭》是谁写的？",
-    "Select1": "策划大人",
-    "Select2": "安徒生",
+    "Type": 3,
+    "TitleText": "94-2",
+    "Select1": "每逢佳节倍思亲。",
+    "Select2": "一片孤城万仞山。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc012"
+      1
+    ]
   },
   "37": {
     "ID": 37,
-    "TitleText": "“更上一层楼”是哪位诗人写的？",
-    "Select1": "安徒生",
-    "Select2": "王之涣",
+    "Type": 1,
+    "TitleText": "3346",
+    "Select1": "胯下之辱",
+    "Select2": "跨凤乘龙",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "38": {
     "ID": 38,
-    "TitleText": "《红楼梦》是谁写的？",
-    "Select1": "曹雪芹",
-    "Select2": "曹操",
+    "Type": 1,
+    "TitleText": "4919",
+    "Select1": "斩草除根",
+    "Select2": "斩钉截铁",
     "CorrectAnswer": [
       1
     ]
   },
   "39": {
     "ID": 39,
-    "TitleText": "李时珍写的医术叫什么？",
-    "Select1": "本草纲目",
-    "Select2": "大郎该吃药了",
+    "Type": 1,
+    "TitleText": "3078",
+    "Select1": "漏网之鱼",
+    "Select2": "漏洞百出",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc013"
+    ]
   },
   "40": {
     "ID": 40,
-    "TitleText": "文房四宝是指？",
-    "Select1": "笔墨纸砚",
-    "Select2": "春夏秋冬",
+    "Type": 2,
+    "Select1": "大节小节",
+    "Select2": "不拘小节",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "bjxj"
   },
   "41": {
     "ID": 41,
-    "TitleText": "“三人行必有我师”是谁的话？",
-    "Select1": "孔子",
-    "Select2": "马冬梅",
+    "Type": 2,
+    "Select1": "双眼不堪",
+    "Select2": "不堪入目",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "bkrm"
   },
   "42": {
     "ID": 42,
-    "TitleText": "我国的第一部诗歌合集是？",
-    "Select1": "诗经",
-    "Select2": "家禽养殖大全",
+    "Type": 2,
+    "Select1": "十一之书",
+    "Select2": "不可思议",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "tpsc014"
+    "Picture": "bksy"
   },
   "43": {
     "ID": 43,
-    "TitleText": "下列谁是红楼梦中的人物？",
-    "Select1": "派大星",
-    "Select2": "贾宝玉",
+    "Type": 3,
+    "TitleText": "110-1",
+    "Select1": "千里莺啼绿映红，",
+    "Select2": "不论平地与山尖，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "44": {
     "ID": 44,
-    "TitleText": "世界表城是哪里？",
-    "Select1": "伯尔尼",
-    "Select2": "香河",
+    "Type": 3,
+    "TitleText": "1-1",
+    "Select1": "愿得一人心，",
+    "Select2": "解落三秋叶，",
     "CorrectAnswer": [
       1
     ]
   },
   "45": {
     "ID": 45,
-    "TitleText": "下列谁不是红楼梦中的人物？",
-    "Select1": "贾斯汀比伯",
-    "Select2": "林黛玉",
+    "Type": 3,
+    "TitleText": "16-1",
+    "Select1": "春种一粒粟，",
+    "Select2": "松下问童子，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc015"
+    ]
   },
   "46": {
     "ID": 46,
-    "TitleText": "“读书破万卷”是谁说的？",
-    "Select1": "杜十娘",
-    "Select2": "杜甫",
+    "Type": 1,
+    "TitleText": "2749",
+    "Select1": "目瞪口呆",
+    "Select2": "目睹耳闻",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "47": {
     "ID": 47,
-    "TitleText": "圆明园是被谁烧的？",
-    "Select1": "复联",
-    "Select2": "英法联军",
+    "Type": 1,
+    "TitleText": "5188",
+    "Select1": "一柱擎天",
+    "Select2": "一掷乾坤",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "48": {
     "ID": 48,
-    "TitleText": "“精忠报国”一般是说谁？",
-    "Select1": "李飞",
-    "Select2": "岳飞",
+    "Type": 1,
+    "TitleText": "4117",
+    "Select1": "同床异梦",
+    "Select2": "亭台楼阁",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc016"
+      1
+    ]
   },
   "49": {
     "ID": 49,
-    "TitleText": "“赤壁之战”是指哪三个国？",
-    "Select1": "魏蜀吴",
-    "Select2": "英法德",
+    "Type": 2,
+    "Select1": "倩女幽魂",
+    "Select2": "白面书生",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "bmss"
   },
   "50": {
     "ID": 50,
-    "TitleText": "“三顾茅庐”是哪个时期的？",
-    "Select1": "清末",
-    "Select2": "三国",
+    "Type": 2,
+    "Select1": "八只蜜蜂",
+    "Select2": "八面威风",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "bmwf"
   },
   "51": {
     "ID": 51,
-    "TitleText": "《哈姆雷特》是谁写的？",
-    "Select1": "莎士比亚",
-    "Select2": "阿凡提",
+    "Type": 2,
+    "Select1": "我是鲁迅",
+    "Select2": "百年树人",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "tpsc017"
+    "Picture": "bnsr"
   },
   "52": {
     "ID": 52,
-    "TitleText": "岳飞的罪名是？",
-    "Select1": "莫须有",
-    "Select2": "强推对方老家",
+    "Type": 3,
+    "TitleText": "92-1",
+    "Select1": "碧玉妆成一树高，",
+    "Select2": "寒雨连江夜入吴，",
     "CorrectAnswer": [
       1
     ]
   },
   "53": {
     "ID": 53,
-    "TitleText": "水浒中“及时雨”是谁？",
-    "Select1": "宋江",
-    "Select2": "阎婆惜",
+    "Type": 3,
+    "TitleText": "89-2",
+    "Select1": "正是男儿读书时。",
+    "Select2": "欲饮琵琶马上催。",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "54": {
     "ID": 54,
-    "TitleText": "“卧薪尝胆”指的是谁？",
-    "Select1": "勾践",
-    "Select2": "司马懿",
+    "Type": 3,
+    "TitleText": "117-3",
+    "Select1": "欲把西湖比西子，",
+    "Select2": "蒌蒿满地芦芽短，",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc018"
+      2
+    ]
   },
   "55": {
     "ID": 55,
-    "TitleText": "《史记》是谁写的？",
-    "Select1": "司马迁",
-    "Select2": "曹雪芹",
+    "Type": 1,
+    "TitleText": "3407",
+    "Select1": "枯木逢春",
+    "Select2": "枯燥无味",
     "CorrectAnswer": [
       1
     ]
   },
   "56": {
     "ID": 56,
-    "TitleText": "下列不是四大名著的是？",
-    "Select1": "红楼梦",
-    "Select2": "小兵张嗄",
+    "Type": 1,
+    "TitleText": "3539",
+    "Select1": "咎由自取",
+    "Select2": "救苦救难",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "57": {
     "ID": 57,
-    "TitleText": "世界上最老的寓言是？",
-    "Select1": "买彩票中奖",
-    "Select2": "伊索寓言",
+    "Type": 1,
+    "TitleText": "4172",
+    "Select1": "弃暗投明",
+    "Select2": "弃本逐末",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc019"
+      1
+    ]
   },
   "58": {
     "ID": 58,
-    "TitleText": "我国古代是谁留下了近万首诗？",
-    "Select1": "路由器",
-    "Select2": "陆游",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "59": {
-    "ID": 59,
-    "TitleText": "神话故事中谁是莲花的化身？",
-    "Select1": "派大星",
-    "Select2": "哪吒",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "60": {
-    "ID": 60,
-    "TitleText": "阿凡提的驴叫什么？",
-    "Select1": "小秃驴",
-    "Select2": "金坷垃",
+    "Type": 2,
+    "Select1": "七步成诗",
+    "Select2": "七上八下",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc020"
+    "Picture": "bqcs"
+  },
+  "59": {
+    "ID": 59,
+    "Type": 2,
+    "Select1": "麻木不仁",
+    "Select2": "不仁不义",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "brby"
+  },
+  "60": {
+    "ID": 60,
+    "Type": 2,
+    "Select1": "白日做梦",
+    "Select2": "绿袍加身",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "brzm"
   },
   "61": {
     "ID": 61,
-    "TitleText": "下列哪个高原是我国的？",
-    "Select1": "青藏高原",
-    "Select2": "火星高原",
+    "Type": 3,
+    "TitleText": "7-1",
+    "Select1": "江碧鸟逾白，",
+    "Select2": "空山不见人，",
     "CorrectAnswer": [
       1
     ]
   },
   "62": {
     "ID": 62,
-    "TitleText": "东周时期分为春秋和什么？",
-    "Select1": "战国",
-    "Select2": "五代十国",
+    "Type": 3,
+    "TitleText": "21-2",
+    "Select1": "孤云独去闲。",
+    "Select2": "秋收万颗子。",
     "CorrectAnswer": [
       1
     ]
   },
   "63": {
     "ID": 63,
-    "TitleText": "宋代文体成就最高的是？",
-    "Select1": "现代诗歌",
-    "Select2": "古词",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc021"
-  },
-  "64": {
-    "ID": 64,
-    "TitleText": "“鸿雁”在古代指？",
-    "Select1": "小鸟",
-    "Select2": "书信",
+    "Type": 3,
+    "TitleText": "22-3",
+    "Select1": "君看一叶舟，",
+    "Select2": "深林人不知，",
     "CorrectAnswer": [
       2
     ]
   },
+  "64": {
+    "ID": 64,
+    "Type": 1,
+    "TitleText": "3647",
+    "Select1": "金蝉脱壳",
+    "Select2": "金璧辉煌",
+    "CorrectAnswer": [
+      1
+    ]
+  },
   "65": {
     "ID": 65,
-    "TitleText": "“杯酒释兵权”是谁的故事？",
-    "Select1": "宋太祖",
-    "Select2": "居委会主任",
+    "Type": 1,
+    "TitleText": "5404",
+    "Select1": "遥遥无期",
+    "Select2": "遥遥领先",
     "CorrectAnswer": [
       1
     ]
   },
   "66": {
     "ID": 66,
-    "TitleText": "“四面楚歌”是谁的故事？",
-    "Select1": "项羽",
-    "Select2": "金沙",
+    "Type": 1,
+    "TitleText": "4025",
+    "Select1": "胡思乱想",
+    "Select2": "胡说八道",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc022"
+      2
+    ]
   },
   "67": {
     "ID": 67,
-    "TitleText": "第一个两次获得诺贝尔奖的是？",
-    "Select1": "树先生",
-    "Select2": "居里夫人",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "68": {
-    "ID": 68,
-    "TitleText": "我国最长的河是？",
-    "Select1": "北戴河",
-    "Select2": "长江",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "69": {
-    "ID": 69,
-    "TitleText": "勺子形状的星座第七个星是？",
-    "Select1": "北斗星",
-    "Select2": "南斗星",
+    "Type": 2,
+    "Select1": "不识好歹",
+    "Select2": "脑子有病",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc023"
+    "Picture": "bshd"
+  },
+  "68": {
+    "ID": 68,
+    "Type": 2,
+    "Select1": "大巴山雨",
+    "Select2": "巴山夜雨",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "bsyy"
+  },
+  "69": {
+    "ID": 69,
+    "Type": 2,
+    "Select1": "白头到老",
+    "Select2": "脑白金",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "btdl"
   },
   "70": {
     "ID": 70,
-    "TitleText": "水浒中“豹子头”是谁？",
-    "Select1": "西门庆",
-    "Select2": "林冲",
+    "Type": 3,
+    "TitleText": "23-1",
+    "Select1": "逐舞飘轻袖，",
+    "Select2": "锄禾日当午，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "71": {
     "ID": 71,
-    "TitleText": "中国在哪个半球？",
-    "Select1": "南极",
-    "Select2": "北半球",
+    "Type": 3,
+    "TitleText": "24-2",
+    "Select1": "孤云独去闲。",
+    "Select2": "流响出疏桐。",
     "CorrectAnswer": [
       2
     ]
   },
   "72": {
     "ID": 72,
-    "TitleText": "古代最著名的军事著作是？",
-    "Select1": "高等数学",
-    "Select2": "孙子兵法",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc024"
-  },
-  "73": {
-    "ID": 73,
-    "TitleText": "下列不是四大名著的是？",
-    "Select1": "西游记",
-    "Select2": "鸡毛信",
+    "Type": 3,
+    "TitleText": "25-2",
+    "Select1": "游子身上衣。",
+    "Select2": "离亭叶正稀。",
     "CorrectAnswer": [
       2
     ]
   },
+  "73": {
+    "ID": 73,
+    "Type": 1,
+    "TitleText": "4333",
+    "Select1": "大言不惭",
+    "Select2": "大同小异",
+    "CorrectAnswer": [
+      1
+    ]
+  },
   "74": {
     "ID": 74,
-    "TitleText": "下列不是五岳的是？",
-    "Select1": "五指山",
-    "Select2": "泰山",
+    "Type": 1,
+    "TitleText": "5406",
+    "Select1": "杳无人烟",
+    "Select2": "遥遥无期",
     "CorrectAnswer": [
       1
     ]
   },
   "75": {
     "ID": 75,
-    "TitleText": "太阳是什么星？",
-    "Select1": "恒星",
-    "Select2": "五角星",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc025"
-  },
-  "76": {
-    "ID": 76,
-    "TitleText": "我国最大的城市是？",
-    "Select1": "上海",
-    "Select2": "三里屯",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "77": {
-    "ID": 77,
-    "TitleText": "被称为日光城的是？",
-    "Select1": "漠河",
-    "Select2": "拉萨",
+    "Type": 1,
+    "TitleText": "2980",
+    "Select1": "瞒天过海",
+    "Select2": "瞒天大谎",
     "CorrectAnswer": [
       2
     ]
   },
-  "78": {
-    "ID": 78,
-    "TitleText": "地球是不是九大行星之一？",
-    "Select1": "是",
-    "Select2": "不是",
+  "76": {
+    "ID": 76,
+    "Type": 2,
+    "Select1": "白雪皑皑",
+    "Select2": "炎热酷夏",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc026"
+    "Picture": "bxaa"
+  },
+  "77": {
+    "ID": 77,
+    "Type": 2,
+    "Select1": "喜夜蝙蝠",
+    "Select2": "不修边幅",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "bxbf"
+  },
+  "78": {
+    "ID": 78,
+    "Type": 2,
+    "Select1": "男女老少",
+    "Select2": "八仙过海",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "bxgh"
   },
   "79": {
     "ID": 79,
-    "TitleText": "水浒中“智多星”是谁？",
-    "Select1": "吴用",
-    "Select2": "高俅",
+    "Type": 3,
+    "TitleText": "26-1",
+    "Select1": "松下问童子，",
+    "Select2": "此地别燕丹，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "80": {
     "ID": 80,
-    "TitleText": "我国第二大的岛是什么岛？",
-    "Select1": "青岛",
-    "Select2": "海南岛",
+    "Type": 3,
+    "TitleText": "27-2",
+    "Select1": "秋收万颗子。",
+    "Select2": "皆言四海同。",
     "CorrectAnswer": [
       2
     ]
   },
   "81": {
     "ID": 81,
-    "TitleText": "地球自转一圈需要多久？",
-    "Select1": "一分钟",
-    "Select2": "一天",
+    "Type": 3,
+    "TitleText": "28-1",
+    "Select1": "长江悲已滞，",
+    "Select2": "春种一粒粟，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc027"
+      1
+    ]
   },
   "82": {
     "ID": 82,
-    "TitleText": "夏天最适合穿什么衣服？",
-    "Select1": "单衣",
-    "Select2": "二棉裤",
+    "Type": 1,
+    "TitleText": "4129",
+    "Select1": "食言而肥",
+    "Select2": "身首异处",
     "CorrectAnswer": [
       1
     ]
   },
   "83": {
     "ID": 83,
-    "TitleText": "UFO是什么标志？",
-    "Select1": "飞碟",
-    "Select2": "电动车",
+    "Type": 1,
+    "TitleText": "4190",
+    "Select1": "片言只语",
+    "Select2": "皮开肉绽",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "84": {
     "ID": 84,
-    "TitleText": "USO是什么意思？",
-    "Select1": "不明潜水物",
-    "Select2": "女朋友",
+    "Type": 1,
+    "TitleText": "3159",
+    "Select1": "良师益友",
+    "Select2": "梁上君子",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc028"
+      2
+    ]
   },
   "85": {
     "ID": 85,
-    "TitleText": "下列不是五岳的是？",
-    "Select1": "香山",
-    "Select2": "华山",
+    "Type": 2,
+    "Select1": "白云苍狗",
+    "Select2": "斑点小狗",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "bycg"
   },
   "86": {
     "ID": 86,
-    "TitleText": "第一个报告彗星的是谁？",
-    "Select1": "哈雷",
-    "Select2": "旺财",
+    "Type": 2,
+    "Select1": "半夜三更",
+    "Select2": "更夫夜行",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "bysg"
   },
   "87": {
     "ID": 87,
-    "TitleText": "月亮围着什么转？",
-    "Select1": "太阳",
-    "Select2": "地球",
+    "Type": 2,
+    "Select1": "字正方圆",
+    "Select2": "白纸黑字",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "tpsc029"
+    "Picture": "bzhz"
   },
   "88": {
     "ID": 88,
-    "TitleText": "最大的金字塔是？",
-    "Select1": "胡夫金字塔",
-    "Select2": "结弦金字塔",
+    "Type": 3,
+    "TitleText": "29-2",
+    "Select1": "死亦为鬼雄。",
+    "Select2": "经冬复立春。",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "89": {
     "ID": 89,
-    "TitleText": "我国最大的淡水湖是？",
-    "Select1": "天鹅湖",
-    "Select2": "鄱阳湖",
+    "Type": 3,
+    "TitleText": "6-2",
+    "Select1": "白首不相离。",
+    "Select2": "但闻人语响。",
     "CorrectAnswer": [
       2
     ]
   },
   "90": {
     "ID": 90,
-    "TitleText": "电灯是谁发明的？",
-    "Select1": "爱迪生",
-    "Select2": "比尔盖茨",
+    "Type": 3,
+    "TitleText": "31-2",
+    "Select1": "蹉跎白发年。",
+    "Select2": "离亭叶正稀。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc030"
+    ]
   },
   "91": {
     "ID": 91,
-    "TitleText": "水浒中“花和尚”是谁？",
-    "Select1": "鲁智深",
-    "Select2": "孙二娘",
+    "Type": 1,
+    "TitleText": "4773",
+    "Select1": "指桑骂槐",
+    "Select2": "指手划脚",
     "CorrectAnswer": [
       1
     ]
   },
   "92": {
     "ID": 92,
-    "TitleText": "水一般在多少度沸腾？",
-    "Select1": "15度",
-    "Select2": "100度",
+    "Type": 1,
+    "TitleText": "3239",
+    "Select1": "力挽狂澜",
+    "Select2": "力小任重",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "93": {
     "ID": 93,
-    "TitleText": "近视眼带的是什么镜片？",
-    "Select1": "凹透镜",
-    "Select2": "哈哈镜",
+    "Type": 1,
+    "TitleText": "3228",
+    "Select1": "理所当然",
+    "Select2": "里应外合",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc031"
+      2
+    ]
   },
   "94": {
     "ID": 94,
-    "TitleText": "水有几种形态？",
-    "Select1": "液，固，气",
-    "Select2": "变态",
+    "Type": 2,
+    "Select1": "火焰山口",
+    "Select2": "寸草不生",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "ccbs"
   },
   "95": {
     "ID": 95,
-    "TitleText": "空气中可以燃烧的气体是？",
-    "Select1": "二氧化碳",
-    "Select2": "氧气",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "96": {
-    "ID": 96,
-    "TitleText": "最硬的石头是？",
-    "Select1": "金刚石",
-    "Select2": "我们的服务器",
+    "Type": 2,
+    "Select1": "草船借箭",
+    "Select2": "草川木雕",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc032"
+    "Picture": "ccjj"
+  },
+  "96": {
+    "ID": 96,
+    "Type": 2,
+    "Select1": "冒牌天使",
+    "Select2": "插翅难逃",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "ccnt"
   },
   "97": {
     "ID": 97,
-    "TitleText": "下列不是四大名著的是？",
-    "Select1": "三国演义",
-    "Select2": "斗地主大全",
+    "Type": 3,
+    "TitleText": "32-2",
+    "Select1": "宝剑值千金。",
+    "Select2": "蹉跎白发年。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "98": {
     "ID": 98,
-    "TitleText": "蝙蝠属于鸟类还是哺乳类？",
-    "Select1": "鸟类",
-    "Select2": "哺乳类",
+    "Type": 3,
+    "TitleText": "33-2",
+    "Select1": "积雪浮云端。",
+    "Select2": "驱车登古原。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "99": {
     "ID": 99,
-    "TitleText": "青蛙的幼体是什么？",
-    "Select1": "蝌蚪",
-    "Select2": "鸟",
+    "Type": 3,
+    "TitleText": "5-2",
+    "Select1": "山青花欲燃。",
+    "Select2": "处处闻啼鸟。",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc033"
+      2
+    ]
   },
   "100": {
     "ID": 100,
-    "TitleText": "天下武功无坚不摧",
-    "Select1": "唯快不破",
-    "Select2": "一碰就碎",
+    "Type": 1,
+    "TitleText": "5317",
+    "Select1": "一呵而就",
+    "Select2": "一哄而散",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "101": {
     "ID": 101,
-    "TitleText": "人的正常体温是？",
-    "Select1": "73度",
-    "Select2": "37度",
+    "Type": 1,
+    "TitleText": "2673",
+    "Select1": "逆施倒行",
+    "Select2": "逆来顺受",
     "CorrectAnswer": [
       2
     ]
   },
   "102": {
     "ID": 102,
-    "TitleText": "人的身体一共有的多少快骨头？",
-    "Select1": "206块",
-    "Select2": "10086块",
+    "Type": 1,
+    "TitleText": "2659",
+    "Select1": "怒形于色",
+    "Select2": "怒气冲冲",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc034"
+      2
+    ]
   },
   "103": {
     "ID": 103,
-    "TitleText": "地球上最大的动物是？",
-    "Select1": "加菲猫",
-    "Select2": "鲸鱼",
+    "Type": 2,
+    "Select1": "充耳不闻",
+    "Select2": "天圆地方",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "cebw"
   },
   "104": {
     "ID": 104,
-    "TitleText": "企鹅一般生活在哪一洲？",
-    "Select1": "南极洲",
-    "Select2": "非洲",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "105": {
-    "ID": 105,
-    "TitleText": "海洋中最聪明的动物是？",
-    "Select1": "海棠",
-    "Select2": "海豚",
+    "Type": 2,
+    "Select1": "奇幻冒险",
+    "Select2": "乘风破浪",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "tpsc035"
+    "Picture": "cfpl"
+  },
+  "105": {
+    "ID": 105,
+    "Type": 2,
+    "Select1": "才高八斗",
+    "Select2": "能喝八杯",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "cgbd"
   },
   "106": {
     "ID": 106,
-    "TitleText": "水浒中“黑旋风”是谁？",
-    "Select1": "李逵",
-    "Select2": "李达",
+    "Type": 3,
+    "TitleText": "35-2",
+    "Select1": "洲长多暮归。",
+    "Select2": "壮士发冲冠。",
     "CorrectAnswer": [
       1
     ]
   },
   "107": {
     "ID": 107,
-    "TitleText": "代表和平的植物是？",
-    "Select1": "橄榄枝",
-    "Select2": "橄榄球",
+    "Type": 3,
+    "TitleText": "36-2",
+    "Select1": "应知故乡事。",
+    "Select2": "汗滴禾下土。",
     "CorrectAnswer": [
       1
     ]
   },
   "108": {
     "ID": 108,
-    "TitleText": "世界上最大的哺乳动物是?",
-    "Select1": "鲸鱼",
-    "Select2": "金鱼",
+    "Type": 3,
+    "TitleText": "37-2",
+    "Select1": "手可摘星辰。",
+    "Select2": "秋收万颗子。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc036"
+    ]
   },
   "109": {
     "ID": 109,
-    "TitleText": "下列不是四大名著的是？",
-    "Select1": "水浒传",
-    "Select2": "潘金莲大战黑风老妖",
+    "Type": 1,
+    "TitleText": "4224",
+    "Select1": "两面三刀",
+    "Select2": "两肋插刀",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "110": {
     "ID": 110,
-    "TitleText": "地球是什么星？",
-    "Select1": "行星",
-    "Select2": "派大星",
+    "Type": 1,
+    "TitleText": "4791",
+    "Select1": "之乎者也",
+    "Select2": "支离破碎",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "111": {
     "ID": 111,
-    "TitleText": "巧克力是从什么树提取的？",
-    "Select1": "丽丽树",
-    "Select2": "可可树",
+    "Type": 1,
+    "TitleText": "3399",
+    "Select1": "口若悬河",
+    "Select2": "口蜜腹剑",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc037"
+    ]
   },
   "112": {
     "ID": 112,
-    "TitleText": "人的身上有多少块肌肉？",
-    "Select1": "600多块",
-    "Select2": "一身肌肉",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "113": {
-    "ID": 113,
-    "TitleText": "鸟类的祖先是什么鸟？",
-    "Select1": "始祖鸟",
-    "Select2": "小小鸟",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "114": {
-    "ID": 114,
-    "TitleText": "陆地上跑最快的动物是？",
-    "Select1": "猎豹",
-    "Select2": "乌龟",
+    "Type": 2,
+    "Select1": "趁火打劫",
+    "Select2": "团团圆圆",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc038"
+    "Picture": "chdj"
+  },
+  "113": {
+    "ID": 113,
+    "Type": 2,
+    "Select1": "鹤立鸡群",
+    "Select2": "沧海一粟",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "chys"
+  },
+  "114": {
+    "ID": 114,
+    "Type": 2,
+    "Select1": "喜笑颜开",
+    "Select2": "愁眉苦脸",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "cmkl"
   },
   "115": {
     "ID": 115,
-    "TitleText": "最早的农作物是？",
-    "Select1": "小麦",
-    "Select2": "大麦",
+    "Type": 3,
+    "TitleText": "38-3",
+    "Select1": "巴陵无限酒，",
+    "Select2": "愿君多采撷，",
     "CorrectAnswer": [
       1
     ]
   },
   "116": {
     "ID": 116,
-    "TitleText": "下面那种饮料可以养生",
-    "Select1": "茶",
-    "Select2": "咖啡",
+    "Type": 3,
+    "TitleText": "39-4",
+    "Select1": "今人多不弹。",
+    "Select2": "醉杀洞庭秋。",
     "CorrectAnswer": [
       1
     ]
   },
   "117": {
     "ID": 117,
-    "TitleText": "梅，兰，竹后面是什么？",
-    "Select1": "鼠尾草",
-    "Select2": "菊",
+    "Type": 3,
+    "TitleText": "40-3",
+    "Select1": "安知千里外，",
+    "Select2": "荷笠带夕阳，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc039"
+    ]
   },
   "118": {
     "ID": 118,
-    "TitleText": "下列那座山上开有少林寺",
-    "Select1": "嵩山",
-    "Select2": "五指山",
+    "Type": 1,
+    "TitleText": "3742",
+    "Select1": "剑拔弩张",
+    "Select2": "剑戟森森",
     "CorrectAnswer": [
       1
     ]
   },
   "119": {
     "ID": 119,
-    "TitleText": "二泉映月是用什么独奏的？",
-    "Select1": "萨克斯",
-    "Select2": "二胡",
+    "Type": 1,
+    "TitleText": "4212",
+    "Select1": "茅塞顿开",
+    "Select2": "漫天开价",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "120": {
     "ID": 120,
-    "TitleText": "三原色是指？",
-    "Select1": "绿绿绿",
-    "Select2": "红黄蓝",
+    "Type": 1,
+    "TitleText": "2581",
+    "Select1": "平易近人",
+    "Select2": "凭白无故",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc040"
+      1
+    ]
   },
   "121": {
     "ID": 121,
-    "TitleText": "我国近代画家中最擅长画马的是？",
-    "Select1": "徐悲鸿",
-    "Select2": "小沈阳",
+    "Type": 2,
+    "Select1": "板上钉钉",
+    "Select2": "趁热打铁",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "crdt"
   },
   "122": {
     "ID": 122,
-    "TitleText": "“最后的晚餐”作者是？",
-    "Select1": "达芬奇",
-    "Select2": "爱丽丝",
+    "Type": 2,
+    "Select1": "高山大岭",
+    "Select2": "崇山峻岭",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "csjl"
   },
   "123": {
     "ID": 123,
-    "TitleText": "美术中最基本的透视原理是？",
-    "Select1": "近大远小",
-    "Select2": "近视眼",
+    "Type": 2,
+    "Select1": "杯酒车薪",
+    "Select2": "车水马龙",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "tpsc041"
+    "Picture": "csml"
   },
   "124": {
     "ID": 124,
-    "TitleText": "月亮是什么星？",
-    "Select1": "卫星",
-    "Select2": "地爆天星",
+    "Type": 3,
+    "TitleText": "41-3",
+    "Select1": "荷笠带夕阳，",
+    "Select2": "细语人不闻，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "125": {
     "ID": 125,
-    "TitleText": "被称为“国球”的是？",
-    "Select1": "高尔夫球",
-    "Select2": "乒乓球",
+    "Type": 3,
+    "TitleText": "42-3",
+    "Select1": "晚来天欲雪，",
+    "Select2": "月出惊山鸟，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "126": {
     "ID": 126,
-    "TitleText": "游泳是田径运动吗？",
-    "Select1": "是",
-    "Select2": "不是",
+    "Type": 3,
+    "TitleText": "43-3",
+    "Select1": "如裁一条素，",
+    "Select2": "谁知明镜里，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc042"
+      1
+    ]
   },
   "127": {
     "ID": 127,
-    "TitleText": "足球王国是？",
-    "Select1": "巴西",
-    "Select2": "巴基斯坦",
+    "Type": 1,
+    "TitleText": "5298",
+    "Select1": "一扫而空",
+    "Select2": "一射之地",
     "CorrectAnswer": [
       1
     ]
   },
   "128": {
     "ID": 128,
-    "TitleText": "裁判最多的比赛是？",
-    "Select1": "羽毛球",
-    "Select2": "台球",
+    "Type": 1,
+    "TitleText": "4307",
+    "Select1": "饭来开口",
+    "Select2": "飞沙走石",
     "CorrectAnswer": [
       1
     ]
   },
   "129": {
     "ID": 129,
-    "TitleText": "word是什么软件",
-    "Select1": "办公",
-    "Select2": "相亲",
+    "Type": 1,
+    "TitleText": "4408",
+    "Select1": "坐井窥天",
+    "Select2": "坐怀不乱",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc043"
+    ]
   },
   "130": {
     "ID": 130,
-    "TitleText": "鱼有耳朵吗？",
-    "Select1": "有",
-    "Select2": "没有",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "131": {
-    "ID": 131,
-    "TitleText": "1公斤棉花和1公斤铁哪个体积大",
-    "Select1": "铁",
-    "Select2": "棉花",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "132": {
-    "ID": 132,
-    "TitleText": "世界最高的山峰是？",
-    "Select1": "珠穆朗玛峰",
-    "Select2": "阿尔卑斯山",
+    "Type": 2,
+    "Select1": "春色满园",
+    "Select2": "春意盎然",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc044"
+    "Picture": "csmy"
+  },
+  "131": {
+    "ID": 131,
+    "Type": 2,
+    "Select1": "哥俩好",
+    "Select2": "称兄道弟",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "cxdd"
+  },
+  "132": {
+    "ID": 132,
+    "Type": 2,
+    "Select1": "善良之人",
+    "Select2": "长袖善舞",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "cxsw"
   },
   "133": {
     "ID": 133,
-    "TitleText": "火灾时有浓烟要直立行走？",
-    "Select1": "对",
-    "Select2": "不对",
+    "Type": 3,
+    "TitleText": "44-3",
+    "Select1": "今逢浣纱石，",
+    "Select2": "林表明霁色，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "134": {
     "ID": 134,
-    "TitleText": "儿童节是哪一天？",
-    "Select1": "6月1日",
-    "Select2": "5月1日",
+    "Type": 3,
+    "TitleText": "45-3",
+    "Select1": "莫买沃洲山，",
+    "Select2": "今日把示君，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "135": {
     "ID": 135,
-    "TitleText": "国庆节是为了纪念什么？",
-    "Select1": "新中国建国",
-    "Select2": "新中国建军",
+    "Type": 3,
+    "TitleText": "46-4",
+    "Select1": "归卧故山秋。",
+    "Select2": "嫁与弄潮儿。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc045"
+    ]
   },
   "136": {
     "ID": 136,
-    "TitleText": "最高的陆地哺乳类动物是？",
-    "Select1": "大象",
-    "Select2": "长颈鹿",
+    "Type": 1,
+    "TitleText": "2726",
+    "Select1": "难以置信",
+    "Select2": "难于上天",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "137": {
     "ID": 137,
-    "TitleText": "蚊子晚上是靠什么发现目标的？",
-    "Select1": "眼睛",
-    "Select2": "第六感",
+    "Type": 1,
+    "TitleText": "2837",
+    "Select1": "铭记不忘",
+    "Select2": "阿谀奉承",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "138": {
     "ID": 138,
-    "TitleText": "月亮和太阳，谁距离地球近？",
-    "Select1": "月亮",
-    "Select2": "太阳",
+    "Type": 1,
+    "TitleText": "2890",
+    "Select1": "门户之见",
+    "Select2": "门当户对",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc046"
+      2
+    ]
   },
   "139": {
     "ID": 139,
-    "TitleText": "有“天府之国”称的是？",
-    "Select1": "四川",
-    "Select2": "二道岗子",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "140": {
-    "ID": 140,
-    "TitleText": "彩虹有几种颜色",
-    "Select1": "666种",
-    "Select2": "7种",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "141": {
-    "ID": 141,
-    "TitleText": "象棋中，兵过河一次只能走一步？",
-    "Select1": "对",
-    "Select2": "不对",
+    "Type": 2,
+    "Select1": "日出东方",
+    "Select2": "粗枝大叶",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc047"
+    "Picture": "czdy"
+  },
+  "140": {
+    "ID": 140,
+    "Type": 2,
+    "Select1": "矮子当官",
+    "Select2": "才子佳人",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "czjr"
+  },
+  "141": {
+    "ID": 141,
+    "Type": 2,
+    "Select1": "鼻炎患者",
+    "Select2": "嗤之以鼻",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "czyb"
   },
   "142": {
     "ID": 142,
-    "TitleText": "宗教是迷信吗？",
-    "Select1": "对，会洗脑！",
-    "Select2": "不对",
+    "Type": 3,
+    "TitleText": "47-3",
+    "Select1": "何当金络脑，",
+    "Select2": "啼时惊妾梦，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "143": {
     "ID": 143,
-    "TitleText": "颜色会影响人的情绪吗？",
-    "Select1": "会",
-    "Select2": "不会",
+    "Type": 3,
+    "TitleText": "48-3",
+    "Select1": "未谙姑食性，",
+    "Select2": "长安有贫者，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "144": {
     "ID": 144,
-    "TitleText": "不同的海含盐量也有所不同？",
-    "Select1": "对",
-    "Select2": "不对",
+    "Type": 3,
+    "TitleText": "49-3",
+    "Select1": "唯余一朵在，",
+    "Select2": "莫买沃洲山，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc048"
+    ]
   },
   "145": {
     "ID": 145,
-    "TitleText": "牙齿中有没有神经？",
-    "Select1": "有",
-    "Select2": "没有",
+    "Type": 1,
+    "TitleText": "4212",
+    "Select1": "茅塞顿开",
+    "Select2": "眉开眼笑",
     "CorrectAnswer": [
       1
     ]
   },
   "146": {
     "ID": 146,
-    "TitleText": "鳄鱼为什么流泪？",
-    "Select1": "为了排出多余的盐",
-    "Select2": "伤心",
+    "Type": 1,
+    "TitleText": "4770",
+    "Select1": "指鹿为马",
+    "Select2": "指挥若定",
     "CorrectAnswer": [
       1
     ]
   },
   "147": {
     "ID": 147,
-    "TitleText": "鱼是用什么特征来观察年龄的？",
-    "Select1": "看长相",
-    "Select2": "看鱼鳞",
+    "Type": 1,
+    "TitleText": "4132",
+    "Select1": "身怀六甲",
+    "Select2": "身首异处",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc049"
+      1
+    ]
   },
   "148": {
     "ID": 148,
-    "TitleText": "北极熊为什么不爱吃企鹅？",
-    "Select1": "嫌弃企鹅肉少",
-    "Select2": "在南极够不到",
+    "Type": 2,
+    "Select1": "恶魔之刃",
+    "Select2": "持之以恒",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "czyh"
   },
   "149": {
     "ID": 149,
-    "TitleText": "鲸鱼用什么呼吸？",
-    "Select1": "鱼鳃",
-    "Select2": "肺",
+    "Type": 2,
+    "Select1": "铁杵成针",
+    "Select2": "穿针引线",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "czyx"
   },
   "150": {
     "ID": 150,
-    "TitleText": "壁虎可以自己长尾巴嘛？",
-    "Select1": "可以",
-    "Select2": "不可以",
+    "Type": 2,
+    "Select1": "螳螂角力",
+    "Select2": "螳臂当车",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "tpsc050"
+    "Picture": "dbdc"
   },
   "151": {
     "ID": 151,
-    "TitleText": "农历又叫？",
-    "Select1": "阳历",
-    "Select2": "阴历",
+    "Type": 3,
+    "TitleText": "50-3",
+    "Select1": "六月禾未秀，",
+    "Select2": "日暮秋风起，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "152": {
     "ID": 152,
-    "TitleText": "鲸鱼和鳄鱼是不是鱼？",
-    "Select1": "不是",
-    "Select2": "是",
+    "Type": 3,
+    "TitleText": "51-3",
+    "Select1": "近乡情更怯，",
+    "Select2": "花下一禾生，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "153": {
     "ID": 153,
-    "TitleText": "鸟在电线上为什么不触电？",
-    "Select1": "能免疫",
-    "Select2": "单线不生成电压",
+    "Type": 3,
+    "TitleText": "52-2",
+    "Select1": "故溪黄稻熟，",
+    "Select2": "马首向何处，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "tpsc051"
+      1
+    ]
   },
   "154": {
     "ID": 154,
-    "TitleText": "人类的“花甲”是指多少岁",
-    "Select1": "80岁",
-    "Select2": "60岁",
+    "Type": 1,
+    "TitleText": "2994",
+    "Select1": "满面红光",
+    "Select2": "满目疮痍",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "155": {
     "ID": 155,
-    "TitleText": "飞的最高的鸟是？",
-    "Select1": "山鸡",
-    "Select2": "鹫",
+    "Type": 1,
+    "TitleText": "5234",
+    "Select1": "一五一十",
+    "Select2": "一息尚存",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "156": {
     "ID": 156,
-    "TitleText": "皇宫之前的建筑叫什么？",
-    "Select1": "紫禁城",
-    "Select2": "皇城外",
+    "Type": 1,
+    "TitleText": "3436",
+    "Select1": "可见一斑",
+    "Select2": "可歌可泣",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc052"
+      2
+    ]
   },
   "157": {
     "ID": 157,
-    "TitleText": "早上的身高要比晚上高？",
-    "Select1": "错",
-    "Select2": "对",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "158": {
-    "ID": 158,
-    "TitleText": "世界上面积最小的国家？",
-    "Select1": "梵蒂冈",
-    "Select2": "巴西",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "159": {
-    "ID": 159,
-    "TitleText": "人一出身就有的牙齿叫什么？",
-    "Select1": "智齿",
-    "Select2": "幼齿",
+    "Type": 2,
+    "Select1": "相亲相爱",
+    "Select2": "对簿公堂",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "tpsc053"
+    "Picture": "dbgt"
+  },
+  "158": {
+    "ID": 158,
+    "Type": 2,
+    "Select1": "吉米狗狗",
+    "Select2": "大步流星",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "dblx"
+  },
+  "159": {
+    "ID": 159,
+    "Type": 2,
+    "Select1": "人模狗样",
+    "Select2": "倒背如流",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "dbrl"
   },
   "160": {
     "ID": 160,
-    "TitleText": "一公斤铁和一公斤棉花哪个重？",
-    "Select1": "铁",
-    "Select2": "一样重",
+    "Type": 3,
+    "TitleText": "53-3",
+    "Select1": "人牛力俱尽，",
+    "Select2": "月出惊山鸟，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "161": {
     "ID": 161,
-    "TitleText": "为什么不能看电焊火花？",
-    "Select1": "对眼睛不好",
-    "Select2": "没意思",
+    "Type": 3,
+    "TitleText": "54-4",
+    "Select1": "江清月近人。",
+    "Select2": "莫向临邛去。",
     "CorrectAnswer": [
       1
     ]
   },
   "162": {
     "ID": 162,
-    "TitleText": "燕子的尾巴是干嘛用的？",
-    "Select1": "把握方向",
-    "Select2": "好看",
+    "Type": 3,
+    "TitleText": "55-3",
+    "Select1": "月出惊山鸟，",
+    "Select2": "长安有贫者，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc054"
+    ]
   },
   "163": {
     "ID": 163,
-    "TitleText": "三国中煮酒论英雄是谁？",
-    "Select1": "曹操和刘备",
-    "Select2": "大乔和小乔",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "164": {
-    "ID": 164,
-    "TitleText": "三国中“神算”是指？",
-    "Select1": "诸葛亮",
-    "Select2": "张飞",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "165": {
-    "ID": 165,
-    "TitleText": "“卧龙凤雏”是指？",
-    "Select1": "诸葛亮和庞统",
-    "Select2": "大聪明和庄强",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc055"
-  },
-  "166": {
-    "ID": 166,
-    "TitleText": "中国的国花是？",
-    "Select1": "牡丹",
-    "Select2": "郁金香",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "167": {
-    "ID": 167,
-    "TitleText": "象棋共有多少种棋子？",
-    "Select1": "66种",
-    "Select2": "7种",
+    "Type": 1,
+    "TitleText": "4161",
+    "Select1": "轻言细语",
+    "Select2": "情窦初开",
     "CorrectAnswer": [
       2
     ]
   },
+  "164": {
+    "ID": 164,
+    "Type": 1,
+    "TitleText": "3878",
+    "Select1": "积水成渊",
+    "Select2": "积少成多",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "165": {
+    "ID": 165,
+    "Type": 1,
+    "TitleText": "4323",
+    "Select1": "刀下留人",
+    "Select2": "刀山火海",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "166": {
+    "ID": 166,
+    "Type": 2,
+    "Select1": "啥都没有",
+    "Select2": "德才兼备",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "dcjb"
+  },
+  "167": {
+    "ID": 167,
+    "Type": 2,
+    "Select1": "被蛇捉弄",
+    "Select2": "打草惊蛇",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "dcjs"
+  },
   "168": {
     "ID": 168,
-    "TitleText": "邮政编号最后2位代表什么？",
-    "Select1": "投递局",
-    "Select2": "电话号码尾数",
+    "Type": 2,
+    "Select1": "大材小用",
+    "Select2": "要才没用",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc056"
+    "Picture": "dcxy"
   },
   "169": {
     "ID": 169,
-    "TitleText": "世界上最长的河是？",
-    "Select1": "尼罗河",
-    "Select2": "银河",
+    "Type": 3,
+    "TitleText": "56-3",
+    "Select1": "春草明年绿，",
+    "Select2": "羞将筵上曲，",
     "CorrectAnswer": [
       1
     ]
   },
   "170": {
     "ID": 170,
-    "TitleText": "我国有多少个节气？",
-    "Select1": "4个",
-    "Select2": "24个",
+    "Type": 3,
+    "TitleText": "57-3",
+    "Select1": "骓不逝兮可奈何，",
+    "Select2": "花落家童未扫，",
     "CorrectAnswer": [
       2
     ]
   },
   "171": {
     "ID": 171,
-    "TitleText": "声音是怎么产生的？",
-    "Select1": "空气震动",
-    "Select2": "喊出来的",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc057"
-  },
-  "172": {
-    "ID": 172,
-    "TitleText": "未满多少岁的人被称为未成年？",
-    "Select1": "36岁",
-    "Select2": "18岁",
+    "Type": 3,
+    "TitleText": "58-3",
+    "Select1": "啼时惊妾梦，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       2
     ]
   },
+  "172": {
+    "ID": 172,
+    "Type": 1,
+    "TitleText": "2839",
+    "Select1": "酩酊大醉",
+    "Select2": "绵延不断",
+    "CorrectAnswer": [
+      1
+    ]
+  },
   "173": {
     "ID": 173,
-    "TitleText": "电风扇能把空气吹凉吗？",
-    "Select1": "能",
-    "Select2": "不能",
+    "Type": 1,
+    "TitleText": "4597",
+    "Select1": "蛛网尘封",
+    "Select2": "蛛丝马迹",
     "CorrectAnswer": [
       2
     ]
   },
   "174": {
     "ID": 174,
-    "TitleText": "一年四季中什么时候树叶发黄？",
-    "Select1": "夏天",
-    "Select2": "秋天",
+    "Type": 1,
+    "TitleText": "2657",
+    "Select1": "女娲补天",
+    "Select2": "怒火冲天",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc058"
+    ]
   },
   "175": {
     "ID": 175,
-    "TitleText": "商品上的黑白条是什么？",
-    "Select1": "价格表",
-    "Select2": "条形码",
+    "Type": 2,
+    "Select1": "多此一举",
+    "Select2": "多次少举",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dcyj"
   },
   "176": {
     "ID": 176,
-    "TitleText": "青蛙是爬行动物吗？",
-    "Select1": "是",
-    "Select2": "不是",
+    "Type": 2,
+    "Select1": "胆大包天",
+    "Select2": "一圈胆胆",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "ddbt"
   },
   "177": {
     "ID": 177,
-    "TitleText": "“坐井观天”中是什么动物？",
-    "Select1": "老虎",
-    "Select2": "青蛙",
+    "Type": 2,
+    "Select1": "偷天换日",
+    "Select2": "颠倒黑白",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "tpsc059"
+    "Picture": "ddhb"
   },
   "178": {
     "ID": 178,
-    "TitleText": "地球自转是什么方向？",
-    "Select1": "自西向东转",
-    "Select2": "瞎转",
+    "Type": 3,
+    "TitleText": "8-4",
+    "Select1": "何日是归年。",
+    "Select2": "沙暖睡鸳鸯。",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "179": {
     "ID": 179,
-    "TitleText": "中国在北极设立的第一个考察站叫什么?",
-    "Select1": "长城站",
-    "Select2": "核酸检测站",
+    "Type": 3,
+    "TitleText": "60-3",
+    "Select1": "柴门闻犬吠，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       1
     ]
   },
   "180": {
     "ID": 180,
-    "TitleText": "老鼠过街",
-    "Select1": "人人喊打",
-    "Select2": "热烈欢迎",
+    "Type": 3,
+    "TitleText": "61-1",
+    "Select1": "功盖三分国，",
+    "Select2": "十年曾一别，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "tpsc060"
+    ]
   },
   "181": {
     "ID": 181,
-    "TitleText": "我国的两个特别行政区是？",
-    "Select1": "香港和澳门",
-    "Select2": "陕西和西安",
+    "Type": 1,
+    "TitleText": "5309",
+    "Select1": "一丝不挂",
+    "Select2": "一丝不苟",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "182": {
     "ID": 182,
-    "TitleText": "世界上最大的沙漠是？",
-    "Select1": "撒哈拉",
-    "Select2": "希尔特",
+    "Type": 1,
+    "TitleText": "3876",
+    "Select1": "积年累月",
+    "Select2": "积劳成疾",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "183": {
     "ID": 183,
-    "TitleText": "历史上在位最长的皇帝是？",
-    "Select1": "溥仪",
-    "Select2": "康熙",
+    "Type": 1,
+    "TitleText": "4865",
+    "Select1": "丈二和尚",
+    "Select2": "掌上明珠",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc061"
+    ]
   },
   "184": {
     "ID": 184,
-    "TitleText": "夏天穿什么颜色的衣服比较凉快？",
-    "Select1": "黑色",
-    "Select2": "白色",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "185": {
-    "ID": 185,
-    "TitleText": "“桃李满天下”的桃李是指？",
-    "Select1": "水果",
-    "Select2": "学生",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "186": {
-    "ID": 186,
-    "TitleText": "月球围绕地球一圈的时间是多久？",
-    "Select1": "一个月",
-    "Select2": "60年",
+    "Type": 2,
+    "Select1": "大刀阔斧",
+    "Select2": "金刀银斧",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc062"
+    "Picture": "ddkf"
+  },
+  "185": {
+    "ID": 185,
+    "Type": 2,
+    "Select1": "胆大心细",
+    "Select2": "大胆小心",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "ddxx"
+  },
+  "186": {
+    "ID": 186,
+    "Type": 2,
+    "Select1": "大同小异",
+    "Select2": "小同大异",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "ddxy"
   },
   "187": {
     "ID": 187,
-    "TitleText": "火警电话是？",
-    "Select1": "10086",
-    "Select2": "119",
+    "Type": 3,
+    "TitleText": "62-3",
+    "Select1": "早知潮有信，",
+    "Select2": "隔窗知夜雨，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "188": {
     "ID": 188,
-    "TitleText": "“打蛇打七寸”七寸是指？",
-    "Select1": "蛇七寸长的地方",
-    "Select2": "心脏",
+    "Type": 3,
+    "TitleText": "63-1",
+    "Select1": "打起黄莺儿，",
+    "Select2": "牧童骑黄牛，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "189": {
     "ID": 189,
-    "TitleText": "隔着门缝看到的人和原来的人？",
-    "Select1": "一样大",
-    "Select2": "低人一等",
+    "Type": 3,
+    "TitleText": "64-2",
+    "Select1": "丰年事若何。",
+    "Select2": "圆影覆华池。",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "tpsc063"
+      2
+    ]
   },
   "190": {
     "ID": 190,
-    "TitleText": "一个星期最多吃几个鸡蛋合适？",
-    "Select1": "4个",
-    "Select2": "10个",
+    "Type": 1,
+    "TitleText": "3568",
+    "Select1": "井中视星",
+    "Select2": "井底之蛙",
     "CorrectAnswer": [
       2
     ]
   },
   "191": {
     "ID": 191,
-    "TitleText": "日本的国花是？",
-    "Select1": "樱花",
-    "Select2": "月季花",
+    "Type": 1,
+    "TitleText": "4864",
+    "Select1": "张口结舌",
+    "Select2": "张牙舞爪",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "192": {
     "ID": 192,
-    "TitleText": "什么动物是人类最早驯养的？",
-    "Select1": "羊驼",
-    "Select2": "鸡",
+    "Type": 1,
+    "TitleText": "3733",
+    "Select1": "见惯不惊",
+    "Select2": "见仁见智",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc064"
+    ]
   },
   "193": {
     "ID": 193,
-    "TitleText": "“人之初，性本善”出自？",
-    "Select1": "三字经",
-    "Select2": "易筋经",
+    "Type": 2,
+    "Select1": "无独有偶",
+    "Select2": "独当一面",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "ddym"
   },
   "194": {
     "ID": 194,
-    "TitleText": "“沙漠之舟”的动物是指？",
-    "Select1": "兔子",
-    "Select2": "骆驼",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "195": {
-    "ID": 195,
-    "TitleText": "白宫位于？",
-    "Select1": "华盛顿",
-    "Select2": "叙利亚",
+    "Type": 2,
+    "Select1": "大腹便便",
+    "Select2": "肚子好大",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "tpsc065"
+    "Picture": "dfbb"
+  },
+  "195": {
+    "ID": 195,
+    "Type": 2,
+    "Select1": "登高望远",
+    "Select2": "更上一层",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "dgwy"
   },
   "196": {
     "ID": 196,
-    "TitleText": "车辆行驶要靠那边行驶？",
-    "Select1": "路中间",
-    "Select2": "右",
+    "Type": 3,
+    "TitleText": "65-2",
+    "Select1": "岂向人间住。",
+    "Select2": "无因彻帝阍。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "197": {
     "ID": 197,
-    "TitleText": "中国的国宝是？",
-    "Select1": "噬元兽",
-    "Select2": "熊猫",
+    "Type": 3,
+    "TitleText": "66-1",
+    "Select1": "岭外音书断，",
+    "Select2": "父耕原上田，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "198": {
     "ID": 198,
-    "TitleText": "足球比赛有多少个人？",
-    "Select1": "108",
-    "Select2": "22",
+    "Type": 3,
+    "TitleText": "67-3",
+    "Select1": "时时闻鸟语，",
+    "Select2": "江南无所有，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "tpsc066"
+    ]
   },
   "199": {
     "ID": 199,
-    "TitleText": "“史家之绝唱”下一句是？",
-    "Select1": "无韵之离骚",
-    "Select2": "焚书之坑儒",
+    "Type": 1,
+    "TitleText": "4118",
+    "Select1": "同床异梦",
+    "Select2": "鬼计多端",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "200": {
     "ID": 200,
-    "TitleText": "古代考试第一名叫什么？",
-    "Select1": "状元",
-    "Select2": "孙山",
+    "Type": 1,
+    "TitleText": "2999",
+    "Select1": "漫不经心",
+    "Select2": "满载而归",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "201": {
     "ID": 201,
-    "TitleText": "鸡蛋壳有什么用？",
-    "Select1": "保护蛋清和蛋黄",
-    "Select2": "碰石头",
+    "Type": 1,
+    "TitleText": "3872",
+    "Select1": "机不可失",
+    "Select2": "鸡犬升天",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_84"
+      2
+    ]
   },
   "202": {
     "ID": 202,
-    "TitleText": "二郎神的宠物叫什么",
-    "Select1": "哈士奇",
-    "Select2": "哮天犬",
+    "Type": 2,
+    "Select1": "灯红酒绿",
+    "Select2": "红杯绿酒",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dhjl"
   },
   "203": {
     "ID": 203,
-    "TitleText": "阿波罗计划登录的星球是",
-    "Select1": "月球",
-    "Select2": "太阳",
+    "Type": 2,
+    "Select1": "大海捞针",
+    "Select2": "大风大浪",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "dhlz"
   },
   "204": {
     "ID": 204,
-    "TitleText": "纳米是用来表示什么的",
-    "Select1": "大米的品种",
-    "Select2": "长度单位",
+    "Type": 2,
+    "Select1": "废品回收",
+    "Select2": "堆积如山",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "xsc_85"
+    "Picture": "djrs"
   },
   "205": {
     "ID": 205,
-    "TitleText": "三国中“三英战吕布”没有谁？",
-    "Select1": "刘备",
-    "Select2": "赵云",
+    "Type": 3,
+    "TitleText": "68-2",
+    "Select1": "哥舒夜带刀。",
+    "Select2": "岂向人间住。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "206": {
     "ID": 206,
-    "TitleText": "变脸是什么剧绝活？",
-    "Select1": "黄梅戏",
-    "Select2": "川剧",
+    "Type": 3,
+    "TitleText": "69-3",
+    "Select1": "马首向何处，",
+    "Select2": "未谙姑食性，",
     "CorrectAnswer": [
       2
     ]
   },
   "207": {
     "ID": 207,
-    "TitleText": "人类最早驯养的动物？",
-    "Select1": "猴子",
-    "Select2": "鸡",
+    "Type": 3,
+    "TitleText": "70-1",
+    "Select1": "尽道丰年瑞，",
+    "Select2": "故国三千里，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_86"
+    ]
   },
   "208": {
     "ID": 208,
-    "TitleText": "不是我国“三大火炉”的是？",
-    "Select1": "武汉",
-    "Select2": "哈尔滨",
+    "Type": 1,
+    "TitleText": "3902",
+    "Select1": "火烧眉毛",
+    "Select2": "火上浇油",
     "CorrectAnswer": [
       2
     ]
   },
   "209": {
     "ID": 209,
-    "TitleText": "《红楼梦》是我国古代著名的长篇小说之一，它的别名是？",
-    "Select1": "《四库全书》",
-    "Select2": "《石头记》",
+    "Type": 1,
+    "TitleText": "3058",
+    "Select1": "爱惜羽毛",
+    "Select2": "爱屋及乌",
     "CorrectAnswer": [
       2
     ]
   },
   "210": {
     "ID": 210,
-    "TitleText": "中国最后一个皇帝的年号是哪一个？",
-    "Select1": "康熙",
-    "Select2": "宣统",
+    "Type": 1,
+    "TitleText": "4332",
+    "Select1": "大言不惭",
+    "Select2": "大同小异",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_87"
+    ]
   },
   "211": {
     "ID": 211,
-    "TitleText": "生鱼片在日本是用哪两个汉字称呼？",
-    "Select1": "刺身",
-    "Select2": "卤煮",
+    "Type": 2,
+    "Select1": "大惊失色",
+    "Select2": "面无血色",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "djss"
   },
   "212": {
     "ID": 212,
-    "TitleText": "我国第一部有声影片是？",
-    "Select1": "《西红柿首富》",
-    "Select2": "《四郎探母》",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "213": {
-    "ID": 213,
-    "TitleText": "发烧是不宜喝什么饮料？",
-    "Select1": "烧好的开水",
-    "Select2": "茶类饮料",
+    "Type": 2,
+    "Select1": "心花怒放",
+    "Select2": "大快人心",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "xsc_88"
+    "Picture": "dkrx"
+  },
+  "213": {
+    "ID": 213,
+    "Type": 2,
+    "Select1": "大难临头",
+    "Select2": "难上加难",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "dnlt"
   },
   "214": {
     "ID": 214,
-    "TitleText": "长期多吃鸡蛋会导致？",
-    "Select1": "鸡会哭",
-    "Select2": "胆固醇偏高",
+    "Type": 3,
+    "TitleText": "71-1",
+    "Select1": "故国三千里，",
+    "Select2": "疾风知劲草，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "215": {
     "ID": 215,
-    "TitleText": "最尖的针，打一成语",
-    "Select1": "无孔不入",
-    "Select2": "一清二白",
+    "Type": 3,
+    "TitleText": "72-2",
+    "Select1": "归来泪满襟。",
+    "Select2": "萧萧送雁群。",
     "CorrectAnswer": [
       1
     ]
   },
   "216": {
     "ID": 216,
-    "TitleText": "中国人通常在本命年穿什么颜色？",
-    "Select1": "白色",
-    "Select2": "红色",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_89"
-  },
-  "217": {
-    "ID": 217,
-    "TitleText": "潜水艇是模仿那种生物制造出来的？",
-    "Select1": "猪",
-    "Select2": "鱼",
+    "Type": 3,
+    "TitleText": "73-3",
+    "Select1": "隔窗知夜雨，",
+    "Select2": "遥知不是雪，",
     "CorrectAnswer": [
       2
     ]
   },
+  "217": {
+    "ID": 217,
+    "Type": 1,
+    "TitleText": "4434",
+    "Select1": "走马看花",
+    "Select2": "走马上任",
+    "CorrectAnswer": [
+      1
+    ]
+  },
   "218": {
     "ID": 218,
-    "TitleText": "煮饺子时，饺子飘起来意味着什么？",
-    "Select1": "漏了",
-    "Select2": "熟了",
+    "Type": 1,
+    "TitleText": "4170",
+    "Select1": "旗开得胜",
+    "Select2": "千言万语",
     "CorrectAnswer": [
       2
     ]
   },
   "219": {
     "ID": 219,
-    "TitleText": "变脸是什么剧的绝活？",
-    "Select1": "哑剧",
-    "Select2": "川剧",
+    "Type": 1,
+    "TitleText": "5029",
+    "Select1": "引以为耻",
+    "Select2": "引人入胜",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_90"
+    ]
   },
   "220": {
     "ID": 220,
-    "TitleText": "我国神话故事中射日的是谁?",
-    "Select1": "嫦娥",
-    "Select2": "后羿",
+    "Type": 2,
+    "Select1": "对牛弹琴",
+    "Select2": "一往情深",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dntq"
   },
   "221": {
     "ID": 221,
-    "TitleText": "时隔两年，他的坏习惯不但没有改，反而（）。",
-    "Select1": "数典忘祖",
-    "Select2": "变本加厉",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "222": {
-    "ID": 222,
-    "TitleText": "他正在（）地看着一本幽默小故事。",
-    "Select1": "破釜沉舟",
-    "Select2": "津津有味",
+    "Type": 2,
+    "Select1": "盾之奥义",
+    "Select2": "遁入空门",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "xsc_91"
+    "Picture": "drkm"
+  },
+  "222": {
+    "ID": 222,
+    "Type": 2,
+    "Select1": "大呆小鸡",
+    "Select2": "呆若木鸡",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "drmj"
   },
   "223": {
     "ID": 223,
-    "TitleText": "电视剧《西游记》中只有女人没有男人的地方叫什么？",
-    "Select1": "高老庄",
-    "Select2": "女儿国",
+    "Type": 3,
+    "TitleText": "74-2",
+    "Select1": "近听水无声。",
+    "Select2": "见客棹歌回。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "224": {
     "ID": 224,
-    "TitleText": "比喻“提前做好准备”的成语叫什么？",
-    "Select1": "小题大做",
-    "Select2": "未雨绸缪",
+    "Type": 3,
+    "TitleText": "75-3",
+    "Select1": "野旷天低树，",
+    "Select2": "空山松子落，",
     "CorrectAnswer": [
       2
     ]
   },
   "225": {
     "ID": 225,
-    "TitleText": "“北约”是个国家吗？",
-    "Select1": "是",
-    "Select2": "不是",
+    "Type": 3,
+    "TitleText": "76-1",
+    "Select1": "燕赵悲歌士，",
+    "Select2": "山中相送罢，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_92"
+      1
+    ]
   },
   "226": {
     "ID": 226,
-    "TitleText": "我国儒家学派的创始人是？",
-    "Select1": "孙子",
-    "Select2": "孔子",
+    "Type": 1,
+    "TitleText": "4764",
+    "Select1": "咫尺天涯",
+    "Select2": "纸上谈兵",
     "CorrectAnswer": [
       2
     ]
   },
   "227": {
     "ID": 227,
-    "TitleText": "最小的邮筒，打一成语",
-    "Select1": "尔虞我诈",
-    "Select2": "难以置信",
+    "Type": 1,
+    "TitleText": "4018",
+    "Select1": "缓兵之计",
+    "Select2": "环肥燕瘦",
     "CorrectAnswer": [
       2
     ]
   },
   "228": {
     "ID": 228,
-    "TitleText": "比喻“毫无必要的忧虑和担心”的成语是什么？",
-    "Select1": "不得不爱",
-    "Select2": "杞人忧天",
+    "Type": 1,
+    "TitleText": "4590",
+    "Select1": "捉摸不定",
+    "Select2": "捉襟见肘",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_93"
+    ]
   },
   "229": {
     "ID": 229,
-    "TitleText": "什么东西只会升不会降？",
-    "Select1": "体重",
-    "Select2": "年龄",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "230": {
-    "ID": 230,
-    "TitleText": "四川话里的“耙耳朵”是指？",
-    "Select1": "没有耳朵",
-    "Select2": "怕老婆",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "231": {
-    "ID": 231,
-    "TitleText": "我国内地的邮政编码通常是几位数",
-    "Select1": "6",
-    "Select2": "3",
+    "Type": 2,
+    "Select1": "滴水成冰",
+    "Select2": "滴水穿石",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_94"
+    "Picture": "dscb"
+  },
+  "230": {
+    "ID": 230,
+    "Type": 2,
+    "Select1": "点石成金",
+    "Select2": "石海金生",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "dscj"
+  },
+  "231": {
+    "ID": 231,
+    "Type": 2,
+    "Select1": "一刀一海",
+    "Select2": "刀山火海",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "dshh"
   },
   "232": {
     "ID": 232,
-    "TitleText": "足球运动中守门的人员被称作是？",
-    "Select1": "裁判",
-    "Select2": "守门员",
+    "Type": 3,
+    "TitleText": "77-1",
+    "Select1": "沅湘流不尽，",
+    "Select2": "人闲桂花落，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "233": {
     "ID": 233,
-    "TitleText": "哪个人物在传说中开天辟地？",
-    "Select1": "女娲",
-    "Select2": "盘古",
+    "Type": 3,
+    "TitleText": "78-2",
+    "Select1": "深宫二十年。",
+    "Select2": "板荡识诚臣。",
     "CorrectAnswer": [
       2
     ]
   },
   "234": {
     "ID": 234,
-    "TitleText": "俗话说“山鸡配”什么？",
-    "Select1": "凤凰",
-    "Select2": "猪八戒",
+    "Type": 3,
+    "TitleText": "79-3",
+    "Select1": "不恨归来迟，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_95"
+    ]
   },
   "235": {
     "ID": 235,
-    "TitleText": "中秋节应该吃什么？",
-    "Select1": "月饼",
-    "Select2": "汤圆",
+    "Type": 1,
+    "TitleText": "3868",
+    "Select1": "鸡鸣狗盗",
+    "Select2": "鸡栖凤巢",
     "CorrectAnswer": [
       1
     ]
   },
   "236": {
     "ID": 236,
-    "TitleText": "地球自转一圈需要多长时间",
-    "Select1": "一圈",
-    "Select2": "一天",
+    "Type": 1,
+    "TitleText": "2965",
+    "Select1": "买东买西",
+    "Select2": "爱财如命",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "Materia61"
+    ]
   },
   "237": {
     "ID": 237,
-    "TitleText": "此次冬奥会共多少个场馆？",
-    "Select1": "13个",
-    "Select2": "108个",
+    "Type": 1,
+    "TitleText": "2708",
+    "Select1": "男女有别",
+    "Select2": "男女老少",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "238": {
     "ID": 238,
-    "TitleText": "冬奥会开幕式和闭幕式在哪里举行？",
-    "Select1": "故宫",
-    "Select2": "鸟巢",
+    "Type": 2,
+    "Select1": "电闪雷鸣",
+    "Select2": "乌云密布",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dslm"
   },
   "239": {
     "ID": 239,
-    "TitleText": "图中是什么地方？",
-    "Select1": "国家图书馆",
-    "Select2": "国家体育馆",
+    "Type": 2,
+    "Select1": "丢三落四",
+    "Select2": "颠三倒四",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "Materia66"
+    "Picture": "dsls"
   },
   "240": {
     "ID": 240,
-    "TitleText": "国家游泳中心又被叫什么？",
-    "Select1": "游立方",
-    "Select2": "冰立方",
+    "Type": 2,
+    "Select1": "日出东方",
+    "Select2": "东山再起",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "dszq"
   },
   "241": {
     "ID": 241,
-    "TitleText": "此次冬奥会冰壶项目在哪里进行？",
-    "Select1": "故宫",
-    "Select2": "冰立方",
+    "Type": 3,
+    "TitleText": "80-1",
+    "Select1": "北斗七星高，",
+    "Select2": "十年曾一别，",
     "CorrectAnswer": [
       2
     ]
   },
   "242": {
     "ID": 242,
-    "TitleText": "图中是什么地方？",
-    "Select1": "黑龙江滑雪场",
-    "Select2": "国家雪车雪橇中心",
+    "Type": 3,
+    "TitleText": "81-2",
+    "Select1": "今来到始知。",
+    "Select2": "天寒白屋贫。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia71"
+      1
+    ]
   },
   "243": {
     "ID": 243,
-    "TitleText": "此次冰球项目在哪里进行？",
-    "Select1": "故宫",
-    "Select2": "冰之帆",
+    "Type": 3,
+    "TitleText": "82-3",
+    "Select1": "朝来入庭树，",
+    "Select2": "啼时惊妾梦，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "244": {
     "ID": 244,
-    "TitleText": "冰之帆设计类似于中国折扇，绰号是？",
-    "Select1": "屏风",
-    "Select2": "扇子",
+    "Type": 1,
+    "TitleText": "3368",
+    "Select1": "窥豹一斑",
+    "Select2": "安然无恙",
     "CorrectAnswer": [
       2
     ]
   },
   "245": {
     "ID": 245,
-    "TitleText": "图中是什么地方？",
-    "Select1": "野营俱乐部",
-    "Select2": "国家越野滑雪中心",
+    "Type": 1,
+    "TitleText": "3861",
+    "Select1": "机关算尽",
+    "Select2": "机不可失",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "Materia75"
+    ]
   },
   "246": {
     "ID": 246,
-    "TitleText": "五棵松体育中心又叫什么？",
-    "Select1": "武松体育",
-    "Select2": "冰凌花",
+    "Type": 1,
+    "TitleText": "2963",
+    "Select1": "爱才如命",
+    "Select2": "马首是瞻",
     "CorrectAnswer": [
       2
     ]
   },
   "247": {
     "ID": 247,
-    "TitleText": "此次冰球项目的另一个进行地方是?",
-    "Select1": "故宫",
-    "Select2": "冰菱花",
+    "Type": 2,
+    "Select1": "当头棒喝",
+    "Select2": "一棍蒙到",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dtbh"
   },
   "248": {
     "ID": 248,
-    "TitleText": "图中是什么地方？",
-    "Select1": "上海外滩",
-    "Select2": "首钢滑雪大跳台",
+    "Type": 2,
+    "Select1": "顶天立地",
+    "Select2": "不上不下",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "Materia82"
+    "Picture": "dtld"
   },
   "249": {
     "ID": 249,
-    "TitleText": "国家速滑馆是哪个公园？",
-    "Select1": "北海公园",
-    "Select2": "北京奥体公园",
+    "Type": 2,
+    "Select1": "当头一棒",
+    "Select2": "在线打僵尸",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dtyb"
   },
   "250": {
     "ID": 250,
-    "TitleText": "国家速滑馆又叫什么？",
-    "Select1": "冰滑",
-    "Select2": "冰丝带",
+    "Type": 3,
+    "TitleText": "83-4",
+    "Select1": "芭蕉先有声。",
+    "Select2": "闲坐说玄宗。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "251": {
     "ID": 251,
-    "TitleText": "制作汤圆的原料是什么？",
-    "Select1": "花生米",
-    "Select2": "糯米",
+    "Type": 3,
+    "TitleText": "84-3",
+    "Select1": "时时闻鸟语，",
+    "Select2": "常恐秋风早，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_67"
+      1
+    ]
   },
   "252": {
     "ID": 252,
-    "TitleText": "孔雀开屏是为什么？",
-    "Select1": "装X",
-    "Select2": "示爱",
+    "Type": 3,
+    "TitleText": "85-2",
+    "Select1": "无因彻帝阍。",
+    "Select2": "朝朝误妾期。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "253": {
     "ID": 253,
-    "TitleText": "爆米花的原料是？",
-    "Select1": "巴豆",
-    "Select2": "玉米",
+    "Type": 1,
+    "TitleText": "3296",
+    "Select1": "来去无踪",
+    "Select2": "来历不明",
     "CorrectAnswer": [
       2
     ]
   },
   "254": {
     "ID": 254,
-    "TitleText": "乒乓球最多可以几个人打？",
-    "Select1": "2",
-    "Select2": "4",
+    "Type": 1,
+    "TitleText": "3475",
+    "Select1": "居功自傲",
+    "Select2": "居高临下",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_68"
+    ]
   },
   "255": {
     "ID": 255,
-    "TitleText": "为什么大牛不吃草？",
-    "Select1": "大牛是个人",
-    "Select2": "牛本来也不吃草",
+    "Type": 1,
+    "TitleText": "5269",
+    "Select1": "一木难支",
+    "Select2": "一纸空文",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "256": {
     "ID": 256,
-    "TitleText": "什么动物用尾巴吃喝？",
-    "Select1": "蝎子",
-    "Select2": "所有动物",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "257": {
-    "ID": 257,
-    "TitleText": "毒蛇的毒牙在哪里？",
-    "Select1": "上颚",
-    "Select2": "肚子",
+    "Type": 2,
+    "Select1": "弹丸之地",
+    "Select2": "战争之财",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_69"
+    "Picture": "dwzd"
+  },
+  "257": {
+    "ID": 257,
+    "Type": 2,
+    "Select1": "胆小如鼠",
+    "Select2": "鼠尾写字",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "dxrs"
   },
   "258": {
     "ID": 258,
-    "TitleText": "《红楼梦》又叫？",
-    "Select1": "《水浒传》",
-    "Select2": "《石头记》",
+    "Type": 2,
+    "Select1": "没有头脑",
+    "Select2": "大显身手",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "dxss"
   },
   "259": {
     "ID": 259,
-    "TitleText": "为什么青蛙跳的比树高",
-    "Select1": "青蛙厉害",
-    "Select2": "树不会跳",
+    "Type": 3,
+    "TitleText": "15-2",
+    "Select1": "万径人踪灭。",
+    "Select2": "汗滴禾下土。",
     "CorrectAnswer": [
       2
     ]
   },
   "260": {
     "ID": 260,
-    "TitleText": "下列哪个词是形容人很富有？",
-    "Select1": "身无分文",
-    "Select2": "腰缠万贯",
+    "Type": 3,
+    "TitleText": "4-2",
+    "Select1": "黄河入海流。",
+    "Select2": "处处闻啼鸟。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_70"
+      1
+    ]
   },
   "261": {
     "ID": 261,
-    "TitleText": "人们常把穿的短袖称为？",
-    "Select1": "S恤衫",
-    "Select2": "T恤衫",
+    "Type": 3,
+    "TitleText": "3-2",
+    "Select1": "疑是地上霜。",
+    "Select2": "鱼尾何簁簁。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "262": {
     "ID": 262,
-    "TitleText": "猜字：人有它大，天没有它大",
-    "Select1": "狗",
-    "Select2": "一",
+    "Type": 1,
+    "TitleText": "3677",
+    "Select1": "结党营私",
+    "Select2": "洁身自好",
     "CorrectAnswer": [
       2
     ]
   },
   "263": {
     "ID": 263,
-    "TitleText": "蒲公英靠什么传播种子？",
-    "Select1": "人力",
-    "Select2": "风力",
+    "Type": 1,
+    "TitleText": "3616",
+    "Select1": "锦团花簇",
+    "Select2": "锦上添花",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_71"
+    ]
   },
   "264": {
     "ID": 264,
-    "TitleText": "丝绸是用什么动物吐出来的丝做的？",
-    "Select1": "蚕",
-    "Select2": "蚂蚁",
+    "Type": 1,
+    "TitleText": "2749",
+    "Select1": "目睹耳闻",
+    "Select2": "目瞪口呆",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "265": {
     "ID": 265,
-    "TitleText": "下列哪部电影描写的是武林生活？",
-    "Select1": "少林寺",
-    "Select2": "泰坦尼克号",
+    "Type": 2,
+    "Select1": "大雨倾盆",
+    "Select2": "记得带伞",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "dyqp"
+  },
+  "266": {
+    "ID": 266,
+    "Type": 2,
+    "Select1": "耳聪目明",
+    "Select2": "我真棒",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "ecmm"
+  },
+  "267": {
+    "ID": 267,
+    "Type": 2,
+    "Select1": "二龙戏珠",
+    "Select2": "九五之尊",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "elxz"
+  },
+  "268": {
+    "ID": 268,
+    "Type": 3,
+    "TitleText": "34-2",
+    "Select1": "春来发几枝。",
+    "Select2": "今日把示君，",
     "CorrectAnswer": [
       1
     ]
   },
-  "266": {
-    "ID": 266,
-    "TitleText": "老干妈是什么产品？",
-    "Select1": "可乐",
-    "Select2": "辣酱",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_72"
-  },
-  "267": {
-    "ID": 267,
-    "TitleText": "哪一个月的天数最少？",
-    "Select1": "1月",
-    "Select2": "2月",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "268": {
-    "ID": 268,
-    "TitleText": "身份证号码一共多少位？",
-    "Select1": "11",
-    "Select2": "18",
-    "CorrectAnswer": [
-      2
-    ]
-  },
   "269": {
     "ID": 269,
-    "TitleText": "雷达是根据什么发明的？",
-    "Select1": "大雁",
-    "Select2": "蝙蝠",
+    "Type": 3,
+    "TitleText": "2-2",
+    "Select1": "能开二月花。",
+    "Select2": "春风花草香。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_73"
+      1
+    ]
   },
   "270": {
     "ID": 270,
-    "TitleText": "小米公司主要是以什么产品为主？",
-    "Select1": "大米",
-    "Select2": "电子产品",
+    "Type": 3,
+    "TitleText": "20-1",
+    "Select1": "生当作人杰，",
+    "Select2": "众鸟高飞尽，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "271": {
     "ID": 271,
-    "TitleText": "“躲猫猫”是童年的什么游戏？",
-    "Select1": "猜拳",
-    "Select2": "捉迷藏",
+    "Type": 1,
+    "TitleText": "2758",
+    "Select1": "目下十行",
+    "Select2": "目中无人",
     "CorrectAnswer": [
       2
     ]
   },
   "272": {
     "ID": 272,
-    "TitleText": "一件衣服100元，打八折是多少钱？",
-    "Select1": "20",
-    "Select2": "80",
+    "Type": 1,
+    "TitleText": "2888",
+    "Select1": "美玉无瑕",
+    "Select2": "美中不足",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_74"
+    ]
   },
   "273": {
     "ID": 273,
-    "TitleText": "以下哪个岁数是本命年？",
-    "Select1": "5",
-    "Select2": "24",
+    "Type": 1,
+    "TitleText": "3513",
+    "Select1": "好高鹜远",
+    "Select2": "九牛一毛",
     "CorrectAnswer": [
       2
     ]
   },
   "274": {
     "ID": 274,
-    "TitleText": "猜字：一只黑狗",
-    "Select1": "饕",
-    "Select2": "默",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "275": {
-    "ID": 275,
-    "TitleText": "什么人生病从来不看医生？",
-    "Select1": "盲人",
-    "Select2": "正常人",
+    "Type": 2,
+    "Select1": "阿谀奉承",
+    "Select2": "擦皮鞋耶",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_75"
+    "Picture": "eyfc"
+  },
+  "275": {
+    "ID": 275,
+    "Type": 2,
+    "Select1": "方便之门",
+    "Select2": "离家出走的方便面",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "fbzm"
   },
   "276": {
     "ID": 276,
-    "TitleText": "印度人为什么用手抓饭吃？",
-    "Select1": "手能感觉温度",
-    "Select2": "宗教信仰",
+    "Type": 2,
+    "Select1": "风调雨顺",
+    "Select2": "炎炎夏日",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "fcyd"
   },
   "277": {
     "ID": 277,
-    "TitleText": "猜水果：羊吃草",
-    "Select1": "草莓",
-    "Select2": "菠萝",
+    "Type": 3,
+    "TitleText": "59-3",
+    "Select1": "不知明镜里，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       1
     ]
   },
   "278": {
     "ID": 278,
-    "TitleText": "皮蛋是用什么蛋制作成的？",
-    "Select1": "狗蛋",
-    "Select2": "鸭蛋",
+    "Type": 3,
+    "TitleText": "9-1",
+    "Select1": "慈母手中线，",
+    "Select2": "欲穷千里目，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_76"
+      1
+    ]
   },
   "279": {
     "ID": 279,
-    "TitleText": "体型最小的狗叫什么？",
-    "Select1": "德牧",
-    "Select2": "茶杯犬",
+    "Type": 3,
+    "TitleText": "10-2",
+    "Select1": "万径人踪灭。",
+    "Select2": "游子身上衣。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "280": {
     "ID": 280,
-    "TitleText": "什么书不能单独卖？",
-    "Select1": "英语书",
-    "Select2": "说明书",
+    "Type": 1,
+    "TitleText": "2676",
+    "Select1": "逆水行舟",
+    "Select2": "逆行倒施",
     "CorrectAnswer": [
       2
     ]
   },
   "281": {
     "ID": 281,
-    "TitleText": "耶稣是什么中的救世主？",
-    "Select1": "《新约》",
-    "Select2": "《封神演技》",
+    "Type": 1,
+    "TitleText": "3864",
+    "Select1": "鸡飞狗跳",
+    "Select2": "鸡零狗碎",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_77"
+    ]
   },
   "282": {
     "ID": 282,
-    "TitleText": "“豆蔻年华”是指多少岁？",
-    "Select1": "13",
-    "Select2": "130",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "283": {
-    "ID": 283,
-    "TitleText": "在药店买不到的药是？",
-    "Select1": "后悔药",
-    "Select2": "感冒药",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "284": {
-    "ID": 284,
-    "TitleText": "关羽的武器是什么？",
-    "Select1": "青龙偃月刀",
-    "Select2": "EX之剑",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_78"
-  },
-  "285": {
-    "ID": 285,
-    "TitleText": "下列不会发光的昆虫是？",
-    "Select1": "萤火虫",
-    "Select2": "苍蝇",
+    "Type": 1,
+    "TitleText": "2826",
+    "Select1": "八方支援",
+    "Select2": "明争暗斗",
     "CorrectAnswer": [
       2
     ]
   },
-  "286": {
-    "ID": 286,
-    "TitleText": "性别不同的双胞胎叫什么？",
-    "Select1": "龙凤胎",
-    "Select2": "雌雄双煞",
+  "283": {
+    "ID": 283,
+    "Type": 2,
+    "Select1": "分道扬镳",
+    "Select2": "柳暗花明",
     "CorrectAnswer": [
       1
+    ],
+    "Picture": "fdyb"
+  },
+  "284": {
+    "ID": 284,
+    "Type": 2,
+    "Select1": "大郎该吃药了",
+    "Select2": "非分之想",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "ffzx"
+  },
+  "285": {
+    "ID": 285,
+    "Type": 2,
+    "Select1": "放虎归山",
+    "Select2": "五指山虎",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "fhgs"
+  },
+  "286": {
+    "ID": 286,
+    "Type": 3,
+    "TitleText": "90-1",
+    "Select1": "寒雨连江夜入吴，",
+    "Select2": "秦时明月汉时关，",
+    "CorrectAnswer": [
+      2
     ]
   },
   "287": {
     "ID": 287,
-    "TitleText": "历史上跑的最快的是谁？",
-    "Select1": "曹操",
-    "Select2": "孙二娘",
+    "Type": 3,
+    "TitleText": "98-3",
+    "Select1": "飞流直下三千尺，",
+    "Select2": "劝君更尽一杯酒，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_79"
+    ]
   },
   "288": {
     "ID": 288,
-    "TitleText": "将戒指戴在无名指上是什么意思？",
-    "Select1": "已婚",
-    "Select2": "单身",
+    "Type": 3,
+    "TitleText": "94-2",
+    "Select1": "每逢佳节倍思亲。",
+    "Select2": "一片孤城万仞山。",
     "CorrectAnswer": [
       1
     ]
   },
   "289": {
     "ID": 289,
-    "TitleText": "《亮剑》的主人公是？",
-    "Select1": "和尚",
-    "Select2": "李云龙",
+    "Type": 1,
+    "TitleText": "3651",
+    "Select1": "金兰之交",
+    "Select2": "金鸡独立",
     "CorrectAnswer": [
       2
     ]
   },
   "290": {
     "ID": 290,
-    "TitleText": "微信启动的时候显示的是什么图片？",
-    "Select1": "明星",
-    "Select2": "地球",
+    "Type": 1,
+    "TitleText": "3169",
+    "Select1": "聊表寸心",
+    "Select2": "两袖清风",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_80"
+    ]
   },
   "291": {
     "ID": 291,
-    "TitleText": "四川话里的“粑耳朵”是指？",
-    "Select1": "没有耳朵",
-    "Select2": "怕老婆",
+    "Type": 1,
+    "TitleText": "5273",
+    "Select1": "一男半女",
+    "Select2": "一目十行",
     "CorrectAnswer": [
       2
     ]
   },
   "292": {
     "ID": 292,
-    "TitleText": "猜字：门里走过一个人",
-    "Select1": "闪",
-    "Select2": "猪",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "293": {
-    "ID": 293,
-    "TitleText": "“铁公鸡”是形容一个人什么样子？",
-    "Select1": "抠门",
-    "Select2": "大方",
+    "Type": 2,
+    "Select1": "废话连篇",
+    "Select2": "废话文学",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_81"
+    "Picture": "fhlp"
+  },
+  "293": {
+    "ID": 293,
+    "Type": 2,
+    "Select1": "风和日丽",
+    "Select2": "双休日",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "fhrl"
   },
   "294": {
     "ID": 294,
-    "TitleText": "代父从军的是谁？",
-    "Select1": "花木兰",
-    "Select2": "米歇尔",
+    "Type": 2,
+    "Select1": "飞黄腾达",
+    "Select2": "人财两空",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "fhtd"
   },
   "295": {
     "ID": 295,
-    "TitleText": "“天涯海角”在哪里？",
-    "Select1": "山东",
-    "Select2": "海南",
+    "Type": 3,
+    "TitleText": "110-1",
+    "Select1": "千里莺啼绿映红，",
+    "Select2": "不论平地与山尖，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "296": {
     "ID": 296,
-    "TitleText": "袁华又叫什么？",
-    "Select1": "潮汐海灵",
-    "Select2": "三好学生",
+    "Type": 3,
+    "TitleText": "1-1",
+    "Select1": "愿得一人心，",
+    "Select2": "解落三秋叶，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_82"
+    ]
   },
   "297": {
     "ID": 297,
-    "TitleText": "武术中分为南拳和什么？",
-    "Select1": "北腿",
-    "Select2": "西拳",
+    "Type": 3,
+    "TitleText": "16-1",
+    "Select1": "春种一粒粟，",
+    "Select2": "松下问童子，",
     "CorrectAnswer": [
       1
     ]
   },
   "298": {
     "ID": 298,
-    "TitleText": "下列哪种花有毒？",
-    "Select1": "玫瑰",
-    "Select2": "罂粟",
+    "Type": 1,
+    "TitleText": "3922",
+    "Select1": "回味无穷",
+    "Select2": "回头是岸",
     "CorrectAnswer": [
       2
     ]
   },
   "299": {
     "ID": 299,
-    "TitleText": "小沈阳最出名的小品是？",
-    "Select1": "不差钱",
-    "Select2": "难忘今宵",
+    "Type": 1,
+    "TitleText": "3342",
+    "Select1": "胯下之辱",
+    "Select2": "苦中作乐",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_83"
+      2
+    ]
   },
   "300": {
     "ID": 300,
-    "TitleText": "《孙子兵法》是谁写的？",
-    "Select1": "孙悟空",
-    "Select2": "孙武",
+    "Type": 1,
+    "TitleText": "4035",
+    "Select1": "虎不食儿",
+    "Select2": "虎口拔牙",
     "CorrectAnswer": [
       2
     ]
   },
   "301": {
     "ID": 301,
-    "TitleText": "男怕入错行，女怕什么？",
-    "Select1": "嫁错郎",
-    "Select2": "上错床",
+    "Type": 2,
+    "Select1": "风花雪月",
+    "Select2": "大理啤酒",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "fhxy"
   },
   "302": {
     "ID": 302,
-    "TitleText": "瘦死的骆驼比什么大？",
-    "Select1": "猪",
-    "Select2": "马",
+    "Type": 2,
+    "Select1": "翻江倒海",
+    "Select2": "人山人海",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_1"
+    "Picture": "fjdh"
   },
   "303": {
     "ID": 303,
-    "TitleText": "大熊猫最爱吃什么？",
-    "Select1": "肉",
-    "Select2": "竹子",
+    "Type": 2,
+    "Select1": "负荆请罪",
+    "Select2": "爱莫能助",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "fjqz"
   },
   "304": {
     "ID": 304,
-    "TitleText": "一个星期有几天？",
-    "Select1": "3",
-    "Select2": "7",
+    "Type": 3,
+    "TitleText": "92-1",
+    "Select1": "碧玉妆成一树高，",
+    "Select2": "寒雨连江夜入吴，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "305": {
     "ID": 305,
-    "TitleText": "哪个月有28天？",
-    "Select1": "每个月都有",
-    "Select2": "十三月",
+    "Type": 3,
+    "TitleText": "89-2",
+    "Select1": "正是男儿读书时。",
+    "Select2": "欲饮琵琶马上催。",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_2"
+      2
+    ]
   },
   "306": {
     "ID": 306,
-    "TitleText": "阳历十月一日是我国什么节日？",
-    "Select1": "情人节",
-    "Select2": "国庆节",
+    "Type": 3,
+    "TitleText": "117-3",
+    "Select1": "欲把西湖比西子，",
+    "Select2": "蒌蒿满地芦芽短，",
     "CorrectAnswer": [
       2
     ]
   },
   "307": {
     "ID": 307,
-    "TitleText": "掌管生死簿的是谁？",
-    "Select1": "西门庆",
-    "Select2": "阎罗王",
+    "Type": 1,
+    "TitleText": "2907",
+    "Select1": "梦寐以求",
+    "Select2": "弥留之际",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "308": {
     "ID": 308,
-    "TitleText": "老北京院落式建筑叫什么？",
-    "Select1": "小区楼",
-    "Select2": "四合院",
+    "Type": 1,
+    "TitleText": "5288",
+    "Select1": "一清二白",
+    "Select2": "一窍不通",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_3"
+    ]
   },
   "309": {
     "ID": 309,
-    "TitleText": "吸烟有害什么？",
-    "Select1": "健康",
-    "Select2": "颜值",
+    "Type": 1,
+    "TitleText": "3664",
+    "Select1": "皆大欢喜",
+    "Select2": "接二连三",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "310": {
     "ID": 310,
-    "TitleText": "什么饼不能吃？",
-    "Select1": "铁饼",
-    "Select2": "烙饼",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "311": {
-    "ID": 311,
-    "TitleText": "地球上什么地方温度最高？",
-    "Select1": "地心",
-    "Select2": "粒子加速器",
+    "Type": 2,
+    "Select1": "返老还童",
+    "Select2": "老人小孩",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_4"
+    "Picture": "flht"
+  },
+  "311": {
+    "ID": 311,
+    "Type": 2,
+    "Select1": "饭来张口",
+    "Select2": "烈焰红唇",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "flkk"
   },
   "312": {
     "ID": 312,
-    "TitleText": "牛魔王是以什么为原型？",
-    "Select1": "牛",
-    "Select2": "猪",
+    "Type": 2,
+    "Select1": "风流倜傥",
+    "Select2": "鼻涕直流",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "fltt"
   },
   "313": {
     "ID": 313,
-    "TitleText": "那种植物四季常春？",
-    "Select1": "松鼠",
-    "Select2": "常青藤",
+    "Type": 3,
+    "TitleText": "7-1",
+    "Select1": "江碧鸟逾白，",
+    "Select2": "空山不见人，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "314": {
     "ID": 314,
-    "TitleText": "海绵宝宝的好朋友是谁？",
-    "Select1": "派大星",
-    "Select2": "孙悟空",
+    "Type": 3,
+    "TitleText": "21-2",
+    "Select1": "孤云独去闲。",
+    "Select2": "秋收万颗子。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_5"
+    ]
   },
   "315": {
     "ID": 315,
-    "TitleText": "十八个吊桶下一句是什么？",
-    "Select1": "横七竖八",
-    "Select2": "七上八下",
+    "Type": 3,
+    "TitleText": "22-3",
+    "Select1": "君看一叶舟，",
+    "Select2": "深林人不知，",
     "CorrectAnswer": [
       2
     ]
   },
   "316": {
     "ID": 316,
-    "TitleText": "粤语是什么地方的方言？",
-    "Select1": "广东",
-    "Select2": "阿富汗",
+    "Type": 1,
+    "TitleText": "3155",
+    "Select1": "良药苦口",
+    "Select2": "良禽择木",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "317": {
     "ID": 317,
-    "TitleText": "腊八节的习俗是？",
-    "Select1": "吃月饼",
-    "Select2": "喝粥",
+    "Type": 1,
+    "TitleText": "3164",
+    "Select1": "两全其美",
+    "Select2": "两虎相争",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_6"
+    ]
   },
   "318": {
     "ID": 318,
-    "TitleText": "周杰伦是著名的什么？",
-    "Select1": "科学家",
-    "Select2": "歌手",
+    "Type": 1,
+    "TitleText": "3996",
+    "Select1": "滑头滑脑",
+    "Select2": "化整为零",
     "CorrectAnswer": [
       2
     ]
   },
   "319": {
     "ID": 319,
-    "TitleText": "猫哭耗子下一句是什么？",
-    "Select1": "蓝瘦",
-    "Select2": "假慈悲",
+    "Type": 2,
+    "Select1": "反目成仇",
+    "Select2": "相亲相爱一家人",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "fmcc"
   },
   "320": {
     "ID": 320,
-    "TitleText": "狗咬吕洞宾的下一句是什么？",
-    "Select1": "真疼",
-    "Select2": "不识好人心",
+    "Type": 2,
+    "Select1": "废寝忘食",
+    "Select2": "老子不饿",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_7"
+    "Picture": "fqws"
   },
   "321": {
     "ID": 321,
-    "TitleText": "哆啦A梦是什么颜色的？",
-    "Select1": "蓝白",
-    "Select2": "红黑",
+    "Type": 2,
+    "Select1": "覆水难收",
+    "Select2": "弱水三千",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "fsns"
+  },
+  "322": {
+    "ID": 322,
+    "Type": 3,
+    "TitleText": "23-1",
+    "Select1": "逐舞飘轻袖，",
+    "Select2": "锄禾日当午，",
     "CorrectAnswer": [
       1
     ]
   },
-  "322": {
-    "ID": 322,
-    "TitleText": "圣诞老人的雪橇是用什么拉的？",
-    "Select1": "野猪",
-    "Select2": "驯鹿",
+  "323": {
+    "ID": 323,
+    "Type": 3,
+    "TitleText": "24-2",
+    "Select1": "孤云独去闲。",
+    "Select2": "流响出疏桐。",
     "CorrectAnswer": [
       2
     ]
   },
-  "323": {
-    "ID": 323,
-    "TitleText": "千里马常有，什么不常有？",
-    "Select1": "猪",
-    "Select2": "伯乐",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_8"
-  },
   "324": {
     "ID": 324,
-    "TitleText": "盖楼之前要干什么？",
-    "Select1": "打砖头",
-    "Select2": "打地基",
+    "Type": 3,
+    "TitleText": "25-2",
+    "Select1": "游子身上衣。",
+    "Select2": "离亭叶正稀。",
     "CorrectAnswer": [
       2
     ]
   },
   "325": {
     "ID": 325,
-    "TitleText": "猜字：太阳西边下，月儿东边挂",
-    "Select1": "晃",
-    "Select2": "明",
+    "Type": 1,
+    "TitleText": "3354",
+    "Select1": "宽以待人",
+    "Select2": "宽宏大量",
     "CorrectAnswer": [
       2
     ]
   },
   "326": {
     "ID": 326,
-    "TitleText": "哪种干果的外壳和人脑相似？",
-    "Select1": "核桃",
-    "Select2": "西瓜",
+    "Type": 1,
+    "TitleText": "5079",
+    "Select1": "阴谋诡计",
+    "Select2": "阴差阳错",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_9"
+      2
+    ]
   },
   "327": {
     "ID": 327,
-    "TitleText": "儒家学派的创始人是谁？",
-    "Select1": "李白",
-    "Select2": "孔子",
+    "Type": 1,
+    "TitleText": "4433",
+    "Select1": "钻冰取火",
+    "Select2": "走漏天机",
     "CorrectAnswer": [
       2
     ]
   },
   "328": {
     "ID": 328,
-    "TitleText": "中国最大的广场是？",
-    "Select1": "大妈广场",
-    "Select2": "天安门广场",
+    "Type": 2,
+    "Select1": "粉身碎骨",
+    "Select2": "可爱小萝莉",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "fssg"
   },
   "329": {
     "ID": 329,
-    "TitleText": "湖北的省会是哪里？",
-    "Select1": "北京",
-    "Select2": "武汉",
+    "Type": 2,
+    "Select1": "翻山越岭",
+    "Select2": "崇山峻岭",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_10"
+    "Picture": "fsyl"
   },
   "330": {
     "ID": 330,
-    "TitleText": "大众是什么品牌？",
-    "Select1": "烤冷面",
-    "Select2": "汽车",
+    "Type": 2,
+    "Select1": "赴汤蹈火",
+    "Select2": "开饭了",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "ftdh"
   },
   "331": {
     "ID": 331,
-    "TitleText": "移动客服的电话是？",
-    "Select1": "110",
-    "Select2": "10086",
+    "Type": 3,
+    "TitleText": "26-1",
+    "Select1": "松下问童子，",
+    "Select2": "此地别燕丹，",
     "CorrectAnswer": [
       2
     ]
   },
   "332": {
     "ID": 332,
-    "TitleText": "身体是什么的本钱？",
-    "Select1": "革命",
-    "Select2": "喝酒",
+    "Type": 3,
+    "TitleText": "27-2",
+    "Select1": "秋收万颗子。",
+    "Select2": "皆言四海同。",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_11"
+      2
+    ]
   },
   "333": {
     "ID": 333,
-    "TitleText": "乘风破浪会有时下一句是？",
-    "Select1": "直挂云帆济沧海",
-    "Select2": "我欲乘风归去",
+    "Type": 3,
+    "TitleText": "28-1",
+    "Select1": "长江悲已滞，",
+    "Select2": "春种一粒粟，",
     "CorrectAnswer": [
       1
     ]
   },
   "334": {
     "ID": 334,
-    "TitleText": "哪一句是形容老人经验多的？",
-    "Select1": "姜还是老的辣",
-    "Select2": "朝气勃勃",
+    "Type": 1,
+    "TitleText": "2802",
+    "Select1": "名列前茅",
+    "Select2": "名利双收",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "335": {
     "ID": 335,
-    "TitleText": "制作面包的原料是什么？",
-    "Select1": "奶油",
-    "Select2": "面粉",
+    "Type": 1,
+    "TitleText": "4386",
+    "Select1": "左邻右里",
+    "Select2": "左右开弓",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_12"
+    ]
   },
   "336": {
     "ID": 336,
-    "TitleText": "斗牛士是用什么颜色的布？",
-    "Select1": "七彩布",
-    "Select2": "红布",
+    "Type": 1,
+    "TitleText": "2779",
+    "Select1": "摩肩接踵",
+    "Select2": "模棱两可",
     "CorrectAnswer": [
       2
     ]
   },
   "337": {
     "ID": 337,
-    "TitleText": "猜字：伯父隔壁没住人",
-    "Select1": "猪",
-    "Select2": "白",
+    "Type": 2,
+    "Select1": "蜂拥而上",
+    "Select2": "五只蜜蜂",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "fyes"
   },
   "338": {
     "ID": 338,
-    "TitleText": "烤全羊烤的是？",
-    "Select1": "喜洋洋",
-    "Select2": "绵羊",
+    "Type": 2,
+    "Select1": "翻云覆雨",
+    "Select2": "激情四射",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_13"
+    "Picture": "fyfy"
   },
   "339": {
     "ID": 339,
-    "TitleText": "超人把什么穿在外面？",
-    "Select1": "肚兜",
-    "Select2": "内裤",
+    "Type": 2,
+    "Select1": "发扬光大",
+    "Select2": "正大光明",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "fygd"
   },
   "340": {
     "ID": 340,
-    "TitleText": "什么花最有力？",
-    "Select1": "大呲花",
-    "Select2": "牵牛花",
+    "Type": 3,
+    "TitleText": "29-2",
+    "Select1": "死亦为鬼雄。",
+    "Select2": "经冬复立春。",
     "CorrectAnswer": [
       2
     ]
   },
   "341": {
     "ID": 341,
-    "TitleText": "什么是电脑的心脏？",
-    "Select1": "鼠标",
-    "Select2": "CPU",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_14"
-  },
-  "342": {
-    "ID": 342,
-    "TitleText": "成也萧何的下一句是什么？",
-    "Select1": "全怪自己",
-    "Select2": "败也萧何",
+    "Type": 3,
+    "TitleText": "6-2",
+    "Select1": "白首不相离。",
+    "Select2": "但闻人语响。",
     "CorrectAnswer": [
       2
     ]
   },
+  "342": {
+    "ID": 342,
+    "Type": 3,
+    "TitleText": "31-2",
+    "Select1": "蹉跎白发年。",
+    "Select2": "离亭叶正稀。",
+    "CorrectAnswer": [
+      1
+    ]
+  },
   "343": {
     "ID": 343,
-    "TitleText": "什么剪不断？",
-    "Select1": "瀑布",
-    "Select2": "棉布",
+    "Type": 1,
+    "TitleText": "5425",
+    "Select1": "夜不闭户",
+    "Select2": "夜不成寐",
     "CorrectAnswer": [
       1
     ]
   },
   "344": {
     "ID": 344,
-    "TitleText": "皇帝众多儿子中继承皇位的叫什么？",
-    "Select1": "小子",
-    "Select2": "太子",
+    "Type": 1,
+    "TitleText": "3753",
+    "Select1": "江郎才尽",
+    "Select2": "江山如故",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_15"
+      1
+    ]
   },
   "345": {
     "ID": 345,
-    "TitleText": "我国发行的货币叫什么？",
-    "Select1": "美元",
-    "Select2": "人民币",
+    "Type": 1,
+    "TitleText": "3994",
+    "Select1": "化为乌有",
+    "Select2": "化险为夷",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "346": {
     "ID": 346,
-    "TitleText": "会当凌绝顶下一句是什么？",
-    "Select1": "秋霜切玉剑",
-    "Select2": "一览众山小",
+    "Type": 2,
+    "Select1": "暧昧不清",
+    "Select2": "风雨同舟",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "fytz"
   },
   "347": {
     "ID": 347,
-    "TitleText": "我们通常把蟑螂叫什么？",
-    "Select1": "小强",
-    "Select2": "小红",
+    "Type": 2,
+    "Select1": "我就这么看着你",
+    "Select2": "隔岸观火",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "xsc_16"
+    "Picture": "gagh"
   },
   "348": {
     "ID": 348,
-    "TitleText": "不识庐山真面目下一句是什么？",
-    "Select1": "拔剑四顾心茫然",
-    "Select2": "只缘身在此山中",
+    "Type": 2,
+    "Select1": "甘宁不服",
+    "Select2": "甘拜下风",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "gbxf"
   },
   "349": {
     "ID": 349,
-    "TitleText": "泥菩萨过河的下一句是什么？",
-    "Select1": "自身难保",
-    "Select2": "河里有鱼",
+    "Type": 3,
+    "TitleText": "32-2",
+    "Select1": "宝剑值千金。",
+    "Select2": "蹉跎白发年。",
     "CorrectAnswer": [
       1
     ]
   },
   "350": {
     "ID": 350,
-    "TitleText": "为什么大雁要去南方？",
-    "Select1": "过冬",
-    "Select2": "北方房价贵",
+    "Type": 3,
+    "TitleText": "33-2",
+    "Select1": "积雪浮云端。",
+    "Select2": "驱车登古原。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_17"
+    ]
   },
   "351": {
     "ID": 351,
-    "TitleText": "大闹五庄观的是谁？",
-    "Select1": "林冲",
-    "Select2": "孙悟空",
+    "Type": 3,
+    "TitleText": "5-2",
+    "Select1": "山青花欲燃。",
+    "Select2": "处处闻啼鸟。",
     "CorrectAnswer": [
       2
     ]
   },
   "352": {
     "ID": 352,
-    "TitleText": "猜动物：双耳如薄扇",
-    "Select1": "老鼠",
-    "Select2": "大象",
+    "Type": 1,
+    "TitleText": "3406",
+    "Select1": "厚古薄今",
+    "Select2": "枯木逢春",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "353": {
     "ID": 353,
-    "TitleText": "酿酒的主要原料是什么？",
-    "Select1": "土",
-    "Select2": "粮食",
+    "Type": 1,
+    "TitleText": "3285",
+    "Select1": "累及无辜",
+    "Select2": "泪如雨下",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_18"
+    ]
   },
   "354": {
     "ID": 354,
-    "TitleText": "湖南电视台是什么省份的电视台",
-    "Select1": "湖南",
-    "Select2": "湖北",
+    "Type": 1,
+    "TitleText": "3644",
+    "Select1": "斤斤计较",
+    "Select2": "今非昔比",
     "CorrectAnswer": [
       1
     ]
   },
   "355": {
     "ID": 355,
-    "TitleText": "北京奥运会在哪一年举行？",
-    "Select1": "2008",
-    "Select2": "2012",
+    "Type": 2,
+    "Select1": "面面相觑",
+    "Select2": "肝胆相照",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "gdxz"
   },
   "356": {
     "ID": 356,
-    "TitleText": "粪坑里的石头下一句是什么",
-    "Select1": "又臭又硬",
-    "Select2": "又光又亮",
+    "Type": 2,
+    "Select1": "皆大欢喜",
+    "Select2": "功德圆满",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "xsc_19"
+    "Picture": "gdym"
   },
   "357": {
     "ID": 357,
-    "TitleText": "金字塔是什么国家的？",
-    "Select1": "中国",
-    "Select2": "埃及",
+    "Type": 2,
+    "Select1": "步步高升",
+    "Select2": "高高在上",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "ggzs"
   },
   "358": {
     "ID": 358,
-    "TitleText": "还珠格格中香妃是变成什么飞走了?",
-    "Select1": "宇宙飞船",
-    "Select2": "蝴蝶",
+    "Type": 3,
+    "TitleText": "35-2",
+    "Select1": "洲长多暮归。",
+    "Select2": "壮士发冲冠。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "359": {
     "ID": 359,
-    "TitleText": "我国第一个女皇帝是谁？",
-    "Select1": "乾隆",
-    "Select2": "武则天",
+    "Type": 3,
+    "TitleText": "36-2",
+    "Select1": "应知故乡事。",
+    "Select2": "汗滴禾下土。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_20"
+      1
+    ]
   },
   "360": {
     "ID": 360,
-    "TitleText": "什么运动需要闭一只眼？",
-    "Select1": "游泳",
-    "Select2": "射击",
+    "Type": 3,
+    "TitleText": "37-2",
+    "Select1": "手可摘星辰。",
+    "Select2": "秋收万颗子。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "361": {
     "ID": 361,
-    "TitleText": "月光宝盒的作用是什么？",
-    "Select1": "变身",
-    "Select2": "时光倒流",
+    "Type": 1,
+    "TitleText": "2744",
+    "Select1": "木已成舟",
+    "Select2": "目不识丁",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "362": {
     "ID": 362,
-    "TitleText": "下列哪个食物中没有馅？",
-    "Select1": "馒头",
-    "Select2": "水饺",
+    "Type": 1,
+    "TitleText": "3954",
+    "Select1": "魂不附体",
+    "Select2": "浑水摸鱼",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_21"
+    ]
   },
   "363": {
     "ID": 363,
-    "TitleText": "三大网络运营商是？",
-    "Select1": "联通，移动，电信",
-    "Select2": "耐克，阿迪，李宁",
+    "Type": 1,
+    "TitleText": "3986",
+    "Select1": "挥霍无度",
+    "Select2": "挥汗成雨",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "364": {
     "ID": 364,
-    "TitleText": "19乘以30等于多少？",
-    "Select1": "570",
-    "Select2": "250",
+    "Type": 2,
+    "Select1": "过河拆桥",
+    "Select2": "抢险工程",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "ghcq"
+  },
+  "365": {
+    "ID": 365,
+    "Type": 2,
+    "Select1": "孤魂野鬼",
+    "Select2": "恶鬼索命",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "ghyg"
+  },
+  "366": {
+    "ID": 366,
+    "Type": 2,
+    "Select1": "过街老鼠",
+    "Select2": "强身健体",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "gjls"
+  },
+  "367": {
+    "ID": 367,
+    "Type": 3,
+    "TitleText": "38-3",
+    "Select1": "巴陵无限酒，",
+    "Select2": "愿君多采撷，",
     "CorrectAnswer": [
       1
     ]
   },
-  "365": {
-    "ID": 365,
-    "TitleText": "猜字：72小时",
-    "Select1": "秒",
-    "Select2": "晶",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_22"
-  },
-  "366": {
-    "ID": 366,
-    "TitleText": "我国有多少个民族？",
-    "Select1": "100",
-    "Select2": "56",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "367": {
-    "ID": 367,
-    "TitleText": "哪种米最有粘性？",
-    "Select1": "小米",
-    "Select2": "糯米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
   "368": {
     "ID": 368,
-    "TitleText": "农历八月十五是什么节日？",
-    "Select1": "粽子节",
-    "Select2": "中秋节",
+    "Type": 3,
+    "TitleText": "39-4",
+    "Select1": "今人多不弹。",
+    "Select2": "醉杀洞庭秋。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_23"
+      1
+    ]
   },
   "369": {
     "ID": 369,
-    "TitleText": "什么车撞了反而很开心？",
-    "Select1": "公共车",
-    "Select2": "碰碰车",
+    "Type": 3,
+    "TitleText": "40-3",
+    "Select1": "安知千里外，",
+    "Select2": "荷笠带夕阳，",
     "CorrectAnswer": [
       2
     ]
   },
   "370": {
     "ID": 370,
-    "TitleText": "本是同根生的下一句是什么？",
-    "Select1": "虎视何雄哉",
-    "Select2": "相煎何太急",
+    "Type": 1,
+    "TitleText": "4911",
+    "Select1": "债多不愁",
+    "Select2": "宅心忠厚",
     "CorrectAnswer": [
       2
     ]
   },
   "371": {
     "ID": 371,
-    "TitleText": "河南省的省会是哪座城市？",
-    "Select1": "上海",
-    "Select2": "郑州",
+    "Type": 1,
+    "TitleText": "3001",
+    "Select1": "一笑置之",
+    "Select2": "漫不经心",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_24"
+    ]
   },
   "372": {
     "ID": 372,
-    "TitleText": "张艺谋是做什么的？",
-    "Select1": "演员",
-    "Select2": "导演",
+    "Type": 1,
+    "TitleText": "5244",
+    "Select1": "一言九鼎",
+    "Select2": "一泻千里",
     "CorrectAnswer": [
       2
     ]
   },
   "373": {
     "ID": 373,
-    "TitleText": "我国的国球是？",
-    "Select1": "糯米球",
-    "Select2": "乒乓球",
+    "Type": 2,
+    "Select1": "狗急跳墙",
+    "Select2": "爱答不理",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "gjtq"
   },
   "374": {
     "ID": 374,
-    "TitleText": "阿里巴巴的创始人是谁？",
-    "Select1": "黄晓明",
-    "Select2": "马云",
+    "Type": 2,
+    "Select1": "高楼大厦",
+    "Select2": "魂牵梦绕",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_25"
+    "Picture": "glds"
   },
   "375": {
     "ID": 375,
-    "TitleText": "卢沟桥事变是哪一年？",
-    "Select1": "2021年",
-    "Select2": "1937",
+    "Type": 2,
+    "Select1": "骨瘦如柴",
+    "Select2": "骨肉相连",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "gsrc"
   },
   "376": {
     "ID": 376,
-    "TitleText": "如果有人脑中风了应该怎么办？",
-    "Select1": "拍醒",
-    "Select2": "打120",
+    "Type": 3,
+    "TitleText": "41-3",
+    "Select1": "荷笠带夕阳，",
+    "Select2": "细语人不闻，",
     "CorrectAnswer": [
       2
     ]
   },
   "377": {
     "ID": 377,
-    "TitleText": "我国国歌是什么？",
-    "Select1": "难忘今宵",
-    "Select2": "义勇军进行曲",
+    "Type": 3,
+    "TitleText": "42-3",
+    "Select1": "晚来天欲雪，",
+    "Select2": "月出惊山鸟，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_26"
+      1
+    ]
   },
   "378": {
     "ID": 378,
-    "TitleText": "“千里送鹅毛”下一句是什么？",
-    "Select1": "无影无踪",
-    "Select2": "礼轻情意重",
+    "Type": 3,
+    "TitleText": "43-3",
+    "Select1": "如裁一条素，",
+    "Select2": "谁知明镜里，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "379": {
     "ID": 379,
-    "TitleText": "“会当凌绝顶”下一句是什么？",
-    "Select1": "秋霜切玉剑",
-    "Select2": "一览众山小",
+    "Type": 1,
+    "TitleText": "2938",
+    "Select1": "毛骨悚然",
+    "Select2": "毛手毛脚",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "380": {
     "ID": 380,
-    "TitleText": "“苟富贵”下一句是什么？",
-    "Select1": "汪汪汪",
-    "Select2": "勿相忘",
+    "Type": 1,
+    "TitleText": "4031",
+    "Select1": "虎背熊腰",
+    "Select2": "虎不食儿",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_27"
+      1
+    ]
   },
   "381": {
     "ID": 381,
-    "TitleText": "下列哪个城市不是沿海城市？",
-    "Select1": "北京",
-    "Select2": "上海",
+    "Type": 1,
+    "TitleText": "2804",
+    "Select1": "名满天下",
+    "Select2": "名落孙山",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "382": {
     "ID": 382,
-    "TitleText": "中央电视台落座在哪个城市？",
-    "Select1": "西藏",
-    "Select2": "北京",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "383": {
-    "ID": 383,
-    "TitleText": "“杂交水稻之父”是谁",
-    "Select1": "棠溪",
-    "Select2": "袁隆平",
+    "Type": 2,
+    "Select1": "世贸大厦",
+    "Select2": "高耸入云",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "xsc_28"
+    "Picture": "gsry"
+  },
+  "383": {
+    "ID": 383,
+    "Type": 2,
+    "Select1": "烟斗军师",
+    "Select2": "狗头军师",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "gtjs"
   },
   "384": {
     "ID": 384,
-    "TitleText": "令尊是对谁的称呼？",
-    "Select1": "老大爷",
-    "Select2": "父亲",
+    "Type": 2,
+    "Select1": "好心狗狗",
+    "Select2": "狗仗人势",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "gzrs"
   },
   "385": {
     "ID": 385,
-    "TitleText": "什么东西行走不用脚？",
-    "Select1": "蜈蚣",
-    "Select2": "蛇",
+    "Type": 3,
+    "TitleText": "44-3",
+    "Select1": "今逢浣纱石，",
+    "Select2": "林表明霁色，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "386": {
     "ID": 386,
-    "TitleText": "“公说公有理”后面一句是什么？",
-    "Select1": "婆说婆有理",
-    "Select2": "这是什么道理",
+    "Type": 3,
+    "TitleText": "45-3",
+    "Select1": "莫买沃洲山，",
+    "Select2": "今日把示君，",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_29"
+      2
+    ]
   },
   "387": {
     "ID": 387,
-    "TitleText": "一副扑克牌有几个大王？",
-    "Select1": "1",
-    "Select2": "2",
+    "Type": 3,
+    "TitleText": "46-4",
+    "Select1": "归卧故山秋。",
+    "Select2": "嫁与弄潮儿。",
     "CorrectAnswer": [
       1
     ]
   },
   "388": {
     "ID": 388,
-    "TitleText": "哪一种东西的寿命最长？",
-    "Select1": "乌龟",
-    "Select2": "狗",
+    "Type": 1,
+    "TitleText": "3748",
+    "Select1": "箭不虚发",
+    "Select2": "箭在弦上",
     "CorrectAnswer": [
       1
     ]
   },
   "389": {
     "ID": 389,
-    "TitleText": "香格里拉在什么省？",
-    "Select1": "云南",
-    "Select2": "内蒙",
+    "Type": 1,
+    "TitleText": "2988",
+    "Select1": "满腹经纶",
+    "Select2": "满腹牢骚",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_30"
+    ]
   },
   "390": {
     "ID": 390,
-    "TitleText": "饰演“甄嬛”的是？",
-    "Select1": "邓超",
-    "Select2": "孙俪",
+    "Type": 1,
+    "TitleText": "5444",
+    "Select1": "扬清抑浊",
+    "Select2": "扬名四海",
     "CorrectAnswer": [
       2
     ]
   },
   "391": {
     "ID": 391,
-    "TitleText": "黑龙江是哪个城市的省会",
-    "Select1": "哈尔滨",
-    "Select2": "北京",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "392": {
-    "ID": 392,
-    "TitleText": "甲骨文是写在什么上面的？",
-    "Select1": "墙上",
-    "Select2": "龟骨",
+    "Type": 2,
+    "Select1": "杞人忧天",
+    "Select2": "高枕无忧",
     "CorrectAnswer": [
       2
     ],
-    "Picture": "xsc_31"
+    "Picture": "gzwy"
+  },
+  "392": {
+    "ID": 392,
+    "Type": 2,
+    "Select1": "黑白不分",
+    "Select2": "黑白分明",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "hbfm"
   },
   "393": {
     "ID": 393,
-    "TitleText": "浙江省的简称是什么？",
-    "Select1": "浙",
-    "Select2": "藏",
+    "Type": 2,
+    "Select1": "大背大腰",
+    "Select2": "虎背熊腰",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "hbxy"
   },
   "394": {
     "ID": 394,
-    "TitleText": "“肉包子打狗”下一句是？",
-    "Select1": "有去无回",
-    "Select2": "浪费",
+    "Type": 3,
+    "TitleText": "47-3",
+    "Select1": "何当金络脑，",
+    "Select2": "啼时惊妾梦，",
     "CorrectAnswer": [
       1
     ]
   },
   "395": {
     "ID": 395,
-    "TitleText": "红孩儿的父亲是？",
-    "Select1": "猪刚鬣",
-    "Select2": "牛魔王",
+    "Type": 3,
+    "TitleText": "48-3",
+    "Select1": "未谙姑食性，",
+    "Select2": "长安有贫者，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_32"
+    ]
   },
   "396": {
     "ID": 396,
-    "TitleText": "梁山老大是谁？",
-    "Select1": "佐罗",
-    "Select2": "宋江",
+    "Type": 3,
+    "TitleText": "49-3",
+    "Select1": "唯余一朵在，",
+    "Select2": "莫买沃洲山，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "397": {
     "ID": 397,
-    "TitleText": "世界上最大的宫殿是？",
-    "Select1": "爱丽舍宫",
-    "Select2": "故宫",
+    "Type": 1,
+    "TitleText": "3746",
+    "Select1": "渐入佳境",
+    "Select2": "践规踏矩",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "398": {
     "ID": 398,
-    "TitleText": "什么桥下没有水",
-    "Select1": "立交桥",
-    "Select2": "赵州桥",
+    "Type": 1,
+    "TitleText": "5141",
+    "Select1": "以貌取人",
+    "Select2": "以卵击石",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_33"
+      2
+    ]
   },
   "399": {
     "ID": 399,
-    "TitleText": "哆啦A梦的抽屉是干什么的？",
-    "Select1": "穿越时空",
-    "Select2": "烤串",
+    "Type": 1,
+    "TitleText": "5272",
+    "Select1": "一木难支",
+    "Select2": "一目了然",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "400": {
     "ID": 400,
-    "TitleText": "“小呀小苹果”是哪首歌的歌词？",
-    "Select1": "荷塘月色",
-    "Select2": "小苹果",
+    "Type": 2,
+    "Select1": "缓兵之计",
+    "Select2": "减速慢行",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "hbzj"
   },
   "401": {
     "ID": 401,
-    "TitleText": "负责消化食物的器官是？",
-    "Select1": "心脏",
-    "Select2": "胃",
+    "Type": 2,
+    "Select1": "横冲直撞",
+    "Select2": "倒行逆施",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_34"
+    "Picture": "hczz"
   },
   "402": {
     "ID": 402,
-    "TitleText": "胃溃疡是指哪里出现问题？",
-    "Select1": "胃",
-    "Select2": "大脑",
+    "Type": 2,
+    "Select1": "黄道吉日",
+    "Select2": "正道的光",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "hdjr"
   },
   "403": {
     "ID": 403,
-    "TitleText": "茅台是什么酒？",
-    "Select1": "白酒",
-    "Select2": "消毒酒精",
+    "Type": 3,
+    "TitleText": "50-3",
+    "Select1": "六月禾未秀，",
+    "Select2": "日暮秋风起，",
     "CorrectAnswer": [
       1
     ]
   },
   "404": {
     "ID": 404,
-    "TitleText": "机动车停车时应该？",
-    "Select1": "直接停车",
-    "Select2": "开右转向灯",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_35"
-  },
-  "405": {
-    "ID": 405,
-    "TitleText": "”留得青山在”下一句是？",
-    "Select1": "山不转水转",
-    "Select2": "不怕没材烧",
+    "Type": 3,
+    "TitleText": "51-3",
+    "Select1": "近乡情更怯，",
+    "Select2": "花下一禾生，",
     "CorrectAnswer": [
       2
     ]
   },
+  "405": {
+    "ID": 405,
+    "Type": 3,
+    "TitleText": "52-2",
+    "Select1": "故溪黄稻熟，",
+    "Select2": "马首向何处，",
+    "CorrectAnswer": [
+      1
+    ]
+  },
   "406": {
     "ID": 406,
-    "TitleText": "哪种水果有刺？",
-    "Select1": "苹果",
-    "Select2": "榴莲",
+    "Type": 1,
+    "TitleText": "4746",
+    "Select1": "执迷不悟",
+    "Select2": "执法如山",
     "CorrectAnswer": [
       2
     ]
   },
   "407": {
     "ID": 407,
-    "TitleText": "北京一共有几环？",
-    "Select1": "2环",
-    "Select2": "6环",
+    "Type": 1,
+    "TitleText": "3970",
+    "Select1": "黄发垂髫",
+    "Select2": "黄道吉日",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_36"
+    ]
   },
   "408": {
     "ID": 408,
-    "TitleText": "报纸上的什么绝对是真的？",
-    "Select1": "日期",
-    "Select2": "广告",
+    "Type": 1,
+    "TitleText": "4880",
+    "Select1": "照章办事",
+    "Select2": "照猫画虎",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "409": {
     "ID": 409,
-    "TitleText": "“山中无老虎”下一句是？",
-    "Select1": "老虎睡大觉",
-    "Select2": "猴子称大王",
+    "Type": 2,
+    "Select1": "海底捞月",
+    "Select2": "熊猫人的救赎",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "hdly"
   },
   "410": {
     "ID": 410,
-    "TitleText": "比赛中常说”友谊第一”和什么？",
-    "Select1": "赛出风采",
-    "Select2": "比赛第二",
+    "Type": 2,
+    "Select1": "呼风唤雨",
+    "Select2": "渡劫之人",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_37"
+    "Picture": "hfhy"
   },
   "411": {
     "ID": 411,
-    "TitleText": "下列哪个动物智商比较低？",
-    "Select1": "草履虫",
-    "Select2": "鲨鱼",
+    "Type": 2,
+    "Select1": "魂飞魄散",
+    "Select2": "魂牵梦绕",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "hfps"
   },
   "412": {
     "ID": 412,
-    "TitleText": "梅花在什么季节开？",
-    "Select1": "冬季",
-    "Select2": "夏季",
+    "Type": 3,
+    "TitleText": "56-3",
+    "Select1": "春草明年绿，",
+    "Select2": "羞将筵上曲，",
     "CorrectAnswer": [
       1
     ]
   },
   "413": {
     "ID": 413,
-    "TitleText": "2008年的奥运吉祥物是？",
-    "Select1": "唐老鸭",
-    "Select2": "福娃",
+    "Type": 3,
+    "TitleText": "57-3",
+    "Select1": "骓不逝兮可奈何，",
+    "Select2": "花落家童未扫，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_38"
+    ]
   },
   "414": {
     "ID": 414,
-    "TitleText": "一公里等于多少米？",
-    "Select1": "1米",
-    "Select2": "1000米",
+    "Type": 3,
+    "TitleText": "58-3",
+    "Select1": "啼时惊妾梦，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       2
     ]
   },
   "415": {
     "ID": 415,
-    "TitleText": "花中四君子是指？",
-    "Select1": "东南西北",
-    "Select2": "梅兰竹菊",
+    "Type": 1,
+    "TitleText": "2844",
+    "Select1": "面面俱到",
+    "Select2": "面黄肌瘦",
     "CorrectAnswer": [
       2
     ]
   },
   "416": {
     "ID": 416,
-    "TitleText": "1元等于多少分？",
-    "Select1": "100",
-    "Select2": "10",
+    "Type": 1,
+    "TitleText": "3459",
+    "Select1": "绝处逢生",
+    "Select2": "绝代佳人",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_39"
+    ]
   },
   "417": {
     "ID": 417,
-    "TitleText": "历史上谁统一了六国？",
-    "Select1": "太上老君",
-    "Select2": "秦始皇",
+    "Type": 1,
+    "TitleText": "4367",
+    "Select1": "闭口不言",
+    "Select2": "闭关锁国",
     "CorrectAnswer": [
       2
     ]
   },
   "418": {
     "ID": 418,
-    "TitleText": "“打开天窗”下一句是什么？",
-    "Select1": "漏风",
-    "Select2": "说亮话",
+    "Type": 2,
+    "Select1": "白头小儿",
+    "Select2": "鹤发童颜",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "hfty"
   },
   "419": {
     "ID": 419,
-    "TitleText": "世界上购物最发达的国家是？",
-    "Select1": "中国",
-    "Select2": "俄罗斯",
+    "Type": 2,
+    "Select1": "绝代双骄",
+    "Select2": "环肥燕瘦",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "xsc_40"
+    "Picture": "hfys"
   },
   "420": {
     "ID": 420,
-    "TitleText": "海洋和陆地哪个面积大？",
-    "Select1": "海洋",
-    "Select2": "陆地",
+    "Type": 2,
+    "Select1": "古今中外",
+    "Select2": "厚古薄今",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "hgbj"
   },
   "421": {
     "ID": 421,
-    "TitleText": "谚语“饭后走一走”下一句是？",
-    "Select1": "走到九月九",
-    "Select2": "活到九十九",
+    "Type": 3,
+    "TitleText": "8-4",
+    "Select1": "何日是归年。",
+    "Select2": "沙暖睡鸳鸯。",
     "CorrectAnswer": [
       2
     ]
   },
   "422": {
     "ID": 422,
-    "TitleText": "高原上特有的动物是？",
-    "Select1": "猫",
-    "Select2": "牦牛",
+    "Type": 3,
+    "TitleText": "60-3",
+    "Select1": "柴门闻犬吠，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_41"
+      1
+    ]
   },
   "423": {
     "ID": 423,
-    "TitleText": "下列哪一句不是出自《静夜思》?",
-    "Select1": "春风吹又生",
-    "Select2": "床前明月光",
+    "Type": 3,
+    "TitleText": "61-1",
+    "Select1": "功盖三分国，",
+    "Select2": "十年曾一别，",
     "CorrectAnswer": [
       1
     ]
   },
   "424": {
     "ID": 424,
-    "TitleText": "马有几条腿？",
-    "Select1": "6",
-    "Select2": "4",
+    "Type": 1,
+    "TitleText": "4548",
+    "Select1": "自怨自艾",
+    "Select2": "自圆其说",
     "CorrectAnswer": [
       2
     ]
   },
   "425": {
     "ID": 425,
-    "TitleText": "吃萝卜之前用什么先浸泡一下？",
-    "Select1": "墨水",
-    "Select2": "盐水",
+    "Type": 1,
+    "TitleText": "4695",
+    "Select1": "重男轻女",
+    "Select2": "重操旧业",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_42"
+      1
+    ]
   },
   "426": {
     "ID": 426,
-    "TitleText": "佛教最早诞生于什么国家？",
-    "Select1": "美国",
-    "Select2": "印度",
+    "Type": 1,
+    "TitleText": "5308",
+    "Select1": "一丝不苟",
+    "Select2": "一手遮天",
     "CorrectAnswer": [
       2
     ]
   },
   "427": {
     "ID": 427,
-    "TitleText": "俗话说“人在做”下一句是什么？",
-    "Select1": "天在看",
-    "Select2": "做什么",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "428": {
-    "ID": 428,
-    "TitleText": "“白衣天使”是指？",
-    "Select1": "护士",
-    "Select2": "厨师",
+    "Type": 2,
+    "Select1": "海枯石烂",
+    "Select2": "石海浮沉",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_43"
+    "Picture": "hksl"
+  },
+  "428": {
+    "ID": 428,
+    "Type": 2,
+    "Select1": "狐假虎威",
+    "Select2": "两情相悦",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "hjhw"
   },
   "429": {
     "ID": 429,
-    "TitleText": "中国古代皇帝自称是？",
-    "Select1": "我",
-    "Select2": "朕",
+    "Type": 2,
+    "Select1": "虎口拔牙",
+    "Select2": "修复蛀牙",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "hkby"
   },
   "430": {
     "ID": 430,
-    "TitleText": "人们常说的“旺财”是指？",
-    "Select1": "狗",
-    "Select2": "猫",
+    "Type": 3,
+    "TitleText": "62-3",
+    "Select1": "早知潮有信，",
+    "Select2": "隔窗知夜雨，",
     "CorrectAnswer": [
       1
     ]
   },
   "431": {
     "ID": 431,
-    "TitleText": "《名侦探柯南》麻醉针是哪里发出的？",
-    "Select1": "手表",
-    "Select2": "手腕",
+    "Type": 3,
+    "TitleText": "63-1",
+    "Select1": "打起黄莺儿，",
+    "Select2": "牧童骑黄牛，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_44"
+    ]
   },
   "432": {
     "ID": 432,
-    "TitleText": "动物仅此人类智商的是？",
-    "Select1": "傻狍子",
-    "Select2": "海豚",
+    "Type": 3,
+    "TitleText": "64-2",
+    "Select1": "丰年事若何。",
+    "Select2": "圆影覆华池。",
     "CorrectAnswer": [
       2
     ]
   },
   "433": {
     "ID": 433,
-    "TitleText": "一顿等于多少千克？",
-    "Select1": "1",
-    "Select2": "1000",
+    "Type": 1,
+    "TitleText": "2670",
+    "Select1": "你追我赶",
+    "Select2": "拍手称快",
     "CorrectAnswer": [
       2
     ]
   },
   "434": {
     "ID": 434,
-    "TitleText": "小白兔的眼睛是什么颜色的？",
-    "Select1": "彩色",
-    "Select2": "红色",
+    "Type": 1,
+    "TitleText": "3448",
+    "Select1": "客死他乡",
+    "Select2": "刻舟求剑",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_45"
+    ]
   },
   "435": {
     "ID": 435,
-    "TitleText": "除夕吃的饭叫什么？",
-    "Select1": "午夜饭",
-    "Select2": "年夜饭",
+    "Type": 1,
+    "TitleText": "4713",
+    "Select1": "志在千里",
+    "Select2": "志同道合",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "436": {
     "ID": 436,
-    "TitleText": "俗话说“死鸭子”什么？",
-    "Select1": "嘴硬",
-    "Select2": "脚臭",
+    "Type": 2,
+    "Select1": "打工赚钱",
+    "Select2": "汗流浃背",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "hljb"
   },
   "437": {
     "ID": 437,
-    "TitleText": "景德镇盛产什么？",
-    "Select1": "瓷器",
-    "Select2": "罐头",
+    "Type": 2,
+    "Select1": "鸡鹤成群",
+    "Select2": "鹤立鸡群",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "xsc_46"
+    "Picture": "hljq"
   },
   "438": {
     "ID": 438,
-    "TitleText": "“桂圆”又叫什么？",
-    "Select1": "荔枝",
-    "Select2": "龙眼",
+    "Type": 2,
+    "Select1": "灯红酒绿",
+    "Select2": "红男绿女",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "hnln"
   },
   "439": {
     "ID": 439,
-    "TitleText": "2021年是什么年？",
-    "Select1": "狗年",
-    "Select2": "牛年",
+    "Type": 3,
+    "TitleText": "65-2",
+    "Select1": "岂向人间住。",
+    "Select2": "无因彻帝阍。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "440": {
     "ID": 440,
-    "TitleText": "乌贼遇到危险会怎么样？",
-    "Select1": "喷墨",
-    "Select2": "放屁",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_47"
-  },
-  "441": {
-    "ID": 441,
-    "TitleText": "乘坐公交车时，不能携带什么？",
-    "Select1": "易燃易爆物品",
-    "Select2": "化妆品",
+    "Type": 3,
+    "TitleText": "66-1",
+    "Select1": "岭外音书断，",
+    "Select2": "父耕原上田，",
     "CorrectAnswer": [
       1
     ]
   },
+  "441": {
+    "ID": 441,
+    "Type": 3,
+    "TitleText": "67-3",
+    "Select1": "时时闻鸟语，",
+    "Select2": "江南无所有，",
+    "CorrectAnswer": [
+      2
+    ]
+  },
   "442": {
     "ID": 442,
-    "TitleText": "十二生肖中排第二的是？",
-    "Select1": "牛",
-    "Select2": "蜥蜴",
+    "Type": 1,
+    "TitleText": "2668",
+    "Select1": "拍案叫绝",
+    "Select2": "拍手称快",
     "CorrectAnswer": [
       1
     ]
   },
   "443": {
     "ID": 443,
-    "TitleText": "俗语“上台三分钟“下一句是什么？",
-    "Select1": "台下十年功",
-    "Select2": "等于160秒",
+    "Type": 1,
+    "TitleText": "5266",
+    "Select1": "一针见血",
+    "Select2": "一针一线",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_48"
+    ]
   },
   "444": {
     "ID": 444,
-    "TitleText": "“淘宝”是用来干什么的",
-    "Select1": "视频聊天",
-    "Select2": "购物",
+    "Type": 1,
+    "TitleText": "2895",
+    "Select1": "扪心自问",
+    "Select2": "门庭若市",
     "CorrectAnswer": [
       2
     ]
   },
   "445": {
     "ID": 445,
-    "TitleText": "唐太宗叫什么？",
-    "Select1": "李世民",
-    "Select2": "特朗普",
+    "Type": 2,
+    "Select1": "知心好友",
+    "Select2": "狐朋狗友",
     "CorrectAnswer": [
-      1
-    ]
+      2
+    ],
+    "Picture": "hpgy"
   },
   "446": {
     "ID": 446,
-    "TitleText": "儿歌中“我在马路边捡到”多少钱？",
-    "Select1": "1分钱",
-    "Select2": "100元",
+    "Type": 2,
+    "Select1": "别说了我爱你",
+    "Select2": "胡说八道",
     "CorrectAnswer": [
-      1
+      2
     ],
-    "Picture": "xsc_49"
+    "Picture": "hsbd"
   },
   "447": {
     "ID": 447,
-    "TitleText": "掌管天庭的是谁？",
-    "Select1": "佛祖",
-    "Select2": "玉帝",
+    "Type": 2,
+    "Select1": "撒点孜然",
+    "Select2": "火上浇油",
     "CorrectAnswer": [
       2
-    ]
+    ],
+    "Picture": "hsjr"
   },
   "448": {
     "ID": 448,
-    "TitleText": "一次生下2个孩子叫什么？",
-    "Select1": "三胞胎",
-    "Select2": "双胞胎",
+    "Type": 3,
+    "TitleText": "68-2",
+    "Select1": "哥舒夜带刀。",
+    "Select2": "岂向人间住。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "449": {
     "ID": 449,
-    "TitleText": "火龙果是什么颜色？",
-    "Select1": "肉色",
-    "Select2": "红色",
+    "Type": 3,
+    "TitleText": "69-3",
+    "Select1": "马首向何处，",
+    "Select2": "未谙姑食性，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_50"
+    ]
   },
   "450": {
     "ID": 450,
-    "TitleText": "“白雪公主”出自哪里？",
-    "Select1": "格林童话",
-    "Select2": "红楼梦",
+    "Type": 3,
+    "TitleText": "70-1",
+    "Select1": "尽道丰年瑞，",
+    "Select2": "故国三千里，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "451": {
     "ID": 451,
-    "TitleText": "“只要功夫深”下一句是什么？",
-    "Select1": "努力赚大钱",
-    "Select2": "铁杵磨成针",
+    "Type": 1,
+    "TitleText": "3034",
+    "Select1": "马放南山",
+    "Select2": "马到功成",
     "CorrectAnswer": [
       2
     ]
   },
   "452": {
     "ID": 452,
-    "TitleText": "盲人是通过什么来阅读盲文的？",
-    "Select1": "味觉",
-    "Select2": "触觉",
+    "Type": 1,
+    "TitleText": "3033",
+    "Select1": "麻木不仁",
+    "Select2": "马不停蹄",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_51"
+    ]
   },
   "453": {
     "ID": 453,
-    "TitleText": "猜字：年纪不大，胡子一把",
-    "Select1": "猪",
-    "Select2": "羊",
+    "Type": 1,
+    "TitleText": "3672",
+    "Select1": "节衣缩食",
+    "Select2": "节外生枝",
     "CorrectAnswer": [
       2
     ]
   },
   "454": {
     "ID": 454,
-    "TitleText": "天津市的简称是什么？",
-    "Select1": "京",
-    "Select2": "津",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "455": {
-    "ID": 455,
-    "TitleText": "猜字：山上一个山",
-    "Select1": "出",
-    "Select2": "云",
+    "Type": 2,
+    "Select1": "浑水摸鱼",
+    "Select2": "清理水垢",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_52"
+    "Picture": "hsmy"
+  },
+  "455": {
+    "ID": 455,
+    "Type": 2,
+    "Select1": "画蛇添足",
+    "Select2": "画龙点睛",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "hstz"
   },
   "456": {
     "ID": 456,
-    "TitleText": "喝酒伤害什么部位？",
-    "Select1": "肝",
-    "Select2": "钱",
+    "Type": 2,
+    "Select1": "火树银花",
+    "Select2": "枫叶飘飘",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "hsyh"
   },
   "457": {
     "ID": 457,
-    "TitleText": "上完小学该什么？",
-    "Select1": "初中",
-    "Select2": "幼儿园",
+    "Type": 3,
+    "TitleText": "71-1",
+    "Select1": "故国三千里，",
+    "Select2": "疾风知劲草，",
     "CorrectAnswer": [
       1
     ]
   },
   "458": {
     "ID": 458,
-    "TitleText": "《三体》是什么类型的小说？",
-    "Select1": "科幻",
-    "Select2": "情感",
+    "Type": 3,
+    "TitleText": "72-2",
+    "Select1": "归来泪满襟。",
+    "Select2": "萧萧送雁群。",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_53"
+    ]
   },
   "459": {
     "ID": 459,
-    "TitleText": "奥运口号“同一个世界”下一句是？",
-    "Select1": "同一个计划",
-    "Select2": "同一个梦想",
+    "Type": 3,
+    "TitleText": "73-3",
+    "Select1": "隔窗知夜雨，",
+    "Select2": "遥知不是雪，",
     "CorrectAnswer": [
       2
     ]
   },
   "460": {
     "ID": 460,
-    "TitleText": "“拉斯维加斯”的别称是？",
-    "Select1": "农村",
-    "Select2": "赌城",
+    "Type": 1,
+    "TitleText": "4019",
+    "Select1": "缓兵之计",
+    "Select2": "宦海风波",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "461": {
     "ID": 461,
-    "TitleText": "中国最著名的两条河是？",
-    "Select1": "长江，黄河",
-    "Select2": "勒拿河，尼罗河",
+    "Type": 1,
+    "TitleText": "3771",
+    "Select1": "艰难困苦",
+    "Select2": "坚如盘石",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_54"
+      2
+    ]
   },
   "462": {
     "ID": 462,
-    "TitleText": "微信是哪个公司的产品？",
-    "Select1": "网易",
-    "Select2": "腾讯",
+    "Type": 1,
+    "TitleText": "4914",
+    "Select1": "沾亲带故",
+    "Select2": "沾花惹草",
     "CorrectAnswer": [
       2
     ]
   },
   "463": {
     "ID": 463,
-    "TitleText": "下列属于西餐餐具的是？",
-    "Select1": "筷子",
-    "Select2": "叉子",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "464": {
-    "ID": 464,
-    "TitleText": "结婚时用什么接待宾客？",
-    "Select1": "喜糖",
-    "Select2": "白砂糖",
+    "Type": 2,
+    "Select1": "哄堂大笑",
+    "Select2": "喜笑颜开",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_55"
+    "Picture": "htdx"
+  },
+  "464": {
+    "ID": 464,
+    "Type": 2,
+    "Select1": "回头是岸",
+    "Select2": "黑白颠倒",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "htsa"
   },
   "465": {
     "ID": 465,
-    "TitleText": "米饭是用什么做的？",
-    "Select1": "小麦",
-    "Select2": "水稻",
+    "Type": 2,
+    "Select1": "虎头蛇尾",
+    "Select2": "有头无尾",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "htsw"
   },
   "466": {
     "ID": 466,
-    "TitleText": "猜动物：身穿梅花袍",
-    "Select1": "野鸡",
-    "Select2": "梅花鹿",
+    "Type": 3,
+    "TitleText": "74-2",
+    "Select1": "近听水无声。",
+    "Select2": "见客棹歌回。",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "467": {
     "ID": 467,
-    "TitleText": "“欲穷千里目”下一句是什么？",
-    "Select1": "有雾",
-    "Select2": "更上一层楼",
+    "Type": 3,
+    "TitleText": "75-3",
+    "Select1": "野旷天低树，",
+    "Select2": "空山松子落，",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_56"
+    ]
   },
   "468": {
     "ID": 468,
-    "TitleText": "一般什么颜色代表喜庆？",
-    "Select1": "黑色",
-    "Select2": "红色",
+    "Type": 3,
+    "TitleText": "76-1",
+    "Select1": "燕赵悲歌士，",
+    "Select2": "山中相送罢，",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "469": {
     "ID": 469,
-    "TitleText": "谚语“比上不足”下一句是？",
-    "Select1": "比下更不足",
-    "Select2": "比下有余",
+    "Type": 1,
+    "TitleText": "2943",
+    "Select1": "貌合神离",
+    "Select2": "貌似强大",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "470": {
     "ID": 470,
-    "TitleText": "旺季相反是的什么？",
-    "Select1": "淡季",
-    "Select2": "四季",
+    "Type": 1,
+    "TitleText": "3866",
+    "Select1": "鸡鸣而起",
+    "Select2": "鸡毛蒜皮",
     "CorrectAnswer": [
-      1
-    ],
-    "Picture": "xsc_57"
+      2
+    ]
   },
   "471": {
     "ID": 471,
-    "TitleText": "母亲节是周几？",
-    "Select1": "周一",
-    "Select2": "周日",
+    "Type": 1,
+    "TitleText": "4557",
+    "Select1": "装腔作势",
+    "Select2": "装疯卖傻",
     "CorrectAnswer": [
       2
     ]
   },
   "472": {
     "ID": 472,
-    "TitleText": "母亲节子女一般会送母亲什么花？",
-    "Select1": "菊花",
-    "Select2": "康乃馨",
+    "Type": 2,
+    "Select1": "化为乌有",
+    "Select2": "乌鸦卖花",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "hwwy"
   },
   "473": {
     "ID": 473,
-    "TitleText": "下列哪个城市的烤鸭很出名？",
-    "Select1": "伊犁",
-    "Select2": "北京",
+    "Type": 2,
+    "Select1": "横行霸道",
+    "Select2": "一晚上挨打7次",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_58"
+    "Picture": "hxbd"
   },
   "474": {
     "ID": 474,
-    "TitleText": "“抖音”是一款什么软件？",
-    "Select1": "叫外卖",
-    "Select2": "看视频",
+    "Type": 2,
+    "Select1": "含笑九泉",
+    "Select2": "老有所依",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "hxjq"
   },
   "475": {
     "ID": 475,
-    "TitleText": "林黛玉是怎么死的？",
-    "Select1": "病死的",
-    "Select2": "吓死的",
+    "Type": 3,
+    "TitleText": "77-1",
+    "Select1": "沅湘流不尽，",
+    "Select2": "人闲桂花落，",
     "CorrectAnswer": [
       1
     ]
   },
   "476": {
     "ID": 476,
-    "TitleText": "以下哪种食物可以暖胃？",
-    "Select1": "冰块",
-    "Select2": "生姜",
+    "Type": 3,
+    "TitleText": "78-2",
+    "Select1": "深宫二十年。",
+    "Select2": "板荡识诚臣。",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_59"
+    ]
   },
   "477": {
     "ID": 477,
-    "TitleText": "在我国考驾照最低年龄是？",
-    "Select1": "18",
-    "Select2": "60",
+    "Type": 3,
+    "TitleText": "79-3",
+    "Select1": "不恨归来迟，",
+    "Select2": "笑入荷花去，",
     "CorrectAnswer": [
       1
     ]
   },
   "478": {
     "ID": 478,
-    "TitleText": "孙悟空一个跟斗能翻多远？",
-    "Select1": "原地不动",
-    "Select2": "十万八千里",
+    "Type": 1,
+    "TitleText": "3781",
+    "Select1": "寂然无声",
+    "Select2": "见风使舵",
     "CorrectAnswer": [
       2
     ]
   },
   "479": {
     "ID": 479,
-    "TitleText": "五行是指？",
-    "Select1": "天地人",
-    "Select2": "金木水火土",
+    "Type": 1,
+    "TitleText": "3029",
+    "Select1": "麻姑献寿",
+    "Select2": "落叶知秋",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_60"
+    ]
   },
   "480": {
     "ID": 480,
-    "TitleText": "在景区我们应该？",
-    "Select1": "不乱扔垃圾",
-    "Select2": "随地吐痰",
+    "Type": 1,
+    "TitleText": "2901",
+    "Select1": "孟母三迁",
+    "Select2": "蒙在鼓里",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "481": {
     "ID": 481,
-    "TitleText": "什么鸭子用两只脚走路？",
-    "Select1": "所有鸭子",
-    "Select2": "没有鸭",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "482": {
-    "ID": 482,
-    "TitleText": "高考成绩第一的被称为什么？",
-    "Select1": "状元",
-    "Select2": "探花",
+    "Type": 2,
+    "Select1": "红颜薄命",
+    "Select2": "红颜祸水",
     "CorrectAnswer": [
       1
     ],
-    "Picture": "xsc_61"
+    "Picture": "hybm"
+  },
+  "482": {
+    "ID": 482,
+    "Type": 2,
+    "Select1": "恨之入骨",
+    "Select2": "入木三分",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "hzrg"
   },
   "483": {
     "ID": 483,
-    "TitleText": "“口”字一共有几笔？",
-    "Select1": "十笔",
-    "Select2": "三笔",
+    "Type": 2,
+    "Select1": "化整为零",
+    "Select2": "有零有整",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "hzwl"
   },
   "484": {
     "ID": 484,
-    "TitleText": "“天下兴亡”的下一句是什么？",
-    "Select1": "匹夫有责",
-    "Select2": "关我啥事",
+    "Type": 3,
+    "TitleText": "80-1",
+    "Select1": "北斗七星高，",
+    "Select2": "十年曾一别，",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "485": {
     "ID": 485,
-    "TitleText": "“画蛇添足”是给蛇加了什么？",
-    "Select1": "眼睛",
-    "Select2": "脚",
+    "Type": 3,
+    "TitleText": "81-2",
+    "Select1": "今来到始知。",
+    "Select2": "天寒白屋贫。",
     "CorrectAnswer": [
-      2
-    ],
-    "Picture": "xsc_62"
+      1
+    ]
   },
   "486": {
     "ID": 486,
-    "TitleText": "“凡尔赛“是什么意思？",
-    "Select1": "爱炫耀",
-    "Select2": "平平无奇",
+    "Type": 3,
+    "TitleText": "82-3",
+    "Select1": "朝来入庭树，",
+    "Select2": "啼时惊妾梦，",
     "CorrectAnswer": [
       1
     ]
   },
   "487": {
     "ID": 487,
-    "TitleText": "“新官上任”的下一句是什么？",
-    "Select1": "手舞足蹈",
-    "Select2": "三把火",
+    "Type": 1,
+    "TitleText": "3069",
+    "Select1": "爱憎分明",
+    "Select2": "碍手碍脚",
     "CorrectAnswer": [
-      2
+      1
     ]
   },
   "488": {
     "ID": 488,
-    "TitleText": "妈妈最讨厌什么鸡蛋？",
-    "Select1": "新鲜的",
-    "Select2": "臭臭的",
+    "Type": 1,
+    "TitleText": "3038",
+    "Select1": "马马虎虎",
+    "Select2": "炉火纯青",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_63"
+    ]
   },
   "489": {
     "ID": 489,
-    "TitleText": "在鹊桥相见的是谁？",
-    "Select1": "猪八戒，唐僧",
-    "Select2": "牛郎，织女",
+    "Type": 1,
+    "TitleText": "5302",
+    "Select1": "一时三刻",
+    "Select2": "一石二鸟",
     "CorrectAnswer": [
       2
     ]
   },
   "490": {
     "ID": 490,
-    "TitleText": "足球中守门的是？",
-    "Select1": "前锋",
-    "Select2": "守门员",
+    "Type": 2,
+    "Select1": "机不可失",
+    "Select2": "鸡不可失",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "jbks"
   },
   "491": {
     "ID": 491,
-    "TitleText": "狐狸为什么不直立行走？",
-    "Select1": "因为狡猾",
-    "Select2": "本来就不能",
+    "Type": 2,
+    "Select1": "剑拔弩张",
+    "Select2": "古代战争",
     "CorrectAnswer": [
-      2
+      1
     ],
-    "Picture": "xsc_64"
+    "Picture": "jbnz"
   },
   "492": {
     "ID": 492,
-    "TitleText": "嫦娥住的地方叫什么？",
-    "Select1": "后宫",
-    "Select2": "广寒宫",
+    "Type": 2,
+    "Select1": "箭不虚发",
+    "Select2": "队友救下",
     "CorrectAnswer": [
-      2
-    ]
+      1
+    ],
+    "Picture": "jbxf"
   },
   "493": {
     "ID": 493,
-    "TitleText": "“六宫粉黛无颜色”是指谁？",
-    "Select1": "杨玉环",
-    "Select2": "赵飞燕",
+    "Type": 3,
+    "TitleText": "83-4",
+    "Select1": "芭蕉先有声。",
+    "Select2": "闲坐说玄宗。",
     "CorrectAnswer": [
       1
     ]
   },
   "494": {
     "ID": 494,
-    "TitleText": "星座一共有多少个？",
-    "Select1": "12",
-    "Select2": "240",
+    "Type": 3,
+    "TitleText": "84-3",
+    "Select1": "时时闻鸟语，",
+    "Select2": "常恐秋风早，",
     "CorrectAnswer": [
       1
-    ],
-    "Picture": "xsc_65"
+    ]
   },
   "495": {
     "ID": 495,
-    "TitleText": "诗句“流水落花”之后是什么？",
-    "Select1": "春去也",
-    "Select2": "撒满家",
+    "Type": 3,
+    "TitleText": "85-2",
+    "Select1": "无因彻帝阍。",
+    "Select2": "朝朝误妾期。",
     "CorrectAnswer": [
       1
     ]
   },
   "496": {
     "ID": 496,
-    "TitleText": "《神雕侠侣》中的独臂是谁？",
-    "Select1": "杨过",
-    "Select2": "雕",
+    "Type": 1,
+    "TitleText": "4095",
+    "Select1": "相对无言",
+    "Select2": "归去来兮",
     "CorrectAnswer": [
       1
     ]
   },
   "497": {
     "ID": 497,
-    "TitleText": "笨重的反义词是？",
-    "Select1": "憨憨",
-    "Select2": "灵巧",
+    "Type": 1,
+    "TitleText": "5289",
+    "Select1": "一窍不通",
+    "Select2": "一清二白",
     "CorrectAnswer": [
       2
-    ],
-    "Picture": "xsc_66"
+    ]
   },
   "498": {
     "ID": 498,
-    "TitleText": "什么花不能种只能看一次？",
-    "Select1": "烟花",
-    "Select2": "花花公子",
+    "Type": 1,
+    "TitleText": "4174",
+    "Select1": "弃恶从善",
+    "Select2": "弃笔从戎",
     "CorrectAnswer": [
-      1
+      2
     ]
   },
   "499": {
     "ID": 499,
-    "TitleText": "海水是什么味道的？",
-    "Select1": "咸的",
-    "Select2": "辣的",
+    "Type": 2,
+    "Select1": "绝处逢生",
+    "Select2": "两个书生",
     "CorrectAnswer": [
       1
-    ]
+    ],
+    "Picture": "jcfs"
   },
   "500": {
     "ID": 500,
-    "TitleText": "雪容融象征什么？",
-    "Select1": "收获喜庆",
-    "Select2": "温暖阳光",
+    "Type": 2,
+    "Select1": "金蝉脱壳",
+    "Select2": "瞒天过海",
     "CorrectAnswer": [
-      1,
-      2
-    ]
-  },
-  "501": {
-    "ID": 501,
-    "TitleText": "花样滑冰什么时候成为比赛项目的？",
-    "Select1": "2008年",
-    "Select2": "1924年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "502": {
-    "ID": 502,
-    "TitleText": "跳台滑雪的外文名称是什么？",
-    "Select1": "skijumping",
-    "Select2": "I love you",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia275"
-  },
-  "503": {
-    "ID": 503,
-    "TitleText": "花样滑冰分为单人，双人和什么？",
-    "Select1": "三人",
-    "Select2": "团体",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "504": {
-    "ID": 504,
-    "TitleText": "花样滑冰分为单人滑，双人滑和什么？",
-    "Select1": "走秀",
-    "Select2": "冰舞",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "505": {
-    "ID": 505,
-    "TitleText": "冰壶投掷时，准备需要注意什么？",
-    "Select1": "手舞足蹈",
-    "Select2": "控制好平衡",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia285"
-  },
-  "506": {
-    "ID": 506,
-    "TitleText": "滑冰类有节目表演的是什么项目？",
-    "Select1": "短道速滑",
-    "Select2": "花样滑冰",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "507": {
-    "ID": 507,
-    "TitleText": "单人滑对什么要求最高？",
-    "Select1": "长得漂亮",
-    "Select2": "跳跃高度",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "508": {
-    "ID": 508,
-    "TitleText": "第一个获得金冰刀奖的中国人是？",
-    "Select1": "江疏影",
-    "Select2": "王曼丽",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia297"
-  },
-  "509": {
-    "ID": 509,
-    "TitleText": "日本最出名的花滑选手是？",
-    "Select1": "羽生结弦",
-    "Select2": "山本仙人",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "510": {
-    "ID": 510,
-    "TitleText": "俄罗斯最出名的花滑选手是？",
-    "Select1": "特朗普",
-    "Select2": "普鲁申科",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "511": {
-    "ID": 511,
-    "TitleText": "在2009年中国队赢得了哪项比赛的？",
-    "Select1": "U型池",
-    "Select2": "冰壶",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia312"
-  },
-  "512": {
-    "ID": 512,
-    "TitleText": "韩国最出名的花滑选手是？",
-    "Select1": "阿西吧",
-    "Select2": "金妍儿",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "513": {
-    "ID": 513,
-    "TitleText": "“速度与激情”说的是什么项目？",
-    "Select1": "短道速滑",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "514": {
-    "ID": 514,
-    "TitleText": "滑雪服的颜色应怎么样选择？",
-    "Select1": "白色",
-    "Select2": "醒目的颜色",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia319"
-  },
-  "515": {
-    "ID": 515,
-    "TitleText": "国家冬季两项中心在哪里？",
-    "Select1": "雪村",
-    "Select2": "北京",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "516": {
-    "ID": 516,
-    "TitleText": "短道速滑每个地区最多派出几名选手？",
-    "Select1": "10086名",
-    "Select2": "3名",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "517": {
-    "ID": 517,
-    "TitleText": "暴风雪的英文是？",
-    "Select1": "snowstorm",
-    "Select2": "I am fine",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia328"
-  },
-  "518": {
-    "ID": 518,
-    "TitleText": "短道速滑的标志线运动员可以进入吗？",
-    "Select1": "你在教我做事？",
-    "Select2": "不能",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "519": {
-    "ID": 519,
-    "TitleText": "短道速滑选手需要戴头盔吗？",
-    "Select1": "需要",
-    "Select2": "你在教我做事？",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "520": {
-    "ID": 520,
-    "TitleText": "五环由蓝，黄，黑，绿和什么色组成？",
-    "Select1": "紫",
-    "Select2": "红",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia334"
-  },
-  "521": {
-    "ID": 521,
-    "TitleText": "短道速滑是哪一年进入中国的？",
-    "Select1": "2008年",
-    "Select2": "1981年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "522": {
-    "ID": 522,
-    "TitleText": "中国短道速滑第一枚奥运奖牌得主是？",
-    "Select1": "迪丽热巴",
-    "Select2": "李琰",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "523": {
-    "ID": 523,
-    "TitleText": "羽生结弦是什么运动的运动员？",
-    "Select1": "铅球",
-    "Select2": "花样滑冰",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia347"
-  },
-  "524": {
-    "ID": 524,
-    "TitleText": "中国第一位冬奥冠军是？",
-    "Select1": "秦仙儿",
-    "Select2": "杨杨",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "525": {
-    "ID": 525,
-    "TitleText": "奥运三金王是？",
-    "Select1": "金毛狮王",
-    "Select2": "王濛",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "526": {
-    "ID": 526,
-    "TitleText": "谁第二十届自由式滑雪女子中呼声最高却落败？",
-    "Select1": "杨幂",
-    "Select2": "李妮娜",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia357"
-  },
-  "527": {
-    "ID": 527,
-    "TitleText": "中国冬奥会项目首金得主是？",
-    "Select1": "武大郎",
-    "Select2": "武大靖",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "528": {
-    "ID": 528,
-    "TitleText": "中国男子冰壶队成立于哪一年？",
-    "Select1": "2022年",
-    "Select2": "2002年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "529": {
-    "ID": 529,
-    "TitleText": "8月19日英国冰上舞团在北京上演节目叫？",
-    "Select1": "《冰上天鹅湖》",
-    "Select2": "《白毛女》",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia364"
-  },
-  "530": {
-    "ID": 530,
-    "TitleText": "中国女子冰壶队成立于哪一年？",
-    "Select1": "2022年",
-    "Select2": "2003年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "531": {
-    "ID": 531,
-    "TitleText": "哪一年冰壶作为表演项目被纳入冬奥会？",
-    "Select1": "2022年",
-    "Select2": "1924年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "532": {
-    "ID": 532,
-    "TitleText": "第一任国际奥委会主席是？",
-    "Select1": "狗策划",
-    "Select2": "维凯拉斯",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia377"
-  },
-  "533": {
-    "ID": 533,
-    "TitleText": "冰壶项目每队有几名成员？",
-    "Select1": "108名",
-    "Select2": "4名",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "534": {
-    "ID": 534,
-    "TitleText": "冰壶每一局比赛共投多少球？",
-    "Select1": "108枚",
-    "Select2": "16枚",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "535": {
-    "ID": 535,
-    "TitleText": "“冰立方\"是由哪个奥运会场馆改造的？",
-    "Select1": "国家竞技中心",
-    "Select2": "国家游泳中心",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia386"
-  },
-  "536": {
-    "ID": 536,
-    "TitleText": "冰壶项目每次有多少局？",
-    "Select1": "10000局",
-    "Select2": "10局",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "537": {
-    "ID": 537,
-    "TitleText": "冰壶项目每一石多少分？",
-    "Select1": "1分",
-    "Select2": "10086分",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "538": {
-    "ID": 538,
-    "TitleText": "第一个冬奥会的吉祥物形象是？",
-    "Select1": "半人半物的卡通人",
-    "Select2": "外星人",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia394"
-  },
-  "539": {
-    "ID": 539,
-    "TitleText": "中国冰壶队女队队长是？",
-    "Select1": "赵丽颖",
-    "Select2": "王冰玉",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "540": {
-    "ID": 540,
-    "TitleText": "王冰玉是在哪一年被授予运动健将称号的？",
-    "Select1": "1900年",
-    "Select2": "2010年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "541": {
-    "ID": 541,
-    "TitleText": "冰球运防守队员可以用什么进攻？",
-    "Select1": "眼神",
-    "Select2": "臀部",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia403"
-  },
-  "542": {
-    "ID": 542,
-    "TitleText": "第十届全国冬季运动会冠军是？",
-    "Select1": "范冰冰",
-    "Select2": "岳清爽",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "543": {
-    "ID": 543,
-    "TitleText": "俄罗斯冰壶女队队长是？",
-    "Select1": "安娜希多洛娃",
-    "Select2": "拜登",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "544": {
-    "ID": 544,
-    "TitleText": "哪一天定义为冬游爱好者的节日？",
-    "Select1": "中秋",
-    "Select2": "元旦",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia412"
-  },
-  "545": {
-    "ID": 545,
-    "TitleText": "自由式滑雪的工具是什么？",
-    "Select1": "滑雪板和滑雪杖",
-    "Select2": "无尽之刃",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "546": {
-    "ID": 546,
-    "TitleText": "下列哪个小项是滑雪里的？",
-    "Select1": "上勾拳",
-    "Select2": "空中技巧",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "547": {
-    "ID": 547,
-    "TitleText": "下列哪种行为不属于违规",
-    "Select1": "滑出赛道",
-    "Select2": "越过对手",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia422"
-  },
-  "548": {
-    "ID": 548,
-    "TitleText": "下列哪个小项是滑雪里的？",
-    "Select1": "鲤鱼打挺",
-    "Select2": "雪上芭蕾",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "549": {
-    "ID": 549,
-    "TitleText": "下列哪个小项是滑雪里的？",
-    "Select1": "认真一拳",
-    "Select2": "雪上技巧",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "550": {
-    "ID": 550,
-    "TitleText": "哪一位捐献了自己的场地区域作为比赛场地？",
-    "Select1": "孙悟空",
-    "Select2": "戈尔雷杜威",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia434"
-  },
-  "551": {
-    "ID": 551,
-    "TitleText": "自由式滑雪起源于哪里？",
-    "Select1": "美国",
-    "Select2": "非洲",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "552": {
-    "ID": 552,
-    "TitleText": "自由式滑雪起源于什么年代？",
-    "Select1": "23世纪",
-    "Select2": "20世纪60年代",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "553": {
-    "ID": 553,
-    "TitleText": "奥运历史上首枚女子冰球金牌是哪个国家？",
-    "Select1": "南非",
-    "Select2": "美国",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia448"
-  },
-  "554": {
-    "ID": 554,
-    "TitleText": "哪一年雪上技巧被列为比赛项目？",
-    "Select1": "1992",
-    "Select2": "2021",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "555": {
-    "ID": 555,
-    "TitleText": "哪一年男子雪上技巧被列为冬奥会项目？",
-    "Select1": "2023年",
-    "Select2": "1988年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "556": {
-    "ID": 556,
-    "TitleText": "第二十一届冬奥会在什么国家举办？",
-    "Select1": "中国",
-    "Select2": "加拿大",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia459"
-  },
-  "557": {
-    "ID": 557,
-    "TitleText": "哪一年女子雪上技巧被列为冬奥会项目？",
-    "Select1": "2023年",
-    "Select2": "1992年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "558": {
-    "ID": 558,
-    "TitleText": "下列哪个是此次自由式滑雪的小项？",
-    "Select1": "大跳台",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "559": {
-    "ID": 559,
-    "TitleText": "奥林匹克五环是谁设计的？",
-    "Select1": "秦始皇",
-    "Select2": "顾拜旦",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia465"
-  },
-  "560": {
-    "ID": 560,
-    "TitleText": "下列哪个是此次自由式滑雪的小项？",
-    "Select1": "雪上技巧",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "561": {
-    "ID": 561,
-    "TitleText": "下列哪个是此次自由式滑雪的小项？",
-    "Select1": "空中技巧",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "562": {
-    "ID": 562,
-    "TitleText": "河北省拥有最多的滑雪场的城市是？",
-    "Select1": "张家口",
-    "Select2": "秦皇岛",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia474"
-  },
-  "563": {
-    "ID": 563,
-    "TitleText": "下列哪个是此次自由式滑雪的小项？",
-    "Select1": "U型场地技巧",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "564": {
-    "ID": 564,
-    "TitleText": "下列哪个是此次自由式滑雪的小项？",
-    "Select1": "障碍追逐",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "565": {
-    "ID": 565,
-    "TitleText": "首钢园区煤炭车间将改造成什么场馆？",
-    "Select1": "冰球",
-    "Select2": "羽毛球",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia481"
-  },
-  "566": {
-    "ID": 566,
-    "TitleText": "下列哪个是此次自由式滑雪的小项？",
-    "Select1": "坡面障碍技巧",
-    "Select2": "竞走",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "567": {
-    "ID": 567,
-    "TitleText": "跳台起跳角度是多少度？",
-    "Select1": "361度",
-    "Select2": "25度",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "568": {
-    "ID": 568,
-    "TitleText": "冬奥会期间那一场馆将承担女子冰球决赛？",
-    "Select1": "五棵松体育中心",
-    "Select2": "国家体育馆",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia489"
-  },
-  "569": {
-    "ID": 569,
-    "TitleText": "雪上技巧按照什么计算分数？",
-    "Select1": "滑行时间",
-    "Select2": "装备好坏",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "570": {
-    "ID": 570,
-    "TitleText": "雪上技巧按照什么计算分数？",
-    "Select1": "完成技巧难度系数",
-    "Select2": "装备美观",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "571": {
-    "ID": 571,
-    "TitleText": "有舵雪橇比赛时两队总时间相同该怎么判定？",
-    "Select1": "最少一次时间",
-    "Select2": "最多一次时间",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia499"
-  },
-  "572": {
-    "ID": 572,
-    "TitleText": "雪上技巧按照什么计算分数？",
-    "Select1": "2次跳跃动作",
-    "Select2": "滑雪板好不好看",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "573": {
-    "ID": 573,
-    "TitleText": "雪上技巧运动员需要完成几次跳跃动作？",
-    "Select1": "2次",
-    "Select2": "108次",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "574": {
-    "ID": 574,
-    "TitleText": "下列哪一个空中技巧打分项？",
-    "Select1": "眼睛美观程度",
-    "Select2": "起跳",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia139"
-  },
-  "575": {
-    "ID": 575,
-    "TitleText": "下列哪一个空中技巧打分项？",
-    "Select1": "眼睛美观程度",
-    "Select2": "空中分",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "576": {
-    "ID": 576,
-    "TitleText": "下列哪一个空中技巧打分项？",
-    "Select1": "眼睛美观程度",
-    "Select2": "落地分",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "577": {
-    "ID": 577,
-    "TitleText": "U型池场裁判根据什么打分？",
-    "Select1": "选手妆容",
-    "Select2": "腾空高度",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia142"
-  },
-  "578": {
-    "ID": 578,
-    "TitleText": "U型池场裁判根据什么打分？",
-    "Select1": "选手眼睛大小",
-    "Select2": "动作流畅性",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "579": {
-    "ID": 579,
-    "TitleText": "U型池场裁判根据什么打分？",
-    "Select1": "选手的国籍",
-    "Select2": "美观性",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "580": {
-    "ID": 580,
-    "TitleText": "障碍追逐赛道长多少米？",
-    "Select1": "10086米",
-    "Select2": "800-1300米",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia145"
-  },
-  "581": {
-    "ID": 581,
-    "TitleText": "障碍追逐赛预赛会选出多少名选手决赛？",
-    "Select1": "999人",
-    "Select2": "32-36人",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "582": {
-    "ID": 582,
-    "TitleText": "障碍追逐赛每组多少人？",
-    "Select1": "1314人",
-    "Select2": "4人",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "583": {
-    "ID": 583,
-    "TitleText": "障碍追逐赛前几名进入下一轮？",
-    "Select1": "2人",
-    "Select2": "520人",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia148"
-  },
-  "584": {
-    "ID": 584,
-    "TitleText": "被称为“有舵雪橇”的是？",
-    "Select1": "雪车",
-    "Select2": "狗拉车",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "585": {
-    "ID": 585,
-    "TitleText": "有舵雪橇起源于？",
-    "Select1": "非洲",
-    "Select2": "瑞士",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "586": {
-    "ID": 586,
-    "TitleText": "哪一年有舵雪橇问世并获得推广？",
-    "Select1": "1888年",
-    "Select2": "2021年",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia151"
-  },
-  "587": {
-    "ID": 587,
-    "TitleText": "哪一年第一个有舵雪橇俱乐部创立？",
-    "Select1": "1897年",
-    "Select2": "2021年",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "588": {
-    "ID": 588,
-    "TitleText": "哪一年决定将女子两人座纳入冬奥会的？",
-    "Select1": "2023年",
-    "Select2": "1998年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "589": {
-    "ID": 589,
-    "TitleText": "雪车项目有没有男子双人？",
-    "Select1": "有",
-    "Select2": "你在教我做事？",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia154"
-  },
-  "590": {
-    "ID": 590,
-    "TitleText": "雪车项目有没有男子四人？",
-    "Select1": "有",
-    "Select2": "你在教我做事？",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "591": {
-    "ID": 591,
-    "TitleText": "雪车项目有没有女子双人？",
-    "Select1": "有",
-    "Select2": "你在教我做事？",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "592": {
-    "ID": 592,
-    "TitleText": "雪车项目每个国家限定报名几个队伍？",
-    "Select1": "1314个",
-    "Select2": "2个",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia157"
-  },
-  "593": {
-    "ID": 593,
-    "TitleText": "雪车项目男子比赛共几轮？",
-    "Select1": "520轮",
-    "Select2": "4轮",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "594": {
-    "ID": 594,
-    "TitleText": "雪车项目女子比赛共几轮？",
-    "Select1": "520轮",
-    "Select2": "2轮",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "595": {
-    "ID": 595,
-    "TitleText": "雪车项目怎么计算成绩？",
-    "Select1": "雪车美观程度",
-    "Select2": "累积时间",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia160"
-  },
-  "596": {
-    "ID": 596,
-    "TitleText": "从起点到成员跃入车内的距离为多少米？",
-    "Select1": "10086米",
-    "Select2": "50米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "597": {
-    "ID": 597,
-    "TitleText": "雪车比赛中如果车翻了是否可以继续比赛？",
-    "Select1": "可以",
-    "Select2": "不可以",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "598": {
-    "ID": 598,
-    "TitleText": "双人雪车中最大重量是多少？",
-    "Select1": "375千克",
-    "Select2": "3775千克",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia163"
-  },
-  "599": {
-    "ID": 599,
-    "TitleText": "四人雪车中最大重量是？",
-    "Select1": "630千克",
-    "Select2": "630吨",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "600": {
-    "ID": 600,
-    "TitleText": "雪车项目中，是否可以添加重力棒？",
-    "Select1": "可以",
-    "Select2": "不可以",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "601": {
-    "ID": 601,
-    "TitleText": "雪车的前部是由什么系统操作的？",
-    "Select1": "滑轮系统",
-    "Select2": "华为系统",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia166"
-  },
-  "602": {
-    "ID": 602,
-    "TitleText": "雪车运动员是否需要佩戴头盔？",
-    "Select1": "需要",
-    "Select2": "不需要",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "603": {
-    "ID": 603,
-    "TitleText": "雪车项目路线长多少米？",
-    "Select1": "100000米",
-    "Select2": "1300-2000米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "604": {
-    "ID": 604,
-    "TitleText": "雪车项目弯道半径不得小于多少米？",
-    "Select1": "1米",
-    "Select2": "20米",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia169"
-  },
-  "605": {
-    "ID": 605,
-    "TitleText": "雪车项目起点到终点的垂直高度为？",
-    "Select1": "10000米",
-    "Select2": "100-150米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "606": {
-    "ID": 606,
-    "TitleText": "雪车项目中最知名的选手是？",
-    "Select1": "成龙",
-    "Select2": "克里斯托佛兰根",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "607": {
-    "ID": 607,
-    "TitleText": "全球第一位雪车世锦赛四连冠的是？",
-    "Select1": "美国队长",
-    "Select2": "马丁斯杜库尔斯",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia172"
-  },
-  "608": {
-    "ID": 608,
-    "TitleText": "亚洲第一个雪橇世锦赛金牌的运动员是？",
-    "Select1": "尹成彬",
-    "Select2": "甄子丹",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "609": {
-    "ID": 609,
-    "TitleText": "冰球项目有没有女子冰球？",
-    "Select1": "有",
-    "Select2": "都行",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "610": {
-    "ID": 610,
-    "TitleText": "冰球项目起源于？",
-    "Select1": "加拿大",
-    "Select2": "非洲",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia175"
-  },
-  "611": {
-    "ID": 611,
-    "TitleText": "冰球项目在哪一年被列入比赛项目?",
-    "Select1": "1920年",
-    "Select2": "2023年",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "612": {
-    "ID": 612,
-    "TitleText": "中心争球点是什么颜色的？",
-    "Select1": "五颜六色色",
-    "Select2": "蓝色",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "613": {
-    "ID": 613,
-    "TitleText": "其他争球点是什么颜色的？",
-    "Select1": "五颜六色色",
-    "Select2": "红色",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia178"
-  },
-  "614": {
-    "ID": 614,
-    "TitleText": "冰球项目每队几个人？",
-    "Select1": "108个",
-    "Select2": "6人",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "615": {
-    "ID": 615,
-    "TitleText": "冰球项目每局多少分钟？",
-    "Select1": "1314分钟",
-    "Select2": "20分钟",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "616": {
-    "ID": 616,
-    "TitleText": "冰球项目首轮比赛需要加时的话是几分钟？",
-    "Select1": "1314分钟",
-    "Select2": "5分钟",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia181"
-  },
-  "617": {
-    "ID": 617,
-    "TitleText": "冰球加时赛各出场几个人？",
-    "Select1": "520个",
-    "Select2": "4个",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "618": {
-    "ID": 618,
-    "TitleText": "冰球金牌争夺战为多少分钟？",
-    "Select1": "1314分钟",
-    "Select2": "20分钟",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "619": {
-    "ID": 619,
-    "TitleText": "冰球比赛中途是否可以换人？",
-    "Select1": "可以",
-    "Select2": "不可以",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia184"
-  },
-  "620": {
-    "ID": 620,
-    "TitleText": "现代冬季两项是指什么？",
-    "Select1": "游泳滑冰",
-    "Select2": "滑雪射击",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "621": {
-    "ID": 621,
-    "TitleText": "接力赛中，男子组需要比赛多远距离？",
-    "Select1": "1314公里",
-    "Select2": "7.5公里",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia193"
-  },
-  "622": {
-    "ID": 622,
-    "TitleText": "接力赛中，女子组需要比赛多远距离？",
-    "Select1": "1314公里",
-    "Select2": "6公里",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "623": {
-    "ID": 623,
-    "TitleText": "我国是什么时候开始参与的冬季两项？",
-    "Select1": "2021年",
-    "Select2": "1980年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "624": {
-    "ID": 624,
-    "TitleText": "冬奥会和夏奥会是什么时候分开的？",
-    "Select1": "2023年",
-    "Select2": "1994年",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia196"
-  },
-  "625": {
-    "ID": 625,
-    "TitleText": "北京冬奥会是第几届？",
-    "Select1": "1314届",
-    "Select2": "24届",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "626": {
-    "ID": 626,
-    "TitleText": "奥林匹克之父是谁？",
-    "Select1": "顾拜旦",
-    "Select2": "正是区区在下",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "627": {
-    "ID": 627,
-    "TitleText": "历届主办城市都在经纬度多少的城市？",
-    "Select1": "北30-北60",
-    "Select2": "北0-南360",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia199"
-  },
-  "628": {
-    "ID": 628,
-    "TitleText": "举办最多的城市是哪里？",
-    "Select1": "圣莫里茨",
-    "Select2": "澳大利亚",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "629": {
-    "ID": 629,
-    "TitleText": "举办地气温在多少度最为理想？",
-    "Select1": "36度",
-    "Select2": "负17度-10度",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "630": {
-    "ID": 630,
-    "TitleText": "是谁实现了中国冬奥金牌0的突破？",
-    "Select1": "哪吒",
-    "Select2": "杨杨",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia202"
-  },
-  "631": {
-    "ID": 631,
-    "TitleText": "实现金牌0的突破是在哪一年？",
-    "Select1": "2008年",
-    "Select2": "2002年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "632": {
-    "ID": 632,
-    "TitleText": "实现金牌0的突破是什么比赛项目？",
-    "Select1": "自由搏击",
-    "Select2": "短道速滑",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "633": {
-    "ID": 633,
-    "TitleText": "越野滑雪的滑行方式中，哪一种方式最早？",
-    "Select1": "福尔摩斯式",
-    "Select2": "传统式",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia205"
-  },
-  "634": {
-    "ID": 634,
-    "TitleText": "女子射击每次间隔多久距离？",
-    "Select1": "至少100KM",
-    "Select2": "至少2KM",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "635": {
-    "ID": 635,
-    "TitleText": "无舵雪橇的长度大概是多少厘米？",
-    "Select1": "1314厘米",
-    "Select2": "70-140厘米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "636": {
-    "ID": 636,
-    "TitleText": "2005-2007-2009年世锦赛女子技巧冠军的是？",
-    "Select1": "江疏影",
-    "Select2": "李妮娜",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia208"
-  },
-  "637": {
-    "ID": 637,
-    "TitleText": "2013.2015年世锦赛自由滑雪空中技巧的是？",
-    "Select1": "胡歌",
-    "Select2": "齐广璞",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "638": {
-    "ID": 638,
-    "TitleText": "日本粉雪场雪期多久？",
-    "Select1": "5个月",
-    "Select2": "13个月",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "639": {
-    "ID": 639,
-    "TitleText": "SSSS级雪场的高山单道长于多少米？",
-    "Select1": "1314米",
-    "Select2": "2000米",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia211"
-  },
-  "640": {
-    "ID": 640,
-    "TitleText": "到2018年为止，世界举办过多少次冬奥会?",
-    "Select1": "520次",
-    "Select2": "23次",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "641": {
-    "ID": 641,
-    "TitleText": "花样滑冰任何动作都是由几个步骤完成的？",
-    "Select1": "1314个",
-    "Select2": "4个",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "642": {
-    "ID": 642,
-    "TitleText": "申办奥运会是推动我国运动快速进步对吗？",
-    "Select1": "不知道",
-    "Select2": "不全面",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia214 (2)"
-  },
-  "643": {
-    "ID": 643,
-    "TitleText": "女子10公里滑雪爬坡的高度差不能超过多少？",
-    "Select1": "50米",
-    "Select2": "520米",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "644": {
-    "ID": 644,
-    "TitleText": "滑雪者遇到紧急情况需要补蜡时需要哪种蜡？",
-    "Select1": "液态喷雾蜡",
-    "Select2": "成都蜡",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "645": {
-    "ID": 645,
-    "TitleText": "SSS级滑雪场的技术指导需要掌握外语技能？",
-    "Select1": "是",
-    "Select2": "不是",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia217"
-  },
-  "646": {
-    "ID": 646,
-    "TitleText": "专项训练中造成的运动损伤主要原因是？",
-    "Select1": "长得好看",
-    "Select2": "局部分担过大",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "647": {
-    "ID": 647,
-    "TitleText": "全铁质冰刀，这是现代冰刀的起始？",
-    "Select1": "是",
-    "Select2": "不是",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "648": {
-    "ID": 648,
-    "TitleText": "2017年全国攀冰锦标赛主题是？",
-    "Select1": "勇往直前",
-    "Select2": "向上无所畏",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia220"
-  },
-  "649": {
-    "ID": 649,
-    "TitleText": "全国单板滑雪锦标赛属于？",
-    "Select1": "国际赛事",
-    "Select2": "国家赛事",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "650": {
-    "ID": 650,
-    "TitleText": "哪一个国家滑雪市场相当于全球市场10%？",
-    "Select1": "俄罗斯",
-    "Select2": "中国",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "651": {
-    "ID": 651,
-    "TitleText": "国家首家封闭式单板公园在？",
-    "Select1": "环北国际",
-    "Select2": "渔阳国际滑雪场",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia223"
-  },
-  "652": {
-    "ID": 652,
-    "TitleText": "滑冰式越野滑雪适用于什么情况？",
-    "Select1": "下坡",
-    "Select2": "上坡",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "653": {
-    "ID": 653,
-    "TitleText": "目前中国最大的综合性滑雪场是？",
-    "Select1": "亚布力新体委滑雪场",
-    "Select2": "非洲滑雪场",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "654": {
-    "ID": 654,
-    "TitleText": "SSS滑雪场的总长度应长于多少？",
-    "Select1": "10000米",
-    "Select2": "1米",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia226"
-  },
-  "655": {
-    "ID": 655,
-    "TitleText": "滑雪训练期可按年度分为几个阶段？",
-    "Select1": "1",
-    "Select2": "3",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "656": {
-    "ID": 656,
-    "TitleText": "北方地区可以提供四季滑雪的是？",
-    "Select1": "乔波冰雪世界",
-    "Select2": "黑河",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "657": {
-    "ID": 657,
-    "TitleText": "“一带一路”体育旅游发展行动的时间是？",
-    "Select1": "42922",
-    "Select2": "10100",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia229"
-  },
-  "658": {
-    "ID": 658,
-    "TitleText": "对冰雪项目造成的颅脑损伤应该怎么处理？",
-    "Select1": "不做处理",
-    "Select2": "保护好头部",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "659": {
-    "ID": 659,
-    "TitleText": "哪个滑雪场被评为最佳滑雪场？",
-    "Select1": "惠斯勒",
-    "Select2": "惠斯勒的弟弟",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "660": {
-    "ID": 660,
-    "TitleText": "大腿小腿部出血应该压迫止血点在何处？",
-    "Select1": "股动脉",
-    "Select2": "静脉",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia232 (2)"
-  },
-  "661": {
-    "ID": 661,
-    "TitleText": "滑雪板固定器的特殊之处在于？",
-    "Select1": "能将脚分开",
-    "Select2": "可以打人",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "662": {
-    "ID": 662,
-    "TitleText": "冰球比赛中，向什么方向发球？",
-    "Select1": "随意",
-    "Select2": "中心位置",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "663": {
-    "ID": 663,
-    "TitleText": "运动前不能吃太饱是因为？",
-    "Select1": "避免恶心反胃",
-    "Select2": "影响速度",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia235"
-  },
-  "664": {
-    "ID": 664,
-    "TitleText": "攀冰是哪一年与登山分开的？",
-    "Select1": "2021年",
-    "Select2": "1967年",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "665": {
-    "ID": 665,
-    "TitleText": "绍兴滑雪场积雪厚度为？",
-    "Select1": "50厘米左右",
-    "Select2": "500米左右",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "666": {
-    "ID": 666,
-    "TitleText": "滑雪时立刃角度越大，转弯半径越小？",
-    "Select1": "对",
-    "Select2": "错",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia238"
-  },
-  "667": {
-    "ID": 667,
-    "TitleText": "哪一项坡度满足5S滑雪场的要求？",
-    "Select1": "15度",
-    "Select2": "361度",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "668": {
-    "ID": 668,
-    "TitleText": "无舵雪橇的长度大概是多少厘米？",
-    "Select1": "70-140",
-    "Select2": "123-456",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "669": {
-    "ID": 669,
-    "TitleText": "“选拔营”产生的国字号队员是哪一年？",
-    "Select1": "2017",
-    "Select2": "1888",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia241"
-  },
-  "670": {
-    "ID": 670,
-    "TitleText": "冰雪运动造成的急性损伤有什么特点？",
-    "Select1": "一次作用而致伤",
-    "Select2": "长年累月",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "671": {
-    "ID": 671,
-    "TitleText": "用于专业国家和国际赛事的滑雪场等级几级",
-    "Select1": "1级",
-    "Select2": "100级",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "672": {
-    "ID": 672,
-    "TitleText": "第五届冬奥会又叫复兴运动？",
-    "Select1": "是",
-    "Select2": "不是",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia244 (2)"
-  },
-  "673": {
-    "ID": 673,
-    "TitleText": "大回转的路线特征是？",
-    "Select1": "多坡",
-    "Select2": "全是直线",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "674": {
-    "ID": 674,
-    "TitleText": "短道速滑起源于？",
-    "Select1": "加拿大",
-    "Select2": "非洲",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "675": {
-    "ID": 675,
-    "TitleText": "滑雪用的薄手套是用在什么季节？",
-    "Select1": "夏天",
-    "Select2": "初冬",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia247"
-  },
-  "676": {
-    "ID": 676,
-    "TitleText": "第十五届冬奥会圣火是否到达过北极？",
-    "Select1": "不是",
-    "Select2": "是",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "677": {
-    "ID": 677,
-    "TitleText": "中国有冰雪特色小镇吗？",
-    "Select1": "有",
-    "Select2": "没有",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "678": {
-    "ID": 678,
-    "TitleText": "想要吧河北建设成冰雪强省哪一项最关键？",
-    "Select1": "冰美人",
-    "Select2": "冰雪人才",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia250"
-  },
-  "679": {
-    "ID": 679,
-    "TitleText": "为了迎接冬奥会，鸟巢新增了什么项目？",
-    "Select1": "小鸟欣赏区",
-    "Select2": "冬奥会项目体验区",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "680": {
-    "ID": 680,
-    "TitleText": "滑雪自带的保温服长度有什么要求",
-    "Select1": "连头也盖住",
-    "Select2": "不过膝盖",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "681": {
-    "ID": 681,
-    "TitleText": "哪一类人比较合适冬游？",
-    "Select1": "12岁以下",
-    "Select2": "18-45岁",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia253"
-  },
-  "682": {
-    "ID": 682,
-    "TitleText": "速度过快，优先采用犁式滑降技术减速？",
-    "Select1": "正确",
-    "Select2": "我不需要减速",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "683": {
-    "ID": 683,
-    "TitleText": "南北方积雪的含水量相同吗？",
-    "Select1": "相同",
-    "Select2": "不同",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "684": {
-    "ID": 684,
-    "TitleText": "滑雪协会第一个认定的旅游滑雪场在哪个省？",
-    "Select1": "海南",
-    "Select2": "河北",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia256"
-  },
-  "685": {
-    "ID": 685,
-    "TitleText": "滑雪应该选择什么样的滑雪镜？",
-    "Select1": "五颜六色",
-    "Select2": "全封闭式滑雪镜",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "686": {
-    "ID": 686,
-    "TitleText": "北京2022年冬奥会成功纪念邮票一套几枚？",
-    "Select1": "10086枚",
-    "Select2": "1枚",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "687": {
-    "ID": 687,
-    "TitleText": "1988年第十五届冬奥会在哪里举行？",
-    "Select1": "卡尔加里",
-    "Select2": "圣地亚哥",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia259"
-  },
-  "688": {
-    "ID": 688,
-    "TitleText": "冰球运动中所有护具都应穿在何处最为安全？",
-    "Select1": "运动服外面",
-    "Select2": "运动服里面",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "689": {
-    "ID": 689,
-    "TitleText": "跳台滑雪起跳高度与到达高度相差多少？",
-    "Select1": "1314",
-    "Select2": "107",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "690": {
-    "ID": 690,
-    "TitleText": "1922年，施耐德在奥地利举办了滑雪学校？",
-    "Select1": "正常",
-    "Select2": "错误",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia262"
-  },
-  "691": {
-    "ID": 691,
-    "TitleText": "1月5日成为了哈尔滨人的盛大节日？",
-    "Select1": "正常",
-    "Select2": "错误",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "692": {
-    "ID": 692,
-    "TitleText": "河北省按照什么样的冬奥备战开始工作？",
-    "Select1": "一刻也不停歇",
-    "Select2": "爱怎么怎么滴",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "693": {
-    "ID": 693,
-    "TitleText": "中国女子跳台滑雪队成立于哪一年？",
-    "Select1": "2019年",
-    "Select2": "2021年",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia265"
-  },
-  "694": {
-    "ID": 694,
-    "TitleText": "第23届敖东辉代表团短道速滑领队是？",
-    "Select1": "江疏影",
-    "Select2": "杨占宇",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "695": {
-    "ID": 695,
-    "TitleText": "哪个国家创立阿尔卑斯滑雪俱乐部？",
-    "Select1": "英国",
-    "Select2": "澳大利亚",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "696": {
-    "ID": 696,
-    "TitleText": "冰壶赛道是U型的这么设计有什么好处？",
-    "Select1": "好看",
-    "Select2": "打出弧线球",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia268"
-  },
-  "697": {
-    "ID": 697,
-    "TitleText": "什么赛道可以帮助冰壶打出弧线？",
-    "Select1": "S型",
-    "Select2": "U型",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "698": {
-    "ID": 698,
-    "TitleText": "第18届冬奥会在哪里举行？",
-    "Select1": "日本",
-    "Select2": "南非",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "699": {
-    "ID": 699,
-    "TitleText": "成语滴水成冰的释义？",
-    "Select1": "非常寒冷",
-    "Select2": "烈日当头",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia271"
-  },
-  "700": {
-    "ID": 700,
-    "TitleText": "国际无舵雪橇联合会在哪一年成立？",
-    "Select1": "1957",
-    "Select2": "2021",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "701": {
-    "ID": 701,
-    "TitleText": "2015年国际古老滑雪文化交流会在哪里？",
-    "Select1": "南极",
-    "Select2": "阿勒泰",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "702": {
-    "ID": 702,
-    "TitleText": "第23届中国体育代表队跳台滑雪领队是？",
-    "Select1": "杨东",
-    "Select2": "江疏影",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia274"
-  },
-  "703": {
-    "ID": 703,
-    "TitleText": "哈尔滨冰雪节是第一个以冰雪为活动的节日？",
-    "Select1": "正常",
-    "Select2": "错误",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "704": {
-    "ID": 704,
-    "TitleText": "举报世界高山滑雪竞标赛是哪一年？",
-    "Select1": "1931年",
-    "Select2": "2021年",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "705": {
-    "ID": 705,
-    "TitleText": "跳台滑雪时哪一年被列为比赛项目的？",
-    "Select1": "1924年",
-    "Select2": "2021年",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia277"
-  },
-  "706": {
-    "ID": 706,
-    "TitleText": "记性闭合性软组织损伤后立刻采取什么措施？",
-    "Select1": "冷敷",
-    "Select2": "热敷",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "707": {
-    "ID": 707,
-    "TitleText": "第三届亚洲冬季运动会在哪里举办？",
-    "Select1": "亚布力滑雪场",
-    "Select2": "北京滑雪场",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "708": {
-    "ID": 708,
-    "TitleText": "哪一届冬奥会打造出一个双圣火台的构造？",
-    "Select1": "第99届",
-    "Select2": "第12届",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia280"
-  },
-  "709": {
-    "ID": 709,
-    "TitleText": "在雪场中，哪个位子不能停留？",
-    "Select1": "休息区",
-    "Select2": "山脊下方",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "710": {
-    "ID": 710,
-    "TitleText": "在滑雪事故中，占比重最高的是哪一项？",
-    "Select1": "外伤",
-    "Select2": "雪盲",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "711": {
-    "ID": 711,
-    "TitleText": "首个承受国家级陆地冰壶赛事的场馆是？",
-    "Select1": "冰缘冰壶俱乐部",
-    "Select2": "冰雪奇缘俱乐部",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia283"
-  },
-  "712": {
-    "ID": 712,
-    "TitleText": "北京冬奥会开始到结束的时间？",
-    "Select1": "2022.2.4-2022.2.20",
-    "Select2": "2022.2.4-2022.2.30",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "713": {
-    "ID": 713,
-    "TitleText": "与越野滑雪有关的比赛有多少项？",
-    "Select1": "1314项",
-    "Select2": "26项",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "714": {
-    "ID": 714,
-    "TitleText": "奥林匹克格言是谁提出的？",
-    "Select1": "狗策划",
-    "Select2": "亨利迪东",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia286"
-  },
-  "715": {
-    "ID": 715,
-    "TitleText": "国际滑雪联合会几年举办一次锦标赛？",
-    "Select1": "15年",
-    "Select2": "2年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "716": {
-    "ID": 716,
-    "TitleText": "第十三届冬奥会在那个国家举办？",
-    "Select1": "美国",
-    "Select2": "南非",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "717": {
-    "ID": 717,
-    "TitleText": "速滑远动员的冰雪用什么材料缝制而成",
-    "Select1": "皮皮虾",
-    "Select2": "牛皮",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia289"
-  },
-  "718": {
-    "ID": 718,
-    "TitleText": "速度滑冰在追逐赛中首次冬奥会是哪一年？",
-    "Select1": "2021",
-    "Select2": "2006",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "719": {
-    "ID": 719,
-    "TitleText": "短道速滑中运动员抢跑几次会被罚下？",
-    "Select1": "20",
-    "Select2": "2",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "720": {
-    "ID": 720,
-    "TitleText": "奥运会首次对吉祥物进行全国投票是哪一次？",
-    "Select1": "第一届",
-    "Select2": "第二十二届",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia292"
-  },
-  "721": {
-    "ID": 721,
-    "TitleText": "滑冰中向前行走练习中基本姿势是什么？",
-    "Select1": "一字型",
-    "Select2": "八字形",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "722": {
-    "ID": 722,
-    "TitleText": "北京周期后，北京由规划转入什么阶段？",
-    "Select1": "全面建设",
-    "Select2": "测试",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "723": {
-    "ID": 723,
-    "TitleText": "双向飞碟中至少有几秒的停留时间？",
-    "Select1": "3秒",
-    "Select2": "520秒",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia295"
-  },
-  "724": {
-    "ID": 724,
-    "TitleText": "中国百分之多少的滑雪者为初学者？",
-    "Select1": "0.8",
-    "Select2": "0.02",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "725": {
-    "ID": 725,
-    "TitleText": "伤者身体收到伤害不严重应该用什么颜色？",
-    "Select1": "黄色",
-    "Select2": "绿色",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "726": {
-    "ID": 726,
-    "TitleText": "SSSS级滑雪场一个雪季接待人次大概为？",
-    "Select1": "12万以上",
-    "Select2": "1亿人次",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia298"
-  },
-  "727": {
-    "ID": 727,
-    "TitleText": "冰雪产业以什么为基础？",
-    "Select1": "场馆设施",
-    "Select2": "滑雪设施",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "728": {
-    "ID": 728,
-    "TitleText": "越野滑雪板板底中央凹槽有什么用？",
-    "Select1": "好看",
-    "Select2": "防止沾到滑雪板底",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "729": {
-    "ID": 729,
-    "TitleText": "室内比赛器材和室外不能相差多少度？",
-    "Select1": "100度",
-    "Select2": "4度",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia301"
-  },
-  "730": {
-    "ID": 730,
-    "TitleText": "唯一一箱同场竞技团体性比赛是？",
-    "Select1": "冰球",
-    "Select2": "射击",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "731": {
-    "ID": 731,
-    "TitleText": "国际冬季两项联盟与哪一年脱离？",
-    "Select1": "2021",
-    "Select2": "1993",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "732": {
-    "ID": 732,
-    "TitleText": "素有冰雪皇后的是挪威哪位运动员？",
-    "Select1": "云韵",
-    "Select2": "索尼娅海泥",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia304"
-  },
-  "733": {
-    "ID": 733,
-    "TitleText": "第二届冬奥会最年轻的冠军是那个项目？",
-    "Select1": "花样滑冰",
-    "Select2": "铁人两项",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "734": {
-    "ID": 734,
-    "TitleText": "冰壶赛道是什么形状的？",
-    "Select1": "S",
-    "Select2": "U",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "735": {
-    "ID": 735,
-    "TitleText": "二龙山滑雪场共有几条雪道？",
-    "Select1": "1314条",
-    "Select2": "8条",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia307"
-  },
-  "736": {
-    "ID": 736,
-    "TitleText": "滑雪索道距离下车站多少米将滑雪板脱离？",
-    "Select1": "10米",
-    "Select2": "520米",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "737": {
-    "ID": 737,
-    "TitleText": "弘扬志愿者精神何时在北京举行？",
-    "Select1": "2021",
-    "Select2": "2018",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "738": {
-    "ID": 738,
-    "TitleText": "第一届获得雪车比赛奖国家都是欧洲国家？",
-    "Select1": "是",
-    "Select2": "不是",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia310"
-  },
-  "739": {
-    "ID": 739,
-    "TitleText": "水温4度气温10度用一种泳姿游完50m属于？",
-    "Select1": "五段",
-    "Select2": "五十段",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "740": {
-    "ID": 740,
-    "TitleText": "二十世纪80年代相关部门提出什么战略？",
-    "Select1": "北冰南展",
-    "Select2": "南冰北展",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "741": {
-    "ID": 741,
-    "TitleText": "滑雪时换刃，可以再身体不稳时转弯吗？",
-    "Select1": "可以",
-    "Select2": "不可以",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia313"
-  },
-  "742": {
-    "ID": 742,
-    "TitleText": "滑雪造成的头部出血应如何处理？",
-    "Select1": "放任不管",
-    "Select2": "洁净布压迫止血",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "743": {
-    "ID": 743,
-    "TitleText": "中国自由式滑雪的第一个金牌获得者是？",
-    "Select1": "韩晓鹏",
-    "Select2": "胡歌",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "744": {
-    "ID": 744,
-    "TitleText": "初学者滑降时，固定器与鞋应如何连接？",
-    "Select1": "越松越好",
-    "Select2": "适中",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia316"
-  },
-  "745": {
-    "ID": 745,
-    "TitleText": "剪刀式滑雪板有什么优点？",
-    "Select1": "锋利",
-    "Select2": "边滑边加速",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "746": {
-    "ID": 746,
-    "TitleText": "绳子攀冰采用的动力绳直径要求？",
-    "Select1": "10mm以上",
-    "Select2": "1m以上",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "747": {
-    "ID": 747,
-    "TitleText": "冬泳的起点水温是?",
-    "Select1": "17摄氏度",
-    "Select2": "1摄氏度",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia319 (2)"
-  },
-  "748": {
-    "ID": 748,
-    "TitleText": "属于2010年冬奥短道速滑女子冠军的是？",
-    "Select1": "江疏影",
-    "Select2": "张会",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "749": {
-    "ID": 749,
-    "TitleText": "滑雪倒地时身体不能往那个方向坐下？",
-    "Select1": "前",
-    "Select2": "后",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "750": {
-    "ID": 750,
-    "TitleText": "冰蹴球比赛中，先满多少分为胜利？",
-    "Select1": "20分",
-    "Select2": "520分",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia322"
-  },
-  "751": {
-    "ID": 751,
-    "TitleText": "当出现外伤导致的血管损伤，应如何处理？",
-    "Select1": "放任不管",
-    "Select2": "立即止血",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "752": {
-    "ID": 752,
-    "TitleText": "SSS级滑雪场雪道总长应长于多少米？",
-    "Select1": "1米",
-    "Select2": "10000米以上",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "753": {
-    "ID": 753,
-    "TitleText": "速度滑冰中哪一道上的选手优先换道？",
-    "Select1": "内道",
-    "Select2": "外道",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia325"
-  },
-  "754": {
-    "ID": 754,
-    "TitleText": "俯式冰橇中预赛和比赛时必须同一辆雪橇吗？",
-    "Select1": "没必要",
-    "Select2": "必须是",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "755": {
-    "ID": 755,
-    "TitleText": "到2022年要实现什么多少人次参与冰雪运动？",
-    "Select1": "3亿人次参与",
-    "Select2": "5亿人次参与",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "756": {
-    "ID": 756,
-    "TitleText": "自由式滑雪中滑雪板不得短于多少厘米？",
-    "Select1": "180厘米",
-    "Select2": "18厘米",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia328 (2)"
-  },
-  "757": {
-    "ID": 757,
-    "TitleText": "北大湖滑雪场有哪个雪上项目？",
-    "Select1": "高山滑雪",
-    "Select2": "自由搏击",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "758": {
-    "ID": 758,
-    "TitleText": "怎么增加滑行时滑雪板的阻力？",
-    "Select1": "自由滑行",
-    "Select2": "呈一定的夹角",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "759": {
-    "ID": 759,
-    "TitleText": "首次女子10公里越野滑雪列入冬奥会是？",
-    "Select1": "第一届",
-    "Select2": "第六届",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia331"
-  },
-  "760": {
-    "ID": 760,
-    "TitleText": "滑过起伏不平的上坡时，运动轨迹是样子？",
-    "Select1": "一条直线",
-    "Select2": "一条曲线",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "761": {
-    "ID": 761,
-    "TitleText": "国家高山滑雪中心包括几天竞速赛道？",
-    "Select1": "3天",
-    "Select2": "30天",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "762": {
-    "ID": 762,
-    "TitleText": "国务院任命谁为2022年北京冬奥会主席？",
-    "Select1": "许勤",
-    "Select2": "徐琴琴",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia334 (2)"
-  },
-  "763": {
-    "ID": 763,
-    "TitleText": "冰壶比赛双方队员各几名？上场各几名？",
-    "Select1": "5.5名",
-    "Select2": "5.4名",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "764": {
-    "ID": 764,
-    "TitleText": "下面哪个是单板滑雪的器材装备？",
-    "Select1": "雪棍",
-    "Select2": "雪板",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "765": {
-    "ID": 765,
-    "TitleText": "以下哪项不是滑雪外伤的性质？",
-    "Select1": "可预见性",
-    "Select2": "突发性",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia337"
-  },
-  "766": {
-    "ID": 766,
-    "TitleText": "我国最早的宣传报道冬泳健身信息的杂志是？",
-    "Select1": "《健与美》",
-    "Select2": "《新体育》",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "767": {
-    "ID": 767,
-    "TitleText": "第一次为每一个比赛制作单独奖牌是在哪一届？",
-    "Select1": "第十届",
-    "Select2": "每一届",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "768": {
-    "ID": 768,
-    "TitleText": "下列哪种滑雪方式有止滑器？",
-    "Select1": "越野滑雪",
-    "Select2": "跳台滑雪",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia340"
-  },
-  "769": {
-    "ID": 769,
-    "TitleText": "下列哪个不属于冬奥自由式滑雪？",
-    "Select1": "雪上技巧",
-    "Select2": "冰上芭蕾",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "770": {
-    "ID": 770,
-    "TitleText": "首位获得冬奥会奖牌的男运动员是？",
-    "Select1": "胡歌",
-    "Select2": "李佳军",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "771": {
-    "ID": 771,
-    "TitleText": "滑跑练习对训练什么系统非常重要？",
-    "Select1": "无氧系统",
-    "Select2": "垃圾系统",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia343"
-  },
-  "772": {
-    "ID": 772,
-    "TitleText": "自由式滑雪比赛的前几名进入决赛？",
-    "Select1": "前4名",
-    "Select2": "后6名",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "773": {
-    "ID": 773,
-    "TitleText": "下列不属于短道速滑女子3000米接力冠军的是？",
-    "Select1": "杨幂",
-    "Select2": "陈露",
-    "CorrectAnswer": [
-      1,
-      2
-    ]
-  },
-  "774": {
-    "ID": 774,
-    "TitleText": "自由式滑雪空中技巧采用的是什么赛制？",
-    "Select1": "两跳决赛",
-    "Select2": "一跳递进淘汰",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia346"
-  },
-  "775": {
-    "ID": 775,
-    "TitleText": "奥林匹克最高领导机构是？",
-    "Select1": "国际奥委执行委员会",
-    "Select2": "国际奥林匹克委员会",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "776": {
-    "ID": 776,
-    "TitleText": "花样滑冰标准赛场长多少米？",
-    "Select1": "60米",
-    "Select2": "66米",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "777": {
-    "ID": 777,
-    "TitleText": "花样滑冰的奥运会比赛项目共有几个？",
-    "Select1": "1个",
-    "Select2": "4个",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia349"
-  },
-  "778": {
-    "ID": 778,
-    "TitleText": "北京8分钟五彩曲线时，并屏幕展示了什么？",
-    "Select1": "冬奥构想",
-    "Select2": "中国故事",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "779": {
-    "ID": 779,
-    "TitleText": "世界上第一个冰上溜石是那一个国家？",
-    "Select1": "苏格兰",
-    "Select2": "南非",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "780": {
-    "ID": 780,
-    "TitleText": "世界上第一个冰上溜石是那一年？",
-    "Select1": "2021",
-    "Select2": "1795",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia352"
-  },
-  "781": {
-    "ID": 781,
-    "TitleText": "用木板钉可以用带钉子的木棍滑行的工具是？",
-    "Select1": "冰车",
-    "Select2": "雪橇",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "782": {
-    "ID": 782,
-    "TitleText": "冬奥会吉祥物方案首位投稿人是什么职业？",
-    "Select1": "动漫制作人",
-    "Select2": "高中生",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "783": {
-    "ID": 783,
-    "TitleText": "冰雪活动中的“双万”是指？",
-    "Select1": "1万个家庭和学生",
-    "Select2": "1万个目标和器材",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia355"
-  },
-  "784": {
-    "ID": 784,
-    "TitleText": "雪上芭蕾场地宽度是多少？",
-    "Select1": "35-45米",
-    "Select2": "110-120米",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "785": {
-    "ID": 785,
-    "TitleText": "滑雪时雪仗应该是在什么位子？",
-    "Select1": "背在身上",
-    "Select2": "握在手里",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "786": {
-    "ID": 786,
-    "TitleText": "速度滑冰最为常用的起跑技术动作是什么？",
-    "Select1": "扭滑式",
-    "Select2": "蹲踞式",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia358"
-  },
-  "787": {
-    "ID": 787,
-    "TitleText": "国家体育总局官方标识由几种颜色组成？",
-    "Select1": "1种",
-    "Select2": "5种",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "788": {
-    "ID": 788,
-    "TitleText": "北京八分钟武器展示地球时展示了什么？",
-    "Select1": "五大洲儿童的笑脸",
-    "Select2": "贫苦老人",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "789": {
-    "ID": 789,
-    "TitleText": "残奥会冬季体育运动发展最快的项目是？",
-    "Select1": "轮椅冰壶",
-    "Select2": "轮椅赛跑",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia361"
-  },
-  "790": {
-    "ID": 790,
-    "TitleText": "首个举办冬奥会的社会主义国家是？",
-    "Select1": "南斯拉夫",
-    "Select2": "美国",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "791": {
-    "ID": 791,
-    "TitleText": "结伴滑行时，相互之间一定要拉开距离",
-    "Select1": "正确",
-    "Select2": "错误",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "792": {
-    "ID": 792,
-    "TitleText": "哪一年冬夏奥运分开举行？",
-    "Select1": "1924",
-    "Select2": "1888",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia364(2)"
-  },
-  "793": {
-    "ID": 793,
-    "TitleText": "为什么在广东，雪有狂犬的别称？",
-    "Select1": "因为雪很大",
-    "Select2": "因为雪非常罕见",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "794": {
-    "ID": 794,
-    "TitleText": "北京八分钟展示不包括？",
-    "Select1": "奥运五环",
-    "Select2": "冬残奥会会徽",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "795": {
-    "ID": 795,
-    "TitleText": "越野滑雪的雪仗比普通雪仗有什么特别？",
-    "Select1": "更加牢固",
-    "Select2": "更加长",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia367"
-  },
-  "796": {
-    "ID": 796,
-    "TitleText": "在哪次会议正式确定为第一届冬奥会？",
-    "Select1": "第99次会议",
-    "Select2": "第25次会议",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "797": {
-    "ID": 797,
-    "TitleText": "2018年加拿大举行短道速滑500米获冠军是？",
-    "Select1": "日本",
-    "Select2": "中国",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "798": {
-    "ID": 798,
-    "TitleText": "首次冰球比赛在加拿大的哪个城市举行？",
-    "Select1": "多伦多",
-    "Select2": "金斯顿",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia370"
-  },
-  "799": {
-    "ID": 799,
-    "TitleText": "自由式滑雪兴起于什么国家？",
-    "Select1": "美国",
-    "Select2": "南非",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "800": {
-    "ID": 800,
-    "TitleText": "中国第一位奥运冠军是？",
-    "Select1": "许海峰",
-    "Select2": "许三多",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "801": {
-    "ID": 801,
-    "TitleText": "2018年1月21日儿童户外冰雪节在哪里？",
-    "Select1": "崇礼",
-    "Select2": "南极",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia373"
-  },
-  "802": {
-    "ID": 802,
-    "TitleText": "2022年，北京冬奥会一共有几座竞赛场馆？",
-    "Select1": "1个",
-    "Select2": "5个",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "803": {
-    "ID": 803,
-    "TitleText": "冬奥会把什么作为首要目标促进运动员状态？",
-    "Select1": "鼓励服务员",
-    "Select2": "方便服务员",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "804": {
-    "ID": 804,
-    "TitleText": "冬奥会上首个冰壶混双冠军的是那个国家？",
-    "Select1": "美国",
-    "Select2": "加拿大",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia376"
-  },
-  "805": {
-    "ID": 805,
-    "TitleText": "同一届获得三块北欧两项金牌运动员是？",
-    "Select1": "摩根弗里曼",
-    "Select2": "桑帕拉尤男",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "806": {
-    "ID": 806,
-    "TitleText": "夏季奥运会上唯一一次的冰球比赛是？",
-    "Select1": "安特卫普",
-    "Select2": "南极",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "807": {
-    "ID": 807,
-    "TitleText": "滑雪杖的功能有？",
-    "Select1": "没什么功能",
-    "Select2": "引导变向",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia379"
-  },
-  "808": {
-    "ID": 808,
-    "TitleText": "滑雪中踏步转弯属于什么转弯？",
-    "Select1": "无弧迹转弯",
-    "Select2": "连续转弯",
-    "CorrectAnswer": [
       1
-    ]
-  },
-  "809": {
-    "ID": 809,
-    "TitleText": "第五届冬奥会被禁止参赛的国家是？",
-    "Select1": "中国",
-    "Select2": "日本",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "810": {
-    "ID": 810,
-    "TitleText": "第五届冬奥会被禁止参赛的国家是？",
-    "Select1": "中国",
-    "Select2": "德国",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia382"
-  },
-  "811": {
-    "ID": 811,
-    "TitleText": "在冰壁上设置保护点最少几个冰锥？",
-    "Select1": "0个",
-    "Select2": "3个",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "812": {
-    "ID": 812,
-    "TitleText": "第二届冰上运动会多少人打破记录？",
-    "Select1": "1314人",
-    "Select2": "72人",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "813": {
-    "ID": 813,
-    "TitleText": "第一届残奥会是哪一年召开的？",
-    "Select1": "2008",
-    "Select2": "1960",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia385"
-  },
-  "814": {
-    "ID": 814,
-    "TitleText": "太舞滑雪小镇位于河北省的哪个城市？",
-    "Select1": "秦皇岛",
-    "Select2": "张家口",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "815": {
-    "ID": 815,
-    "TitleText": "射击比赛共多少个项目？",
-    "Select1": "1个",
-    "Select2": "17个",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "816": {
-    "ID": 816,
-    "TitleText": "下列体现雪的白的特点是哪一项？",
-    "Select1": "梅须逊雪三分白",
-    "Select2": "巴山夜雨涨秋池",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia388"
-  },
-  "817": {
-    "ID": 817,
-    "TitleText": "试穿单板滑雪需要注意的是？",
-    "Select1": "没什么需要注意的",
-    "Select2": "脚后跟上提",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "818": {
-    "ID": 818,
-    "TitleText": "无舵雪橇的雪橇上能操纵制动器吗？",
-    "Select1": "当然可以",
-    "Select2": "当然不行",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "819": {
-    "ID": 819,
-    "TitleText": "冰球的特点是？",
-    "Select1": "容易入门但是难精通",
-    "Select2": "可以打架",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia391"
-  },
-  "820": {
-    "ID": 820,
-    "TitleText": "平昌冬奥会韩聪以235.47的成绩夺得？",
-    "Select1": "108名",
-    "Select2": "亚军",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "821": {
-    "ID": 821,
-    "TitleText": "北京冬奥会期间哪一场馆承担女子冰球？",
-    "Select1": "五棵松体育中心",
-    "Select2": "国家体育馆",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "822": {
-    "ID": 822,
-    "TitleText": "哪届奥运会首次研制成功并采用血检？",
-    "Select1": "南极",
-    "Select2": "斯德哥尔摩",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia394(2)"
-  },
-  "823": {
-    "ID": 823,
-    "TitleText": "踏雪无痕的意思是？",
-    "Select1": "雪太薄了",
-    "Select2": "速度很快",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "824": {
-    "ID": 824,
-    "TitleText": "攀冰影响最大的是？",
-    "Select1": "冰质",
-    "Select2": "冰镐大小",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "825": {
-    "ID": 825,
-    "TitleText": "冬奥会的推动下，首钢秀池将改造什么？",
-    "Select1": "观景湖",
-    "Select2": "新型水下车库",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia397"
-  },
-  "826": {
-    "ID": 826,
-    "TitleText": "申办冬奥成功后全国唯一体教结合学校是？",
-    "Select1": "南海第二中学",
-    "Select2": "张家口宣化第二中学",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "827": {
-    "ID": 827,
-    "TitleText": "中国滑雪协会第一个认定的旅游滑雪场在哪？",
-    "Select1": "河北",
-    "Select2": "河南",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "828": {
-    "ID": 828,
-    "TitleText": "单板滑雪什么时候流行于美国？",
-    "Select1": "20世纪80年代",
-    "Select2": "21世纪",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia400"
-  },
-  "829": {
-    "ID": 829,
-    "TitleText": "中国运动员更加擅长哪种滑雪运动？",
-    "Select1": "空中技巧",
-    "Select2": "单板滑雪",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "830": {
-    "ID": 830,
-    "TitleText": "雪上国际赛事不包括什么？",
-    "Select1": "滑雪世锦赛",
-    "Select2": "短道速滑世界杯",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "831": {
-    "ID": 831,
-    "TitleText": "滑雪前的准备需要活动肩关节吗？",
-    "Select1": "需要",
-    "Select2": "我很强不需要",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia403(2)"
-  },
-  "832": {
-    "ID": 832,
-    "TitleText": "首都体育馆为了冬奥会增加了几块冰面？",
-    "Select1": "0快",
-    "Select2": "1快",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "833": {
-    "ID": 833,
-    "TitleText": "曲棍球比赛是在2个多少人之间的队伍进行？",
-    "Select1": "11人",
-    "Select2": "1人",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "834": {
-    "ID": 834,
-    "TitleText": "冰蹴球每个参赛队伍有几个队员？",
-    "Select1": "1名",
-    "Select2": "2名",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia406"
-  },
-  "835": {
-    "ID": 835,
-    "TitleText": "哪一位捐献了自己的场地区域作为比赛场地？",
-    "Select1": "顾拜旦",
-    "Select2": "戈尔雷杜威",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "836": {
-    "ID": 836,
-    "TitleText": "蝉联2005.2007.2007世锦赛女子空中技巧的是？",
-    "Select1": "江疏影",
-    "Select2": "李妮娜",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "837": {
-    "ID": 837,
-    "TitleText": "下列哪项不属于冰球运动中的运球技术？",
-    "Select1": "滑球运动",
-    "Select2": "扣球运动",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia409"
-  },
-  "838": {
-    "ID": 838,
-    "TitleText": "亚洲选手第一次获得女子花样滑冰是？",
-    "Select1": "长野冬奥会",
-    "Select2": "都灵冬奥会",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "839": {
-    "ID": 839,
-    "TitleText": "第十九姐冬奥会举办国家是？",
-    "Select1": "中国",
-    "Select2": "美国",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "840": {
-    "ID": 840,
-    "TitleText": "冬奥会25个场馆中，有几个为计划建设？",
-    "Select1": "1个",
-    "Select2": "6个",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia412 (2)"
-  },
-  "841": {
-    "ID": 841,
-    "TitleText": "第六届奥运会是在哪里举办的？",
-    "Select1": "挪威",
-    "Select2": "南极",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "842": {
-    "ID": 842,
-    "TitleText": "冰球运动中使用的球球重为？",
-    "Select1": "1吨",
-    "Select2": "156-170克",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "843": {
-    "ID": 843,
-    "TitleText": "滑雪中重摔通常由什么造成的？",
-    "Select1": "技术不够",
-    "Select2": "板刃卡雪",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia415"
-  },
-  "844": {
-    "ID": 844,
-    "TitleText": "哪一年雪橇被李伟首届冬奥会比赛项目？",
-    "Select1": "2008",
-    "Select2": "1924",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "845": {
-    "ID": 845,
-    "TitleText": "冰壶运动标准场地的宽度是多少米？",
-    "Select1": "100米",
-    "Select2": "4.32米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "846": {
-    "ID": 846,
-    "TitleText": "祭祀太阳神阿波罗举行的竞技会是？",
-    "Select1": "英雄联盟竞技会",
-    "Select2": "皮西安竞技会",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia418"
-  },
-  "847": {
-    "ID": 847,
-    "TitleText": "下列哪一项运动可以称为全身性运动？",
-    "Select1": "越野滑雪",
-    "Select2": "俯卧撑",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "848": {
-    "ID": 848,
-    "TitleText": "首届世界冰上溜石锦标赛开始哪一年？",
-    "Select1": "2022",
-    "Select2": "1959",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia421"
-  },
-  "849": {
-    "ID": 849,
-    "TitleText": "人类滑雪最早起源地是哪里？",
-    "Select1": "非洲",
-    "Select2": "阿勒泰",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "850": {
-    "ID": 850,
-    "TitleText": "滑雪时在雪地安全行走的关键是什么？",
-    "Select1": "体重够重",
-    "Select2": "手脚的协调配合能力",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "851": {
-    "ID": 851,
-    "TitleText": "半V型转弯技巧时地板承受多大的压力？",
-    "Select1": "0",
-    "Select2": "1吨",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia424"
-  },
-  "852": {
-    "ID": 852,
-    "TitleText": "雪花是什么形状的？",
-    "Select1": "圆形",
-    "Select2": "六角形",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "853": {
-    "ID": 853,
-    "TitleText": "滑冰时感觉冻脚的时候应该立即怎么样？",
-    "Select1": "坚持一下",
-    "Select2": "把鞋带松开让血液流通",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "854": {
-    "ID": 854,
-    "TitleText": "蹬冰脚穿的鞋底是什么材料？",
-    "Select1": "金属",
-    "Select2": "橡胶",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia427"
-  },
-  "855": {
-    "ID": 855,
-    "TitleText": "进行指压寻找压迫点时不能选用哪根手指？",
-    "Select1": "无名指",
-    "Select2": "大拇指",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "856": {
-    "ID": 856,
-    "TitleText": "北京八分钟表演的核心理念是？",
-    "Select1": "2022北京见",
-    "Select2": "2022北京最强",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "857": {
-    "ID": 857,
-    "TitleText": "人工冰场的冰面厚度为多少最佳",
-    "Select1": "1cm",
-    "Select2": "4cm",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia430"
-  },
-  "858": {
-    "ID": 858,
-    "TitleText": "雪结冰前和结冰后，那个更重？",
-    "Select1": "一样",
-    "Select2": "结冰后",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "859": {
-    "ID": 859,
-    "TitleText": "世界上第一部有关花样滑冰的著作是？",
-    "Select1": "冰雪运动",
-    "Select2": "论滑冰",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "860": {
-    "ID": 860,
-    "TitleText": "准备出发去滑雪前需要注意什么？",
-    "Select1": "拿好手机",
-    "Select2": "高能食品和饮料",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia433"
-  },
-  "861": {
-    "ID": 861,
-    "TitleText": "冬季运动管理中心综合训练馆的冰场在哪一层？",
-    "Select1": "负1层",
-    "Select2": "1层和3层",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "862": {
-    "ID": 862,
-    "TitleText": "个人大跳台赛中有多少次跳台的机会？",
-    "Select1": "无数次",
-    "Select2": "1次",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "863": {
-    "ID": 863,
-    "TitleText": "雪中雪上技巧女子的滑雪板不能短于多少厘米？",
-    "Select1": "10厘米",
-    "Select2": "180厘米",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia436"
-  },
-  "864": {
-    "ID": 864,
-    "TitleText": "到2020年我国体育旅游人口达到多少人？",
-    "Select1": "1亿",
-    "Select2": "10亿",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "865": {
-    "ID": 865,
-    "TitleText": "越野滑雪的比赛场地应该选择哪种地形？",
-    "Select1": "悬崖峭壁",
-    "Select2": "森林地带",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "866": {
-    "ID": 866,
-    "TitleText": "我国的冬泳运动潜在的发展能力在哪里？",
-    "Select1": "不存在",
-    "Select2": "长江以南地区",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia439"
-  },
-  "867": {
-    "ID": 867,
-    "TitleText": "澳大利亚首次获得冬奥会金牌是哪一届？",
-    "Select1": "没获得过",
-    "Select2": "盐湖城冬奥会",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "868": {
-    "ID": 868,
-    "TitleText": "从阿尔让提耶一直延伸到萨斯菲的极限赛道叫？",
-    "Select1": "终极赛道",
-    "Select2": "死亡之路",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "869": {
-    "ID": 869,
-    "TitleText": "横滑时，哪只脚负重大？",
-    "Select1": "一样大",
-    "Select2": "山下脚",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia442"
-  },
-  "870": {
-    "ID": 870,
-    "TitleText": "飞碟双向射击时，飞行的远距一般为？",
-    "Select1": "86至8",
-    "Select2": "1光年",
-    "CorrectAnswer": [
-      1
-    ]
-  },
-  "871": {
-    "ID": 871,
-    "TitleText": "5S级滑雪场滑雪赛道雪厚厚度不小于多少毫米",
-    "Select1": "10000毫米",
-    "Select2": "300毫米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "872": {
-    "ID": 872,
-    "TitleText": "冬奥会首都体育馆总建筑面积约多少平方米",
-    "Select1": "1平方米",
-    "Select2": "20万平方米",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia445"
-  },
-  "873": {
-    "ID": 873,
-    "TitleText": "世界上首届自由式滑雪锦标赛在哪个国家？",
-    "Select1": "南极",
-    "Select2": "法国",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "874": {
-    "ID": 874,
-    "TitleText": "第十七届冬奥会的吉祥物是什么?",
-    "Select1": "娜娜，菲菲",
-    "Select2": "哈肯，克里斯丁",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "875": {
-    "ID": 875,
-    "TitleText": "越野滑雪板涂黏性蜡时涂在底板什么部分？",
-    "Select1": "中部",
-    "Select2": "凹底区",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia448(2)"
-  },
-  "876": {
-    "ID": 876,
-    "TitleText": "中国哪一年加入世界冰壶联合会？",
-    "Select1": "2022年",
-    "Select2": "2002年",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "877": {
-    "ID": 877,
-    "TitleText": "花样滑冰赛场宽度不小于多少米?",
-    "Select1": "1米",
-    "Select2": "26米",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "878": {
-    "ID": 878,
-    "TitleText": "自由式滑雪雪上技巧评分中，速度分占比是？",
-    "Select1": "1",
-    "Select2": "0.2",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia451"
-  },
-  "879": {
-    "ID": 879,
-    "TitleText": "北京市冬奥会赛区唯一一个新建的竞赛场馆是？",
-    "Select1": "云顶滑雪公园",
-    "Select2": "国家速滑馆",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "880": {
-    "ID": 880,
-    "TitleText": "无舵雪橇又叫？",
-    "Select1": "核潜艇",
-    "Select2": "短雪橇",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "881": {
-    "ID": 881,
-    "TitleText": "在陡坡上可不可以运用上体向前的前刃斜滑降？",
-    "Select1": "我想降就降",
-    "Select2": "不可以很危险",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia454"
-  },
-  "882": {
-    "ID": 882,
-    "TitleText": "下列哪个是冰车？",
-    "Select1": "无腿冰车",
-    "Select2": "双腿冰车",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "883": {
-    "ID": 883,
-    "TitleText": "下列哪个是冰车？",
-    "Select1": "无腿冰车",
-    "Select2": "单腿冰车",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "884": {
-    "ID": 884,
-    "TitleText": "第三届亚洲冬季运动会在哪一个滑雪场举办？",
-    "Select1": "南极滑雪场",
-    "Select2": "亚布力滑雪场",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia457"
-  },
-  "885": {
-    "ID": 885,
-    "TitleText": "滑有特殊保暖层，排汗效果好比赛专用的是？",
-    "Select1": "双板分体",
-    "Select2": "紧身衣",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "886": {
-    "ID": 886,
-    "TitleText": "做两头运动时身体需要同时做什么？",
-    "Select1": "什么都不做",
-    "Select2": "上举下压",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "887": {
-    "ID": 887,
-    "TitleText": "张家口气象局在赛区周边建多少套气象局？",
-    "Select1": "1套",
-    "Select2": "70套",
-    "CorrectAnswer": [
-      2
-    ],
-    "Picture": "Materia460"
-  },
-  "888": {
-    "ID": 888,
-    "TitleText": "出发时，滑雪运动员是否可以串道滑行？",
-    "Select1": "是",
-    "Select2": "否",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "889": {
-    "ID": 889,
-    "TitleText": "哪一个属于高科技发展对冰雪运动的推动？",
-    "Select1": "全息投影",
-    "Select2": "人工造雪",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "890": {
-    "ID": 890,
-    "TitleText": "冬奥会竞赛场馆哪一年达到了奥委会标准的？",
-    "Select1": "2020年",
-    "Select2": "1988年",
-    "CorrectAnswer": [
-      1
-    ],
-    "Picture": "Materia463"
-  },
-  "891": {
-    "ID": 891,
-    "TitleText": "自由式滑雪空中技巧基本动作不包括？",
-    "Select1": "空中翻腾",
-    "Select2": "起跳入水",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "892": {
-    "ID": 892,
-    "TitleText": "滑雪图中感觉到累应该怎么做？",
-    "Select1": "立即停下来休息",
-    "Select2": "确认安全后停下来休息",
-    "CorrectAnswer": [
-      2
-    ]
-  },
-  "893": {
-    "ID": 893,
-    "TitleText": "2009年冰壶青年锦标赛，中国男队的成绩是？",
-    "Select1": "亚军",
-    "Select2": "冠军！",
-    "CorrectAnswer": [
-      2
     ],
-    "Picture": "Materia466"
+    "Picture": "jctq"
   }
 }
