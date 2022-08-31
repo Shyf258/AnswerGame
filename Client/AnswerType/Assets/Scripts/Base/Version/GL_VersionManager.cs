@@ -14,8 +14,8 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
 {
     #region 资源配置
 
-    public static readonly string TotalUrl = "https://static.ciyunjinchan.com/Unity/"+ QNDownloadAppEnName +"/";
-    public static readonly string QNDownloadAppEnName = GameDataTable.GetTableBuildAppData((int) AppSetting.BuildApp).ProductEnName;
+    public static string TotalUrl = "https://static.ciyunjinchan.com/Unity/"+ QNDownloadAppEnName;
+    public static string QNDownloadAppEnName => GameDataTable.GetTableBuildAppData((int) AppSetting.BuildApp).ProductEnName;
 
     private List<string> _resList = new List<string>()
     {
