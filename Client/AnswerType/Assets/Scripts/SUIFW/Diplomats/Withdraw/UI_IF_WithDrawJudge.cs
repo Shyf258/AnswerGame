@@ -289,7 +289,7 @@ public class UI_IF_WithDrawJudge : BaseUIForm
                     CloseUIForm();
                     if (show)
                     {
-                        if (_videoCount>= _withDraw.WithDraw.viewAdTimes)
+                        if (_videoCount>= _withDraw.WithDraw.viewAdTimes - 1)
                         {
                             UI_HintMessage._.ShowMessage("提现已满足，快去提现吧！");
                             //WithDraw();
