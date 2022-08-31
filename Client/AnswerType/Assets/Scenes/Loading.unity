@@ -427,6 +427,7 @@ MonoBehaviour:
   - MoreCoinChance
   - MoneyShort
   - WithDrawTurn
+  - TurnTable
   _interstitialList:
   - AllDialog
   _nativeList:

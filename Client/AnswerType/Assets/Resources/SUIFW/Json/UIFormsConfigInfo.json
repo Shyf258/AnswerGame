@@ -5,10 +5,6 @@
       "Value": "SUIFW\\Prefab\\UI_IF_Loading"
     },
     {
-      "Key": "TurnTable",
-      "Value": "SUIFW\\Prefab\\UI_IF_TurnTable"
-    },
-    {
       "Key": "AboutUS",
       "Value": "SUIFW\\Prefab\\UI_IF_AboutUS"
     },

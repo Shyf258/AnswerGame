@@ -68,10 +68,6 @@ public class UI_IF_TurnTable : BaseUIForm
     /// </summary>
     private Net_CB_GamecoreConfig _drawConfig;
     /// <summary>
-    /// 道具显示父对象
-    /// </summary>
-    private Transform _iconCenter;
-    /// <summary>
     /// 0.5元提现进度
     /// </summary>
     private Image _fill;
@@ -135,10 +131,8 @@ public class UI_IF_TurnTable : BaseUIForm
         _uiIfMainUp = UIManager.GetInstance().GetMainUp();
         #endregion
 
-        Transform _transform = UnityHelper.FindTheChildNode(gameObject, "UI_IF_TurnTable");
-        
-        _iconCenter = UnityHelper.FindTheChildNode(_transform.gameObject, "IconCenter");
-     
+        Transform _transform = transform;
+
         _turnTable = UnityHelper.FindTheChildNode(_transform.gameObject, "TurnTable");
         _turnTableDraw = UnityHelper.GetTheChildNodeComponetScripts<Transform>(_turnTable.gameObject, "TurnTable_Draw");
         _closePage = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "ClosePage");
@@ -385,24 +379,6 @@ public class UI_IF_TurnTable : BaseUIForm
     {
         Stage = EStage.None;
     }
-    //
-    // private void ShowTableCount()
-    // {
-    //     _drawTimeNow--;
-    //     _drawTime.text = (_drawTimeNow.ToString()) + "/" + (_drawTimeMax.ToString());
-    // }
-
-    /// <summary>
-    /// 进入界面旋转图标
-    /// </summary>
-    private void GetRotate()
-    {
-        for (int i = 0; i < _iconCenter.childCount; i++)
-        {
-            _iconCenter.GetChild(i).eulerAngles = new Vector3(0,0,(360/6f)*i);
-            // _iconCenter.GetChild(i).GetChild(0).GetComponent<Image>().sprite = data._rewardSprite;
-        }
-    }
 
     private int _rewardIndex;
 
@@ -512,14 +488,14 @@ public class UI_IF_TurnTable : BaseUIForm
         switch (rewards.type)
         {
             case 1:
-                GL_PlayerData._instance.Coin += rewards.num;
+                // GL_PlayerData._instance.Coin += rewards.num;
                 // Fly_Manager._instance.MainUpFly(EFlyItemType.Coin, Vector3.zero,true);
                 // UI_HintMessage._.ShowMessage($"恭喜您，领取{rewards.num}金币！");
                 GL_RewardLogic._instance.GetReward(_rewardses,true);
                 // Invoke("HideMainUp",3f);
                 break;
             case 3:
-                GL_PlayerData._instance.Coin += rewards.num;
+                // GL_PlayerData._instance.Coin += rewards.num;
                 // Fly_Manager._instance.MainUpFly(EFlyItemType.Bogus, Vector3.zero,true);
                 // UI_HintMessage._.ShowMessage($"恭喜您，领取{(rewards.num/100f).ToString("0.00")}元红包！");
                 GL_RewardLogic._instance.GetReward(_rewardses,true);

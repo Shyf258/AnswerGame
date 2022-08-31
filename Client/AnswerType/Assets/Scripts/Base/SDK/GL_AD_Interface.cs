@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年8月31日  17:44:03
+// 广告位自动生成于 2022年8月31日  18:24:04
 
 using UnityEngine;
 
@@ -36,6 +36,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	public const string AD_Reward_MoreCoinChance = "MoreCoinChance";
 	public const string AD_Reward_MoneyShort = "MoneyShort";
 	public const string AD_Reward_WithDrawTurn = "WithDrawTurn";
+	public const string AD_Reward_TurnTable = "TurnTable";
 
 //2.插屏
 	public const string AD_Interstitial_AllDialog = "AllDialog";
@@ -78,6 +79,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	private int _MoreCoinChance = 0;
 	private int _MoneyShort = 0;
 	private int _WithDrawTurn = 0;
+	private int _TurnTable = 0;
 	#endregion
 
 	//判断是否有广告
@@ -177,6 +179,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_WithDrawTurn:
 				_WithDrawTurn = 0;
+				break;
+			case AD_Reward_TurnTable:
+				_TurnTable = 0;
 				break;
 		}
 #endif
@@ -342,6 +347,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_WithDrawTurn:
 				_WithDrawTurn = 1;
+				break;
+			case AD_Reward_TurnTable:
+				_TurnTable = 1;
 				break;
 		}
 		return;
@@ -559,6 +567,13 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 					return;
 #endif
 				_WithDrawTurn = 0;
+				break;
+			case AD_Reward_TurnTable:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_TurnTable == 0)
+					return;
+#endif
+				_TurnTable = 0;
 				break;
 		}
 #endif
