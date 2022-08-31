@@ -129,7 +129,7 @@ public class UI_IF_PureGame : BaseUIForm
             _pause.SetActive(false);
             _videoPlayer.Play();
         });
-        
+        _volume = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "Volume");
         RigisterButtonObjectEvent(_volume, go =>
         {
             
@@ -248,7 +248,7 @@ public class UI_IF_PureGame : BaseUIForm
         {
             //打开声音
             _videoPlayer.SetDirectAudioVolume(0,1);
-            _volume.transform.DORotate(new Vector3(0, 0, 36000), 400f, RotateMode.LocalAxisAdd).SetLoops(-1,LoopType.Restart);
+            _volume.transform.DORotate(new Vector3(0, 0, -36000), 400f, RotateMode.LocalAxisAdd).SetLoops(-1,LoopType.Restart);
         }
         else
         {
