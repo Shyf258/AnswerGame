@@ -202,6 +202,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!111 &5669985093798104904
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637978072920527998}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 58c64f33e4d0e0947b1959a0ec24cba0, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 6626a42b748fe73438b5fb2c977877d0, type: 2}
+  - {fileID: 7400000, guid: 7ccb6be9435d60d4e963d242d013a85a, type: 2}
+  - {fileID: 7400000, guid: 58c64f33e4d0e0947b1959a0ec24cba0, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &2898893700589424602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,24 +263,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!111 &5669985093798104904
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637978072920527998}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 58c64f33e4d0e0947b1959a0ec24cba0, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 6626a42b748fe73438b5fb2c977877d0, type: 2}
-  - {fileID: 7400000, guid: 7ccb6be9435d60d4e963d242d013a85a, type: 2}
-  - {fileID: 7400000, guid: 58c64f33e4d0e0947b1959a0ec24cba0, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &750506012293939358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5789,7 +5789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

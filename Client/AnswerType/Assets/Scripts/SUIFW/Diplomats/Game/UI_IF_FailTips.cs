@@ -45,7 +45,7 @@ namespace SUIFW.Diplomats.Game
                 _action = action;
             }
 
-            Invoke("Close", 2f);
+            Invoke("Close", 1f);
         }
 
         private void Close()

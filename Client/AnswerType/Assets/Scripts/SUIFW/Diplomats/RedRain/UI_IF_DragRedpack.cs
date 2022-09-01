@@ -22,7 +22,7 @@ public class UI_IF_DragRedpack : BaseUIForm
     {
         _isFullScreen = false;
         CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
-        CurrentUIType.UIForms_Type = UIFormType.Topside;
+        CurrentUIType.UIForms_Type = UIFormType.Fixed;
         CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Dark;
 
         _cdImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(gameObject, "Home_icon_hongbao2");

@@ -156,8 +156,10 @@ public class GL_GameMode_Answer : GL_GameMode
             GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
         };
 
-        Object[] objects = { (EItemType)_curRewards.type, _curRewards.num, ac1 };
-        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetReward, objects);
+        ac1?.Invoke(2);
+        
+        // Object[] objects = { (EItemType)_curRewards.type, _curRewards.num, ac1 };
+        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetReward, objects);
     }
     /// <summary>
     /// 双奖励模式
@@ -165,15 +167,17 @@ public class GL_GameMode_Answer : GL_GameMode
     private void Cb_ShowCashCoin(int value)
     {
         GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.CompleteLevel.ToString() + (GL_PlayerData._instance.UserDayLevel));
-        GetRed(value);
+        GetRed(value,out int index);
         // _withdrawCallback ?.Invoke();
-        if (value == 1)
+        if (index == 1)
         {
             GetCoin();
         }
     }
-    private void GetRed(int value)
+
+    private void GetRed(int value,out int index)
     {
+       int number = 0;
         bool isPlayAD = false;
         //普通领取
         if (value != 1  && GL_PlayerData._instance.AppConfig.isPassive!=1 && GL_PlayerData._instance.CurLevel >= 5)
@@ -195,6 +199,7 @@ public class GL_GameMode_Answer : GL_GameMode
                         if (b)
                         {
                             GL_PlayerData._instance._idiomConjCoinReward++;
+                           number = 1;
                         }
                     });
                     break;
@@ -217,6 +222,7 @@ public class GL_GameMode_Answer : GL_GameMode
 
         UI_HintMessage._.ShowMessage($"恭喜！获得{_curRewards.num / 100f}元现金。");
 
+        index = number;
     }
 
     private void GetCoin()
