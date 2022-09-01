@@ -519,10 +519,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 };
                 data.WithDraw = list[i];
                 data.IsCanWithdraw = IsGoldCanWithdraw(data, false);
+                data.ViewNum = config.viewNum;
                 if (data.Index == 0)
                 {
                     _curGoldWithdrawData = data;
-                    //_curGoldWithdrawData.WithDraw.viewAdTimes = 2; //测试用
+                    // _curGoldWithdrawData.WithDraw.viewAdTimes = 2; //测试用
                     SetGoldSelectState();
                 }
                 item.Init(this,data);
