@@ -520,19 +520,13 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     {
         get
         {
-            if (SystemConfig != null)
-                return SystemConfig.userLevel;
-            else
-                return GL_CoreData._instance._archivedData._levelIndex;
+            return GL_CoreData._instance._archivedData._levelIndex;
+              
         }
         set
         {
-            if ( SystemConfig!=null)
-            {
-                SystemConfig.userLevel = value;
-            }
             GL_CoreData._instance._archivedData._levelIndex = value;
-          
+            GL_CoreData._instance.SaveData();
         }
     }
 

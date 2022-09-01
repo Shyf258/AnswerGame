@@ -67,6 +67,7 @@ public partial class UI_IF_Main
     public Transform _rotate;
     
     private VideoPlayer _videoPlayer;
+
     protected void InitGameMode()
     {
 
@@ -154,6 +155,7 @@ public partial class UI_IF_Main
     //刷新题目
     public void RefreshGameMode(EventParam param)
     {
+        _choiceGroup.SetActive(false);
         _pause.SetActive(false);
         // MoveBack();
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
@@ -275,5 +277,6 @@ public partial class UI_IF_Main
     {
         DDebug.LogError("完成播放。");
         _pause.SetActive(true);
+        _choiceGroup.SetActive(true);
     }
 }

@@ -139,6 +139,7 @@ public class GL_GameMode_Answer : GL_GameMode
     {
         Action<int> ac1 = (int value) =>
         {
+            GL_PlayerData._instance.CurLevel++;
             //刷新关卡
             GL_SceneManager._instance.CreateGame();
 
@@ -393,42 +394,25 @@ public class GL_GameMode_Answer : GL_GameMode
     {
         LevelState = ELevelState.None;
         GL_AudioPlayback._instance.PlayTips(6);
-        Net_Rq_Upgrad com = new Net_Rq_Upgrad();
-        com.type = 3;
-        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
-        GL_ServerCommunication._instance.Send(Cmd.Upgrade, JsonHelper.ToJson(com), delegate(string s)
+        Action<int> ac1 = (int value) =>
         {
-            if (GL_PlayerData._instance.SystemConfig != null)
-            {
-                GL_PlayerData._instance.SystemConfig.userLevel += 1;
-                GL_PlayerData._instance.UserDayLevel += 1;
-            }
+            GL_PlayerData._instance.CurLevel++;
+            //刷新关卡
+            GL_SceneManager._instance.CreateGame();
+            _uiIfMain.MoveBack();
+            // //领取奖励
+            // Cb_ShowCashCoin(value);
 
-            Net_CB_Reward msg = JsonConvert.DeserializeObject<Net_CB_Reward>(s);
-            _curRewards = msg.rewards[0];
-            if (_curRewards == null)
-                return;
+            //刷新里程碑
+            AutoGetSliderReward();
 
+            GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
+        };
 
-            Action<int> ac1 = (int value) =>
-            {
-                //刷新关卡
-                GL_SceneManager._instance.CreateGame();
-                _uiIfMain.MoveBack();
-                //领取奖励
-                Cb_ShowCashCoin(value);
-
-                //刷新里程碑
-                AutoGetSliderReward();
-
-                GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
-            };
-
-            // Object[] objects = { ac1, _curRewards.num};
-            // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
-            Object[] objects = { ac1};
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_FailTips, objects);
-        });
+        // Object[] objects = { ac1, _curRewards.num};
+        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
+        Object[] objects = { ac1};
+        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_FailTips, objects);
     }
 
     private void Fail(string json)
