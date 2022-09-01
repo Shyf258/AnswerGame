@@ -137,27 +137,41 @@ public class GL_GameMode_Answer : GL_GameMode
 
     private void ShowCashCoin()
     {
-        Action<int> ac1 = (int value) =>
-        {
-            GL_PlayerData._instance.CurLevel++;
-            //刷新关卡
-            GL_SceneManager._instance.CreateGame();
+        GL_CoreData._instance.Level++;
+        //刷新关卡
+        GL_SceneManager._instance.CreateGame();
 
           
-            _uiIfMain.MoveBack();
+        _uiIfMain.MoveBack();
 
-            //领取奖励
-            Cb_ShowCashCoin(value);
+        //领取奖励
+        Cb_ShowCashCoin(2);
 
-            //刷新里程碑
-            AutoGetSliderReward();
-
-
-            // GL_PlayerData._instance._canChangeWithDraw = true;
-            GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
-        };
-
-        ac1?.Invoke(2);
+        //刷新里程碑
+        AutoGetSliderReward();
+        
+        // Action<int> ac1 = (int value) =>
+        // {
+        //     GL_PlayerData._instance.CurLevel++;
+        //     GL_CoreData._instance.Level++;
+        //     //刷新关卡
+        //     GL_SceneManager._instance.CreateGame();
+        //
+        //   
+        //     _uiIfMain.MoveBack();
+        //
+        //     //领取奖励
+        //     Cb_ShowCashCoin(2);
+        //
+        //     //刷新里程碑
+        //     AutoGetSliderReward();
+        //
+        //
+        //     // GL_PlayerData._instance._canChangeWithDraw = true;
+        //     GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
+        // };
+        //
+        // ac1?.Invoke(2);
         
         // Object[] objects = { (EItemType)_curRewards.type, _curRewards.num, ac1 };
         // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetReward, objects);
@@ -214,7 +228,7 @@ public class GL_GameMode_Answer : GL_GameMode
                 GL_PlayerData._instance._idiomConjCoinReward = 1;
             }
         }
-
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetRed);
         GL_PlayerData._instance.Bogus = GL_PlayerData._instance.Bogus + _curRewards.num;
         GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Bogus));
         //float offset = GL_PlayerData._instance.TotalBogus - GL_PlayerData._instance.Bogus_Convert;
@@ -229,7 +243,7 @@ public class GL_GameMode_Answer : GL_GameMode
     private void GetCoin()
     {
         int level = GL_PlayerData._instance.CurLevel;
-
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetCoin);
         YS_NetLogic._instance.UpgradeDouble(level, 3, (rewards =>
         {
             switch ((EItemType)rewards.type)
@@ -396,7 +410,7 @@ public class GL_GameMode_Answer : GL_GameMode
         GL_AudioPlayback._instance.PlayTips(6);
         Action<int> ac1 = (int value) =>
         {
-            GL_PlayerData._instance.CurLevel++;
+            GL_CoreData._instance.Level++;
             //刷新关卡
             GL_SceneManager._instance.CreateGame();
             _uiIfMain.MoveBack();

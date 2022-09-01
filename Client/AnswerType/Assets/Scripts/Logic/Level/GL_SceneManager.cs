@@ -47,7 +47,7 @@ public class GL_SceneManager : Singleton<GL_SceneManager>
     public void CreateGame()
     {
         //_curGameMode.Init();
-        int levelIndex = GL_PlayerData._instance.CurLevel;
+        int levelIndex = GL_CoreData._instance.Level;
         CreateGame(levelIndex, EGameModeType.Answer);
     }
 
