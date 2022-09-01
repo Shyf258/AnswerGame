@@ -72,6 +72,8 @@ public class UI_IF_TurnTable : BaseUIForm
     /// </summary>
     private Image _fill;
 
+    private Text _txtFill;
+
     private Text _barText;
     
     /// <summary>
@@ -106,12 +108,13 @@ public class UI_IF_TurnTable : BaseUIForm
 
     public override void Refresh(bool recall)
     {
+        UIManager.GetInstance().GetMainUp().SetActive(false);
         RefreshPage();
     }
 
     public override void onUpdate()
     {
-        
+        TurnUpdate();
     }
 
     public override void Init()
@@ -121,15 +124,9 @@ public class UI_IF_TurnTable : BaseUIForm
 
     public  void InitTurn()
     {
-        this.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
-        this.CurrentUIType.UIForms_Type = UIFormType.PopUp;
-        this.CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Dark;
-        _isFullScreen = true;
-        _isOpenMainUp = false;
-        
-        #region 获取数值
-        _uiIfMainUp = UIManager.GetInstance().GetMainUp();
-        #endregion
+        // this.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
+        // this.CurrentUIType.UIForms_Type = UIFormType.PopUp;
+        // this.CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Dark;
 
         Transform _transform = transform;
 
@@ -163,6 +160,8 @@ public class UI_IF_TurnTable : BaseUIForm
         
         _fill = UnityHelper.GetTheChildNodeComponetScripts<Image>(_transform.gameObject, "Fill");
 
+        _txtFill = _fill.GetComponentInChildren<Text>();
+            
         _barText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_transform.gameObject, "BarText");
         
         _description = UnityHelper.GetTheChildNodeComponetScripts<Text>(_transform.gameObject, "Description");
@@ -210,12 +209,20 @@ public class UI_IF_TurnTable : BaseUIForm
                 return;
                 
         }
-         
-     
-      
+        
         if (_drawTimeNow > 0)
         {
             GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_TurnTable, CB_AD_Turn,GL_ConstData.SceneID_Turn);
+            
+            //the seventh time
+            if (_drawConfig.dayProgress < 6) //6/20
+            {
+                UI_HintMessage._.ShowMessage($"还差{7 -_drawConfig.dayProgress}次即可领取{0.3}元");
+            }
+            else if (_drawConfig.dayProgress == 6)
+            {
+                UI_HintMessage._.ShowMessage($"下次必中{0.3}元哦");
+            }
         }
         else
         {
@@ -281,11 +288,11 @@ public class UI_IF_TurnTable : BaseUIForm
                         //GL_Game._instance._tableConfig.Callback = _callback;
                         // GL_Game._instance._tableConfig.ReportDraw();
                         TipsTurnGet(_rewards);
-                        
-                     GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable,(() =>
-                     {
-                         RefreshPage();
-                     }));
+
+                        GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable, (() =>
+                        {
+                            RefreshPage();
+                        }));
                         
                         Stage = EStage.None;
                         break;
@@ -359,6 +366,7 @@ public class UI_IF_TurnTable : BaseUIForm
         _description.text = String.Format(descripString, _drawTimeNow);
 
         _fill.fillAmount = (float) _drawConfig.dayProgress / _drawConfig.dayAcceptTimes;
+        _txtFill.text = $"{_drawConfig.dayProgress}/{_drawConfig.dayAcceptTimes}";
         _barText.text = string.Format("抽奖{0}次额外赠送0.5元微信零钱",_drawTimeNow);
         // _drawTimeNow =GL_PlayerData._instance.DrawConfig.drawLimit;
         
@@ -384,11 +392,7 @@ public class UI_IF_TurnTable : BaseUIForm
 
     private Rewards _rewards;
 
-    private List<int> coinCount = new List<int>()
-    {
-        2000,
-        10000,
-    };
+    private int coinCount = 1000;
 
     private List<Rewards> _rewardses = new List<Rewards>();
     /// <summary>
@@ -411,13 +415,16 @@ public class UI_IF_TurnTable : BaseUIForm
             case 13: //提现到账
                 switch (_rewards.num)
                 {
-                    case 30:
+                    case 60:
                         _itemIndex = 1;
                         break;
-                    case 50:
+                    case 30:
                         _itemIndex = 2;
                         break;
                 }
+                break;
+            case 3: //bogus
+                _itemIndex = 5;
                 break;
         }
         
@@ -462,21 +469,13 @@ public class UI_IF_TurnTable : BaseUIForm
     /// <param name="number"></param>
     private void GetCoin(int number)
     {
-        _itemIndex = 4;
-        for (int i = 0; i < coinCount.Count; i++)
+        if (number < coinCount)
         {
-            if (number<coinCount[i])
-            {
-                switch (i)
-                {
-                  case 0:
-                      _itemIndex = 0;
-                      return;
-                  case 1:
-                      _itemIndex = 5;
-                      return;
-                }
-            }
+            _itemIndex = 0;
+        }
+        else
+        {
+            _itemIndex = 4;
         }
     }
 
@@ -504,14 +503,14 @@ public class UI_IF_TurnTable : BaseUIForm
             case 13:
                 float money = rewards.num /100f;
                 EWithDrawType _eWithDrawType = EWithDrawType.Normal;
-                if (rewards.num==30)
-                {
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableLowReward);
-                }
-                else
-                {
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableHighReward);
-                }
+                // if (rewards.num==30)
+                // {
+                //     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableLowReward);
+                // }
+                // else
+                // {
+                //     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableHighReward);
+                // }
                 var obj = new object[]
                 {
                     money,
@@ -521,12 +520,7 @@ public class UI_IF_TurnTable : BaseUIForm
                 break;
         }
     }
-    private UI_IF_MainUp _uiIfMainUp;
-    private void HideMainUp()
-    {
-        _uiIfMainUp.SetActive(false);
-    }
-
+    
     /// <summary>
     /// 关闭界面
     /// </summary>
@@ -536,6 +530,7 @@ public class UI_IF_TurnTable : BaseUIForm
             return;
         
         CloseUIForm();
+        UIManager.GetInstance().GetMainUp().SetActive(true);
     }
 
 
