@@ -110,7 +110,7 @@ namespace Logic.MainUp
             ReduceMainUpFlyCount();
             
             if (_objMainUp.isActiveAndEnabled && UIManager.GetInstance().GetMain()._withdrawPageToggle.isOn || 
-                UIManager.GetInstance().GetUI(SysDefine.UI_Path_TurnTable).enabled)
+                UIManager.GetInstance().GetUI(SysDefine.UI_Path_TurnTable).isActiveAndEnabled)
             {
                 if (IsCanCloseMainUp())
                 {

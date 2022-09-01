@@ -151,7 +151,7 @@ public class UI_IF_TurnTable : BaseUIForm
                 }
                 else
                 {
-                    GetWithDraw();
+                    GetWithDraw(true);
                 }
             }
             else
@@ -285,10 +285,6 @@ public class UI_IF_TurnTable : BaseUIForm
                         break;
                     case EStage.Stage4:
                         TipsTurnGet(_rewards);
-                        if (_drawConfig.dayProgress == 7)
-                        {
-                            GetWithDraw();
-                        }
                         GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable, (() =>
                         {
                             RefreshPage();
@@ -365,10 +361,12 @@ public class UI_IF_TurnTable : BaseUIForm
         
         
         _description.text = String.Format(descripString, _drawTimeNow);
-
+        _drawConfig.dayProgress = _drawConfig.dayProgress > _drawConfig.dayAcceptTimes
+            ? _drawConfig.dayAcceptTimes
+            : _drawConfig.dayProgress;
         _fill.fillAmount = (float) _drawConfig.dayProgress / _drawConfig.dayAcceptTimes;
         _txtFill.text = $"{_drawConfig.dayProgress}/{_drawConfig.dayAcceptTimes}";
-        _barText.text = string.Format("抽奖{0}次额外赠送0.5元微信零钱",_drawTimeNow);
+        _barText.text = string.Format("再抽奖{0}次必得大量现金",_drawTimeNow);
         // _drawTimeNow =GL_PlayerData._instance.DrawConfig.drawLimit;
         
         if (_drawConfig.dayProgress==0)
@@ -493,29 +491,27 @@ public class UI_IF_TurnTable : BaseUIForm
             case 3:
                 GL_RewardLogic._instance.GetReward(_rewardses,true);
                 break;
+            case 13:
+                float money = rewards.num /100f;
+                EWithDrawType _eWithDrawType = EWithDrawType.Normal;
+                if (rewards.num == 30)
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableLowReward);
+                }
+                else
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableHighReward);
+                }
+                var obj = new object[]
+                {
+                    money,
+                    _eWithDrawType
+                };
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
+                break;
         }
     }
 
-    private void WithdrawTip(Rewards rewards)
-    {
-        float money = rewards.num /100f;
-        EWithDrawType _eWithDrawType = EWithDrawType.Normal;
-        if (rewards.num == 30)
-        {
-            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableLowReward);
-        }
-        else
-        {
-            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableHighReward);
-        }
-        var obj = new object[]
-        {
-            money,
-            _eWithDrawType
-        };
-        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
-    }
-    
     /// <summary>
     /// 关闭界面
     /// </summary>
@@ -531,35 +527,44 @@ public class UI_IF_TurnTable : BaseUIForm
     /// <summary>
     /// 0.5元提现
     /// </summary>
-    private void GetWithDraw()
+    private void GetWithDraw(bool isPlayAd)
     {
-        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawTurn, go =>
+        if (isPlayAd)
         {
-            if (go)
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawTurn, go =>
             {
-                GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Turntable, 2, (accept =>
+                if (go)
                 {
-                    if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes)
-                    {
-                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableTwentyTime);
-                    }
-                    else if (_drawConfig.dayProgress == 7)
-                    {
-                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableSevenTime);
-                    }
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableGetFinal);
-                    WithdrawTip(accept.rewards[0]);
-                }));
-            }
-            else
-            {
-                UI_HintMessage._.ShowMessage("完整观看视频完成提现！");
-            }
-        }, GL_ConstData.SceneID_Turn);
+                    CB_Withdraw();
+                }
+                else
+                {
+                    UI_HintMessage._.ShowMessage("完整观看视频完成提现！");
+                }
+            }, GL_ConstData.SceneID_Turn);
+        }
+        else
+        {
+            CB_Withdraw();
+        }
     }
 
-
-
+    private void CB_Withdraw()
+    {
+        GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Turntable, 2, (accept =>
+        {
+            if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes)
+            {
+                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableTwentyTime);
+            }
+            else if (_drawConfig.dayProgress == 7)
+            {
+                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableSevenTime);
+            }
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableGetFinal);
+            TipsTurnGet(accept.rewards[0]);
+        }));
+    }
 
     #endregion
 }
