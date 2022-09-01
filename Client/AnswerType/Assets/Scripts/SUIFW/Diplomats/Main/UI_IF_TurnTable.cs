@@ -124,10 +124,6 @@ public class UI_IF_TurnTable : BaseUIForm
 
     public  void InitTurn()
     {
-        // this.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
-        // this.CurrentUIType.UIForms_Type = UIFormType.PopUp;
-        // this.CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Dark;
-
         Transform _transform = transform;
 
         _turnTable = UnityHelper.FindTheChildNode(_transform.gameObject, "TurnTable");
@@ -171,7 +167,6 @@ public class UI_IF_TurnTable : BaseUIForm
 
         _state = State.Get;
         _turn = new Timer(null,true);
-        // GetRotate();
     }
 
     public  void RefreshPage()
@@ -179,8 +174,6 @@ public class UI_IF_TurnTable : BaseUIForm
         _drawConfig = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Turntable);
         GetRealCount();
         ChangeTurn();
-        
-        // _isPlayVideo = false;
     }
 
    
@@ -232,7 +225,6 @@ public class UI_IF_TurnTable : BaseUIForm
 
     public void CB_AD_Turn(bool isSuccess)
     {
-        // _isPlayVideo = isSuccess;
         if(isSuccess)
         {
             //假值用于界面显示
@@ -285,10 +277,8 @@ public class UI_IF_TurnTable : BaseUIForm
                         
                         break;
                     case EStage.Stage4:
-                        //GL_Game._instance._tableConfig.Callback = _callback;
-                        // GL_Game._instance._tableConfig.ReportDraw();
                         TipsTurnGet(_rewards);
-
+                        GetWithDraw();
                         GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable, (() =>
                         {
                             RefreshPage();
@@ -306,6 +296,7 @@ public class UI_IF_TurnTable : BaseUIForm
 
     private void StartRotate()
     {
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableStart);
         GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Turntable, 1, CB_Reward);
     }
 
@@ -487,38 +478,32 @@ public class UI_IF_TurnTable : BaseUIForm
         switch (rewards.type)
         {
             case 1:
-                // GL_PlayerData._instance.Coin += rewards.num;
-                // Fly_Manager._instance.MainUpFly(EFlyItemType.Coin, Vector3.zero,true);
-                // UI_HintMessage._.ShowMessage($"恭喜您，领取{rewards.num}金币！");
                 GL_RewardLogic._instance.GetReward(_rewardses,true);
-                // Invoke("HideMainUp",3f);
                 break;
             case 3:
-                // GL_PlayerData._instance.Coin += rewards.num;
-                // Fly_Manager._instance.MainUpFly(EFlyItemType.Bogus, Vector3.zero,true);
-                // UI_HintMessage._.ShowMessage($"恭喜您，领取{(rewards.num/100f).ToString("0.00")}元红包！");
                 GL_RewardLogic._instance.GetReward(_rewardses,true);
-                // Invoke("HideMainUp",3f);
-                break;
-            case 13:
-                float money = rewards.num /100f;
-                EWithDrawType _eWithDrawType = EWithDrawType.Normal;
-                // if (rewards.num==30)
-                // {
-                //     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableLowReward);
-                // }
-                // else
-                // {
-                //     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableHighReward);
-                // }
-                var obj = new object[]
-                {
-                    money,
-                    _eWithDrawType
-                };
-                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
                 break;
         }
+    }
+
+    private void WithdrawTip(Rewards rewards)
+    {
+        float money = rewards.num /100f;
+        EWithDrawType _eWithDrawType = EWithDrawType.Normal;
+        if (rewards.num == 30)
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableLowReward);
+        }
+        else
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableHighReward);
+        }
+        var obj = new object[]
+        {
+            money,
+            _eWithDrawType
+        };
+        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
     }
     
     /// <summary>
@@ -533,13 +518,12 @@ public class UI_IF_TurnTable : BaseUIForm
         UIManager.GetInstance().GetMainUp().SetActive(true);
     }
 
-
     /// <summary>
     /// 0.5元提现
     /// </summary>
     private void GetWithDraw()
     {
-        if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes)
+        if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes || _drawConfig.dayProgress == 7)
         {
             GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawTurn, go =>
             {
@@ -547,23 +531,28 @@ public class UI_IF_TurnTable : BaseUIForm
                 {
                     GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Turntable, 2, (accept =>
                     {
+                        if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes)
+                        {
+                            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableTwentyTime);
+                        }
+                        else if (_drawConfig.dayProgress == 7)
+                        {
+                            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableSevenTime);
+                        }
                         GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableGetFinal);
-                        TipsTurnGet(accept.rewards[0]);
-                    } ));
+                        WithdrawTip(accept.rewards[0]);
+                    }));
                 }
                 else
                 {
                     UI_HintMessage._.ShowMessage("完整观看视频完成提现！");
                 }
-            },GL_ConstData.SceneID_Turn);
-            
-          
+            }, GL_ConstData.SceneID_Turn);
         }
         else
         {
             UI_HintMessage._.ShowMessage("当前抽奖进度不足！");
         }
-       
     }
 
 

@@ -144,15 +144,28 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
     {
         if((EADType)sj.adType == EADType.Reward)
         {
-          
             Net_ViewAD ad = new Net_ViewAD();
             ad.adid = sj.adSite;
+            switch (sj.adSite)
+            {
+                case GL_AD_Interface.AD_Reward_MoreCoinChance:
+                    ad.operatorType = 4;
+                    break;
+                case GL_AD_Interface.AD_Reward_MoreRedChance:
+                    ad.operatorType = 3;
+                    break;
+                default: 
+                    ad.operatorType = 1;
+                    break;
+            }
+            
             GL_ServerCommunication._instance.Send(Cmd.WatchAd, JsonUtility.ToJson(ad));
             //刷新财神气泡
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.MoneyPool);
 
             GL_PlayerData._instance.SystemConfig.viewAds += 1;
         }
+        
         
         if(_adCallbackDic.ContainsKey(sj.adSite))
         {

@@ -242,6 +242,12 @@ public enum EAnalyticsType
     /// 完成抽奖提现
     /// </summary>
     TurnTableGetFinal,
+    /// <summary>/// 开始抽奖 /// </summary>
+    TurnTableStart,
+    /// <summary>///领七次现金/// </summary>
+    TurnTableSevenTime,
+    /// <summary>///领二十次现金/// </summary>
+    TurnTableTwentyTime,
     
     /// <summary>/// 金币提现解锁/// </summary>
     CoinDailySuccess,
@@ -354,7 +360,7 @@ public static class AnalyticsEvents
         
         {EAnalyticsType.GrowMoneyPlan,"jiasuanjian_01"},
         {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
-        {EAnalyticsType.GrowMoneyPlanFinish,"lijihuoqu_01"},
+        {EAnalyticsType.GrowMoneyPlanFinish,"txsp_001"},
         
         
         {EAnalyticsType.TurnTableIcon,"choujiang_01"},
@@ -362,6 +368,9 @@ public static class AnalyticsEvents
         {EAnalyticsType.TurnTableLowReward,"choujiang_03"},
         {EAnalyticsType.TurnTableHighReward,"choujiang_04"},
         {EAnalyticsType.TurnTableGetFinal,"choujiang_05"},
+        {EAnalyticsType.TurnTableStart,"kscj_001"},
+        {EAnalyticsType.TurnTableSevenTime,"kscj_002"},
+        {EAnalyticsType.TurnTableTwentyTime,"kscj_003"},
         
         {EAnalyticsType.CoinDailySuccess,"tixian_0.3_chenggong"}, 
     };

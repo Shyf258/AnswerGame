@@ -128,7 +128,13 @@ public class UI_IF_MainUp : BaseUIForm
                     }
                 }
             }
-                  
+
+            //关闭转盘
+            var turnTable = UIManager.GetInstance().GetUI(SysDefine.UI_Path_TurnTable);
+            if (turnTable.isActiveAndEnabled)
+            {
+                UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_TurnTable);
+            }
         }
     }
 
