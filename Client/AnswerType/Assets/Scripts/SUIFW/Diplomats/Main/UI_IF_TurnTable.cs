@@ -145,7 +145,14 @@ public class UI_IF_TurnTable : BaseUIForm
         {
             if (_drawConfig.stage == 1)
             {
-                GetWithDraw();
+                if (_drawConfig.dayProgress < _drawConfig.dayAcceptTimes)
+                {
+                    UI_HintMessage._.ShowMessage("当前抽奖进度不足！");
+                }
+                else
+                {
+                    GetWithDraw();
+                }
             }
             else
             {
@@ -278,7 +285,10 @@ public class UI_IF_TurnTable : BaseUIForm
                         break;
                     case EStage.Stage4:
                         TipsTurnGet(_rewards);
-                        GetWithDraw();
+                        if (_drawConfig.dayProgress == 7)
+                        {
+                            GetWithDraw();
+                        }
                         GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable, (() =>
                         {
                             RefreshPage();
@@ -523,36 +533,29 @@ public class UI_IF_TurnTable : BaseUIForm
     /// </summary>
     private void GetWithDraw()
     {
-        if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes || _drawConfig.dayProgress == 7)
+        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawTurn, go =>
         {
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawTurn, go =>
+            if (go)
             {
-                if (go)
+                GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Turntable, 2, (accept =>
                 {
-                    GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Turntable, 2, (accept =>
+                    if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes)
                     {
-                        if (_drawConfig.dayProgress >= _drawConfig.dayAcceptTimes)
-                        {
-                            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableTwentyTime);
-                        }
-                        else if (_drawConfig.dayProgress == 7)
-                        {
-                            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableSevenTime);
-                        }
-                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableGetFinal);
-                        WithdrawTip(accept.rewards[0]);
-                    }));
-                }
-                else
-                {
-                    UI_HintMessage._.ShowMessage("完整观看视频完成提现！");
-                }
-            }, GL_ConstData.SceneID_Turn);
-        }
-        else
-        {
-            UI_HintMessage._.ShowMessage("当前抽奖进度不足！");
-        }
+                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableTwentyTime);
+                    }
+                    else if (_drawConfig.dayProgress == 7)
+                    {
+                        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableSevenTime);
+                    }
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.TurnTableGetFinal);
+                    WithdrawTip(accept.rewards[0]);
+                }));
+            }
+            else
+            {
+                UI_HintMessage._.ShowMessage("完整观看视频完成提现！");
+            }
+        }, GL_ConstData.SceneID_Turn);
     }
 
 
