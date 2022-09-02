@@ -179,6 +179,22 @@ public class Net_CB_SystemConfig
 }
 #endregion
 
+#region 云控配置
+
+// public class Net_Appcontrol : Net_RequesetCommon
+// {
+//
+// }
+
+public class AppControl
+{
+    /// <summary>
+    /// 是否审核员 1.是 2.否
+    /// </summary>
+    public int isNotice = 1;
+}
+
+#endregion
 
 #region 提现
 

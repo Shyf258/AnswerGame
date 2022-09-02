@@ -381,6 +381,35 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
+    #region 云控配置
+
+    private AppControl _appControlConfig = new AppControl();
+
+    public AppControl AppControlConfig
+    {
+        get => _appControlConfig;
+        set => _appControlConfig = value;
+    }
+
+    private Action _actionAppControl;
+    public void GetAppControl(Action action = null)
+    {
+        _actionAppControl = action;
+        Net_RequesetCommon com = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.AppControl, JsonUtility.ToJson(com), CB_AppControl);
+    }
+
+    private void CB_AppControl(string json)
+    {
+        AppControl msg  = JsonUtility.FromJson<AppControl>(json);
+        if (msg == null)
+            return;
+        _actionAppControl?.Invoke();
+        _actionAppControl = null;
+    }
+    
+    #endregion
+    
     #region 微信
 
     /// <summary>

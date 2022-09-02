@@ -50,29 +50,39 @@ public class GL_SceneSwitch
     {
         GL_Game._instance.GameState = EGameState.Loading;
         GL_SDK._instance.HideSplash();
-        
-        _gameScene = new GL_Scene_GameScene();
+        string param = GL_SDK._instance.GetCommonInfo();
+       GL_Game._instance._netCommonInfo = JsonUtility.FromJson<Net_RequesetCommon>(param);
+       
+       DDebug.LogError("***** 当前获得参数：" + param);
+       
+        Action action = () =>
+        {
+            _gameScene = new GL_Scene_GameScene();
 
-        int isAgreeGDPR = GL_PlayerPrefs.GetInt(EPrefsKey.IsAgreeGDPR);
-        if(AppSetting.BuildTime > 0)
-        {
-            double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
-            if (time >= AppSetting.BuildHour * 60 * 60)
+            int isAgreeGDPR = GL_PlayerPrefs.GetInt(EPrefsKey.IsAgreeGDPR);
+            if (AppSetting.BuildTime > 0)
             {
-                GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
-                isAgreeGDPR = 1;
+                double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
+                if (time >= AppSetting.BuildHour * 60 * 60)
+                {
+                    GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
+                    isAgreeGDPR = 1;
+                }
             }
-        }
-        //1.隐私协议
-        if (isAgreeGDPR == 0)
-        {
-            Status = EStatus.GDPR;
-            
-        }
-        else
-        {
-            Status = EStatus.WaitCommon;
-        }
+
+            //1.隐私协议
+            if (isAgreeGDPR == 0)
+            {
+                Status = EStatus.GDPR;
+
+            }
+            else
+            {
+                Status = EStatus.WaitCommon;
+            }
+        };
+        
+        GL_PlayerData._instance.GetAppControl( action);
     }
 
     #region GDPR阶段
@@ -374,13 +384,13 @@ public class GL_SceneSwitch
         }
         else
         {
-            // if (!GL_PlayerData._instance.IsLoginWeChat())
-            // {
-            //     //b包,  没有登陆时, 等待微信登陆
-            //     UI_Diplomats._instance.LoadingShowSlider(false, true, "微信登录");
-            //     Status = EStatus.LoginWeChat;
-            //     return;
-            // }
+            if (!GL_PlayerData._instance.IsLoginWeChat())
+            {
+                //b包,  没有登陆时, 等待微信登陆
+                UI_Diplomats._instance.LoadingShowSlider(false, true, "微信登录");
+                Status = EStatus.LoginWeChat;
+                return;
+            }
         }
 
         //有微信信息的, 直接进入游戏
