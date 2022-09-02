@@ -215,7 +215,6 @@ public class GL_SceneSwitch
                 if ((GL_PlayerData._instance.AppConfig != null && GL_PlayerData._instance.AppConfig.isNotice == 1)
                 || !GL_PlayerData._instance.IsLoginWeChat())
                 {
-                    
                     OnClickWeChat();
                 }
                 else

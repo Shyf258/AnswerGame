@@ -392,9 +392,15 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     }
 
     private Action _actionAppControl;
+
     public void GetAppControl(Action action = null)
     {
         _actionAppControl = action;
+        MethodExeTool.Loop(GetAppControlConfig,5f,-1);
+    }
+
+    public void GetAppControlConfig()
+    {
         Net_RequesetCommon com = new Net_RequesetCommon();
         GL_ServerCommunication._instance.Send(Cmd.AppControl, JsonUtility.ToJson(com), CB_AppControl);
     }
@@ -404,6 +410,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         AppControl msg  = JsonUtility.FromJson<AppControl>(json);
         if (msg == null)
             return;
+        MethodExeTool.CancelInvoke(GetAppControlConfig);
         AppControlConfig = msg;
         _actionAppControl?.Invoke();
         _actionAppControl = null;
