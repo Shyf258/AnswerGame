@@ -681,5 +681,12 @@
     "Method": "POST",
     "URL": 2,
     "JointURL": "/play/gamecore/accept"
+  },
+  "90101": {
+    "ID": 90101,
+    "Name": "云控配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/app/pc"
   }
 }

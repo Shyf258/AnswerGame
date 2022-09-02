@@ -479,13 +479,10 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
     }
 
 
-    public void onSendAuditConfigReceiver(string param)
-    {
-        AppControl sj = JsonUtility.FromJson<AppControl>(param);
-        GL_PlayerData._instance.AppControl = sj;
-    }
+ 
     
-#endregion
+
+    #endregion
 
 #region 广告回调
     //一次广告请求，加载到广告时调⽤
@@ -897,13 +894,7 @@ public class SJson
     public string reqAdId;
 }
 
-public class AppControl
-{
-    /// <summary>
-    /// 是否审核员 1.是 2.否
-    /// </summary>
-    public int isNotice = 1;
-}
+
 
 public class SSessId
 {
