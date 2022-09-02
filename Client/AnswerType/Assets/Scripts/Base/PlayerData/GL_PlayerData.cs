@@ -404,6 +404,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         AppControl msg  = JsonUtility.FromJson<AppControl>(json);
         if (msg == null)
             return;
+        AppControlConfig = msg;
         _actionAppControl?.Invoke();
         _actionAppControl = null;
     }
