@@ -478,6 +478,13 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
         return result;
     }
 
+
+    public void onSendAuditConfigReceiver(string param)
+    {
+        AppControl sj = JsonUtility.FromJson<AppControl>(param);
+        GL_PlayerData._instance.AppControl = sj;
+    }
+    
 #endregion
 
 #region 广告回调
@@ -888,6 +895,14 @@ public class SJson
     public int adType;  //1激励 2插屏 3原生 4banner 5开屏
     public string adEcpm;
     public string reqAdId;
+}
+
+public class AppControl
+{
+    /// <summary>
+    /// 是否审核员 1.是 2.否
+    /// </summary>
+    public int isNotice = 1;
 }
 
 public class SSessId

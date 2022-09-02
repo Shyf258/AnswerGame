@@ -54,15 +54,28 @@ public class GL_SceneSwitch
         _gameScene = new GL_Scene_GameScene();
 
         int isAgreeGDPR = GL_PlayerPrefs.GetInt(EPrefsKey.IsAgreeGDPR);
-        if(AppSetting.BuildTime > 0)
+        // if(AppSetting.BuildTime > 0)
+        // {
+        //     double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
+        //     if (time >= AppSetting.BuildHour * 60 * 60)
+        //     {
+        //         GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
+        //         isAgreeGDPR = 1;
+        //     }
+        // }
+
+        try
         {
-            double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
-            if (time >= AppSetting.BuildHour * 60 * 60)
+            if (GL_PlayerData._instance.AppControl.isNotice == 2)
             {
-                GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
                 isAgreeGDPR = 1;
             }
         }
+        catch 
+        {
+  
+        }
+        
         //1.隐私协议
         if (isAgreeGDPR == 0)
         {

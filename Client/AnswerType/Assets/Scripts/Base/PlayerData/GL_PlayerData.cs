@@ -381,6 +381,18 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
+    #region 云控配置
+
+    private AppControl _appControl = new AppControl();
+
+    public AppControl AppControl
+    {
+        get => _appControl;
+        set => _appControl = value;
+    }
+
+    #endregion
+    
     #region 微信
 
     /// <summary>
