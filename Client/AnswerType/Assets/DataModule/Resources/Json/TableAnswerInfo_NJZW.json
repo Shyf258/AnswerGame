@@ -664,7 +664,10 @@
     "TitleText": "你也跟着笑了吗？",
     "Select1": "是的",
     "Select2": "我才没有",
-    "CorrectAnswer": null,
+    "CorrectAnswer": [
+      1,
+      2
+    ],
     "Picture": "SP_067"
   },
   "68": {
