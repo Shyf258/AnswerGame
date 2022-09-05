@@ -119,4 +119,7 @@ public enum Cmd
     GamecoreConfig = 90001,
     /// <summary> 通用玩法领取 </summary>
     GamecoreAccept = 90002,
+    
+    /// <summary>/// 云控配置/// </summary>
+    AppControl = 90101,
 }
