@@ -2,8 +2,8 @@
   "1": {
     "ID": 1,
     "ProductName": "人生大赢家",
-    "ProductEnName": "LifeWinnerGold",
     "PackageName": "com.ciyunjinchan.rsdyjzj",
+    "ProductEnName": "LifeWinnerGold",
     "WeChatAppID": "wx082f10652f21b01f",
     "IconPath": "icon_rsdyjzj",
     "LoadingImage": "LoadingIcon_02",
@@ -12,8 +12,9 @@
   "2": {
     "ID": 2,
     "ProductName": "冰雪大赢家",
-    "ProductEnName": "LifeWinnerGold",
     "PackageName": "com.ciyunjinchan.bxdyjx",
+    "ProductEnName": "LifeWinnerGold",
+    "WeChatAppID": "wx9016768c8f632e0c",
     "IconPath": "icon_bxdyjx",
     "LoadingImage": "LoadingIcon_03",
     "TitleImage": "LoadingTitle_03"
@@ -21,8 +22,9 @@
   "3": {
     "ID": 3,
     "ProductName": "中药小郎中",
-    "ProductEnName": "LifeWinnerGold",
     "PackageName": "com.ciyunjinchan.zyxlz",
+    "ProductEnName": "LifeWinnerGold",
+    "WeChatAppID": "wx2e7fa6de2bf2ab4d",
     "IconPath": "icon_zyxlz",
     "LoadingImage": "LoadingIcon_04",
     "TitleImage": "LoadingTitle_04"
@@ -30,7 +32,15 @@
   "4": {
     "ID": 4,
     "ProductName": "成语赚多多",
+    "PackageName": "com.ciyunjinchan.cyzdda",
     "ProductEnName": "idiomsGame",
-    "PackageName": "com.ciyunjinchan.cyzdda"
+    "WeChatAppID": "wx4bd13a08b94ab598",
+    "IconPath": "icon_cyzdd"
+  },
+  "5": {
+    "ID": 5,
+    "ProductName": "闹剧之王",
+    "PackageName": "com.ciyunjinchan.njzw",
+    "IconPath": "icon_njzw"
   }
 }
