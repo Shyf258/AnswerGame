@@ -75,6 +75,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshGoldCd();
             _scrollRect.verticalNormalizedPosition = 1;
         }
+        
         private void TriggerGuide()
         {
             //GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIWithdraw);
@@ -83,7 +84,6 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         {
             _scrollRect.verticalNormalizedPosition = 0.5f;
         }
-
         private void RefreshRed()
         {
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.CashWithDraw, () =>
@@ -132,10 +132,6 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
                 Init(EnumMyWithdraw.Gold);
-
-                //因为需要排序, 所以延迟一会检测
-                if(GL_PlayerData._instance.IsEnoughCoin())
-                    Invoke(nameof(TriggerGuide), 0.05f);
             });
         }
         
@@ -446,8 +442,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void CreateRed()
         {
-            var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.CashWithDraw);
-            var list = config.couponWithDraws;
+            var list = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.CashWithDraw).couponWithDraws;
             if (list.Count <= 0)
                 return;
             for (int i = 0; i < list.Count; i++)
@@ -468,18 +463,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 MyWithdrawData data = new MyWithdrawData();
                 data.EnumMyWithdraw = EnumMyWithdraw.Red;
                 data.Index = i;
-                data.Action = () =>
-                {
-                    _curRedWithdrawData = data;
-                    SetRedSelectState();
-                };
+                data.Action = () => { _curRedWithdrawData = data; };
                 data.WithDraw = list[i];
                 data.IsCanWithdraw = IsRedCanWithdraw(data, false);
                 if (data.Index == 0)
-                {
                     _curRedWithdrawData = data;
-                    SetRedSelectState();
-                }
                 item.Init(this,data);
             }
         }
@@ -489,8 +477,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void CreateGold()
         {
-            var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw);
-            var list = config.couponWithDraws;
+            var list = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw).couponWithDraws;
             if (list.Count <= 0)
                 return;
             for (int i = 0; i < list.Count; i++)
@@ -511,18 +498,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 MyWithdrawData data = new MyWithdrawData();
                 data.EnumMyWithdraw = EnumMyWithdraw.Gold;
                 data.Index = i;
-                data.Action = () =>
-                {
-                    _curGoldWithdrawData = data;
-                    SetGoldSelectState();
-                };
+                data.Action = () => { _curGoldWithdrawData = data; };
                 data.WithDraw = list[i];
-                data.IsCanWithdraw = IsGoldCanWithdraw(data, false);
+                data.IsCanWithdraw = IsGoldCanWithdraw(data.Index,data.WithDraw, false);
                 if (data.Index == 0)
-                {
                     _curGoldWithdrawData = data;
-                    SetGoldSelectState();
-                }
                 item.Init(this,data);
             }
         }
@@ -591,7 +571,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
         }
 
-        public bool IsGoldCanWithdraw(MyWithdrawData withDraw,bool isHint)
+        public bool IsGoldCanWithdraw(int index,Net_CB_WithDraw withDraw,bool isHint)
         {
             //当前不需要提现上一个额度
             // if (IsNeedWithdrawToPre(index))
@@ -602,27 +582,27 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             // }
 
             //提现次数
-            if (withDraw.WithDraw.withDrawLimit == 0)
+            if (withDraw.withDrawLimit == 0)
             {
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[7]);
                 return false;
             }
             
             //0.金币
-            if (GL_PlayerData._instance.Coin < withDraw.WithDraw.coupon)
+            if (GL_PlayerData._instance.Coin < withDraw.coupon)
             {
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[3]);
                 return false;
             }
 
             //1.检测关卡等级
-            if (GL_PlayerData._instance.CurLevel - 1 < withDraw.WithDraw.level)
+            if (GL_PlayerData._instance.CurLevel - 1 < withDraw.level)
             {
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[4]);
                 return false;
             }
             //2.广告数量不满足时
-            int num = withDraw.WithDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
+            int num = withDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
             num = 0;
             if (num > 0)
             {
@@ -650,7 +630,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     break;
             }
             
-            if (!IsGoldCanWithdraw(_curGoldWithdrawData, true))
+            if (!IsGoldCanWithdraw(_curGoldWithdrawData.Index, _curGoldWithdrawData.WithDraw, true))
             {
                 return;
             }
