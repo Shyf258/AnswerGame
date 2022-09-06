@@ -207,6 +207,50 @@ public enum EAnalyticsType
     MoneyPoolVideoFinish,
     /// <summary>/// 财神视频播放成功/// </summary>
     MoneyPoolVideoFail,
+    
+    
+    /// <summary>
+    /// 加速提现
+    /// </summary>
+    GrowMoneyPlan,
+    /// <summary>
+    /// 加速提现点击
+    /// </summary>
+    GrowMoneyPlanClick,
+    /// <summary>
+    /// 加速提现完成观看视频
+    /// </summary>
+    GrowMoneyPlanFinish,
+    
+    /// <summary>
+    /// 转盘图标
+    /// </summary>
+    TurnTableIcon,
+    /// <summary>
+    /// 领奖点击
+    /// </summary>
+    TurnTableGet,
+    /// <summary>
+    /// 0.3元抽奖
+    /// </summary>
+    TurnTableLowReward,
+    /// <summary>
+    /// 0.5元抽奖
+    /// </summary>
+    TurnTableHighReward,
+    /// <summary>
+    /// 完成抽奖提现
+    /// </summary>
+    TurnTableGetFinal,
+    /// <summary>/// 开始抽奖 /// </summary>
+    TurnTableStart,
+    /// <summary>///领七次现金/// </summary>
+    TurnTableSevenTime,
+    /// <summary>///领二十次现金/// </summary>
+    TurnTableTwentyTime,
+    
+    /// <summary>/// 金币提现解锁/// </summary>
+    CoinDailySuccess,
 }
 
 
@@ -313,5 +357,21 @@ public static class AnalyticsEvents
         {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
+        
+        {EAnalyticsType.GrowMoneyPlan,"jiasuanjian_01"},
+        {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
+        {EAnalyticsType.GrowMoneyPlanFinish,"txsp_001"},
+        
+        
+        {EAnalyticsType.TurnTableIcon,"choujiang_01"},
+        {EAnalyticsType.TurnTableGet,"choujiang_02"},
+        {EAnalyticsType.TurnTableLowReward,"choujiang_03"},
+        {EAnalyticsType.TurnTableHighReward,"choujiang_04"},
+        {EAnalyticsType.TurnTableGetFinal,"choujiang_05"},
+        {EAnalyticsType.TurnTableStart,"kscj_001"},
+        {EAnalyticsType.TurnTableSevenTime,"kscj_002"},
+        {EAnalyticsType.TurnTableTwentyTime,"kscj_003"},
+        
+        {EAnalyticsType.CoinDailySuccess,"tixian_0.3_chenggong"}, 
     };
 }

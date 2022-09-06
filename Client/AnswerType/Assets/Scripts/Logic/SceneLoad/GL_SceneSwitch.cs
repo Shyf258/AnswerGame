@@ -389,13 +389,13 @@ public class GL_SceneSwitch
         }
         else
         {
-            // if (!GL_PlayerData._instance.IsLoginWeChat())
-            // {
-            //     //b包,  没有登陆时, 等待微信登陆
-            //     UI_Diplomats._instance.LoadingShowSlider(false, true, "微信登录");
-            //     Status = EStatus.LoginWeChat;
-            //     return;
-            // }
+            if (!GL_PlayerData._instance.IsLoginWeChat())
+            {
+                //b包,  没有登陆时, 等待微信登陆
+                UI_Diplomats._instance.LoadingShowSlider(false, true, "微信登录");
+                Status = EStatus.LoginWeChat;
+                return;
+            }
         }
 
         //有微信信息的, 直接进入游戏

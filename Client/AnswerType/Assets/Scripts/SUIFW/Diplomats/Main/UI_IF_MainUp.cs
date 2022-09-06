@@ -96,6 +96,13 @@ public class UI_IF_MainUp : BaseUIForm
 
     private void ShowTips()
     {
+        //转盘不跳提现
+        var turnTable = UIManager.GetInstance().GetUI(SysDefine.UI_Path_TurnTable);
+        if (turnTable.isActiveAndEnabled)
+        {
+            return;
+        }
+        
         if (GL_PlayerData._instance.IsEnoughCoin() )
         {
             if (GL_CoreData._instance.IsEcpm)
@@ -128,7 +135,6 @@ public class UI_IF_MainUp : BaseUIForm
                     }
                 }
             }
-                  
         }
     }
 

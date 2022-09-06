@@ -142,6 +142,14 @@ public partial class UI_IF_Main : BaseUIForm
          {
              UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
          }));
+         
+         RigisterButtonObjectEvent("TurnTable",(go =>
+         {
+             GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable,(() =>
+             {
+                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_TurnTable);
+             }));
+         }));
 
         #endregion
 

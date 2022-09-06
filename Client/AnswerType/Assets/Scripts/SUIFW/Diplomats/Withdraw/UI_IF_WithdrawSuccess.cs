@@ -19,6 +19,10 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         _moneyText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "MoneyText");
 
         RigisterButtonObjectEvent("BtnSure", (go => { CloseUIForm(); }));
+        RigisterButtonObjectEvent("ExitPage", go =>
+        {
+            CloseUIForm();
+        });
     }
 
     public override void InitData(object data)
