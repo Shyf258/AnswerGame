@@ -210,7 +210,7 @@ public class UI_IF_NewSignInPage : BaseUIForm
         {
             _clockinDay -= 1;
         }
-        _date.text = _clockinDay.ToString(); //显示已打卡天数
+        _date.text = $"您已连续打卡<color=#ff0000><size=72>{_clockinDay.ToString()}</size></color>天"; //显示已打卡天数
         // if (  _signPlanList[_nowSignId]<=
         //       GL_PlayerData._instance.SigNetCbClockinConfig.day
         //       &&

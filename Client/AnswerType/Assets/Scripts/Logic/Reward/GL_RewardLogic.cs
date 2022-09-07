@@ -5,7 +5,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DataModule;
+using Logic.Fly;
 using SUIFW;
+using SUIFW.Diplomats.Common;
 using UnityEngine;
 
 public class GL_RewardLogic : Singleton<GL_RewardLogic>
@@ -74,6 +76,33 @@ public class GL_RewardLogic : Singleton<GL_RewardLogic>
         }
 
         return result;
+    }
+    
+    //通用奖励获取
+    public void GetReward(List<Rewards> rewardsList,bool isActiveMainUp)
+    {
+        foreach (var reward in rewardsList)
+        {
+            switch ((EItemType)reward.type)
+            {
+                case EItemType.Coin:
+                    if (reward.num == 0)
+                        break;
+                    SRewardData rewardData1 = new SRewardData(EItemType.Coin);
+                    RewardSettlement(rewardData1, reward.num);
+                    Fly_Manager._instance.MainUpFly(EFlyItemType.Coin, Vector3.zero,isActiveMainUp);
+                    UI_HintMessage._.ShowMessage($"恭喜您，领取{reward.num}金币！");
+                    break;
+                case EItemType.Bogus:
+                    if (reward.num == 0)
+                        break;
+                    SRewardData rewardData2 = new SRewardData(EItemType.Bogus);
+                    RewardSettlement(rewardData2, reward.num);
+                    Fly_Manager._instance.MainUpFly(EFlyItemType.Bogus,Vector3.zero,isActiveMainUp);
+                    UI_HintMessage._.ShowMessage($"恭喜您，领取{(reward.num /100f) :0.00}元红包！");
+                    break;
+            }
+        }
     }
     
 }

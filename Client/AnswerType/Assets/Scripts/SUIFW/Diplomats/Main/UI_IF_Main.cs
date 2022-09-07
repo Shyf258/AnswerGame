@@ -166,13 +166,12 @@ public partial class UI_IF_Main : BaseUIForm
             // answerSelect.SetActive(go);
             if (go)
             {
-              
+                _pause.SetActive(false);
                 _answerToggleText.text= $"<color=#ffffff>{"关卡"}</color>";
                 // answerPage.SetAsLastSibling();
                 ShowNow = _answerPageShow;
                 UIManager.GetInstance().GetMainUp().SetActive(true);
                 // UIManager.GetInstance().GetMainUp().SetGoldIngotActive(true);
-                
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_NewWithdraw);
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_Activity);
             }
@@ -396,6 +395,8 @@ public partial class UI_IF_Main : BaseUIForm
     }
     public override void onUpdate()
     {
+        // Quaternion dir = Quaternion.LookRotation(_rotate.position,_pause.transform.position);
+      
     }
 
     public override void Refresh(bool recall)

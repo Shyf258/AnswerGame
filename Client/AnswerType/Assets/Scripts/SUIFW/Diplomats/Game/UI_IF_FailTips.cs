@@ -44,8 +44,15 @@ namespace SUIFW.Diplomats.Game
             {
                 _action = action;
             }
+
+            Invoke("Close", 1f);
         }
 
+        private void Close()
+        {
+            CloseUIForm();
+        }
+        
         public override void OnHide()
         {
             base.OnHide();

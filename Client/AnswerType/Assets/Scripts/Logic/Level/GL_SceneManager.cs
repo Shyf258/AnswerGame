@@ -47,8 +47,7 @@ public class GL_SceneManager : Singleton<GL_SceneManager>
     public void CreateGame()
     {
         //_curGameMode.Init();
-        int levelIndex = GL_PlayerData._instance.CurLevel;
-        // levelIndex *= 98;
+        int levelIndex = GL_CoreData._instance.Level;
         CreateGame(levelIndex, EGameModeType.Answer);
     }
 
@@ -117,8 +116,6 @@ public class GL_SceneManager : Singleton<GL_SceneManager>
     {
         int count = DataModuleManager._instance.TableAnswerInfoData_Dictionary.Count;
         int result = level % count;
-        if (result == 0)
-            result = level;
         return result;
     }
 

@@ -104,6 +104,16 @@ public class GL_CoreData : Singleton<GL_CoreData>
         get => _reqAdid;
     }
 
+    public int Level
+    {
+        get { return _archivedData._level; }
+        set
+        {
+            _archivedData._level = value;
+            SaveData();
+        }
+    }
+    
 
     public void SetECPM(string adEcpm)
     {
@@ -422,6 +432,7 @@ public class ArchivedData_Character
     public int tipsCount = 3;
     public int _levelIndex =1 ; //当前关卡等级
 
+    public int _level = 1;
     public int _dialogTimes; //插屏累计次数
     public int _settlementRewardIndex = 1 ;  //结算界面次数累计
     public float _adECPM;   //激励视频广告 ecpm

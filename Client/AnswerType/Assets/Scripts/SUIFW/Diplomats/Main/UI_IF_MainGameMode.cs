@@ -63,8 +63,11 @@ public partial class UI_IF_Main
     #endregion
     
     private Button _volume;
+
+    public Transform _rotate;
     
     private VideoPlayer _videoPlayer;
+
     protected void InitGameMode()
     {
 
@@ -120,12 +123,13 @@ public partial class UI_IF_Main
         
         RigisterButtonObjectEvent(_volume, go =>
         {
+            
             GL_CoreData._instance.VideoVolume = !GL_CoreData._instance.VideoVolume;
             VideoVolume(GL_CoreData._instance.VideoVolume);
         });
 
         //旋转
-        
+        VideoVolume(GL_CoreData._instance.VideoVolume);
         _videoPlayer.loopPointReached += VideoFinish;
 
         Button _playBtn;
@@ -151,13 +155,14 @@ public partial class UI_IF_Main
     //刷新题目
     public void RefreshGameMode(EventParam param)
     {
+        _choiceGroup.SetActive(false);
         _pause.SetActive(false);
         // MoveBack();
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
         if (info == null)
             return;
         //刷新视频
-        _videoPlayer.url = PATH + info.Picture;
+        _videoPlayer.url = PATH + info.Picture +".mp4";
         _videoPlayer.Play();
 
         _tmText.text = info.TitleText;
@@ -168,7 +173,7 @@ public partial class UI_IF_Main
 
         // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
 
-        _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
+        // _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
     }
     private void OnClickChoice(int index)
     {
@@ -258,11 +263,13 @@ public partial class UI_IF_Main
         {
             //打开声音
              _videoPlayer.SetDirectAudioVolume(0,1);
+             _volume.transform.DORotate(new Vector3(0, 0, -36000), 400f, RotateMode.LocalAxisAdd).SetLoops(-1,LoopType.Restart);
         }
         else
         {
             //关闭声音
             _videoPlayer.SetDirectAudioVolume(0,0);
+            _volume.transform.DOPause();
         }
     }
 
@@ -270,5 +277,6 @@ public partial class UI_IF_Main
     {
         DDebug.LogError("完成播放。");
         _pause.SetActive(true);
+        _choiceGroup.SetActive(true);
     }
 }

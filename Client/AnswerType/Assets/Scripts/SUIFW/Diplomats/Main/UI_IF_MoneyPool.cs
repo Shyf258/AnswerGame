@@ -165,6 +165,7 @@ namespace SUIFW.Diplomats.Main
                 GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolPlayVideo);
                 GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawPool, (set) => 
                 {
+                    
                     if (set)
                     {
                         GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolVideoFinish);
