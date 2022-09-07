@@ -104,7 +104,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 return;
             }
 
-            var cdTime = GL_PlayerData._instance.GetVideoRedpackCD(EVideoRedpackType.WithPlayIcondrawRedpack);
+            var cdTime = GL_PlayerData._instance.GetVideoRedpackCD(EVideoRedpackType.WithdrawRedpack);
             double cur = GL_Time._instance.CalculateSeconds();
             if (cur < cdTime)
             {
