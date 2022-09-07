@@ -137,27 +137,44 @@ public class GL_GameMode_Answer : GL_GameMode
 
     private void ShowCashCoin()
     {
-        Action<int> ac1 = (int value) =>
-        {
-            //刷新关卡
-            GL_SceneManager._instance.CreateGame();
+        GL_CoreData._instance.Level++;
+        //刷新关卡
+        GL_SceneManager._instance.CreateGame();
 
           
-            _uiIfMain.MoveBack();
+        _uiIfMain.MoveBack();
 
-            //领取奖励
-            Cb_ShowCashCoin(value);
+        //领取奖励
+        Cb_ShowCashCoin(2);
 
-            //刷新里程碑
-            AutoGetSliderReward();
-
-
-            // GL_PlayerData._instance._canChangeWithDraw = true;
-            GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
-        };
-
-        Object[] objects = { (EItemType)_curRewards.type, _curRewards.num, ac1 };
-        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetReward, objects);
+        //刷新里程碑
+        AutoGetSliderReward();
+        
+        // Action<int> ac1 = (int value) =>
+        // {
+        //     GL_PlayerData._instance.CurLevel++;
+        //     GL_CoreData._instance.Level++;
+        //     //刷新关卡
+        //     GL_SceneManager._instance.CreateGame();
+        //
+        //   
+        //     _uiIfMain.MoveBack();
+        //
+        //     //领取奖励
+        //     Cb_ShowCashCoin(2);
+        //
+        //     //刷新里程碑
+        //     AutoGetSliderReward();
+        //
+        //
+        //     // GL_PlayerData._instance._canChangeWithDraw = true;
+        //     GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
+        // };
+        //
+        // ac1?.Invoke(2);
+        
+        // Object[] objects = { (EItemType)_curRewards.type, _curRewards.num, ac1 };
+        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetReward, objects);
     }
     /// <summary>
     /// 双奖励模式
@@ -165,15 +182,17 @@ public class GL_GameMode_Answer : GL_GameMode
     private void Cb_ShowCashCoin(int value)
     {
         GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.CompleteLevel.ToString() + (GL_PlayerData._instance.UserDayLevel));
-        GetRed(value);
+        GetRed(value,out int index);
         // _withdrawCallback ?.Invoke();
-        if (value == 1)
+        if (index == 1)
         {
             GetCoin();
         }
     }
-    private void GetRed(int value)
+
+    private void GetRed(int value,out int index)
     {
+       int number = 0;
         bool isPlayAD = false;
         //普通领取
         if (value != 1  && GL_PlayerData._instance.AppConfig.isPassive!=1 && GL_PlayerData._instance.CurLevel >= 5)
@@ -195,6 +214,7 @@ public class GL_GameMode_Answer : GL_GameMode
                         if (b)
                         {
                             GL_PlayerData._instance._idiomConjCoinReward++;
+                           number = 1;
                         }
                     });
                     break;
@@ -208,7 +228,7 @@ public class GL_GameMode_Answer : GL_GameMode
                 GL_PlayerData._instance._idiomConjCoinReward = 1;
             }
         }
-
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetRed);
         GL_PlayerData._instance.Bogus = GL_PlayerData._instance.Bogus + _curRewards.num;
         GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Bogus));
         //float offset = GL_PlayerData._instance.TotalBogus - GL_PlayerData._instance.Bogus_Convert;
@@ -217,12 +237,13 @@ public class GL_GameMode_Answer : GL_GameMode
 
         UI_HintMessage._.ShowMessage($"恭喜！获得{_curRewards.num / 100f}元现金。");
 
+        index = number;
     }
 
     private void GetCoin()
     {
         int level = GL_PlayerData._instance.CurLevel;
-
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetCoin);
         YS_NetLogic._instance.UpgradeDouble(level, 3, (rewards =>
         {
             switch ((EItemType)rewards.type)
@@ -387,42 +408,25 @@ public class GL_GameMode_Answer : GL_GameMode
     {
         LevelState = ELevelState.None;
         GL_AudioPlayback._instance.PlayTips(6);
-        Net_Rq_Upgrad com = new Net_Rq_Upgrad();
-        com.type = 3;
-        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
-        GL_ServerCommunication._instance.Send(Cmd.Upgrade, JsonHelper.ToJson(com), delegate(string s)
+        Action<int> ac1 = (int value) =>
         {
-            if (GL_PlayerData._instance.SystemConfig != null)
-            {
-                GL_PlayerData._instance.SystemConfig.userLevel += 1;
-                GL_PlayerData._instance.UserDayLevel += 1;
-            }
+            GL_CoreData._instance.Level++;
+            //刷新关卡
+            GL_SceneManager._instance.CreateGame();
+            _uiIfMain.MoveBack();
+            // //领取奖励
+            // Cb_ShowCashCoin(value);
 
-            Net_CB_Reward msg = JsonConvert.DeserializeObject<Net_CB_Reward>(s);
-            _curRewards = msg.rewards[0];
-            if (_curRewards == null)
-                return;
+            //刷新里程碑
+            AutoGetSliderReward();
 
+            GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
+        };
 
-            Action<int> ac1 = (int value) =>
-            {
-                //刷新关卡
-                GL_SceneManager._instance.CreateGame();
-                _uiIfMain.MoveBack();
-                //领取奖励
-                Cb_ShowCashCoin(value);
-
-                //刷新里程碑
-                AutoGetSliderReward();
-
-                GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
-            };
-
-            // Object[] objects = { ac1, _curRewards.num};
-            // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
-            Object[] objects = { ac1};
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_FailTips, objects);
-        });
+        // Object[] objects = { ac1, _curRewards.num};
+        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
+        Object[] objects = { ac1};
+        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_FailTips, objects);
     }
 
     private void Fail(string json)

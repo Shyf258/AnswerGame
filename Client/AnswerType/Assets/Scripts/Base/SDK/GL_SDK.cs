@@ -478,7 +478,11 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
         return result;
     }
 
-#endregion
+
+ 
+    
+
+    #endregion
 
 #region 广告回调
     //一次广告请求，加载到广告时调⽤
@@ -889,6 +893,8 @@ public class SJson
     public string adEcpm;
     public string reqAdId;
 }
+
+
 
 public class SSessId
 {

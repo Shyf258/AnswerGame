@@ -22,7 +22,7 @@ public enum EBuildApp
     RSDYJ = 1, //人生大赢家赚金
     BXDYJ = 2, //冰雪大赢家
     ZYXLZ = 3, //中药小郎中
-    NJZW = 4, //闹剧之王
+    NJZW = 5, //闹剧之王
 }
 
 #endregion

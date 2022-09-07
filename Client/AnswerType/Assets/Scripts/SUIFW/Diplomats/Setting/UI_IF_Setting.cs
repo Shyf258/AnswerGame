@@ -103,7 +103,7 @@ public class UI_IF_Setting : BaseUIForm
         
         _audioControl.onValueChanged.AddListener((delegate(bool set)
         {
-            SetAudio(set); 
+            SetAudio(!set); 
         }));
 
 
@@ -247,10 +247,7 @@ public class UI_IF_Setting : BaseUIForm
                 break;
         }
         
-        if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
-        {
-            _logIn.text = "退出游戏";
-        }
+       
       
         if (GL_PlayerData._instance.IsLoginWeChat())
         {
@@ -268,7 +265,10 @@ public class UI_IF_Setting : BaseUIForm
             _logIn.text = "登录微信";
             _playerId.text = "11962344";
         }
-        
+        if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
+        {
+            _logIn.text = "退出游戏";
+        }
     }
 
     private TableBuildAppData _tableBuildAppData;
@@ -394,8 +394,6 @@ public class UI_IF_Setting : BaseUIForm
 #else
             Application.Quit();
 #endif
-            
-        
         }
         //判断是否微信登陆
         if(GL_PlayerData._instance.IsLoginWeChat())
