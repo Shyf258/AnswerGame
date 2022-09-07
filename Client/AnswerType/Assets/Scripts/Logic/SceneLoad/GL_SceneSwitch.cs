@@ -110,11 +110,19 @@ public class GL_SceneSwitch
         GL_Game._instance.RefreshNetCommonInfo();
         //同意了隐私权限
         GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
-        //申请设备权限
-        if(GL_CoreData._instance._isFirstGame || GL_CoreData._instance._archivedData.checker == 2)
-            GL_SDK._instance.RequestAdPermissions(true);
-        else
+        if (GL_PlayerData._instance.AppControlConfig.isNotice == 1)
+        {
+            DDebug.LogError("审核员："+false);
             GL_SDK._instance.RequestAdPermissions(false);
+        }
+        else
+        {
+            //申请设备权限
+            if(GL_CoreData._instance._isFirstGame || GL_CoreData._instance._archivedData.checker == 2)
+                GL_SDK._instance.RequestAdPermissions(true);
+            else
+                GL_SDK._instance.RequestAdPermissions(false);
+        }
 
         //等待关键数据填充
         MethodExeTool.StartCoroutine(WaitCommonInfo());
