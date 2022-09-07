@@ -104,7 +104,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 return;
             }
 
-            var cdTime = GL_PlayerData._instance.GetVideoRedpackCD(EVideoRedpackType.WithdrawRedpack);
+            var cdTime = GL_PlayerData._instance.GetVideoRedpackCD(EVideoRedpackType.WithPlayIcondrawRedpack);
             double cur = GL_Time._instance.CalculateSeconds();
             if (cur < cdTime)
             {
@@ -769,12 +769,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void RefreshPlayer()
         {
-            GL_PlayerData._instance.GetWeChatIcon((t) =>
+            if (GL_PlayerData._instance.IsLoginWeChat())
             {
-                _playerIcon.sprite = t;
-                _txtNickName.text = GL_PlayerData._instance.WeChatName;
-                _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
-            });
+                GL_PlayerData._instance.GetWeChatIcon((t) =>
+                {
+                    _playerIcon.sprite = t;
+                    _txtNickName.text = GL_PlayerData._instance.WeChatName;
+                    _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
+                });
+            }
         }
         
         #endregion
