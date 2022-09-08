@@ -385,7 +385,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
       
         
         private MyWithdrawData _curRedWithdrawData;
-        private MyWithdrawData _curGoldWithdrawData;
+        public MyWithdrawData _curGoldWithdrawData;
         
         private Dictionary<int, UI_Btn_NewWithdrawItem> _redItems = new Dictionary<int, UI_Btn_NewWithdrawItem>();       
         private Dictionary<int, UI_Btn_NewWithdrawItem> _goldItems = new Dictionary<int, UI_Btn_NewWithdrawItem>(); 

@@ -80,13 +80,14 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 }
                 else
                 {
+                    _myWithdraw._curGoldWithdrawData = _myWithdrawData;
                     Net_WithDraw draw = new Net_WithDraw();
                     draw.withDrawId = _myWithdrawData.WithDraw.id;
                     draw.withDrawType = 7;
                     draw.type = 2;
                     GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), (s =>
                     {
-                        _myWithdraw.CB_RedWithDraw(s);
+                        _myWithdraw.CB_GoldWithDraw(s);
                     }));
                 }
             }
