@@ -110,10 +110,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _myWithdrawData = data;
             _txtMoney.text = string.Format(_moneyFormat,data.WithDraw.money * 0.01f);
             int needAd = data.WithDraw.viewAdTimes - data.ViewNum;
-            int offsetAd = data.ViewNum - data.WithDraw.viewAdTimes;
-            offsetAd = offsetAd >= 0 ? offsetAd : data.ViewNum;
             if (needAd > 0)
             {
+                int offsetAd = data.WithDraw.viewAdTimes - needAd;
+                offsetAd = offsetAd > 0 ? offsetAd : 0;
                 _txtNeedVideo.text = $"还需<color=#ff0000>{needAd}</color>次视频";
                 _sldVideo.value = (float)offsetAd / data.WithDraw.viewAdTimes;
                 _sldTextVideo.text = $"{offsetAd}/{data.WithDraw.viewAdTimes}";
