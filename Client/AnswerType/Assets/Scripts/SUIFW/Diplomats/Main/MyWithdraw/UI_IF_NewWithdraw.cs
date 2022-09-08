@@ -805,6 +805,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             GL_PlayerData._instance.Bogus -= _curRedWithdrawData.WithDraw.money;
             RefreshRed();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
+            if (!GL_CoreData._instance.AbTest)
+            {
+                RefreshGold();
+            }
         }
         
         public void CB_GoldWithDraw(string param)
