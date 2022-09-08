@@ -113,11 +113,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             int needAd = data.WithDraw.viewAdTimes - data.ViewNum;
             if (needAd > 0)
             {
-                int offsetAd = data.WithDraw.viewAdTimes - needAd;
-                offsetAd = offsetAd > 0 ? offsetAd : 0;
                 _txtNeedVideo.text = $"还需<color=#ff0000>{needAd}</color>次视频";
-                _sldVideo.value = (float)offsetAd / data.WithDraw.viewAdTimes;
-                _sldTextVideo.text = $"{offsetAd}/{data.WithDraw.viewAdTimes}";
+                _sldVideo.value = (float)data.ViewNum / data.WithDraw.viewAdTimes;
+                _sldTextVideo.text = $"{data.ViewNum}/{data.WithDraw.viewAdTimes}";
             }
             else
             {

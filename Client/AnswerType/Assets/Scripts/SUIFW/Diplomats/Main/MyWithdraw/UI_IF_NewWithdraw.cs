@@ -130,7 +130,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
         }
 
-        private void RefreshGold()
+        public void RefreshGold()
         {
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
@@ -566,6 +566,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void CreateGoldB()
         {
+            DDebug.Log("s刷新");
             var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw);
             _txtGoldVideo.text = config.viewNum + "次";
             var list = config.couponWithDraws;
