@@ -74,11 +74,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void OnDisable()
         {
             //排除假现金第三个不显示的
-            if (_myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 2 ||
-                _myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 0)
-            {
-                return;
-            }
+            // if (_myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 2 ||
+            //     _myWithdrawData.EnumMyWithdraw == EnumMyWithdraw.Red && _myWithdrawData.Index == 0)
+            // {
+            //     return;
+            // }
             
             // if (!gameObject.activeSelf)
             //     gameObject.SetActive(true);
