@@ -211,6 +211,7 @@ public class Net_CB_WithDrawList
 {
     public List<Net_CB_WithDraw> couponWithDraws;
     public int arpu;
+    public int viewNum;
 }
 
 //提现配置

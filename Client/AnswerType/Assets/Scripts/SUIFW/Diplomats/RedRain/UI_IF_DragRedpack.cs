@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System;
+using SUIFW.Diplomats.Main.MyWithdraw;
 
 public class UI_IF_DragRedpack : BaseUIForm
 {
@@ -119,6 +120,14 @@ public class UI_IF_DragRedpack : BaseUIForm
             {
                 RefreshState();
                 GL_PlayerData._instance.GetTaskConfig();
+                if (!GL_CoreData._instance.AbTest)
+                {
+                    var newWithdraw = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw) as UI_IF_NewWithdraw;
+                    if (!(newWithdraw is null) && newWithdraw.isActiveAndEnabled)
+                    {
+                        newWithdraw.RefreshGold();
+                    }
+                }
             };
             object[] objects = { ERewardSource.DragRedpack, _videoRedpackConfig.mostCoupon, _videoRedpackConfig.mostBougs, _videoRedpackConfig.bougs, action };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetNormal, objects);

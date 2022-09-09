@@ -24,3 +24,4 @@ MonoBehaviour:
   _check: 0
   _skipWeChatLogin: 0
   _buildTime: 0
+  _buildHour: 0

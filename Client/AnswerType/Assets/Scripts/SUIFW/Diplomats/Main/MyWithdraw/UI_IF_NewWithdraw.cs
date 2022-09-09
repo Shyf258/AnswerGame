@@ -56,6 +56,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private UI_Button _btnGetGold;
         private Timer _goldTimer;
         private DateTime _goldDataTime;
+        
+        //b版新增
+        private Text _txtGoldVideo; //已观看视频次数
 
         #endregion
 
@@ -127,15 +130,22 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
         }
 
-        private void RefreshGold()
+        public void RefreshGold()
         {
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
-                Init(EnumMyWithdraw.Gold);
+                if (GL_CoreData._instance.AbTest)
+                {
+                    Init(EnumMyWithdraw.Gold);
 
-                //因为需要排序, 所以延迟一会检测
-                if(GL_PlayerData._instance.IsEnoughCoin())
-                    Invoke(nameof(TriggerGuide), 0.05f);
+                    //因为需要排序, 所以延迟一会检测
+                    if(GL_PlayerData._instance.IsEnoughCoin())
+                        Invoke(nameof(TriggerGuide), 0.05f);
+                }
+                else
+                {
+                    Init(EnumMyWithdraw.Gold);
+                }
             });
         }
         
@@ -205,13 +215,25 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _txtRedTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getRedNode.gameObject, "_txtRedTime");
             
             //金币
-            var goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
+            Transform goldNode;
+            if (GL_CoreData._instance.AbTest)
+            {
+                goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
+                UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB").SetActive(false);
+                var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
+                btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
+            }
+            else
+            {
+                goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB");
+                UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
+                _txtGoldVideo = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldVideo");
+            }
+            goldNode.SetActive(true);
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
             _txtGoldNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldNum");
             _grpGold = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "_grpGold");
-            var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
-            btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
-            var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetGoldNode");
+            var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
             _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
             _btnGetGold.onClick.AddListener(OnBtnGetGold);
             _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
@@ -345,6 +367,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         #region CustomField
         
         private string _itemPrefabPath = "SUIFW/Prefab/Main/MyWithdraw/UI_Btn_NewWithdrawItem";
+        private string _itemBPrefabPath = "SUIFW/Prefab/Main/MyWithdraw/UI_Btn_NewWithdrawItemB";
         
         //官职不足时
         private List<string> _tipsList = new List<string>()
@@ -362,10 +385,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
       
         
         private MyWithdrawData _curRedWithdrawData;
-        private MyWithdrawData _curGoldWithdrawData;
+        public MyWithdrawData _curGoldWithdrawData;
         
         private Dictionary<int, UI_Btn_NewWithdrawItem> _redItems = new Dictionary<int, UI_Btn_NewWithdrawItem>();       
         private Dictionary<int, UI_Btn_NewWithdrawItem> _goldItems = new Dictionary<int, UI_Btn_NewWithdrawItem>(); 
+        private Dictionary<int, UI_Btn_NewWithdrawItemB> _goldItemBs = new Dictionary<int, UI_Btn_NewWithdrawItemB>(); 
 
         #endregion
 
@@ -384,7 +408,14 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     _curGoldWithdrawData = null;
                     _txtGoldNum.text = GL_PlayerData._instance.Coin.ToString();
                     _txtGoldMoney.text = GL_PlayerData._instance.Coin_RMB + "元";
-                    CreateGold();
+                    if (GL_CoreData._instance.AbTest)
+                    {
+                        CreateGold();
+                    }
+                    else
+                    {
+                        CreateGoldB();
+                    }
                     break;
             }
         }
@@ -475,6 +506,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 };
                 data.WithDraw = list[i];
                 data.IsCanWithdraw = IsRedCanWithdraw(data, false);
+                data.ViewNum = config.viewNum;
                 if (data.Index == 0)
                 {
                     _curRedWithdrawData = data;
@@ -518,11 +550,47 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 };
                 data.WithDraw = list[i];
                 data.IsCanWithdraw = IsGoldCanWithdraw(data, false);
+                data.ViewNum = config.viewNum;
                 if (data.Index == 0)
                 {
                     _curGoldWithdrawData = data;
                     SetGoldSelectState();
                 }
+                item.Init(this,data);
+            }
+        }
+        
+        /// <summary>
+        /// 创建元宝B版
+        /// </summary>
+        private void CreateGoldB()
+        {
+            var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw);
+            _txtGoldVideo.text = config.viewNum + "次";
+            var list = config.couponWithDraws;
+            if (list.Count <= 0)
+                return;
+            for (int i = 0; i < list.Count; i++)
+            {
+                UI_Btn_NewWithdrawItemB item;
+                if (!_goldItemBs.ContainsKey(i))
+                {
+                    var prefab = GL_LoadAssetMgr._instance.Load<UI_Btn_NewWithdrawItemB>(_itemBPrefabPath);
+                    item = Instantiate(prefab, _grpGold, false);
+                    item.InitObjectNode();
+                    _goldItemBs[i] = item;
+                }
+                else
+                {
+                    item = _goldItemBs[i];
+                }
+                
+                MyWithdrawData data = new MyWithdrawData();
+                data.EnumMyWithdraw = EnumMyWithdraw.Gold;
+                data.Index = i;
+                data.WithDraw = list[i];
+                data.IsCanWithdraw = IsGoldCanWithdraw(data, false);
+                data.ViewNum = config.viewNum;
                 item.Init(this,data);
             }
         }
@@ -538,26 +606,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[6]);
                 return false;
             }
-            if (withdrawData.WithDraw.money>=30000)
-            {
-                if (withdrawData.WithDraw.money>=35000)
-                {
-                    if (isHint) UI_HintMessage._.ShowMessage("请先提取上一额度");
-                }
-                else
-                {
-                    if (GL_PlayerData._instance.UserDayLevel>80)
-                    {
-                        if (isHint) UI_HintMessage._.ShowMessage("提现300元需要连续登录7天，且每天答对80道题目");
-                    }
-                    else
-                    {
-                        if (isHint) UI_HintMessage._.ShowMessage("每日答对80道题目即可提现300元");
-                    }
-                   
-                }
-                return false;
-            }
+            
             //2.广告数量不满足时
             int num = withdrawData.WithDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
             
@@ -709,9 +758,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             GL_PlayerData._instance.Bogus -= _curRedWithdrawData.WithDraw.money;
             RefreshRed();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
+            if (!GL_CoreData._instance.AbTest)
+            {
+                RefreshGold();
+            }
         }
         
-        private void CB_GoldWithDraw(string param)
+        public void CB_GoldWithDraw(string param)
         {
             
             switch (_curGoldWithdrawData.WithDraw.money)
@@ -767,7 +820,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// <summary>
         /// 刷新玩家信息
         /// </summary>
-        private void RefreshPlayer()
+        public void RefreshPlayer()
         {
             GL_PlayerData._instance.GetWeChatIcon((t) =>
             {
@@ -790,6 +843,7 @@ public class MyWithdrawData
     /// <summary> 是否能提现 </summary>
     public bool IsCanWithdraw;
     public Net_CB_WithDraw WithDraw = new Net_CB_WithDraw();
+    public int ViewNum; //已获得视频币数量
 }
 
 public enum EnumMyWithdraw
