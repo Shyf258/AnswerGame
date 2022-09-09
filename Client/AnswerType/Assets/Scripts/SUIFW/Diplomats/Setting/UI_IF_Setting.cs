@@ -11,6 +11,9 @@ using UnityEditor;
 
 public class UI_IF_Setting : BaseUIForm
 {
+    
+    public List<Sprite> _icon;
+    
     private Transform _audioBtn;
 
     private Transform _aboutUs;
@@ -228,14 +231,23 @@ public class UI_IF_Setting : BaseUIForm
     private void ShowPlayerMessage()
     {
         //显示游戏图标
-        Sprite sprite =  GetIcon();
-        _playerIcon.sprite = sprite;
-        _logo.sprite = sprite;
-        
-        if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
+        switch (AppSetting.BuildApp)
         {
-            _logIn.text = "退出游戏";
+            case EBuildApp.RSDYJ:
+                _playerIcon.sprite = _icon[0];
+                _logo.sprite = _icon[0];
+                break;
+            case EBuildApp.ZYXLZ:
+                _playerIcon.sprite = _icon[1];
+                _logo.sprite = _icon[1];
+                break;
+            case EBuildApp.CYZDD:
+                _playerIcon.sprite = _icon[2];
+                _logo.sprite = _icon[2];
+                break;
         }
+        
+       
       
         if (GL_PlayerData._instance.IsLoginWeChat())
         {
@@ -253,7 +265,10 @@ public class UI_IF_Setting : BaseUIForm
             _logIn.text = "登录微信";
             _playerId.text = "11962344";
         }
-        
+        if (GL_Game._instance._sceneSwitch._enterType == EGameEnterType.PureVersion)
+        {
+            _logIn.text = "退出游戏";
+        }
     }
 
     private TableBuildAppData _tableBuildAppData;
@@ -403,16 +418,5 @@ public class UI_IF_Setting : BaseUIForm
         }
     }
 
-
-    private Sprite GetIcon()
-    {
-        // GL_ConstData.WeChatAppId = appData.WeChatAppID;
-        // GL_ConstData.PackageName = appData.PackageName;
-        string iconPath = "Assets/Art/UI/Image/Icon/" + _tableBuildAppData.IconPath + ".png";
-        Sprite texture = AssetDatabase.LoadAssetAtPath<Sprite>(iconPath);
-        return texture;
-    }
-    
-    
     
 }

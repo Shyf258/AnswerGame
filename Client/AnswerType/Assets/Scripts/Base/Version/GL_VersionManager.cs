@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using DataModule;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -12,7 +13,9 @@ using UnityEngine.Networking;
 public class GL_VersionManager : Singleton<GL_VersionManager>
 {
     #region 资源配置
-    public const string TotalUrl = "https://static.ciyunjinchan.com/Unity/idiomsGame/";
+
+    public static string TotalUrl = "https://static.ciyunjinchan.com/Unity/"+ QNDownloadAppEnName;
+    public static string QNDownloadAppEnName => GameDataTable.GetTableBuildAppData((int) AppSetting.BuildApp).ProductEnName;
 
     private List<string> _resList = new List<string>()
     {
@@ -63,15 +66,21 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
             //还是十关, 可以提前下载了
             for (int i = _curDownloadAudioIndex; i < _curDownloadAudioIndex + 10; i++)
             {
-                string audio = i.ToString();
-                if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio!=null)
+                int index = GL_SceneManager._instance.CalculateReallevelIndex(i);
+                string audio = index.ToString();
+                if (DataModuleManager._instance.TableAnswerInfoData_Dictionary.ContainsKey(index))
                 {
-                    audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio + audio;
+                    if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio != null)
+                    {
+                        audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
+                    }
+                    if (!audio.Equals(index.ToString()))
+                    {
+                        _resList.Add(string.Format(AudioUrl, audio));
+                    }
                 }
-                // DDebug.LogError("加载语音文件："+ audio);
-                _resList.Add(string.Format(AudioUrl,  audio));
 
-                string pPath = CalculatePictureUrl(i);
+                string pPath = CalculatePictureUrl(index);
                 if (!string.IsNullOrEmpty(pPath))
                 {
                     _resList.Add(string.Format(PictureUrl, pPath));
@@ -108,16 +117,22 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
         int level = GL_PlayerData._instance.CurLevel;
         for (int i = level; i <= level+ 10; i++)
         {
-            // string audio = i.ToString();
-            // if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio!=null)
-            // {
-            //     audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[i].Audio + audio;
-            // }
-            // // DDebug.LogError("加载语音文件："+ audio);
-            // _resList.Add(string.Format(AudioUrl,  audio));
+            int index = GL_SceneManager._instance.CalculateReallevelIndex(i);
+            string audio = index.ToString();
+            if(DataModuleManager._instance.TableAnswerInfoData_Dictionary.ContainsKey(index))
+            {
+                if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio != null)
+                {
+                    audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
+                }
+                if (!audio.Equals(index.ToString()))
+                {
+                    _resList.Add(string.Format(AudioUrl, audio));
+                }
+            }
 
             //计算图片
-            string pPath = CalculatePictureUrl(i);
+            string pPath = CalculatePictureUrl(index);
             if(!string.IsNullOrEmpty(pPath))
             {
                 _resList.Add(string.Format(PictureUrl, pPath));

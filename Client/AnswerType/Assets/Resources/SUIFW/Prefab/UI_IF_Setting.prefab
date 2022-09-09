@@ -1451,6 +1451,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isOpenMainUp: 0
+  _icon:
+  - {fileID: 21300000, guid: 26f835e2ee0d6af4ea32002ccdde2319, type: 3}
+  - {fileID: 21300000, guid: 6f58f1eccfdaa65408f25a3c920c04a1, type: 3}
+  - {fileID: 21300000, guid: eca3afe9c21e82e45b41c85320be3730, type: 3}
 --- !u!114 &3059051289600856778
 MonoBehaviour:
   m_ObjectHideFlags: 0

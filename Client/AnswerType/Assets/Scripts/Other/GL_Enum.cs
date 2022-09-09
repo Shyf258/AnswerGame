@@ -23,6 +23,7 @@ public enum EBuildApp
     BXDYJ = 2, //冰雪大赢家
     ZYXLZ = 3, //中药小郎中
     CYZDD = 4, //成语赚多多
+    NJZW = 5 , //闹剧之王
 }
 
 #endregion
@@ -92,13 +93,6 @@ public enum EGameModeType
     //HexaPuzzle = 0,  
     //ChipsMode = 1,
     Answer = 0,
-}
-
-public enum EGameUIType
-{
-    GuessFromExplain = 1,   //看释义猜成语
-    GuessFromPictures,  //看图猜成语
-    AncientPoetryCrossword, //古诗填字
 }
 
 #region 常用
@@ -191,7 +185,11 @@ public enum EItemType
 public enum ERewardSource
 {
     None = 0,
-    DragRedpack = 1,    //拖拽红包
+    VideoRedpack = 1,
+    DragRedpack = 2,
+    WithdrawRedpack = 3,
+    WithdrawCoin = 4,
+    WithDrawGrow = 5,
     TaskReward,         //任务
     OpenRed,            //红包
     Guide,              //新手引导
@@ -316,4 +314,11 @@ public enum EGamecoreType
     ActivitySign = 3,   //活动页签到
     PureAnswer = 4, //答题进度红包
     ActivityVideo = 5, //活动看视频
+}
+
+public enum EGameUIType
+{
+    GuessFromExplain = 1,   //看释义猜成语
+    GuessFromPictures,  //看图猜成语
+    AncientPoetryCrossword, //古诗填字
 }

@@ -342,7 +342,7 @@ namespace BuildTool
 
             #region 2.PlaySetting配置
             //icon
-            string iconPath = "Assets/Art/UI/Image/Icon/" + data.IconPath + ".png";
+            string iconPath = "Assets/Art/UI/Icon/" + data.IconPath + ".png";
             SetDefaultIcon(iconPath);
             //游戏名
             PlayerSettings.productName = data.ProductName;

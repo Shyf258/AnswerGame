@@ -30,4 +30,7 @@ public class AppSettingConfig : ScriptableObject
     public bool _skipWeChatLogin;
     [GL_Name("打包时间")]
     public double _buildTime;
+    [GL_Name("防沉迷有效时间")]
+    public int _buildHour;
+    
 }

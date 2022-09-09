@@ -50,29 +50,45 @@ public class GL_SceneSwitch
     {
         GL_Game._instance.GameState = EGameState.Loading;
         GL_SDK._instance.HideSplash();
-        
-        _gameScene = new GL_Scene_GameScene();
-
-        int isAgreeGDPR = GL_PlayerPrefs.GetInt(EPrefsKey.IsAgreeGDPR);
-        if(AppSetting.BuildTime > 0)
+        string param = GL_SDK._instance.GetCommonInfo();
+       GL_Game._instance._netCommonInfo = JsonUtility.FromJson<Net_RequesetCommon>(param);
+       
+       DDebug.LogError("***** 当前获得参数：" + param);
+       
+        Action action = () =>
         {
-            double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
-            if (time >= 12 * 60 * 60)
-            {
+            _gameScene = new GL_Scene_GameScene();
+
+            int isAgreeGDPR = GL_PlayerPrefs.GetInt(EPrefsKey.IsAgreeGDPR);
+            // if (AppSetting.BuildTime > 0)
+            // {
+            //     double time = GL_Time._instance.CalculateSeconds(DateTimeKind.Utc) - AppSetting.BuildTime;
+            //     if (time >= AppSetting.BuildHour * 60 * 60)
+            //     {
+            //         GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
+            //         isAgreeGDPR = 1;
+            //     }
+            // }
+
+            if (GL_PlayerData._instance.AppControlConfig.isNotice == 2)
+            { 
                 GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
                 isAgreeGDPR = 1;
             }
-        }
-        //1.隐私协议
-        if (isAgreeGDPR == 0)
-        {
-            Status = EStatus.GDPR;
             
-        }
-        else
-        {
-            Status = EStatus.WaitCommon;
-        }
+            //1.隐私协议
+            if (isAgreeGDPR == 0)
+            {
+                Status = EStatus.GDPR;
+
+            }
+            else
+            {
+                Status = EStatus.WaitCommon;
+            }
+        };
+        
+        GL_PlayerData._instance.GetAppControl( action);
     }
 
     #region GDPR阶段
@@ -94,11 +110,19 @@ public class GL_SceneSwitch
         GL_Game._instance.RefreshNetCommonInfo();
         //同意了隐私权限
         GL_PlayerPrefs.SetInt(EPrefsKey.IsAgreeGDPR, 1);
-        //申请设备权限
-        if(GL_CoreData._instance._isFirstGame || GL_CoreData._instance._archivedData.checker == 2)
-            GL_SDK._instance.RequestAdPermissions(true);
-        else
+        if (GL_PlayerData._instance.AppControlConfig.isNotice == 1)
+        {
+            DDebug.LogError("审核员："+false);
             GL_SDK._instance.RequestAdPermissions(false);
+        }
+        else
+        {
+            //申请设备权限
+            if(GL_CoreData._instance._isFirstGame || GL_CoreData._instance._archivedData.checker == 2)
+                GL_SDK._instance.RequestAdPermissions(true);
+            else
+                GL_SDK._instance.RequestAdPermissions(false);
+        }
 
         //等待关键数据填充
         MethodExeTool.StartCoroutine(WaitCommonInfo());
@@ -194,12 +218,11 @@ public class GL_SceneSwitch
             }
             else
             {
-                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatClick);
+          
                 //微信登陆
                 if ((GL_PlayerData._instance.AppConfig != null && GL_PlayerData._instance.AppConfig.isNotice == 1)
                 || !GL_PlayerData._instance.IsLoginWeChat())
                 {
-                    
                     OnClickWeChat();
                 }
                 else
@@ -433,7 +456,6 @@ public class GL_SceneSwitch
                     GL_PlayerData._instance.CB_WeChatLoginSuccess(msg);
                     uiLoading.ShowSlider(true);
                     Status = EStatus.Init;
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WeChatSuccess);
                 }
                 else
                 {
