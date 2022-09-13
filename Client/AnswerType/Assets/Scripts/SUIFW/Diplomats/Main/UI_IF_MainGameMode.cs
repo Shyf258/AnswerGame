@@ -1,6 +1,7 @@
 //2022.8.23 管理
 //主页面玩法相关初始化
 
+using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using SUIFW;
@@ -84,7 +85,9 @@ public partial class UI_IF_Main
 
     private Transform _textMode;
     private Text _answerDescription;
-    
+
+    private string _levelStr = "第<color=#fff000>{0}</color>关";
+    private Text _levelTitle;
     protected void InitGameMode()
     {
 
@@ -178,6 +181,7 @@ public partial class UI_IF_Main
         _answerDescription =
             UnityHelper.GetTheChildNodeComponetScripts<Text>(_answerMode.gameObject, "AnswerDescription");
 
+        _levelTitle = UnityHelper.GetTheChildNodeComponetScripts<Text>(_answerMode.gameObject, "LevelTitle");
     }
 
     private string PATH = "https://static.ciyunjinchan.com/Unity/Video/Short/";
@@ -187,8 +191,6 @@ public partial class UI_IF_Main
     //刷新题目
     public void RefreshGameMode(EventParam param)
     {
-        _choiceGroup.SetActive(false);
-        _pause.SetActive(false);
         // MoveBack();
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
         if (info == null)
@@ -196,8 +198,9 @@ public partial class UI_IF_Main
 
         if (info.Type == 1)
         {
+            _pause.SetActive(false);
             //刷新视频题
-            
+            _choiceGroup.SetActive(false);
             _answerMode.SetActive(false);
             _playVideo.SetActive(true);
             //刷新视频
@@ -206,9 +209,7 @@ public partial class UI_IF_Main
 
             _tmText.text = info.TitleText;
         
-            //刷新选项
-            _btnAText.text = info.Select1;
-            _btnBText.text = info.Select2;
+          
 
             // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
 
@@ -221,10 +222,9 @@ public partial class UI_IF_Main
             _playVideo.SetActive(false);
 
 
-            if (string.IsNullOrEmpty(info.Picture))
+            if (!string.IsNullOrEmpty(info.Picture))
             {
-                _imageMode.SetActive(false);
-                _textMode.SetActive(true);
+               
                 
                 Sprite s;
                 string path = DownloadConfig.downLoadPath + string.Format(GL_VersionManager.PictureUrl, info.Picture);
@@ -238,7 +238,7 @@ public partial class UI_IF_Main
                         _imageMode.gameObject.SetActive(false);
                         _textMode.gameObject.SetActive(true);
 
-                        _tmText.text = info.TitleText;
+                        _answerDescription.text = info.TitleText;
                     }
                     else
                     {
@@ -255,16 +255,23 @@ public partial class UI_IF_Main
                     
                     GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
                 });
+                
+                _imageMode.SetActive(true);
+                _textMode.SetActive(false);
             }
             else
             {
-                _imageMode.SetActive(true);
-                _textMode.SetActive(false);
                 _answerDescription.text = info.TitleText;
+                _imageMode.SetActive(false);
+                _textMode.SetActive(true);
             }
             
+            _levelTitle.text = String.Format(_levelStr,GL_CoreData._instance.Level);
         }
-     
+        //刷新选项
+        _btnAText.text = info.Select1;
+        _btnBText.text = info.Select2;
+        
     }
     
     
