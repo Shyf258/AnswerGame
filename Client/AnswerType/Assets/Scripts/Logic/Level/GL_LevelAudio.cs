@@ -22,7 +22,7 @@ public class GL_LevelAudio
     public void PlayAudio(int id)
     {
         GL_VersionManager._instance.RefreshLevel(id);
-         MethodExeTool.StartCoroutine(LoadAudio(id));
+         // MethodExeTool.StartCoroutine(LoadAudio(id));
     }
 
     public IEnumerator LoadAudio(int id)

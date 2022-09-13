@@ -68,6 +68,23 @@ public partial class UI_IF_Main
     
     private VideoPlayer _videoPlayer;
 
+    /// <summary>
+    /// 视频模式
+    /// </summary>
+    private Transform _playVideo;
+
+    /// <summary>
+    /// 答题模式
+    /// </summary>
+    private Transform _answerMode;
+
+    private Transform _imageMode;
+    private Image _imageTopic;
+    private Text _imageDescription;
+
+    private Transform _textMode;
+    private Text _answerDescription;
+    
     protected void InitGameMode()
     {
 
@@ -148,9 +165,24 @@ public partial class UI_IF_Main
             _pause.SetActive(false);
             _videoPlayer.Play();
         });
+
+
+        _playVideo = UnityHelper.FindTheChildNode(_answerPageShow.gameObject, "PlayVideo");
+        _answerMode = UnityHelper.FindTheChildNode(_answerPageShow.gameObject, "AnswerMode");
+
+        _imageMode = UnityHelper.FindTheChildNode(_answerMode.gameObject, "PicType");
+        _imageTopic = UnityHelper.GetTheChildNodeComponetScripts<Image>(_answerMode.gameObject, "ImageTopic");
+        _imageDescription = UnityHelper.GetTheChildNodeComponetScripts<Text>(_answerMode.gameObject, "ImageDescription");
+        
+        _textMode = UnityHelper.FindTheChildNode(_answerMode.gameObject, "AnswerType");
+        _answerDescription =
+            UnityHelper.GetTheChildNodeComponetScripts<Text>(_answerMode.gameObject, "AnswerDescription");
+
     }
 
     private string PATH = "https://static.ciyunjinchan.com/Unity/Video/Short/";
+
+    private string PicPath = "https://static.ciyunjinchan.com/Unity/LifeWinnerGold/";
     #region 答题玩法
     //刷新题目
     public void RefreshGameMode(EventParam param)
@@ -161,20 +193,82 @@ public partial class UI_IF_Main
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
         if (info == null)
             return;
-        //刷新视频
-        _videoPlayer.url = PATH + info.Picture +".mp4";
-        _videoPlayer.Play();
 
-        _tmText.text = info.TitleText;
+        if (info.Type == 1)
+        {
+            //刷新视频题
+            
+            _answerMode.SetActive(false);
+            _playVideo.SetActive(true);
+            //刷新视频
+            _videoPlayer.url = PATH + info.Picture +".mp4";
+            _videoPlayer.Play();
+
+            _tmText.text = info.TitleText;
         
-        //刷新选项
-        _btnAText.text = info.Select1;
-        _btnBText.text = info.Select2;
+            //刷新选项
+            _btnAText.text = info.Select1;
+            _btnBText.text = info.Select2;
 
-        // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
+            // GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
 
-        // _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
+            // _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
+        }
+        else
+        {
+            //刷新图片题
+            _answerMode.SetActive(true);
+            _playVideo.SetActive(false);
+
+
+            if (string.IsNullOrEmpty(info.Picture))
+            {
+                _imageMode.SetActive(false);
+                _textMode.SetActive(true);
+                
+                Sprite s;
+                string path = DownloadConfig.downLoadPath + string.Format(GL_VersionManager.PictureUrl, info.Picture);
+#if UNITY_ANDROID && !UNITY_EDITOR || UNITY_EDITOR_OSX
+        path = "file://" + path;
+#endif
+                GL_ServerCommunication._instance.GetTexturePic(path, (t) =>
+                {
+                    if (t == null)
+                    {
+                        _imageMode.gameObject.SetActive(false);
+                        _textMode.gameObject.SetActive(true);
+
+                        _tmText.text = info.TitleText;
+                    }
+                    else
+                    {
+                        s = Sprite.Create(t, new Rect(0, 0, t.width, t.height), Vector2.zero);
+
+                        //图片题目
+                        _imageMode.gameObject.SetActive(true);
+                        _textMode.gameObject.SetActive(false);
+
+                        _imageTopic.sprite = s;
+                        _imageTopic.SetNativeSize();
+                        _imageDescription.text = info.TitleText;
+                    }
+                    
+                    GL_SceneManager._instance._levelAudio.PlayAudio(info.ID);
+                });
+            }
+            else
+            {
+                _imageMode.SetActive(true);
+                _textMode.SetActive(false);
+                _answerDescription.text = info.TitleText;
+            }
+            
+        }
+     
     }
+    
+    
+    
     private void OnClickChoice(int index)
     {
         GL_SceneManager._instance.CurGameMode.UI_Choice(index);

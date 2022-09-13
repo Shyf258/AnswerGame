@@ -1,4 +1,4 @@
-// FileName: TableAnswerInfoData.cs
+// FileName: TableAnswerInfo_NJZWData.cs
 //
 using UnityEngine;
 using System;
@@ -12,7 +12,7 @@ using DataModule;
 
 namespace DataModule
 {
-	public class TableAnswerInfoData : DataModuleBase 
+	public class TableAnswerInfo_NJZWData : DataModuleBase 
 	{
 
 		#region 字段
@@ -51,7 +51,7 @@ namespace DataModule
 		#endregion
 
 		#region 扩展
-		public static Dictionary<int, TableAnswerInfoData> dic;
+		public static Dictionary<int, TableAnswerInfo_NJZWData> dic;
 
 
 		[OnDeserialized]
@@ -62,11 +62,11 @@ namespace DataModule
 
 
 
-		public static Dictionary<int, TableAnswerInfoData> loadAllData()
+		public static Dictionary<int, TableAnswerInfo_NJZWData> loadAllData()
 		{
 			if(dic == null)
 			{
-				dic = JsonHelper.FromJson<Dictionary<int, TableAnswerInfoData>>(Resources.Load<TextAsset>(JsonPath.JSON_PATH + @"TableAnswerInfo").text);
+				dic = JsonHelper.FromJson<Dictionary<int, TableAnswerInfo_NJZWData>>(Resources.Load<TextAsset>(JsonPath.JSON_PATH + @"TableAnswerInfo_NJZW").text);
 			}
 			return dic;
 		}

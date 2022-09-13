@@ -236,7 +236,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
             if (time > 5 ||
                 (SystemConfig != null
                 && GetWithDrawConfig(EWithDrawType.Normal) != null
-                && GetWithDrawConfig(EWithDrawType.DailyWithDraw) != null
+                && GetWithDrawConfig(EWithDrawType.DailyWithDraw) != null 
                 && _milestoneTaskConfig != null
                 && _milestoneConfig != null)
                 )

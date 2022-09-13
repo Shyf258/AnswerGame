@@ -40,7 +40,7 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
     {
         string result = string.Empty;
         var data = GameDataTable.GetTableAnswerInfoData(level);
-        if(data != null && !string.IsNullOrEmpty(data.Picture))
+        if(data != null && !string.IsNullOrEmpty(data.Picture) && data.Type == 2)
             result = data.Picture;
 
         return result;
@@ -67,18 +67,18 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
             for (int i = _curDownloadAudioIndex; i < _curDownloadAudioIndex + 10; i++)
             {
                 int index = GL_SceneManager._instance.CalculateReallevelIndex(i);
-                string audio = index.ToString();
-                if (DataModuleManager._instance.TableAnswerInfoData_Dictionary.ContainsKey(index))
-                {
-                    if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio != null)
-                    {
-                        audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
-                    }
-                    if (!audio.Equals(index.ToString()))
-                    {
-                        _resList.Add(string.Format(AudioUrl, audio));
-                    }
-                }
+                // string audio = index.ToString();
+                // if (DataModuleManager._instance.TableAnswerInfoData_Dictionary.ContainsKey(index))
+                // {
+                //     if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio != null)
+                //     {
+                //         audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
+                //     }
+                //     if (!audio.Equals(index.ToString()))
+                //     {
+                //         _resList.Add(string.Format(AudioUrl, audio));
+                //     }
+                // }
 
                 string pPath = CalculatePictureUrl(index);
                 if (!string.IsNullOrEmpty(pPath))
@@ -110,7 +110,6 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
     public void StartCheckVersion()
     {
         IsDone = true;
-        return;
         // 初始化状态
         IsDone = false;
 
@@ -120,18 +119,18 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
         for (int i = level; i <= level+ 10; i++)
         {
             int index = GL_SceneManager._instance.CalculateReallevelIndex(i);
-            string audio = index.ToString();
-            if(DataModuleManager._instance.TableAnswerInfoData_Dictionary.ContainsKey(index))
-            {
-                if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio != null)
-                {
-                    audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
-                }
-                if (!audio.Equals(index.ToString()))
-                {
-                    _resList.Add(string.Format(AudioUrl, audio));
-                }
-            }
+            // string audio = index.ToString();
+            // if(DataModuleManager._instance.TableAnswerInfoData_Dictionary.ContainsKey(index))
+            // {
+            //     if (DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio != null)
+            //     {
+            //         audio = DataModuleManager._instance.TableAnswerInfoData_Dictionary[index].Audio + audio;
+            //     }
+            //     if (!audio.Equals(index.ToString()))
+            //     {
+            //         _resList.Add(string.Format(AudioUrl, audio));
+            //     }
+            // }
 
             //计算图片
             string pPath = CalculatePictureUrl(index);

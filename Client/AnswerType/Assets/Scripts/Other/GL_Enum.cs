@@ -94,6 +94,12 @@ public enum EGameModeType
     Answer = 0,
 }
 
+public enum AnswerType
+{
+    Video = 1,
+    Picture = 2,
+}
+
 #region 常用
 
 public enum ELanguage
