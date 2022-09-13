@@ -39,8 +39,8 @@
   },
   "5": {
     "ID": 5,
-    "ProductName": "闹剧之王",
-    "PackageName": "com.ciyunjinchan.cyjcnjzw",
+    "ProductName": "刷剧之王",
+    "PackageName": "com.ciyunjinchan.cyjcsjzw",
     "IconPath": "icon_njzw"
   }
 }
