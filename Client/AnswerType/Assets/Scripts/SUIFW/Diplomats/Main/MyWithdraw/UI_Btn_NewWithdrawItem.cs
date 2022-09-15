@@ -111,7 +111,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _isSelected = isSelect;
             
             if (isSelect)
-                _imgBtn.sprite = _btnItem.spriteState.selectedSprite;
+                _imgBtn.sprite = _btnItem.spriteState.pressedSprite;
             else
                 _imgBtn.sprite = _btnItem.spriteState.disabledSprite;
         }
