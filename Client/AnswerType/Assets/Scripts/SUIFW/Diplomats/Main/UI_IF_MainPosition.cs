@@ -60,7 +60,7 @@ public partial class UI_IF_Main
     protected void RefreshPosition(EventParam param)
     {
         //b包关卡大于5关闭里程碑
-        if (!GL_CoreData._instance.AbTest && GL_PlayerData._instance.CurLevel > 5)
+        if (!GL_CoreData._instance.AbTest && GL_PlayerData._instance.CurLevel > 3)
         {
             _tfLevelSlider.SetActive(false);
             return;
