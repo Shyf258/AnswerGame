@@ -79,6 +79,11 @@ public class UI_IF_MainUp : BaseUIForm
         });
         
         Fly_MainUp.Init(this).InitData();
+
+        if (GL_CoreData._instance.AbTest)
+        {
+            _bogusBtn.SetActive(false);
+        }
     }
 
     public override void Refresh(bool recall)

@@ -23,7 +23,7 @@ public class GL_ConstData
 #endif
 
 
-    public static string PackageName = "com.ciyunjinchan.rsbzsk";
+    public static string PackageName = "com.ciyunjinchan.bxdyjfour";
     public static string WeChatAppId = "wx9016768c8f632e0c";
 
     //音效 路径

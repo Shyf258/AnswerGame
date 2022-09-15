@@ -130,7 +130,19 @@ public class UI_IF_DragRedpack : BaseUIForm
                     }
                 }
             };
-            object[] objects = { ERewardSource.DragRedpack, _videoRedpackConfig.mostCoupon, _videoRedpackConfig.mostBougs, _videoRedpackConfig.bougs, action };
+
+            int count;
+
+            if (_videoRedpackConfig.mostBougs>0)
+            {
+                count = _videoRedpackConfig.bougs;
+            }
+            else
+            {
+                count = _videoRedpackConfig.coupon;
+            }
+            
+            object[] objects = { ERewardSource.DragRedpack, _videoRedpackConfig.mostCoupon, _videoRedpackConfig.mostBougs, count, action };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetNormal, objects);
 
             GL_AudioPlayback._instance.Play(21);

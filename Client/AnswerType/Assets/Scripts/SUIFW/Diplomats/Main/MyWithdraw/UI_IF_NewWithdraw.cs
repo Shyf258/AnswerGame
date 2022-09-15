@@ -60,6 +60,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         //b版新增
         private Text _txtGoldVideo; //已观看视频次数
 
+        
+        
+        
+        
+        //提现储存池
+        private Transform _bankNode;
+
+        private Transform _bankContent;
+
+        private Text _bankMoney;
+        
         #endregion
 
         #region Override
@@ -75,8 +86,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshGold();
             RefreshPlayer();
             RefreshRedCd();
-            RefreshGoldCd();
+            
             _scrollRect.verticalNormalizedPosition = 1;
+
+            if (GL_CoreData._instance.AbTest)
+            {
+              
+                FreshBank(null);
+            }
+            else
+            {
+                RefreshGoldCd();
+            }
+
         }
         private void TriggerGuide()
         {
@@ -189,6 +211,12 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             
         }
 
+        public override void OnDestory()
+        {
+            base.OnDestory();
+            GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshWaitWithDraw,FreshBank);
+        }
+
         public override void Init()
         {
             _isOpenMainUp = false;
@@ -214,30 +242,53 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _tfRedTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getRedNode.gameObject, "RedTime");
             _txtRedTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getRedNode.gameObject, "_txtRedTime");
             
+            
             //金币
             Transform goldNode;
             if (GL_CoreData._instance.AbTest)
             {
-                goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
+                goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldBank");
                 UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB").SetActive(false);
                 var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
                 btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
+              
+                #region 存储奖池
+
+                _bankNode = UnityHelper.FindTheChildNode(gameObject, "BankNode");
+                _bankContent = UnityHelper.FindTheChildNode(_bankNode.gameObject, "Content");
+                _bankMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(_bankNode.gameObject, "Money");
+                _bankNode.SetActive(true);
+                //储存初始化
+                if (GL_PlayerData._instance.BankConfig== null ||GL_PlayerData._instance.BankConfig.nowDay ==0 )
+                {
+                    GL_PlayerData._instance.NewBankConfig();
+                }
+                
+                GL_GameEvent._instance.RegisterEvent(EEventID.RefreshWaitWithDraw,FreshBank);
+                #endregion
+             
+                 
             }
             else
             {
+                redNode.SetActive(true);
                 goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB");
                 UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
                 _txtGoldVideo = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldVideo");
+                
+                // 金币栏  领取金币按键
+                var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
+                _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
+                _btnGetGold.onClick.AddListener(OnBtnGetGold);
+                _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
+                _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
             }
             goldNode.SetActive(true);
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
             _txtGoldNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldNum");
             _grpGold = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "_grpGold");
-            var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
-            _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
-            _btnGetGold.onClick.AddListener(OnBtnGetGold);
-            _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
-            _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+           
+
         }
 
         #endregion
@@ -880,7 +931,26 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
             _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
         }
+
         
+        
+        #region 提现储存池
+
+        public GameObject waitWithDrawItem;
+        private List<GameObject> _waitItemList = new  List<GameObject>();
+        /// <summary>
+        /// 刷新提现储存池
+        /// </summary>
+        private void FreshBank(EventParam param)
+        { 
+            _bankMoney.text = string.Format("您已储存：{0}", GL_PlayerData._instance.BankConfig.nowMoney);
+          GL_Tools.RefreshItem(GL_PlayerData._instance.BankConfig.bankConfig,_bankContent,waitWithDrawItem,_waitItemList);
+        }
+
+       
+
+
+        #endregion
         #endregion
         
     }
@@ -901,4 +971,31 @@ public enum EnumMyWithdraw
 {
     Red,
     Gold
+}
+[Serializable]
+public class BankConfig
+{
+    public int nowDay;
+    
+    public float nowMoney;
+    
+    public List<WithDrawWaitConfig> bankConfig;
+}
+[Serializable]
+public class WithDrawWaitConfig
+{
+    /// <summary>
+    /// 目标天数
+    /// </summary>
+    public int targetDayCount;
+
+    /// <summary>
+    /// 倍数
+    /// </summary>
+    public float multiple;
+
+    /// <summary>
+    /// 可以提现
+    /// </summary>
+    public bool canWithDraw = true;
 }
