@@ -30,6 +30,14 @@ public class UI_IF_WaitTips : BaseUIForm
 
     public override void Init()
     {
+        
+        this.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
+        this.CurrentUIType.UIForms_Type = UIFormType.PopUp;
+        this.CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Light;
+        _isOpenMainUp = false;
+
+        
+        
         _descriptionText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "Description");
         
         RigisterButtonObjectEvent("BtnClose", go =>
@@ -60,9 +68,12 @@ public class UI_IF_WaitTips : BaseUIForm
         //奖励
         if (datas.Length > 0 && datas[0] is WithDrawWaitConfig config)
         {
+            int day = config.targetDayCount - GL_PlayerData._instance.BankConfig.nowDay;
+            day = day > 0 ? day : 0;
             _descriptionText.text = string.Format(_description,
-                (config.targetDayCount - GL_PlayerData._instance.BankConfig.nowDay), config.multiple,
+                day, config.multiple,
                 (config.multiple * GL_PlayerData._instance.BankConfig.nowMoney));
+           
         }
 
         if (datas.Length > 1 && datas[1] is Action<int> action)
