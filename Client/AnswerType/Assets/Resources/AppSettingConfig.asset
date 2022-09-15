@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _appLoadMode: 0
   _serverType: 0
-  _isCloseGuide: 0
+  _isCloseGuide: 1
   _isLog: 1
   _isTestUnity: 1
-  _enterType: 2
-  _abTest: b
-  _isSkipAD: 0
-  _buildApp: 1
+  _enterType: 0
+  _abTest: a
+  _isSkipAD: 1
+  _buildApp: 2
   _check: 0
   _skipWeChatLogin: 0
   _buildTime: 0
+  _buildHour: 0

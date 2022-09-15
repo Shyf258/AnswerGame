@@ -14,6 +14,7 @@
 #endregion
 
 using System;
+using System.Collections.Generic;
 using DataModule;
 using Logic.Fly;
 using Logic.System.NetWork;
@@ -46,7 +47,11 @@ namespace SUIFW.Diplomats.Game
         private int _rewardLevel;
 
 
-        private string _description = "虽然答错，但情有可原\n奖励减半，获得<color=#ff0000> <size=55>{0}</size> </color>元红包";
+        private List<string> _description = new List<string>()
+        {
+            "虽然答错，但情有可原\n奖励减半，获得<color=#ff0000> <size=55>{0}</size> </color>元红包",
+            "虽然答错，但情有可原\n奖励减半，获得一半金币",
+        };
         
         /// <summary>
         /// 金币按键
@@ -56,6 +61,10 @@ namespace SUIFW.Diplomats.Game
         private Text _rewardText;
 
         private UI_IF_MainUp _mainUp;
+
+        private Text _doubleText;
+
+        private Text _normalText;
         
         #endregion
 
@@ -71,6 +80,9 @@ namespace SUIFW.Diplomats.Game
 
             RigisterButtonObjectEvent("NextPass", (go => { OnBtnClose(); }));
             RigisterButtonObjectEvent("ClosePage", (go => { OnBtnClose(); }));
+
+            _normalText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "NextBtnText");
+            _doubleText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "AgainText");
             _uiIfMain = UIManager.GetInstance().GetMain();
             
             // _coinBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "CoinBtn");
@@ -92,10 +104,24 @@ namespace SUIFW.Diplomats.Game
             {
                 _action = action;
             }
-            if (datas.Length > 1 && datas[1] is int reward)
+            if (datas.Length > 1 && datas[1] is Rewards reward)
             {
-                _rewardCount = reward / 100f;
-                _rewardText.text = string.Format(_description, _rewardCount);
+                switch (reward.type)
+                {
+                    case (int) EItemType.Bogus:
+                        _rewardCount = reward.num / 100f;
+                        _rewardText.text = string.Format(_description[0], _rewardCount);
+                        _normalText.text = "红包领取";
+                        _doubleText.text = "金币领取";
+                        break;
+                    case (int) EItemType.Coin:
+                        _rewardCount = reward.num;
+                        _rewardText.text = _description[1];
+                        _normalText.text = $"{_rewardCount}金币";
+                        _doubleText.text = "领取15000";
+                        break;
+                    
+                }
             }
         }
 

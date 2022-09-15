@@ -9,6 +9,8 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
 
     private Text _moneyText;
     
+   
+    
     private EWithDrawType _eWithDrawType; 
     public override void Init()
     {
@@ -30,6 +32,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             return;
         if (datas.Length>0 && datas[0] is float)
         {
+            _waitWithDraw= (float) datas[0];
             _moneyText.text = datas[0].ToString();
         }
 
@@ -80,5 +83,17 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         // {
         //     DateTips();
         // }
+
+        if (_eWithDrawType!= EWithDrawType.WaitWithDraw)
+        {
+            GL_PlayerData._instance.BankConfig.nowMoney += _waitWithDraw;
+            GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
+        }
     }
+
+    #region 存储奖池
+
+    private float _waitWithDraw;
+
+    #endregion
 }

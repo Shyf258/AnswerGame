@@ -32,20 +32,22 @@ public partial class UI_IF_Main
     private ParticleSystem _positionEffect;  //按钮特效
 
     private ParticleSystem _brokenEffect;
-    
+
+    private Transform _tfLevelSlider;
+
     private Net_CB_MilestoneConfigList _milestoneConfig => GL_PlayerData._instance._milestoneConfig;    //里程碑信息
     private int _curMilestoneInfoIndex; 
 
     private Net_CB_WithDraw _withDraw;
     public void InitPosition()
     {
-        Transform down = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
-        _contentText = UnityHelper.GetTheChildNodeComponetScripts<Text>(down.gameObject, "Text");
-        _fillImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(down.gameObject, "Fill");
-        _fillText = UnityHelper.GetTheChildNodeComponetScripts<Text>(down.gameObject, "FillText");
-        _fillEffect = UnityHelper.FindTheChildNode(down.gameObject, "FillEffect");
+        _tfLevelSlider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
+        _contentText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_tfLevelSlider.gameObject, "Text");
+        _fillImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(_tfLevelSlider.gameObject, "Fill");
+        _fillText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_tfLevelSlider.gameObject, "FillText");
+        _fillEffect = UnityHelper.FindTheChildNode(_tfLevelSlider.gameObject, "FillEffect");
 
-        _btnSlider = UnityHelper.GetTheChildNodeComponetScripts<Button>(down.gameObject, "Button");
+        _btnSlider = UnityHelper.GetTheChildNodeComponetScripts<Button>(_tfLevelSlider.gameObject, "Button");
         _buttonIcon = UnityHelper.GetTheChildNodeComponetScripts<Image>(_btnSlider.gameObject, "Icon");
         _buttonText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnSlider.gameObject, "Text");
         _positionEffect = UnityHelper.GetTheChildNodeComponetScripts<ParticleSystem>(_btnSlider.gameObject, "Sun_Shines_03");
@@ -56,6 +58,13 @@ public partial class UI_IF_Main
     
     protected void RefreshPosition(EventParam param)
     {
+        //关卡大于5关闭里程碑
+        if (GL_PlayerData._instance.CurLevel >= 5)
+        {
+            _tfLevelSlider.SetActive(false);
+            return;
+        }
+        
         if (_milestoneConfig == null)
         {
             _btnSlider.interactable = false;

@@ -23,8 +23,8 @@ public class GL_ConstData
 #endif
 
 
-    public static string PackageName = "com.ciyunjinchan.rsbzsk";
-    public static string WeChatAppId = "wx082f10652f21b01f";
+    public static string PackageName = "com.ciyunjinchan.bxdyjfour";
+    public static string WeChatAppId = "wx9016768c8f632e0c";
 
     //音效 路径
     public const string Path_AudioPrefab = "Prefab/Audio/";
@@ -52,6 +52,9 @@ public class GL_ConstData
     public const int SceneID_Production = 1000004;
     //广告场景-打卡
     public const int SceneID_Sign =  1000005;
+    
+    //广告场景-装盘
+    public const int SceneID_Turn = 1000008;
        
 
     #region 游戏数值设定
