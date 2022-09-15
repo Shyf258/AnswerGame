@@ -58,13 +58,16 @@ public partial class UI_IF_Main
     
     protected void RefreshPosition(EventParam param)
     {
-        //关卡大于5关闭里程碑
-        if (GL_PlayerData._instance.CurLevel >= 5)
+         //关卡大于5关闭里程碑
+        if (GL_PlayerData._instance.CurLevel > 4)       
         {
             _tfLevelSlider.SetActive(false);
             return;
         }
-        
+        if (GL_PlayerData._instance.CurLevel > 3)       
+        {
+            _tfLevelSlider.SetActive(false);
+        }
         if (_milestoneConfig == null)
         {
             _btnSlider.interactable = false;
