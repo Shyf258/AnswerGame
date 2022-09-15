@@ -697,6 +697,10 @@ public class Net_CB_VideoRed
     /// </summary>
     public int bougs;
     /// <summary>
+    /// 普通领取金币
+    /// </summary>
+    public int coupon;
+    /// <summary>
     /// 领取红包最大次数
     /// </summary>
     public int videoRedSize = 20;

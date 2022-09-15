@@ -270,7 +270,6 @@ GameObject:
   - component: {fileID: 5248988714999875047}
   - component: {fileID: 5248988714999875040}
   - component: {fileID: 5248988714999875042}
-  - component: {fileID: 2906708650446192654}
   m_Layer: 0
   m_Name: Task_Count
   m_TagString: Untagged
@@ -294,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 48.8, y: -4}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 39.37, y: -0.0000016689}
+  m_SizeDelta: {x: 139.987, y: 50.73401}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &5248988714999875047
 CanvasRenderer:
@@ -328,8 +327,8 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: f9ce2f608b754384ab514b52d4d628af, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
+    m_BestFit: 1
+    m_MinSize: 30
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -337,7 +336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "0.5\u5143"
+  m_Text: "8000\u91D1\u5E01"
 --- !u!114 &5248988714999875042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,20 +352,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.8980392, g: 0.015686275, b: 0.015686275, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
---- !u!114 &2906708650446192654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5248988714999875068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
 --- !u!1 &5248988715128262328
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: 47.37}
+  m_AnchoredPosition: {x: 24, y: 37}
   m_SizeDelta: {x: 36.11573, y: 50.73401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5248988715128262333
@@ -432,7 +417,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 13fbc558bf2a58a4e8fb8c977ddff49c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8421f45b6a1e6241ac4e5b4361830f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -510,6 +495,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 76e4b05bba5c4004f9b433d9658896d9, type: 3}
   - {fileID: 21300000, guid: bd501e524c395b846a3dfdeed095f59e, type: 3}
   - {fileID: 21300000, guid: 2a2e23d5eb2859d4085c1af00cd43150, type: 3}
+  - {fileID: 21300000, guid: e8421f45b6a1e6241ac4e5b4361830f1, type: 3}
+  - {fileID: 21300000, guid: 13fbc558bf2a58a4e8fb8c977ddff49c, type: 3}
   _netCbTaskArr:
     downLoadUrl: 
     id: 0

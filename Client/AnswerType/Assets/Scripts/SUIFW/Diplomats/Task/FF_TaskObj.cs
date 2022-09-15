@@ -69,6 +69,7 @@ public class FF_TaskObj : UI_BaseItem
 
     private Image _btnImage;
     private Text _btnText;
+    
     //视频图标
     private Image _popupPlayImage;
 
@@ -80,7 +81,7 @@ public class FF_TaskObj : UI_BaseItem
         "通关{0}次",
         "每日登录",
     };
-    
+
     private string _taskMessage = "累计答对<color=#cf0400>{0}</color>道题";
     #endregion
 
@@ -179,16 +180,28 @@ public class FF_TaskObj : UI_BaseItem
             //任务文本
             _planCount.text = string.Format(passCount, _netCbTaskArr.progress, _netCbTaskArr.condition); 
         }
-       
+
+        
         //获取奖励数量
         _number = _netCbTaskArr.winRewards[0].num;
         //获取奖励类型
         _type = _netCbTaskArr.winRewards[0].type;
+
+        if (_type ==(int) EItemType.Bogus)
+        {
+            _taskCount.text = String.Format("{0}元",(_number/100f));
+            _taskIcon.sprite = iconBtn[4];
+        }
+        else
+        {
+            _taskCount.text = String.Format("{0}金币",(_number));
+            _taskIcon.sprite = iconBtn[3];
+        }
         _taskType = _netCbTaskArr.type;
         // float number = _netCbTaskArr.winNum;
       
        
-        _taskCount.text = String.Format("{0}元",(_number/100f));
+       
 
         int index=5;
         switch (_netCbTaskArr.type)
@@ -218,8 +231,8 @@ public class FF_TaskObj : UI_BaseItem
             _taskDescription.text = String.Format(_taskDescriptionStr[index], _netCbTaskArr.condition);
         }
        
-        itemType = (EItemType)_type;
-        SRewardData data = new SRewardData(itemType);
+        // itemType = (EItemType)_type;
+        // SRewardData data = new SRewardData(itemType);
         // _taskIcon.sprite = data._rewardSprite; //更新 图片显示
         switch (_netCbTaskArr.status)
         {
@@ -304,7 +317,18 @@ public class FF_TaskObj : UI_BaseItem
                     }
                 }
                 _videoRedpackConfig.bougs = 0;
-                object[] objects = { ERewardSource.TaskReward, _videoRedpackConfig.mostCoupon, _videoRedpackConfig.mostBougs, _videoRedpackConfig.bougs, action };   
+                int count;
+
+                if (_videoRedpackConfig.mostBougs>0)
+                {
+                    count = _videoRedpackConfig.bougs;
+                }
+                else
+                {
+                    count = _videoRedpackConfig.coupon;
+                }
+                
+                object[] objects = { ERewardSource.TaskReward, _videoRedpackConfig.mostCoupon, _videoRedpackConfig.mostBougs, count, action };   
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetNormal, objects);
               
                 break;
