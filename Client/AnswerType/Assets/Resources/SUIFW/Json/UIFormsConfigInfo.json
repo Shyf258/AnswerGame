@@ -254,6 +254,10 @@
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_TipsADTimes"
     },
     {
+      "Key": "WithDrawJudge",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithDrawJudge"
+    },
+    {
       "Key": "PlayAdWithDraw",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_PlayAdWithDraw"
     },
