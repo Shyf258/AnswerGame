@@ -195,6 +195,5 @@ namespace SUIFW
         
         public const string UI_Path_RedGroup = "RedGroup";
         public const string UI_Path_RedGroupChat = "RedGroupChat";
-        
     }
 }
