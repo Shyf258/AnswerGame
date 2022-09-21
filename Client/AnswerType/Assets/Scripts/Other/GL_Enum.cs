@@ -56,7 +56,6 @@ public enum EWithDrawType
     Clockin = 6, //打卡
     DailyWithDraw = 7,  //每日提现
     TipsPage = 8,       //广告提现机会
-    WaitWithDraw
 }
 
 public enum EGameEnterType
