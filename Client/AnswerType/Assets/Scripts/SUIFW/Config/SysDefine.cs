@@ -124,7 +124,6 @@ namespace SUIFW
         public const string UI_Path_PlayAdWithDraw = "PlayAdWithDraw";
         public const string UI_Path_WeChatLogin = "WeChatLogin";      //提现界面
         public const string UI_Path_WithdrawSuccess = "WithdrawSuccess";      //提现界面
-        public const string UI_Path_WaitTips = "WaitTips";      //储存提示
         public const string UI_Path_Date = "Date";
         public const string UI_Path_PlayInfo = "PlayInfo";          //角色信息
         public const string UI_Path_Share = "Share";

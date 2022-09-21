@@ -154,10 +154,6 @@
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithdrawSuccess"
     },
     {
-      "Key": "WaitTips",
-      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WaitTips"
-    },
-    {
       "Key": "Date",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_Date"
     },

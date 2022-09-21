@@ -417,66 +417,6 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     }
     
     #endregion
-
-    #region 提现储存池配置
-
-    
-    /// <summary>
-    /// 需要登录天数
-    /// </summary>
-    private List<int> bankDay = new List<int>()
-    {
-        4,7,15,30
-    };
-        
-    /// <summary>
-    /// 倍数
-    /// </summary>
-    private List<float> multiple = new List<float>()
-    {
-        1,3,10,30
-    };
-
-    public void NewBankConfig()
-    {
-        BankConfig = new BankConfig();
-        BankConfig.nowDay = 1;
-        BankConfig.nowMoney = 0;
-        BankConfig.bankConfig = new List<WithDrawWaitConfig>();
-        for (int i = 0; i < multiple.Count; i++)
-        {
-            WithDrawWaitConfig config = new WithDrawWaitConfig();
-            config.multiple = multiple[i];
-            config.targetDayCount = bankDay[i];
-            config.canWithDraw = true;
-            BankConfig.bankConfig.Add(config);
-        }
-        GL_CoreData._instance.SaveData();
-    }
-
-
-    public BankConfig BankConfig
-    {
-        get { return GL_CoreData._instance._archivedData._bankConfig; }
-        set
-        {
-            GL_CoreData._instance._archivedData._bankConfig = value;
-        }
-    }
-
-  
-    /// <summary>
-    /// 当前选择的档位
-    /// </summary>
-    private float _waitWithDraw;
-
-    public float WaitWithDraw
-    {
-        get => _waitWithDraw;
-        set => _waitWithDraw = value;
-    }
-    
-    #endregion
     
     #region 微信
 

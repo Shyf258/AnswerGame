@@ -116,15 +116,6 @@ public class SDateArchiveInfo
         _day = dt.Day;
         _loginTimes = 1;
         _onlineSecond = 0;
-        try
-        {
-            GL_PlayerData._instance.BankConfig.nowDay += 1;
-            GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
-        }
-        catch 
-        {
-           
-        }
     }
 }
 

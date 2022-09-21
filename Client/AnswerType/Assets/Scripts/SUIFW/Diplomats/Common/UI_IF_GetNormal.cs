@@ -25,7 +25,6 @@ public class UI_IF_GetNormal : BaseUIForm
     {
         "只领{0}红包",
         "放弃领取",
-        "只领{0}金币"
     };
 
     #region 对象
@@ -188,11 +187,6 @@ public class UI_IF_GetNormal : BaseUIForm
             if(_redpackType == ERewardSource.DragRedpack)
             {
                 _onlyRed.text = string.Format(_onlyRed.text, value3 * 1000);
-
-                if (bogus <=0)
-                {
-                    _onlyRed.text = String.Format(_offTextList[2],value3);
-                }
             }
         }
         if (datas.Length > 4 && datas[4] is Action action)

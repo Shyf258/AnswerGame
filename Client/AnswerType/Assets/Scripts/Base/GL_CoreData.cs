@@ -449,8 +449,6 @@ public class ArchivedData_Character
     public bool _nonage = false;
 
 
-    public BankConfig _bankConfig;
-    
 }
 
 #endregion

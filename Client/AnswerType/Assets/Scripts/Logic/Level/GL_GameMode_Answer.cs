@@ -209,24 +209,14 @@ public class GL_GameMode_Answer : GL_GameMode
             }
         }
 
-        switch (_curRewards.type)
-        {
-            //假现金
-            case (int) EItemType.Bogus:
-                GL_PlayerData._instance.Bogus = GL_PlayerData._instance.Bogus + _curRewards.num;
-                GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Bogus));
-                //float offset = GL_PlayerData._instance.TotalBogus - GL_PlayerData._instance.Bogus_Convert;
-                UI_HintMessage._.ShowMessage($"恭喜！获得{_curRewards.num / 100f}元现金。");
-                break;
-            //假现金
-            case (int) EItemType.Coin:
-                GL_PlayerData._instance.Coin = GL_PlayerData._instance.Coin + _curRewards.num;
-                GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Coin));
-                //float offset = GL_PlayerData._instance.TotalBogus - GL_PlayerData._instance.Bogus_Convert;
-                UI_HintMessage._.ShowMessage($"恭喜！获得{_curRewards.num }金币。");
-                break;
-        }
-      
+        GL_PlayerData._instance.Bogus = GL_PlayerData._instance.Bogus + _curRewards.num;
+        GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Bogus));
+        //float offset = GL_PlayerData._instance.TotalBogus - GL_PlayerData._instance.Bogus_Convert;
+
+
+
+        UI_HintMessage._.ShowMessage($"恭喜！获得{_curRewards.num / 100f}元现金。");
+
     }
 
     private void GetCoin()
@@ -429,7 +419,7 @@ public class GL_GameMode_Answer : GL_GameMode
                 GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
             };
 
-            Object[] objects = { ac1, _curRewards};
+            Object[] objects = { ac1, _curRewards.num};
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Fail, objects);
         });
     }

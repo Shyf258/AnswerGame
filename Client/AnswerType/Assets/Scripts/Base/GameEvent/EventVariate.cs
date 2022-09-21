@@ -23,8 +23,6 @@ public enum EEventID
     RefreshGameMainArpuBubble,
     RefreshPosition,
 
-    RefreshWaitWithDraw,
-    
     //刷新新手签到ui
     RefreshNewbieSignUI,
 
