@@ -207,6 +207,22 @@ public enum EAnalyticsType
     MoneyPoolVideoFinish,
     /// <summary>/// 财神视频播放成功/// </summary>
     MoneyPoolVideoFail,
+    
+    /// <summary>
+    /// 加速提现
+    /// </summary>
+    GrowMoneyPlan,
+    /// <summary>
+    /// 加速提现点击
+    /// </summary>
+    GrowMoneyPlanClick,
+    /// <summary>
+    /// 加速提现完成观看视频
+    /// </summary>
+    GrowMoneyPlanFinish,
+    /// <summary>/// 金币提现解锁/// </summary>
+    CoinDailySuccess,
+
 }
 
 
@@ -313,5 +329,11 @@ public static class AnalyticsEvents
         {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
+        
+        
+        {EAnalyticsType.GrowMoneyPlan,"jiasuanjian_01"},
+        {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
+        {EAnalyticsType.GrowMoneyPlanFinish,"txsp_001"},
+        {EAnalyticsType.CoinDailySuccess,"tixian_0.3_chenggong"}, 
     };
 }
