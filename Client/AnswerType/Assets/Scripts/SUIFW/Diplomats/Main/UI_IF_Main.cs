@@ -252,11 +252,11 @@ public partial class UI_IF_Main : BaseUIForm
         _showNow = _answerPageShow;
 
 
-        if (GL_CoreData._instance.AbTest)
-        {
-            Transform _turnTable = UnityHelper.FindTheChildNode(gameObject, "TurnTable");
-            _turnTable.SetActive(false);
-        }
+        // if (GL_CoreData._instance.AbTest)
+        // {
+        //     Transform _turnTable = UnityHelper.FindTheChildNode(gameObject, "TurnTable");
+        //     _turnTable.SetActive(false);
+        // }
     }
 
 

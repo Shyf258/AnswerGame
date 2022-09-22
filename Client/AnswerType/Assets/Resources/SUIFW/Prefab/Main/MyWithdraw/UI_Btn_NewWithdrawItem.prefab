@@ -190,10 +190,10 @@ RectTransform:
   m_Father: {fileID: 4695925214375182807}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -4.1905317}
-  m_SizeDelta: {x: 274, y: 142}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -4.1905327}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &566855997326958479
 CanvasRenderer:
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 21300000, guid: ab37af7d3d2143742b14078048e471ad, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: ab37af7d3d2143742b14078048e471ad, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 21300000, guid: 57511c35eab93d94cae377e251ccfad3, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5374430224236120187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69514cf53e1a4eecab4b0cc82b4e4b55, type: 3}
+  m_Script: {fileID: 11500000, guid: cc2cb756813c4b17add0827f2bdea4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _itemNode: {fileID: 0}
