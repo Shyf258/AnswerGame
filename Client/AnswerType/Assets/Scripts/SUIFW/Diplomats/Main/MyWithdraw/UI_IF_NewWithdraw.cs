@@ -800,6 +800,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// <returns></returns>
         private bool IsFirstDay(MyWithdrawData withdrawData)
         {
+            if (GL_CoreData._instance.AbTest) //A包不弹窗
+            {
+                return true;
+            }
+            
             //第一天所有广告次数为0
             return withdrawData.WithDraw.viewAdTimes == 0;
         }
