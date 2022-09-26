@@ -619,7 +619,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         {
             DDebug.Log("s刷新");
             var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw);
-            _txtGoldVideo.text = config.viewNum + "次";
+            _txtGoldVideo.text = config.viewNum + "个";
             var list = config.couponWithDraws;
             if (list.Count <= 0)
                 return;
