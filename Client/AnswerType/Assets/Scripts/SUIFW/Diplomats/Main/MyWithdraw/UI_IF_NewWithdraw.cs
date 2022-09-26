@@ -430,7 +430,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private List<string> _tipsList = new List<string>()
         {
             "官职未到达，请继续努力",
-            "需要当日观看视频{0}次！",
+            "需要满足视频点数",
             "请提现上一个额度！",
             "金币数不足，请继续努力",
             "关卡未到达，请继续努力",
@@ -671,8 +671,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             
             if (num > 0)
             {
-                string tips = string.Format(_tipsList[1], num);
-                if (isHint) UI_HintMessage._.ShowMessage(tips);
+                if (isHint) UI_HintMessage._.ShowMessage(_tipsList[1]);
                 return false;
             }
 
