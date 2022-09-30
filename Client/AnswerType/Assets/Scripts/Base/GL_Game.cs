@@ -189,13 +189,8 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
                 GL_CoreData._instance.AntiTime ++;
             }
         }
-        if(Time.time + 1 > _saveLimit)
-        {
-            _saveLimit = Time.time + 1;
-            GL_CoreData._instance.RealSaveData();
-        }
+        GL_CoreData._instance.RealSaveData();
     }
-    private float _saveLimit;
     public void ShowTips()
     {
         int time = (int)_antiTime/60;
