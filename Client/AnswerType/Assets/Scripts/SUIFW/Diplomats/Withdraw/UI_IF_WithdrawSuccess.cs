@@ -146,5 +146,13 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         // {
         //     DateTips();
         // }
+        
+        if (_eWithDrawType!= EWithDrawType.WaitWithDraw)
+        {
+            GL_PlayerData._instance.BankConfig.nowMoney += _money;
+            GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
+        }
     }
+    
+ 
 }
