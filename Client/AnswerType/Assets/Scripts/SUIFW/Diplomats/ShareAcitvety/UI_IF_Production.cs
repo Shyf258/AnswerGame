@@ -72,20 +72,12 @@ public class UI_IF_Production : BaseUIForm
                 GL_PlayerData._instance.GetProduceBarrage((() =>
                 {
                     _ObjProduction._index = 0;
-                    _ObjProduction._barrageMove.Stop();
-                    _ObjProduction._barrageMove.Play("barrage_Move");
+                    // _ObjProduction._barrageMove.Stop();
+                    // _ObjProduction._barrageMove.Play("barrage_Move");
                     _ObjProduction.ChangeBarrage();
                 }));
             }));
-            //     GL_PlayerData._instance.GetProduceConfig(() =>
-            //     {
-            //         _ObjProduction.FreshText();
-            //     });
-            //     GL_PlayerData._instance.GetProduceBarrage((() =>
-            //     {
-            //         _index = 0;
-            //         _ObjProduction.ChangeBarrage();
-            //     }));
+          
         }),_timerText);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 using SUIFW;
 using SUIFW.Diplomats.Common;
@@ -56,8 +57,8 @@ public class UI_Obj_Production : UIObjectBase
 
     private Text _timeText;
 
-    [HideInInspector]
-    public Animation _barrageMove;
+  
+    private Transform _barrageMove;
     
     private Timer _time;
     // public Text _timerText;
@@ -70,7 +71,7 @@ public class UI_Obj_Production : UIObjectBase
         // @event.functionName = "ChangeText";
         // barrageMove.AddEvent(@event);
 
-        _barrageMove = UnityHelper.GetTheChildNodeComponetScripts<Animation>(gameObject, "BarrageFrame");
+        _barrageMove = UnityHelper.FindTheChildNode(gameObject, "BarrageFrame");
         _totlaNumber = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "TotlaNumber");
         
         _deposit = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "Deposit");
@@ -158,12 +159,12 @@ public class UI_Obj_Production : UIObjectBase
         _timerClick += Time.deltaTime;
         Showtime();
         
-        if (_timer>=8f)
-        {
-            _timer = 0;
-            ChangeBarrage();
-            // _animation.Play("an_liangcang");
-        }
+        // if (_timer>=8f)
+        // {
+        //     _timer = 0;
+        //
+        //     // _animation.Play("an_liangcang");
+        // }
 
         // if (_freshTime>3000f)
         // {
@@ -187,7 +188,7 @@ public class UI_Obj_Production : UIObjectBase
         {
             _timer = 0;
             _index = 0;
-            ChangeBarrage();
+            Movebarrage();
         }));
         FreshText();
         _timer = 0;
@@ -205,6 +206,19 @@ public class UI_Obj_Production : UIObjectBase
         }
     }
 
+
+    /// <summary>
+    /// 弹幕移动
+    /// </summary>
+    private void Movebarrage()
+    {
+        _barrageText.transform.localPosition = new Vector3(1000,0,0);
+        ChangeBarrage();
+        _barrageText.transform.DOLocalMove(new Vector3(-1500, 0, 0), 8, true).SetAs(TweenParams.Params.OnComplete(() =>
+        {
+            Movebarrage();
+        }));
+    }
 
     private bool _click = false;
     private void Showtime()

@@ -688,5 +688,12 @@
     "Method": "POST",
     "URL": 2,
     "JointURL": "/play/app/pc"
+  },
+  "90301": {
+    "ID": 90301,
+    "Name": "提现增幅配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/growth/config"
   }
 }

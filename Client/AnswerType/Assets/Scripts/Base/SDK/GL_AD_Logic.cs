@@ -142,6 +142,7 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
     //真实广告激励成功
     public void RealAdPlayCompleted(SJson sj)
     {
+        DDebug.LogError("当前播放广告类型："+ sj.adType);
         if((EADType)sj.adType == EADType.Reward)
         {
             Net_ViewAD ad = new Net_ViewAD();
@@ -164,6 +165,15 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.MoneyPool);
 
             GL_PlayerData._instance.SystemConfig.viewAds += 1;
+            
+            if (!GL_CoreData._instance.AbTest)
+            {
+                MethodExeTool.Invoke(() =>
+                {
+                    GL_GameEvent._instance.SendEvent(EEventID.RefreshGrowMoney);
+                }, 0.5f);
+               
+            }
         }
         
         

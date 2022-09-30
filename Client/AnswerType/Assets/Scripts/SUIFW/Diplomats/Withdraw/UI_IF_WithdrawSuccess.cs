@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using SUIFW;
+using SUIFW.Diplomats.Common;
 using UnityEngine.UI;
 
 public class UI_IF_WithdrawSuccess : BaseUIForm
@@ -8,8 +10,24 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
     private string _content = /*<size=80>¥ :</size>*/"{0}元";
 
     private Text _moneyText;
+
+    private Text _tipsText;
+
+    private Text _time;
+
+    private Timer _timer;
     
-   
+    private float _withDrawResult;
+
+    private float _money;
+
+    private Button _close;
+    
+    private List<string> _list = new List<string>()
+    {
+        "提现成功<color=#fc0000>{0}</color>元",
+        "提现<color=#fc0000>{0}</color>元，+登录增幅提现<color=#ff7800>{1}</color>元"
+    };
     
     private EWithDrawType _eWithDrawType; 
     public override void Init()
@@ -20,11 +38,15 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
 
         _moneyText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "MoneyText");
 
-        RigisterButtonObjectEvent("BtnSure", (go => { CloseUIForm(); }));
-        RigisterButtonObjectEvent("ExitPage", go =>
-        {
-            CloseUIForm();
-        });
+        _tipsText = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "GrowTips");
+
+        _close = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "BtnSure");
+        
+        RigisterButtonObjectEvent(_close, (go => { CloseUIForm(); }));
+
+        _time = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "TimeText");
+        
+        _timer = new Timer(this,true);
     }
 
     public override void InitData(object data)
@@ -34,10 +56,9 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         var datas = data as object[];
         if (datas == null)
             return;
-        if (datas.Length>0 && datas[0] is float)
+        if (datas.Length>0 && datas[0] is float money)
         {
-            _waitWithDraw= (float) datas[0];
-            _moneyText.text = datas[0].ToString();
+            _money = money;
         }
 
         if (datas.Length>1 && datas[1] is EWithDrawType)
@@ -45,6 +66,35 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             _eWithDrawType =(EWithDrawType) datas[1];
             // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
         }
+        if (datas.Length>2 && datas[2] is int result)
+        {
+            _withDrawResult =(float) result/100f;
+            _moneyText.text = string.Format(_list[0], _withDrawResult.ToString("0.00"));
+            // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
+        }
+        if (!GL_CoreData._instance.AbTest)
+        {
+            _tipsText.SetActive(true);
+            _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
+            
+            if (_withDrawResult <=_money )
+            {
+                int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
+                int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
+                           (hour*60)) / 60;
+                int second = GL_PlayerData._instance._WithDrawGrowConfig.countDown - (hour * 60) - (min * 60);
+                UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
+                _tipsText.SetActive(false);
+            }
+        }
+        else
+        {
+            _tipsText.SetActive(false);
+        }
+
+
+       
+       
     }
 
     public override void onUpdate()
@@ -53,7 +103,16 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
 
     public override void Refresh(bool recall)
     {
-
+        if (!GL_CoreData._instance.AbTest)
+        {
+            _close.interactable = false;
+            _timer.StartCountdown(3,0,0, () =>
+            {
+                _time.text = "继续赚钱";
+                _close.interactable = true;
+            },_time);
+        }
+       
     }
 
     public override void RefreshLanguage()
@@ -87,17 +146,5 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         // {
         //     DateTips();
         // }
-
-        if (_eWithDrawType!= EWithDrawType.WaitWithDraw)
-        {
-            GL_PlayerData._instance.BankConfig.nowMoney += _waitWithDraw;
-            GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
-        }
     }
-
-    #region 存储奖池
-
-    private float _waitWithDraw;
-
-    #endregion
 }

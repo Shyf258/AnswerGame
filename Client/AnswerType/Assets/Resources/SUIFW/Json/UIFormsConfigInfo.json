@@ -141,6 +141,10 @@
       "Key": "WithDrawJudge",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithDrawJudge"
     },
+    {
+      "Key": "DayGrow",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_DayGrow"
+    },
 	{
       "Key": "Withdraw",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_Withdraw"

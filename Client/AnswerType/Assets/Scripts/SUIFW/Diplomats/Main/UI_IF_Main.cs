@@ -36,7 +36,26 @@ public partial class UI_IF_Main : BaseUIForm
     private Text _textNewbieSign;
     #endregion
 
+    #region 玩法按键
 
+    #region 提现增幅
+
+    /// <summary>
+    /// 签到增幅
+    /// </summary>
+    private Button _signDay;
+    /// <summary>
+    /// 登录天数
+    /// </summary>
+    private Text _day;
+    /// <summary>
+    /// 增幅
+    /// </summary>
+    private Text _dayGrow;
+    
+    #endregion
+
+    #endregion
     #endregion
 
     #region 底部导航
@@ -117,6 +136,72 @@ public partial class UI_IF_Main : BaseUIForm
             }),timeText);
         }
 
+        #region 获取奖励玩法
+ //财神
+        _moneyPool = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "MoneyPool");
+        RigisterButtonObjectEvent(_moneyPool, gp =>
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolIcon);        
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_IF_MoneyPool);
+        });
+
+        //大生产
+        _productionPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "Production");
+        RigisterButtonObjectEvent(_productionPageToggle, go =>
+        {
+            if (!GL_PlayerData._instance.IsLoginWeChat())
+            {
+                //登陆微信
+                // Action show =()=> PlayerIcon();
+                Action show = () => { ChangeProduce(); };
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin, show);
+                // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
+            }
+            else
+            {
+                ChangeProduce();
+            }
+        });
+        
+        _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
+        _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
+        RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+        
+        
+        _newSignInPage = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "NewSignInPage");
+        
+        RigisterButtonObjectEvent(_newSignInPage,(go =>
+        {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
+        }));
+         
+        RigisterButtonObjectEvent("TurnTable",(go =>
+        {
+            GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable,(() =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_TurnTable);
+            }));
+        }));
+        
+      
+
+        #endregion
+        
+        #region 提现增幅
+
+        _signDay = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "SignDay");
+
+        _day = UnityHelper.GetTheChildNodeComponetScripts<Text>(_signDay.gameObject, "Day");
+
+        _dayGrow = UnityHelper.GetTheChildNodeComponetScripts<Text>(_signDay.gameObject, "Grow");
+
+        RigisterButtonObjectEvent(_signDay, go =>
+        {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+        });
+            
+        #endregion
+        
         InitGameMode();
 
         
@@ -128,30 +213,11 @@ public partial class UI_IF_Main : BaseUIForm
       
         _taskPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "TaskPageToggle");
         _tipsTaskText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_taskPageToggle.gameObject, "TipsText");
-        _productionPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Button>(bottom.gameObject, "ProductionPageToggle");
         
         _withdrawPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "WithDrawToggle");
         _activityPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "ActivityPageToggle");
         
-        #region 主页打卡按键 
-
-        
-         _newSignInPage = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "NewSignInPage");
-        
-         RigisterButtonObjectEvent(_newSignInPage,(go =>
-         {
-             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
-         }));
-         
-         RigisterButtonObjectEvent("TurnTable",(go =>
-         {
-             GL_PlayerData._instance.SendGamecoreConfig(EGamecoreType.Turntable,(() =>
-             {
-                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_TurnTable);
-             }));
-         }));
-
-        #endregion
+   
 
         #region 主界面切页
         _answerPageToggle.onValueChanged.AddListener(go =>
@@ -211,33 +277,11 @@ public partial class UI_IF_Main : BaseUIForm
             }
         });
         
-        RigisterButtonObjectEvent(_productionPageToggle, go =>
-        {
-            if (!GL_PlayerData._instance.IsLoginWeChat())
-            {
-                //登陆微信
-                // Action show =()=> PlayerIcon();
-                Action show = () => { ChangeProduce(); };
-                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin, show);
-                // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
-            }
-            else
-            {
-                ChangeProduce();
-            }
-        });
+       
         #endregion
 
         #endregion
 
-        // _newSignInPage.SetActive(true);
-        //
-        // //bottom
-        // _productionPageToggle.SetActive(false);
-        //
-        // _activityPageToggle.SetActive(true);
-        //
-        // _withdrawPageToggle.SetActive(true);
 
         _tipsTaskText.transform.parent.SetActive(true);
         GL_PlayerData._instance.GetTaskConfig();
@@ -251,12 +295,19 @@ public partial class UI_IF_Main : BaseUIForm
 
         _showNow = _answerPageShow;
 
-
-        if (GL_CoreData._instance.AbTest)
+        if (!GL_CoreData._instance.AbTest)
+        {
+            _productionPageToggle.SetActive(true);
+           
+        }
+        else
         {
             Transform _turnTable = UnityHelper.FindTheChildNode(gameObject, "TurnTable");
-            _turnTable.SetActive(false);
+            _turnTable.SetActive(true);
+            _moneyPool.transform.parent.SetActive(true);
         }
+       
+       
     }
 
 
@@ -366,6 +417,33 @@ public partial class UI_IF_Main : BaseUIForm
     }
     #endregion
 
+    #region 提现增幅
+
+
+    private void RefreshMoneyGrow(EventParam param)
+    {
+        if (!GL_CoreData._instance.AbTest)
+        {
+            GL_PlayerData._instance.GetWithDrawGrowConfig(()=>
+            {
+                if (GL_PlayerData._instance._WithDrawGrowConfig!=null)
+                {
+                    _signDay.SetActive(true);
+                }
+                else
+                {
+                    _signDay.SetActive(false);
+                }
+                _day.text = $"已登录{GL_PlayerData._instance._WithDrawGrowConfig.day}天";
+                _dayGrow.text = $"提现增幅<color=#0058ff><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
+            });
+        }
+    }
+
+
+    #endregion
+    
+    
     #region override
     void SetCanvas()
     {
@@ -388,6 +466,9 @@ public partial class UI_IF_Main : BaseUIForm
 
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
         RefreshNewbieSign(null);
+        
+        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
+        RefreshMoneyGrow(null);
     }
 
     public override void OnHide()
@@ -395,6 +476,7 @@ public partial class UI_IF_Main : BaseUIForm
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         StopAllCoroutines();
         CancelInvoke();
     }

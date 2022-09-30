@@ -1,6 +1,7 @@
 //2022.8.23 管理
 //主页面玩法相关初始化
 
+using System;
 using DG.Tweening;
 using SUIFW;
 using UnityEngine;
@@ -34,6 +35,7 @@ public partial class UI_IF_Main
 
     #endregion
 
+    
 
     #region 显示答案
 
@@ -80,21 +82,14 @@ public partial class UI_IF_Main
         _showRight = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowRight");
         _showWrong = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowWrong");
 
-        //财神
-        _moneyPool = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "MoneyPool");
-        RigisterButtonObjectEvent(_moneyPool, gp =>
-        {
-            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolIcon);        
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_IF_MoneyPool);
-        });
-
-
-        _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
-        _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
-        RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+       
 
         #endregion
+        #region 主页获得奖励玩法
 
+        
+       
+        #endregion
 
     }
 

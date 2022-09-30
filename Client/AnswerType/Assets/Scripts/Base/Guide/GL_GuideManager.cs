@@ -434,7 +434,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     private void OnShowOpenRedPack()
     {
         FinishGuide();
-        OnShowLimitNewGift();
+        _guideCallback?.Invoke();
         
         // Action<bool> ac1 = (bool set) => { CB_OnShowOpenRedPack(set); };
         // var conifg = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Guide);
@@ -443,12 +443,20 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     }
     private void CB_OnShowOpenRedPack(bool set)
     {
-        GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Guide, 0,(msg)=> 
+        if (!GL_CoreData._instance.AbTest)
         {
-            Action ac1 = () => { OnShowLimitNewGift(); };
-            object[] datas = { msg.rewards, ac1 };
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
-        });
+            FinishGuide();
+            _guideCallback?.Invoke();
+        }
+        else
+        {
+            GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Guide, 0,(msg)=> 
+            {
+                Action ac1 = () => { OnShowLimitNewGift(); };
+                object[] datas = { msg.rewards, ac1 };
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
+            });
+        }
         //Net_RequesetCommon com = new Net_RequesetCommon();
         //GL_ServerCommunication._instance.Send(Cmd.Guide, JsonUtility.ToJson(com), (string p)=>
         //    {
@@ -467,9 +475,17 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
 
     private void OnShowNewbieSign()
     {
-        GL_NewbieSign._instance.SelectState(ENewbieSignState.WaitingGet);
-        object[] datas = { _guideCallback };
-        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewbieSign, datas);
+        if (!GL_CoreData._instance.AbTest)
+        {
+            FinishGuide();
+            _guideCallback?.Invoke();
+        }
+        else
+        {
+            GL_NewbieSign._instance.SelectState(ENewbieSignState.WaitingGet);
+            object[] datas = { _guideCallback };
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewbieSign, datas);
+        }
     }
 
     private void OnChangeWithdraw()
