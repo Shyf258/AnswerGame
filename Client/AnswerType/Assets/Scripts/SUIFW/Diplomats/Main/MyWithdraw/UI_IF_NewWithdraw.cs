@@ -43,9 +43,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _grpRed;
         private Text _txtRedTime; //假现金计时
         private Transform _tfRedTime;
+        private Transform getRedNode;
         private UI_Button _btnGetRed;
         private Timer _redTimer;
         private DateTime _redDataTime;
+        private UI_Button btnRedWithdraw;
         
         //金币节点
         private Text _txtGoldNum;
@@ -53,9 +55,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _grpGold;
         private Text _txtGoldTime; //金币计时
         private Transform _tfGoldTime;
+        private Transform getGoldNode;
         private UI_Button _btnGetGold;
         private Timer _goldTimer;
         private DateTime _goldDataTime;
+        private UI_Button btnGoldWithdraw;
 
         #endregion
 
@@ -74,6 +78,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshRedCd();
             RefreshGoldCd();
             _scrollRect.verticalNormalizedPosition = 1;
+        }
+
+        private void InitButtonViewABTest()
+        {
+            if (!GL_CoreData._instance.AbTest)
+            {
+                getRedNode.transform.localPosition = new Vector3(getRedNode.transform.localPosition.x, -253);
+                btnRedWithdraw.transform.localPosition = new Vector3(btnRedWithdraw.transform.localPosition.x, -429);
+                getGoldNode.transform.localPosition = new Vector3(getGoldNode.transform.localPosition.x, -330);
+                btnGoldWithdraw.transform.localPosition = new Vector3(btnGoldWithdraw.transform.localPosition.x, -508);
+            }
         }
         private void TriggerGuide()
         {
@@ -196,9 +211,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             var redNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "RedNode");
             _txtRedNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(redNode.gameObject, "_txtRedNum");
             _grpRed = UnityHelper.GetTheChildNodeComponetScripts<Transform>(redNode.gameObject, "_grpRed");
-            var btnRedWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(redNode.gameObject, "_btnRedWithdraw");
+            btnRedWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(redNode.gameObject, "_btnRedWithdraw");
             btnRedWithdraw.onClick.AddListener(OnBtnRedWithdraw);
-            var getRedNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetRedNode");
+            getRedNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetRedNode");
             _btnGetRed = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getRedNode.gameObject, "_btnGetRed");
             _btnGetRed.onClick.AddListener(OnBtnGetRed);
             _tfRedTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getRedNode.gameObject, "RedTime");
@@ -209,13 +224,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
             _txtGoldNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldNum");
             _grpGold = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "_grpGold");
-            var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
+            btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
             btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
-            var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetGoldNode");
+            getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetGoldNode");
             _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
             _btnGetGold.onClick.AddListener(OnBtnGetGold);
             _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
             _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+
+            InitButtonViewABTest();
         }
 
         #endregion
