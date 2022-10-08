@@ -168,6 +168,8 @@ public class GL_ServerCommunication : Singleton<GL_ServerCommunication>
             yield return null;
 
         }
+        
+        request.Dispose();
     }
 
 
