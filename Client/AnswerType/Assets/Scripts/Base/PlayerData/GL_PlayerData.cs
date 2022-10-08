@@ -948,11 +948,13 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     
     private void CB_ProdecuWithDraw(string param)
     {
+        Net_CB_WithDrawResult(param);
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {
             NetCbProduceConfig.money/100f,
-            _eWithDrawType
+            _eWithDrawType,
+            _netCbWithDraw.money
         };
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
         

@@ -818,12 +818,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         //提现回调
         private void CB_RedWithDraw(string param)
         {
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
+            UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_NewSignInPage);
             float money = _curRedWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.CashWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Bogus -= _curRedWithdrawData.WithDraw.money;
@@ -851,12 +854,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawHighSuccess);
                     break;
             }
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
+            UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_NewSignInPage);
             float money = _curGoldWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.DailyWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Coin -= _curGoldWithdrawData.WithDraw.coupon;

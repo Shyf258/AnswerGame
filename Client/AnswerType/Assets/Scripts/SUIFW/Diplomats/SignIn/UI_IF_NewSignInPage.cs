@@ -374,19 +374,20 @@ public class UI_IF_NewSignInPage : BaseUIForm
         }
     }
     
-    private void CB_WithDraw(string str)
+    private void CB_WithDraw(string param)
     {
         UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_NewSignInPage);
         var list = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.Clockin);
         if (list == null)
             return;
-
+        GL_PlayerData._instance.Net_CB_WithDrawResult(param);
         float money = list.couponWithDraws[_nowSignId].money * 0.01f;
         EWithDrawType _eWithDrawType = EWithDrawType.Clockin;
         var obj = new object[]
         {
             money,
-            _eWithDrawType
+            _eWithDrawType,
+            GL_PlayerData._instance._netCbWithDraw.money
         };
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
         GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.Clockin, () =>
