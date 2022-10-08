@@ -124,7 +124,7 @@ public class GL_CoreData : Singleton<GL_CoreData>
     /// </summary>
     public ArchivedData_Character _archivedData = new ArchivedData_Character();
 
-    private GL_FileReadWirte _fileReadWirte_Character; //文件读写
+    //private GL_FileReadWirte _fileReadWirte_Character; //文件读写
 
 
     //删除角色数据
@@ -145,10 +145,10 @@ public class GL_CoreData : Singleton<GL_CoreData>
     /// 资源md5
     /// </summary>
     /// <returns></returns>
-    public string GetResMd5()
-    {
-        return GL_Tools.GetMd5Val(_fileReadWirte_Character._filePath);
-    }
+    //public string GetResMd5()
+    //{
+    //    return GL_Tools.GetMd5Val(_fileReadWirte_Character._filePath);
+    //}
 
     //IOS 广告播放时, 刷新音效
     public void RefreshAudio(bool set)
@@ -340,9 +340,8 @@ public class GL_CoreData : Singleton<GL_CoreData>
     {
         _globalData = GameDataTable.GetTableGlobalVariableData(1);
         //角色数据
-        _fileReadWirte_Character = new GL_FileReadWirte();
-        _fileReadWirte_Character.Init("CharacterData");
-        var data1 = (ArchivedData_Character) _fileReadWirte_Character.Read();
+
+        ArchivedData_Character data1 = GL_PlayerPrefs.GetObject<ArchivedData_Character>(EPrefsKey.CoreData);
         if (data1 != null)
         {
             _archivedData = data1;
@@ -380,11 +379,13 @@ public class GL_CoreData : Singleton<GL_CoreData>
         _isSave = true;
     }
 
+    
     public void RealSaveData()
     {
         if (_isSave)
         {
-            _fileReadWirte_Character.Wirte(_archivedData);
+            GL_PlayerPrefs.SaveObject(_archivedData, EPrefsKey.CoreData);
+            //_fileReadWirte_Character.Wirte(_archivedData);
             _isSave = false;
         }
     }
