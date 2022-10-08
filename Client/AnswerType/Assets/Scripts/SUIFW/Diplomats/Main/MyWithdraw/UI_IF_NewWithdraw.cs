@@ -308,6 +308,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             else
             {
                 redNode.SetActive(true);
+                _btnGetRed.GetComponentInChildren<Text>().text = "现金不足时点击";
                 goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB");
                 UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
                 _txtGoldVideo = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldVideo");
