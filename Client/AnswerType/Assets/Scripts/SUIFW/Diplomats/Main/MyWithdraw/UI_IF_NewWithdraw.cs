@@ -47,6 +47,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Timer _redTimer;
         private DateTime _redDataTime;
         
+        
+        
         //金币节点
         private Text _txtGoldNum;
         private Text _txtGoldMoney;
@@ -56,6 +58,22 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private UI_Button _btnGetGold;
         private Timer _goldTimer;
         private DateTime _goldDataTime;
+
+
+        #region 提现增幅
+
+        private Button _growRed;
+
+        private Text _growRedText;
+        
+        private Button _growCoin;
+
+        private Text _growCoinText;
+
+        private string _growStr = "<color=#ff0000><size=52>{0}%</size></color>提现增幅";
+
+        #endregion
+        
         
         //b版新增
         private Text _txtGoldVideo; //已观看视频次数
@@ -77,6 +95,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshRedCd();
             RefreshGoldCd();
             _scrollRect.verticalNormalizedPosition = 1;
+            RefreshWithDrawGrow();
         }
         private void TriggerGuide()
         {
@@ -95,6 +114,30 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             });
         }
 
+        #region 提现增幅刷新显示
+
+        private void RefreshWithDrawGrow()
+        {
+            if (GL_CoreData._instance.AbTest)
+            {
+                MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
+            }
+        }
+
+        private void ShowWithDrawGrow()
+        {
+            if (GL_PlayerData._instance._WithDrawGrowConfig==null)
+            {
+                _growCoin.SetActive(false);
+                _growRed.SetActive(false);
+            }
+            string description = String.Format(_growStr,(GL_PlayerData._instance._WithDrawGrowConfig.growth));
+            _growCoinText.text = description;
+            _growRedText.text = description;
+        }
+
+        #endregion
+        
         //刷新假现金计时
         private void RefreshRedCd()
         {
@@ -214,19 +257,33 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _tfRedTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getRedNode.gameObject, "RedTime");
             _txtRedTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getRedNode.gameObject, "_txtRedTime");
             
+            _growRed = UnityHelper.GetTheChildNodeComponetScripts<Button>(redNode.gameObject, "OpenGrow");
+            _growRedText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growRed.gameObject, "Text");
+            RigisterButtonObjectEvent(_growRed, go =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+            });
+            
             //金币
             Transform goldNode;
             if (GL_CoreData._instance.AbTest)
             {
                 goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
-                UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB").SetActive(false);
+                // UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB").SetActive(false);
                 var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
                 btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
+                
+                _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
+                _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
+                RigisterButtonObjectEvent(_growCoin, go =>
+                {
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+                });
             }
             else
             {
                 goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB");
-                UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
+                // UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
                 _txtGoldVideo = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldVideo");
             }
             goldNode.SetActive(true);
@@ -238,6 +295,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _btnGetGold.onClick.AddListener(OnBtnGetGold);
             _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
             _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+            
+            if (!GL_CoreData._instance.AbTest || GL_PlayerData._instance._WithDrawGrowConfig==null)
+            {
+                _growCoin.SetActive(false);
+                _growRed.SetActive(false);
+            }
+            else
+            {
+                _growCoin.SetActive(true);
+                _growRed.SetActive(true);
+            }
         }
 
         #endregion
@@ -305,6 +373,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshRedCd();
+                            RefreshWithDrawGrow();
                         };
                         object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
@@ -334,6 +403,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
 
             GoldWithdraw();
+            RefreshWithDrawGrow();
         }
 
         /// <summary>
@@ -354,6 +424,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshGoldCd();
+                            RefreshWithDrawGrow();
                         };
                         object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
@@ -761,6 +832,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             if (!GL_CoreData._instance.AbTest)
             {
                 RefreshGold();
+                RefreshWithDrawGrow();
             }
         }
         
@@ -789,6 +861,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Coin -= _curGoldWithdrawData.WithDraw.coupon;
             RefreshGold();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
         }
 

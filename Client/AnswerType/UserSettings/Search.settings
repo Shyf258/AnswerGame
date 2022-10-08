@@ -7,6 +7,12 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.DA949528" = "BarrageFrame"
+	"OpenInspectorPreview.DA949528" = "1"
+	"currentGroup.DA949528" = "all"
+	"last_search.2138236A" = "withdraw"
+	"OpenInspectorPreview.2138236A" = "0"
+	"currentGroup.2138236A" = "asset"
 }
 providers = {
 	adb = {
@@ -53,6 +59,13 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"BarrageFrame"
+	"wi"
+	"withdraww"
+	"withdraw"
+	"an_qiandui"
+	"ProductionPageToggle"
+	"l"
 ]
 searchItemFavorites = [
 ]

@@ -1,5 +1,5 @@
-//2022.8.23 ¹ÜÀí
-//Ö÷Ò³ÃæÍæ·¨Ïà¹Ø³õÊ¼»¯
+//2022.8.23 ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½Ò³ï¿½ï¿½ï¿½æ·¨ï¿½ï¿½Ø³ï¿½Ê¼ï¿½ï¿½
 
 using DataModule;
 using DG.Tweening;
@@ -10,17 +10,17 @@ using UnityEngine.UI;
 public partial class UI_IF_Main
 {
 
-    #region ´ðÌâÍæ·¨
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½æ·¨
 
-    //ÊÍÒåÄÚÈÝ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private Text _guessFromExplainText;
     //Í¼
     private Image _guessFromExplainPic; 
-    //¹ÅÊ«
+    //ï¿½ï¿½Ê«
     private Text _ancientPoetryCrosswordText;
 
     /// <summary>
-    /// Ñ¡Ôñ°´¼ü×é
+    /// Ñ¡ï¿½ñ°´¼ï¿½ï¿½ï¿½
     /// </summary>
     private Transform _choiceGroup;
     private Button _btnA;
@@ -29,14 +29,14 @@ public partial class UI_IF_Main
     private Text _btnBText;
 
     // /// <summary>
-    // /// µ±Ç°ÌâÄ¿ÐòºÅ
+    // /// ï¿½ï¿½Ç°ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½
     // /// </summary>
     private Text _nowAnswer;
 
     #endregion
 
 
-    #region ÏÔÊ¾´ð°¸
+    #region å¯¹è±¡
 
     private Transform _showAnswer;
     private Transform _showRight;
@@ -47,7 +47,7 @@ public partial class UI_IF_Main
     protected void InitGameMode()
     {
 
-        #region ÓÎÏ·Íæ·¨³õÊ¼»¯
+        #region ä¸»é¡µçŽ©æ³•
         _nowAnswer = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "UserLevel");
         var gameArea = UnityHelper.FindTheChildNode(gameObject, "GameArea");
         var guessFromExplainRoot = UnityHelper.FindTheChildNode(gameArea.gameObject, "GuessFromExplainRoot");
@@ -75,31 +75,20 @@ public partial class UI_IF_Main
             OnClickChoice(2);
 
         });
-        //ÏÔÊ¾´ð°¸
+        //ç­”é¢˜æŒ‰é”®
         _showAnswer = UnityHelper.FindTheChildNode(_choiceGroup.gameObject, "ShowAnswer");
         _showRight = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowRight");
         _showWrong = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowWrong");
 
-        //²ÆÉñ
-        _moneyPool = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "MoneyPool");
-        RigisterButtonObjectEvent(_moneyPool, gp =>
-        {
-            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.MoneyPoolIcon);
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_IF_MoneyPool);
-        });
-
-
-        _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
-        _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
-        RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+      
 
         #endregion
 
 
     }
 
-    #region ´ðÌâÍæ·¨
-    //Ë¢ÐÂÌâÄ¿
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½æ·¨
+    //Ë¢ï¿½ï¿½ï¿½ï¿½Ä¿
     public void RefreshGameMode(EventParam param)
     {
         var gameMode = GL_SceneManager._instance.CurGameMode;
@@ -119,7 +108,7 @@ public partial class UI_IF_Main
                 break;
         }
         
-        //Ë¢ÐÂÑ¡Ïî
+        //Ë¢ï¿½ï¿½Ñ¡ï¿½ï¿½
         _btnAText.text = gameMode._levelInfo.Select1;
         _btnBText.text = gameMode._levelInfo.Select2;
 
@@ -130,7 +119,7 @@ public partial class UI_IF_Main
         _nowAnswer.text = string.Format(_answerCount, GL_PlayerData._instance.CurLevel);
     }
     
-    //Ë¢ÐÂÍ¼
+    //Ë¢ï¿½ï¿½Í¼
     private void RefreshPicture(TableAnswerInfoData info)
     {
         if (string.IsNullOrEmpty(info.Picture))
@@ -151,7 +140,7 @@ public partial class UI_IF_Main
         });
     }
     
-    //Ë¢ÐÂÊÍÒå
+    //Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private void RefreshExplain(TableAnswerInfoData info)
     {
         if (string.IsNullOrEmpty(info.TitleText))
@@ -163,7 +152,7 @@ public partial class UI_IF_Main
         _guessFromExplainText.text = explain;
     }
     
-    //Ë¢ÐÂ¹ÅÊ«
+    //Ë¢ï¿½Â¹ï¿½Ê«
     private void RefreshAncientPoetry(TableAnswerInfoData info)
     {
         if (string.IsNullOrEmpty(info.TitleText) || !info.TitleText.Contains("-"))
@@ -172,9 +161,9 @@ public partial class UI_IF_Main
         _ancientPoetryCrosswordText.SetActive(true);
         _ancientPoetryCrosswordText.text = "";
         var chars = info.TitleText.Split('-');
-        //¹ÅÊ«±àºÅ
+        //ï¿½ï¿½Ê«ï¿½ï¿½ï¿½
         int id = int.Parse(chars[0]);
-        //µÚ¼¸¾äÏÂ»®Ïß
+        //ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½
         int spaceIndex = int.Parse(chars[1]);
         int index = id;
         string first = DataModuleManager._instance.TableAncientPoetryData_Dictionary[index].TheFirst;
@@ -182,9 +171,9 @@ public partial class UI_IF_Main
         string third = DataModuleManager._instance.TableAncientPoetryData_Dictionary[index].TheThird;
         string fourth = DataModuleManager._instance.TableAncientPoetryData_Dictionary[index].TheFourth;
         string[] contents = {first, second, third, fourth};
-        //»ñµÃÏÂ»®ÏßÄÚÈÝ³¤¶È
+        //ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
         int spaceStrLength = contents[spaceIndex - 1].Length;
-        //»ñµÃÏÂ»®ÏßÌØÊâ·ûºÅ
+        //ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         string spaceSymbol = contents[spaceIndex - 1][spaceStrLength - 1].ToString();
         string newSpaceStr = "";
         for (int i = 0; i < spaceStrLength - 1; i++)
@@ -212,7 +201,7 @@ public partial class UI_IF_Main
     private Transform ChoiceBtn;
     private Transform _showResult;
     /// <summary>
-    /// ½á¹ûÕ¹Ê¾
+    /// ï¿½ï¿½ï¿½Õ¹Ê¾
     /// </summary>
     public void ShowAnswer(bool choice)
     {
@@ -274,19 +263,19 @@ public partial class UI_IF_Main
 
 
     /// <summary>
-    /// »Ø´ðÕýÈ·
+    /// ï¿½Ø´ï¿½ï¿½ï¿½È·
     /// </summary>
     private void RightAnswer()
     {
         // // _redAward.Play("an_shake_01");
         //  ChangeRightCount();
-        //   //·¢ËÍÉý¼¶ÇëÇó
+        //   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         //   GL_CoreData._instance.SaveData();
     }
 
 
-    private string _answerCount = "µÚ<color=#f58c3e>{0}</color>¹Ø";
-    private string _question = "¼ÌÐø´ð¶Ô<color=#CF0400>{0}</color>Ìâ£¬¼´¿É <color=#CF0400>³é½±</color>Ó´";
+    private string _answerCount = "ç¬¬<color=#f58c3e>{0}</color>é¢˜";
+   
 
     public void CloseBar()
     {

@@ -523,6 +523,66 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
+    #region 提现增幅配置
+
+    private Action _withDrawGrowConfig;
+
+    public Net_CB_WithDrawGrowConfig _WithDrawGrowConfig;
+    public void GetWithDrawGrowConfig(Action action=null)
+    {
+        _withDrawGrowConfig = action;
+        MethodExeTool.Loop(GetGrowConfig,3f,-1);
+     
+    }
+
+    private void GetGrowConfig()
+    {
+        Net_RequesetCommon config = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.WithDrawGrowConfig, JsonHelper.ToJson(config), CB_WithDrawGrowConfig);
+    }
+    
+    private void CB_WithDrawGrowConfig(string json)
+    {
+        Net_CB_WithDrawGrowConfig msg = JsonHelper.FromJson<Net_CB_WithDrawGrowConfig>(json);
+        if (msg == null )
+            return;
+        _WithDrawGrowConfig = msg;
+        MethodExeTool.CancelInvoke(GetGrowConfig);
+        _withDrawGrowConfig?.Invoke();
+        _withDrawGrowConfig = null;
+    }
+    
+    
+    #region 提现结果
+
+
+    public Net_CB_WithDrawTipsData _netCbWithDraw = new Net_CB_WithDrawTipsData();
+    public void Net_CB_WithDrawResult(string json)
+    {
+        if (_netCbWithDraw==null)
+        {
+            _netCbWithDraw = new Net_CB_WithDrawTipsData();
+        }
+
+        try
+        {
+            Net_CB_WithDrawTipsData msg = JsonHelper.FromJson<Net_CB_WithDrawTipsData>(json);
+            if (msg != null)
+            {
+                _netCbWithDraw = msg;
+            }
+            DDebug.LogError("当前提现成功额度："+ _netCbWithDraw.money) ;
+        }
+        catch 
+        {
+            DDebug.LogError("返回数值类型出错") ;
+        }
+    }
+
+
+    #endregion
+    #endregion
+
     #region 广告播放配置
 
     public Net_CB_PlayAD CbPlayAd;
