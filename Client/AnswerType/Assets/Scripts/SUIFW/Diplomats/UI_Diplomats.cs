@@ -216,7 +216,7 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
             
         }
 
-        if(_showPig && GL_CoreData._instance.AbTest)
+        if(_showPig && !GL_CoreData._instance.AbTest)
         {
 #if PureVersion
             return;

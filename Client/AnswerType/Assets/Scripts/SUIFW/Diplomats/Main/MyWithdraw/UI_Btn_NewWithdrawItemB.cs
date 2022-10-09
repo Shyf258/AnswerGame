@@ -121,7 +121,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             {
                 _txtNeedVideo.text = "可以提现";
                 _sldVideo.value = 1;
-                _sldTextVideo.text = $"{data.WithDraw.viewAdTimes}/{data.WithDraw.viewAdTimes}";
+                _sldTextVideo.text = "MAX";
             }
         }
 

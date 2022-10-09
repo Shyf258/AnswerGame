@@ -292,6 +292,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 _btnGetGold.onClick.AddListener(OnBtnGetGold);
                 _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
                 _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+                
+                _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
+                _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
+                RigisterButtonObjectEvent(_growCoin, go =>
+                {
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+                });
             }
             else
             {
@@ -307,12 +314,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
                 _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
                 
-                _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
-                _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
-                RigisterButtonObjectEvent(_growCoin, go =>
-                {
-                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
-                });
+               
             }
             goldNode.SetActive(true);
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
@@ -985,7 +987,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         private void RefreshWithDrawGrow()
         {
-            if (!GL_CoreData._instance.AbTest)
+            if (GL_CoreData._instance.AbTest)
             {
                 MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
             }

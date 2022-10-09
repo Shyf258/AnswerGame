@@ -32,8 +32,8 @@ public partial class UI_IF_Main : BaseUIForm
     #endregion
 
     #region 新手签到
-    private Button _btnNewbieSign;
-    private Text _textNewbieSign;
+    // private Button _btnNewbieSign;
+    // private Text _textNewbieSign;
     #endregion
 
 
@@ -283,9 +283,9 @@ public partial class UI_IF_Main : BaseUIForm
             }
         });
 
-        _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
-        _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
-        RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+        // _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
+        // _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
+        // RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
         
         #region 提现增幅
 
@@ -305,7 +305,7 @@ public partial class UI_IF_Main : BaseUIForm
         #endregion
         
 
-        if (!GL_CoreData._instance.AbTest)
+        if (GL_CoreData._instance.AbTest)
         {
             _productionPageToggle.gameObject.SetActive(true);
         }
@@ -391,22 +391,22 @@ public partial class UI_IF_Main : BaseUIForm
     #region 主页新手签到
     private void RefreshNewbieSign(EventParam param)
     {
-        bool set = GL_NewbieSign._instance.IsShowIcon();
-        _btnNewbieSign.SetActive(set);
-        if(set)
-        {
-            if (GL_NewbieSign._instance._gamecoreConfig == null
-                || GL_NewbieSign._instance._gamecoreConfig.rewards == null
-                || GL_NewbieSign._instance._gamecoreConfig.rewards.Count == 0)
-            {
-                _textNewbieSign.text = string.Format("<size=60>¥</size>{0}", 668);
-            }
-            else
-            {
-                _textNewbieSign.text = string.Format("<size=60>¥</size>{0}",
-                GL_NewbieSign._instance._gamecoreConfig.rewards[0].num / 100f);
-            }
-        }
+        // bool set = GL_NewbieSign._instance.IsShowIcon();
+        // _btnNewbieSign.SetActive(set);
+        // if(set)
+        // {
+        //     if (GL_NewbieSign._instance._gamecoreConfig == null
+        //         || GL_NewbieSign._instance._gamecoreConfig.rewards == null
+        //         || GL_NewbieSign._instance._gamecoreConfig.rewards.Count == 0)
+        //     {
+        //         _textNewbieSign.text = string.Format("<size=60>¥</size>{0}", 668);
+        //     }
+        //     else
+        //     {
+        //         _textNewbieSign.text = string.Format("<size=60>¥</size>{0}",
+        //         GL_NewbieSign._instance._gamecoreConfig.rewards[0].num / 100f);
+        //     }
+        // }
     }
 
     private void OnClickNewbieSign()
@@ -492,7 +492,7 @@ public partial class UI_IF_Main : BaseUIForm
 
     private void RefreshMoneyGrow(EventParam param)
     {
-        if (!GL_CoreData._instance.AbTest)
+        if (GL_CoreData._instance.AbTest)
         {
             GL_PlayerData._instance.GetWithDrawGrowConfig(()=>
             {
