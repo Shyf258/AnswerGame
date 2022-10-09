@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _appLoadMode: 0
   _serverType: 0
-  _isCloseGuide: 1
+  _isCloseGuide: 0
   _isLog: 1
   _isTestUnity: 1
   _enterType: 0
