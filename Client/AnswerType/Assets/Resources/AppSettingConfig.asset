@@ -20,7 +20,7 @@ MonoBehaviour:
   _enterType: 0
   _abTest: a
   _isSkipAD: 1
-  _buildApp: 3
+  _buildApp: 1
   _check: 0
   _skipWeChatLogin: 0
   _buildTime: 0
