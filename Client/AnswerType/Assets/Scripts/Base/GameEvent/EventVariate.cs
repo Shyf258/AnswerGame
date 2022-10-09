@@ -28,6 +28,8 @@ public enum EEventID
     //刷新新手签到ui
     RefreshNewbieSignUI,
 
+    /// <summary>/// 刷新提现增幅/// </summary>
+    RefreshGrowMoney,
     //语言
     EID_ChangeLanguage,
 

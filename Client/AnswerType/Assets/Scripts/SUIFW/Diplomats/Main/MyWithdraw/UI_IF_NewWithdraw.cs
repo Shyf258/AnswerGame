@@ -61,7 +61,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Text _txtGoldVideo; //已观看视频次数
 
         
+        #region 提现增幅
+
+        private Button _growRed;
+
+        private Text _growRedText;
         
+        private Button _growCoin;
+
+        private Text _growCoinText;
+
+        private string _growStr = "<color=#ff0000><size=52>{0}%</size></color>提现增幅";
+
+        #endregion
         
         
         //提现储存池
@@ -86,7 +98,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshGold();
             RefreshPlayer();
             RefreshRedCd();
-            
+            RefreshWithDrawGrow();
             _scrollRect.verticalNormalizedPosition = 1;
 
             // if (GL_CoreData._instance.AbTest)
@@ -242,6 +254,12 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _tfRedTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getRedNode.gameObject, "RedTime");
             _txtRedTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getRedNode.gameObject, "_txtRedTime");
             
+            _growRed = UnityHelper.GetTheChildNodeComponetScripts<Button>(redNode.gameObject, "OpenGrow");
+            _growRedText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growRed.gameObject, "Text");
+            RigisterButtonObjectEvent(_growRed, go =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+            });
             
             //金币
             Transform goldNode;
@@ -288,6 +306,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 _btnGetGold.onClick.AddListener(OnBtnGetGold);
                 _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
                 _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+                
+                _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
+                _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
+                RigisterButtonObjectEvent(_growCoin, go =>
+                {
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+                });
             }
             goldNode.SetActive(true);
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
@@ -295,6 +320,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _grpGold = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "_grpGold");
            
 
+            
+            
         }
 
         #endregion
@@ -362,6 +389,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshRedCd();
+                            RefreshWithDrawGrow();
                         };
                         object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
@@ -411,6 +439,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshGoldCd();
+                            RefreshWithDrawGrow();
                         };
                         object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
@@ -684,7 +713,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             {
                 if (!IsFirstDay(_curRedWithdrawData))
                 {
-                    Action action = RefreshRed;
+                    Action action = () =>
+                    {
+                        RefreshRed();
+                        RefreshWithDrawGrow();
+                    };
                     EWithDrawType type =  EWithDrawType.CashWithDraw;
                     Object[] obj = 
                     {
@@ -772,7 +805,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             {
                 if (!IsFirstDay(_curGoldWithdrawData))
                 {
-                    Action action = RefreshGold;
+                    Action action = () =>
+                    {
+                        RefreshGold();
+                        RefreshWithDrawGrow();
+                    };
                     EWithDrawType type =  EWithDrawType.DailyWithDraw;
                     Object[] obj = 
                     {
@@ -850,16 +887,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         //提现回调
         public void CB_RedWithDraw(string param)
         {
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
             float money = _curRedWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.CashWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Bogus -= _curRedWithdrawData.WithDraw.money;
             RefreshRed();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
             if (!GL_CoreData._instance.AbTest)
             {
@@ -882,16 +922,20 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawHighSuccess);
                     break;
             }
+            
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
             float money = _curGoldWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.DailyWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Coin -= _curGoldWithdrawData.WithDraw.coupon;
             RefreshGold();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
         }
 
@@ -937,7 +981,34 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
         }
 
-        
+        #region 提现增幅刷新显示
+
+        private void RefreshWithDrawGrow()
+        {
+            if (!GL_CoreData._instance.AbTest)
+            {
+                MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
+            }
+        }
+
+        private void ShowWithDrawGrow()
+        {
+            if (GL_PlayerData._instance._WithDrawGrowConfig==null)
+            {
+                _growCoin.SetActive(false);
+                _growRed.SetActive(false);
+            }
+            else
+            {
+                _growCoin.SetActive(true);
+                _growRed.SetActive(true);
+                string description = String.Format(_growStr,(GL_PlayerData._instance._WithDrawGrowConfig.growth));
+                _growCoinText.text = description;
+                _growRedText.text = description;
+            }
+        }
+
+        #endregion
         
         #region 提现储存池
 

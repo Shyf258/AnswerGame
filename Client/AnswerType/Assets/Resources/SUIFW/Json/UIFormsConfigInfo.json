@@ -154,6 +154,10 @@
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithdrawSuccess"
     },
     {
+      "Key": "DayGrow",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_DayGrow"
+    },
+    {
       "Key": "WaitTips",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WaitTips"
     },

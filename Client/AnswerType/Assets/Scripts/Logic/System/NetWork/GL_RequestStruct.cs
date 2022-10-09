@@ -276,6 +276,29 @@ public class Net_CB_WithDrawTipsData
     public string notifyMessage;
     public int money;
 }
+
+/// <summary>
+/// 登录增幅配置
+/// </summary>
+public class Net_CB_WithDrawGrowConfig
+{
+    /// <summary>///红包剩余金额（单位分） /// </summary>
+    public int money;
+    /// <summary>///视频增幅比率（小数） /// </summary>
+    public double videoGrowth;
+    /// <summary>///登录增幅比率（小数） /// </summary>
+    public double loginGrowth;
+    /// <summary>///增幅（小数） /// </summary>
+    public double growth;
+    /// <summary>///日期 /// </summary>
+    public int day;
+    /// <summary>///视频数 /// </summary>
+    public int view;
+    /// <summary>///倒计时（秒） /// </summary>
+    public int countDown;
+}
+
+
 #endregion
 
 #region 里程碑

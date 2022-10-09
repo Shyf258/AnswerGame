@@ -379,12 +379,14 @@ public class UI_IF_WithDrawJudge : BaseUIForm
     //提现回调
     private void CB_WithDraw(string param)
     {
+        GL_PlayerData._instance.Net_CB_WithDrawResult(param);
         float money = _withDraw.WithDraw.money /100f;
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {
             money,
-            _eWithDrawType
+            _eWithDrawType,
+            GL_PlayerData._instance._netCbWithDraw.money
         };
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
         GL_PlayerData._instance.Coin -= _withDraw.WithDraw.coupon;
