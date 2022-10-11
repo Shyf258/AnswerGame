@@ -16,9 +16,9 @@ MonoBehaviour:
   _serverType: 0
   _isCloseGuide: 0
   _isLog: 1
-  _isTestUnity: 1
+  _isTestUnity: 0
   _enterType: 0
-  _abTest: a
+  _abTest: b
   _isSkipAD: 0
   _buildApp: 1
   _check: 0
