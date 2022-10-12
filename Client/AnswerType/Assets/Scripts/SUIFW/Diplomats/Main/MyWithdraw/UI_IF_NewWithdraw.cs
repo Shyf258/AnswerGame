@@ -319,32 +319,26 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 _btnGetGold.onClick.AddListener(OnBtnGetGold);
                 _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
                 _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+                
+                //提现增幅 - 金币
+                _growCoin  = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
+                _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
+                RigisterButtonObjectEvent(_growCoin, go =>
+                {
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+                });
+                
+                if (GL_PlayerData._instance._WithDrawGrowConfig ==null)
+                {
+                    _growCoin.SetActive(false);
+                    _growRed.SetActive(false);
+                }
             }
             goldNode.SetActive(true);
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
             _txtGoldNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldNum");
             _grpGold = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "_grpGold");
-            
-            //提现增幅 - 金币
-            _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
-            _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
-            RigisterButtonObjectEvent(_growCoin, go =>
-            {
-                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
-            });
-            
-            
-            if (GL_CoreData._instance.AbTest || GL_PlayerData._instance._WithDrawGrowConfig==null)
-            {
-                _growCoin.SetActive(false);
-                _growRed.SetActive(false);
-            }
-            else
-            {
-                _growCoin.SetActive(true);
-                _growRed.SetActive(true);
-            }
-            
+
         }
 
         #endregion
