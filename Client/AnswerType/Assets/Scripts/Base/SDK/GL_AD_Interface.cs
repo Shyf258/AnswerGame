@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年9月15日  16:08:52
+// 广告位自动生成于 2022年10月12日  12:08:32
 
 using UnityEngine;
 
@@ -32,12 +32,8 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	public const string AD_Reward_ActivitySign = "ActivitySign";
 	public const string AD_Reward_RedGroupOpenRed = "RedGroupOpenRed";
 	public const string AD_Reward_Reright = "Reright";
-	public const string AD_Reward_MoreRedChance = "MoreRedChance";
-	public const string AD_Reward_MoreCoinChance = "MoreCoinChance";
-	public const string AD_Reward_MoneyShort = "MoneyShort";
-	public const string AD_Reward_WithDrawTurn = "WithDrawTurn";
-	public const string AD_Reward_TurnTable = "TurnTable";
-	public const string AD_Reward_WaitWithDraw = "WaitWithDraw";
+	public const string AD_Reward_NewPlayer = "NewPlayer";
+	public const string AD_Reward_LoginWithDraw = "LoginWithDraw";
 
 //2.插屏
 	public const string AD_Interstitial_AllDialog = "AllDialog";
@@ -76,12 +72,8 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	private int _ActivitySign = 0;
 	private int _RedGroupOpenRed = 0;
 	private int _Reright = 0;
-	private int _MoreRedChance = 0;
-	private int _MoreCoinChance = 0;
-	private int _MoneyShort = 0;
-	private int _WithDrawTurn = 0;
-	private int _TurnTable = 0;
-	private int _WaitWithDraw = 0;
+	private int _NewPlayer = 0;
+	private int _LoginWithDraw = 0;
 	#endregion
 
 	//判断是否有广告
@@ -170,23 +162,11 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 			case AD_Reward_Reright:
 				_Reright = 0;
 				break;
-			case AD_Reward_MoreRedChance:
-				_MoreRedChance = 0;
+			case AD_Reward_NewPlayer:
+				_NewPlayer = 0;
 				break;
-			case AD_Reward_MoreCoinChance:
-				_MoreCoinChance = 0;
-				break;
-			case AD_Reward_MoneyShort:
-				_MoneyShort = 0;
-				break;
-			case AD_Reward_WithDrawTurn:
-				_WithDrawTurn = 0;
-				break;
-			case AD_Reward_TurnTable:
-				_TurnTable = 0;
-				break;
-			case AD_Reward_WaitWithDraw:
-				_WaitWithDraw = 0;
+			case AD_Reward_LoginWithDraw:
+				_LoginWithDraw = 0;
 				break;
 		}
 #endif
@@ -194,7 +174,6 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 #if UNITY_EDITOR
 		SJson sj = new SJson();
 		sj.adSite = ad;
-		sj.adType = (int)GL_SDK._instance.GetADType(ad);
 		string str = JsonUtility.ToJson(sj);
 		CB_AdPlayCompleted(str);
 		return;
@@ -342,23 +321,11 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 			case AD_Reward_Reright:
 				_Reright = 1;
 				break;
-			case AD_Reward_MoreRedChance:
-				_MoreRedChance = 1;
+			case AD_Reward_NewPlayer:
+				_NewPlayer = 1;
 				break;
-			case AD_Reward_MoreCoinChance:
-				_MoreCoinChance = 1;
-				break;
-			case AD_Reward_MoneyShort:
-				_MoneyShort = 1;
-				break;
-			case AD_Reward_WithDrawTurn:
-				_WithDrawTurn = 1;
-				break;
-			case AD_Reward_TurnTable:
-				_TurnTable = 1;
-				break;
-			case AD_Reward_WaitWithDraw:
-				_WaitWithDraw = 1;
+			case AD_Reward_LoginWithDraw:
+				_LoginWithDraw = 1;
 				break;
 		}
 		return;
@@ -549,47 +516,19 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 #endif
 				_Reright = 0;
 				break;
-			case AD_Reward_MoreRedChance:
+			case AD_Reward_NewPlayer:
 #if UNITY_IOS && !UNITY_EDITOR
-				if(_MoreRedChance == 0)
+				if(_NewPlayer == 0)
 					return;
 #endif
-				_MoreRedChance = 0;
+				_NewPlayer = 0;
 				break;
-			case AD_Reward_MoreCoinChance:
+			case AD_Reward_LoginWithDraw:
 #if UNITY_IOS && !UNITY_EDITOR
-				if(_MoreCoinChance == 0)
+				if(_LoginWithDraw == 0)
 					return;
 #endif
-				_MoreCoinChance = 0;
-				break;
-			case AD_Reward_MoneyShort:
-#if UNITY_IOS && !UNITY_EDITOR
-				if(_MoneyShort == 0)
-					return;
-#endif
-				_MoneyShort = 0;
-				break;
-			case AD_Reward_WithDrawTurn:
-#if UNITY_IOS && !UNITY_EDITOR
-				if(_WithDrawTurn == 0)
-					return;
-#endif
-				_WithDrawTurn = 0;
-				break;
-			case AD_Reward_TurnTable:
-#if UNITY_IOS && !UNITY_EDITOR
-				if(_TurnTable == 0)
-					return;
-#endif
-				_TurnTable = 0;
-				break;
-			case AD_Reward_WaitWithDraw:
-#if UNITY_IOS && !UNITY_EDITOR
-				if(_WaitWithDraw == 0)
-					return;
-#endif
-				_WaitWithDraw = 0;
+				_LoginWithDraw = 0;
 				break;
 		}
 #endif

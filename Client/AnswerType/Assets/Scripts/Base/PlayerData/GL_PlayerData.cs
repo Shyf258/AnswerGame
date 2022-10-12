@@ -1174,7 +1174,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     /// 登录领现金配置
     /// </summary>
     /// <param name="action"></param>
-    public void SendLoginWithDraw( Action action)
+    public void SendLoginWithDraw( Action action = null)
     {
         _loginAction = action;
         Net_RequesetCommon msg = new Net_RequesetCommon();
@@ -1186,7 +1186,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         Net_CB_LoginConfig msg = JsonUtility.FromJson<Net_CB_LoginConfig>(json);
         if (msg == null)
             return;
-        _NetCbLoginConfig = new Net_CB_LoginConfig();
+        _NetCbLoginConfig = msg;
         _loginAction?.Invoke();
         _loginAction = null;
     }

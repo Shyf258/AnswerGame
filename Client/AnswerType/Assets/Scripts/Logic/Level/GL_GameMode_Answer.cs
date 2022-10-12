@@ -555,7 +555,7 @@ public class GL_GameMode_Answer : GL_GameMode
     {
         //_uiIfMain._levelSlider.GetAllCanGetReward();
         
-        GL_GameEvent._instance.SendEvent(EEventID.RefreshPosition);
+        // GL_GameEvent._instance.SendEvent(EEventID.RefreshPosition);
     }
     
 }

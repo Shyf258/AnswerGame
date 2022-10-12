@@ -69,6 +69,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawHigh);
                     break;
             }
+            
+            
+            
             if (_myWithdraw.IsGoldCanWithdraw(_myWithdrawData, true))
             {
                 //判断是否微信登陆.

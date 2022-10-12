@@ -62,7 +62,7 @@ public class UI_IF_NewLogin : BaseUIForm
 
     private List<string> _listDescription = new List<string>()
     {
-        "{1}<size=72>天</size>",
+        "{0}<size=72>天</size>",
         "差{0}天可额外提现",
         "每登录<color=#ff0000>5</color>天，可额外提现<color=#ff0000>{0}</color>元",
         "{0}元",
@@ -94,17 +94,19 @@ public class UI_IF_NewLogin : BaseUIForm
 
         _dayNumber = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "DayNumber");
         _loginTips = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "LoginDescription");
-        Transform _top = UnityHelper.FindTheChildNode(gameObject, "TopFrame");
-
-        _rewardCountEvery = UnityHelper.GetTheChildNodeComponetScripts<Text>(_top.gameObject, "RewardCount");
+        Transform _top = UnityHelper.FindTheChildNode(gameObject, "EveryDay");
         _btnEveryDay = UnityHelper.GetTheChildNodeComponetScripts<Button>(_top.gameObject, "Btn_WithDraw");        
         RigisterButtonObjectEvent(_btnEveryDay, go =>
         {
             WithDrawOnClick(WithDrawType.EveryDay);
         });
         _withDrawCountEveryDay = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnEveryDay.gameObject, "Text");
-        Transform _bottom = UnityHelper.FindTheChildNode(gameObject, "BottomFrame");
-
+        _rewardCountEvery = UnityHelper.GetTheChildNodeComponetScripts<Text>(_top.gameObject, "RewardCount");
+      
+        Transform _bottom = UnityHelper.FindTheChildNode(gameObject, "LoginDay");
+        
+      
+        
         _rewardCountLogin = UnityHelper.GetTheChildNodeComponetScripts<Text>(_bottom.gameObject, "RewardCount");
         _btnLoginDay = UnityHelper.GetTheChildNodeComponetScripts<Button>(_bottom.gameObject, "Btn_WithDraw");
         RigisterButtonObjectEvent(_btnLoginDay, go =>
@@ -116,10 +118,7 @@ public class UI_IF_NewLogin : BaseUIForm
     }
     public override void Refresh(bool recall)
     { 
-        GL_PlayerData._instance.SendLoginWithDraw(() =>
-        {
-            RefreshPage();
-        });
+        RefreshPage();
     }
 
     public override void onUpdate()
@@ -134,34 +133,34 @@ public class UI_IF_NewLogin : BaseUIForm
         //登录天数
         _dayNumber.text = String.Format(_listDescription[0], _netCbLoginConfig.day);
         //累计登录天数提醒
-        _loginTips.text = String.Format(_listDescription[2], _netCbLoginConfig.withdraws[1].needDay);
+        _loginTips.text = String.Format(_listDescription[2], (_netCbLoginConfig.withDraws[1].money/100f).ToString("0.00"));
         
         //每日登录
         
         //按键文字每日提现
         _withDrawCountEveryDay.text = String.Format(_listDescription[4],
-            ( _netCbLoginConfig.withdraws[0].money/100f).ToString("0.00"));
+            ( _netCbLoginConfig.withDraws[0].money/100f).ToString("0.00"));
         
         //图标提现金额显示
         _rewardCountEvery.text = String.Format(_listDescription[3],
-            ( _netCbLoginConfig.withdraws[0].money/100f).ToString("0.00"));
+            ( _netCbLoginConfig.withDraws[0].money/100f).ToString("0.00"));
         
         //按键可交互开关
-        _btnEveryDay.interactable =  _netCbLoginConfig.withdraws[0].withDrawLimit > 0;
+        _btnEveryDay.interactable =  _netCbLoginConfig.withDraws[0].withDrawLimit > 0;
         
         
         //累计登录
         
         //按键文字累计提现
         _withDrawCountLogin.text = String.Format(_listDescription[4],
-            ( _netCbLoginConfig.withdraws[1].money/100f).ToString("0.00"));
+            ( _netCbLoginConfig.withDraws[1].money/100f).ToString("0.00"));
         
         //图标提现金额显示
         _rewardCountLogin.text = String.Format(_listDescription[3],
-            ( _netCbLoginConfig.withdraws[1].money/100f).ToString("0.00"));
+            ( _netCbLoginConfig.withDraws[1].money/100f).ToString("0.00"));
         
         //累计登录天数差距提醒
-        int day = _netCbLoginConfig.withdraws[1].needDay - _netCbLoginConfig.day ;
+        int day = _netCbLoginConfig.withDraws[1].needDay - _netCbLoginConfig.day ;
         if (day>0)
         {
           
@@ -172,7 +171,7 @@ public class UI_IF_NewLogin : BaseUIForm
             _dayGap.text = "已获得额外提现机会!";
         }
         //按键可交互开关
-        if (_netCbLoginConfig.withdraws[1].withDrawLimit<=0)
+        if (_netCbLoginConfig.withDraws[1].withDrawLimit<=0)
         {
             _dayGap.SetActive(false);
             _btnLoginDay.interactable = false;
@@ -182,6 +181,13 @@ public class UI_IF_NewLogin : BaseUIForm
             _dayGap.SetActive(true);
             _btnLoginDay.interactable = true;
         }
+
+        if (_netCbLoginConfig.withDraws.Count<2)
+        {
+            Transform _bottom = UnityHelper.FindTheChildNode(gameObject, "LoginDay");
+            _bottom.SetActive(false);
+        }
+        
     }
 
     private void WithDrawOnClick(WithDrawType drawType)
@@ -190,10 +196,10 @@ public class UI_IF_NewLogin : BaseUIForm
         switch (drawType)
         {
             case WithDrawType.EveryDay:
-                _netCbWithDraw = _netCbLoginConfig.withdraws[0];
+                _netCbWithDraw = _netCbLoginConfig.withDraws[0];
                 break;
             case WithDrawType.Login:
-                _netCbWithDraw = _netCbLoginConfig.withdraws[1];
+                _netCbWithDraw = _netCbLoginConfig.withDraws[1];
                 break;
             default:
                 break;
@@ -219,6 +225,14 @@ public class UI_IF_NewLogin : BaseUIForm
     private void WithDraw()
     {
 
+        if (!GL_PlayerData._instance.IsLoginWeChat())
+        {
+            //DDebug.Log("@@@@@@@@没有登录微信");
+            //登陆微信
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin);
+            return;
+        }
+        
         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_LoginWithDraw, (show=>
         {
             if (show)

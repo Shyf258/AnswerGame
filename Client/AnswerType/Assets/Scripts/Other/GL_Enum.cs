@@ -57,6 +57,7 @@ public enum EWithDrawType
     DailyWithDraw = 7,  //每日提现
     TipsPage = 8,       //广告提现机会
     WaitWithDraw = 9,
+    LoginWithDraw = 12, //登录领钱
 }
 
 public enum EGameEnterType
@@ -315,4 +316,5 @@ public enum EGamecoreType
     ActivitySign = 3,   //活动页签到
     PureAnswer = 4, //答题进度红包
     ActivityVideo = 5, //活动看视频
+    NewPlayer = 10, //新人奖金
 }

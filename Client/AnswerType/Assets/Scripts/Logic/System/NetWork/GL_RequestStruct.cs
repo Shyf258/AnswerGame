@@ -489,7 +489,7 @@ public class Net_CB_LoginConfig
     /// <summary>
     /// 提现配置
     /// </summary>
-    public List<Net_CB_WithDraw> withdraws;
+    public List<Net_CB_WithDraw> withDraws;
 
 }
 

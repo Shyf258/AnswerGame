@@ -156,6 +156,7 @@ public class GL_ServerCommunication : Singleton<GL_ServerCommunication>
                                 SUIFW.Diplomats.Common.UI_HintMessage._.ShowMessage(msg.message);
                                 break;
                             case EResponseCode.TipsADS:
+                                SUIFW.Diplomats.Common.UI_HintMessage._.ShowMessage(msg.message);
                                 break;
                             default:
                                 break;
@@ -168,6 +169,7 @@ public class GL_ServerCommunication : Singleton<GL_ServerCommunication>
             yield return null;
 
         }
+        request.Dispose();
     }
 
 

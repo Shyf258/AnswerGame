@@ -55,6 +55,15 @@ public class UI_IF_PlayAdWithDraw : BaseUIForm
 
     private void WithDraw()
     {
+        
+        if (!GL_PlayerData._instance.IsLoginWeChat())
+        {
+            //DDebug.Log("@@@@@@@@没有登录微信");
+            //登陆微信
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin);
+            return;
+        }
+        
         DDebug.LogError("******当前提现要求ecpm:"+_withDrawData.ecpm+
                         " 当前获取到的ecpm:"+ Convert.ToInt32(GL_CoreData._instance._adECPM) +
                         "  当前reqAdId："+ GL_CoreData._instance._adReqAdid);

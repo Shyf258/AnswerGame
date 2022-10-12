@@ -222,6 +222,31 @@ public enum EAnalyticsType
     GrowMoneyPlanFinish,
     /// <summary>/// 金币提现解锁/// </summary>
     CoinDailySuccess,
+    
+    
+    #region 新手签到领取
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion
 
 }
 
@@ -335,5 +360,12 @@ public static class AnalyticsEvents
         {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
         {EAnalyticsType.GrowMoneyPlanFinish,"txsp_001"},
         {EAnalyticsType.CoinDailySuccess,"tixian_0.3_chenggong"}, 
+        
+        #region 新手签到领取
+        {EAnalyticsType.NewPlayerReceive,"xinshoufuli_001"},
+        {EAnalyticsType.NewPlayerSign,"qiandao_001"},
+        {EAnalyticsType.LoginReceive,"qiandao_002"},
+        {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
+        #endregion
     };
 }

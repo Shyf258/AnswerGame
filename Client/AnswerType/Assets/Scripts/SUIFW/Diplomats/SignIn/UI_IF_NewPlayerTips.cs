@@ -10,7 +10,7 @@ using Object = System.Object;
 
 public class UI_IF_NewPlayerTips : BaseUIForm
 {
-    private string _description = "恭喜成功获得新人奖金{0}金币,\n可以立即提现{1}元";
+    private string _description = "恭喜成功获得新人奖金<color=#ff0000>{0}</color>金币,\n可以立即提现<color=#ff0000>{1}</color>元";
 
     private Text _descriptionText;
     
