@@ -207,6 +207,30 @@ public enum EAnalyticsType
     MoneyPoolVideoFinish,
     /// <summary>/// 财神视频播放成功/// </summary>
     MoneyPoolVideoFail,
+
+    #region 新手签到领取
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion
 }
 
 
@@ -313,5 +337,14 @@ public static class AnalyticsEvents
         {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
+
+        #region 新手签到领取
+        {EAnalyticsType.NewPlayerReceive,"xinshoufuli_001"},
+        {EAnalyticsType.NewPlayerSign,"qiandao_001"},
+        {EAnalyticsType.LoginReceive,"qiandao_002"},
+        {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
+        
+
+        #endregion
     };
 }

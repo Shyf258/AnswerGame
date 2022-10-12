@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年8月4日  15:51:57
+// 广告位自动生成于 2022年10月11日  19:40:13
 
 using UnityEngine;
 
@@ -32,6 +32,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	public const string AD_Reward_ActivitySign = "ActivitySign";
 	public const string AD_Reward_RedGroupOpenRed = "RedGroupOpenRed";
 	public const string AD_Reward_Reright = "Reright";
+	public const string AD_Reward_LoginWithDraw = "LoginWithDraw";
 
 //2.插屏
 	public const string AD_Interstitial_AllDialog = "AllDialog";
@@ -70,6 +71,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	private int _ActivitySign = 0;
 	private int _RedGroupOpenRed = 0;
 	private int _Reright = 0;
+	private int _LoginWithDraw = 0;
 	#endregion
 
 	//判断是否有广告
@@ -158,13 +160,15 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 			case AD_Reward_Reright:
 				_Reright = 0;
 				break;
+			case AD_Reward_LoginWithDraw:
+				_LoginWithDraw = 0;
+				break;
 		}
 #endif
 
 #if UNITY_EDITOR
 		SJson sj = new SJson();
 		sj.adSite = ad;
-		sj.adType = (int)GL_SDK._instance.GetADType(ad);
 		string str = JsonUtility.ToJson(sj);
 		CB_AdPlayCompleted(str);
 		return;
@@ -311,6 +315,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_Reright:
 				_Reright = 1;
+				break;
+			case AD_Reward_LoginWithDraw:
+				_LoginWithDraw = 1;
 				break;
 		}
 		return;
@@ -500,6 +507,13 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 					return;
 #endif
 				_Reright = 0;
+				break;
+			case AD_Reward_LoginWithDraw:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_LoginWithDraw == 0)
+					return;
+#endif
+				_LoginWithDraw = 0;
 				break;
 		}
 #endif

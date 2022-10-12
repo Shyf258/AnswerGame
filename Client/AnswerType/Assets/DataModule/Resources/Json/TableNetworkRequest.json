@@ -695,5 +695,12 @@
     "Method": "POST",
     "URL": 2,
     "JointURL": "/play/growth/config"
+  },
+  "90401": {
+    "ID": 90401,
+    "Name": "登录领钱",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/clockin/nconfig"
   }
 }

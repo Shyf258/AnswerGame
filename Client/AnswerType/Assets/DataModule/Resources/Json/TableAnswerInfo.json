@@ -32,7 +32,7 @@
   "4": {
     "ID": 4,
     "Type": 2,
-    "Select1": "按兵部队",
+    "Select1": "按兵不动",
     "Select2": "暗度陈仓",
     "CorrectAnswer": [
       1

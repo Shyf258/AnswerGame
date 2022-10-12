@@ -116,7 +116,7 @@ public class UI_IF_GetNormal : BaseUIForm
                     _callback?.Invoke();
                     _callback = null;
 
-                    object[] datas = { msg.rewards, null };
+                    object[] datas = { msg.rewards, null,false,true };
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
                 });
                 //if (_action != null)

@@ -148,8 +148,8 @@ public class GL_GameMode_Answer : GL_GameMode
             //领取奖励
             Cb_ShowCashCoin(value);
 
-            //刷新里程碑
-            AutoGetSliderReward();
+            // //刷新里程碑
+            // AutoGetSliderReward();
 
 
             // GL_PlayerData._instance._canChangeWithDraw = true;
@@ -238,6 +238,11 @@ public class GL_GameMode_Answer : GL_GameMode
                     break;
             }
         }));
+
+        if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
+        {
+            GL_PlayerData._instance.GetNewPlayerReward();
+        }
     }
 
     private void ShowAd()
@@ -413,8 +418,8 @@ public class GL_GameMode_Answer : GL_GameMode
                 //领取奖励
                 Cb_ShowCashCoin(value);
 
-                //刷新里程碑
-                AutoGetSliderReward();
+                // //刷新里程碑
+                // AutoGetSliderReward();
 
                 GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain);
             };
