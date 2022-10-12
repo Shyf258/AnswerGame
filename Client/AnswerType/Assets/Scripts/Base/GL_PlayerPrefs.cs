@@ -10,8 +10,9 @@ public enum EPrefsKey
 {
     IsAgreeGDPR = 0, //隐私协议
     IsFCM, //防沉迷
-    IsWeChatLogIn = 0, //微信登录 
+    IsWeChatLogIn , //微信登录 
     IsOpenLogToTool,  //工具log开关
+    IsReceiveNewPlayer//领取新手红包
 }
 
 public class GL_PlayerPrefs : MonoBehaviour

@@ -246,9 +246,9 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
 
         //if (!GL_CoreData._instance.AbTest)
         {
-            if (GL_Game._instance._signInConfig.Clockin()  )
+            // if (GL_Game._instance._signInConfig.Clockin()  )
             {
-                ShowUI(SysDefine.UI_Path_NewSignInPage);
+                ShowUI(SysDefine.UI_Path_NewLogin);
             }
         }
     }

@@ -7,6 +7,7 @@ using Logic.System.NetWork;
 using SUIFW;
 using SUIFW.Diplomats.Common;
 using UnityEngine;
+using Object = System.Object;
 
 public class GL_PlayerData : Singleton<GL_PlayerData>
 {
@@ -776,6 +777,10 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
+
+
+    #region 打卡签到
+    
     #region 每日签到
 
     // public Net_CB_SignInConfig SignInConfig;
@@ -783,27 +788,35 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     #endregion
 
     #region 每日打卡
-    /// <summary>
-    /// 每日打卡配置
-    /// </summary>
-    public Net_CB_ClockinConfig SigNetCbClockinConfig;
-    
-
-    /// <summary>
-    /// 打卡签到
-    /// </summary>
-    /// <param name="action"></param>
-    public void ClockInReport(Action action=null)
-    {
-        Net_RequesetCommon req = new Net_RequesetCommon();
-        GL_ServerCommunication._instance.Send(Cmd.Clockin, JsonHelper.ToJson(req) ,(delegate(string json)
-        {
-            action?.Invoke();
-        }));
-    }
+    // /// <summary>
+    // /// 每日打卡配置
+    // /// </summary>
+    // public Net_CB_ClockinConfig SigNetCbClockinConfig;
+    //
+    //
+    // /// <summary>
+    // /// 打卡签到
+    // /// </summary>
+    // /// <param name="action"></param>
+    // public void ClockInReport(Action action=null)
+    // {
+    //     Net_RequesetCommon req = new Net_RequesetCommon();
+    //     GL_ServerCommunication._instance.Send(Cmd.Clockin, JsonHelper.ToJson(req) ,(delegate(string json)
+    //     {
+    //         action?.Invoke();
+    //     }));
+    // }
     
     #endregion
+    
+    #region 新手每日提现
 
+    
+
+    #endregion
+    
+    #endregion
+    
     #region 每日任务
 
     public Net_CB_TaskConfig TaskConfig;
@@ -1151,6 +1164,36 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
+    #region 登录领现金
+
+
+    private Action _loginAction;
+
+    public Net_CB_LoginConfig _NetCbLoginConfig = new Net_CB_LoginConfig();
+    /// <summary>
+    /// 登录领现金配置
+    /// </summary>
+    /// <param name="action"></param>
+    public void SendLoginWithDraw( Action action)
+    {
+        _loginAction = action;
+        Net_RequesetCommon msg = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.LoginWithDrawConfig, JsonUtility.ToJson(msg), CB_loginWithDraw);
+    }
+
+    private void CB_loginWithDraw(string json)
+    {
+        Net_CB_LoginConfig msg = JsonUtility.FromJson<Net_CB_LoginConfig>(json);
+        if (msg == null)
+            return;
+        _NetCbLoginConfig = new Net_CB_LoginConfig();
+        _loginAction?.Invoke();
+        _loginAction = null;
+    }
+
+
+    #endregion
+    
     #region 邀请配置
 
     /// <summary>
@@ -1683,6 +1726,30 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         });
     }
 
+    #region 新人奖金
+
+    /// <summary>
+    /// 获取新人奖金配置并打开提示页
+    /// </summary>
+    public void GetNewPlayerReward()
+    {
+        Action action = () =>
+        {
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<=1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
+            {
+                SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
+                    GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
+                    Object[] obj =  {accept,};
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
+                }));
+            }
+        };
+        SendGamecoreConfig(EGamecoreType.NewPlayer, action);
+    }
+
+    #endregion
 
     #region 领取奖励
 

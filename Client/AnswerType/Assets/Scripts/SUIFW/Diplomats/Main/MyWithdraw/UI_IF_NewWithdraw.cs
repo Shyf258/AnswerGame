@@ -393,7 +393,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshRedCd();
                             RefreshWithDrawGrow();
                         };
-                        object[] datas = { msg.rewards, action,true};
+                        object[] datas = { msg.rewards, action,true,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                     }));
                 }
@@ -443,7 +443,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGoldCd();
                             RefreshWithDrawGrow();
                         };
-                        object[] datas = { msg.rewards, action,true};
+                        object[] datas = { msg.rewards, action,true,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                     }));
                 }

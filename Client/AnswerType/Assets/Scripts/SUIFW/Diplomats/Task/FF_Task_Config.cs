@@ -299,7 +299,7 @@ public class FF_Task_Config
                         break;
                     case TaskType.SignIn:
                         //打开签到界面
-                        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
+                        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
                         // GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.Main_SignIn);
                         break;
                     case TaskType.OnLine:

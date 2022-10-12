@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 using Logic.System.NetWork;
+using SUIFW.Diplomats.Common;
 using Object = System.Object;
 
 public class UI_IF_GetReward : BaseUIForm
@@ -39,11 +40,14 @@ public class UI_IF_GetReward : BaseUIForm
     //private EItemType _doubleType; //双倍按钮类型
 
     private Button _withdrawBtn;
+    private Image _btnImage;
     private Image _withDrawSlider;
     private string _withdrawTipsStr = "<size=64><color=#ff0000>{0}</color></size>元提现进度";
     private Text _withdrawTipsText;
 
     private Text _fillText;
+
+    public List<Sprite> _ListSprite;
     
     public override void Init()
     {
@@ -96,9 +100,18 @@ public class UI_IF_GetReward : BaseUIForm
         _withdrawBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(withdrawtips.gameObject, "WithDrawBtn");
         RigisterButtonObjectEvent(_withdrawBtn, go =>
         {
-            UIManager.GetInstance().GetMain()._withdrawPageToggle.isOn = true;
-            OnClickSure();
+            if (_withDrawSlider.fillAmount>=1)
+            {
+                UIManager.GetInstance().GetMain()._withdrawPageToggle.isOn = true;
+                OnClickSure();
+            }
+            else
+            {
+                UI_HintMessage._.ShowMessage("金币不足，请继续努力!");
+            }
+           
         });
+        _btnImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(withdrawtips.gameObject, "WithDrawBtn");
         _withdrawTipsText = UnityHelper.GetTheChildNodeComponetScripts<Text>(withdrawtips.gameObject, "TipsText");
     }
 
@@ -179,8 +192,16 @@ public class UI_IF_GetReward : BaseUIForm
         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
 
         _withDrawSlider.fillAmount =(float) GL_PlayerData._instance.Coin / GL_PlayerData._instance._withDrawTarget[EWithDrawType.DailyWithDraw].coupon;
-        _fillText.gameObject.SetActive(_withDrawSlider.fillAmount>=1);
-
+        if (_withDrawSlider.fillAmount>=1)
+        {
+            _btnImage.sprite = _ListSprite[0];
+            _fillText.text = "Max";
+        }
+        else
+        {
+            _btnImage.sprite = _ListSprite[1];
+            _fillText.text = (_withDrawSlider.fillAmount * 100).ToString("0") + "%";
+        }
         _withdrawTipsText.text = String.Format(_withdrawTipsStr,(GL_PlayerData._instance._withDrawTarget[EWithDrawType.DailyWithDraw].money/100f).ToString("0.00"));
     }
 

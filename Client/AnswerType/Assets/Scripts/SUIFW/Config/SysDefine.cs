@@ -133,6 +133,8 @@ namespace SUIFW
         public const string UI_Path_RightReward = "RightReward";
         public const string UI_Path_SignIn = "SignIn";
         public const string UI_Path_NewSignInPage = "NewSignInPage";
+        public const string UI_Path_NewLogin = "NewLogin";
+        public const string UI_Path_NewPlayerTips = "NewPlayerTips";
         public const string UI_Path_Ranking = "Ranking";
         public const string UI_Path_FeedBack = "FeedBack";
         public const string UI_Path_Setting = "Setting";

@@ -61,6 +61,14 @@
       "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewSignInPage"
     },
     {
+      "Key": "NewLogin",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewLogin"
+    },
+    {
+      "Key": "NewPlayerTips",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewPlayerTips"
+    },
+    {
       "Key": "FeedBack",
       "Value": "SUIFW\\Prefab\\UI_IF_FeedBack"
     },
