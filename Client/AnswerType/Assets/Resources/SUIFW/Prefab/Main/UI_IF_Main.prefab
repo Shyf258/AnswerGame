@@ -3088,7 +3088,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u7B7E\u5230\u63D0\u73B0"
+  m_Text: "\u767B\u5F55\u63D0\u73B0"
 --- !u!114 &889574484136068847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6125,6 +6125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SmallLevelSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619009467366792129, guid: af4a8ae57d9b648848dbaef836c57331,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351641975962944987, guid: af4a8ae57d9b648848dbaef836c57331,
         type: 3}
