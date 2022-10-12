@@ -30,6 +30,12 @@ public enum EEventID
 
     /// <summary>/// 刷新提现增幅/// </summary>
     RefreshGrowMoney,
+    
+    /// <summary>
+    /// 刷新登录领钱
+    /// </summary>
+    RefreshLogin,
+    
     //语言
     EID_ChangeLanguage,
 

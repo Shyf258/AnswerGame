@@ -79,6 +79,11 @@ public class UI_IF_NewLogin : BaseUIForm
     /// </summary>
     private Net_CB_WithDraw _netCbWithDraw = new Net_CB_WithDraw();
 
+    /// <summary>
+    /// 天数差距
+    /// </summary>
+    private int day;
+    
     #endregion
     
     public override void Init()
@@ -138,15 +143,21 @@ public class UI_IF_NewLogin : BaseUIForm
         //每日登录
         
         //按键文字每日提现
-        _withDrawCountEveryDay.text = String.Format(_listDescription[4],
-            ( _netCbLoginConfig.withDraws[0].money/100f).ToString("0.00"));
-        
+        if (_netCbLoginConfig.withDraws[0].withDrawLimit>0)
+        {
+            _withDrawCountEveryDay.text = String.Format(_listDescription[4],
+                ( _netCbLoginConfig.withDraws[0].money/100f).ToString("0.00"));
+        }
+        else
+        {
+            _withDrawCountEveryDay.text = "明日再领";
+        }
         //图标提现金额显示
         _rewardCountEvery.text = String.Format(_listDescription[3],
             ( _netCbLoginConfig.withDraws[0].money/100f).ToString("0.00"));
         
-        //按键可交互开关
-        _btnEveryDay.interactable =  _netCbLoginConfig.withDraws[0].withDrawLimit > 0;
+        // //按键可交互开关
+        // _btnEveryDay.interactable =  _netCbLoginConfig.withDraws[0].withDrawLimit > 0;
         
         
         //累计登录
@@ -160,27 +171,26 @@ public class UI_IF_NewLogin : BaseUIForm
             ( _netCbLoginConfig.withDraws[1].money/100f).ToString("0.00"));
         
         //累计登录天数差距提醒
-        int day = _netCbLoginConfig.withDraws[1].needDay - _netCbLoginConfig.day ;
-        if (day>0)
+        day = 5- ( _netCbLoginConfig.day%5 ) ;
+        if (_netCbLoginConfig.withDraws[1].withDrawLimit<=0)
         {
-          
             _dayGap.text =  String.Format(_listDescription[1],day);
         }
         else
         {
             _dayGap.text = "已获得额外提现机会!";
         }
-        //按键可交互开关
-        if (_netCbLoginConfig.withDraws[1].withDrawLimit<=0)
-        {
-            _dayGap.SetActive(false);
-            _btnLoginDay.interactable = false;
-        }
-        else
-        {
-            _dayGap.SetActive(true);
-            _btnLoginDay.interactable = true;
-        }
+        // //按键可交互开关
+        // if (_netCbLoginConfig.withDraws[1].withDrawLimit<=0)
+        // {
+        //     _dayGap.SetActive(false);
+        //     // _btnLoginDay.interactable = false;
+        // }
+        // else
+        // {
+        //     _dayGap.SetActive(true);
+        //     // _btnLoginDay.interactable = true;
+        // }
 
         if (_netCbLoginConfig.withDraws.Count<2)
         {
@@ -197,17 +207,24 @@ public class UI_IF_NewLogin : BaseUIForm
         {
             case WithDrawType.EveryDay:
                 _netCbWithDraw = _netCbLoginConfig.withDraws[0];
+                if (_netCbWithDraw.withDrawLimit<=0)
+                {
+                    UI_HintMessage._.ShowMessage("请明日上线领取！");
+                    return;
+                }
                 break;
             case WithDrawType.Login:
                 _netCbWithDraw = _netCbLoginConfig.withDraws[1];
+
+                if (_netCbWithDraw.withDrawLimit<1)
+                {
+                    UI_HintMessage._.ShowMessage($"再登录{day}天即可提现哦！");
+                    return;
+                }
+                
                 break;
             default:
                 break;
-        }
-
-        if (_netCbWithDraw.withDrawLimit <=0)
-        {
-            return;
         }
         
         if (GL_PlayerData._instance._NetCbLoginConfig.viewAds < _netCbWithDraw.needAd)
@@ -217,6 +234,7 @@ public class UI_IF_NewLogin : BaseUIForm
         else
         {
             CloseUIForm();
+            GL_GameEvent._instance.SendEvent(EEventID.RefreshLogin);
             WithDraw();
         }
         
