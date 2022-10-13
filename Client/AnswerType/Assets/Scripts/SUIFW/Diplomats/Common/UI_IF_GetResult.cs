@@ -60,6 +60,7 @@ namespace SUIFW.Diplomats.Common
             base.InitData(data);
             
             _isActiveMainUp = false;
+            _isFinishAd = false;
             
             if (data is object[] datas)
             {
@@ -84,6 +85,14 @@ namespace SUIFW.Diplomats.Common
                         _isActiveMainUp = bl;
                     }
                 }
+                
+                if (datas.Length > 3)
+                {
+                    if (datas[3] is bool playad)
+                    {
+                        _isFinishAd = playad;
+                    }
+                }
             }
         }
 
@@ -100,6 +109,16 @@ namespace SUIFW.Diplomats.Common
         public override void onUpdate()
         {
 
+        }
+
+        public override void OnHide()
+        {
+            base.OnHide();
+            
+            if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
+            {
+                GL_PlayerData._instance.GetNewPlayerReward(_isActiveMainUp);
+            }
         }
 
         #endregion
@@ -137,6 +156,12 @@ namespace SUIFW.Diplomats.Common
         /// </summary>
         private bool _isActiveMainUp;
 
+        
+        /// <summary>
+        /// 是否完成广告播放
+        /// </summary>
+        private bool _isFinishAd = false;
+        
         #endregion
 
         #region Logic
