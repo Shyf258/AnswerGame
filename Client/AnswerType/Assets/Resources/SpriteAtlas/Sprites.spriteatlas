@@ -29,10 +29,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 069b603b173560e4d838415f2a7b107e, type: 3}
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 5bf54a124665f97418de1b4f8df90e11, type: 3}
@@ -44,6 +48,7 @@ SpriteAtlas:
   - Home_icon_tubiao_8
   - Home_icon_tubiao_91
   - Home_icon_tubiao_9
+  m_RenderDataMap: {}
   m_Tag: Sprites
   m_IsVariant: 0
   m_IsPlaceholder: 0
