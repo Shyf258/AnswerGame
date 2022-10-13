@@ -211,7 +211,7 @@ public partial class UI_IF_Main
                         FreshGetCoinTimes();
                         GL_PlayerData._instance.GetTaskConfig();
                     };
-                    object[] datas = { msg.rewards, action };
+                    object[] datas = { msg.rewards, action , false, true };
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
                 });
             }

@@ -461,7 +461,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
         GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Guide, 0, (msg) =>
          {
              Action ac1 = () => { OnShowLimitNewGift(); };
-             object[] datas = { msg.rewards, ac1 };
+             object[] datas = { msg.rewards, ac1  , false ,true };
              UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
          });
         //Net_RequesetCommon com = new Net_RequesetCommon();

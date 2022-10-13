@@ -212,6 +212,34 @@ public enum EAnalyticsType
     MoneyPoolVideoFail,
     
     
+    #region 新手签到领取
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion<<<<<<< .mine
+    
+=======
+    
+>>>>>>> .theirs
+    
     /// <summary>
     /// 加速提现
     /// </summary>
@@ -282,7 +310,149 @@ public enum EAnalyticsType
     /// </summary>
     NewPlayerReceive,
 
+    #endregion<<<<<<< .mine
+    /// 加速提现
+    /// </summary>
+    GrowMoneyPlan,
+    /// <summary>
+    /// 加速提现点击
+    /// </summary>
+    GrowMoneyPlanClick,
+    /// <summary>
+    /// 加速提现完成观看视频
+    /// </summary>
+    GrowMoneyPlanFinish,
+    
+    /// <summary>
+    /// 转盘图标
+    /// </summary>
+    TurnTableIcon,
+    /// <summary>
+    /// 领奖点击
+    /// </summary>
+    TurnTableGet,
+    /// <summary>
+    /// 0.3元抽奖
+    /// </summary>
+    TurnTableLowReward,
+    /// <summary>
+    /// 0.5元抽奖
+    /// </summary>
+    TurnTableHighReward,
+    /// <summary>
+    /// 完成抽奖提现
+    /// </summary>
+    TurnTableGetFinal,
+    /// <summary>/// 开始抽奖 /// </summary>
+    TurnTableStart,
+    /// <summary>///领七次现金/// </summary>
+    TurnTableSevenTime,
+    /// <summary>///领二十次现金/// </summary>
+    TurnTableTwentyTime,
+    
+    /// <summary>/// 金币提现解锁/// </summary>
+    CoinDailySuccess,
+    
+    /// <summary>SessId 发送 </summary>
+    SessIdSend,
+    /// <summary>SessId 回调</summary>
+    SessIdCallback,
+    
+    #region 新手签到领取
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
     #endregion
+=======
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
 }
 
 
@@ -389,6 +559,7 @@ public static class AnalyticsEvents
         {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
+<<<<<<< .mine
         
         {EAnalyticsType.GrowMoneyPlan,"jiasuanjian_01"},
         {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
@@ -412,5 +583,30 @@ public static class AnalyticsEvents
         {EAnalyticsType.LoginReceive,"qiandao_002"},
         {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
         #endregion
+=======
+        
+        #region 新手签到领取
+        {EAnalyticsType.NewPlayerReceive,"xinshoufuli_001"},
+        {EAnalyticsType.NewPlayerSign,"qiandao_001"},
+        {EAnalyticsType.LoginReceive,"qiandao_002"},
+        {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .theirs
     };
 }
