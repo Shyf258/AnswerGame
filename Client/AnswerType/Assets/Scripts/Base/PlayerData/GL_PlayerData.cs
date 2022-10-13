@@ -1631,7 +1631,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     {
         Action action = () =>
         {
-            if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer)!= null&& GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 )
             {
                 SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
                 {
