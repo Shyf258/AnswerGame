@@ -1631,13 +1631,16 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     {
         Action action = () =>
         {
-            SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
             {
-                GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
-                GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
-                Object[] obj =  {accept,isActive};
-                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
-            }));
+                SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
+                    GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
+                    Object[] obj =  {accept,isActive};
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
+                }));
+            }
         };
         SendGamecoreConfig(EGamecoreType.NewPlayer, action);
     }
