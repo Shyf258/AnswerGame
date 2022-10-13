@@ -122,4 +122,7 @@ public enum Cmd
     
     /// <summary>/// 云控配置/// </summary>
     AppControl = 90101,
+    
+    /// <summary>/// 体现增幅配置/// </summary>
+    WithDrawGrowConfig = 90301,
 }

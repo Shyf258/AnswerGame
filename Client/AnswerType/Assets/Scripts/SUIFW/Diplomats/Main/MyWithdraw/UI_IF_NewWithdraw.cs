@@ -61,6 +61,21 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private DateTime _goldDataTime;
         private UI_Button btnGoldWithdraw;
 
+        
+        #region 提现增幅
+
+        private Button _growRed;
+
+        private Text _growRedText;
+        
+        private Button _growCoin;
+
+        private Text _growCoinText;
+
+        private string _growStr = "<color=#ff0000><size=52>{0}%</size></color>提现增幅";
+
+        #endregion
+        
         #endregion
 
         #region Override
@@ -77,18 +92,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshPlayer();
             RefreshRedCd();
             RefreshGoldCd();
+            RefreshWithDrawGrow();
             _scrollRect.verticalNormalizedPosition = 1;
         }
 
         private void InitButtonViewABTest()
         {
-            if (!GL_CoreData._instance.AbTest)
-            {
-                getRedNode.transform.localPosition = new Vector3(getRedNode.transform.localPosition.x, -253);
-                btnRedWithdraw.transform.localPosition = new Vector3(btnRedWithdraw.transform.localPosition.x, -429);
-                getGoldNode.transform.localPosition = new Vector3(getGoldNode.transform.localPosition.x, -330);
-                btnGoldWithdraw.transform.localPosition = new Vector3(btnGoldWithdraw.transform.localPosition.x, -508);
-            }
+            // if (!GL_CoreData._instance.AbTest)
+            // {
+            //     getRedNode.transform.localPosition = new Vector3(getRedNode.transform.localPosition.x, -253);
+            //     btnRedWithdraw.transform.localPosition = new Vector3(btnRedWithdraw.transform.localPosition.x, -429);
+            //     getGoldNode.transform.localPosition = new Vector3(getGoldNode.transform.localPosition.x, -330);
+            //     btnGoldWithdraw.transform.localPosition = new Vector3(btnGoldWithdraw.transform.localPosition.x, -508);
+            // }
         }
         private void TriggerGuide()
         {
@@ -219,6 +235,14 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _tfRedTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getRedNode.gameObject, "RedTime");
             _txtRedTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getRedNode.gameObject, "_txtRedTime");
             
+            _growRed = UnityHelper.GetTheChildNodeComponetScripts<Button>(redNode.gameObject, "OpenGrow");
+            _growRedText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growRed.gameObject, "Text");
+            RigisterButtonObjectEvent(_growRed, go =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+            });
+
+            
             //金币
             var goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
@@ -232,6 +256,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
             _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
 
+            _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
+            _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
+            RigisterButtonObjectEvent(_growCoin, go =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+            });
+            
             InitButtonViewABTest();
         }
 
@@ -300,6 +331,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshRedCd();
+                            RefreshWithDrawGrow();
                         };
                         object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
@@ -349,6 +381,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshGoldCd();
+                            RefreshWithDrawGrow();
                         };
                         object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
@@ -599,7 +632,12 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             if (!GL_PlayerData._instance.IsLoginWeChat())
             {
                 //登陆微信
-                Action show =()=> RefreshPlayer();
+                Action show = () =>
+                {
+                    RefreshPlayer();
+                    RefreshWithDrawGrow();  
+                };
+                
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin,show);
             }
             else
@@ -676,7 +714,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             if (!GL_PlayerData._instance.IsLoginWeChat())
             {
                 //登陆微信
-                Action show =()=> RefreshPlayer();
+                Action show = () =>
+                {
+                    RefreshPlayer();
+                    RefreshWithDrawGrow();
+                };
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin,show);
                 // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
             }
@@ -715,16 +757,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         //提现回调
         private void CB_RedWithDraw(string param)
         {
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
             float money = _curRedWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.CashWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Bogus -= _curRedWithdrawData.WithDraw.money;
             RefreshRed();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
         }
         
@@ -743,16 +788,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawHighSuccess);
                     break;
             }
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
             float money = _curGoldWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.DailyWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Coin -= _curGoldWithdrawData.WithDraw.coupon;
             RefreshGold();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
         }
 
@@ -793,6 +841,34 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
             });
         }
+        
+        #region 提现增幅刷新显示
+
+        private void RefreshWithDrawGrow()
+        {
+            MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
+        }
+
+        private void ShowWithDrawGrow()
+        {
+            if (GL_PlayerData._instance._WithDrawGrowConfig==null)
+            {
+                _growCoin.SetActive(false);
+                _growRed.SetActive(false);
+            }
+            else
+            {
+                _growCoin.SetActive(true);
+                _growRed.SetActive(true);
+                string description = String.Format(_growStr,(GL_PlayerData._instance._WithDrawGrowConfig.growth));
+                _growCoinText.text = description;
+                _growRedText.text = description;
+            }
+        }
+
+        #endregion
+        
+        
         
         #endregion
         

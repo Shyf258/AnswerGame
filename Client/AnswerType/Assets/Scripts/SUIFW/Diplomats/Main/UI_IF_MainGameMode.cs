@@ -1,6 +1,7 @@
-//2022.8.23 ¹ÜÀí
-//Ö÷Ò³ÃæÍæ·¨Ïà¹Ø³õÊ¼»¯
+//2022.8.23 ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½Ò³ï¿½ï¿½ï¿½æ·¨ï¿½ï¿½Ø³ï¿½Ê¼ï¿½ï¿½
 
+using System;
 using DG.Tweening;
 using SUIFW;
 using UnityEngine;
@@ -9,17 +10,17 @@ using UnityEngine.UI;
 public partial class UI_IF_Main
 {
 
-    #region ´ğÌâÍæ·¨
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½æ·¨
 
-    private Transform _imageMode;   //Í¼Æ¬ÌâÄ¿
+    private Transform _imageMode;   //Í¼Æ¬ï¿½ï¿½Ä¿
     private Image _imImage;
     private Text _imText;
 
-    private Transform _textMode;    //ÎÄ×ÖÌâÄ¿
+    private Transform _textMode;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
     private Text _tmText;
 
     /// <summary>
-    /// Ñ¡Ôñ°´¼ü×é
+    /// Ñ¡ï¿½ñ°´¼ï¿½ï¿½ï¿½
     /// </summary>
     private Transform _choiceGroup;
     private Button _btnA;
@@ -28,14 +29,14 @@ public partial class UI_IF_Main
     private Text _btnBText;
 
     // /// <summary>
-    // /// µ±Ç°ÌâÄ¿ĞòºÅ
+    // /// ï¿½ï¿½Ç°ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½
     // /// </summary>
     private Text _nowAnswer;
 
     #endregion
 
 
-    #region ÏÔÊ¾´ğ°¸
+    #region ï¿½ï¿½Ê¾ï¿½ï¿½
 
     private Transform _showAnswer;
     private Transform _showRight;
@@ -46,7 +47,7 @@ public partial class UI_IF_Main
     protected void InitGameMode()
     {
 
-        #region ÓÎÏ·Íæ·¨³õÊ¼»¯
+        #region ï¿½ï¿½Ï·ï¿½æ·¨ï¿½ï¿½Ê¼ï¿½ï¿½
         _nowAnswer = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "UserLevel");
         _imageMode = UnityHelper.FindTheChildNode(gameObject, "ImageMode");
         _imImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(_imageMode.gameObject, "IM_Image");
@@ -75,12 +76,16 @@ public partial class UI_IF_Main
             OnClickChoice(2);
 
         });
-        //ÏÔÊ¾´ğ°¸
+        
+        //ç­”æ¡ˆæ˜¾ç¤º
         _showAnswer = UnityHelper.FindTheChildNode(_choiceGroup.gameObject, "ShowAnswer");
         _showRight = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowRight");
         _showWrong = UnityHelper.FindTheChildNode(_showAnswer.gameObject, "ShowWrong");
+        
+        #region ä¸»é¡µå¥–åŠ±ç©æ³•
 
-        //²ÆÉñ
+        
+        //è´¢ç¥
         _moneyPool = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "MoneyPool");
         RigisterButtonObjectEvent(_moneyPool, gp =>
         {
@@ -88,18 +93,53 @@ public partial class UI_IF_Main
             UI_Diplomats._instance.ShowUI(SysDefine.UI_IF_MoneyPool);
         });
 
+        //å¤§ç”Ÿäº§
+        // _productionPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "ProductionPageToggle");
+        // RigisterButtonObjectEvent(_productionPageToggle, go =>
+        // {
+        //     if (!GL_PlayerData._instance.IsLoginWeChat())
+        //     {
+        //         //ç™»é™†å¾®ä¿¡
+        //         // Action show =()=> PlayerIcon();
+        //         Action show = () => { ChangeProduce(); };
+        //         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin, show);
+        //         // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
+        //     }
+        //     else
+        //     {
+        //         ChangeProduce();
+        //     }
+        // });
 
-        _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
-        _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
-        RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+        // _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
+        // _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
+        // RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+        
+        #region æç°å¢å¹…
 
+        _signDay = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "SignDay");
+
+        _day = UnityHelper.GetTheChildNodeComponetScripts<Text>(_signDay.gameObject, "Day");
+
+        _dayGrow = UnityHelper.GetTheChildNodeComponetScripts<Text>(_signDay.gameObject, "Grow");
+
+        RigisterButtonObjectEvent(_signDay, go =>
+        {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+        });
+            
+        #endregion
+
+        #endregion
+        
+        
         #endregion
 
 
     }
 
-    #region ´ğÌâÍæ·¨
-    //Ë¢ĞÂÌâÄ¿
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½æ·¨
+    //Ë¢ï¿½ï¿½ï¿½ï¿½Ä¿
     public void RefreshGameMode(EventParam param)
     {
 
@@ -132,7 +172,7 @@ public partial class UI_IF_Main
                 {
                     s = Sprite.Create(t, new Rect(0, 0, t.width, t.height), Vector2.zero);
 
-                    //Í¼Æ¬ÌâÄ¿
+                    //Í¼Æ¬ï¿½ï¿½Ä¿
                     _imageMode.gameObject.SetActive(true);
                     _textMode.gameObject.SetActive(false);
 
@@ -144,14 +184,14 @@ public partial class UI_IF_Main
         }
         else
         {
-            //ÎÄ×ÖÌâÄ¿
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
             _imageMode.gameObject.SetActive(false);
             _textMode.gameObject.SetActive(true);
 
             _tmText.text = info.TitleText;
         }
 
-        //Ë¢ĞÂÑ¡Ïî
+        //Ë¢ï¿½ï¿½Ñ¡ï¿½ï¿½
         _btnAText.text = info.Select1;
         _btnBText.text = info.Select2;
 
@@ -170,7 +210,7 @@ public partial class UI_IF_Main
     private Transform ChoiceBtn;
     private Transform _showResult;
     /// <summary>
-    /// ½á¹ûÕ¹Ê¾
+    /// ï¿½ï¿½ï¿½Õ¹Ê¾
     /// </summary>
     public void ShowAnswer(bool choice)
     {
@@ -232,19 +272,18 @@ public partial class UI_IF_Main
 
 
     /// <summary>
-    /// »Ø´ğÕıÈ·
+    /// ï¿½Ø´ï¿½ï¿½ï¿½È·
     /// </summary>
     private void RightAnswer()
     {
         // // _redAward.Play("an_shake_01");
         //  ChangeRightCount();
-        //   //·¢ËÍÉı¼¶ÇëÇó
+        //   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         //   GL_CoreData._instance.SaveData();
     }
 
 
-    private string _answerCount = "µÚ<color=#f58c3e>{0}</color>Ìâ";
-    private string _question = "¼ÌĞø´ğ¶Ô<color=#CF0400>{0}</color>Ìâ£¬¼´¿É <color=#CF0400>³é½±</color>Ó´";
+    private string _answerCount = "ç¬¬<color=#f58c3e>{0}</color>å…³";
 
     public void CloseBar()
     {
