@@ -115,7 +115,7 @@ namespace SUIFW.Diplomats.Common
         {
             base.OnHide();
             
-            if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
+            if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 )
             {
                 GL_PlayerData._instance.GetNewPlayerReward(_isActiveMainUp);
             }

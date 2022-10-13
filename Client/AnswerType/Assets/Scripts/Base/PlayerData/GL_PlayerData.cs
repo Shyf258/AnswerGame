@@ -37,7 +37,8 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         SendSystemConfig();
         GL_Game._instance.RefreshMainRequest();
         SendWithDrawConfig(EWithDrawType.Clockin);
-        SendWithDrawConfig(EWithDrawType.MoneyPool);
+        //财神屏蔽
+        // SendWithDrawConfig(EWithDrawType.MoneyPool);
 
         GetMilestoneTaskConfig();
         GL_GuideManager._instance.CheckGuideConfig();
@@ -1630,7 +1631,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     {
         Action action = () =>
         {
-            if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<=1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer)!= null&& GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 )
             {
                 SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
                 {
