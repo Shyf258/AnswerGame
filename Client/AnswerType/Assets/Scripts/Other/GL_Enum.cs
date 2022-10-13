@@ -56,7 +56,6 @@ public enum EWithDrawType
     Clockin = 6, //打卡
     DailyWithDraw = 7,  //每日提现
     TipsPage = 8,       //广告提现机会
-    LoginWithDraw = 9, //登录领现金
 }
 
 public enum EGameEnterType
@@ -321,6 +320,6 @@ public enum EGamecoreType
 public enum EGameUIType
 {
     GuessFromExplain = 1,   //看释义猜成语
-    GuessFromPictures,  //看图猜成语
+    GuessFromPictures,      //看图猜成语
     AncientPoetryCrossword, //古诗填字
 }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Client/AnswerType/Assets/Resources/SUIFW/Prefab/Main/MyWithdraw/UI_Btn_NewWithdrawItemB.prefab.meta
+guid: 43830e734e6fe614f93c551dec60ea1a
+========
 guid: bd9d7e1731917c44bb0a4ee5273df322
+>>>>>>>> main:Client/AnswerType/Assets/Resources/SUIFW/Prefab/Sign/UI_IF_NewPlayerTips.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

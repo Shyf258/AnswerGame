@@ -71,9 +71,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             _withDrawResult =(float) result/100f;
             _moneyText.text = string.Format(_list[0], _withDrawResult.ToString("0.00"));
             // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
-        }
-        if (GL_CoreData._instance.AbTest)
-        {
+            
             _tipsText.SetActive(true);
             _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
             
@@ -87,10 +85,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
                 _tipsText.SetActive(false);
             }
         }
-        else
-        {
-            _tipsText.SetActive(false);
-        }
+       
 
 
        
@@ -103,15 +98,12 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
 
     public override void Refresh(bool recall)
     {
-        if (GL_CoreData._instance.AbTest)
+        _close.interactable = false;
+        _timer.StartCountdown(3,0,0, () =>
         {
-            _close.interactable = false;
-            _timer.StartCountdown(3,0,0, () =>
-            {
-                _time.text = "确定";
-                _close.interactable = true;
-            },_time);
-        }
+            _time.text = "确定";
+            _close.interactable = true;
+        },_time);
        
     }
 

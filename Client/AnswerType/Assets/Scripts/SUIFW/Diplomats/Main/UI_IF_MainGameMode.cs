@@ -85,6 +85,20 @@ public partial class UI_IF_Main
         #endregion
 
 
+        #region 提现增幅
+
+        _signDay = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "SignDay");
+
+        _day = UnityHelper.GetTheChildNodeComponetScripts<Text>(_signDay.gameObject, "Day");
+
+        _dayGrow = UnityHelper.GetTheChildNodeComponetScripts<Text>(_signDay.gameObject, "Grow");
+
+        RigisterButtonObjectEvent(_signDay, go =>
+        {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+        });
+            
+        #endregion
     }
 
     #region �����淨

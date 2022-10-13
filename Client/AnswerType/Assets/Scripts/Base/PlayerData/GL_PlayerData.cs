@@ -524,66 +524,6 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
-    #region 提现增幅配置
-
-    private Action _withDrawGrowConfig;
-
-    public Net_CB_WithDrawGrowConfig _WithDrawGrowConfig;
-    public void GetWithDrawGrowConfig(Action action=null)
-    {
-        _withDrawGrowConfig = action;
-        MethodExeTool.Loop(GetGrowConfig,3f,-1);
-     
-    }
-
-    private void GetGrowConfig()
-    {
-        Net_RequesetCommon config = new Net_RequesetCommon();
-        GL_ServerCommunication._instance.Send(Cmd.WithDrawGrowConfig, JsonHelper.ToJson(config), CB_WithDrawGrowConfig);
-    }
-    
-    private void CB_WithDrawGrowConfig(string json)
-    {
-        Net_CB_WithDrawGrowConfig msg = JsonHelper.FromJson<Net_CB_WithDrawGrowConfig>(json);
-        if (msg == null )
-            return;
-        _WithDrawGrowConfig = msg;
-        MethodExeTool.CancelInvoke(GetGrowConfig);
-        _withDrawGrowConfig?.Invoke();
-        _withDrawGrowConfig = null;
-    }
-    
-    
-    #region 提现结果
-
-
-    public Net_CB_WithDrawTipsData _netCbWithDraw = new Net_CB_WithDrawTipsData();
-    public void Net_CB_WithDrawResult(string json)
-    {
-        if (_netCbWithDraw==null)
-        {
-            _netCbWithDraw = new Net_CB_WithDrawTipsData();
-        }
-
-        try
-        {
-            Net_CB_WithDrawTipsData msg = JsonHelper.FromJson<Net_CB_WithDrawTipsData>(json);
-            if (msg != null)
-            {
-                _netCbWithDraw = msg;
-            }
-            DDebug.LogError("当前提现成功额度："+ _netCbWithDraw.money) ;
-        }
-        catch 
-        {
-            DDebug.LogError("返回数值类型出错") ;
-        }
-    }
-
-
-    #endregion
-    #endregion
-
     #region 广告播放配置
 
     public Net_CB_PlayAD CbPlayAd;
@@ -777,10 +717,6 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
-
-
-    #region 打卡签到
-    
     #region 每日签到
 
     // public Net_CB_SignInConfig SignInConfig;
@@ -788,35 +724,27 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     #endregion
 
     #region 每日打卡
-    // /// <summary>
-    // /// 每日打卡配置
-    // /// </summary>
-    // public Net_CB_ClockinConfig SigNetCbClockinConfig;
-    //
-    //
-    // /// <summary>
-    // /// 打卡签到
-    // /// </summary>
-    // /// <param name="action"></param>
-    // public void ClockInReport(Action action=null)
-    // {
-    //     Net_RequesetCommon req = new Net_RequesetCommon();
-    //     GL_ServerCommunication._instance.Send(Cmd.Clockin, JsonHelper.ToJson(req) ,(delegate(string json)
-    //     {
-    //         action?.Invoke();
-    //     }));
-    // }
-    
-    #endregion
-    
-    #region 新手每日提现
-
+    /// <summary>
+    /// 每日打卡配置
+    /// </summary>
+    public Net_CB_ClockinConfig SigNetCbClockinConfig;
     
 
-    #endregion
+    /// <summary>
+    /// 打卡签到
+    /// </summary>
+    /// <param name="action"></param>
+    public void ClockInReport(Action action=null)
+    {
+        Net_RequesetCommon req = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.Clockin, JsonHelper.ToJson(req) ,(delegate(string json)
+        {
+            action?.Invoke();
+        }));
+    }
     
     #endregion
-    
+
     #region 每日任务
 
     public Net_CB_TaskConfig TaskConfig;
@@ -961,7 +889,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     
     private void CB_ProdecuWithDraw(string param)
     {
-        Net_CB_WithDrawResult(param);
+       Net_CB_WithDrawResult(param);
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {
@@ -1164,36 +1092,6 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
-    #region 登录领现金
-
-
-    private Action _loginAction;
-
-    public Net_CB_LoginConfig _NetCbLoginConfig = new Net_CB_LoginConfig();
-    /// <summary>
-    /// 登录领现金配置
-    /// </summary>
-    /// <param name="action"></param>
-    public void SendLoginWithDraw( Action action)
-    {
-        _loginAction = action;
-        Net_RequesetCommon msg = new Net_RequesetCommon();
-        GL_ServerCommunication._instance.Send(Cmd.LoginWithDrawConfig, JsonUtility.ToJson(msg), CB_loginWithDraw);
-    }
-
-    private void CB_loginWithDraw(string json)
-    {
-        Net_CB_LoginConfig msg = JsonUtility.FromJson<Net_CB_LoginConfig>(json);
-        if (msg == null)
-            return;
-        _NetCbLoginConfig = new Net_CB_LoginConfig();
-        _loginAction?.Invoke();
-        _loginAction = null;
-    }
-
-
-    #endregion
-    
     #region 邀请配置
 
     /// <summary>
@@ -1352,6 +1250,64 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
                 _withDrawTarget.Add(eWithDrawType, withDraw);
         }
     }
+    
+    #region 提现结果
+
+    public Net_CB_WithDrawTipsData _netCbWithDraw = new Net_CB_WithDrawTipsData();
+    public void Net_CB_WithDrawResult(string json)
+    {
+        if (_netCbWithDraw==null)
+        {
+            _netCbWithDraw = new Net_CB_WithDrawTipsData();
+        }
+
+        try
+        {
+            Net_CB_WithDrawTipsData msg = JsonHelper.FromJson<Net_CB_WithDrawTipsData>(json);
+            if (msg!= null)
+            {
+                _netCbWithDraw = msg;
+            }
+            DDebug.LogError("当前提现成功额度："+ _netCbWithDraw.money) ;
+        }
+        catch 
+        {
+            DDebug.LogError("返回数值类型出错") ;
+        }
+    }
+
+
+    #endregion
+    
+    #region 提现增幅配置
+
+    private Action _withDrawGrowConfig;
+
+    public Net_CB_WithDrawGrowConfig _WithDrawGrowConfig;
+    public void GetWithDrawGrowConfig(Action action=null)
+    {
+        _withDrawGrowConfig = action;
+        MethodExeTool.Loop(GetGrowConfig,3f,-1);
+    }
+
+    private void GetGrowConfig()
+    {
+        Net_RequesetCommon config = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.WithDrawGrowConfig, JsonHelper.ToJson(config), CB_WithDrawGrowConfig);
+    }
+    
+    private void CB_WithDrawGrowConfig(string json)
+    {
+        Net_CB_WithDrawGrowConfig msg = JsonHelper.FromJson<Net_CB_WithDrawGrowConfig>(json);
+        if (msg == null )
+            return;
+        _WithDrawGrowConfig = msg;
+        MethodExeTool.CancelInvoke(GetGrowConfig);
+        _withDrawGrowConfig?.Invoke();
+        _withDrawGrowConfig = null;
+    }
+    #endregion
+    
     #endregion
 
     #region 提现条件
@@ -1670,7 +1626,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     /// <summary>
     /// 获取新人奖金配置并打开提示页
     /// </summary>
-    public void GetNewPlayerReward()
+    public void GetNewPlayerReward(bool isActive = true)
     {
         Action action = () =>
         {
@@ -1680,7 +1636,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
                 {
                     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
                     GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
-                    Object[] obj =  {accept,};
+                    Object[] obj =  {accept,isActive};
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
                 }));
             }

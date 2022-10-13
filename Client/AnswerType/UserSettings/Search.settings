@@ -7,15 +7,6 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DA949528" = "sign"
-	"OpenInspectorPreview.DA949528" = "1"
-	"currentGroup.DA949528" = "menu"
-	"last_search.2138236A" = "main"
-	"OpenInspectorPreview.2138236A" = "0"
-	"currentGroup.2138236A" = "all"
-	"last_search.DD5CDD96" = "qiandui"
-	"OpenInspectorPreview.DD5CDD96" = "0"
-	"currentGroup.DD5CDD96" = "all"
 }
 providers = {
 	adb = {
@@ -62,18 +53,6 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
-	"si"
-	"ma"
-	"q"
-	"m"
-	"an_tiaoguan_idle"
-	"BarrageFrame"
-	"wi"
-	"withdraww"
-	"withdraw"
-	"an_qiandui"
-	"ProductionPageToggle"
-	"l"
 ]
 searchItemFavorites = [
 ]

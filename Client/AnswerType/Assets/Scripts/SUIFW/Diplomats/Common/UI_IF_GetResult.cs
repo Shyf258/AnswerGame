@@ -61,6 +61,7 @@ namespace SUIFW.Diplomats.Common
             
             _isActiveMainUp = false;
             _isFinishAd = false;
+            
             if (data is object[] datas)
             {
                 if (datas[0] is List<Rewards> config)
@@ -92,7 +93,6 @@ namespace SUIFW.Diplomats.Common
                         _isFinishAd = playad;
                     }
                 }
-
             }
         }
 
@@ -114,12 +114,11 @@ namespace SUIFW.Diplomats.Common
         public override void OnHide()
         {
             base.OnHide();
-
+            
             if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
             {
-                GL_PlayerData._instance.GetNewPlayerReward();
+                GL_PlayerData._instance.GetNewPlayerReward(_isActiveMainUp);
             }
-            
         }
 
         #endregion
@@ -157,6 +156,7 @@ namespace SUIFW.Diplomats.Common
         /// </summary>
         private bool _isActiveMainUp;
 
+        
         /// <summary>
         /// 是否完成广告播放
         /// </summary>

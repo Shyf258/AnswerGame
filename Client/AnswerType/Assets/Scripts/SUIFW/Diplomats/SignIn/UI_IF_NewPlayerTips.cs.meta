@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Client/AnswerType/Assets/Scripts/SUIFW/Diplomats/SignIn/UI_IF_NewLogin.cs.meta
+guid: 70636f143ee26b0479e569e2d07b39d5
+========
 guid: 081e2488d089bfd478a9b632690b9016
+>>>>>>>> main:Client/AnswerType/Assets/Scripts/SUIFW/Diplomats/SignIn/UI_IF_NewPlayerTips.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

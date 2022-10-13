@@ -24,7 +24,7 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
     public bool _isStartGame = true;   //是否刚启动游戏
 
     public GL_SceneSwitch _sceneSwitch; //场景切换逻辑
-    // public FF_SignIn_Config _signInConfig;
+    public FF_SignIn_Config _signInConfig;
     public FF_Task_Config _taskConfig;       //每日任务配置
     #region 初始化
 
@@ -82,11 +82,11 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
         GL_GuideManager._instance.Init();
       
         //每日签到配置初始化
-        // _signInConfig = new FF_SignIn_Config();
-        // YS_NetLogic._instance.SearchClockin(()=>
-        // {
-        //     _signInConfig.Init();
-        // });
+        _signInConfig = new FF_SignIn_Config();
+        YS_NetLogic._instance.SearchClockin(()=>
+        {
+            _signInConfig.Init();
+        });
 
         GL_NewbieSign._instance.Init();
     
@@ -189,8 +189,13 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
                 GL_CoreData._instance.AntiTime ++;
             }
         }
-        GL_CoreData._instance.RealSaveData();
+        if(Time.time + 1 > _saveLimit)
+        {
+            _saveLimit = Time.time + 1;
+            GL_CoreData._instance.RealSaveData();
+        }
     }
+    private float _saveLimit;
     public void ShowTips()
     {
         int time = (int)_antiTime/60;

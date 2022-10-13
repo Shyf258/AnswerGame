@@ -215,42 +215,50 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
             return; 
             
         }
-
-        if(_showPig && !GL_CoreData._instance.AbTest)
-        {
-#if PureVersion
-            return;
-#endif
-            _showPig = false;
-            // ShowUI(SysDefine.UI_Path_NewSignInPage, onHide);
-            // YS_NetLogic._instance.GoldenpigConfig((config =>
-            // {
-            //     Object[] objects = { config,onHide };
-            //     ShowUI(SysDefine.UI_IF_Goldenpig,objects);
-            // } ));
-            Object[] objects = { onHide };
-            ShowUI(SysDefine.UI_IF_MoneyPool,objects);
-            return;
-        }
         
-
-        _isMainPageOver = false;
-
-        // if (GL_PlayerData._instance.IsLoginWeChat())
-        // {
-        //     GL_PlayerData._instance.GetProduceConfig((() =>
-        //     {
-        //         ShowUI(SysDefine.UI_Path_Production);
-        //     }));
-        // }
-
         //if (!GL_CoreData._instance.AbTest)
         {
-            // if (GL_Game._instance._signInConfig.Clockin()  )
+            if (GL_Game._instance._signInConfig.Clockin()  )
             {
-                ShowUI(SysDefine.UI_Path_NewLogin);
+                ShowUI(SysDefine.UI_Path_NewSignInPage);
             }
         }
+
+//         if(_showPig && !GL_CoreData._instance.AbTest)
+//         {
+// #if PureVersion
+//             return;
+// #endif
+//             _showPig = false;
+//             // ShowUI(SysDefine.UI_Path_NewSignInPage, onHide);
+//             // YS_NetLogic._instance.GoldenpigConfig((config =>
+//             // {
+//             //     Object[] objects = { config,onHide };
+//             //     ShowUI(SysDefine.UI_IF_Goldenpig,objects);
+//             // } ));
+//             // Object[] objects = { onHide };
+//             // ShowUI(SysDefine.UI_IF_MoneyPool,objects);
+//             return;
+//         }
+//         
+//
+//         _isMainPageOver = false;
+//
+//         // if (GL_PlayerData._instance.IsLoginWeChat())
+//         // {
+//         //     GL_PlayerData._instance.GetProduceConfig((() =>
+//         //     {
+//         //         ShowUI(SysDefine.UI_Path_Production);
+//         //     }));
+//         // }
+//
+//         //if (!GL_CoreData._instance.AbTest)
+//         {
+//             // if (GL_Game._instance._signInConfig.Clockin()  )
+//             {
+//                 // ShowUI(SysDefine.UI_Path_NewLogin);
+//             }
+//         }
     }
 
     private void MainPageEventSort2()

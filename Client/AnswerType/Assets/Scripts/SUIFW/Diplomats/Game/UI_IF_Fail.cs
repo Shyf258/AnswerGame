@@ -108,14 +108,14 @@ namespace SUIFW.Diplomats.Game
         {
             // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_AnswerReward);
             GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward);
-            if (GL_CoreData._instance.AbTest)
-            {
-                if (GL_PlayerData._instance.IsPlayDialog(false))
-                {
-                    DDebug.LogError("****** 播放插屏广告");
-                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
-                }
-            }
+            // if (GL_CoreData._instance.AbTest)
+            // {
+            //     if (GL_PlayerData._instance.IsPlayDialog(false))
+            //     {
+            //         DDebug.LogError("****** 播放插屏广告");
+            //         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
+            //     }
+            // }
            
         }
 

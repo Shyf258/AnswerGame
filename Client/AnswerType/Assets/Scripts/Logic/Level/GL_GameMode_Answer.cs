@@ -171,6 +171,10 @@ public class GL_GameMode_Answer : GL_GameMode
         {
             GetCoin();
         }
+        if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 && GL_PlayerData._instance.CurLevel ==2)
+        {
+            GL_PlayerData._instance.GetNewPlayerReward();
+        }
     }
     private void GetRed(int value)
     {

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Client/AnswerType/Assets/UI Toolkit.meta
 guid: f886679c4fc3b114697e2ff74e2a1453
+========
+guid: 8293e5a0ce5418a44b22cbdc5226a0ac
+>>>>>>>> main:Client/AnswerType/Assets/Scripts/Base/PlayerPrefs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

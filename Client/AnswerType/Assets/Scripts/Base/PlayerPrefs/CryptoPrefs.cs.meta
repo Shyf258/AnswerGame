@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Client/AnswerType/Assets/Scripts/SUIFW/Diplomats/Withdraw/UI_IF_DayGrow.cs.meta
+guid: 3cd09ea2b8266a441bc16231319397c3
+========
+guid: 202a48a9087f4b944814ebe13a83f9e2
+>>>>>>>> main:Client/AnswerType/Assets/Scripts/Base/PlayerPrefs/CryptoPrefs.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

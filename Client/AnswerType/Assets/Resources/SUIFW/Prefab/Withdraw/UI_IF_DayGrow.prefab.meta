@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Client/AnswerType/Assets/DataModule/Resources/Json/TableAncientPoetry.json.meta
+guid: c29c6860f842df447971a67469f115e2
+TextScriptImporter:
+========
 guid: e2e33f222405b1c48a8305b2f50f93da
 PrefabImporter:
+>>>>>>>> main:Client/AnswerType/Assets/Resources/SUIFW/Prefab/Withdraw/UI_IF_DayGrow.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

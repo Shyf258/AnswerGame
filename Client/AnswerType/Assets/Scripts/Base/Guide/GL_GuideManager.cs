@@ -16,7 +16,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     #region 数据
     private SGuideArchiveInfo _guideArchiveInfo
     {
-        set => GL_CoreData._instance._archivedData._guideArchiveInfo= value;
+        set => GL_CoreData._instance._archivedData._guideArchiveInfo = value;
         get => GL_CoreData._instance._archivedData._guideArchiveInfo;
     }
     private Dictionary<int, List<TableGuideData>> _config;
@@ -52,30 +52,30 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     private TableGuideData _curGuideData;   //当前进行的引导数据
     private Action _guideCallback;  //引导回调
     public UI_GuideObject _guide; //引导对象
-    
+
     #region 初始化
     public void Init()
     {
         if (_guideArchiveInfo == null)
             _guideArchiveInfo = new SGuideArchiveInfo();
-        if (_guideArchiveInfo._finishGuideDic == null)
-            _guideArchiveInfo._finishGuideDic = new Dictionary<int, List<int>>();
+        if (_guideArchiveInfo._list == null)
+            _guideArchiveInfo._list = new List<SGuideFinishInfo>();
 
         List<int> deleteArchive = new List<int>();  //删除存档
 
-        foreach (var groupID in _guideArchiveInfo._finishGuideDic.Keys)
+        foreach (var info in _guideArchiveInfo._list)
         {
-            var group = Config.Get(groupID);
+            var group = Config.Get(info._index);
             if (group == null)
             {
                 //1.检测存档, 删除表格中没有的group
-                deleteArchive.Add(groupID);
+                deleteArchive.Add(info._index);
                 continue;
             }
-            if (_guideArchiveInfo._finishGuideDic[groupID].Count >= group.Count)
+            if (_guideArchiveInfo._list.Count >= group.Count)
             {
                 //2.已完成全部引导,减少检测引导的计算量
-                Config.Remove(groupID);
+                Config.Remove(info._index);
             }
             else
             {
@@ -84,15 +84,15 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
                 {
                     //3.检测引导存档，剔除 没有全部完成的强制引导
                     //已完成的数据 少于全部数据,则未全部完成    
-                    if (_guideArchiveInfo._finishGuideDic[groupID].Count < group.Count)
-                        deleteArchive.Add(groupID);
+                    if (_guideArchiveInfo._list.Count < group.Count)
+                        deleteArchive.Add(info._index);
                 }
                 else
                 {
                     //非强制时, 减少已完成的部分
-                    for (int i = 0; i < _guideArchiveInfo._finishGuideDic[groupID].Count; i++)
+                    for (int i = 0; i < _guideArchiveInfo._list.Count; i++)
                     {
-                        Config[groupID].RemoveAt(0);
+                        Config[info._index].RemoveAt(0);
                     }
                 }
             }
@@ -101,13 +101,13 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
         //删除
         foreach (var id in deleteArchive)
         {
-            _guideArchiveInfo._finishGuideDic.Remove(id);
+            RemoveGuideFinshInfo(id);
         }
     }
     #endregion
 
     #region 引导网络通信
-    
+
     //public Net_CB_GamecoreConfig _guideConifg;
     public void GetConfig()
     {
@@ -126,7 +126,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
 #if PureVersion
         return false;
 #endif
-        
+
         if (AppSetting.IsCloseGuide)
             return false;
 
@@ -168,7 +168,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     public bool CheckFirstGuide()
     {
         //1.检测存档中, 第一个引导组是否完成
-        if(IsFinishGuide(1))
+        if (IsFinishGuide(1))
             return false;
         //2.检测引导config的状态
         var conifg = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Guide);
@@ -227,7 +227,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     private void DoExecute()
     {
         // GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.Guide_Execute, "_" + _curGuideData.ID);
-        
+
         _isGuideing = true;
 
         #region 引导前事件触发
@@ -285,12 +285,12 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     {
         if (_curGuideData == null)
             return;
-    
-        
+
+
         if ((EGuideType)_curGuideData.GuideType != EGuideType.CheckUIClose)
             return;
 
-        if(_curGuideData.ObjectName.Equals(uiName))
+        if (_curGuideData.ObjectName.Equals(uiName))
         {
             FinishGuide();
         }
@@ -304,19 +304,26 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     public void FinishGuide()
     {
         // GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.Guide_Finish , "_" + _curGuideData.ID);
-        
+
         _isGuideing = false;
         UI_Diplomats._instance.CloseGuide();
 
         #region 存档
-        if(!_guideArchiveInfo._finishGuideDic.ContainsKey(_curGroudID))
-            _guideArchiveInfo._finishGuideDic.Add(_curGroudID, new List<int>());
-        if(!_guideArchiveInfo._finishGuideDic[_curGroudID].Contains(_curGuideData.ID))
+        SGuideFinishInfo finishInfo = GetGuideFinshInfo(_curGroudID);
+        if (finishInfo == null)
         {
-            _guideArchiveInfo._finishGuideDic[_curGroudID].Add(_curGuideData.ID);
+            finishInfo = new SGuideFinishInfo();
+            finishInfo._index = _curGroudID;
+            finishInfo._finishList = new List<int>();
+            _guideArchiveInfo._list.Add(finishInfo);
+        }
+            
+        if (!finishInfo._finishList.Contains(_curGuideData.ID))
+        {
+            finishInfo._finishList.Add(_curGuideData.ID);
             GL_CoreData._instance.SaveData();
         }
-        
+
 
         //本地数据清理
         if (Config.ContainsKey(_curGroudID))
@@ -333,7 +340,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
             isNext = false;
         }
 
-        if(isNext && !Config[_curGroudID][0].ForceNext)
+        if (isNext && !Config[_curGroudID][0].ForceNext)
         {
             //下一步不强制引导
             //等待下一个判断
@@ -390,16 +397,24 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     private void OnRemoveLastGroud()
     {
         int targetGroud = _curGroudID - 1;
-        if(targetGroud > 1 && Config.ContainsKey(targetGroud))
+        if (targetGroud > 1 && Config.ContainsKey(targetGroud))
         {
             var data = Config[targetGroud];
-            if(data.Count > 0)
+            if (data.Count > 0)
             {
-                if (!_guideArchiveInfo._finishGuideDic.ContainsKey(targetGroud))
-                    _guideArchiveInfo._finishGuideDic.Add(targetGroud, new List<int>());
-                if (!_guideArchiveInfo._finishGuideDic[targetGroud].Contains(data[0].ID))
+                SGuideFinishInfo finishInfo = GetGuideFinshInfo(targetGroud);
+                if (finishInfo == null)
                 {
-                    _guideArchiveInfo._finishGuideDic[targetGroud].Add(data[0].ID);
+                    finishInfo = new SGuideFinishInfo();
+                    finishInfo._index = targetGroud;
+                    finishInfo._finishList = new List<int>();
+                    _guideArchiveInfo._list.Add(finishInfo);
+                }
+
+                                
+                if (!finishInfo._finishList.Contains(data[0].ID))
+                {
+                    finishInfo._finishList.Add(data[0].ID);
                     GL_CoreData._instance.SaveData();
                 }
 
@@ -407,12 +422,12 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
                 if (Config.ContainsKey(targetGroud))
                 {
                     Config[targetGroud].Remove(data[0]);
-                    if(Config[targetGroud].Count == 0)
+                    if (Config[targetGroud].Count == 0)
                     {
                         Config.Remove(targetGroud);
                     }
                 }
-                    
+
             }
 
         }
@@ -426,7 +441,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
         //防止引导触发引导后,  引导回调被误删除
         int temp = _guideCallback.GetHashCode();
         _guideCallback?.Invoke();
-        if(temp == _guideCallback.GetHashCode())
+        if (temp == _guideCallback.GetHashCode())
             _guideCallback = null;
     }
 
@@ -435,7 +450,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     {
         FinishGuide();
         OnShowLimitNewGift();
-        
+
         // Action<bool> ac1 = (bool set) => { CB_OnShowOpenRedPack(set); };
         // var conifg = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Guide);
         // object[] objects = { ac1, false, true, ERewardSource.Guide, conifg.rewards };
@@ -443,12 +458,12 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     }
     private void CB_OnShowOpenRedPack(bool set)
     {
-        GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Guide, 0,(msg)=> 
-        {
-            Action ac1 = () => { OnShowLimitNewGift(); };
-            object[] datas = { msg.rewards, ac1 };
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
-        });
+        GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.Guide, 0, (msg) =>
+         {
+             Action ac1 = () => { OnShowLimitNewGift(); };
+             object[] datas = { msg.rewards, ac1  , false ,true };
+             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
+         });
         //Net_RequesetCommon com = new Net_RequesetCommon();
         //GL_ServerCommunication._instance.Send(Cmd.Guide, JsonUtility.ToJson(com), (string p)=>
         //    {
@@ -474,7 +489,7 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
 
     private void OnChangeWithdraw()
     {
-        SUIFW.Diplomats.Main.MyWithdraw.UI_IF_NewWithdraw wd = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw) 
+        SUIFW.Diplomats.Main.MyWithdraw.UI_IF_NewWithdraw wd = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw)
             as SUIFW.Diplomats.Main.MyWithdraw.UI_IF_NewWithdraw;
         if (wd == null)
             return;
@@ -483,16 +498,50 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     }
 
     #endregion
+
+
+    public SGuideFinishInfo GetGuideFinshInfo(int id)
+    {
+        if (_guideArchiveInfo._list == null)
+            return null;
+
+        foreach (var info in _guideArchiveInfo._list)
+        {
+            if (info._index == id)
+                return info;
+        }
+
+        return null;
+    }
+
+    public void RemoveGuideFinshInfo(int id)
+    {
+        if (_guideArchiveInfo._list == null)
+            return;
+        for (int i = _guideArchiveInfo._list.Count - 1; i >= 0; i--)
+        {
+            if(_guideArchiveInfo._list[i]._index == id)
+            {
+                _guideArchiveInfo._list.RemoveAt(i);
+                break;
+            }
+        }
+    }
 }
 
 
-[System.Serializable]
+[Serializable]
 public class SGuideArchiveInfo
 {
-    public Dictionary<int, List<int>> _finishGuideDic; // 已完成的引导
-
+    public List<SGuideFinishInfo> _list;
     public SGuideArchiveInfo()
     {
-        _finishGuideDic = new Dictionary<int, List<int>>();
+        _list = new List<SGuideFinishInfo>();
     }
+}
+[Serializable]
+public class SGuideFinishInfo
+{
+    public int _index;
+    public List<int> _finishList = new List<int>();
 }
