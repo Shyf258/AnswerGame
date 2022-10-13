@@ -12,6 +12,8 @@ public enum EPrefsKey
     IsFCM, //防沉迷
     IsWeChatLogIn = 0, //微信登录 
     IsOpenLogToTool,  //工具log开关
+
+    CoreData,       //核心数据类
 }
 
 public class GL_PlayerPrefs : MonoBehaviour
@@ -39,7 +41,6 @@ public class GL_PlayerPrefs : MonoBehaviour
     
     #endregion
 
-
     #region 取
     public static int GetInt(EPrefsKey key)
     {
@@ -59,9 +60,24 @@ public class GL_PlayerPrefs : MonoBehaviour
     {
         return PlayerPrefs.GetInt(key.ToString()) == 1;
     }
-    
+
     #endregion
-    
+
+    #region 处理对象
+    public static void SaveObject<T>(T obj, EPrefsKey key)
+    {
+        string json = JsonUtility.ToJson(obj);
+        SetString(EPrefsKey.CoreData, json);
+    }
+
+    public static T GetObject<T>(EPrefsKey key)
+    {
+        string json = GetString(key);
+        T t = JsonUtility.FromJson<T>(json);
+        return t;
+    }
+    #endregion
+
     public static bool HasKey(EPrefsKey key)
     {
         return PlayerPrefs.HasKey(key.ToString());
