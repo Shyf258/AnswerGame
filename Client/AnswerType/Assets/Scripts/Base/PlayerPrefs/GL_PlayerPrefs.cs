@@ -12,8 +12,8 @@ public enum EPrefsKey
     IsFCM, //防沉迷
     IsWeChatLogIn = 0, //微信登录 
     IsOpenLogToTool,  //工具log开关
-
     CoreData,       //核心数据类
+    IsReceiveNewPlayer,//领取新手红包
 }
 
 public class GL_PlayerPrefs : MonoBehaviour

@@ -212,6 +212,30 @@ public enum EAnalyticsType
     MoneyPoolVideoFail,
     
     
+    #region 新手签到领取
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion
+    
     /// <summary>
     /// 加速提现
     /// </summary>
@@ -259,30 +283,6 @@ public enum EAnalyticsType
     SessIdSend,
     /// <summary>SessId 回调</summary>
     SessIdCallback,
-    
-    #region 新手签到领取
-
-    /// <summary>
-    /// 主界面签到图标点击
-    /// </summary>
-    NewPlayerSign,
-    
-    /// <summary>
-    /// 普通签到领取
-    /// </summary>
-    LoginReceive,
-    
-    /// <summary>
-    /// 5天登录签到领取
-    /// </summary>
-    LoginReceiveAccumulated,
-    
-    /// <summary>
-    /// 新手福利金币
-    /// </summary>
-    NewPlayerReceive,
-
-    #endregion
 }
 
 
@@ -293,124 +293,126 @@ public static class AnalyticsEvents
 {
     public static Dictionary<EAnalyticsType, string> stores = new Dictionary<EAnalyticsType, string>()
     {
-        {EAnalyticsType.GetAppConfig,"GetAppConfig"},
-        {EAnalyticsType.AppConfigResult,"AppConfigRusult"},
-        {EAnalyticsType.FirstSendLogin,"FirstSendLogin"},
-        {EAnalyticsType.LoginResult,"LoginResult"},
-        {EAnalyticsType.CkeckFCM,"CkeckFCM"},
-        {EAnalyticsType.LoadGameSceneComplete,"LoadGameSceneComplete"},
-        {EAnalyticsType.CreateLevel,"CreateLevel"},
-        {EAnalyticsType.CompleteLevel,"CompleteLevel"},
+        {EAnalyticsType.GetAppConfig, "GetAppConfig"},
+        {EAnalyticsType.AppConfigResult, "AppConfigRusult"},
+        {EAnalyticsType.FirstSendLogin, "FirstSendLogin"},
+        {EAnalyticsType.LoginResult, "LoginResult"},
+        {EAnalyticsType.CkeckFCM, "CkeckFCM"},
+        {EAnalyticsType.LoadGameSceneComplete, "LoadGameSceneComplete"},
+        {EAnalyticsType.CreateLevel, "CreateLevel"},
+        {EAnalyticsType.CompleteLevel, "CompleteLevel"},
 
-        {EAnalyticsType.ActiveGame,"jihuoxinxi_anjian_01"},
-        {EAnalyticsType.WeChatLoginResult,"weixindengluchenggong_001"},
-        
-        {EAnalyticsType.MilestoneClick,"lichengbei_dianji_01"},
-        {EAnalyticsType.MilestonceGet,"lichengbei_dianji_02"},
-        
-        
-        {EAnalyticsType.LevelUp,"chuangguan_renjun_01"},
-        
-        {EAnalyticsType.TurnIcon,"zhuanquanhongbao_icon_01"},
-        {EAnalyticsType.TurnGetRed,"zhuanquanhongbao_shipin_01"},
-        {EAnalyticsType.TurnRedGetFinish,"zhuanquanhongbao_shipin_02"},
-        
-        {EAnalyticsType.TaskDaily,"renwu_meiridenglu_01"},
-        {EAnalyticsType.VideoCoin,"renwu_shipinjinbi_01"},
+        {EAnalyticsType.ActiveGame, "jihuoxinxi_anjian_01"},
+        {EAnalyticsType.WeChatLoginResult, "weixindengluchenggong_001"},
+
+        {EAnalyticsType.MilestoneClick, "lichengbei_dianji_01"},
+        {EAnalyticsType.MilestonceGet, "lichengbei_dianji_02"},
+
+
+        {EAnalyticsType.LevelUp, "chuangguan_renjun_01"},
+
+        {EAnalyticsType.TurnIcon, "zhuanquanhongbao_icon_01"},
+        {EAnalyticsType.TurnGetRed, "zhuanquanhongbao_shipin_01"},
+        {EAnalyticsType.TurnRedGetFinish, "zhuanquanhongbao_shipin_02"},
+
+        {EAnalyticsType.TaskDaily, "renwu_meiridenglu_01"},
+        {EAnalyticsType.VideoCoin, "renwu_shipinjinbi_01"},
         // {EAnalyticsType.TaskVideoFinish,"renwu_tongguan_01"},
-        {EAnalyticsType.TaskPassFinish,"renwu_tongguan_01"},
-        {EAnalyticsType.TaskVideo,"renwu_shipin_01"},
-        
-        {EAnalyticsType.WithDrawRed,"hongbao_anjian_01"},
-        {EAnalyticsType.GetRedCoin,"linghongbao_shipin_01"},
-        {EAnalyticsType.GetRedCoinFinish,"linghongbao_shipinOK_01"},
-        
-        {EAnalyticsType.WithDrawCoin,"jinbi_anjian_01"},
-        {EAnalyticsType.GetCoinCoin,"lingshipin_anjian_01"},
-        {EAnalyticsType.GetCoinCoinFinish,"lingjinbi_shipinOK_01"},
-      
-        {EAnalyticsType.WithDrawTipPopup,"guanggaoshifang_01"},
-        {EAnalyticsType.WithDrawTipClick,"guanggaoshifang_02"},
-        {EAnalyticsType.WithDrawTipFinish,"guanggaoshifang_03"},
-        {EAnalyticsType.WithDrawTipClose,"guanggaoshifang_05"},
-        
+        {EAnalyticsType.TaskPassFinish, "renwu_tongguan_01"},
+        {EAnalyticsType.TaskVideo, "renwu_shipin_01"},
+
+        {EAnalyticsType.WithDrawRed, "hongbao_anjian_01"},
+        {EAnalyticsType.GetRedCoin, "linghongbao_shipin_01"},
+        {EAnalyticsType.GetRedCoinFinish, "linghongbao_shipinOK_01"},
+
+        {EAnalyticsType.WithDrawCoin, "jinbi_anjian_01"},
+        {EAnalyticsType.GetCoinCoin, "lingshipin_anjian_01"},
+        {EAnalyticsType.GetCoinCoinFinish, "lingjinbi_shipinOK_01"},
+
+        {EAnalyticsType.WithDrawTipPopup, "guanggaoshifang_01"},
+        {EAnalyticsType.WithDrawTipClick, "guanggaoshifang_02"},
+        {EAnalyticsType.WithDrawTipFinish, "guanggaoshifang_03"},
+        {EAnalyticsType.WithDrawTipClose, "guanggaoshifang_05"},
+
         //活动
-        {EAnalyticsType.ActivityVideoClick,"kanshipinyouqian_01"},
-        {EAnalyticsType.ActivityVideoPlayStart,"kanshipinyouqian_02"},
-        {EAnalyticsType.ActivityVideoPlayEnd,"kanshipinyouqian_03"},
-        
-        {EAnalyticsType.ActivitySignClick,"7tianjinbilingqu_01"},
-        {EAnalyticsType.ActivitySignGet,"7tianjinbilingqu_02"},
-        {EAnalyticsType.ActivitySignClose,"7tianjinbilingqu_03"},
-        
-        {EAnalyticsType.ActivityAnswerClick,"kanshipinyouqian_01"},
-        {EAnalyticsType.ActivityAnswerRedClick,"kanshipinyouqian_02"},
-        {EAnalyticsType.ActivityAnswerRedCloseGet,"kanshipinyouqian_03"},
-        {EAnalyticsType.ActivityAnswerRedGetSuccess,"kanshipinyouqian_04"},
-        
+        {EAnalyticsType.ActivityVideoClick, "kanshipinyouqian_01"},
+        {EAnalyticsType.ActivityVideoPlayStart, "kanshipinyouqian_02"},
+        {EAnalyticsType.ActivityVideoPlayEnd, "kanshipinyouqian_03"},
+
+        {EAnalyticsType.ActivitySignClick, "7tianjinbilingqu_01"},
+        {EAnalyticsType.ActivitySignGet, "7tianjinbilingqu_02"},
+        {EAnalyticsType.ActivitySignClose, "7tianjinbilingqu_03"},
+
+        {EAnalyticsType.ActivityAnswerClick, "kanshipinyouqian_01"},
+        {EAnalyticsType.ActivityAnswerRedClick, "kanshipinyouqian_02"},
+        {EAnalyticsType.ActivityAnswerRedCloseGet, "kanshipinyouqian_03"},
+        {EAnalyticsType.ActivityAnswerRedGetSuccess, "kanshipinyouqian_04"},
+
         //688
-        {EAnalyticsType.NewPlaySign,"xinrenhongbao_01"},
-        {EAnalyticsType.NewPlayClickRed,"xinrenhongbao_02"},
-        {EAnalyticsType.NewPlayGetRed,"xinrenhongbao_03"},
-        {EAnalyticsType.NewPlayReceive,"xinrenhongbao_04"},
-        {EAnalyticsType.Change7,"qiandaomoshi_01"},
-        {EAnalyticsType.Change14,"qiandaomoshi_02"},
-        {EAnalyticsType.Change360,"qiandaomoshi_03"},
-        {EAnalyticsType.GetRewardPlayAd7,"7_qiandao_01"},
-        {EAnalyticsType.GetRewardFinishAd7,"7_qiandao_02"},
-        {EAnalyticsType.GetReward7,"7_qiandao_03"},
-        {EAnalyticsType.GetRewardPlayAd14,"14_qiandao_01"},
-        {EAnalyticsType.GetRewardFinishAd14,"14_qiandao_02"},
-        {EAnalyticsType.GetReward14,"14_qiandao_03"},
-        {EAnalyticsType.GetReward360,"360_qiandao_01"},
-        
-        
-        {EAnalyticsType.WeChatClick,"yonghudenglu_06"},
-        {EAnalyticsType.WeChatSuccess,"yonghudenglu_07"},
-        {EAnalyticsType.WeChatFails,"yonghudenglu_08"},
-        {EAnalyticsType.WecChatLogin,"yonghudenglu_09"},
-        {EAnalyticsType.WecChatLoginFails,"yonghudenglu_10"},
-        
-        {EAnalyticsType.GetCoin,"guanqiajiesuan_01"},
-        {EAnalyticsType.GetRed,"guanqiajiesuan_02"},
-        
-        {EAnalyticsType.WithDrawLow,"tixian_0.38_anjian"},
-        {EAnalyticsType.WithDrawLowSuccess,"tixian_0.38_chenggong"},
-        {EAnalyticsType.WithDrawMedium,"tixian_0.68_anjian"},
-        {EAnalyticsType.WithDrawMediumSuccess,"tixian_0.68_chenggong"},
-        {EAnalyticsType.WithDrawHigh,"tixian_0.88_anjian"},
-        {EAnalyticsType.WithDrawHighSuccess,"tixian_0.88_chenggong"},
-        
+        {EAnalyticsType.NewPlaySign, "xinrenhongbao_01"},
+        {EAnalyticsType.NewPlayClickRed, "xinrenhongbao_02"},
+        {EAnalyticsType.NewPlayGetRed, "xinrenhongbao_03"},
+        {EAnalyticsType.NewPlayReceive, "xinrenhongbao_04"},
+        {EAnalyticsType.Change7, "qiandaomoshi_01"},
+        {EAnalyticsType.Change14, "qiandaomoshi_02"},
+        {EAnalyticsType.Change360, "qiandaomoshi_03"},
+        {EAnalyticsType.GetRewardPlayAd7, "7_qiandao_01"},
+        {EAnalyticsType.GetRewardFinishAd7, "7_qiandao_02"},
+        {EAnalyticsType.GetReward7, "7_qiandao_03"},
+        {EAnalyticsType.GetRewardPlayAd14, "14_qiandao_01"},
+        {EAnalyticsType.GetRewardFinishAd14, "14_qiandao_02"},
+        {EAnalyticsType.GetReward14, "14_qiandao_03"},
+        {EAnalyticsType.GetReward360, "360_qiandao_01"},
+
+
+        {EAnalyticsType.WeChatClick, "yonghudenglu_06"},
+        {EAnalyticsType.WeChatSuccess, "yonghudenglu_07"},
+        {EAnalyticsType.WeChatFails, "yonghudenglu_08"},
+        {EAnalyticsType.WecChatLogin, "yonghudenglu_09"},
+        {EAnalyticsType.WecChatLoginFails, "yonghudenglu_10"},
+
+        {EAnalyticsType.GetCoin, "guanqiajiesuan_01"},
+        {EAnalyticsType.GetRed, "guanqiajiesuan_02"},
+
+        {EAnalyticsType.WithDrawLow, "tixian_0.38_anjian"},
+        {EAnalyticsType.WithDrawLowSuccess, "tixian_0.38_chenggong"},
+        {EAnalyticsType.WithDrawMedium, "tixian_0.68_anjian"},
+        {EAnalyticsType.WithDrawMediumSuccess, "tixian_0.68_chenggong"},
+        {EAnalyticsType.WithDrawHigh, "tixian_0.88_anjian"},
+        {EAnalyticsType.WithDrawHighSuccess, "tixian_0.88_chenggong"},
+
         //财神  MoneyPoolIcon,
-        {EAnalyticsType.MoneyPoolIcon,"caishen_icon_01"},
-        {EAnalyticsType.MoneyPoolGrowBTN,"caishen_duobeidianji_01"},
-        {EAnalyticsType.MoneyPoolPlayVideo,"caishen_bofang_qingqiu_01"},
-        {EAnalyticsType.MoneyPoolVideoCBFinish,"caishen_huidiaochenggong_01"},
-        {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
-        {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
-        {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
-        
-        {EAnalyticsType.GrowMoneyPlan,"jiasuanjian_01"},
-        {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
-        {EAnalyticsType.GrowMoneyPlanFinish,"txsp_001"},
-        
-        
-        {EAnalyticsType.TurnTableIcon,"choujiang_01"},
-        {EAnalyticsType.TurnTableGet,"choujiang_02"},
-        {EAnalyticsType.TurnTableLowReward,"choujiang_03"},
-        {EAnalyticsType.TurnTableHighReward,"choujiang_04"},
-        {EAnalyticsType.TurnTableGetFinal,"choujiang_05"},
-        {EAnalyticsType.TurnTableStart,"kscj_001"},
-        {EAnalyticsType.TurnTableSevenTime,"kscj_002"},
-        {EAnalyticsType.TurnTableTwentyTime,"kscj_003"},
-        
-        {EAnalyticsType.CoinDailySuccess,"tixian_0.3_chenggong"}, 
-        
+        {EAnalyticsType.MoneyPoolIcon, "caishen_icon_01"},
+        {EAnalyticsType.MoneyPoolGrowBTN, "caishen_duobeidianji_01"},
+        {EAnalyticsType.MoneyPoolPlayVideo, "caishen_bofang_qingqiu_01"},
+        {EAnalyticsType.MoneyPoolVideoCBFinish, "caishen_huidiaochenggong_01"},
+        {EAnalyticsType.MoneyPoolVideoCBFail, "caishen_huidiaoshibai_01"},
+        {EAnalyticsType.MoneyPoolVideoFinish, "caishen_bofangshibai_01"},
+        {EAnalyticsType.MoneyPoolVideoFail, "tcaishen_bofangchenggong_01"},
+
+        {EAnalyticsType.GrowMoneyPlan, "jiasuanjian_01"},
+        {EAnalyticsType.GrowMoneyPlanClick, "jiasuanjian_02"},
+        {EAnalyticsType.GrowMoneyPlanFinish, "txsp_001"},
+
+
+        {EAnalyticsType.TurnTableIcon, "choujiang_01"},
+        {EAnalyticsType.TurnTableGet, "choujiang_02"},
+        {EAnalyticsType.TurnTableLowReward, "choujiang_03"},
+        {EAnalyticsType.TurnTableHighReward, "choujiang_04"},
+        {EAnalyticsType.TurnTableGetFinal, "choujiang_05"},
+        {EAnalyticsType.TurnTableStart, "kscj_001"},
+        {EAnalyticsType.TurnTableSevenTime, "kscj_002"},
+        {EAnalyticsType.TurnTableTwentyTime, "kscj_003"},
+
+        {EAnalyticsType.CoinDailySuccess, "tixian_0.3_chenggong"},
+
         #region 新手签到领取
-        {EAnalyticsType.NewPlayerReceive,"xinshoufuli_001"},
-        {EAnalyticsType.NewPlayerSign,"qiandao_001"},
-        {EAnalyticsType.LoginReceive,"qiandao_002"},
-        {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
+
+        {EAnalyticsType.NewPlayerReceive, "xinshoufuli_001"},
+        {EAnalyticsType.NewPlayerSign, "qiandao_001"},
+        {EAnalyticsType.LoginReceive, "qiandao_002"},
+        {EAnalyticsType.LoginReceiveAccumulated, "5tianqiandao_001"},
+
         #endregion
     };
 }

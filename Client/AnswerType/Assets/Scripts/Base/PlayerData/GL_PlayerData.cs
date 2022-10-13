@@ -7,6 +7,7 @@ using Logic.System.NetWork;
 using SUIFW;
 using SUIFW.Diplomats.Common;
 using UnityEngine;
+using Object = System.Object;
 
 public class GL_PlayerData : Singleton<GL_PlayerData>
 {
@@ -1713,6 +1714,30 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         });
     }
 
+    #region 新人奖金
+
+    /// <summary>
+    /// 获取新人奖金配置并打开提示页
+    /// </summary>
+    public void GetNewPlayerReward(bool isActive = true)
+    {
+        Action action = () =>
+        {
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<=1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
+            {
+                SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
+                    GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
+                    Object[] obj =  {accept,isActive};
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
+                }));
+            }
+        };
+        SendGamecoreConfig(EGamecoreType.NewPlayer, action);
+    }
+
+    #endregion
 
     #region 领取奖励
 
