@@ -72,8 +72,8 @@ public class UI_IF_Production : BaseUIForm
                 GL_PlayerData._instance.GetProduceBarrage((() =>
                 {
                     _ObjProduction._index = 0;
-                    _ObjProduction._barrageMove.Stop();
-                    _ObjProduction._barrageMove.Play("barrage_Move");
+                    // _ObjProduction._barrageMove.Stop();
+                    // _ObjProduction._barrageMove.Play("barrage_Move");
                     _ObjProduction.ChangeBarrage();
                 }));
             }));

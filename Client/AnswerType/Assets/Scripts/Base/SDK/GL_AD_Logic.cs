@@ -148,8 +148,9 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
             Net_ViewAD ad = new Net_ViewAD();
             ad.adid = sj.adSite;
             GL_ServerCommunication._instance.Send(Cmd.WatchAd, JsonUtility.ToJson(ad));
-            //刷新财神气泡
-            GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.MoneyPool);
+            
+            // //刷新财神气泡
+            // GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.MoneyPool);
 
             GL_PlayerData._instance.SystemConfig.viewAds += 1;
             

@@ -37,7 +37,8 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         SendSystemConfig();
         GL_Game._instance.RefreshMainRequest();
         SendWithDrawConfig(EWithDrawType.Clockin);
-        SendWithDrawConfig(EWithDrawType.MoneyPool);
+        //财神屏蔽
+        // SendWithDrawConfig(EWithDrawType.MoneyPool);
 
         GetMilestoneTaskConfig();
         GL_GuideManager._instance.CheckGuideConfig();
