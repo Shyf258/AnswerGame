@@ -215,16 +215,8 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
             return; 
             
         }
-        
-        //if (!GL_CoreData._instance.AbTest)
-        {
-            if (GL_Game._instance._signInConfig.Clockin()  )
-            {
-                ShowUI(SysDefine.UI_Path_NewSignInPage);
-            }
-        }
 
-//         if(_showPig && !GL_CoreData._instance.AbTest)
+//         if(_showPig)// && GL_CoreData._instance.AbTest)
 //         {
 // #if PureVersion
 //             return;
@@ -236,29 +228,29 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
 //             //     Object[] objects = { config,onHide };
 //             //     ShowUI(SysDefine.UI_IF_Goldenpig,objects);
 //             // } ));
-//             // Object[] objects = { onHide };
-//             // ShowUI(SysDefine.UI_IF_MoneyPool,objects);
+//             Object[] objects = { onHide };
+//             ShowUI(SysDefine.UI_IF_MoneyPool,objects);
 //             return;
 //         }
-//         
-//
-//         _isMainPageOver = false;
-//
-//         // if (GL_PlayerData._instance.IsLoginWeChat())
-//         // {
-//         //     GL_PlayerData._instance.GetProduceConfig((() =>
-//         //     {
-//         //         ShowUI(SysDefine.UI_Path_Production);
-//         //     }));
-//         // }
-//
-//         //if (!GL_CoreData._instance.AbTest)
-//         {
-//             // if (GL_Game._instance._signInConfig.Clockin()  )
-//             {
-//                 // ShowUI(SysDefine.UI_Path_NewLogin);
-//             }
-//         }
+        
+
+        _isMainPageOver = false;
+
+        // if (GL_PlayerData._instance.IsLoginWeChat())
+        // {
+        //     GL_PlayerData._instance.GetProduceConfig((() =>
+        //     {
+        //         ShowUI(SysDefine.UI_Path_Production);
+        //     }));
+        // }
+
+        //if (!GL_CoreData._instance.AbTest)
+        {
+            if (GL_Game._instance._signInConfig.Clockin()  )
+            {
+                ShowUI(SysDefine.UI_Path_NewSignInPage);
+            }
+        }
     }
 
     private void MainPageEventSort2()
