@@ -1,6 +1,7 @@
 //2022.8.23 ����
 //��ҳ���淨��س�ʼ��
 
+using System;
 using DataModule;
 using DG.Tweening;
 using SUIFW;
@@ -99,6 +100,24 @@ public partial class UI_IF_Main
         });
             
         #endregion
+        
+        //大生产
+        _productionPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "ProductionPage");
+        RigisterButtonObjectEvent(_productionPageToggle, go =>
+        {
+            if (!GL_PlayerData._instance.IsLoginWeChat())
+            {
+                //登陆微信
+                // Action show =()=> PlayerIcon();
+                Action show = () => { ChangeProduce(); };
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin, show);
+                // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
+            }
+            else
+            {
+                ChangeProduce();
+            }
+        });
     }
 
     #region �����淨

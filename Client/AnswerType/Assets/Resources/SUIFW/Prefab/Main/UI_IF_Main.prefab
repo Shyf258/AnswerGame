@@ -808,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8143882176765226813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3eafeb9bdc951434bb8d3db81b5f40f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3873cf0e3641cd04cabbebf29cab3890, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1166,7 +1166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6958338892352527264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3214,8 +3214,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.5, y: -59.1}
-  m_SizeDelta: {x: 243, y: 50}
+  m_AnchoredPosition: {x: -8, y: -55.521}
+  m_SizeDelta: {x: 208.1069, y: 42.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &252563458950018188
 CanvasRenderer:
@@ -3245,7 +3245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 112594d87604f494aa3ef44d6bde2b4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fa1434e2d2698c4c8bbb337a148dfa6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4938,12 +4938,12 @@ GameObject:
   - component: {fileID: 754638074993041015}
   - component: {fileID: 6786309689499814849}
   m_Layer: 0
-  m_Name: ProductionPageToggle
+  m_Name: ProductionPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8029086575268125468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6732,7 +6732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b2f3afe704fc5ab459eada1f81544a38, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c0f88432098e7e4d8639cbc08513536, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
