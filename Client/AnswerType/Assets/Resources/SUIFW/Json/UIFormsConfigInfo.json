@@ -317,6 +317,10 @@
     {
       "Key": "WechatWithdrawTip",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WechatWithdrawTip"
+    },
+    {
+      "Key": "NewLogin",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewLogin"
     }
   ]
 }

@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年9月15日  16:08:52
+// 广告位自动生成于 2022年10月20日  14:34:16
 
 using UnityEngine;
 
@@ -37,6 +37,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	public const string AD_Reward_MoneyShort = "MoneyShort";
 	public const string AD_Reward_WithDrawTurn = "WithDrawTurn";
 	public const string AD_Reward_TurnTable = "TurnTable";
+	public const string AD_Reward_LoginWithDraw = "LoginWithDraw";
 	public const string AD_Reward_WaitWithDraw = "WaitWithDraw";
 
 //2.插屏
@@ -81,6 +82,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	private int _MoneyShort = 0;
 	private int _WithDrawTurn = 0;
 	private int _TurnTable = 0;
+	private int _LoginWithDraw = 0;
 	private int _WaitWithDraw = 0;
 	#endregion
 
@@ -185,6 +187,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 			case AD_Reward_TurnTable:
 				_TurnTable = 0;
 				break;
+			case AD_Reward_LoginWithDraw:
+				_LoginWithDraw = 0;
+				break;
 			case AD_Reward_WaitWithDraw:
 				_WaitWithDraw = 0;
 				break;
@@ -194,7 +199,6 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 #if UNITY_EDITOR
 		SJson sj = new SJson();
 		sj.adSite = ad;
-		sj.adType = (int)GL_SDK._instance.GetADType(ad);
 		string str = JsonUtility.ToJson(sj);
 		CB_AdPlayCompleted(str);
 		return;
@@ -203,7 +207,6 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 		{
 			SJson sj = new SJson();
 			sj.adSite = ad;
-			sj.adType = (int)GL_SDK._instance.GetADType(ad);
 			string str = JsonUtility.ToJson(sj);
 			CB_AdPlayCompleted(str);
 		}
@@ -357,6 +360,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_TurnTable:
 				_TurnTable = 1;
+				break;
+			case AD_Reward_LoginWithDraw:
+				_LoginWithDraw = 1;
 				break;
 			case AD_Reward_WaitWithDraw:
 				_WaitWithDraw = 1;
@@ -584,6 +590,13 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 					return;
 #endif
 				_TurnTable = 0;
+				break;
+			case AD_Reward_LoginWithDraw:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_LoginWithDraw == 0)
+					return;
+#endif
+				_LoginWithDraw = 0;
 				break;
 			case AD_Reward_WaitWithDraw:
 #if UNITY_IOS && !UNITY_EDITOR

@@ -36,6 +36,7 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
                 //if(!GL_CoreData._instance.AbTest)
                     ShowUI(SysDefine.UI_Path_DragRedpack);
 
+
                 if (GL_Game._instance._isStartGame)
                 {
                     //刚进入游戏, 关卡列表直接到位
@@ -181,24 +182,24 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
         _isMainPageOver = true;
         Action onHide = () => { MainPageEventSort1(); };
 
-        //1.引导
-        if (GL_GuideManager._instance.CheckFirstGuide())
-        {
-            if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.Server, onHide))
-            {
-                DDebug.Log("MainPageSort " + "新手引导1");
-                return;
-            }
-        }
-
-        if (GL_NewbieSign._instance.CheckSecondGuide())
-        {
-            if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.NewSign, onHide))
-            {
-                DDebug.Log("MainPageSort " + "新手引导1");
-                return;
-            }
-        }
+        // //1.引导
+        // if (GL_GuideManager._instance.CheckFirstGuide())
+        // {
+        //     if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.Server, onHide))
+        //     {
+        //         DDebug.Log("MainPageSort " + "新手引导1");
+        //         return;
+        //     }
+        // }
+        //
+        // if (GL_NewbieSign._instance.CheckSecondGuide())
+        // {
+        //     if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.NewSign, onHide))
+        //     {
+        //         DDebug.Log("MainPageSort " + "新手引导1");
+        //         return;
+        //     }
+        // }
 
         //主页引导
         if (GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain, onHide))
@@ -243,13 +244,18 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
         //     }));
         // }
 
-        //if (!GL_CoreData._instance.AbTest)
+        // //if (!GL_CoreData._instance.AbTest)
         // {
         //     if (GL_Game._instance._signInConfig.Clockin()  )
         //     {
         //         ShowUI(SysDefine.UI_Path_NewSignInPage);
         //     }
         // }
+        
+        if (GL_PlayerData._instance._NetCbLoginConfig!=null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
+        {
+            ShowUI(SysDefine.UI_Path_NewLogin);
+        }
     }
 
     private void MainPageEventSort2()
