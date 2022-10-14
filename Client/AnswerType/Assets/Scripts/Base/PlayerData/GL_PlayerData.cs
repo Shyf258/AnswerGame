@@ -60,6 +60,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
               
             }));
         }
+        SendLoginWithDraw();
     }
 
     public Net_CB_SystemConfig SystemConfig
@@ -1090,6 +1091,36 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         _drawMilestoneCallbackTask?.Invoke(msg);
         _drawMilestoneCallbackTask = null;
     }
+
+    #endregion
+    
+    #region 登录领现金
+
+
+    private Action _loginAction;
+
+    public Net_CB_LoginConfig _NetCbLoginConfig = new Net_CB_LoginConfig();
+    /// <summary>
+    /// 登录领现金配置
+    /// </summary>
+    /// <param name="action"></param>
+    public void SendLoginWithDraw( Action action = null)
+    {
+        _loginAction = action;
+        Net_RequesetCommon msg = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.LoginWithDrawConfig, JsonUtility.ToJson(msg), CB_loginWithDraw);
+    }
+
+    private void CB_loginWithDraw(string json)
+    {
+        Net_CB_LoginConfig msg = JsonUtility.FromJson<Net_CB_LoginConfig>(json);
+        if (msg == null)
+            return;
+        _NetCbLoginConfig = msg;
+        _loginAction?.Invoke();
+        _loginAction = null;
+    }
+
 
     #endregion
 

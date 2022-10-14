@@ -857,7 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3641466038464094148}
   - component: {fileID: 3641466038464094149}
-  - component: {fileID: 3048921139630294627}
+  - component: {fileID: 4651009845298242326}
   m_Layer: 5
   m_Name: UI_IF_NewLogin
   m_TagString: Untagged
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showAnimationName: UI_IF_PopUp_Open
   hideAnimationName: UI_IF_PopUp_Close
---- !u!114 &3048921139630294627
+--- !u!114 &4651009845298242326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3641466038464094147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70636f143ee26b0479e569e2d07b39d5, type: 3}
+  m_Script: {fileID: 11500000, guid: af13201e018cf194db4312f28e6fda75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _isOpenMainUp: 0
