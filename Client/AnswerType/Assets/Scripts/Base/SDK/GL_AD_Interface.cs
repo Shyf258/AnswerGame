@@ -164,6 +164,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 #if UNITY_EDITOR
 		SJson sj = new SJson();
 		sj.adSite = ad;
+		sj.adType = (int)GL_SDK._instance.GetADType(ad);
 		string str = JsonUtility.ToJson(sj);
 		CB_AdPlayCompleted(str);
 		return;
