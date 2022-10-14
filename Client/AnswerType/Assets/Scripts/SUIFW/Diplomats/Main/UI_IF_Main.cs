@@ -13,6 +13,7 @@ using Logic.System.NetWork;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Logical;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 using SUIFW.Diplomats.Common;
+using SUIFW.Diplomats.Common.Withdraw;
 using SUIFW.Diplomats.Main.MyWithdraw;
 using Unity.Collections;
 using Object = System.Object;
