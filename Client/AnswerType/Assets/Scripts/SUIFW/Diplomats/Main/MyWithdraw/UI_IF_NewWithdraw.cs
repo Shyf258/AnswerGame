@@ -185,15 +185,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         {
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
-                if (GL_CoreData._instance.AbTest)
-                {
-                    Init(EnumMyWithdraw.Gold);
-
-                    //因为需要排序, 所以延迟一会检测
-                    if(GL_PlayerData._instance.IsEnoughCoin())
-                        Invoke(nameof(TriggerGuide), 0.05f);
-                }
-                else
+                // if (GL_CoreData._instance.AbTest)
+                // {
+                //     Init(EnumMyWithdraw.Gold);
+                //
+                //     //因为需要排序, 所以延迟一会检测
+                //     if(GL_PlayerData._instance.IsEnoughCoin())
+                //         Invoke(nameof(TriggerGuide), 0.05f);
+                // }
+                // else
                 {
                     Init(EnumMyWithdraw.Gold);
                 }
