@@ -313,6 +313,10 @@
     {
       "Key": "RedGroupChat",
       "Value": "SUIFW\\Prefab\\RedGroup\\UI_IF_RedGroupChat"
+    },
+    {
+      "Key": "WechatWithdrawTip",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WechatWithdrawTip"
     }
   ]
 }
