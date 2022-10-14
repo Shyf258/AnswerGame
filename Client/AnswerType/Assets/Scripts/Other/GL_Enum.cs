@@ -53,10 +53,11 @@ public enum EWithDrawType
     CashWithDraw = 3,    //现金提现
     MoneyPool = 4,  //财神提现
     //LevelWithDraw = 5,  //关卡提现
-    Clockin = 6, //打卡
-    DailyWithDraw = 7,  //每日提现
-    TipsPage = 8,       //广告提现机会
-    WaitWithDraw = 9,
+    Clockin       = 6, //打卡
+    DailyWithDraw = 7, //每日提现
+    TipsPage      = 8, //广告提现机会
+    WaitWithDraw  = 9,
+    LoginWithDraw = 12, //登录领钱
 }
 
 public enum EGameEnterType
@@ -310,10 +311,18 @@ public enum EnumChat
 //通用玩法模块类型
 public enum EGamecoreType
 {
-    Guide = 1,  //新手福利
-    NewbieSign = 2,  //新手现金(688活动
-    ActivitySign = 3,   //活动页签到
-    PureAnswer = 4, //答题进度红包
-    ActivityVideo = 5, //活动看视频
-    Turntable =9, //抽奖
+    Guide         = 1,  //新手福利
+    NewbieSign    = 2,  //新手现金(688活动
+    ActivitySign  = 3,  //活动页签到
+    PureAnswer    = 4,  //答题进度红包
+    ActivityVideo = 5,  //活动看视频
+    Turntable     = 9,   //抽奖
+    NewPlayer     = 10, //新人奖金
+}
+
+public enum EGameUIType
+{
+    GuessFromExplain = 1,   //看释义猜成语
+    GuessFromPictures,      //看图猜成语
+    AncientPoetryCrossword, //古诗填字
 }

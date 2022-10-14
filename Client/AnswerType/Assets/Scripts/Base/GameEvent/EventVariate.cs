@@ -8,9 +8,9 @@ public enum EEventID
     GameMode,
 
     //逻辑刷新
-    RefreshCurrency,    //刷新货币
+    RefreshCurrency, //刷新货币
     
-    RefreshGameMode,  //刷新游戏玩法
+    RefreshGameMode, //刷新游戏玩法
     
     /// <summary>刷新免费提示</summary>
     RefreshFreeTip,
@@ -32,6 +32,11 @@ public enum EEventID
     /// 刷新主页提现增幅
     /// </summary>
     RefreshGrowMoney,
+    
+    /// <summary>
+    /// 刷新登录领钱
+    /// </summary>
+    RefreshLogin,
     
     //语言
     EID_ChangeLanguage,
@@ -65,12 +70,12 @@ public class EventParam<T> : EventParam
 //两个参数的类型，简单的都可以用这个泛型类
 public class EventParam<T, T2> : EventParam
 {
-    public T _param { get; private set; }
+    public T  _param  { get; private set; }
     public T2 _param2 { get; private set; }
 
     public EventParam(T param, T2 param2)
     {
-        this._param = param;
+        this._param  = param;
         this._param2 = param2;
     }
 }
@@ -78,13 +83,13 @@ public class EventParam<T, T2> : EventParam
 //三个参数的类型，简单的都可以用这个泛型类
 public class EventParam<T, T2, T3> : EventParam
 {
-    public T _param { get; private set; }
+    public T  _param  { get; private set; }
     public T2 _param2 { get; private set; }
     public T3 _param3 { get; private set; }
 
     public EventParam(T param, T2 param2, T3 param3)
     {
-        this._param = param;
+        this._param  = param;
         this._param2 = param2;
         this._param3 = param3;
     }

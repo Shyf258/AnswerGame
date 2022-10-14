@@ -125,4 +125,8 @@ public enum Cmd
     
     /// <summary>/// 云控配置/// </summary>
     WithDrawGrowConfig = 90301,
+        
+    /// <summary>/// 提现增幅配置/// </summary>
+    LoginWithDrawConfig = 90401,
+
 }

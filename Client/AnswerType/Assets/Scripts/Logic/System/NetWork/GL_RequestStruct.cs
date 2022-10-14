@@ -475,6 +475,29 @@ public class Net_TaskDownloadComplete: Net_RequesetCommon
 
 #endregion
 
+#region 登录领现金
+
+public class Net_CB_LoginConfig
+{
+    /// <summary>
+    /// 登录第几天
+    /// </summary>
+    public int day;
+
+    /// <summary>
+    /// 今日已观看视频次数
+    /// </summary>
+    public int viewAds;
+    
+    /// <summary>
+    /// 提现配置
+    /// </summary>
+    public List<Net_CB_WithDraw> withDraws;
+
+}
+
+#endregion
+
 #region 每日打卡
 
 
