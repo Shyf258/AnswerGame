@@ -670,12 +670,12 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 return false;
             }
 
-            //1.检测关卡等级
-            if (GL_PlayerData._instance.CurLevel - 1 < withDraw.WithDraw.level)
-            {
-                if (isHint) UI_HintMessage._.ShowMessage(_tipsList[4]);
-                return false;
-            }
+            // //1.检测关卡等级
+            // if (GL_PlayerData._instance.CurLevel - 1 < withDraw.WithDraw.level)
+            // {
+            //     if (isHint) UI_HintMessage._.ShowMessage(_tipsList[4]);
+            //     return false;
+            // }
             //2.广告数量不满足时
             int num = withDraw.WithDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
             num = 0;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Logic.Fly;
 using SUIFW;
 using SUIFW.Diplomats.Common;
+using SUIFW.Diplomats.Main.MyWithdraw;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = System.Object;
@@ -80,6 +81,11 @@ public class UI_IF_NewPlayerTips : BaseUIForm
         // GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Coin));
         Fly_Manager._instance.MainUpFly(EFlyItemType.Coin, Vector3.zero,_isActiveMainUp);
         UI_HintMessage._.ShowMessage($"恭喜！获得{_gamecoreAccept.rewards[0].num}金币");
-        
+        var withdraw = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw) as UI_IF_NewWithdraw;
+        if (withdraw != null)
+        {
+            withdraw.Refresh(false);
+        }
+
     }
 }
