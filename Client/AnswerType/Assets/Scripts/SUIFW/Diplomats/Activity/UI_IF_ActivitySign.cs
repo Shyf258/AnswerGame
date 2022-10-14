@@ -121,7 +121,7 @@ namespace SUIFW.Diplomats.Main
                         {
                             GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.ActivitySign,0,(accept =>
                             {
-                                object[] datas = { accept.rewards};
+                                object[] datas = { accept.rewards,null,false,true};
                                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                                 
                                 GL_CoreData._instance.ActivitySignDay += 1;

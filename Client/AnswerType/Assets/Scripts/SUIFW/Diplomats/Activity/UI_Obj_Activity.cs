@@ -157,7 +157,7 @@ namespace SUIFW.Diplomats.Main
                                 {
                                     config.dayAcceptTimes -= 1;
                                 };
-                                object[] datas = { accept.rewards, action}; //是否激活mainUp
+                                object[] datas = { accept.rewards, action , false , true}; //是否激活mainUp
                                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                             }));
                             

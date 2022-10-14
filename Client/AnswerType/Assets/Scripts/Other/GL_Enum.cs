@@ -22,6 +22,8 @@ public enum EBuildApp
     RSDYJ = 1, //人生大赢家赚金
     BXDYJ = 2, //冰雪大赢家
     ZYXLZ = 3, //中药小郎中
+    CYZDD = 4, //成语赚多多
+    NJZW = 5 , //闹剧之王
 }
 
 #endregion
@@ -312,4 +314,5 @@ public enum EGamecoreType
     ActivitySign = 3,   //活动页签到
     PureAnswer = 4, //答题进度红包
     ActivityVideo = 5, //活动看视频
+    NewPlayer = 10, //新人奖金
 }

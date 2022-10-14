@@ -17,10 +17,11 @@ MonoBehaviour:
   _isCloseGuide: 0
   _isLog: 1
   _isTestUnity: 1
-  _enterType: 2
+  _enterType: 0
   _abTest: b
   _isSkipAD: 0
   _buildApp: 1
   _check: 0
   _skipWeChatLogin: 0
   _buildTime: 0
+  _buildHour: 0

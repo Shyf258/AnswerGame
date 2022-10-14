@@ -128,6 +128,9 @@
     "IsShowDialog": true,
     "DialogOffset": -500.0,
     "Dialog": "您已经完成了新手阶段的目标，感觉如何？上面就是您的奖金，赶快领取提现吧！记得查看微信到账信息哦！",
-    "ObjectName": "BtnWithdraw"
+    "ObjectName": "_itemNode",
+    "PreFunc": [
+      "OnChangeWithdraw"
+    ]
   }
 }

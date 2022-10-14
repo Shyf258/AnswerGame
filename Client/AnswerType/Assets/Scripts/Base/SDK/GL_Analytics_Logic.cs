@@ -59,13 +59,7 @@ public enum EAnalyticsType
     /// <summary>/// 微信登录成功/// </summary>
     WeChatLoginResult,
 
-    /// <summary>/// 跳关/// </summary>
-    //NextLevel,
-    /// <summary>/// 财神进入/// </summary>
-    EnterMoneyPool,
-    /// <summary>/// 财神充能/// </summary>
-    MoneyPoolGrow,
-    
+ 
     /// <summary>/// 里程碑奖励手动领取/// </summary>
     MilestoneClick,
     /// <summary>/// 里程碑奖励领取/// </summary>
@@ -197,6 +191,47 @@ public enum EAnalyticsType
     WithDrawHigh,
     /// <summary>/// 0.88提现成功/// </summary>
     WithDrawHighSuccess,
+    
+    //财神
+    /// <summary>/// 财神ICON点击/// </summary>
+    MoneyPoolIcon,
+    /// <summary>/// 财神点击多倍领取按键/// </summary>
+    MoneyPoolGrowBTN,
+    /// <summary>/// 财神视频播放广告请求/// </summary>
+    MoneyPoolPlayVideo,
+    /// <summary>/// 财神视频回调成功/// </summary>
+    MoneyPoolVideoCBFinish,
+    /// <summary>/// 财神视频回调失败/// </summary>
+    MoneyPoolVideoCBFail,
+    /// <summary>/// 财神视频播放失败/// </summary>
+    MoneyPoolVideoFinish,
+    /// <summary>/// 财神视频播放成功/// </summary>
+    MoneyPoolVideoFail,
+    
+    
+    #region 新手签到领取
+
+    /// <summary>
+    /// 主界面签到图标点击
+    /// </summary>
+    NewPlayerSign,
+    
+    /// <summary>
+    /// 普通签到领取
+    /// </summary>
+    LoginReceive,
+    
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion
 }
 
 
@@ -218,10 +253,6 @@ public static class AnalyticsEvents
 
         {EAnalyticsType.ActiveGame,"jihuoxinxi_anjian_01"},
         {EAnalyticsType.WeChatLoginResult,"weixindengluchenggong_001"},
-
-        {EAnalyticsType.EnterMoneyPool,"caishen_001"}, 
-        {EAnalyticsType.MoneyPoolGrow,"caishen_002"}, 
-
         
         {EAnalyticsType.MilestoneClick,"lichengbei_dianji_01"},
         {EAnalyticsType.MilestonceGet,"lichengbei_dianji_02"},
@@ -298,5 +329,21 @@ public static class AnalyticsEvents
         {EAnalyticsType.WithDrawMediumSuccess,"tixian_0.68_chenggong"},
         {EAnalyticsType.WithDrawHigh,"tixian_0.88_anjian"},
         {EAnalyticsType.WithDrawHighSuccess,"tixian_0.88_chenggong"},
+        
+        //财神  MoneyPoolIcon,
+        {EAnalyticsType.MoneyPoolIcon,"caishen_icon_01"},
+        {EAnalyticsType.MoneyPoolGrowBTN,"caishen_duobeidianji_01"},
+        {EAnalyticsType.MoneyPoolPlayVideo,"caishen_bofang_qingqiu_01"},
+        {EAnalyticsType.MoneyPoolVideoCBFinish,"caishen_huidiaochenggong_01"},
+        {EAnalyticsType.MoneyPoolVideoCBFail,"caishen_huidiaoshibai_01"},
+        {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
+        {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
+        
+        #region 新手签到领取
+        {EAnalyticsType.NewPlayerReceive,"xinshoufuli_001"},
+        {EAnalyticsType.NewPlayerSign,"qiandao_001"},
+        {EAnalyticsType.LoginReceive,"qiandao_002"},
+        {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
+        #endregion
     };
 }

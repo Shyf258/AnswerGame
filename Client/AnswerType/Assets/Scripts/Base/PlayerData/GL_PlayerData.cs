@@ -7,6 +7,7 @@ using Logic.System.NetWork;
 using SUIFW;
 using SUIFW.Diplomats.Common;
 using UnityEngine;
+using Object = System.Object;
 
 public class GL_PlayerData : Singleton<GL_PlayerData>
 {
@@ -36,7 +37,8 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         SendSystemConfig();
         GL_Game._instance.RefreshMainRequest();
         SendWithDrawConfig(EWithDrawType.Clockin);
-        SendWithDrawConfig(EWithDrawType.MoneyPool);
+        //财神屏蔽
+        // SendWithDrawConfig(EWithDrawType.MoneyPool);
 
         GetMilestoneTaskConfig();
         GL_GuideManager._instance.CheckGuideConfig();
@@ -381,6 +383,43 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
 
     #endregion
 
+    #region 云控配置
+
+    private AppControl _appControlConfig = new AppControl();
+
+    public AppControl AppControlConfig
+    {
+        get => _appControlConfig;
+        set => _appControlConfig = value;
+    }
+
+    private Action _actionAppControl;
+
+    public void GetAppControl(Action action = null)
+    {
+        _actionAppControl = action;
+        MethodExeTool.Loop(GetAppControlConfig,5f,-1);
+    }
+
+    public void GetAppControlConfig()
+    {
+        Net_RequesetCommon com = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.AppControl, JsonUtility.ToJson(com), CB_AppControl);
+    }
+
+    private void CB_AppControl(string json)
+    {
+        AppControl msg  = JsonUtility.FromJson<AppControl>(json);
+        if (msg == null)
+            return;
+        MethodExeTool.CancelInvoke(GetAppControlConfig);
+        AppControlConfig = msg;
+        _actionAppControl?.Invoke();
+        _actionAppControl = null;
+    }
+    
+    #endregion
+    
     #region 微信
 
     /// <summary>
@@ -851,11 +890,13 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     
     private void CB_ProdecuWithDraw(string param)
     {
+       Net_CB_WithDrawResult(param);
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {
             NetCbProduceConfig.money/100f,
-            _eWithDrawType
+            _eWithDrawType,
+            _netCbWithDraw.money
         };
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
         
@@ -1210,6 +1251,64 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
                 _withDrawTarget.Add(eWithDrawType, withDraw);
         }
     }
+    
+    #region 提现结果
+
+    public Net_CB_WithDrawTipsData _netCbWithDraw = new Net_CB_WithDrawTipsData();
+    public void Net_CB_WithDrawResult(string json)
+    {
+        if (_netCbWithDraw==null)
+        {
+            _netCbWithDraw = new Net_CB_WithDrawTipsData();
+        }
+
+        try
+        {
+            Net_CB_WithDrawTipsData msg = JsonHelper.FromJson<Net_CB_WithDrawTipsData>(json);
+            if (msg!= null)
+            {
+                _netCbWithDraw = msg;
+            }
+            DDebug.LogError("当前提现成功额度："+ _netCbWithDraw.money) ;
+        }
+        catch 
+        {
+            DDebug.LogError("返回数值类型出错") ;
+        }
+    }
+
+
+    #endregion
+    
+    #region 提现增幅配置
+
+    private Action _withDrawGrowConfig;
+
+    public Net_CB_WithDrawGrowConfig _WithDrawGrowConfig;
+    public void GetWithDrawGrowConfig(Action action=null)
+    {
+        _withDrawGrowConfig = action;
+        MethodExeTool.Loop(GetGrowConfig,3f,-1);
+    }
+
+    private void GetGrowConfig()
+    {
+        Net_RequesetCommon config = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.WithDrawGrowConfig, JsonHelper.ToJson(config), CB_WithDrawGrowConfig);
+    }
+    
+    private void CB_WithDrawGrowConfig(string json)
+    {
+        Net_CB_WithDrawGrowConfig msg = JsonHelper.FromJson<Net_CB_WithDrawGrowConfig>(json);
+        if (msg == null )
+            return;
+        _WithDrawGrowConfig = msg;
+        MethodExeTool.CancelInvoke(GetGrowConfig);
+        _withDrawGrowConfig?.Invoke();
+        _withDrawGrowConfig = null;
+    }
+    #endregion
+    
     #endregion
 
     #region 提现条件
@@ -1523,6 +1622,30 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         });
     }
 
+    #region 新人奖金
+
+    /// <summary>
+    /// 获取新人奖金配置并打开提示页
+    /// </summary>
+    public void GetNewPlayerReward(bool isActive = true)
+    {
+        Action action = () =>
+        {
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer)!= null&& GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 )
+            {
+                SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
+                    GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
+                    Object[] obj =  {accept,isActive};
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
+                }));
+            }
+        };
+        SendGamecoreConfig(EGamecoreType.NewPlayer, action);
+    }
+
+    #endregion
 
     #region 领取奖励
 

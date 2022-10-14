@@ -32,8 +32,8 @@ public partial class UI_IF_Main : BaseUIForm
     #endregion
 
     #region 新手签到
-    private Button _btnNewbieSign;
-    private Text _textNewbieSign;
+    // private Button _btnNewbieSign;
+    // private Text _textNewbieSign;
     #endregion
 
 
@@ -80,7 +80,22 @@ public partial class UI_IF_Main : BaseUIForm
     private Button _signBtn;
 
     #endregion
+    #region 提现增幅
 
+    /// <summary>
+    /// 签到增幅
+    /// </summary>
+    private Button _signDay;
+    /// <summary>
+    /// 登录天数
+    /// </summary>
+    private Text _day;
+    /// <summary>
+    /// 增幅
+    /// </summary>
+    private Text _dayGrow;
+    
+    #endregion
 
     //防沉迷
     private Button _anti;
@@ -124,13 +139,14 @@ public partial class UI_IF_Main : BaseUIForm
         #region 底部导航
 
         Transform bottom = UnityHelper.FindTheChildNode(gameObject, "Bottom");
+        
         _answerPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "AnswerPageToggle");
-      
+        
         _taskPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "TaskPageToggle");
         _tipsTaskText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_taskPageToggle.gameObject, "TipsText");
-        _productionPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Button>(bottom.gameObject, "ProductionPageToggle");
         
         _withdrawPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "WithDrawToggle");
+        
         _activityPageToggle = UnityHelper.GetTheChildNodeComponetScripts<Toggle>(bottom.gameObject, "ActivityPageToggle");
         
         #region 主页打卡按键 
@@ -203,21 +219,7 @@ public partial class UI_IF_Main : BaseUIForm
             }
         });
         
-        RigisterButtonObjectEvent(_productionPageToggle, go =>
-        {
-            if (!GL_PlayerData._instance.IsLoginWeChat())
-            {
-                //登陆微信
-                // Action show =()=> PlayerIcon();
-                Action show = () => { ChangeProduce(); };
-                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin, show);
-                // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
-            }
-            else
-            {
-                ChangeProduce();
-            }
-        });
+      
         #endregion
 
         #endregion
@@ -236,8 +238,16 @@ public partial class UI_IF_Main : BaseUIForm
 
         InitTask();
 
-        //缩减里程碑
-        InitPosition();
+        if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
+        {
+            Transform slider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
+            slider.SetActive(false);
+        }
+        else
+        {
+            //缩减里程碑
+            InitPosition();
+        }
 
         _answerPageToggle.isOn = true;
 
@@ -320,22 +330,22 @@ public partial class UI_IF_Main : BaseUIForm
     #region 主页新手签到
     private void RefreshNewbieSign(EventParam param)
     {
-        bool set = GL_NewbieSign._instance.IsShowIcon();
-        _btnNewbieSign.SetActive(set);
-        if(set)
-        {
-            if (GL_NewbieSign._instance._gamecoreConfig == null
-                || GL_NewbieSign._instance._gamecoreConfig.rewards == null
-                || GL_NewbieSign._instance._gamecoreConfig.rewards.Count == 0)
-            {
-                _textNewbieSign.text = string.Format("<size=60>¥</size>{0}", 668);
-            }
-            else
-            {
-                _textNewbieSign.text = string.Format("<size=60>¥</size>{0}",
-                GL_NewbieSign._instance._gamecoreConfig.rewards[0].num / 100f);
-            }
-        }
+        // bool set = GL_NewbieSign._instance.IsShowIcon();
+        // _btnNewbieSign.SetActive(set);
+        // if(set)
+        // {
+        //     if (GL_NewbieSign._instance._gamecoreConfig == null
+        //         || GL_NewbieSign._instance._gamecoreConfig.rewards == null
+        //         || GL_NewbieSign._instance._gamecoreConfig.rewards.Count == 0)
+        //     {
+        //         _textNewbieSign.text = string.Format("<size=60>¥</size>{0}", 668);
+        //     }
+        //     else
+        //     {
+        //         _textNewbieSign.text = string.Format("<size=60>¥</size>{0}",
+        //         GL_NewbieSign._instance._gamecoreConfig.rewards[0].num / 100f);
+        //     }
+        // }
     }
 
     private void OnClickNewbieSign()
@@ -367,19 +377,36 @@ public partial class UI_IF_Main : BaseUIForm
 
     public override void Refresh(bool recall)
     {
-        RefreshGameMode(null);
-        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
-        RefreshPosition(null);
+        // 屏蔽里程碑
+        // if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
+        // {
+        //     GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, null);
+        // }
+        // else
+        // {
+        //     GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
+        //     RefreshPosition(null);
+        // }
 
-        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
-        RefreshNewbieSign(null);
+
+        //新手签到
+        // GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        // RefreshNewbieSign(null);
+        
+        
+        RefreshGameMode(null);
+        
+        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
+        RefreshMoneyGrow(null);
+        
     }
 
     public override void OnHide()
     {
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition); // 屏蔽里程碑
+        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
         StopAllCoroutines();
         CancelInvoke();
     }
@@ -402,6 +429,29 @@ public partial class UI_IF_Main : BaseUIForm
         Object[] objects = { time , exit};
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_TipsPage,objects);
     }
+    #endregion
+    
+    #region 提现增幅
+
+
+    private void RefreshMoneyGrow(EventParam param)
+    {
+        GL_PlayerData._instance.GetWithDrawGrowConfig(()=>
+        {
+            if (GL_PlayerData._instance._WithDrawGrowConfig!=null)
+            {
+                _signDay.SetActive(true);
+            }
+            else
+            {
+                _signDay.SetActive(false);
+            }
+            _day.text = $"已登录{GL_PlayerData._instance._WithDrawGrowConfig.day}天";
+            _dayGrow.text = $"<color=#800000>提现增幅</color><color=#ff0000><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
+        });
+    }
+
+
     #endregion
 }
 

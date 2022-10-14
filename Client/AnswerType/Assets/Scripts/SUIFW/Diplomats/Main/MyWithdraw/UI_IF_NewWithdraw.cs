@@ -43,9 +43,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _grpRed;
         private Text _txtRedTime; //假现金计时
         private Transform _tfRedTime;
+        private Transform getRedNode;
         private UI_Button _btnGetRed;
         private Timer _redTimer;
         private DateTime _redDataTime;
+        private UI_Button btnRedWithdraw;
         
         //金币节点
         private Text _txtGoldNum;
@@ -53,10 +55,27 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _grpGold;
         private Text _txtGoldTime; //金币计时
         private Transform _tfGoldTime;
+        private Transform getGoldNode;
         private UI_Button _btnGetGold;
         private Timer _goldTimer;
         private DateTime _goldDataTime;
+        private UI_Button btnGoldWithdraw;
 
+        
+        #region 提现增幅
+
+        private Button _growRed;
+
+        private Text _growRedText;
+        
+        private Button _growCoin;
+
+        private Text _growCoinText;
+
+        private string _growStr = "<color=#ff0000><size=52>{0}%</size></color>提现增幅";
+
+        #endregion
+        
         #endregion
 
         #region Override
@@ -73,7 +92,27 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshPlayer();
             RefreshRedCd();
             RefreshGoldCd();
+            RefreshWithDrawGrow();
             _scrollRect.verticalNormalizedPosition = 1;
+        }
+
+        private void InitButtonViewABTest()
+        {
+            // if (!GL_CoreData._instance.AbTest)
+            // {
+            //     getRedNode.transform.localPosition = new Vector3(getRedNode.transform.localPosition.x, -253);
+            //     btnRedWithdraw.transform.localPosition = new Vector3(btnRedWithdraw.transform.localPosition.x, -429);
+            //     getGoldNode.transform.localPosition = new Vector3(getGoldNode.transform.localPosition.x, -330);
+            //     btnGoldWithdraw.transform.localPosition = new Vector3(btnGoldWithdraw.transform.localPosition.x, -508);
+            // }
+        }
+        private void TriggerGuide()
+        {
+            //GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIWithdraw);
+        }
+        public void DoChangeScrollRect()
+        {
+            _scrollRect.verticalNormalizedPosition = 0.5f;
         }
 
         private void RefreshRed()
@@ -124,6 +163,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
                 Init(EnumMyWithdraw.Gold);
+
+                //因为需要排序, 所以延迟一会检测
+                if(GL_PlayerData._instance.IsEnoughCoin())
+                    Invoke(nameof(TriggerGuide), 0.05f);
             });
         }
         
@@ -184,26 +227,43 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             var redNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "RedNode");
             _txtRedNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(redNode.gameObject, "_txtRedNum");
             _grpRed = UnityHelper.GetTheChildNodeComponetScripts<Transform>(redNode.gameObject, "_grpRed");
-            var btnRedWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(redNode.gameObject, "_btnRedWithdraw");
+            btnRedWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(redNode.gameObject, "_btnRedWithdraw");
             btnRedWithdraw.onClick.AddListener(OnBtnRedWithdraw);
-            var getRedNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetRedNode");
+            getRedNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetRedNode");
             _btnGetRed = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getRedNode.gameObject, "_btnGetRed");
             _btnGetRed.onClick.AddListener(OnBtnGetRed);
             _tfRedTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getRedNode.gameObject, "RedTime");
             _txtRedTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getRedNode.gameObject, "_txtRedTime");
+            
+            _growRed = UnityHelper.GetTheChildNodeComponetScripts<Button>(redNode.gameObject, "OpenGrow");
+            _growRedText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growRed.gameObject, "Text");
+            RigisterButtonObjectEvent(_growRed, go =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+            });
+
             
             //金币
             var goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
             _txtGoldNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldNum");
             _grpGold = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "_grpGold");
-            var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
+            btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
             btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
-            var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetGoldNode");
+            getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetGoldNode");
             _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
             _btnGetGold.onClick.AddListener(OnBtnGetGold);
             _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
             _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+
+            _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
+            _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
+            RigisterButtonObjectEvent(_growCoin, go =>
+            {
+                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
+            });
+            
+            InitButtonViewABTest();
         }
 
         #endregion
@@ -271,8 +331,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshRedCd();
+                            RefreshWithDrawGrow();
                         };
-                        object[] datas = { msg.rewards, action,true};
+                        object[] datas = { msg.rewards, action,true , true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                     }));
                 }
@@ -320,8 +381,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGold();
                             RefreshRed();
                             RefreshGoldCd();
+                            RefreshWithDrawGrow();
                         };
-                        object[] datas = { msg.rewards, action,true};
+                        object[] datas = { msg.rewards, action,true, true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                     }));
                 }
@@ -434,7 +496,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void CreateRed()
         {
-            var list = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.CashWithDraw).couponWithDraws;
+            var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.CashWithDraw);
+            var list = config.couponWithDraws;
             if (list.Count <= 0)
                 return;
             for (int i = 0; i < list.Count; i++)
@@ -455,11 +518,18 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 MyWithdrawData data = new MyWithdrawData();
                 data.EnumMyWithdraw = EnumMyWithdraw.Red;
                 data.Index = i;
-                data.Action = () => { _curRedWithdrawData = data; };
+                data.Action = () =>
+                {
+                    _curRedWithdrawData = data;
+                    SetRedSelectState();
+                };
                 data.WithDraw = list[i];
                 data.IsCanWithdraw = IsRedCanWithdraw(data, false);
                 if (data.Index == 0)
+                {
                     _curRedWithdrawData = data;
+                    SetRedSelectState();
+                }
                 item.Init(this,data);
             }
         }
@@ -469,7 +539,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void CreateGold()
         {
-            var list = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw).couponWithDraws;
+            var config = GL_PlayerData._instance.GetWithDrawConfig(EWithDrawType.DailyWithDraw);
+            var list = config.couponWithDraws;
             if (list.Count <= 0)
                 return;
             for (int i = 0; i < list.Count; i++)
@@ -490,11 +561,18 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 MyWithdrawData data = new MyWithdrawData();
                 data.EnumMyWithdraw = EnumMyWithdraw.Gold;
                 data.Index = i;
-                data.Action = () => { _curGoldWithdrawData = data; };
-                data.WithDraw = list[i];
-                data.IsCanWithdraw = IsGoldCanWithdraw(data.Index,data.WithDraw, false);
-                if (data.Index == 0)
+                data.Action = () =>
+                {
                     _curGoldWithdrawData = data;
+                    SetGoldSelectState();
+                };
+                data.WithDraw = list[i];
+                data.IsCanWithdraw = IsGoldCanWithdraw(data, false);
+                if (data.Index == 0)
+                {
+                    _curGoldWithdrawData = data;
+                    SetGoldSelectState();
+                }
                 item.Init(this,data);
             }
         }
@@ -554,7 +632,12 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             if (!GL_PlayerData._instance.IsLoginWeChat())
             {
                 //登陆微信
-                Action show =()=> RefreshPlayer();
+                Action show = () =>
+                {
+                    RefreshPlayer();
+                    RefreshWithDrawGrow();  
+                };
+                
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin,show);
             }
             else
@@ -563,7 +646,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
         }
 
-        public bool IsGoldCanWithdraw(int index,Net_CB_WithDraw withDraw,bool isHint)
+        public bool IsGoldCanWithdraw(MyWithdrawData withDraw,bool isHint)
         {
             //当前不需要提现上一个额度
             // if (IsNeedWithdrawToPre(index))
@@ -574,27 +657,27 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             // }
 
             //提现次数
-            if (withDraw.withDrawLimit == 0)
+            if (withDraw.WithDraw.withDrawLimit == 0)
             {
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[7]);
                 return false;
             }
             
             //0.金币
-            if (GL_PlayerData._instance.Coin < withDraw.coupon)
+            if (GL_PlayerData._instance.Coin < withDraw.WithDraw.coupon)
             {
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[3]);
                 return false;
             }
 
             //1.检测关卡等级
-            if (GL_PlayerData._instance.CurLevel - 1 < withDraw.level)
+            if (GL_PlayerData._instance.CurLevel - 1 < withDraw.WithDraw.level)
             {
                 if (isHint) UI_HintMessage._.ShowMessage(_tipsList[4]);
                 return false;
             }
             //2.广告数量不满足时
-            int num = withDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
+            int num = withDraw.WithDraw.viewAdTimes - GL_PlayerData._instance.SystemConfig.viewAds;
             num = 0;
             if (num > 0)
             {
@@ -622,7 +705,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     break;
             }
             
-            if (!IsGoldCanWithdraw(_curGoldWithdrawData.Index, _curGoldWithdrawData.WithDraw, true))
+            if (!IsGoldCanWithdraw(_curGoldWithdrawData, true))
             {
                 return;
             }
@@ -631,7 +714,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             if (!GL_PlayerData._instance.IsLoginWeChat())
             {
                 //登陆微信
-                Action show =()=> RefreshPlayer();
+                Action show = () =>
+                {
+                    RefreshPlayer();
+                    RefreshWithDrawGrow();
+                };
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin,show);
                 // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Setting);
             }
@@ -670,16 +757,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         //提现回调
         private void CB_RedWithDraw(string param)
         {
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
             float money = _curRedWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.CashWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Bogus -= _curRedWithdrawData.WithDraw.money;
             RefreshRed();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
         }
         
@@ -698,16 +788,19 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawHighSuccess);
                     break;
             }
+            GL_PlayerData._instance.Net_CB_WithDrawResult(param);
             float money = _curGoldWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.DailyWithDraw;
             var obj = new object[]
             {
                 money,
-                _eWithDrawType
+                _eWithDrawType,
+                GL_PlayerData._instance._netCbWithDraw.money
             };
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
             GL_PlayerData._instance.Coin -= _curGoldWithdrawData.WithDraw.coupon;
             RefreshGold();
+            RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
         }
 
@@ -748,6 +841,34 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 _txtLevel.text = "Lv." + GL_PlayerData._instance.CurLevel;
             });
         }
+        
+        #region 提现增幅刷新显示
+
+        private void RefreshWithDrawGrow()
+        {
+            MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
+        }
+
+        private void ShowWithDrawGrow()
+        {
+            if (GL_PlayerData._instance._WithDrawGrowConfig==null)
+            {
+                _growCoin.SetActive(false);
+                _growRed.SetActive(false);
+            }
+            else
+            {
+                _growCoin.SetActive(true);
+                _growRed.SetActive(true);
+                string description = String.Format(_growStr,(GL_PlayerData._instance._WithDrawGrowConfig.growth));
+                _growCoinText.text = description;
+                _growRedText.text = description;
+            }
+        }
+
+        #endregion
+        
+        
         
         #endregion
         

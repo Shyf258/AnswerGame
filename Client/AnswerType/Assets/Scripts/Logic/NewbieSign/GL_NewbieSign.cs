@@ -143,7 +143,7 @@ public class GL_NewbieSign : Singleton<GL_NewbieSign>
             GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.NewbieSign, 0, (msg) => {
                 NewbieSignState = ENewbieSignState.Complete;
                 //打开结算UI
-                object[] datas = { msg.rewards, null};
+                object[] datas = { msg.rewards, null,false,true};
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
             });
         }

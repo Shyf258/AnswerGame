@@ -179,6 +179,22 @@ public class Net_CB_SystemConfig
 }
 #endregion
 
+#region 云控配置
+
+// public class Net_Appcontrol : Net_RequesetCommon
+// {
+//
+// }
+
+public class AppControl
+{
+    /// <summary>
+    /// 是否审核员 1.是 2.否
+    /// </summary>
+    public int isNotice = 1;
+}
+
+#endregion
 
 #region 提现
 
@@ -259,6 +275,31 @@ public class Net_CB_WithDrawTipsData
     public string notifyMessage;
     public int money;
 }
+
+
+/// <summary>
+/// 登录增幅配置
+/// </summary>
+public class Net_CB_WithDrawGrowConfig
+{
+    /// <summary>///红包剩余金额（单位分） /// </summary>
+    public int money;
+    /// <summary>///视频增幅比率（小数） /// </summary>
+    public double videoGrowth;
+    /// <summary>///登录增幅比率（小数） /// </summary>
+    public double loginGrowth;
+    /// <summary>///增幅（小数） /// </summary>
+    public double growth;
+    /// <summary>///日期 /// </summary>
+    public int day;
+    /// <summary>///视频数 /// </summary>
+    public int view;
+    /// <summary>///倒计时（秒） /// </summary>
+    public int countDown;
+}
+
+
+
 #endregion
 
 #region 里程碑

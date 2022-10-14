@@ -182,24 +182,24 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
         _isMainPageOver = true;
         Action onHide = () => { MainPageEventSort1(); };
 
-        //1.引导
-        if (GL_GuideManager._instance.CheckFirstGuide())
-        {
-            if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.Server, onHide))
-            {
-                DDebug.Log("MainPageSort " + "新手引导1");
-                return;
-            }
-        }
-
-        if (GL_NewbieSign._instance.CheckSecondGuide())
-        {
-            if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.NewSign, onHide))
-            {
-                DDebug.Log("MainPageSort " + "新手引导1");
-                return;
-            }
-        }
+        // //1.引导
+        // if (GL_GuideManager._instance.CheckFirstGuide())
+        // {
+        //     if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.Server, onHide))
+        //     {
+        //         DDebug.Log("MainPageSort " + "新手引导1");
+        //         return;
+        //     }
+        // }
+        //
+        // if (GL_NewbieSign._instance.CheckSecondGuide())
+        // {
+        //     if(GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.NewSign, onHide))
+        //     {
+        //         DDebug.Log("MainPageSort " + "新手引导1");
+        //         return;
+        //     }
+        // }
 
         //主页引导
         if (GL_GuideManager._instance.TriggerGuide(EGuideTriggerType.UIMain, onHide))
@@ -216,22 +216,22 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
             
         }
 
-        if(_showPig)// && GL_CoreData._instance.AbTest)
-        {
-#if PureVersion
-            return;
-#endif
-            _showPig = false;
-            // ShowUI(SysDefine.UI_Path_NewSignInPage, onHide);
-            // YS_NetLogic._instance.GoldenpigConfig((config =>
-            // {
-            //     Object[] objects = { config,onHide };
-            //     ShowUI(SysDefine.UI_IF_Goldenpig,objects);
-            // } ));
-            Object[] objects = { onHide };
-            ShowUI(SysDefine.UI_IF_MoneyPool,objects);
-            return;
-        }
+//         if(_showPig)// && GL_CoreData._instance.AbTest)
+//         {
+// #if PureVersion
+//             return;
+// #endif
+//             _showPig = false;
+//             // ShowUI(SysDefine.UI_Path_NewSignInPage, onHide);
+//             // YS_NetLogic._instance.GoldenpigConfig((config =>
+//             // {
+//             //     Object[] objects = { config,onHide };
+//             //     ShowUI(SysDefine.UI_IF_Goldenpig,objects);
+//             // } ));
+//             Object[] objects = { onHide };
+//             ShowUI(SysDefine.UI_IF_MoneyPool,objects);
+//             return;
+//         }
         
 
         _isMainPageOver = false;

@@ -228,6 +228,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
         {
 #if UNITY_ANDROID && !UNITY_EDITOR
         _javaObject.Call("showToastDialog", str);
+        _javaObject.Call("showFloatingRewardMsg", "观看完成视频可获取奖励",AppSetting.BuildApp == EBuildApp.BXDYJ);
 #elif UNITY_IOS && !UNITY_EDITOR
 
 #endif
@@ -477,7 +478,11 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
         return result;
     }
 
-#endregion
+
+ 
+    
+
+    #endregion
 
 #region 广告回调
     //一次广告请求，加载到广告时调⽤
@@ -888,6 +893,8 @@ public class SJson
     public string adEcpm;
     public string reqAdId;
 }
+
+
 
 public class SSessId
 {
