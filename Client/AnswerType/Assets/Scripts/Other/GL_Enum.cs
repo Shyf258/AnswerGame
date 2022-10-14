@@ -53,9 +53,11 @@ public enum EWithDrawType
     CashWithDraw = 3,    //现金提现
     MoneyPool = 4,  //财神提现
     //LevelWithDraw = 5,  //关卡提现
-    Clockin = 6, //打卡
-    DailyWithDraw = 7,  //每日提现
-    TipsPage = 8,       //广告提现机会
+    Clockin       = 6, //打卡
+    DailyWithDraw = 7, //每日提现
+    TipsPage      = 8, //广告提现机会
+    WaitWithDraw  = 9,
+    LoginWithDraw = 12, //登录领钱
 }
 
 public enum EGameEnterType

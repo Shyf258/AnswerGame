@@ -156,7 +156,12 @@ public partial class UI_IF_Main : BaseUIForm
         
          RigisterButtonObjectEvent(_newSignInPage,(go =>
          {
-             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
+             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerSign);
+             GL_PlayerData._instance.SendLoginWithDraw((() =>
+             {
+                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewLogin);
+             }));
+
          }));
 
         #endregion
@@ -246,7 +251,7 @@ public partial class UI_IF_Main : BaseUIForm
         else
         {
             //缩减里程碑
-            InitPosition();
+            // InitPosition();
         }
 
         _answerPageToggle.isOn = true;
@@ -390,23 +395,34 @@ public partial class UI_IF_Main : BaseUIForm
 
 
         //新手签到
-        // GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
-        // RefreshNewbieSign(null);
+        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        RefreshNewbieSign(null);
         
         
         RefreshGameMode(null);
         
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         RefreshMoneyGrow(null);
-        
+                
+        GL_PlayerData._instance.SendLoginWithDraw(() =>
+        {
+            if (GL_PlayerData._instance._NetCbLoginConfig==null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count<=0)
+            {
+                _newSignInPage.SetActive(false);
+            }
+            else
+            {
+                _newSignInPage.SetActive(true);
+            }
+        });
     }
 
     public override void OnHide()
     {
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
-        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition); // 屏蔽里程碑
-        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney,    RefreshMoneyGrow);
         StopAllCoroutines();
         CancelInvoke();
     }
