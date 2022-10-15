@@ -202,7 +202,18 @@ public class UI_IF_NewLogin : BaseUIForm
 
     private void WithDrawOnClick(WithDrawType drawType)
     {
-      _netCbWithDraw = new Net_CB_WithDraw();
+    
+
+        if (!GL_PlayerData._instance.IsLoginWeChat())
+        {
+            //DDebug.Log("@@@@@@@@没有登录微信");
+            //登陆微信
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin);
+            return;
+        }
+        
+        
+        _netCbWithDraw = new Net_CB_WithDraw();
         switch (drawType)
         {
             case WithDrawType.EveryDay:
@@ -227,47 +238,44 @@ public class UI_IF_NewLogin : BaseUIForm
                 break;
         }
         
-        if (GL_PlayerData._instance._NetCbLoginConfig.viewAds < _netCbWithDraw.needAd)
-        {
-            UI_HintMessage._.ShowMessage($"今日再浏览{_netCbWithDraw.needAd-GL_PlayerData._instance._NetCbLoginConfig.viewAds}次视频即可提现哦！");
-        }
-        else
-        {
-            CloseUIForm();
-            GL_GameEvent._instance.SendEvent(EEventID.RefreshLogin);
-            WithDraw();
-        }
         
-    }
-
-    private void WithDraw()
-    {
-
-        if (!GL_PlayerData._instance.IsLoginWeChat())
-        {
-            //DDebug.Log("@@@@@@@@没有登录微信");
-            //登陆微信
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin);
-            return;
-        }
-        
+      
         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_LoginWithDraw, (show=>
         {
             if (show)
             {
-                //提现广告播放成功
-                Net_WithDraw draw = new Net_WithDraw();
-                draw.withDrawId =  _netCbWithDraw.id;
-                draw.type = 2;
-                draw.withDrawType = (int) EWithDrawType.LoginWithDraw;
-                
-                GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_WithDraw);
+                GL_PlayerData._instance._NetCbLoginConfig.viewAds++;
+                if (GL_PlayerData._instance._NetCbLoginConfig.viewAds < _netCbWithDraw.needAd)
+                {
+                    UI_HintMessage._.ShowMessage($"今日再浏览{_netCbWithDraw.needAd-GL_PlayerData._instance._NetCbLoginConfig.viewAds}次视频即可提现哦！");
+                }
+                else
+                {
+                    GL_GameEvent._instance.SendEvent(EEventID.RefreshLogin);
+                    WithDraw();
+                    CloseUIForm();
+                }
             }
             else
             {
                 UI_HintMessage._.ShowMessage("广告播放失败，请重新观看！");
             }
         }));
+        
+        
+        
+    }
+
+    private void WithDraw()
+    {
+
+       
+        //提现广告播放成功
+        Net_WithDraw draw = new Net_WithDraw();
+        draw.withDrawId =  _netCbWithDraw.id;
+        draw.type = 2;
+        draw.withDrawType = (int) EWithDrawType.LoginWithDraw;
+        GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_WithDraw);
         
    
     }
