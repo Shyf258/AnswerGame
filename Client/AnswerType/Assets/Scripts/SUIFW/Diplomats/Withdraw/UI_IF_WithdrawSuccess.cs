@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using SUIFW;
 using SUIFW.Diplomats.Common;
-using SUIFW.Diplomats.Common.Withdraw;
 using UnityEngine.UI;
 
 public class UI_IF_WithdrawSuccess : BaseUIForm
