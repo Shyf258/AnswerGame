@@ -53,11 +53,7 @@ namespace SUIFW.Diplomats.Common.Withdraw
 
         public override void Refresh(bool recall)
         {
-            if (_isFirst)
-            {
-                Hide();
-                _isFirst = false;
-            }
+            Show();
         }
 
         public override void onUpdate()
@@ -78,8 +74,6 @@ namespace SUIFW.Diplomats.Common.Withdraw
 
         #region CustomField
 
-        private bool _isFirst = true;
-
         private Vector3 _startPos;
         private Vector3 _endPos;
 
@@ -89,13 +83,12 @@ namespace SUIFW.Diplomats.Common.Withdraw
         
         public void Show()
         {
-            this.SetActive(true);
             InSide();
         }
 
         private void Hide()
         {
-            this.SetActive(false);
+            CloseUIForm();
         }
 
         private void InSide()
