@@ -54,9 +54,9 @@
     "Method": "POST",
     "URL": 2,
     "JointURL": "/play/userstore/uplevel",
-    "IsCheckSM": false,
-    "SMeventCode": "2000004",
-    "SMoptMsg": "关卡结算页，点击金币领取按键"
+    "IsCheckSM": true,
+    "SMeventCode": "2000010",
+    "SMoptMsg": "通关页掉落"
   },
   "30012": {
     "ID": 30012,
@@ -126,7 +126,10 @@
     "Name": "领取每日任务奖励",
     "Method": "POST",
     "URL": 2,
-    "JointURL": "/play/task/accept"
+    "JointURL": "/play/task/accept",
+    "IsCheckSM": true,
+    "SMeventCode": "2000014",
+    "SMoptMsg": "任务页掉落"
   },
   "30036": {
     "ID": 30036,
@@ -168,10 +171,7 @@
     "Name": "免费领取",
     "Method": "POST",
     "URL": 2,
-    "JointURL": "/play/freemoney/acceptfree",
-    "IsCheckSM": false,
-    "SMeventCode": "2000006",
-    "SMoptMsg": "免费领钱功能，点击ICON"
+    "JointURL": "/play/freemoney/acceptfree"
   },
   "30062": {
     "ID": 30062,
@@ -206,10 +206,7 @@
     "Name": "漂浮红包",
     "Method": "POST",
     "URL": 2,
-    "JointURL": "/play/floatred/winfloatred",
-    "IsCheckSM": false,
-    "SMeventCode": "2000005",
-    "SMoptMsg": "可领红包/漂浮宝箱，点击视频按键"
+    "JointURL": "/play/floatred/winfloatred"
   },
   "30090": {
     "ID": 30090,
@@ -273,9 +270,9 @@
     "Method": "POST",
     "URL": 2,
     "JointURL": "/play/withdraw/withdraw",
-    "IsCheckSM": false,
-    "SMeventCode": "2000001",
-    "SMoptMsg": "普通提现页面，点击提现按键"
+    "IsCheckSM": true,
+    "SMeventCode": "2000011",
+    "SMoptMsg": "登录提现页提现"
   },
   "30120": {
     "ID": 30120,
@@ -569,10 +566,7 @@
     "Name": "生产配置接口",
     "Method": "POST",
     "URL": 2,
-    "JointURL": "/play/massproduce/config",
-    "IsCheckSM": false,
-    "SMeventCode": "2000003",
-    "SMoptMsg": "全民大生产功能，点击看视频按键"
+    "JointURL": "/play/massproduce/config"
   },
   "80502": {
     "ID": 80502,
@@ -580,7 +574,7 @@
     "Method": "POST",
     "URL": 2,
     "JointURL": "/play/massproduce/withdraw",
-    "IsCheckSM": false,
+    "IsCheckSM": true,
     "SMeventCode": "2000002",
     "SMoptMsg": "全民大生产功能，点击提现按键"
   },
@@ -666,7 +660,10 @@
     "Name": "新视频红包领取接口",
     "Method": "POST",
     "URL": 2,
-    "JointURL": "/play/newvideored/win"
+    "JointURL": "/play/newvideored/win",
+    "IsCheckSM": true,
+    "SMeventCode": "2000018",
+    "SMoptMsg": "新视频红包领取"
   },
   "90001": {
     "ID": 90001,
@@ -680,7 +677,10 @@
     "Name": "通用玩法领取",
     "Method": "POST",
     "URL": 2,
-    "JointURL": "/play/gamecore/accept"
+    "JointURL": "/play/gamecore/accept",
+    "IsCheckSM": true,
+    "SMeventCode": "2000015",
+    "SMoptMsg": "通用玩法领取"
   },
   "90101": {
     "ID": 90101,
