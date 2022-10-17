@@ -802,10 +802,14 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
 
         _packetDic.Add(packet.requestData.SMeventCode, packet);
 
-        //SSessId ss = new SSessId();
-        //ss.sessId = "test";
-        //ss.eventCode = packet.requestData.SMeventCode;
-        //onSessIdCallback(JsonUtility.ToJson(ss));
+        if(AppSetting.IsTestUnity)
+        {
+            SSessId ss = new SSessId();
+            ss.sessId = "test";
+            ss.eventCode = packet.requestData.SMeventCode;
+            onSessIdCallback(JsonUtility.ToJson(ss));
+        }
+
 #if UNITY_ANDROID && !UNITY_EDITOR
         if (_javaObject != null)
              _javaObject.Call("getSeesId", packet.requestData.SMeventCode, packet.requestData.SMoptMsg);
@@ -816,6 +820,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
 
     public void onSessIdCallback(string param)
     {
+        GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.SessIdCallback);
         Debug.LogError("~~~onSessIdCallback: " + param);
         SSessId ss = JsonUtility.FromJson<SSessId>(param);
         if (_packetDic.ContainsKey(ss.eventCode))

@@ -32,5 +32,6 @@ public class AppSettingConfig : ScriptableObject
     public double _buildTime;
     [GL_Name("防沉迷有效时间")]
     public int _buildHour;
-    
+    [GL_Name("开启数盟SessId校验")]
+    public bool _isOpenSessId;
 }
