@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using SUIFW;
 using SUIFW.Diplomats.Common;
-using SUIFW.Diplomats.Common.Withdraw;
 using UnityEngine.UI;
 
 public class UI_IF_WithdrawSuccess : BaseUIForm
@@ -108,8 +107,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
        
         MethodExeTool.InvokeDT((() =>
         {
-            var ui = UIManager.GetInstance().GetUI(SysDefine.UI_Path_WechatWithdrawTip) as UI_IF_WechatWithdrawTip;
-            ui?.Show();
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WechatWithdrawTip);
         }),1f);
     }
 
