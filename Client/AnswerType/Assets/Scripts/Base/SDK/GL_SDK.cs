@@ -812,7 +812,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
 
 #if UNITY_ANDROID && !UNITY_EDITOR
         if (_javaObject != null)
-             _javaObject.Call("getSeesId", packet.requestData.SMeventCode, packet.requestData.SMoptMsg);
+             _javaObject.Call("getSessId", packet.requestData.SMeventCode, packet.requestData.SMoptMsg);
 #elif UNITY_IOS && !UNITY_EDITOR
         //result = available_at_position(adSite);
 #endif
