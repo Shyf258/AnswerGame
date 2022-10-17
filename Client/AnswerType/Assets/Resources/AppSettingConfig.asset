@@ -25,3 +25,4 @@ MonoBehaviour:
   _skipWeChatLogin: 0
   _buildTime: 0
   _buildHour: 0
+  _isOpenSessId: 0

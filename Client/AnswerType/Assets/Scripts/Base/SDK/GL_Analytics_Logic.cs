@@ -30,7 +30,10 @@ public class GL_Analytics_Logic : Singleton<GL_Analytics_Logic>
 
     private string GetAnalyticsData(EAnalyticsType type)
     {
-        return AnalyticsEvents.stores[type];
+        if (AnalyticsEvents.stores.ContainsKey(type))
+            return AnalyticsEvents.stores[type];
+        else
+            return type.ToString();
     }
 }
 /// <summary>
@@ -248,7 +251,11 @@ public enum EAnalyticsType
 
     #endregion
 
-}
+
+    /// <summary>SessId 发送 </summary>
+    SessIdSend,
+    /// <summary>SessId 回调</summary>
+    SessIdCallback,}
 
 
 /// <summary>
