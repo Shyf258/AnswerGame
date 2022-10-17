@@ -30,7 +30,10 @@ public class GL_Analytics_Logic : Singleton<GL_Analytics_Logic>
 
     private string GetAnalyticsData(EAnalyticsType type)
     {
-        return AnalyticsEvents.stores[type];
+        if (AnalyticsEvents.stores.ContainsKey(type))
+            return AnalyticsEvents.stores[type];
+        else
+            return type.ToString();
     }
 }
 /// <summary>
@@ -209,48 +212,34 @@ public enum EAnalyticsType
     MoneyPoolVideoFail,
     
     
+    #region 新手签到领取
+
     /// <summary>
-    /// 加速提现
+    /// 主界面签到图标点击
     /// </summary>
-    GrowMoneyPlan,
-    /// <summary>
-    /// 加速提现点击
-    /// </summary>
-    GrowMoneyPlanClick,
-    /// <summary>
-    /// 加速提现完成观看视频
-    /// </summary>
-    GrowMoneyPlanFinish,
+    NewPlayerSign,
     
     /// <summary>
-    /// 转盘图标
+    /// 普通签到领取
     /// </summary>
-    TurnTableIcon,
-    /// <summary>
-    /// 领奖点击
-    /// </summary>
-    TurnTableGet,
-    /// <summary>
-    /// 0.3元抽奖
-    /// </summary>
-    TurnTableLowReward,
-    /// <summary>
-    /// 0.5元抽奖
-    /// </summary>
-    TurnTableHighReward,
-    /// <summary>
-    /// 完成抽奖提现
-    /// </summary>
-    TurnTableGetFinal,
-    /// <summary>/// 开始抽奖 /// </summary>
-    TurnTableStart,
-    /// <summary>///领七次现金/// </summary>
-    TurnTableSevenTime,
-    /// <summary>///领二十次现金/// </summary>
-    TurnTableTwentyTime,
+    LoginReceive,
     
-    /// <summary>/// 金币提现解锁/// </summary>
-    CoinDailySuccess,
+    /// <summary>
+    /// 5天登录签到领取
+    /// </summary>
+    LoginReceiveAccumulated,
+    
+    /// <summary>
+    /// 新手福利金币
+    /// </summary>
+    NewPlayerReceive,
+
+    #endregion
+
+    /// <summary>SessId 发送 </summary>
+    SessIdSend,
+    /// <summary>SessId 回调</summary>
+    SessIdCallback,
 }
 
 
@@ -358,20 +347,11 @@ public static class AnalyticsEvents
         {EAnalyticsType.MoneyPoolVideoFinish,"caishen_bofangshibai_01"},
         {EAnalyticsType.MoneyPoolVideoFail,"tcaishen_bofangchenggong_01"},
         
-        {EAnalyticsType.GrowMoneyPlan,"jiasuanjian_01"},
-        {EAnalyticsType.GrowMoneyPlanClick,"jiasuanjian_02"},
-        {EAnalyticsType.GrowMoneyPlanFinish,"txsp_001"},
-        
-        
-        {EAnalyticsType.TurnTableIcon,"choujiang_01"},
-        {EAnalyticsType.TurnTableGet,"choujiang_02"},
-        {EAnalyticsType.TurnTableLowReward,"choujiang_03"},
-        {EAnalyticsType.TurnTableHighReward,"choujiang_04"},
-        {EAnalyticsType.TurnTableGetFinal,"choujiang_05"},
-        {EAnalyticsType.TurnTableStart,"kscj_001"},
-        {EAnalyticsType.TurnTableSevenTime,"kscj_002"},
-        {EAnalyticsType.TurnTableTwentyTime,"kscj_003"},
-        
-        {EAnalyticsType.CoinDailySuccess,"tixian_0.3_chenggong"}, 
+        #region 新手签到领取
+        {EAnalyticsType.NewPlayerReceive,"xinshoufuli_001"},
+        {EAnalyticsType.NewPlayerSign,"qiandao_001"},
+        {EAnalyticsType.LoginReceive,"qiandao_002"},
+        {EAnalyticsType.LoginReceiveAccumulated,"5tianqiandao_001"},
+        #endregion
     };
 }
