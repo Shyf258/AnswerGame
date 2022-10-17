@@ -59,10 +59,12 @@ public class Editor_Tools
         if (IsFileExists(filePath))
         {
             File.Delete(filePath);
-            GL_PlayerPrefs.Clear();
-
-            AssetDatabase.Refresh();
+           
         }
+        
+        GL_PlayerPrefs.Clear();
+        
+        AssetDatabase.Refresh();
 
     }
 

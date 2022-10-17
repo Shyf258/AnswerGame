@@ -18,6 +18,7 @@ public static class AppSetting
     public static bool IsSikpWechatLogin;
     public static double BuildTime;
     public static int BuildHour;
+    public static bool IsOpenSessId;
     public static void Init()
     {
         AppSettingConfig config = Resources.Load<AppSettingConfig>("AppSettingConfig");
@@ -51,6 +52,7 @@ public static class AppSetting
             IsSikpWechatLogin = config._skipWeChatLogin;
             BuildTime = config._buildTime;
             BuildHour = config._buildHour;
+            IsOpenSessId = config._isOpenSessId;
         }
         
     }

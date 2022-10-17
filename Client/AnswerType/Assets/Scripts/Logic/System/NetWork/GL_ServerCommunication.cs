@@ -32,6 +32,19 @@ public class GL_ServerCommunication : Singleton<GL_ServerCommunication>
     {
         TableNetworkRequestData requestData = GameDataTable.GetTableNetworkRequestData((int)type);
 
+        if (AppSetting.IsOpenSessId && requestData.IsCheckSM)
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.SessIdSend);
+            SDK_Packet sp = new SDK_Packet();
+            sp.requestData = requestData;
+            sp.type = type;
+            sp.postDataJson = postDataJson;
+            sp.action = action;
+            sp.urlParams = urlParams;
+            GL_SDK._instance.GetSessId(sp);
+            return;
+        }
+
         //添加参数
         var joinUrl = JoinURL(requestData.JointURL, urlParams);
         string url = GL_ConstData.HTTP + CalculateURL(requestData.URL) + joinUrl;
@@ -44,6 +57,7 @@ public class GL_ServerCommunication : Singleton<GL_ServerCommunication>
         DDebug.Log("~~~[Send]" + type + " [Json] " + postDataJson + " [URL]" + url);
 
         MethodExeTool.StartCoroutine(SendCommunication(type, url, method, postDataJson, action));
+
     }
     
     public void RealSend(TableNetworkRequestData requestData,Cmd type,  string postDataJson = "", Action<string> action = null, List<UrlParams> urlParams = null)
