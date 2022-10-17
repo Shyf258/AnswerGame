@@ -35,7 +35,6 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
                 ShowUI(SysDefine.UI_Path_Main);
                 //if(!GL_CoreData._instance.AbTest)
                     ShowUI(SysDefine.UI_Path_DragRedpack);
-                ShowUI(SysDefine.UI_Path_WechatWithdrawTip);
 
                 if (GL_Game._instance._isStartGame)
                 {
