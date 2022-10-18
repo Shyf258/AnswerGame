@@ -69,16 +69,12 @@ public class UI_IF_DragRedpack : BaseUIForm
     public override void Refresh(bool recall)
     {
         RefreshState();
-        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
-        {
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_DragRedPack);
-        } 
+       
     }
 
     public override void OnHide()
     {
         base.OnHide();
-        GL_AD_Interface._instance.CloseBannerAd();
     }
 
     public override void RefreshLanguage()
