@@ -103,7 +103,11 @@ namespace SUIFW.Diplomats.Common
 
         public override void Refresh(bool recall)
         {
-            
+            DDebug.LogError("*****  播放转圈红包奖励原生");
+            if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+            {
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_DragRedPack);
+            } 
         }
 
         public override void onUpdate()
@@ -115,6 +119,8 @@ namespace SUIFW.Diplomats.Common
         {
             base.OnHide();
 
+            GL_AD_Interface._instance.CloseNativeAd();
+            
             if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
             {
                 GL_PlayerData._instance.GetNewPlayerReward();

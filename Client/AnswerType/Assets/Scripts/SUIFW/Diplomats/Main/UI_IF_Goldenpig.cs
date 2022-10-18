@@ -121,7 +121,11 @@ namespace SUIFW.Diplomats.Main
         public override void Refresh(bool recall)
         {
             // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_GoldenPig); //原生广告
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+            
+            if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+            {
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+            } 
         }
 
         public override void onUpdate()

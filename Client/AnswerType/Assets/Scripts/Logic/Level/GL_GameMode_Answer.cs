@@ -187,10 +187,24 @@ public class GL_GameMode_Answer : GL_GameMode
 
             switch (count)
             {
-                case 0:
-                    DDebug.LogError("***** 播放被动插屏");
-                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
-                    GL_PlayerData._instance._idiomConjCoinReward++;
+                case 0 :
+                    if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low
+                        || GL_PlayerData._instance._PlayerCostState._costState == CostState.Middle)
+                    {
+                        DDebug.LogError("***** 播放中低价值被动插屏");
+                        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
+                        GL_PlayerData._instance._idiomConjCoinReward++;
+                        FF_Interstitial._instance.Minus();
+                    }
+                    break;
+                case 2:
+                    if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+                    {
+                        DDebug.LogError("***** 播放低价值被动插屏");
+                        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
+                        GL_PlayerData._instance._idiomConjCoinReward++;
+                        FF_Interstitial._instance.Minus();
+                    }
                     break;
                 case 3:
                     DDebug.LogError("***** 播放被动激励");
@@ -231,6 +245,14 @@ public class GL_GameMode_Answer : GL_GameMode
                 break;
         }
       
+    }
+
+    /// <summary>
+    /// 播放插屏
+    /// </summary>
+    private void PlayInterstitialAd(Action<bool> show)
+    {
+        
     }
 
     private void GetCoin()

@@ -91,6 +91,8 @@ public class GL_ConstData
     public const float CoolDown = 25;
 
     public const int AntiTime = 5400;
+
+    public const int Interstitial = 10;
     
     public const string AnswerPage = "Main";
     public const string TaskPage = "Task";

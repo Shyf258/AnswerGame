@@ -70,6 +70,19 @@ namespace SUIFW.Diplomats.Main
         public override void Refresh(bool recall)
         {
             RefreshSign();
+            
+            if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+            {
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_CoinSign);
+            } 
+        }
+
+        public override void OnHide()
+        {
+            base.OnHide();
+            
+            GL_AD_Interface._instance.CloseBannerAd();
+            
         }
 
         public override void onUpdate()

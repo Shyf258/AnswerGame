@@ -176,6 +176,7 @@ public class Net_CB_SystemConfig
     public int viewAds;     //当天已看广告次数
     //public int dcoupon;     //提现劵
     public int userDayLevel; //当天通关数
+    public int playerLayer; //0。未分层  1。低价值 2。中等价值 3.高价值 
 }
 #endregion
 
@@ -786,6 +787,8 @@ public class Net_ViewAD : Net_RequesetCommon
     public string adid;     //广告位id
     public int operatorType = 1;
 }
+
+
 
 
 #endregion

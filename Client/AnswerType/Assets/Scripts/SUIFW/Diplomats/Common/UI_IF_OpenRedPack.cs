@@ -135,7 +135,10 @@ namespace SUIFW.Diplomats.Common
             if(GL_Game._instance.GameState == EGameState.GameMain
                 && GL_PlayerData._instance.CurLevel > 1)
                 // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_GoldenPig);
-                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+                if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+                {
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+                }
             _isPlayVideo = false;
         }
         public override void Hiding()

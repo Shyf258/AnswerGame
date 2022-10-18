@@ -49,6 +49,9 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
         GL_AD_Logic._instance.Init();
         UI_Diplomats._instance.Init();
 
+        
+        FF_Interstitial._instance.Init();
+        
         //提前下载资源
         //GL_VersionManager._instance.StartCheckVersion();
 
@@ -59,6 +62,9 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
         
         //禁止多指触控
         Input.multiTouchEnabled = false;
+        
+      
+        
     }
 
     public void Init()
@@ -190,6 +196,9 @@ public class GL_Game : Mono_Singleton_DontDestroyOnLoad<GL_Game>
             }
         }
         GL_CoreData._instance.RealSaveData();
+        
+        FF_Interstitial._instance.DoUpdate();
+     
     }
     public void ShowTips()
     {

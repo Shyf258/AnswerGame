@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年10月12日  12:08:32
+// 广告位自动生成于 2022年10月17日  17:53:40
 
 using UnityEngine;
 
@@ -37,11 +37,20 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 
 //2.插屏
 	public const string AD_Interstitial_AllDialog = "AllDialog";
+	public const string AD_Interstitial_ChangePage = "ChangePage";
 
 //3.原生广告
 	public const string AD_Native_LevelReward = "LevelReward";
+	public const string AD_Native_WithDrawSuccess = "WithDrawSuccess";
+	public const string AD_Native_DragRedPack = "DragRedPack";
 
 //4.banner广告
+	public const string AD_Banner_Procduction = "Procduction";
+	public const string AD_Banner_LoginPage = "LoginPage";
+	public const string AD_Banner_WithDrawGrow = "WithDrawGrow";
+	public const string AD_Banner_DragRedPack = "DragRedPack";
+	public const string AD_Banner_VideoRedPack = "VideoRedPack";
+	public const string AD_Banner_CoinSign = "CoinSign";
 
 //5.开屏广告
 	public const string AD_Splash_Splash = "Splash";

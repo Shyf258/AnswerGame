@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 742528200}
   - component: {fileID: 742528202}
   - component: {fileID: 742528201}
+  - component: {fileID: 742528203}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -240,6 +241,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9629e81b45935d946b4939a5173df989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &742528203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742528196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cf8aa67b6ec2e46a03c11e0b18b86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1064095910
@@ -434,9 +447,18 @@ MonoBehaviour:
   - LoginWithDraw
   _interstitialList:
   - AllDialog
+  - ChangePage
   _nativeList:
   - LevelReward
-  _bannerList: []
+  - WithDrawSuccess
+  - DragRedPack
+  _bannerList:
+  - Procduction
+  - LoginPage
+  - WithDrawGrow
+  - DragRedPack
+  - VideoRedPack
+  - CoinSign
   _splashList:
   - Splash
 --- !u!1 &1018283570322439

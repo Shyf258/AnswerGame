@@ -101,39 +101,15 @@ public class UI_IF_MainUp : BaseUIForm
 
     private void ShowTips()
     {
-        if (GL_PlayerData._instance.IsEnoughCoin() )
+        if (GL_PlayerPrefs.GetInt(EPrefsKey.ShowWithDraw) == 0)
         {
-            if (GL_CoreData._instance.IsEcpm)
+            if (GL_PlayerData._instance.IsEnoughCoin() )
             {
-                // UI_Diplomats._instance.ShowUI(SysDefine.UI_IF_GoldIngot);
-                //if (GL_CoreData._instance.AbTest)
-                //{
-                //    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Withdraw);
-                //}
-                //else
-                {
-
-                    _main._withdrawPageToggle.isOn = true;
-                    // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewWithdraw);
-                }
-            }
-            else
-            {
-                if (!GL_CoreData._instance.ShowPage)
-                {
-                    GL_CoreData._instance.ShowPage = true;
-                    //if (GL_CoreData._instance.AbTest)
-                    //{
-                    //    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Withdraw);
-                    //}
-                    //else
-                    {
-                        _main._withdrawPageToggle.isOn = true;
-                        // UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewWithdraw);
-                    }
-                }
-            }
+                GL_PlayerPrefs.SetInt(EPrefsKey.ShowWithDraw,1);
+                // GL_CoreData._instance.ShowPage = true;
+                _main._withdrawPageToggle.isOn = true;
                   
+            }
         }
     }
 

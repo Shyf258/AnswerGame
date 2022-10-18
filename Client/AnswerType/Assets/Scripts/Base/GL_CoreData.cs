@@ -113,7 +113,7 @@ public class GL_CoreData : Singleton<GL_CoreData>
     }
     public bool IsEcpm => _adECPM > 30f;
 
-    public bool ShowPage = false;
+    // public bool ShowPage = false;
     
     #endregion
     

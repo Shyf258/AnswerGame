@@ -137,7 +137,10 @@ namespace SUIFW.Diplomats.Common
             GL_AudioPlayback._instance.PlayTips(11);
             GL_AudioPlayback._instance.Play(7);
             // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_MyCoin); 
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+            if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+            {
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+            }
         }
 
         public override void onUpdate()

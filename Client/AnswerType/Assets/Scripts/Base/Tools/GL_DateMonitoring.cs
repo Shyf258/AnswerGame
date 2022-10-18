@@ -125,6 +125,8 @@ public class SDateArchiveInfo
         {
            
         }
+
+        GL_PlayerPrefs.SetInt(EPrefsKey.ShowWithDraw,0);
     }
 }
 

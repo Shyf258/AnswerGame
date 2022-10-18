@@ -12,8 +12,11 @@ public enum EPrefsKey
     IsFCM, //防沉迷
     IsWeChatLogIn , //微信登录 
     IsOpenLogToTool,  //工具log开关
-    IsReceiveNewPlayer//领取新手红包
+    IsReceiveNewPlayer, //领取新手红包
+    ShowWithDraw, //展示提现页
 }
+
+
 
 public class GL_PlayerPrefs : MonoBehaviour
 {

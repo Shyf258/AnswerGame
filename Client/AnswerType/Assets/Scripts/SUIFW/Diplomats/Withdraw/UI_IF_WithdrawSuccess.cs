@@ -115,6 +115,13 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             },_time);
         }
        
+        
+        DDebug.LogError("*****  播放提现奖励原生");
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+        {
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_WithDrawSuccess); 
+        } 
+        
     }
 
     public override void RefreshLanguage()
@@ -148,5 +155,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         // {
         //     DateTips();
         // }
+        
+        GL_AD_Interface._instance.CloseNativeAd();
     }
 }
