@@ -173,6 +173,7 @@ public class GL_GameMode_Answer : GL_GameMode
         }
         if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 && GL_PlayerData._instance.CurLevel ==2)
         {
+            DDebug.LogError("通关领取新人奖金");
             GL_PlayerData._instance.GetNewPlayerReward();
         }
     }
@@ -182,6 +183,7 @@ public class GL_GameMode_Answer : GL_GameMode
         //普通领取
         if (value != 1  && GL_PlayerData._instance.AppConfig.isPassive!=1 && GL_PlayerData._instance.CurLevel >= 5)
         {
+            DDebug.LogError("当前累计次数：" + GL_PlayerData._instance._idiomConjCoinReward);
             //四关轮播激励视频
             int count = (GL_PlayerData._instance._idiomConjCoinReward) % 4;
 

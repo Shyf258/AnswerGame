@@ -123,6 +123,7 @@ namespace SUIFW.Diplomats.Common
             
             if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
             {
+                DDebug.LogError("看视频领取新人奖金");
                 GL_PlayerData._instance.GetNewPlayerReward();
             }
             
