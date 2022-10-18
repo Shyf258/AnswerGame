@@ -807,24 +807,24 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     #endregion
 
     #region 每日打卡
-    // /// <summary>
-    // /// 每日打卡配置
-    // /// </summary>
-    // public Net_CB_ClockinConfig SigNetCbClockinConfig;
-    //
-    //
-    // /// <summary>
-    // /// 打卡签到
-    // /// </summary>
-    // /// <param name="action"></param>
-    // public void ClockInReport(Action action=null)
-    // {
-    //     Net_RequesetCommon req = new Net_RequesetCommon();
-    //     GL_ServerCommunication._instance.Send(Cmd.Clockin, JsonHelper.ToJson(req) ,(delegate(string json)
-    //     {
-    //         action?.Invoke();
-    //     }));
-    // }
+    /// <summary>
+    /// 每日打卡配置
+    /// </summary>
+    public Net_CB_ClockinConfig SigNetCbClockinConfig;
+    
+    
+    /// <summary>
+    /// 打卡签到
+    /// </summary>
+    /// <param name="action"></param>
+    public void ClockInReport(Action action=null)
+    {
+        Net_RequesetCommon req = new Net_RequesetCommon();
+        GL_ServerCommunication._instance.Send(Cmd.Clockin, JsonHelper.ToJson(req) ,(delegate(string json)
+        {
+            action?.Invoke();
+        }));
+    }
     
     #endregion
     

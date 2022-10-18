@@ -184,51 +184,51 @@ namespace Logic.System.NetWork
 
         #region 打卡
 
-        // /// <summary>
-        // /// 获取今日打卡配置
-        // /// </summary>
-        // /// <param name="action"></param>
-        // public void SearchClockin(Action action = null)
-        // {
-        //
-        //     Net_RequesetCommon req = new Net_RequesetCommon();
-        //     GL_ServerCommunication._instance.Send(Cmd.ClockinConfig, JsonHelper.ToJson(req), (delegate(string json)
-        //     {
-        //         Net_CB_ClockinConfig msg = JsonHelper.FromJson<Net_CB_ClockinConfig>(json);
-        //         if (msg == null)
-        //             return;
-        //         
-        //         GL_PlayerData._instance.SigNetCbClockinConfig = msg;
-        //         // GL_PlayerData._instance.DrawLimit = msg.drawLimit;
-        //         
-        //         action?.Invoke();
-        //     }));
-        // }
-        // /// <summary>
-        // /// 签到
-        // /// </summary>
-        // /// <param name="action"></param>
-        // public void Clockin(Action action=null)
-        // {
-        //     action += () =>
-        //     {
-        //         UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_NetLoading);
-        //     };
-        //     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
-        //     // float plan = (float) GL_PlayerData._instance.SystemConfig.viewAds /
-        //     //              GL_PlayerData._instance.SigNetCbClockinConfig.needViewAd;
-        //     // if (plan<1)
-        //     // {
-        //     //     action?.Invoke();
-        //     //     return;
-        //     // }
-        //
-        //     if (GL_PlayerData._instance.SigNetCbClockinConfig.hasClock!=1)
-        //     {
-        //         GL_PlayerData._instance.ClockInReport(action);
-        //     }
-        //    
-        // }
+        /// <summary>
+        /// 获取今日打卡配置
+        /// </summary>
+        /// <param name="action"></param>
+        public void SearchClockin(Action action = null)
+        {
+        
+            Net_RequesetCommon req = new Net_RequesetCommon();
+            GL_ServerCommunication._instance.Send(Cmd.ClockinConfig, JsonHelper.ToJson(req), (delegate(string json)
+            {
+                Net_CB_ClockinConfig msg = JsonHelper.FromJson<Net_CB_ClockinConfig>(json);
+                if (msg == null)
+                    return;
+                
+                GL_PlayerData._instance.SigNetCbClockinConfig = msg;
+                // GL_PlayerData._instance.DrawLimit = msg.drawLimit;
+                
+                action?.Invoke();
+            }));
+        }
+        /// <summary>
+        /// 签到
+        /// </summary>
+        /// <param name="action"></param>
+        public void Clockin(Action action=null)
+        {
+            action += () =>
+            {
+                UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_NetLoading);
+            };
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
+            // float plan = (float) GL_PlayerData._instance.SystemConfig.viewAds /
+            //              GL_PlayerData._instance.SigNetCbClockinConfig.needViewAd;
+            // if (plan<1)
+            // {
+            //     action?.Invoke();
+            //     return;
+            // }
+        
+            if (GL_PlayerData._instance.SigNetCbClockinConfig.hasClock!=1)
+            {
+                GL_PlayerData._instance.ClockInReport(action);
+            }
+           
+        }
         #endregion
         
         #region 存钱罐

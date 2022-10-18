@@ -245,16 +245,16 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
         // }
 
         //if (!GL_CoreData._instance.AbTest)
-        {
-            // if (GL_Game._instance._signInConfig.Clockin()  )
+        { 
+            if (GL_Game._instance._signInConfig.Clockin()  )
             {
-               
+                ShowUI(SysDefine.UI_Path_NewSignInPage);
             }
         }
-        if (GL_PlayerData._instance._NetCbLoginConfig!=null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
-        {
-            ShowUI(SysDefine.UI_Path_NewLogin);
-        }
+        // if (GL_PlayerData._instance._NetCbLoginConfig!=null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
+        // {
+        //     ShowUI(SysDefine.UI_Path_NewLogin);
+        // }
         
         
         
