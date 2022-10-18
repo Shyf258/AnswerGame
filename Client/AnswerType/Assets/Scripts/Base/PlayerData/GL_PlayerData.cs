@@ -1182,12 +1182,18 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         GL_ServerCommunication._instance.Send(Cmd.LoginWithDrawConfig, JsonUtility.ToJson(msg), CB_loginWithDraw);
     }
 
-    private void CB_loginWithDraw(string json)
+    private void CB_loginWithDraw(string json = null)
     {
-        Net_CB_LoginConfig msg = JsonUtility.FromJson<Net_CB_LoginConfig>(json);
-        if (msg == null)
-            return;
-        _NetCbLoginConfig = msg;
+        try
+        {
+            Net_CB_LoginConfig msg = JsonUtility.FromJson<Net_CB_LoginConfig>(json);
+            _NetCbLoginConfig = msg;
+        }
+        catch
+        {
+            _NetCbLoginConfig = null;
+        }
+      
         _loginAction?.Invoke();
         _loginAction = null;
     }
