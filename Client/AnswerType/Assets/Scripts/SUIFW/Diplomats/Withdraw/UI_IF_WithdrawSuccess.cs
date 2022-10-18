@@ -75,10 +75,10 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             if (GL_CoreData._instance.AbTest)
             {
                 _tipsText.SetActive(true);
-                _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
             
                 if (_withDrawResult <=_money )
                 {
+                    _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
                     int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
                     int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
                                (hour*60)) / 60;
