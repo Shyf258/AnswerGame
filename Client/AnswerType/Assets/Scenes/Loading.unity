@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cf8aa67b6ec2e46a03c11e0b18b86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onclickTimes: 0
 --- !u!1 &1064095910
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +452,7 @@ MonoBehaviour:
   _nativeList:
   - LevelReward
   - WithDrawSuccess
-  - DragRedPack
+  - DragRedPackPage
   _bannerList:
   - Procduction
   - LoginPage

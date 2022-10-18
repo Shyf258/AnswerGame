@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年10月17日  17:53:40
+// 广告位自动生成于 2022年10月18日  18:44:06
 
 using UnityEngine;
 
@@ -42,7 +42,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 //3.原生广告
 	public const string AD_Native_LevelReward = "LevelReward";
 	public const string AD_Native_WithDrawSuccess = "WithDrawSuccess";
-	public const string AD_Native_DragRedPack = "DragRedPack";
+	public const string AD_Native_DragRedPackPage = "DragRedPackPage";
 
 //4.banner广告
 	public const string AD_Banner_Procduction = "Procduction";
@@ -183,7 +183,6 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 #if UNITY_EDITOR
 		SJson sj = new SJson();
 		sj.adSite = ad;
-		sj.adType = (int)GL_SDK._instance.GetADType(ad);
 		string str = JsonUtility.ToJson(sj);
 		CB_AdPlayCompleted(str);
 		return;
