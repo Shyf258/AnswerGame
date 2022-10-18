@@ -58,7 +58,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             return;
         if (datas.Length>0 && datas[0] is float money)
         {
-            _money = money;
+            _money = money ;
         }
 
         if (datas.Length>1 && datas[1] is EWithDrawType)
@@ -77,7 +77,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
                 _tipsText.SetActive(true);
                 _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
             
-                if (_withDrawResult <=_money )
+                if ((_withDrawResult -_money) < 0.1f)
                 {
                     int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
                     int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
