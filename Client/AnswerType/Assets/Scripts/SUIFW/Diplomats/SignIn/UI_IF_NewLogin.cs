@@ -221,7 +221,6 @@ public class UI_IF_NewLogin : BaseUIForm
                     UI_HintMessage._.ShowMessage($"再登录{day}天即可提现哦！");
                     return;
                 }
-                
                 break;
             default:
                 break;
@@ -243,6 +242,8 @@ public class UI_IF_NewLogin : BaseUIForm
     private void WithDraw()
     {
 
+        
+        
         if (!GL_PlayerData._instance.IsLoginWeChat())
         {
             //DDebug.Log("@@@@@@@@没有登录微信");
@@ -262,6 +263,15 @@ public class UI_IF_NewLogin : BaseUIForm
                 draw.withDrawType = (int) EWithDrawType.LoginWithDraw;
                 
                 GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_WithDraw);
+
+                if (draw.withDrawId == 1)
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LoginReceive);
+                }
+                else
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LoginReceiveAccumulated);
+                }
             }
             else
             {
