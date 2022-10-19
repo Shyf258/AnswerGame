@@ -904,7 +904,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         public void CB_RedWithDraw(string param)
         {
             GL_PlayerData._instance.Net_CB_WithDrawResult(param);
-            float money = _curRedWithdrawData.WithDraw.money * 0.01f;
+            float money = _curRedWithdrawData.WithDraw.money ;
             EWithDrawType _eWithDrawType = EWithDrawType.CashWithDraw;
             var obj = new object[]
             {
@@ -940,7 +940,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
             
             GL_PlayerData._instance.Net_CB_WithDrawResult(param);
-            float money = _curGoldWithdrawData.WithDraw.money * 0.01f;
+            float money = _curGoldWithdrawData.WithDraw.money ;
             EWithDrawType _eWithDrawType = EWithDrawType.DailyWithDraw;
             var obj = new object[]
             {

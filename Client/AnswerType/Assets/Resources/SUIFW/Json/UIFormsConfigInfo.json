@@ -160,6 +160,9 @@
 	{
       "Key": "WithdrawSuccess",
       "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithdrawSuccess"
+    },{
+      "Key": "WechatWithdrawTip",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WechatWithdrawTip"
     },
     {
       "Key": "DayGrow",

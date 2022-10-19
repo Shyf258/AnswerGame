@@ -122,7 +122,7 @@ public class UI_IF_PlayAdWithDraw : BaseUIForm
     private void CB_WithDraw(string param)
     {
         GL_PlayerData._instance.Net_CB_WithDrawResult(param);
-        float money = _withDrawData.money * 0.01f;
+        float money = _withDrawData.money;
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {

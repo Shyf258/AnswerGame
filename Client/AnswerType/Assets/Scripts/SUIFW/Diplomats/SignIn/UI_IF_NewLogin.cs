@@ -275,7 +275,7 @@ public class UI_IF_NewLogin : BaseUIForm
     private void CB_WithDraw(string param)
     {
         GL_PlayerData._instance.Net_CB_WithDrawResult(param);
-        float money = _netCbWithDraw.money / 100f;
+        float money = _netCbWithDraw.money ;
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {

@@ -966,7 +966,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         EWithDrawType _eWithDrawType = EWithDrawType.Normal;
         var obj = new object[]
         {
-            NetCbProduceConfig.money/100f,
+            NetCbProduceConfig.money,
             _eWithDrawType,
             GL_PlayerData._instance._netCbWithDraw.money
         };

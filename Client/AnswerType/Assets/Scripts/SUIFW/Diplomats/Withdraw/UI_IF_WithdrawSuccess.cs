@@ -68,28 +68,21 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         }
         if (datas.Length>2 && datas[2] is int result)
         {
-            _withDrawResult =(float) result/100f;
-            _moneyText.text = string.Format(_list[0], _withDrawResult.ToString("0.00"));
+            _withDrawResult =(float) result;
+            _moneyText.text = string.Format(_list[0], (_withDrawResult/100f).ToString("0.00"));
             // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
             
-            if (GL_CoreData._instance.AbTest)
-            {
-                _tipsText.SetActive(true);
-                _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
+            _tipsText.SetActive(true);
+            _tipsText.text = string.Format(_list[1], _money/100f, ((_withDrawResult - _money)/100f).ToString("0.00"));
             
-                if ((_withDrawResult -_money) < 0.1f)
-                {
-                    _tipsText.SetActive(false);
-                    int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
-                    int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
-                               (hour*60)) / 60;
-                    int second = GL_PlayerData._instance._WithDrawGrowConfig.countDown - (hour * 60) - (min * 60);
-                    UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
-                }
-            }
-            else
+            if ((_withDrawResult -_money) < 1f)
             {
                 _tipsText.SetActive(false);
+                int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
+                int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
+                           (hour*60)) / 60;
+                int second = GL_PlayerData._instance._WithDrawGrowConfig.countDown - (hour * 60) - (min * 60);
+                UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
             }
         }
        
@@ -115,6 +108,11 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             },_time);
         }
        
+        MethodExeTool.InvokeDT((() =>
+        {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WechatWithdrawTip);
+        }),1f);
+        
     }
 
     public override void RefreshLanguage()
