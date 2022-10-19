@@ -165,7 +165,10 @@ public partial class UI_IF_Main : BaseUIForm
              GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerSign);
              GL_PlayerData._instance.SendLoginWithDraw((() =>
              {
-                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewLogin);
+                 if (GL_PlayerData._instance._NetCbLoginConfig!=null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
+                 {
+                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewLogin);
+                 }
              }));
             
          }));

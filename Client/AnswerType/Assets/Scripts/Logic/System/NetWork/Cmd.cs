@@ -126,7 +126,7 @@ public enum Cmd
     /// <summary>/// 体现增幅配置/// </summary>
     WithDrawGrowConfig = 90301,
     
-    /// <summary>/// 提现增幅配置/// </summary>
+    /// <summary>/// 登录领钱配置/// </summary>
     LoginWithDrawConfig = 90401,
     
 }
