@@ -79,12 +79,12 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             
                 if ((_withDrawResult -_money) < 0.1f)
                 {
+                    _tipsText.SetActive(false);
                     int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
                     int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
                                (hour*60)) / 60;
                     int second = GL_PlayerData._instance._WithDrawGrowConfig.countDown - (hour * 60) - (min * 60);
                     UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
-                    _tipsText.SetActive(false);
                 }
             }
             else

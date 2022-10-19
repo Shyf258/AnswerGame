@@ -105,6 +105,7 @@ public class UI_Obj_Production : UIObjectBase
             // }));
             GL_PlayerData._instance.GetProduceRanking((() =>
             {
+                UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_DragRedpack);
                 // UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_NetLoading);
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_Salary);
             }));
@@ -112,12 +113,10 @@ public class UI_Obj_Production : UIObjectBase
 
         RigisterButtonObjectEvent("ShareBtn", go =>
         {
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
-            
             //分享
           GL_PlayerData._instance.GetInviteConfig((() =>
           {
-              UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_NetLoading);
+              UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_DragRedpack);
               UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_ShareResult);
           }));
         });
@@ -143,10 +142,12 @@ public class UI_Obj_Production : UIObjectBase
         _descriptionPage = UnityHelper.FindTheChildNode(gameObject, "UI_IF_Description");
         RigisterButtonObjectEvent("BtnClose", go =>
         {
+            UIManager.GetInstance().ShowUIForms(SysDefine.UI_Path_DragRedpack);
             _descriptionPage.SetActive(false);
         });
         RigisterButtonObjectEvent("DescriptionBtn", go =>
         {
+            UIManager.GetInstance().CloseUIForms(SysDefine.UI_Path_DragRedpack);
             _descriptionPage.SetActive(true);
         });
     }

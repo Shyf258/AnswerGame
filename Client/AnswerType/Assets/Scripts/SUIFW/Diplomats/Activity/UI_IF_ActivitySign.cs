@@ -70,6 +70,7 @@ namespace SUIFW.Diplomats.Main
         public override void Refresh(bool recall)
         {
             RefreshSign();
+            UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_DragRedpack);
         }
 
         public override void onUpdate()
@@ -121,7 +122,11 @@ namespace SUIFW.Diplomats.Main
                         {
                             GL_PlayerData._instance.SendGamecoreAccept(EGamecoreType.ActivitySign,0,(accept =>
                             {
-                                object[] datas = { accept.rewards,null,false,true};
+                                Action action = () =>
+                                {
+                                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DragRedpack);
+                                };
+                                object[] datas = { accept.rewards,action,false,true};
                                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                                 
                                 GL_CoreData._instance.ActivitySignDay += 1;
@@ -138,6 +143,7 @@ namespace SUIFW.Diplomats.Main
         
         private void OnBtnClose()
         {
+            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DragRedpack);
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.ActivitySignClose);
            CloseUIForm();
         }

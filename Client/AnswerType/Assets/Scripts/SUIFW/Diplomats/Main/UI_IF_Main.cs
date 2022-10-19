@@ -472,6 +472,8 @@ public partial class UI_IF_Main : BaseUIForm
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshLogin, RefreshLogin);
         RefreshLogin(null);
 
+        _tipsTaskText.transform.parent.SetActive(ShowTask());
+        
     }
 
     public override void OnHide()

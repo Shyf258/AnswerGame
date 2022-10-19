@@ -15,7 +15,7 @@ public class UI_IF_Salary :BaseUIForm
     private Transform _content;
     public override void Init()
     {
-        CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
+        CurrentUIType.UIForms_ShowMode = UIFormShowMode.ReverseChange;
         CurrentUIType.UIForms_Type = UIFormType.PopUp;
         CurrentUIType.UIForm_LucencyType = UIFormLucenyType.Dark;
         
@@ -77,6 +77,7 @@ public class UI_IF_Salary :BaseUIForm
     {
         base.OnHide();
         // GL_AD_Interface._instance.CloseBannerAd();
+        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DragRedpack);
     }
 
     public override void onUpdate()

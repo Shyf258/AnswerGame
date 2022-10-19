@@ -105,6 +105,8 @@ public class UI_IF_ShareResult : BaseUIForm
     {
         base.OnHide();
         // GL_AD_Interface._instance.CloseBannerAd();
+        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DragRedpack);
+
     }
 
     public override void Display(bool redisplay = false)

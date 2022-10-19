@@ -114,10 +114,7 @@ public class UI_IF_GetNormal : BaseUIForm
                 
                 GL_PlayerData._instance.SendGetVideoRedpack((EVideoRedpackType)_redpackType, true, (msg) =>
                 {
-                    _callback?.Invoke();
-                    _callback = null;
-
-                    object[] datas = { msg.rewards, null,false,true };
+                    object[] datas = { msg.rewards, _callback,false,true };
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
                 });
                 //if (_action != null)
@@ -136,9 +133,8 @@ public class UI_IF_GetNormal : BaseUIForm
         {
             GL_PlayerData._instance.SendGetVideoRedpack((EVideoRedpackType)_redpackType, false, (msg) =>
             {
-                _callback?.Invoke();
-                _callback = null;
-                object[] datas = { msg.rewards, null };
+              
+                object[] datas = { msg.rewards, _callback };
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
             });
         }

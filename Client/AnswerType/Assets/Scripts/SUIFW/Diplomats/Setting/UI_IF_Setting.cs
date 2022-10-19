@@ -147,6 +147,7 @@ public class UI_IF_Setting : BaseUIForm
     {
         base.OnHide();
         // GL_AD_Interface._instance.CloseBannerAd();
+        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DragRedpack);
     }
 
     /// <summary>
@@ -207,6 +208,7 @@ public class UI_IF_Setting : BaseUIForm
         //     // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_PlayerMessageBar);
         // }
         ShowGameName();
+        UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_DragRedpack);
     }
 
     #region 声音控制
