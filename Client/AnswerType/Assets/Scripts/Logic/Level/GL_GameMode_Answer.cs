@@ -194,7 +194,7 @@ public class GL_GameMode_Answer : GL_GameMode
                     break;
                 case 3:
                     DDebug.LogError("***** 播放被动激励");
-                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_GetDoubleReward, delegate (bool b)
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_NormalLevelUp, delegate (bool b)
                     {
                         if (b)
                         {

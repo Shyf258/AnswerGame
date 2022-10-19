@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年10月12日  12:08:32
+// 广告位自动生成于 2022年10月19日  12:30:05
 
 using UnityEngine;
 
@@ -34,6 +34,10 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	public const string AD_Reward_Reright = "Reright";
 	public const string AD_Reward_NewPlayer = "NewPlayer";
 	public const string AD_Reward_LoginWithDraw = "LoginWithDraw";
+	public const string AD_Reward_NormalLevelUp = "NormalLevelUp";
+	public const string AD_Reward_WithDrawRed = "WithDrawRed";
+	public const string AD_Reward_WithDrawGetCoin = "WithDrawGetCoin";
+	public const string AD_Reward_WithDrawGetRed = "WithDrawGetRed";
 
 //2.插屏
 	public const string AD_Interstitial_AllDialog = "AllDialog";
@@ -74,6 +78,10 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	private int _Reright = 0;
 	private int _NewPlayer = 0;
 	private int _LoginWithDraw = 0;
+	private int _NormalLevelUp = 0;
+	private int _WithDrawRed = 0;
+	private int _WithDrawGetCoin = 0;
+	private int _WithDrawGetRed = 0;
 	#endregion
 
 	//判断是否有广告
@@ -167,6 +175,18 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_LoginWithDraw:
 				_LoginWithDraw = 0;
+				break;
+			case AD_Reward_NormalLevelUp:
+				_NormalLevelUp = 0;
+				break;
+			case AD_Reward_WithDrawRed:
+				_WithDrawRed = 0;
+				break;
+			case AD_Reward_WithDrawGetCoin:
+				_WithDrawGetCoin = 0;
+				break;
+			case AD_Reward_WithDrawGetRed:
+				_WithDrawGetRed = 0;
 				break;
 		}
 #endif
@@ -326,6 +346,18 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_LoginWithDraw:
 				_LoginWithDraw = 1;
+				break;
+			case AD_Reward_NormalLevelUp:
+				_NormalLevelUp = 1;
+				break;
+			case AD_Reward_WithDrawRed:
+				_WithDrawRed = 1;
+				break;
+			case AD_Reward_WithDrawGetCoin:
+				_WithDrawGetCoin = 1;
+				break;
+			case AD_Reward_WithDrawGetRed:
+				_WithDrawGetRed = 1;
 				break;
 		}
 		return;
@@ -529,6 +561,34 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 					return;
 #endif
 				_LoginWithDraw = 0;
+				break;
+			case AD_Reward_NormalLevelUp:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_NormalLevelUp == 0)
+					return;
+#endif
+				_NormalLevelUp = 0;
+				break;
+			case AD_Reward_WithDrawRed:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_WithDrawRed == 0)
+					return;
+#endif
+				_WithDrawRed = 0;
+				break;
+			case AD_Reward_WithDrawGetCoin:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_WithDrawGetCoin == 0)
+					return;
+#endif
+				_WithDrawGetCoin = 0;
+				break;
+			case AD_Reward_WithDrawGetRed:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_WithDrawGetRed == 0)
+					return;
+#endif
+				_WithDrawGetRed = 0;
 				break;
 		}
 #endif

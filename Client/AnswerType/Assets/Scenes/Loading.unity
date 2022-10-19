@@ -432,6 +432,10 @@ MonoBehaviour:
   - Reright
   - NewPlayer
   - LoginWithDraw
+  - NormalLevelUp
+  - WithDrawRed
+  - WithDrawGetCoin
+  - WithDrawGetRed
   _interstitialList:
   - AllDialog
   _nativeList:

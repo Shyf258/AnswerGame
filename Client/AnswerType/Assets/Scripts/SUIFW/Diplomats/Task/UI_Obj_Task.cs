@@ -210,7 +210,9 @@ public partial class UI_IF_Main
                     {
                         FreshGetCoinTimes();
                         GL_PlayerData._instance.GetTaskConfig();
+                        UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DragRedpack);
                     };
+                    UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_DragRedpack);
                     object[] datas = { msg.rewards, action,false,true };
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult, datas);
                 });

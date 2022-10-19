@@ -379,7 +379,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void OnBtnGetRed()
         {
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetRedCoin);
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (success) =>
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawGetRed, (success) =>
             {
                 if (success)
                 {
@@ -429,7 +429,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void OnBtnGetGold()
         {
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetCoinCoin);
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (success) =>
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawGetCoin, (success) =>
             {
                 if (success)
                 {
@@ -850,6 +850,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         private void PlayAD(MyWithdrawData withdrawData)
         {
+            
+            string ad= GL_AD_Interface.AD_Reward_WithDrawCoin;
+            
             //提现广告播放成功
             Net_WithDraw draw = new Net_WithDraw();
             draw.withDrawId = withdrawData.WithDraw.id;
@@ -872,7 +875,18 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             //第一天播放广告
             if (IsFirstDay(withdrawData))
             {
-                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (set) =>
+
+                switch (withdrawData.EnumMyWithdraw)
+                {
+                    case EnumMyWithdraw.Red:
+                        ad = GL_AD_Interface.AD_Reward_WithDrawRed;
+                        break;
+                    case EnumMyWithdraw.Gold:
+                        ad = GL_AD_Interface.AD_Reward_WithDrawCoin;
+                        break;
+                }
+                
+                GL_AD_Logic._instance.PlayAD(ad, (set) =>
                 {
                     if (set)
                     {
