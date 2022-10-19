@@ -85,6 +85,11 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
                 UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
             }
         }
+        else
+        {
+            _tipsText.SetActive(false);
+            _moneyText.text = string.Format(_list[0], (_money/100f).ToString("0.00"));
+        }
        
 
 

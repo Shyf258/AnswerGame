@@ -290,8 +290,7 @@ public class UI_IF_NewLogin : BaseUIForm
         var obj = new object[]
         {
             money,
-            _eWithDrawType,
-            GL_PlayerData._instance._netCbWithDraw.money
+            _eWithDrawType
         };
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WithdrawSuccess, obj);
     }
