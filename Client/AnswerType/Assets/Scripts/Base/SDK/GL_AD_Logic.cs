@@ -158,6 +158,14 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
                 MethodExeTool.Invoke(() =>
                 {
                     GL_GameEvent._instance.SendEvent(EEventID.RefreshGrowMoney);
+                    
+                    
+                    if (GL_PlayerData._instance._PlayerCostState == null 
+                        || GL_PlayerData._instance._PlayerCostState._costState == CostState.Normal)
+                    {
+                        GL_PlayerData._instance.SendSystemConfig();
+                    }
+                    
                 }, 0.3f);
                
             }

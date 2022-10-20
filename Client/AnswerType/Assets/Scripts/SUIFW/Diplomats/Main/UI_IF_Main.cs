@@ -63,6 +63,9 @@ public partial class UI_IF_Main : BaseUIForm
     [HideInInspector]
     public Button _newSignInPage;
 
+
+    private int _changeWithDrawPage;
+    
     /// <summary>
     /// 登录文字
     /// </summary>
@@ -221,6 +224,18 @@ public partial class UI_IF_Main : BaseUIForm
                 UIManager.GetInstance().GetMainUp().SetActive(false);
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewWithdraw);
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_Activity);
+                
+                if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+                {
+                    _changeWithDrawPage++;
+                }
+                if (_changeWithDrawPage>=2)
+                {
+                    _changeWithDrawPage = 0;
+                    FF_Interstitial._instance.Minus();
+                    DDebug.LogError("****** 播放提现切页插屏广告");
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_ChangePage);
+                }
             }
         });
         

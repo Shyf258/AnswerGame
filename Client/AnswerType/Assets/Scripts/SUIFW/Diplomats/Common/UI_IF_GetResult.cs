@@ -104,6 +104,10 @@ namespace SUIFW.Diplomats.Common
         public override void Refresh(bool recall)
         {
             
+            if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+            {
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_DragRedPack);
+            } 
         }
 
         public override void onUpdate()
@@ -119,6 +123,8 @@ namespace SUIFW.Diplomats.Common
             {
                 GL_PlayerData._instance.GetNewPlayerReward();
             }
+            
+            GL_AD_Interface._instance.CloseNativeAd();
             
         }
 

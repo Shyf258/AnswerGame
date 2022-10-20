@@ -124,6 +124,16 @@ public class UI_IF_NewLogin : BaseUIForm
     public override void Refresh(bool recall)
     { 
         RefreshPage();
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+        {
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_LoginPage);
+        } 
+    }
+
+    public override void OnHide()
+    {
+        base.OnHide();
+        GL_AD_Interface._instance.CloseBannerAd();
     }
 
     public override void onUpdate()
@@ -251,37 +261,49 @@ public class UI_IF_NewLogin : BaseUIForm
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WeChatLogin);
             return;
         }
-        
-        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_LoginWithDraw, (show=>
-        {
-            if (show)
-            {
-                //提现广告播放成功
-                Net_WithDraw draw = new Net_WithDraw();
-                draw.withDrawId =  _netCbWithDraw.id;
-                draw.type = 2;
-                draw.withDrawType = (int) EWithDrawType.LoginWithDraw;
-                
-                GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_WithDraw);
 
-                if (draw.withDrawId == 1)
+        if (GL_PlayerData._instance._PlayerCostState._costState!= CostState.Vip)
+        {
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_LoginWithDraw, (show=>
+            {
+                if (show)
                 {
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LoginReceive);
+                    PlayADFinish();
                 }
                 else
                 {
-                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LoginReceiveAccumulated);
+                    UI_HintMessage._.ShowMessage("广告播放失败，请重新观看！");
                 }
-            }
-            else
-            {
-                UI_HintMessage._.ShowMessage("广告播放失败，请重新观看！");
-            }
-        }));
+            }));
+        }
+        else
+        {
+            PlayADFinish();
+        }
         
    
     }
-    
+
+    private void PlayADFinish()
+    {
+        //提现广告播放成功
+        Net_WithDraw draw = new Net_WithDraw();
+        draw.withDrawId =  _netCbWithDraw.id;
+        draw.type = 2;
+        draw.withDrawType = (int) EWithDrawType.LoginWithDraw;
+                
+        GL_ServerCommunication._instance.Send(Cmd.WithDraw, JsonUtility.ToJson(draw), CB_WithDraw);
+
+        if (draw.withDrawId == 1)
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LoginReceive);
+        }
+        else
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.LoginReceiveAccumulated);
+        }
+    }
+
     private void CB_WithDraw(string param)
     {
         GL_PlayerData._instance.Net_CB_WithDrawResult(param);

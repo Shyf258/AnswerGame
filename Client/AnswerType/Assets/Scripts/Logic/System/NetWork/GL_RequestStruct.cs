@@ -176,6 +176,7 @@ public class Net_CB_SystemConfig
     public int viewAds;     //当天已看广告次数
     //public int dcoupon;     //提现劵
     public int userDayLevel; //当天通关数
+    public int playerLayer; //用户价值分层
 }
 #endregion
 

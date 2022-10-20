@@ -117,7 +117,10 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         {
             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WechatWithdrawTip);
         }),1f);
-        
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+        {
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_WithDrawSuccess);
+        } 
     }
 
     public override void RefreshLanguage()
@@ -156,5 +159,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             GL_PlayerData._instance.BankConfig.nowMoney += (_withDrawResult / 100f);
             GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
         }
+        
+        GL_AD_Interface._instance.CloseNativeAd();
     }
 }

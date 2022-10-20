@@ -908,14 +908,22 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                         ad = GL_AD_Interface.AD_Reward_WithDrawCoin;
                         break;
                 }
-                
-                GL_AD_Logic._instance.PlayAD(ad, (set) =>
+
+                if (GL_PlayerData._instance._PlayerCostState._costState != CostState.Vip)
                 {
-                    if (set)
+                    GL_AD_Logic._instance.PlayAD(ad, (set) =>
                     {
-                        action.Invoke();
-                    }
-                });
+                        if (set)
+                        {
+                            action.Invoke();
+                        }
+                    });
+                }
+                else
+                {
+                    action.Invoke();
+                }
+               
             }
             else
             {

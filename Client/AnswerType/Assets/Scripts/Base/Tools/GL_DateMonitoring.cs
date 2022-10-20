@@ -108,6 +108,7 @@ public class SDateArchiveInfo
 
     public int _onlineSecond; //在线时间
     
+    
     public void Refresh()
     {
         DateTime dt = DateTime.Now;
@@ -116,6 +117,7 @@ public class SDateArchiveInfo
         _day = dt.Day;
         _loginTimes = 1;
         _onlineSecond = 0;
+        GL_PlayerPrefs.SetInt(EPrefsKey.TipWithDraw,0);
         try
         {
             GL_PlayerData._instance.BankConfig.nowDay += 1;

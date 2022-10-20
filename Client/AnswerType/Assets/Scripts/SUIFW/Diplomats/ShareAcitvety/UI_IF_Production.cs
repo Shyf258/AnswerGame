@@ -19,7 +19,10 @@ public class UI_IF_Production : BaseUIForm
     public override void Refresh(bool recall)
     {
         FreshTime();
-        // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_GoldenPig);
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+        {
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_Procduction);
+        } 
 
         //因为需要排序, 所以延迟一会检测
         Invoke(nameof(TriggerGuide), 0.05f);
@@ -30,8 +33,8 @@ public class UI_IF_Production : BaseUIForm
     }
     public override void OnHide()
     {
-        base.OnHide();
-        // GL_AD_Interface._instance.CloseBannerAd();
+        base.OnHide(); 
+        GL_AD_Interface._instance.CloseBannerAd();
     }
 
     public override void onUpdate()
