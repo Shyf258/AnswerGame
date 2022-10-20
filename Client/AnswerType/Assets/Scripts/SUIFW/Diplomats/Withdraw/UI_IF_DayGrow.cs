@@ -68,6 +68,16 @@ public class UI_IF_DayGrow : BaseUIForm
     public override void Refresh(bool recall)
     {
         RefreshPage();
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+        {
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Banner_WithDrawGrow);
+        } 
+    }
+
+    public override void OnHide()
+    {
+        base.OnHide();
+        GL_AD_Interface._instance.CloseBannerAd();
     }
 
     public override void onUpdate()

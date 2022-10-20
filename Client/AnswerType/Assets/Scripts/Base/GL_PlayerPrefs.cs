@@ -12,7 +12,9 @@ public enum EPrefsKey
     IsFCM, //防沉迷
     IsWeChatLogIn = 0, //微信登录 
     IsOpenLogToTool,  //工具log开关
-}
+    IsReceiveNewPlayer//领取新手红包
+    TipWithDraw ,}
+
 
 public class GL_PlayerPrefs : MonoBehaviour
 {

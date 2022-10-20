@@ -92,7 +92,7 @@ public partial class UI_IF_Main
     //Ë¢ĞÂÌâÄ¿
     public void RefreshGameMode(EventParam param)
     {
-
+        
         // MoveBack();
         var info = GL_SceneManager._instance.CurGameMode._levelInfo;
         if (info == null)

@@ -63,6 +63,15 @@ public partial class UI_IF_Main : BaseUIForm
     [HideInInspector]
     public Button _newSignInPage;
 
+
+    private int _changeWithDrawPage;
+    
+    /// <summary>
+    /// 登录文字
+    /// </summary>
+    private Text _LoginText;
+
+    private Text _dayTips;
     private Text _tipsTaskText;
     /// <summary>
     /// 当前显示界面
@@ -156,9 +165,19 @@ public partial class UI_IF_Main : BaseUIForm
         
          RigisterButtonObjectEvent(_newSignInPage,(go =>
          {
-             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewSignInPage);
+             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerSign);
+             GL_PlayerData._instance.SendLoginWithDraw((() =>
+             {
+                 if (GL_PlayerData._instance._NetCbLoginConfig!=null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
+                 {
+                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewLogin);
+                 }
+             }));
+            
          }));
 
+         _LoginText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_newSignInPage.gameObject, "Text");
+         _dayTips = UnityHelper.GetTheChildNodeComponetScripts<Text>(_newSignInPage.gameObject,"DayTips");
         #endregion
 
         #region 主界面切页
@@ -205,6 +224,18 @@ public partial class UI_IF_Main : BaseUIForm
                 UIManager.GetInstance().GetMainUp().SetActive(false);
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewWithdraw);
                 UI_Diplomats._instance.CloseUI(SysDefine.UI_Path_Activity);
+                
+                if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
+                {
+                    _changeWithDrawPage++;
+                }
+                if (_changeWithDrawPage>=2)
+                {
+                    _changeWithDrawPage = 0;
+                    FF_Interstitial._instance.Minus();
+                    DDebug.LogError("****** 播放提现切页插屏广告");
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_ChangePage);
+                }
             }
         });
         
@@ -245,8 +276,8 @@ public partial class UI_IF_Main : BaseUIForm
         }
         else
         {
-            //缩减里程碑
-            InitPosition();
+            // //缩减里程碑
+            // InitPosition();
         }
 
         _answerPageToggle.isOn = true;
@@ -439,15 +470,15 @@ public partial class UI_IF_Main : BaseUIForm
     public override void Refresh(bool recall)
     {
         RefreshGameMode(null);
-        if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
-        {
-            GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, null);
-        }
-        else
-        {
-            GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
-            RefreshPosition(null);
-        }
+        // if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
+        // {
+        //     GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, null);
+        // }
+        // else
+        // {
+        //     GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
+        //     RefreshPosition(null);
+        // }
       
 
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
@@ -455,20 +486,53 @@ public partial class UI_IF_Main : BaseUIForm
         
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         RefreshMoneyGrow(null);
+
+        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshLogin, RefreshLogin);
+        RefreshLogin(null);
+
+        _tipsTaskText.transform.parent.SetActive(ShowTask());
+        
     }
 
     public override void OnHide()
     {
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
+        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshLogin, RefreshLogin);
         StopAllCoroutines();
         CancelInvoke();
     }
     
     #endregion
 
+    private void RefreshLogin(EventParam param)
+    {
+        GL_PlayerData._instance.SendLoginWithDraw(() =>
+        {
+            if (GL_PlayerData._instance._NetCbLoginConfig==null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count<=0)
+            {
+                _newSignInPage.SetActive(false);
+            }
+            else
+            {
+                _newSignInPage.SetActive(true);
+
+                if (GL_PlayerData._instance._NetCbLoginConfig.withDraws[0].withDrawLimit>0)
+                {
+                    _LoginText.text = "登录提现";
+                }
+                else
+                {
+                    _LoginText.text = "明日再领";
+                }
+              
+                _dayTips.text = $"<color=#68FF04><size=80>{GL_PlayerData._instance._NetCbLoginConfig.day}</size></color>天";
+            }
+        });
+    }
+    
     public void ChangeProduce()
     {
         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NetLoading);
