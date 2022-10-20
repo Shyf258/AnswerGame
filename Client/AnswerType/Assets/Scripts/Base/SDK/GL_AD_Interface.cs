@@ -1,4 +1,4 @@
-// 广告位自动生成于 2022年10月19日  12:30:05
+// 广告位自动生成于 2022年10月20日  10:59:45
 
 using UnityEngine;
 
@@ -38,6 +38,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	public const string AD_Reward_WithDrawRed = "WithDrawRed";
 	public const string AD_Reward_WithDrawGetCoin = "WithDrawGetCoin";
 	public const string AD_Reward_WithDrawGetRed = "WithDrawGetRed";
+	public const string AD_Reward_WaitWithDraw = "WaitWithDraw";
 
 //2.插屏
 	public const string AD_Interstitial_AllDialog = "AllDialog";
@@ -82,6 +83,7 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 	private int _WithDrawRed = 0;
 	private int _WithDrawGetCoin = 0;
 	private int _WithDrawGetRed = 0;
+	private int _WaitWithDraw = 0;
 	#endregion
 
 	//判断是否有广告
@@ -187,6 +189,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_WithDrawGetRed:
 				_WithDrawGetRed = 0;
+				break;
+			case AD_Reward_WaitWithDraw:
+				_WaitWithDraw = 0;
 				break;
 		}
 #endif
@@ -358,6 +363,9 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 				break;
 			case AD_Reward_WithDrawGetRed:
 				_WithDrawGetRed = 1;
+				break;
+			case AD_Reward_WaitWithDraw:
+				_WaitWithDraw = 1;
 				break;
 		}
 		return;
@@ -589,6 +597,13 @@ public class GL_AD_Interface : Singleton<GL_AD_Interface>
 					return;
 #endif
 				_WithDrawGetRed = 0;
+				break;
+			case AD_Reward_WaitWithDraw:
+#if UNITY_IOS && !UNITY_EDITOR
+				if(_WaitWithDraw == 0)
+					return;
+#endif
+				_WaitWithDraw = 0;
 				break;
 		}
 #endif

@@ -436,6 +436,7 @@ MonoBehaviour:
   - WithDrawRed
   - WithDrawGetCoin
   - WithDrawGetRed
+  - WaitWithDraw
   _interstitialList:
   - AllDialog
   _nativeList:
