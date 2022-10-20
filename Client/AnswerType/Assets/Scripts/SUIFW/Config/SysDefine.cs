@@ -197,6 +197,7 @@ namespace SUIFW
         public const string UI_Path_RedGroup          = "RedGroup";
         public const string UI_Path_RedGroupChat      = "RedGroupChat";
         public const string UI_Path_DayGrow           = "DayGrow";
+        public const string UI_Path_NewPlayerTips     = "NewPlayerTips";
         public const string UI_Path_NewLogin          = "NewLogin";
         public const string UI_Path_WechatWithdrawTip = "WechatWithdrawTip";
     }
