@@ -448,8 +448,8 @@ public class GL_GuideManager : Singleton<GL_GuideManager>
     //打开红包界面
     private void OnShowOpenRedPack()
     {
-        FinishGuide();
-        OnShowLimitNewGift();
+        // FinishGuide();
+        // OnShowLimitNewGift();
 
         // Action<bool> ac1 = (bool set) => { CB_OnShowOpenRedPack(set); };
         // var conifg = GL_PlayerData._instance.GetGamecoreConfig(EGamecoreType.Guide);
