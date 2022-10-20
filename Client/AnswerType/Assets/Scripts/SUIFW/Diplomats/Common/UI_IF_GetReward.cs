@@ -176,7 +176,7 @@ public class UI_IF_GetReward : BaseUIForm
 
     public override void Refresh(bool recall)
     {
-        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
+        // GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
 
         _withDrawSlider.fillAmount =(float) GL_PlayerData._instance.Coin / GL_PlayerData._instance._withDrawTarget[EWithDrawType.DailyWithDraw].coupon;
         _fillText.gameObject.SetActive(_withDrawSlider.fillAmount>=1);

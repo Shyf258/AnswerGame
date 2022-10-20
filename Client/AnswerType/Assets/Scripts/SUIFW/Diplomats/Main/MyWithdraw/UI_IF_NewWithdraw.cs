@@ -893,13 +893,21 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             //第一天播放广告
             if (IsFirstDay(withdrawData))
             {
-                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (set) =>
+                //B包ecpm大于200取消视频
+                if (GL_CoreData._instance._adECPM > 200 && !GL_CoreData._instance.AbTest)
                 {
-                    if (set)
+                    action.Invoke();
+                }
+                else
+                {
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (set) =>
                     {
-                        action.Invoke();
-                    }
-                });
+                        if (set)
+                        {
+                            action.Invoke();
+                        }
+                    });
+                }
             }
             else
             {
