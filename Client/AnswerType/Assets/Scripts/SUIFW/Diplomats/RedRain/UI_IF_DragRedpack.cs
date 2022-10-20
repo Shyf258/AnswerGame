@@ -120,14 +120,10 @@ public class UI_IF_DragRedpack : BaseUIForm
             {
                 RefreshState();
                 GL_PlayerData._instance.GetTaskConfig();
-                //b包看广告刷新金币
-                if (!GL_CoreData._instance.AbTest)
+                var newWithdraw = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw) as UI_IF_NewWithdraw;
+                if (!(newWithdraw is null) && newWithdraw.isActiveAndEnabled)
                 {
-                    var newWithdraw = UIManager.GetInstance().GetUI(SysDefine.UI_Path_NewWithdraw) as UI_IF_NewWithdraw;
-                    if (!(newWithdraw is null) && newWithdraw.isActiveAndEnabled)
-                    {
-                        newWithdraw.RefreshGold();
-                    }
+                    newWithdraw.RefreshGold();
                 }
             };
 

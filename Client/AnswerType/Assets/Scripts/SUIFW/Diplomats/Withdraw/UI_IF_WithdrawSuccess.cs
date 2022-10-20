@@ -68,14 +68,16 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         }
         if (datas.Length>2 && datas[2] is int result)
         {
-            _withDrawResult =(float) result/100f;
+            _withDrawResult =(float) result;
             _moneyText.text = string.Format(_list[0], _withDrawResult.ToString("0.00"));
             // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
             
             _tipsText.SetActive(true);
             _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
+
+            float vaule = _money - _withDrawResult;
             
-            if (_withDrawResult <=_money )
+            if (vaule > 0.01f )
             {
                 int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
                 int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
