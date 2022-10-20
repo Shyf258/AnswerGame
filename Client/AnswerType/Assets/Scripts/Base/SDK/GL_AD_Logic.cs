@@ -164,7 +164,7 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
                         || GL_PlayerData._instance._PlayerCostState._costState == CostState.Normal)
                     {
                         GL_PlayerData._instance.SendSystemConfig();
-                    }
+                    }    
                     
                 }, 0.3f);
                
