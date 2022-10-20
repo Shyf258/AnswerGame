@@ -164,9 +164,9 @@ public partial class UI_IF_Main : BaseUIForm
             }
         });
         
-        _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
-        _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
-        RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
+        // _btnNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Button>(_answerPageShow.gameObject, "NewbieSign");
+        // _textNewbieSign = UnityHelper.GetTheChildNodeComponetScripts<Text>(_btnNewbieSign.gameObject, "Text");
+        // RigisterButtonObjectEvent(_btnNewbieSign, (go => { OnClickNewbieSign(); }));
         
         
         _newSignInPage = UnityHelper.GetTheChildNodeComponetScripts<Button>(gameObject, "NewSignInPage");
@@ -465,8 +465,8 @@ public partial class UI_IF_Main : BaseUIForm
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
         RefreshPosition(null);
 
-        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
-        RefreshNewbieSign(null);
+        // GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        // RefreshNewbieSign(null);
         
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         RefreshMoneyGrow(null);
@@ -476,7 +476,7 @@ public partial class UI_IF_Main : BaseUIForm
     {
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         StopAllCoroutines();
         CancelInvoke();
