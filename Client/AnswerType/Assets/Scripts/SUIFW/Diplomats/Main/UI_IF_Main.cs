@@ -63,6 +63,12 @@ public partial class UI_IF_Main : BaseUIForm
     [HideInInspector]
     public Button _newSignInPage;
 
+    /// <summary>
+    /// 登录文字
+    /// </summary>
+    private Text _LoginText;
+
+    private Text _dayTips;
     private Text _tipsTaskText;
     /// <summary>
     /// 当前显示界面
@@ -164,6 +170,8 @@ public partial class UI_IF_Main : BaseUIForm
 
          }));
 
+         _LoginText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_newSignInPage.gameObject, "Text");
+         _dayTips   = UnityHelper.GetTheChildNodeComponetScripts<Text>(_newSignInPage.gameObject, "DayTips");
         #endregion
 
         #region 主界面切页
@@ -243,16 +251,16 @@ public partial class UI_IF_Main : BaseUIForm
 
         InitTask();
 
-        if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
-        {
-            Transform slider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
-            slider.SetActive(false);
-        }
-        else
-        {
-            //缩减里程碑
-            // InitPosition();
-        }
+        // if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
+        // {
+        //     Transform slider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
+        //     slider.SetActive(false);
+        // }
+        // else
+        // {
+        //     //缩减里程碑
+        //     // InitPosition();
+        // }
 
         _answerPageToggle.isOn = true;
 
@@ -403,7 +411,26 @@ public partial class UI_IF_Main : BaseUIForm
         
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         RefreshMoneyGrow(null);
-                
+
+        GL_GameEvent._instance.RegisterEvent(EEventID.RefreshLogin, RefreshLogin);
+        RefreshLogin(null);
+    }
+
+    public override void OnHide()
+    {
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
+        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshLogin, RefreshLogin);
+        StopAllCoroutines();
+        CancelInvoke();
+    }
+    
+    #endregion
+    
+    private void RefreshLogin(EventParam param)
+    {
         GL_PlayerData._instance.SendLoginWithDraw(() =>
         {
             if (GL_PlayerData._instance._NetCbLoginConfig==null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count<=0)
@@ -413,21 +440,20 @@ public partial class UI_IF_Main : BaseUIForm
             else
             {
                 _newSignInPage.SetActive(true);
+
+                if (GL_PlayerData._instance._NetCbLoginConfig.withDraws[0].withDrawLimit >0)
+                {
+                    _LoginText.text = "登录提现";
+                }
+                else
+                {
+                    _LoginText.text = "明日再领";
+                }
+              
+                _dayTips.text = $"<color=#68FF04><size=80>{GL_PlayerData._instance._NetCbLoginConfig.day}</size></color>天";
             }
         });
     }
-
-    public override void OnHide()
-    {
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
-        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
-        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney,    RefreshMoneyGrow);
-        StopAllCoroutines();
-        CancelInvoke();
-    }
-    
-    #endregion
 
     public void ChangeProduce()
     {
@@ -463,7 +489,7 @@ public partial class UI_IF_Main : BaseUIForm
                 _signDay.SetActive(false);
             }
             _day.text = $"已登录{GL_PlayerData._instance._WithDrawGrowConfig.day}天";
-            _dayGrow.text = $"<color=#800000>提现增幅</color><color=#ff0000><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
+            _dayGrow.text = $"<color=#ffffff>提现增幅</color><color=#0058ff><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
         });
     }
 
