@@ -68,7 +68,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         }
         if (datas.Length>2 && datas[2] is int result)
         {
-            _withDrawResult =(float) result;
+            _withDrawResult = (float) result * 0.01f;
             _moneyText.text = string.Format(_list[0], _withDrawResult.ToString("0.00"));
             // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
             
