@@ -6,17 +6,26 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 using Logic.System.NetWork;
-using SUIFW.Diplomats.Common;
 using Object = System.Object;
 
 public class UI_IF_GetReward : BaseUIForm
 {
-    private string _description =
-        "恭喜获得<size=64><color=#fb3234>{0}</color></size>元红包和<size=64><color=#fb3234>大量</color></size>金币";
+    private List<string> _description = new List<string>()
+    {
+        "恭喜获得<size=64><color=#fb3234>{0}</color></size>元红包和<size=64><color=#fb3234>大量</color></size>金币",
+        "通关成功！观看视频最多可得3万金币约0.3元",
+    };
     private Text _rewardDescription;
+    private Transform _group;
     private Button _btnSure;
     private Button _btnDouble;
 
+
+    private Transform _groupCoin;
+    private Button _btnSureCoin;
+    private Button _btnDoubleCoin;
+    
+    
     /// <summary>
     /// 当前奖励数量
     /// </summary>
@@ -30,14 +39,11 @@ public class UI_IF_GetReward : BaseUIForm
     //private EItemType _doubleType; //双倍按钮类型
 
     private Button _withdrawBtn;
-    private Image _btnImage;
     private Image _withDrawSlider;
     private string _withdrawTipsStr = "<size=64><color=#ff0000>{0}</color></size>元提现进度";
     private Text _withdrawTipsText;
 
     private Text _fillText;
-
-    public List<Sprite> _ListSprite;
     
     public override void Init()
     {
@@ -53,41 +59,46 @@ public class UI_IF_GetReward : BaseUIForm
         });
         _rewardDescription = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "RewardText");
 
-        _btnSure = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(gameObject, "BtnSure");
+        _group = UnityHelper.FindTheChildNode(gameObject, "Group");
+        
+        _btnSure = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(_group.gameObject, "BtnSure");
         RigisterButtonObjectEvent(_btnSure, (go) =>
         {
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetRed);
             OnClickSure();
         });
-
-        _btnDouble = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(gameObject, "BtnDouble");
+        _btnDouble = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(_group.gameObject, "BtnDouble");
         RigisterButtonObjectEvent(_btnDouble, (go) =>
         {
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetCoin);
             OnBtnDouble();
         });
 
+        _groupCoin = UnityHelper.FindTheChildNode(gameObject, "GroupCoin");
+        _btnSureCoin = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(_groupCoin.gameObject, "BtnSure");
+        RigisterButtonObjectEvent(_btnSureCoin, (go) =>
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetRed);
+            OnClickSure();
+        });
+        _btnDoubleCoin = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(_groupCoin.gameObject, "BtnDouble");
+        RigisterButtonObjectEvent(_btnDoubleCoin, (go) =>
+        {
+            GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetCoin);
+            OnBtnDouble();
+        });
+        
         _rewardDescription = UnityHelper.GetTheChildNodeComponetScripts<Text>(gameObject, "RewardText");
-
-
+        
         Transform withdrawtips = UnityHelper.FindTheChildNode(gameObject, "WithDrawTips");
         _withDrawSlider = UnityHelper.GetTheChildNodeComponetScripts<Image>(withdrawtips.gameObject, "Fill");
         _fillText = UnityHelper.GetTheChildNodeComponetScripts<Text>(withdrawtips.gameObject, "FillText");
         _withdrawBtn = UnityHelper.GetTheChildNodeComponetScripts<Button>(withdrawtips.gameObject, "WithDrawBtn");
         RigisterButtonObjectEvent(_withdrawBtn, go =>
         {
-            if (_withDrawSlider.fillAmount>=1)
-            {
-                UIManager.GetInstance().GetMain()._withdrawPageToggle.isOn = true;
-                OnClickSure();
-            }
-            else
-            {
-                UI_HintMessage._.ShowMessage("金币不足，请继续努力!");
-            }
-           
+            UIManager.GetInstance().GetMain()._withdrawPageToggle.isOn = true;
+            OnClickSure();
         });
-        _btnImage = UnityHelper.GetTheChildNodeComponetScripts<Image>(withdrawtips.gameObject, "WithDrawBtn");
         _withdrawTipsText = UnityHelper.GetTheChildNodeComponetScripts<Text>(withdrawtips.gameObject, "TipsText");
     }
 
@@ -168,16 +179,8 @@ public class UI_IF_GetReward : BaseUIForm
         GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_LevelReward); 
 
         _withDrawSlider.fillAmount =(float) GL_PlayerData._instance.Coin / GL_PlayerData._instance._withDrawTarget[EWithDrawType.DailyWithDraw].coupon;
-        if (_withDrawSlider.fillAmount>=1)
-        {
-            _btnImage.sprite = _ListSprite[0];
-            _fillText.text = "Max";
-        }
-        else
-        {
-            _btnImage.sprite = _ListSprite[1];
-            _fillText.text = (_withDrawSlider.fillAmount * 100).ToString("0") + "%";
-        }
+        _fillText.gameObject.SetActive(_withDrawSlider.fillAmount>=1);
+
         _withdrawTipsText.text = String.Format(_withdrawTipsStr,(GL_PlayerData._instance._withDrawTarget[EWithDrawType.DailyWithDraw].money/100f).ToString("0.00"));
     }
 
@@ -200,9 +203,20 @@ public class UI_IF_GetReward : BaseUIForm
             string num = value.ToString();
 
             if (itemType == EItemType.Bogus)
+            {
                 num =(value /100f).ToString("0.00");
 
-            _rewardDescription.text = string.Format(_description,num);
+                _rewardDescription.text = string.Format(_description[0],num);
+                _groupCoin.SetActive(false);
+                _group.SetActive(true);
+            }
+            else
+            {
+                _rewardDescription.text = _description[1];
+                _groupCoin.SetActive(true);
+                _group.SetActive(false);
+            }
+           
         }
 
         //回调
