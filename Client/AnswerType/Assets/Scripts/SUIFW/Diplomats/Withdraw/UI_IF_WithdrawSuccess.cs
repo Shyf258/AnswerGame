@@ -151,5 +151,10 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         // {
         //     DateTips();
         // }
+        if (AppSetting.BuildApp == EBuildApp.ZYXLZ)
+        {
+            GL_PlayerData._instance.BankConfig.nowMoney += (_withDrawResult / 100f);
+            GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
+        }
     }
 }
