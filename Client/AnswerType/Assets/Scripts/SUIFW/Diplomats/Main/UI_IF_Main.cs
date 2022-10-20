@@ -243,16 +243,16 @@ public partial class UI_IF_Main : BaseUIForm
 
         InitTask();
 
-        if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
-        {
-            Transform slider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
-            slider.SetActive(false);
-        }
-        else
-        {
-            //缩减里程碑
-            // InitPosition();
-        }
+        // if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
+        // {
+        //     Transform slider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
+        //     slider.SetActive(false);
+        // }
+        // else
+        // {
+        //     //缩减里程碑
+        //     // InitPosition();
+        // }
 
         _answerPageToggle.isOn = true;
 

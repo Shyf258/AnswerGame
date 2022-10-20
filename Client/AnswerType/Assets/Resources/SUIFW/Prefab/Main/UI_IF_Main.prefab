@@ -6648,6 +6648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallLevelSlider
       objectReference: {fileID: 0}
+    - target: {fileID: 2619009467366792129, guid: af4a8ae57d9b648848dbaef836c57331,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3329204720320574703, guid: af4a8ae57d9b648848dbaef836c57331,
         type: 3}
       propertyPath: m_FontData.m_FontSize
