@@ -489,7 +489,7 @@ public partial class UI_IF_Main : BaseUIForm
                 _signDay.SetActive(false);
             }
             _day.text = $"已登录{GL_PlayerData._instance._WithDrawGrowConfig.day}天";
-            _dayGrow.text = $"<color=#800000>提现增幅</color><color=#ff0000><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
+            _dayGrow.text = $"<color=#ffffff>提现增幅</color><color=#0058ff><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
         });
     }
 
