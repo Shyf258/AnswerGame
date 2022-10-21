@@ -64,6 +64,8 @@ public partial class UI_IF_Main : BaseUIForm
     public Button _newSignInPage;
 
 
+    private bool _levelReward = false;
+    
     private int _changeWithDrawPage;
     
     /// <summary>

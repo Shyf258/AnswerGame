@@ -54,6 +54,7 @@ public partial class UI_IF_Main
         _brokenEffect = UnityHelper.GetTheChildNodeComponetScripts<ParticleSystem>(_btnSlider.gameObject, "ParticleBroken");
 
         RigisterButtonObjectEvent(_btnSlider, (go) => OnClickButton());
+        _levelReward = true;
     }
     
     protected void RefreshPosition(EventParam param)
@@ -68,7 +69,7 @@ public partial class UI_IF_Main
         // {
         //     _tfLevelSlider.SetActive(false);
         // }
-        if (!_tfLevelSlider)
+        if (!_levelReward)
         {
             return;
         }
@@ -175,6 +176,7 @@ public partial class UI_IF_Main
             || GL_PlayerData._instance._PlayerCostState._costState == CostState.Middle)
         {
             _tfLevelSlider.SetActive(false);
+            _levelReward = false;
         }
     }
 }
