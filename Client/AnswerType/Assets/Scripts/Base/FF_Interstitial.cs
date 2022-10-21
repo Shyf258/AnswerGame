@@ -65,7 +65,11 @@ public class PlayerCostState
       set
       {
          CostState = value;
-         GL_GameEvent._instance.SendEvent(EEventID.RefreshLogin);
+         //主界面刷新分层显示
+         if (GL_Game._instance.GameState == EGameState.GameMain)
+         {
+            GL_GameEvent._instance.SendEvent(EEventID.RefreshLogin);
+         }
       }
    }
 

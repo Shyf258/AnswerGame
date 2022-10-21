@@ -119,10 +119,13 @@ namespace SUIFW.Diplomats.Common
         {
             base.OnHide();
 
-            if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
-            {
-                GL_PlayerData._instance.GetNewPlayerReward();
-            }
+            
+            //停用新人奖励
+            
+            // if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
+            // {
+            //     GL_PlayerData._instance.GetNewPlayerReward();
+            // }
             
             GL_AD_Interface._instance.CloseNativeAd();
             

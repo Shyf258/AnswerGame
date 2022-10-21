@@ -171,10 +171,13 @@ public class GL_GameMode_Answer : GL_GameMode
         {
             GetCoin();
         }
-        if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 && GL_PlayerData._instance.CurLevel ==2)
-        {
-            GL_PlayerData._instance.GetNewPlayerReward();
-        }
+        
+        //停用新人奖励
+        
+        // if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 && GL_PlayerData._instance.CurLevel ==2)
+        // {
+        //     GL_PlayerData._instance.GetNewPlayerReward();
+        // }
         
         GL_GameEvent._instance.SendEvent(EEventID.RefreshPosition);
         
