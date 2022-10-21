@@ -73,6 +73,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         private string _growStr = "<color=#ff0000><size=52>{0}%</size></color>提现增幅";
 
+
+        /// <summary>
+        /// 金币提现按键
+        /// </summary>
+        private Button _btnGoldWithdraw;
+
+        /// <summary>
+        /// 红包提现按键
+        /// </summary>
+        private Button _btnRedWithdraw;
+        
         #endregion
         
         
@@ -252,8 +263,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             var redNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "RedNode");
             _txtRedNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(redNode.gameObject, "_txtRedNum");
             _grpRed = UnityHelper.GetTheChildNodeComponetScripts<Transform>(redNode.gameObject, "_grpRed");
-            var btnRedWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(redNode.gameObject, "_btnRedWithdraw");
-            btnRedWithdraw.onClick.AddListener(OnBtnRedWithdraw);
+            _btnRedWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(redNode.gameObject, "_btnRedWithdraw");
+            _btnRedWithdraw.onClick.AddListener(OnBtnRedWithdraw);
             var getRedNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GetRedNode");
             _btnGetRed = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getRedNode.gameObject, "_btnGetRed");
             _btnGetRed.onClick.AddListener(OnBtnGetRed);
@@ -292,8 +303,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     
                     
                 }
-                var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
-                btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
+                _btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
+                _btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
               
                 #region 存储奖池
 
@@ -379,6 +390,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void OnBtnRedWithdraw()
         {
+            
+            _btnRedWithdraw.interactable = false;
+            
+            Invoke("ActiveRedButton",1f);
+            
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawRed);
 
             //选择默认第一条提现
@@ -428,6 +444,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         /// </summary>
         private void OnBtnGoldWithdraw()
         {
+
+            _btnGoldWithdraw.interactable = false;
+            
+            Invoke("ActiveGoldButton",1f);
+            
             
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawCoin);
 
@@ -444,6 +465,22 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
 
             GoldWithdraw();
+        }
+
+        /// <summary>
+        /// 激活金币提现
+        /// </summary>
+        private void ActiveGoldButton()
+        {
+            _btnGoldWithdraw.interactable = true;
+        }
+
+        /// <summary>
+        /// 激活红包提现
+        /// </summary>
+        private void ActiveRedButton()
+        {
+            _btnGoldWithdraw.interactable = true;
         }
 
         /// <summary>
@@ -813,6 +850,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void GoldWithdraw()
         {
 
+            
+            
             switch (_curGoldWithdrawData.WithDraw.money)
             {
                 case 38:
