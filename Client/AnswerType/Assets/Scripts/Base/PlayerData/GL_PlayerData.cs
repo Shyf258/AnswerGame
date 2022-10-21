@@ -59,7 +59,7 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
               
             }));
         }
-        SendLoginWithDraw();
+        // SendLoginWithDraw();
     }
 
     public Net_CB_SystemConfig SystemConfig

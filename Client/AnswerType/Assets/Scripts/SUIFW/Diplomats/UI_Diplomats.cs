@@ -251,10 +251,19 @@ public class UI_Diplomats : Singleton<UI_Diplomats>
                
             }
         }
-        if (GL_PlayerData._instance._NetCbLoginConfig!=null && GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
+
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Vip)
         {
-            ShowUI(SysDefine.UI_Path_NewLogin);
+            GL_PlayerData._instance.SendLoginWithDraw((() =>
+            {
+                if (GL_PlayerData._instance._NetCbLoginConfig!=null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count>1)
+                {
+                   ShowUI(SysDefine.UI_Path_NewLogin);
+                }
+            }));
         }
+        
+        
         
     }
 

@@ -153,22 +153,19 @@ public class GL_AD_Logic : Singleton<GL_AD_Logic>
 
             GL_PlayerData._instance.SystemConfig.viewAds += 1;
             
-            if (!GL_CoreData._instance.AbTest)
+            MethodExeTool.Invoke(() =>
             {
-                MethodExeTool.Invoke(() =>
+                GL_GameEvent._instance.SendEvent(EEventID.RefreshGrowMoney);
+                    
+                    
+                if (GL_PlayerData._instance._PlayerCostState == null 
+                    || GL_PlayerData._instance._PlayerCostState._costState == CostState.Normal)
                 {
-                    GL_GameEvent._instance.SendEvent(EEventID.RefreshGrowMoney);
+                    GL_PlayerData._instance.SendSystemConfig();
+                }    
                     
-                    
-                    if (GL_PlayerData._instance._PlayerCostState == null 
-                        || GL_PlayerData._instance._PlayerCostState._costState == CostState.Normal)
-                    {
-                        GL_PlayerData._instance.SendSystemConfig();
-                    }    
-                    
-                }, 0.3f);
-               
-            }
+            }, 0.3f);
+
         }
         
         if(_adCallbackDic.ContainsKey(sj.adSite))

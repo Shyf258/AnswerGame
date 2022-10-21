@@ -57,7 +57,18 @@ public class FF_Interstitial : Mono_Singleton_DontDestroyOnLoad<FF_Interstitial>
 /// </summary>
 public class PlayerCostState
 {
-   public CostState _costState;
+   private CostState CostState;
+
+   public CostState _costState
+   {
+      get { return CostState; }
+      set
+      {
+         CostState = value;
+         GL_GameEvent._instance.SendEvent(EEventID.RefreshLogin);
+      }
+   }
+
 }
 
 public enum  CostState

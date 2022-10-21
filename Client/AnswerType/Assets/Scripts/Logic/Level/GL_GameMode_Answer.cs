@@ -175,6 +175,9 @@ public class GL_GameMode_Answer : GL_GameMode
         {
             GL_PlayerData._instance.GetNewPlayerReward();
         }
+        
+        GL_GameEvent._instance.SendEvent(EEventID.RefreshPosition);
+        
     }
     private void GetRed(int value)
     {

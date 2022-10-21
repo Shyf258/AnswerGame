@@ -276,8 +276,14 @@ public partial class UI_IF_Main : BaseUIForm
         }
         else
         {
-            // //缩减里程碑
-            // InitPosition();
+            if (GL_PlayerData._instance._PlayerCostState._costState!= CostState.Low  
+            && GL_PlayerData._instance._PlayerCostState._costState!= CostState.Middle)
+            {
+                Transform slider = UnityHelper.FindTheChildNode(gameObject, "SmallLevelSlider");
+                slider.SetActive(true);
+                //缩减里程碑
+                InitPosition();
+            }
         }
 
         _answerPageToggle.isOn = true;
@@ -470,15 +476,18 @@ public partial class UI_IF_Main : BaseUIForm
     public override void Refresh(bool recall)
     {
         RefreshGameMode(null);
-        // if (GL_PlayerData._instance._milestoneConfig == null || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0)
-        // {
-        //     GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, null);
-        // }
-        // else
-        // {
-        //     GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
-        //     RefreshPosition(null);
-        // }
+        if (GL_PlayerData._instance._milestoneConfig == null 
+            || GL_PlayerData._instance._milestoneConfig.mileposts.Count==0
+            || GL_PlayerData._instance._PlayerCostState._costState == CostState.Low
+            || GL_PlayerData._instance._PlayerCostState._costState == CostState.Middle )
+        {
+            GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, null);
+        }
+        else
+        {
+            GL_GameEvent._instance.RegisterEvent(EEventID.RefreshPosition, RefreshPosition);
+            RefreshPosition(null);
+        }
       
 
         GL_GameEvent._instance.RegisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
@@ -497,7 +506,7 @@ public partial class UI_IF_Main : BaseUIForm
     public override void OnHide()
     {
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGameMode, RefreshGameMode);
-        // GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
+        GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshPosition, RefreshPosition);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshNewbieSignUI, RefreshNewbieSign);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshGrowMoney, RefreshMoneyGrow);
         GL_GameEvent._instance.UnregisterEvent(EEventID.RefreshLogin, RefreshLogin);
@@ -509,28 +518,31 @@ public partial class UI_IF_Main : BaseUIForm
 
     private void RefreshLogin(EventParam param)
     {
-        GL_PlayerData._instance.SendLoginWithDraw(() =>
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Vip)
         {
-            if (GL_PlayerData._instance._NetCbLoginConfig==null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count<=0)
+            GL_PlayerData._instance.SendLoginWithDraw(() =>
             {
-                _newSignInPage.SetActive(false);
-            }
-            else
-            {
-                _newSignInPage.SetActive(true);
-
-                if (GL_PlayerData._instance._NetCbLoginConfig.withDraws[0].withDrawLimit>0)
+                if (GL_PlayerData._instance._NetCbLoginConfig==null || GL_PlayerData._instance._NetCbLoginConfig.withDraws.Count<=0)
                 {
-                    _LoginText.text = "登录提现";
+                    _newSignInPage.SetActive(false);
                 }
                 else
                 {
-                    _LoginText.text = "明日再领";
-                }
+                    _newSignInPage.SetActive(true);
+
+                    if (GL_PlayerData._instance._NetCbLoginConfig.withDraws[0].withDrawLimit>0)
+                    {
+                        _LoginText.text = "登录提现";
+                    }
+                    else
+                    {
+                        _LoginText.text = "明日再领";
+                    }
               
-                _dayTips.text = $"<color=#68FF04><size=80>{GL_PlayerData._instance._NetCbLoginConfig.day}</size></color>天";
-            }
-        });
+                    _dayTips.text = $"<color=#68FF04><size=80>{GL_PlayerData._instance._NetCbLoginConfig.day}</size></color>天";
+                }
+            });
+        }
     }
     
     public void ChangeProduce()

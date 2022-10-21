@@ -58,16 +58,22 @@ public partial class UI_IF_Main
     
     protected void RefreshPosition(EventParam param)
     {
-         //关卡大于5关闭里程碑
-        if (GL_PlayerData._instance.CurLevel > 4)       
+        //  //关卡大于5关闭里程碑
+        // if (GL_PlayerData._instance.CurLevel > 4)       
+        // {
+        //     _tfLevelSlider.SetActive(false);
+        //     return;
+        // }
+        // if (GL_PlayerData._instance.CurLevel > 3)       
+        // {
+        //     _tfLevelSlider.SetActive(false);
+        // }
+        if (!_tfLevelSlider)
         {
-            _tfLevelSlider.SetActive(false);
             return;
         }
-        if (GL_PlayerData._instance.CurLevel > 3)       
-        {
-            _tfLevelSlider.SetActive(false);
-        }
+        
+        
         if (_milestoneConfig == null)
         {
             _btnSlider.interactable = false;
@@ -162,6 +168,13 @@ public partial class UI_IF_Main
                 GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency, new EventParam<EFlyItemType>(EFlyItemType.Bogus));
                 UI_HintMessage._.ShowMessage($"恭喜您，领取{reward.num * 0.01f}元红包！");
                 break;
+        }
+
+
+        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low  
+            || GL_PlayerData._instance._PlayerCostState._costState == CostState.Middle)
+        {
+            _tfLevelSlider.SetActive(false);
         }
     }
 }
