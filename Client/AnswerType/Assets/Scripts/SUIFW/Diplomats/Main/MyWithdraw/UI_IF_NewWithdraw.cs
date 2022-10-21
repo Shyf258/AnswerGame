@@ -393,7 +393,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             
             _btnRedWithdraw.interactable = false;
             
-            Invoke("ActiveRedButton",1f);
+            MethodExeTool.InvokeDT(() =>
+            {
+                _btnRedWithdraw.interactable = true;
+            }, 1f);
             
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawRed);
 
@@ -447,7 +450,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
             _btnGoldWithdraw.interactable = false;
             
-            Invoke("ActiveGoldButton",1f);
+            MethodExeTool.InvokeDT(() =>
+            {
+                _btnGoldWithdraw.interactable = true;
+            }, 1f);
             
             
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.WithDrawCoin);
@@ -467,21 +473,9 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             GoldWithdraw();
         }
 
-        /// <summary>
-        /// 激活金币提现
-        /// </summary>
-        private void ActiveGoldButton()
-        {
-            _btnGoldWithdraw.interactable = true;
-        }
+        
 
-        /// <summary>
-        /// 激活红包提现
-        /// </summary>
-        private void ActiveRedButton()
-        {
-            _btnGoldWithdraw.interactable = true;
-        }
+      
 
         /// <summary>
         /// 看广告获得金币
