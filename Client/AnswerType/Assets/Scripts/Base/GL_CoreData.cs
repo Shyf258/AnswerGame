@@ -196,11 +196,10 @@ public class GL_CoreData : Singleton<GL_CoreData>
     {
         get
         {
-            // if (GL_Game._instance._netCommonInfo.abTest == "b")
-            //     return false;
-            // else
-            
-            return true;
+            if (GL_Game._instance._netCommonInfo.abTest == "b")
+                return false;
+            else
+                return true;
         }
     }
 

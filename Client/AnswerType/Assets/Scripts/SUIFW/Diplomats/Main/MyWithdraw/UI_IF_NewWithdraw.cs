@@ -113,13 +113,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
             if ( AppSetting.BuildApp == EBuildApp.ZYXLZ)
             {
-                if (GL_CoreData._instance.AbTest )
-                {
-                    FreshBank(null);
-                }
-                else
-                {
-                }
+                FreshBank(null);
             }
             else
             {
@@ -184,18 +178,11 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         {
             GL_PlayerData._instance.SendWithDrawConfig(EWithDrawType.DailyWithDraw, () =>
             {
-                if (GL_CoreData._instance.AbTest)
-                {
-                    Init(EnumMyWithdraw.Gold);
+                Init(EnumMyWithdraw.Gold);
 
-                    //因为需要排序, 所以延迟一会检测
-                    if(GL_PlayerData._instance.IsEnoughCoin())
-                        Invoke(nameof(TriggerGuide), 0.05f);
-                }
-                else
-                {
-                    Init(EnumMyWithdraw.Gold);
-                }
+                // //因为需要排序, 所以延迟一会检测
+                // if(GL_PlayerData._instance.IsEnoughCoin())
+                //     Invoke(nameof(TriggerGuide), 0.05f);
             });
         }
         
@@ -279,7 +266,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             
             //金币
             Transform goldNode;
-            if (GL_CoreData._instance.AbTest)
+            // if (GL_CoreData._instance.AbTest)
             {
                 if (AppSetting.BuildApp == EBuildApp.ZYXLZ)
                 {
@@ -332,22 +319,23 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
                 });
             }
-            else
-            {
-                redNode.SetActive(true);
-                goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB");
-                UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
-                _txtGoldVideo = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldVideo");
-                
-                // 金币栏  领取金币按键
-                var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
-                _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
-                _btnGetGold.onClick.AddListener(OnBtnGetGold);
-                _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
-                _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
-                
-               
-            }
+            //关闭B包
+            // else
+            // {
+            //     redNode.SetActive(true);
+            //     goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB");
+            //     UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode").SetActive(false);
+            //     _txtGoldVideo = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldVideo");
+            //     
+            //     // 金币栏  领取金币按键
+            //     var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
+            //     _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
+            //     _btnGetGold.onClick.AddListener(OnBtnGetGold);
+            //     _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
+            //     _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
+            //     
+            //    
+            // }
             goldNode.SetActive(true);
             _txtGoldMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldMoney");
             _txtGoldNum = UnityHelper.GetTheChildNodeComponetScripts<Text>(goldNode.gameObject, "_txtGoldNum");
@@ -548,14 +536,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     _curGoldWithdrawData = null;
                     _txtGoldNum.text = GL_PlayerData._instance.Coin.ToString();
                     _txtGoldMoney.text = GL_PlayerData._instance.Coin_RMB + "元";
-                    if (GL_CoreData._instance.AbTest)
+                    // if (GL_CoreData._instance.AbTest)
                     {
                         CreateGold();
                     }
-                    else
-                    {
-                        CreateGoldB();
-                    }
+                    //关闭B包
+                    // else
+                    // {
+                    //     CreateGoldB();
+                    // }
                     break;
             }
         }
@@ -979,10 +968,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             RefreshRed();
             RefreshWithDrawGrow();
             GL_GameEvent._instance.SendEvent(EEventID.RefreshCurrency);
-            if (!GL_CoreData._instance.AbTest)
-            {
-                RefreshGold();
-            }
+            // RefreshGold();
         }
         
         public void CB_GoldWithDraw(string param)
@@ -1063,10 +1049,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         private void RefreshWithDrawGrow()
         {
-            if (GL_CoreData._instance.AbTest)
-            {
-                MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
-            }
+            MethodExeTool.Invoke(() => { ShowWithDrawGrow(); }, 0.5f);
         }
 
         private void ShowWithDrawGrow()

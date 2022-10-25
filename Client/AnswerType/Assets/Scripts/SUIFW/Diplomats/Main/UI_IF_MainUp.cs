@@ -80,7 +80,7 @@ public class UI_IF_MainUp : BaseUIForm
         
         Fly_MainUp.Init(this).InitData();
 
-        if (GL_CoreData._instance.AbTest && AppSetting.BuildApp == EBuildApp.ZYXLZ)
+        if (AppSetting.BuildApp == EBuildApp.ZYXLZ )
         {
             _bogusBtn.SetActive(false);
         }

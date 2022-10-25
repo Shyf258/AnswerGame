@@ -103,15 +103,12 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
 
     public override void Refresh(bool recall)
     {
-        if (GL_CoreData._instance.AbTest)
+        _close.interactable = false;
+        _timer.StartCountdown(3,0,0, () =>
         {
-            _close.interactable = false;
-            _timer.StartCountdown(3,0,0, () =>
-            {
-                _time.text = "确定";
-                _close.interactable = true;
-            },_time);
-        }
+            _time.text = "确定";
+            _close.interactable = true;
+        },_time);
        
         MethodExeTool.InvokeDT((() =>
         {

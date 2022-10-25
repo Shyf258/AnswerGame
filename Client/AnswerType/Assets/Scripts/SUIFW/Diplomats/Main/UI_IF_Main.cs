@@ -343,15 +343,16 @@ public partial class UI_IF_Main : BaseUIForm
 
         #endregion
         
-
-        if (GL_CoreData._instance.AbTest)
-        {
-            _productionPageToggle.gameObject.SetActive(true);
-        }
-        else
-        {
-            _moneyPool.transform.parent.gameObject.SetActive(true);
-        }
+        _productionPageToggle.gameObject.SetActive(true);
+        
+        // if (GL_CoreData._instance.AbTest)
+        // {
+        //     _productionPageToggle.gameObject.SetActive(true);
+        // }
+        // else
+        // {
+        //     _moneyPool.transform.parent.gameObject.SetActive(true);
+        // }
     }
 
 
@@ -570,22 +571,19 @@ public partial class UI_IF_Main : BaseUIForm
 
     private void RefreshMoneyGrow(EventParam param)
     {
-        if (GL_CoreData._instance.AbTest)
+        GL_PlayerData._instance.GetWithDrawGrowConfig(()=>
         {
-            GL_PlayerData._instance.GetWithDrawGrowConfig(()=>
+            if (GL_PlayerData._instance._WithDrawGrowConfig!=null)
             {
-                if (GL_PlayerData._instance._WithDrawGrowConfig!=null)
-                {
-                    _signDay.SetActive(true);
-                }
-                else
-                {
-                    _signDay.SetActive(false);
-                }
-                _day.text = $"已登录{GL_PlayerData._instance._WithDrawGrowConfig.day}天";
-                _dayGrow.text = $"<color=#800000>提现增幅</color><color=#ff0000><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
-            });
-        }
+                _signDay.SetActive(true);
+            }
+            else
+            {
+                _signDay.SetActive(false);
+            }
+            _day.text = $"已登录{GL_PlayerData._instance._WithDrawGrowConfig.day}天";
+            _dayGrow.text = $"<color=#800000>提现增幅</color><color=#ff0000><size=46>{GL_PlayerData._instance._WithDrawGrowConfig.growth.ToString("0")}%</size></color>";
+        });
     }
 
 
