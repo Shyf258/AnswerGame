@@ -444,7 +444,7 @@ public class GL_SDK : Mono_Singleton_DontDestroyOnLoad<GL_SDK>
             com.userSecret = GL_PlayerData._instance.UserSecret;
             com.pkgName = GL_ConstData.PackageName;
             com.vn = GetAppVersion();
-            com.vc = 7;
+            com.vc = 10;
             com.shuSecret = "testtest";
             com.cityId = "111";
             com.provinceId = "222";

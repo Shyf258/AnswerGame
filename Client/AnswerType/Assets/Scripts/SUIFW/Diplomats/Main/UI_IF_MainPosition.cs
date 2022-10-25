@@ -119,7 +119,15 @@ public partial class UI_IF_Main
         EItemType type = (EItemType)_milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].type;
         _buttonIcon.sprite = GL_RewardLogic._instance.GetItemSprite(type);
         _buttonIcon.rectTransform.sizeDelta = new Vector2(240, 240);
-        _buttonText.text = GL_RewardLogic._instance.GetItemNumber(type, _milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].num);
+        if (_milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].num > 0)
+        {
+            _buttonText.text = GL_RewardLogic._instance.GetItemNumber(type, _milestoneConfig.mileposts[_curMilestoneInfoIndex].winRewards[0].num);
+        }
+        else
+        {
+            _tfLevelSlider.SetActive(false);
+            _levelReward = false;
+        }
         _contentText.text = string.Format(_explainList[0], value);
     }
 
