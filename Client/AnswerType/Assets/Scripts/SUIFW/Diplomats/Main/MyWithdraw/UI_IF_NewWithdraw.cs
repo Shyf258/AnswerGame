@@ -93,6 +93,25 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private Transform _bankContent;
 
         private Text _bankMoney;
+
+
+
+        #region 按键组
+
+
+        /// <summary>
+        /// 红包按键组
+        /// </summary>
+        private Transform _btnGroupRed;
+
+        /// <summary>
+        /// 金币按键组
+        /// </summary>
+        private Transform _btnGroupGold;
+        
+
+        #endregion
+        
         
         #endregion
 
@@ -263,6 +282,8 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             {
                 UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
             });
+
+            _btnGroupRed = UnityHelper.FindTheChildNode(redNode.gameObject, "BtnGroup");
             
             //金币
             Transform goldNode;
@@ -318,6 +339,10 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 {
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
                 });
+                
+                
+                _btnGroupGold = UnityHelper.FindTheChildNode(goldNode.gameObject, "BtnGroup");
+                
             }
             //关闭B包
             // else
@@ -643,6 +668,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 }
                 item.Init(this,data);
             }
+
+
+            if (config.couponWithDraws.Count <4)
+            {
+                _btnGroupRed.localPosition = new Vector2(0,100f);
+            }
+            else
+            {
+                _btnGroupRed.localPosition = Vector2.zero;
+            }
+            
         }
 
         /// <summary>
@@ -687,6 +723,15 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                     SetGoldSelectState();
                 }
                 item.Init(this,data);
+            }
+            
+            if (config.couponWithDraws.Count <4)
+            {
+                _btnGroupGold.localPosition = new Vector2(0,100f);
+            }
+            else
+            {
+                _btnGroupGold.localPosition = Vector2.zero;
             }
         }
         
