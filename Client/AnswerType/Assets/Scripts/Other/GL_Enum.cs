@@ -24,6 +24,8 @@ public enum EBuildApp
     ZYXLZ = 3, //中药小郎中
     CYZDD = 4, //成语赚多多
     NJZW = 5 , //闹剧之王
+    RSDYJ4 = 6, //人生大赢家4
+    
 }
 
 #endregion

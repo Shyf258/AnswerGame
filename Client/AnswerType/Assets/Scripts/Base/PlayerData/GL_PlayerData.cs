@@ -39,9 +39,14 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         SendWithDrawConfig(EWithDrawType.Clockin);
         SendWithDrawConfig(EWithDrawType.MoneyPool);
 
-        GetMilestoneTaskConfig();
+        if (AppSetting.BuildApp != EBuildApp.RSDYJ4)
+        {
+            GetMilestoneConfig();
+        }
+        
+        // GetMilestoneTaskConfig();
+        
         GL_GuideManager._instance.CheckGuideConfig();
-        GetMilestoneConfig();
         GetPlayAdConfig();
         //if (!GL_CoreData._instance.AbTest)
         {
@@ -239,8 +244,8 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
                 (SystemConfig != null
                 && GetWithDrawConfig(EWithDrawType.Normal) != null
                 && GetWithDrawConfig(EWithDrawType.DailyWithDraw) != null
-                && _milestoneTaskConfig != null
-                && _milestoneConfig != null)
+                // && _milestoneTaskConfig != null
+                )
                 )
             {
                 set = false;
@@ -1761,20 +1766,20 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     /// </summary>
     public void GetNewPlayerReward()
     {
-        // Action action = () =>
-        // {
-        //     if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
-        //     {
-        //         SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
-        //         {
-        //             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
-        //             GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
-        //             Object[] obj =  {accept,};
-        //             UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
-        //         }));
-        //     }
-        // };
-        // SendGamecoreConfig(EGamecoreType.NewPlayer, action);
+        Action action = () =>
+        {
+            if (GetGamecoreConfig(EGamecoreType.NewPlayer).progress<1 && GetGamecoreConfig(EGamecoreType.NewPlayer)!= null)
+            {
+                SendGamecoreAccept(EGamecoreType.NewPlayer, 0, (accept =>
+                {
+                    GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.NewPlayerReceive);
+                    GL_PlayerPrefs.SetInt(EPrefsKey.IsReceiveNewPlayer,1);
+                    Object[] obj =  {accept,};
+                    UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_NewPlayerTips,obj);
+                }));
+            }
+        };
+        SendGamecoreConfig(EGamecoreType.NewPlayer, action);
     }
 
     #endregion

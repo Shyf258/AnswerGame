@@ -197,16 +197,16 @@ public class FF_Task_Config
         }
         else
         {
-            Net_DrawMilestoneTask report= new Net_DrawMilestoneTask();
-            report.taskId = ID;
-            //上报
-            GL_ServerCommunication._instance.Send(Cmd.MilestoneTaskPost, JsonUtility.ToJson(report), (string param) =>
-            {
-                GL_PlayerData._instance.GetMilestoneTaskConfig();
-                
-                Action action = () => {CoinRepeat();};
-                UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetCoin,new object[]{count,action,timeWithDraw,actionFresh,pagetype});
-            });
+            // Net_DrawMilestoneTask report= new Net_DrawMilestoneTask();
+            // report.taskId = ID;
+            // //上报
+            // GL_ServerCommunication._instance.Send(Cmd.MilestoneTaskPost, JsonUtility.ToJson(report), (string param) =>
+            // {
+            //     GL_PlayerData._instance.GetMilestoneTaskConfig();
+            //     
+            //     Action action = () => {CoinRepeat();};
+            //     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetCoin,new object[]{count,action,timeWithDraw,actionFresh,pagetype});
+            // });
         }
         
    

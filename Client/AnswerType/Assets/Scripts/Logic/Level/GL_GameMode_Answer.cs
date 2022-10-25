@@ -174,10 +174,10 @@ public class GL_GameMode_Answer : GL_GameMode
         
         //停用新人奖励
         
-        // if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 && GL_PlayerData._instance.CurLevel ==2)
-        // {
-        //     GL_PlayerData._instance.GetNewPlayerReward();
-        // }
+        if (GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0 && GL_PlayerData._instance.CurLevel ==2 && AppSetting.BuildApp == EBuildApp.RSDYJ4 )
+        {
+            GL_PlayerData._instance.GetNewPlayerReward();
+        }
         
         GL_GameEvent._instance.SendEvent(EEventID.RefreshPosition);
         

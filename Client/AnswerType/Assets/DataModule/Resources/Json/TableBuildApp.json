@@ -43,5 +43,14 @@
     "PackageName": "com.ciyunjinchan.cyjcnjzw",
     "ProductEnName": "LifeWinnerGold",
     "IconPath": "icon_njzw"
+  },
+  "6": {
+    "ID": 6,
+    "ProductName": "人生大赢家",
+    "PackageName": "com.ciyunjinchan.rsdyjfour",
+    "ProductEnName": "LifeWinnerGold",
+    "WeChatAppID": "wxd52defb34b5b6f87",
+    "IconPath": "icon_rsdyjzj",
+    "LoadingImage": "LoadingIcon_02"
   }
 }
