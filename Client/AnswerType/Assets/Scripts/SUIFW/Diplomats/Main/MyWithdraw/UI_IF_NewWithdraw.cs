@@ -339,9 +339,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 {
                     UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_DayGrow);
                 });
+
+
+                if (AppSetting.BuildApp == EBuildApp.RSDYJ4)
+                {
+                    _btnGroupGold = UnityHelper.FindTheChildNode(goldNode.gameObject, "BtnGroup");
+                }
                 
-                
-                _btnGroupGold = UnityHelper.FindTheChildNode(goldNode.gameObject, "BtnGroup");
                 
             }
             //关闭B包
@@ -724,14 +728,17 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                 }
                 item.Init(this,data);
             }
-            
-            if (config.couponWithDraws.Count <4)
+
+            if (AppSetting.BuildApp == EBuildApp.RSDYJ4)
             {
-                _btnGroupGold.localPosition = new Vector2(0,100f);
-            }
-            else
-            {
-                _btnGroupGold.localPosition = Vector2.zero;
+                if (config.couponWithDraws.Count <7)
+                {
+                    _btnGroupGold.localPosition = new Vector2(0,50f);
+                }
+                else
+                {
+                    _btnGroupGold.localPosition = Vector2.zero;
+                }
             }
         }
         

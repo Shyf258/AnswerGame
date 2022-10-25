@@ -188,15 +188,25 @@ public class UI_IF_Loading : BaseUIForm
     {
         switch (AppSetting.BuildApp)
         {
-            case EBuildApp.RSDYJ:
-                _bgImage.sprite = _bg[0];
-                Transform rsdyj = UnityHelper.FindTheChildNode(gameObject, "RSDYJ");
-                rsdyj.SetActive(true);
-                break;
+            // case EBuildApp.RSDYJ:
+            //     _bgImage.sprite = _bg[0];
+            //     Transform rsdyj = UnityHelper.FindTheChildNode(gameObject, "RSDYJ");
+            //     rsdyj.SetActive(true);
+            //     break;
+            // case EBuildApp.RSDYJ4:
+            //     _bgImage.sprite = _bg[0];
+            //     Transform rsdyj4 = UnityHelper.FindTheChildNode(gameObject, "RSDYJ");
+            //     rsdyj4.SetActive(true);
+            //     break;
             case EBuildApp.ZYXLZ:
                 _bgImage.sprite = _bg[1];
                 Transform zyxlz = UnityHelper.FindTheChildNode(gameObject, "ZYXLZ");
                 zyxlz.SetActive(true);
+                break;
+            default:
+                _bgImage.sprite = _bg[0];
+                Transform rsdyj4 = UnityHelper.FindTheChildNode(gameObject, "RSDYJ");
+                rsdyj4.SetActive(true);
                 break;
         }
 
