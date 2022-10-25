@@ -178,47 +178,25 @@ public class GL_GameMode_Answer : GL_GameMode
         //普通领取
         if (value != 1  && GL_PlayerData._instance.AppConfig.isPassive!=1 && GL_PlayerData._instance.CurLevel >= 5)
         {
-            DDebug.LogError("当前累计次数：" + GL_PlayerData._instance._idiomConjCoinReward);
             //四关轮播激励视频
             int count = (GL_PlayerData._instance._idiomConjCoinReward) % 4;
 
             switch (count)
             {
-                case 0 :
+                case 0:
+                    DDebug.LogError("***** 播放被动插屏");
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
                     GL_PlayerData._instance._idiomConjCoinReward++;
-                    if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low
-                        || GL_PlayerData._instance._PlayerCostState._costState == CostState.Middle)
-                    {
-                        DDebug.LogError("***** 播放中低价值被动插屏");
-                        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
-                        FF_Interstitial._instance.Minus();
-                    }
-                    break;
-                case 2:
-                    GL_PlayerData._instance._idiomConjCoinReward++;
-                    if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
-                    {
-                        DDebug.LogError("***** 播放低价值被动插屏");
-                        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Interstitial_AllDialog);
-                        FF_Interstitial._instance.Minus();
-                    }
                     break;
                 case 3:
- if (GL_PlayerData._instance._PlayerCostState._costState!= CostState.Vip)
+                    DDebug.LogError("***** 播放被动激励");
+                    GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_GetDoubleReward, delegate (bool b)
                     {
-                        DDebug.LogError("***** 播放被动激励");
-                        GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_GetDoubleReward, delegate (bool b)
+                        if (b)
                         {
-                            if (b)
-                            {
-                                GL_PlayerData._instance._idiomConjCoinReward++;
-                            }
-                        });
-                    }
-                    else
-                    {
-                        GL_PlayerData._instance._idiomConjCoinReward++;
-                    }
+                            GL_PlayerData._instance._idiomConjCoinReward++;
+                        }
+                    });
                     break;
                 default:
                     GL_PlayerData._instance._idiomConjCoinReward++;
@@ -250,6 +228,7 @@ public class GL_GameMode_Answer : GL_GameMode
         }
       
     }
+
     private void GetCoin()
     {
         int level = GL_PlayerData._instance.CurLevel;

@@ -58,7 +58,7 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             return;
         if (datas.Length>0 && datas[0] is float money)
         {
-            _money = money ;
+            _money = money;
         }
 
         if (datas.Length>1 && datas[1] is EWithDrawType)
@@ -68,27 +68,29 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         }
         if (datas.Length>2 && datas[2] is int result)
         {
-            _withDrawResult =(float) result;
-            _moneyText.text = string.Format(_list[0], (_withDrawResult/100f).ToString("0.00"));
+            _withDrawResult =(float) result/100f;
+            _moneyText.text = string.Format(_list[0], _withDrawResult.ToString("0.00"));
             // DDebug.LogError("***** 体现类型："+ _eWithDrawType);
             
-            _tipsText.SetActive(true);
-            _tipsText.text = string.Format(_list[1], _money/100f, ((_withDrawResult - _money)/100f).ToString("0.00"));
+            if (GL_CoreData._instance.AbTest)
+            {
+                _tipsText.SetActive(true);
+                _tipsText.text = string.Format(_list[1], _money, (_withDrawResult - _money).ToString("0.00"));
             
-            if ((_withDrawResult -_money) < 1f)
+                if (_withDrawResult <=_money )
+                {
+                    int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
+                    int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
+                               (hour*60)) / 60;
+                    int second = GL_PlayerData._instance._WithDrawGrowConfig.countDown - (hour * 60) - (min * 60);
+                    UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
+                    _tipsText.SetActive(false);
+                }
+            }
+            else
             {
                 _tipsText.SetActive(false);
-                int hour = (GL_PlayerData._instance._WithDrawGrowConfig.countDown / 3600);
-                int min = (GL_PlayerData._instance._WithDrawGrowConfig.countDown -
-                           (hour*60)) / 60;
-                int second = GL_PlayerData._instance._WithDrawGrowConfig.countDown - (hour * 60) - (min * 60);
-                UI_HintMessage._.ShowMessage($"当前福利放完毕\n{hour.ToString("00")}" + $":{min.ToString("00")}" + $"{second.ToString("00")}" + $"小时后继续发放");
             }
-        }
-        else
-        {
-            _tipsText.SetActive(false);
-            _moneyText.text = string.Format(_list[0], (_money/100f).ToString("0.00"));
         }
        
 
@@ -113,14 +115,6 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
             },_time);
         }
        
-        MethodExeTool.InvokeDT((() =>
-        {
-            UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_WechatWithdrawTip);
-        }),1f);
-        if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
-        {
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_WithDrawSuccess);
-        } 
     }
 
     public override void RefreshLanguage()
@@ -154,12 +148,5 @@ public class UI_IF_WithdrawSuccess : BaseUIForm
         // {
         //     DateTips();
         // }
-        if (AppSetting.BuildApp == EBuildApp.ZYXLZ)
-        {
-            GL_PlayerData._instance.BankConfig.nowMoney += (_withDrawResult / 100f);
-            GL_GameEvent._instance.SendEvent(EEventID.RefreshWaitWithDraw);
-        }
-        
-        GL_AD_Interface._instance.CloseNativeAd();
     }
 }

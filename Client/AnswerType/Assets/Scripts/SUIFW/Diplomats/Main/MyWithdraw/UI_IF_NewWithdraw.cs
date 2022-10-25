@@ -94,29 +94,23 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         public override void Refresh(bool recall)
         {
+            RefreshRed();
             RefreshGold();
             RefreshPlayer();
+            RefreshRedCd();
             RefreshWithDrawGrow();
             _scrollRect.verticalNormalizedPosition = 1;
 
-            if ( AppSetting.BuildApp == EBuildApp.ZYXLZ)
+            // if (GL_CoreData._instance.AbTest)
+            // {
+            //   
+            //     FreshBank(null);
+            // }
+            // else
             {
-                if (GL_CoreData._instance.AbTest )
-                {
-                    FreshBank(null);
-                }
-                else
-                {
-                    RefreshGoldCd();
-                }
-            }
-            else
-            {
-                RefreshRed();
-                RefreshRedCd();
                 RefreshGoldCd();
             }
-          
+
         }
         private void TriggerGuide()
         {
@@ -271,50 +265,33 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             Transform goldNode;
             if (GL_CoreData._instance.AbTest)
             {
-                if (AppSetting.BuildApp == EBuildApp.ZYXLZ)
-                {
-                    redNode.SetActive(false);
-                    goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldBank");
-                }
-                else
-                {
-                    redNode.SetActive(true);
-                    goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
-                    UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB").SetActive(false);
-                    
-                    
-                    // 金币栏  领取金币按键
-                    var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
-                    _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
-                    _btnGetGold.onClick.AddListener(OnBtnGetGold);
-                    _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
-                    _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
-                    
-                    
-                }
+                redNode.SetActive(true);
+                goldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNode");
+                UnityHelper.GetTheChildNodeComponetScripts<Transform>(gameObject, "GoldNodeB").SetActive(false);
                 var btnGoldWithdraw = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(goldNode.gameObject, "_btnGoldWithdraw");
                 btnGoldWithdraw.onClick.AddListener(OnBtnGoldWithdraw);
               
                 #region 存储奖池
-
-                if (AppSetting.BuildApp == EBuildApp.ZYXLZ)
-                {
-                    _bankNode = UnityHelper.FindTheChildNode(gameObject, "BankNode");
-                    _bankContent = UnityHelper.FindTheChildNode(_bankNode.gameObject, "Content");
-                    _bankMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(_bankNode.gameObject, "Money");
-                    _bankNode.SetActive(true);
-                    //储存初始化
-                    if (GL_PlayerData._instance.BankConfig== null ||GL_PlayerData._instance.BankConfig.nowDay ==0 )
-                    {
-                        GL_PlayerData._instance.NewBankConfig();
-                    }
-                
-                    GL_GameEvent._instance.RegisterEvent(EEventID.RefreshWaitWithDraw,FreshBank);
-                }
-              
+                //
+                // _bankNode = UnityHelper.FindTheChildNode(gameObject, "BankNode");
+                // _bankContent = UnityHelper.FindTheChildNode(_bankNode.gameObject, "Content");
+                // _bankMoney = UnityHelper.GetTheChildNodeComponetScripts<Text>(_bankNode.gameObject, "Money");
+                // _bankNode.SetActive(true);
+                // //储存初始化
+                // if (GL_PlayerData._instance.BankConfig== null ||GL_PlayerData._instance.BankConfig.nowDay ==0 )
+                // {
+                //     GL_PlayerData._instance.NewBankConfig();
+                // }
+                //
+                // GL_GameEvent._instance.RegisterEvent(EEventID.RefreshWaitWithDraw,FreshBank);
                 #endregion
              
-               
+                // 金币栏  领取金币按键
+                var getGoldNode = UnityHelper.GetTheChildNodeComponetScripts<Transform>(goldNode.gameObject, "GetGoldNode");
+                _btnGetGold = UnityHelper.GetTheChildNodeComponetScripts<UI_Button>(getGoldNode.gameObject, "_btnGetGold");
+                _btnGetGold.onClick.AddListener(OnBtnGetGold);
+                _tfGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Transform>(getGoldNode.gameObject, "GoldTime");
+                _txtGoldTime = UnityHelper.GetTheChildNodeComponetScripts<Text>(getGoldNode.gameObject, "_txtGoldTime");
                 
                 _growCoin = UnityHelper.GetTheChildNodeComponetScripts<Button>(goldNode.gameObject, "OpenGrow");
                 _growCoinText = UnityHelper.GetTheChildNodeComponetScripts<Text>(_growCoin.gameObject, "Text");
@@ -402,7 +379,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void OnBtnGetRed()
         {
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetRedCoin);
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawGetRed, (success) =>
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (success) =>
             {
                 if (success)
                 {
@@ -416,7 +393,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshRedCd();
                             RefreshWithDrawGrow();
                         };
-                        object[] datas = { msg.rewards, action,true,true};
+                        object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                     }));
                 }
@@ -452,7 +429,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         private void OnBtnGetGold()
         {
             GL_Analytics_Logic._instance.SendLogEvent(EAnalyticsType.GetCoinCoin);
-            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawGetCoin, (success) =>
+            GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (success) =>
             {
                 if (success)
                 {
@@ -466,7 +443,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
                             RefreshGoldCd();
                             RefreshWithDrawGrow();
                         };
-                        object[] datas = { msg.rewards, action,true,true};
+                        object[] datas = { msg.rewards, action,true};
                         UI_Diplomats._instance.ShowUI(SysDefine.UI_Path_GetResult,datas);
                     }));
                 }
@@ -873,9 +850,6 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
 
         private void PlayAD(MyWithdrawData withdrawData)
         {
-            
-            string ad= GL_AD_Interface.AD_Reward_WithDrawCoin;
-            
             //提现广告播放成功
             Net_WithDraw draw = new Net_WithDraw();
             draw.withDrawId = withdrawData.WithDraw.id;
@@ -898,32 +872,13 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             //第一天播放广告
             if (IsFirstDay(withdrawData))
             {
-
-                switch (withdrawData.EnumMyWithdraw)
+                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Reward_WithDrawCoin, (set) =>
                 {
-                    case EnumMyWithdraw.Red:
-                        ad = GL_AD_Interface.AD_Reward_WithDrawRed;
-                        break;
-                    case EnumMyWithdraw.Gold:
-                        ad = GL_AD_Interface.AD_Reward_WithDrawCoin;
-                        break;
-                }
-
-                if (GL_PlayerData._instance._PlayerCostState._costState != CostState.Vip)
-                {
-                    GL_AD_Logic._instance.PlayAD(ad, (set) =>
+                    if (set)
                     {
-                        if (set)
-                        {
-                            action.Invoke();
-                        }
-                    });
-                }
-                else
-                {
-                    action.Invoke();
-                }
-               
+                        action.Invoke();
+                    }
+                });
             }
             else
             {
@@ -935,7 +890,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
         public void CB_RedWithDraw(string param)
         {
             GL_PlayerData._instance.Net_CB_WithDrawResult(param);
-            float money = _curRedWithdrawData.WithDraw.money ;
+            float money = _curRedWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.CashWithDraw;
             var obj = new object[]
             {
@@ -971,7 +926,7 @@ namespace SUIFW.Diplomats.Main.MyWithdraw
             }
             
             GL_PlayerData._instance.Net_CB_WithDrawResult(param);
-            float money = _curGoldWithdrawData.WithDraw.money ;
+            float money = _curGoldWithdrawData.WithDraw.money * 0.01f;
             EWithDrawType _eWithDrawType = EWithDrawType.DailyWithDraw;
             var obj = new object[]
             {

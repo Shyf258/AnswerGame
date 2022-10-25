@@ -55,9 +55,8 @@ public class GL_ConstData
     
     //广告场景-装盘
     public const int SceneID_Turn = 1000008;
+       
 
-    //广告价值分层被动插屏点击数
-    public const int Interstitial = 10;
     #region 游戏数值设定
     //单元格尺寸
     public const int CellSize = 75;

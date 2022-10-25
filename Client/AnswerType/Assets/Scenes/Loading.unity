@@ -427,18 +427,9 @@ MonoBehaviour:
   - Reright
   _interstitialList:
   - AllDialog
-  - ChangePage
   _nativeList:
   - LevelReward
-  - WithDrawSuccess
-  - DragRedPack
-  _bannerList:
-  - Procduction
-  - LoginPage
-  - WithDrawGrow
-  - DragRedPack
-  - VideoRedPack
-  - CoinSign
+  _bannerList: []
   _splashList:
   - Splash
 --- !u!1 &1018283570322439

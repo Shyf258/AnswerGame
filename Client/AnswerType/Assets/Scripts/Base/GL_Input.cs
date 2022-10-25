@@ -355,9 +355,8 @@ public class GL_Input : Mono_Singleton_DontDestroyOnLoad<GL_Input>
         }
     }
 
-    public bool Sweep()
+    private void Sweep()
     {
-       
         for (var i = fingers.Count - 1; i >= 0; i--)
         {
             var finger = fingers[i];
@@ -365,10 +364,8 @@ public class GL_Input : Mono_Singleton_DontDestroyOnLoad<GL_Input>
             if (finger.Marked == true && finger.Set == true)
             {
                 finger.Up = true;
-                return true;
             }
         }
-        return false;
     }
 
     private void Poll()

@@ -60,7 +60,7 @@ namespace SUIFW.Diplomats.Common
             base.InitData(data);
             
             _isActiveMainUp = false;
-            _isFinishAd = false;
+            
             if (data is object[] datas)
             {
                 if (datas[0] is List<Rewards> config)
@@ -84,15 +84,6 @@ namespace SUIFW.Diplomats.Common
                         _isActiveMainUp = bl;
                     }
                 }
-                
-                if (datas.Length > 3)
-                {
-                    if (datas[3] is bool playad)
-                    {
-                        _isFinishAd = playad;
-                    }
-                }
-
             }
         }
 
@@ -104,28 +95,11 @@ namespace SUIFW.Diplomats.Common
         public override void Refresh(bool recall)
         {
             
-            if (GL_PlayerData._instance._PlayerCostState._costState == CostState.Low)
-            {
-                GL_AD_Logic._instance.PlayAD(GL_AD_Interface.AD_Native_DragRedPack);
-            } 
         }
 
         public override void onUpdate()
         {
 
-        }
-
-        public override void OnHide()
-        {
-            base.OnHide();
-
-            if (_isFinishAd && GL_PlayerPrefs.GetInt(EPrefsKey.IsReceiveNewPlayer) == 0)
-            {
-                GL_PlayerData._instance.GetNewPlayerReward();
-            }
-            
-            GL_AD_Interface._instance.CloseNativeAd();
-            
         }
 
         #endregion
@@ -163,11 +137,6 @@ namespace SUIFW.Diplomats.Common
         /// </summary>
         private bool _isActiveMainUp;
 
-        /// <summary>
-        /// 是否完成广告播放
-        /// </summary>
-        private bool _isFinishAd = false;
-        
         #endregion
 
         #region Logic

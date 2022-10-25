@@ -349,14 +349,6 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
         //数据刷新后面在做
         SystemConfig = msg;
    
-        if (_PlayerCostState == null)
-        {
-            _PlayerCostState = new PlayerCostState();
-        }
-        _PlayerCostState._costState = (CostState) SystemConfig.playerLayer;
-        
-        DDebug.LogError("***** 用户分层：" + _PlayerCostState._costState);
-        
         if (_loginWaitCallback != null)
         {
             MethodExeTool.CancelInvoke(SendSystemConfig);
@@ -426,19 +418,6 @@ public class GL_PlayerData : Singleton<GL_PlayerData>
     
     #endregion
 
-    #region 插屏播放
-
-
-    /// <summary>
-    /// 用户价值
-    /// </summary>
-    public PlayerCostState _PlayerCostState;
-
-    
-
-
-    #endregion
-    
     #region 提现储存池配置
 
     
