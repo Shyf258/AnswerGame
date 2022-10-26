@@ -158,7 +158,7 @@ public partial class UI_IF_Main
     private void OnClickChoice(int index)
     {
         GL_SceneManager._instance.CurGameMode.UI_Choice(index);
-        GL_SceneManager._instance._levelAudio.StopAudio();
+         GL_SceneManager._instance._levelAudio.StopAudio();
         // MoveChoiceGroup(false);
     }
 

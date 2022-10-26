@@ -78,6 +78,10 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
                     {
                         _resList.Add(string.Format(AudioUrl, audio));
                     }
+                    else
+                    {
+                        _resList.Add(string.Format(AudioUrl, index));
+                    }
                 }
 
                 string pPath = CalculatePictureUrl(index);
@@ -128,6 +132,10 @@ public class GL_VersionManager : Singleton<GL_VersionManager>
                 if (!audio.Equals(index.ToString()))
                 {
                     _resList.Add(string.Format(AudioUrl, audio));
+                }
+                else
+                {
+                    _resList.Add(string.Format(AudioUrl, index));
                 }
             }
 
