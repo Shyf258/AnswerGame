@@ -1,0 +1,7834 @@
+{
+  "btn_continue1": {
+    "ID": "btn_continue1",
+    "EN": "Continue",
+    "CN": "继续"
+  },
+  "btn_continue2": {
+    "ID": "btn_continue2",
+    "EN": "Next Level",
+    "CN": "继续下一关"
+  },
+  "btn_start": {
+    "ID": "btn_start",
+    "EN": "Start",
+    "CN": "开始"
+  },
+  "btn_free": {
+    "ID": "btn_free",
+    "EN": "Free",
+    "CN": "免费"
+  },
+  "btn_play": {
+    "ID": "btn_play",
+    "EN": "Play",
+    "CN": "玩一次"
+  },
+  "btn_showMore": {
+    "ID": "btn_showMore",
+    "EN": "Show More",
+    "CN": "显示更多"
+  },
+  "btn_claim": {
+    "ID": "btn_claim",
+    "EN": "Claim",
+    "CN": "获取"
+  },
+  "btn_unfinished": {
+    "ID": "btn_unfinished",
+    "EN": "Unfinished",
+    "CN": "未完成"
+  },
+  "btn_buy": {
+    "ID": "btn_buy",
+    "EN": "Buy",
+    "CN": "购买"
+  },
+  "btn_morelives": {
+    "ID": "btn_morelives",
+    "EN": "Top up your lives",
+    "CN": "补满体力"
+  },
+  "btn_full": {
+    "ID": "btn_full",
+    "EN": "Your lives are full",
+    "CN": "体力已满"
+  },
+  "btn_revive": {
+    "ID": "btn_revive",
+    "EN": "Revive",
+    "CN": "复活"
+  },
+  "btn_tryagain": {
+    "ID": "btn_tryagain",
+    "EN": "Try Again",
+    "CN": "再试一次"
+  },
+  "btn_leave": {
+    "ID": "btn_leave",
+    "EN": "Leave",
+    "CN": "离开"
+  },
+  "btn_go": {
+    "ID": "btn_go",
+    "EN": "Go",
+    "CN": "前往"
+  },
+  "btn_playon": {
+    "ID": "btn_playon",
+    "EN": "Play On",
+    "CN": "开始"
+  },
+  "btn_cancel": {
+    "ID": "btn_cancel",
+    "EN": "Cancel",
+    "CN": "取消"
+  },
+  "btn_ok": {
+    "ID": "btn_ok",
+    "EN": "Ok",
+    "CN": "好的"
+  },
+  "btn_change": {
+    "ID": "btn_change",
+    "EN": "Change",
+    "CN": "更换"
+  },
+  "btn_create": {
+    "ID": "btn_create",
+    "EN": "Create",
+    "CN": "创建"
+  },
+  "btn_info": {
+    "ID": "btn_info",
+    "EN": "Info",
+    "CN": "详情"
+  },
+  "btn_Pending": {
+    "ID": "btn_Pending",
+    "EN": "Pending",
+    "CN": "等待"
+  },
+  "btn_find": {
+    "ID": "btn_find",
+    "EN": "Find",
+    "CN": "搜索"
+  },
+  "btn_show": {
+    "ID": "btn_show",
+    "EN": "Show",
+    "CN": "显示"
+  },
+  "btn_join": {
+    "ID": "btn_join",
+    "EN": "Join",
+    "CN": "加入"
+  },
+  "btn_help": {
+    "ID": "btn_help",
+    "EN": "Help",
+    "CN": "帮助"
+  },
+  "btn_message": {
+    "ID": "btn_message",
+    "EN": "Message",
+    "CN": "发送消息"
+  },
+  "btn_request": {
+    "ID": "btn_request",
+    "EN": "Request",
+    "CN": "请求体力"
+  },
+  "btn_leaveteam": {
+    "ID": "btn_leaveteam",
+    "EN": "Leave Team",
+    "CN": "离开队伍"
+  },
+  "btn_thinkagain": {
+    "ID": "btn_thinkagain",
+    "EN": "Think\\nAgain",
+    "CN": "再考虑下"
+  },
+  "btn_edit": {
+    "ID": "btn_edit",
+    "EN": "Edit",
+    "CN": "编辑"
+  },
+  "btn_save": {
+    "ID": "btn_save",
+    "EN": "Save",
+    "CN": "保存"
+  },
+  "btn_reject": {
+    "ID": "btn_reject",
+    "EN": "Reject",
+    "CN": "拒绝"
+  },
+  "btn_agree": {
+    "ID": "btn_agree",
+    "EN": "Agree",
+    "CN": "同意"
+  },
+  "btn_transfer": {
+    "ID": "btn_transfer",
+    "EN": "Transfer Leader",
+    "CN": "转让队长"
+  },
+  "btn_kick": {
+    "ID": "btn_kick",
+    "EN": "Kick Out!",
+    "CN": "踢出队伍！"
+  },
+  "btn_world": {
+    "ID": "btn_world",
+    "EN": "World",
+    "CN": "世界"
+  },
+  "btn_postcard": {
+    "ID": "btn_postcard",
+    "EN": "Post Card",
+    "CN": "明信片"
+  },
+  "btn_usefreelive": {
+    "ID": "btn_usefreelive",
+    "EN": "Use free lives",
+    "CN": "使用免费体力"
+  },
+  "btn_refill": {
+    "ID": "btn_refill",
+    "EN": "Refill",
+    "CN": "补满体力"
+  },
+  "btn_freelives": {
+    "ID": "btn_freelives",
+    "EN": "Free lives",
+    "CN": "免费体力"
+  },
+  "btn_terms": {
+    "ID": "btn_terms",
+    "EN": "Terms of Use",
+    "CN": "用户协议"
+  },
+  "btn_privavypolicy": {
+    "ID": "btn_privavypolicy",
+    "EN": "Privacy Policy",
+    "CN": "隐私条款"
+  },
+  "btn_restore": {
+    "ID": "btn_restore",
+    "EN": "Restore",
+    "CN": "恢复购买"
+  },
+  "btn_apple": {
+    "ID": "btn_apple",
+    "EN": "Login with Apple",
+    "CN": "以Apple账号登录"
+  },
+  "btn_facebook": {
+    "ID": "btn_facebook",
+    "EN": "Login with Facebook",
+    "CN": "以Facebook登陆"
+  },
+  "btn_yes": {
+    "ID": "btn_yes",
+    "EN": "Yes",
+    "CN": "是"
+  },
+  "btn_no": {
+    "ID": "btn_no",
+    "EN": "No",
+    "CN": "否"
+  },
+  "btn_Claimed": {
+    "ID": "btn_Claimed",
+    "EN": "Claimed",
+    "CN": "已领取"
+  },
+  "btn_Expired": {
+    "ID": "btn_Expired",
+    "EN": "Expired",
+    "CN": "已失效"
+  },
+  "btn_Claim": {
+    "ID": "btn_Claim",
+    "EN": "Claim",
+    "CN": "领取"
+  },
+  "btn_starts": {
+    "ID": "btn_starts",
+    "EN": "Give us five starts",
+    "CN": "前往评价"
+  },
+  "btn_nexttime": {
+    "ID": "btn_nexttime",
+    "EN": "Next time",
+    "CN": "下次再说"
+  },
+  "btn_bank_more": {
+    "ID": "btn_bank_more",
+    "EN": "MORE",
+    "CN": "更多"
+  },
+  "btn_break": {
+    "ID": "btn_break",
+    "EN": "Break!",
+    "CN": "打碎！"
+  },
+  "btn_upgrade": {
+    "ID": "btn_upgrade",
+    "EN": "Upgrade!",
+    "CN": "升级！"
+  },
+  "btn_Activate": {
+    "ID": "btn_Activate",
+    "EN": "Activate",
+    "CN": "激活"
+  },
+  "rule_title_lottery": {
+    "ID": "rule_title_lottery",
+    "EN": "Lottery Rules",
+    "CN": "金币抽奖规则"
+  },
+  "rule_des_lottery": {
+    "ID": "rule_des_lottery",
+    "EN": "1. The base number of coins changes after each draw.\\n\\n2.The lottery is limited up to 3 times per day.",
+    "CN": "1.每次进行金币抽奖后金币基数都会发生改变。\\n\\n2.金币抽奖每日上限3次。"
+  },
+  "rule_title_vip": {
+    "ID": "rule_title_vip",
+    "EN": "VIP Rules",
+    "CN": "黄金月卡规则"
+  },
+  "rule_des_vip": {
+    "ID": "rule_des_vip",
+    "EN": "1. The VIP Card is valid for 30 days from the day of purchase.\\n\\n2.The VIP Card can only be purchased once within 30 days.\\n\\n3.The daily rewards of the VIP Card will be refreshed every day after 0:00.",
+    "CN": "1.黄金月卡有效期为购买当日起算30天。\\n\\n2.黄金月卡30天内只能购买一次。\\n\\n3.黄金月卡的每日奖励将在每日0点后刷新。"
+  },
+  "rule_title_piggybank": {
+    "ID": "rule_title_piggybank",
+    "EN": "Piggy Bank Rules",
+    "CN": "猪猪储蓄罐规则"
+  },
+  "rule_des_piggybank": {
+    "ID": "rule_des_piggybank",
+    "EN": "1. You can deposit coins into the piggy bank if you pass level successfully.\\n\\n2.After collecting {0} gold coins, you can buy a piggy bank at a discounted price.\\n\\n3.After the piggy bank is full, no coins can be collected.",
+    "CN": "1.成功过关可以向猪猪储蓄罐存入金币。\\n\\n2.收集满 {0} 金币后您可用实惠的价格购买猪猪储蓄罐。\\n\\n3.猪猪储蓄罐存满后无法在再收集额外的金币。"
+  },
+  "rule_title_luckywheel": {
+    "ID": "rule_title_luckywheel",
+    "EN": "Lucky Wheel Rules",
+    "CN": "幸运大转盘规则"
+  },
+  "rule_des_luckywheel": {
+    "ID": "rule_des_luckywheel",
+    "EN": "1. There is a 30-minute cooling time after each spin.\\n\\n2.The Lucky Wheel has a daily limit of 5 times.\\n\\n3.Monthly Golden Ticket holders can obtain extra lucky chests.\\n\\n4. Rewards are refreshed every day at 0:00.",
+    "CN": "1.转动幸运大转盘后需等30分钟才能再次转动。\\n\\n2.幸运大转盘每日上限5次。\\n\\n3.黄金月卡可以额外获取幸运宝箱。\\n\\n4.幸运大转盘宝箱奖励每日0点后刷新。"
+  },
+  "rule_title_bignner": {
+    "ID": "rule_title_bignner",
+    "EN": "Beginner Bundle Rules",
+    "CN": "新手礼包规则"
+  },
+  "rule_des_bignner": {
+    "ID": "rule_des_bignner",
+    "EN": "1. You can get coin and booster rewards immediately by purchasing Beginner Bundle. \\n\\n2. Additional daily rewards can be collected in three consecutive days, starting from the second day after purchase. \\n\\n3. The reward of the day will be invalid if it's not collected within each day.",
+    "CN": "1.购买新手礼包即可立即获得大量金币和道具奖励。\\n\\n2.从礼包购买后的第二天开始，连续三天，每天可获得额外奖励。\\n\\n3.若领取时间内未领取当天奖励，则该奖励失效，无法领取。"
+  },
+  "item_name_201": {
+    "ID": "item_name_201",
+    "EN": "Crystal Ball",
+    "CN": "占卜球"
+  },
+  "item_name_204": {
+    "ID": "item_name_204",
+    "EN": "Quack Quack",
+    "CN": "小鸭冲锋队"
+  },
+  "item_name_205": {
+    "ID": "item_name_205",
+    "EN": "COMBO+1",
+    "CN": "连击+1"
+  },
+  "item_name_301": {
+    "ID": "item_name_301",
+    "EN": "Hammer",
+    "CN": "小锤子"
+  },
+  "item_name_302": {
+    "ID": "item_name_302",
+    "EN": "Magic Glove",
+    "CN": "魔术手套"
+  },
+  "item_name_304": {
+    "ID": "item_name_304",
+    "EN": "Magic Hat",
+    "CN": "魔术帽"
+  },
+  "item_name_306": {
+    "ID": "item_name_306",
+    "EN": "Ultra Energy Booster",
+    "CN": "超级能量罐"
+  },
+  "item_name_307": {
+    "ID": "item_name_307",
+    "EN": "Hammer",
+    "CN": "小锤子"
+  },
+  "item_des_201": {
+    "ID": "item_des_201",
+    "EN": "Forsee the next drop",
+    "CN": "可以预先知道下一只动物"
+  },
+  "item_des_204": {
+    "ID": "item_des_204",
+    "EN": "Get 5 ducks from the beginning",
+    "CN": "可以在开局获得五只鸭子"
+  },
+  "item_des_205": {
+    "ID": "item_des_205",
+    "EN": "Add the number of combo",
+    "CN": "可以在获得连击效果时多加1次连击"
+  },
+  "item_des_301": {
+    "ID": "item_des_301",
+    "EN": "Eliminate any animal or item directly",
+    "CN": "直接消除任意一只动物或物品"
+  },
+  "item_des_302": {
+    "ID": "item_des_302",
+    "EN": "Select an animal as the next drop",
+    "CN": "选择并拿起一只动物用于接下来的投掷"
+  },
+  "item_des_304": {
+    "ID": "item_des_304",
+    "EN": "Select one animal to upgrade",
+    "CN": "选择一只动物直接升一级"
+  },
+  "item_des_306": {
+    "ID": "item_des_306",
+    "EN": "Select one animal and upgrade all of them",
+    "CN": "选择一只动物，它和所有同类都会升一级"
+  },
+  "item_des_307": {
+    "ID": "item_des_307",
+    "EN": "Clear off any animal and its surroundings",
+    "CN": "直接消除任意一只动物及其周围的东西"
+  },
+  "item_ball_101": {
+    "ID": "item_ball_101",
+    "EN": "Red Energy Booster",
+    "CN": "红色能量瓶"
+  },
+  "item_ball_102": {
+    "ID": "item_ball_102",
+    "EN": "Blue Energy Booster",
+    "CN": "蓝色能量瓶"
+  },
+  "item_ball_103": {
+    "ID": "item_ball_103",
+    "EN": "Rainbow Energy Booster",
+    "CN": "彩色能量瓶"
+  },
+  "life_title": {
+    "ID": "life_title",
+    "EN": "More Lives!",
+    "CN": "更多体力!"
+  },
+  "life_unfulfilled": {
+    "ID": "life_unfulfilled",
+    "EN": "Next life in:",
+    "CN": "下一次体力恢复时间:"
+  },
+  "life_full": {
+    "ID": "life_full",
+    "EN": "Lives are full",
+    "CN": "体力已满"
+  },
+  "life_time": {
+    "ID": "life_time",
+    "EN": "{0} time(s) free ad reward left today",
+    "CN": "今日剩余观看次数:   {0}"
+  },
+  "life_full_tip": {
+    "ID": "life_full_tip",
+    "EN": "lives are full, enjoy this game now!",
+    "CN": "体力已满，去畅玩关卡吧！"
+  },
+  "life_havetime": {
+    "ID": "life_havetime",
+    "EN": "You can get one life when the countdown is over.",
+    "CN": "倒计时结束就可以获得一点体力哦"
+  },
+  "life_full_homepage": {
+    "ID": "life_full_homepage",
+    "EN": "Full",
+    "CN": "已满"
+  },
+  "ingame_ level_title": {
+    "ID": "ingame_ level_title",
+    "EN": "- LEVEL  {0} -",
+    "CN": "- 第 {0} 关 -"
+  },
+  "ingame_ choose_des": {
+    "ID": "ingame_ choose_des",
+    "EN": "Select boosters",
+    "CN": "选择本局携带的增益道具"
+  },
+  "ingame_ choose_unlock": {
+    "ID": "ingame_ choose_unlock",
+    "EN": "LV. {0} Unlock",
+    "CN": "第 {0} 关解锁"
+  },
+  "ingame_ life": {
+    "ID": "ingame_ life",
+    "EN": "Need more lives",
+    "CN": "体力已耗尽"
+  },
+  "ingame_ drops": {
+    "ID": "ingame_ drops",
+    "EN": "Drops",
+    "CN": "剩余步数"
+  },
+  "ingame_ goal": {
+    "ID": "ingame_ goal",
+    "EN": "Goals",
+    "CN": "本关目标"
+  },
+  "ingame_ level": {
+    "ID": "ingame_ level",
+    "EN": "Level {0}",
+    "CN": "第 {0} 关"
+  },
+  "ingame_ girl": {
+    "ID": "ingame_ girl",
+    "EN": "Complete the following goals",
+    "CN": "本关需要完成以下目标"
+  },
+  "ingame_ comolete": {
+    "ID": "ingame_ comolete",
+    "EN": "LEVEL COMPLETE",
+    "CN": "挑战成功"
+  },
+  "ingame_ reward": {
+    "ID": "ingame_ reward",
+    "EN": "Reward",
+    "CN": "奖励"
+  },
+  "ingame_outofdrops": {
+    "ID": "ingame_outofdrops",
+    "EN": "OUT OF DROPS",
+    "CN": "步数已耗尽"
+  },
+  "ingame_outofdrops_out": {
+    "ID": "ingame_outofdrops_out",
+    "EN": "Can't add more drops.\\nPlease try again.",
+    "CN": "当前加步数已耗尽，\\n请重新挑战吧～"
+  },
+  "ingame_collect_des": {
+    "ID": "ingame_collect_des",
+    "EN": "You still need to collect",
+    "CN": "距离过关还需要收集:"
+  },
+  "ingame_failed": {
+    "ID": "ingame_failed",
+    "EN": "FAILED",
+    "CN": "挑战失败"
+  },
+  "ingame_failed_girl1": {
+    "ID": "ingame_failed_girl1",
+    "EN": "Out of \\n revival card",
+    "CN": "复活卡\\n数量不足"
+  },
+  "ingame_failed_out": {
+    "ID": "ingame_failed_out",
+    "EN": "Can't revive.\\nPlease try again.",
+    "CN": "当前复活次数已用尽，\\n请重新挑战吧～"
+  },
+  "ingame_failed_card": {
+    "ID": "ingame_failed_card",
+    "EN": "Remaining Revival Card:   {0}",
+    "CN": "剩余复活卡:   {0}"
+  },
+  "ingame_leaving": {
+    "ID": "ingame_leaving",
+    "EN": "Quit Level?",
+    "CN": "要离开吗？"
+  },
+  "ingame_leaving_des": {
+    "ID": "ingame_leaving_des",
+    "EN": "You will lose the following items:",
+    "CN": "直接离开将损失以下物品："
+  },
+  "ingame_reward_repeat": {
+    "ID": "ingame_reward_repeat",
+    "EN": "You won't get reward if the star count is less than or equal to your highest score.",
+    "CN": "本次星数低于或等于您的最高分，不获得金币"
+  },
+  "ingame_man": {
+    "ID": "ingame_man",
+    "EN": "VIP will get this extra drops for free!",
+    "CN": "成为VIP，本次增加步数将免费哦"
+  },
+  "ingame_colorword": {
+    "ID": "ingame_colorword",
+    "EN": "<color=#017BDA>Quit now? You will lose your</color>",
+    "CN": "<color=#017BDA>现在离开，你将会失去收集的</color>"
+  },
+  "ingame_colorkey": {
+    "ID": "ingame_colorkey",
+    "EN": "<color=#D13434>Keys!</color>",
+    "CN": "<color=#D13434>钥匙！</color>"
+  },
+  "ingame_10drops": {
+    "ID": "ingame_10drops",
+    "EN": "Last 10 drops!",
+    "CN": "最后10步！"
+  },
+  "ingame_click": {
+    "ID": "ingame_click",
+    "EN": "Click",
+    "CN": "点击打开"
+  },
+  "ingame_hard": {
+    "ID": "ingame_hard",
+    "EN": "Hard!",
+    "CN": "难度关！"
+  },
+  "ingame_superhard": {
+    "ID": "ingame_superhard",
+    "EN": "Super\\nHard!",
+    "CN": "超难关！"
+  },
+  "ingame_tap": {
+    "ID": "ingame_tap",
+    "EN": "Tap to Skip",
+    "CN": "点击跳过"
+  },
+  "ingame_tap2": {
+    "ID": "ingame_tap2",
+    "EN": "Tap to Open",
+    "CN": "点击打开"
+  },
+  "reward_achievement1": {
+    "ID": "reward_achievement1",
+    "EN": "Congratulations! \\n Achievement accomplished!",
+    "CN": "恭喜你完成成就！"
+  },
+  "reward_achievement2": {
+    "ID": "reward_achievement2",
+    "EN": "Achieve more, earn more!",
+    "CN": "完成的成就越多，能得到的奖励越多！"
+  },
+  "reward_task1": {
+    "ID": "reward_task1",
+    "EN": "Those who complete daily missions are the best!",
+    "CN": "每天做任务的人最棒！"
+  },
+  "reward_task2": {
+    "ID": "reward_task2",
+    "EN": "Victory belongs to the most persevering!",
+    "CN": "真是有毅力的家伙！"
+  },
+  "reward_lottery": {
+    "ID": "reward_lottery",
+    "EN": "Wow! Today is your lucky day!",
+    "CN": "哇哦，你的运气可真好"
+  },
+  "reward_rotateDraw": {
+    "ID": "reward_rotateDraw",
+    "EN": "Lucky you!",
+    "CN": "你真是个幸运儿！"
+  },
+  "reward_rotateDraw_box": {
+    "ID": "reward_rotateDraw_box",
+    "EN": "Only Monthly Golden Ticket holders can open the lucky chest.",
+    "CN": "只有黄金月卡VIP才可以开启幸运宝箱哦"
+  },
+  "reward_sign": {
+    "ID": "reward_sign",
+    "EN": "Come back and get more tomorrow!",
+    "CN": "明天记得来领取哦！"
+  },
+  "reward_star": {
+    "ID": "reward_star",
+    "EN": "Collect more stars for more reward",
+    "CN": "去收集更多的星星来获得奖励吧"
+  },
+  "reward_continue": {
+    "ID": "reward_continue",
+    "EN": "Tap anywhere to continue",
+    "CN": "点击任意位置继续"
+  },
+  "reward_min": {
+    "ID": "reward_min",
+    "EN": "{0} m",
+    "CN": "{0} 分钟"
+  },
+  "reward_hour": {
+    "ID": "reward_hour",
+    "EN": "{0} h",
+    "CN": "{0} 小时"
+  },
+  "unlock_title": {
+    "ID": "unlock_title",
+    "EN": "Unlock",
+    "CN": "未解锁"
+  },
+  "unlock_des": {
+    "ID": "unlock_des",
+    "EN": "Need more starts",
+    "CN": "未获得足够多的星星哦，请达到数量后再来～"
+  },
+  "start_title": {
+    "ID": "start_title",
+    "EN": "Star Reward",
+    "CN": "星星奖励"
+  },
+  "bestReward": {
+    "ID": "bestReward",
+    "EN": "Best Reward",
+    "CN": "最高奖励"
+  },
+  "ninebox_des": {
+    "ID": "ninebox_des",
+    "EN": "You've got 3 keys\\nopen the treasure chest now!",
+    "CN": "已获得三把钥匙\\n快开启宝箱吧"
+  },
+  "nothanks": {
+    "ID": "nothanks",
+    "EN": "No, thanks",
+    "CN": "不了，谢谢"
+  },
+  "lottery_title": {
+    "ID": "lottery_title",
+    "EN": "Lottery",
+    "CN": "金币抽奖"
+  },
+  "lottery_times": {
+    "ID": "lottery_times",
+    "EN": "{0} times left",
+    "CN": "今日剩余次数:   {0}"
+  },
+  "lottery_tip": {
+    "ID": "lottery_tip",
+    "EN": "Open after the daily activity reaches {0}",
+    "CN": "每日活跃达到 {0} 可抽"
+  },
+  "bank_title": {
+    "ID": "bank_title",
+    "EN": "Bank",
+    "CN": "商城"
+  },
+  "pack_name_401": {
+    "ID": "pack_name_401",
+    "EN": "Monthly Golden Ticket",
+    "CN": "黄金月卡VIP"
+  },
+  "pack_name_201": {
+    "ID": "pack_name_201",
+    "EN": "Beginner Bundle",
+    "CN": "新手超值包"
+  },
+  "pack_name_101": {
+    "ID": "pack_name_101",
+    "EN": "Small Boosters Pack",
+    "CN": "道具补充包"
+  },
+  "pack_name_102": {
+    "ID": "pack_name_102",
+    "EN": "Mega Boosters Pack",
+    "CN": "豪华道具包"
+  },
+  "pack_name_103": {
+    "ID": "pack_name_103",
+    "EN": "Starter Bundle",
+    "CN": "入门礼包"
+  },
+  "pack_name_104": {
+    "ID": "pack_name_104",
+    "EN": "Super Deal",
+    "CN": "进阶礼包"
+  },
+  "pack_name_105": {
+    "ID": "pack_name_105",
+    "EN": "Incredible Deal",
+    "CN": "豪华礼包"
+  },
+  "pack_name_106": {
+    "ID": "pack_name_106",
+    "EN": "Master Pack",
+    "CN": "至尊礼包"
+  },
+  "pack_name_301": {
+    "ID": "pack_name_301",
+    "EN": "Magnificent Bundle",
+    "CN": "畅享关卡礼包"
+  },
+  "pack_name_302": {
+    "ID": "pack_name_302",
+    "EN": "Marvellous Bundle",
+    "CN": "豪华畅想关卡礼包"
+  },
+  "pack_name_303": {
+    "ID": "pack_name_303",
+    "EN": "Giant Coin Pack",
+    "CN": "金币优惠大礼包"
+  },
+  "bank_bonus": {
+    "ID": "bank_bonus",
+    "EN": "Bonus",
+    "CN": "奖金"
+  },
+  "bank_popular": {
+    "ID": "bank_popular",
+    "EN": "Popular",
+    "CN": "最流行"
+  },
+  "bank_value": {
+    "ID": "bank_value",
+    "EN": "Best Value",
+    "CN": "最佳数值"
+  },
+  "bank_beginner": {
+    "ID": "bank_beginner",
+    "EN": "1200%",
+    "CN": "1200%"
+  },
+  "pack_name_202": {
+    "ID": "pack_name_202",
+    "EN": "Super Beginner's Bundle",
+    "CN": "新手超值包2"
+  },
+  "special_title": {
+    "ID": "special_title",
+    "EN": "Flash Sale",
+    "CN": "限时特惠"
+  },
+  "special_off": {
+    "ID": "special_off",
+    "EN": "{0} % \\nOff",
+    "CN": "{0} 折"
+  },
+  "special_off_yellow": {
+    "ID": "special_off_yellow",
+    "EN": "Off",
+    "CN": "折"
+  },
+  "piggybank_title": {
+    "ID": "piggybank_title",
+    "EN": "PIGGY BANK",
+    "CN": "猪猪储蓄罐"
+  },
+  "piggybank_unfulfilled": {
+    "ID": "piggybank_unfulfilled",
+    "EN": "Beat levels to win more coins \\n in piggy bank!",
+    "CN": "储蓄罐还没有满，快去闯关存储更多金币吧！"
+  },
+  "piggybank_full": {
+    "ID": "piggybank_full",
+    "EN": "Piggy bank is full! Get a new one with low price!",
+    "CN": "储蓄罐满了！快买个新的吧，性价比超高！"
+  },
+  "rotateDraw_title": {
+    "ID": "rotateDraw_title",
+    "EN": "Lucky Wheel",
+    "CN": "幸运大转盘"
+  },
+  "rotateDraw_openChest_1": {
+    "ID": "rotateDraw_openChest_1",
+    "EN": "Once to open",
+    "CN": "转动1次开启"
+  },
+  "rotateDraw_openChest_3": {
+    "ID": "rotateDraw_openChest_3",
+    "EN": "Three times\\nto open",
+    "CN": "转动3次开启"
+  },
+  "rotateDraw_openChest_5": {
+    "ID": "rotateDraw_openChest_5",
+    "EN": "Five times\\nto open",
+    "CN": "转动5次开启"
+  },
+  "rotateDraw_opened": {
+    "ID": "rotateDraw_opened",
+    "EN": "Opened",
+    "CN": "已开启"
+  },
+  "rotateDraw_countdown": {
+    "ID": "rotateDraw_countdown",
+    "EN": "Open after {0} : {1}",
+    "CN": "{0} : {1}后开启"
+  },
+  "rotateDraw_start": {
+    "ID": "rotateDraw_start",
+    "EN": "Spin",
+    "CN": "转动一次"
+  },
+  "rotateDraw_full": {
+    "ID": "rotateDraw_full",
+    "EN": "You've run out of chances today,\\ncome back tomorrow!",
+    "CN": "今日次数已用完，请明日再来吧"
+  },
+  "events_title": {
+    "ID": "events_title",
+    "EN": "Events",
+    "CN": "活动"
+  },
+  "events_name_0": {
+    "ID": "events_name_0",
+    "EN": "Lucky Wheel",
+    "CN": "幸运转盘"
+  },
+  "events_name_1": {
+    "ID": "events_name_1",
+    "EN": "Daily Login",
+    "CN": "签到"
+  },
+  "events_name_2": {
+    "ID": "events_name_2",
+    "EN": "Lottery",
+    "CN": "金币抽奖"
+  },
+  "events_des_0": {
+    "ID": "events_des_0",
+    "EN": "BIG WIN with small bet! Keep spinning!",
+    "CN": "以小博大，别让幸运转盘停下来！"
+  },
+  "events_des_1": {
+    "ID": "events_des_1",
+    "EN": "Login everyday to earn great rewards!",
+    "CN": "连续签到，领取更多丰厚奖励！"
+  },
+  "events_des_2": {
+    "ID": "events_des_2",
+    "EN": "Will you be the lucky one?",
+    "CN": "考验运气的时候到啦！你会是完美幸运儿吗？"
+  },
+  "events_go": {
+    "ID": "events_go",
+    "EN": "Go",
+    "CN": "进入"
+  },
+  "sign_title": {
+    "ID": "sign_title",
+    "EN": "Daily Bonus",
+    "CN": "签到"
+  },
+  "sign_des": {
+    "ID": "sign_des",
+    "EN": "If you miss a day, you have to start all over again!",
+    "CN": "如果错过一天就得从头开始哦！"
+  },
+  "sign_extra": {
+    "ID": "sign_extra",
+    "EN": "Extra",
+    "CN": "额外赠送"
+  },
+  "sign_receive": {
+    "ID": "sign_receive",
+    "EN": "Tap to collect daily bonus",
+    "CN": "点击图标即可领取当日签到奖励哦"
+  },
+  "sign_received": {
+    "ID": "sign_received",
+    "EN": "You've already got it today, \\n come back tomorrow!",
+    "CN": "今日已领取，请明日再来吧"
+  },
+  "sign_day": {
+    "ID": "sign_day",
+    "EN": "Day {0}",
+    "CN": "第{0}天"
+  },
+  "task_title": {
+    "ID": "task_title",
+    "EN": "Daily Tasks",
+    "CN": "每日任务"
+  },
+  "task_activity": {
+    "ID": "task_activity",
+    "EN": "Activity",
+    "CN": "活跃度"
+  },
+  "daily_task_des1": {
+    "ID": "daily_task_des1",
+    "EN": "Daily login",
+    "CN": "进行1次签到"
+  },
+  "daily_task_des2": {
+    "ID": "daily_task_des2",
+    "EN": "Participate in the lucky wheel",
+    "CN": "参加1次转盘抽奖"
+  },
+  "daily_task_des3": {
+    "ID": "daily_task_des3",
+    "EN": "Start a level",
+    "CN": "挑战1次关卡"
+  },
+  "daily_task_des4": {
+    "ID": "daily_task_des4",
+    "EN": "Generate a 4+COMBO during level play",
+    "CN": "在关卡内生成1次4+连击"
+  },
+  "daily_task_des5": {
+    "ID": "daily_task_des5",
+    "EN": "Use 5 lives",
+    "CN": "消耗5点体力"
+  },
+  "daily_task_des6": {
+    "ID": "daily_task_des6",
+    "EN": "Gain 500 coins",
+    "CN": "当日累计获得500金币"
+  },
+  "daily_task_des7": {
+    "ID": "daily_task_des7",
+    "EN": "Use booster once",
+    "CN": "使用1次道具"
+  },
+  "daily_task_des8": {
+    "ID": "daily_task_des8",
+    "EN": "Play the Lottery once",
+    "CN": "参加1次金币小游戏"
+  },
+  "notice_title": {
+    "ID": "notice_title",
+    "EN": "Notice",
+    "CN": "通知"
+  },
+  "notice_des1": {
+    "ID": "notice_des1",
+    "EN": "By tapping \"OK\",you confirm that you have read and accept:",
+    "CN": "点击\"继续\",确认和接受："
+  },
+  "notice_des2": {
+    "ID": "notice_des2",
+    "EN": "<#009283><u><link=\"ID\">Terms of Use</link></u></color>",
+    "CN": "<#009283><u><link=\"ID\">用户协议</link></u></color>"
+  },
+  "notice_des3": {
+    "ID": "notice_des3",
+    "EN": "<#009283><u><link=\"ID\">Privacy Policy</link></u></color>",
+    "CN": "<#009283><u><link=\"ID\">隐私条款</link></u></color>"
+  },
+  "postCard_title": {
+    "ID": "postCard_title",
+    "EN": "Not Enough Stars!",
+    "CN": "星星不足！"
+  },
+  "postCard_title_enough": {
+    "ID": "postCard_title_enough",
+    "EN": "Earn Stars!",
+    "CN": "获得星星！"
+  },
+  "postCard_des": {
+    "ID": "postCard_des",
+    "EN": "Beat levels to earn stars",
+    "CN": "闯关获得更多星星"
+  },
+  "postCard_button": {
+    "ID": "postCard_button",
+    "EN": "Post Card",
+    "CN": "明信片"
+  },
+  "postCard_one_title": {
+    "ID": "postCard_one_title",
+    "EN": "Ella's Holiday",
+    "CN": "艾拉的假期"
+  },
+  "postCard_one_1": {
+    "ID": "postCard_one_1",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_one_2": {
+    "ID": "postCard_one_2",
+    "EN": "Barrel",
+    "CN": "木桶",
+    "KO": "f"
+  },
+  "postCard_one_3": {
+    "ID": "postCard_one_3",
+    "EN": "Sheep",
+    "CN": "绵羊"
+  },
+  "postCard_one_4": {
+    "ID": "postCard_one_4",
+    "EN": "Cattle",
+    "CN": "奶牛"
+  },
+  "postCard_one_5": {
+    "ID": "postCard_one_5",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_one_6": {
+    "ID": "postCard_one_6",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_two_title": {
+    "ID": "postCard_two_title",
+    "EN": "Delicious Honey",
+    "CN": "美味蜂蜜"
+  },
+  "postCard_two_1": {
+    "ID": "postCard_two_1",
+    "EN": "Honey",
+    "CN": "蜂蜜"
+  },
+  "postCard_two_2": {
+    "ID": "postCard_two_2",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_two_3": {
+    "ID": "postCard_two_3",
+    "EN": "House",
+    "CN": "房子"
+  },
+  "postCard_two_4": {
+    "ID": "postCard_two_4",
+    "EN": "Bear",
+    "CN": "熊"
+  },
+  "postCard_two_5": {
+    "ID": "postCard_two_5",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_two_6": {
+    "ID": "postCard_two_6",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_three_title": {
+    "ID": "postCard_three_title",
+    "EN": "Jungle Ruins",
+    "CN": "丛林遗迹"
+  },
+  "postCard_three_1": {
+    "ID": "postCard_three_1",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_three_2": {
+    "ID": "postCard_three_2",
+    "EN": "Frog",
+    "CN": "青蛙"
+  },
+  "postCard_three_3": {
+    "ID": "postCard_three_3",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_three_4": {
+    "ID": "postCard_three_4",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_three_5": {
+    "ID": "postCard_three_5",
+    "EN": "GrandPa",
+    "CN": "老爷爷"
+  },
+  "postCard_three_6": {
+    "ID": "postCard_three_6",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_four_title": {
+    "ID": "postCard_four_title",
+    "EN": "My Cute Friends",
+    "CN": "动物伙伴"
+  },
+  "postCard_four_1": {
+    "ID": "postCard_four_1",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_four_2": {
+    "ID": "postCard_four_2",
+    "EN": "Rabbit",
+    "CN": "兔子"
+  },
+  "postCard_four_3": {
+    "ID": "postCard_four_3",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_four_4": {
+    "ID": "postCard_four_4",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_four_5": {
+    "ID": "postCard_four_5",
+    "EN": "GrandPa",
+    "CN": "老爷爷"
+  },
+  "postCard_four_6": {
+    "ID": "postCard_four_6",
+    "EN": "Grass",
+    "CN": "草地"
+  },
+  "postCard_four_7": {
+    "ID": "postCard_four_7",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_five_title": {
+    "ID": "postCard_five_title",
+    "EN": "BBQ Party",
+    "CN": "烤肉派对"
+  },
+  "postCard_five_1": {
+    "ID": "postCard_five_1",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_five_2": {
+    "ID": "postCard_five_2",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_five_3": {
+    "ID": "postCard_five_3",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_five_4": {
+    "ID": "postCard_five_4",
+    "EN": "Grill",
+    "CN": "烤肉架"
+  },
+  "postCard_five_5": {
+    "ID": "postCard_five_5",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_five_6": {
+    "ID": "postCard_five_6",
+    "EN": "Stool",
+    "CN": "躺椅"
+  },
+  "postCard_five_7": {
+    "ID": "postCard_five_7",
+    "EN": "Flags",
+    "CN": "小彩旗"
+  },
+  "postCard_five_8": {
+    "ID": "postCard_five_8",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_six_title": {
+    "ID": "postCard_six_title",
+    "EN": "Grandpa's Story",
+    "CN": "爷爷的故事"
+  },
+  "postCard_six_1": {
+    "ID": "postCard_six_1",
+    "EN": "Cup",
+    "CN": "杯子"
+  },
+  "postCard_six_2": {
+    "ID": "postCard_six_2",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_six_3": {
+    "ID": "postCard_six_3",
+    "EN": "GrandPa",
+    "CN": "老爷爷"
+  },
+  "postCard_six_4": {
+    "ID": "postCard_six_4",
+    "EN": "Pig",
+    "CN": "猪"
+  },
+  "postCard_six_5": {
+    "ID": "postCard_six_5",
+    "EN": "Rabbit",
+    "CN": "兔子"
+  },
+  "postCard_six_6": {
+    "ID": "postCard_six_6",
+    "EN": "Sheep",
+    "CN": "绵羊"
+  },
+  "postCard_six_7": {
+    "ID": "postCard_six_7",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_7_title": {
+    "ID": "postCard_7_title",
+    "EN": "Desert Oasis",
+    "CN": "沙漠绿洲"
+  },
+  "postCard_7_1": {
+    "ID": "postCard_7_1",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_7_8": {
+    "ID": "postCard_7_8",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_7_5": {
+    "ID": "postCard_7_5",
+    "EN": "Rabbit",
+    "CN": "兔子"
+  },
+  "postCard_7_7": {
+    "ID": "postCard_7_7",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_7_3": {
+    "ID": "postCard_7_3",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_7_2": {
+    "ID": "postCard_7_2",
+    "EN": "Pig",
+    "CN": "猪"
+  },
+  "postCard_7_4": {
+    "ID": "postCard_7_4",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_7_6": {
+    "ID": "postCard_7_6",
+    "EN": "Duck",
+    "CN": "鸭子"
+  },
+  "postCard_7_9": {
+    "ID": "postCard_7_9",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_8_title": {
+    "ID": "postCard_8_title",
+    "EN": "Long Journey",
+    "CN": "漫长旅途"
+  },
+  "postCard_8_7": {
+    "ID": "postCard_8_7",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_8_4": {
+    "ID": "postCard_8_4",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_8_3": {
+    "ID": "postCard_8_3",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_8_1": {
+    "ID": "postCard_8_1",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_8_2": {
+    "ID": "postCard_8_2",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_8_5": {
+    "ID": "postCard_8_5",
+    "EN": "Cattle",
+    "CN": "奶牛"
+  },
+  "postCard_8_6": {
+    "ID": "postCard_8_6",
+    "EN": "Camel",
+    "CN": "骆驼"
+  },
+  "postCard_8_8": {
+    "ID": "postCard_8_8",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_9_title": {
+    "ID": "postCard_9_title",
+    "EN": "Desert Surfing",
+    "CN": "沙漠冲浪"
+  },
+  "postCard_9_7": {
+    "ID": "postCard_9_7",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_9_4": {
+    "ID": "postCard_9_4",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_9_1": {
+    "ID": "postCard_9_1",
+    "EN": "Pig",
+    "CN": "猪"
+  },
+  "postCard_9_2": {
+    "ID": "postCard_9_2",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_9_6": {
+    "ID": "postCard_9_6",
+    "EN": "Rabbit",
+    "CN": "兔子"
+  },
+  "postCard_9_3": {
+    "ID": "postCard_9_3",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_9_5": {
+    "ID": "postCard_9_5",
+    "EN": "Sheep",
+    "CN": "绵羊"
+  },
+  "postCard_9_8": {
+    "ID": "postCard_9_8",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_10_title": {
+    "ID": "postCard_10_title",
+    "EN": "Campfire and Sunset",
+    "CN": "落日篝火"
+  },
+  "postCard_10_4": {
+    "ID": "postCard_10_4",
+    "EN": "Rabbit",
+    "CN": "兔子"
+  },
+  "postCard_10_5": {
+    "ID": "postCard_10_5",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_10_6": {
+    "ID": "postCard_10_6",
+    "EN": "Bonfire",
+    "CN": "篝火"
+  },
+  "postCard_10_2": {
+    "ID": "postCard_10_2",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_10_3": {
+    "ID": "postCard_10_3",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_10_1": {
+    "ID": "postCard_10_1",
+    "EN": "Camel",
+    "CN": "骆驼"
+  },
+  "postCard_10_7": {
+    "ID": "postCard_10_7",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_11_title": {
+    "ID": "postCard_11_title",
+    "EN": "After The Storm",
+    "CN": "风暴之后"
+  },
+  "postCard_11_1": {
+    "ID": "postCard_11_1",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_11_2": {
+    "ID": "postCard_11_2",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_11_3": {
+    "ID": "postCard_11_3",
+    "EN": "Pig",
+    "CN": "猪"
+  },
+  "postCard_11_4": {
+    "ID": "postCard_11_4",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_11_5": {
+    "ID": "postCard_11_5",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_12_title": {
+    "ID": "postCard_12_title",
+    "EN": "Tropical Fruit",
+    "CN": "热带水果"
+  },
+  "postCard_12_5": {
+    "ID": "postCard_12_5",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_12_3": {
+    "ID": "postCard_12_3",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_12_4": {
+    "ID": "postCard_12_4",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_12_2": {
+    "ID": "postCard_12_2",
+    "EN": "Cattle",
+    "CN": "奶牛"
+  },
+  "postCard_12_1": {
+    "ID": "postCard_12_1",
+    "EN": "Camel",
+    "CN": "骆驼"
+  },
+  "postCard_12_6": {
+    "ID": "postCard_12_6",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_13_title": {
+    "ID": "postCard_13_title",
+    "EN": "Ancient Ship Remains",
+    "CN": "古船遗址"
+  },
+  "postCard_13_1": {
+    "ID": "postCard_13_1",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_13_2": {
+    "ID": "postCard_13_2",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_13_3": {
+    "ID": "postCard_13_3",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_13_4": {
+    "ID": "postCard_13_4",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_13_5": {
+    "ID": "postCard_13_5",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_13_6": {
+    "ID": "postCard_13_6",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_14_title": {
+    "ID": "postCard_14_title",
+    "EN": "Island Holiday",
+    "CN": "海岛假期"
+  },
+  "postCard_14_1": {
+    "ID": "postCard_14_1",
+    "EN": "Duck",
+    "CN": "鸭子"
+  },
+  "postCard_14_2": {
+    "ID": "postCard_14_2",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_14_3": {
+    "ID": "postCard_14_3",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_14_4": {
+    "ID": "postCard_14_4",
+    "EN": "Sheep",
+    "CN": "绵羊"
+  },
+  "postCard_14_5": {
+    "ID": "postCard_14_5",
+    "EN": "Rabbit",
+    "CN": "兔子"
+  },
+  "postCard_14_6": {
+    "ID": "postCard_14_6",
+    "EN": "Pig",
+    "CN": "猪"
+  },
+  "postCard_14_7": {
+    "ID": "postCard_14_7",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_14_8": {
+    "ID": "postCard_14_8",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_15_title": {
+    "ID": "postCard_15_title",
+    "EN": "Island Treasure",
+    "CN": "意外之财"
+  },
+  "postCard_15_1": {
+    "ID": "postCard_15_1",
+    "EN": "Fox",
+    "CN": "狐狸"
+  },
+  "postCard_15_2": {
+    "ID": "postCard_15_2",
+    "EN": "Pig",
+    "CN": "猪"
+  },
+  "postCard_15_3": {
+    "ID": "postCard_15_3",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_15_4": {
+    "ID": "postCard_15_4",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_15_5": {
+    "ID": "postCard_15_5",
+    "EN": "Treasure",
+    "CN": "宝藏"
+  },
+  "postCard_15_6": {
+    "ID": "postCard_15_6",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_15_7": {
+    "ID": "postCard_15_7",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_16_title": {
+    "ID": "postCard_16_title",
+    "EN": "Visit An Old Friend",
+    "CN": "探访老友"
+  },
+  "postCard_16_1": {
+    "ID": "postCard_16_1",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_16_2": {
+    "ID": "postCard_16_2",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_16_3": {
+    "ID": "postCard_16_3",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_16_4": {
+    "ID": "postCard_16_4",
+    "EN": "Sheep",
+    "CN": "绵羊"
+  },
+  "postCard_16_5": {
+    "ID": "postCard_16_5",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_16_6": {
+    "ID": "postCard_16_6",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_17_title": {
+    "ID": "postCard_17_title",
+    "EN": "Fishing Master",
+    "CN": "垂钓高手"
+  },
+  "postCard_17_1": {
+    "ID": "postCard_17_1",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_17_2": {
+    "ID": "postCard_17_2",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_17_3": {
+    "ID": "postCard_17_3",
+    "EN": "Bear",
+    "CN": "熊"
+  },
+  "postCard_17_4": {
+    "ID": "postCard_17_4",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_17_5": {
+    "ID": "postCard_17_5",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_18_title": {
+    "ID": "postCard_18_title",
+    "EN": "Pyramid Adventure",
+    "CN": "金字塔探险"
+  },
+  "postCard_18_1": {
+    "ID": "postCard_18_1",
+    "EN": "Rabbit and mouse",
+    "CN": "兔子老鼠"
+  },
+  "postCard_18_2": {
+    "ID": "postCard_18_2",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_18_3": {
+    "ID": "postCard_18_3",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_18_4": {
+    "ID": "postCard_18_4",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_18_5": {
+    "ID": "postCard_18_5",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "postCard_19_title": {
+    "ID": "postCard_19_title",
+    "EN": "Long Time No See",
+    "CN": "久别重逢"
+  },
+  "postCard_19_1": {
+    "ID": "postCard_19_1",
+    "EN": "Mouse",
+    "CN": "小老鼠"
+  },
+  "postCard_19_2": {
+    "ID": "postCard_19_2",
+    "EN": "Turtle",
+    "CN": "乌龟"
+  },
+  "postCard_19_3": {
+    "ID": "postCard_19_3",
+    "EN": "Grandpa",
+    "CN": "老爷爷"
+  },
+  "postCard_19_4": {
+    "ID": "postCard_19_4",
+    "EN": "Grandpa's friend",
+    "CN": "老爷爷的朋友"
+  },
+  "postCard_19_5": {
+    "ID": "postCard_19_5",
+    "EN": "Ella",
+    "CN": "小女孩"
+  },
+  "postCard_19_6": {
+    "ID": "postCard_19_6",
+    "EN": "Sheep",
+    "CN": "绵羊"
+  },
+  "postCard_19_7": {
+    "ID": "postCard_19_7",
+    "EN": "Cat",
+    "CN": "蓝猫"
+  },
+  "postCard_19_8": {
+    "ID": "postCard_19_8",
+    "EN": "Coloring",
+    "CN": "填充背景"
+  },
+  "achievement_title": {
+    "ID": "achievement_title",
+    "EN": "Achievement",
+    "CN": "成就"
+  },
+  "achievement_tab_1": {
+    "ID": "achievement_tab_1",
+    "EN": "Performance",
+    "CN": "闯关成就"
+  },
+  "achievement_tab_2": {
+    "ID": "achievement_tab_2",
+    "EN": "Title",
+    "CN": "进度成就"
+  },
+  "achievement_name_221": {
+    "ID": "achievement_name_221",
+    "EN": "MOUSE COLLECTOR 1",
+    "CN": "合成小鼠1"
+  },
+  "achievement_name_222": {
+    "ID": "achievement_name_222",
+    "EN": "MOUSE COLLECTOR 2",
+    "CN": "合成小鼠2"
+  },
+  "achievement_name_223": {
+    "ID": "achievement_name_223",
+    "EN": "MOUSE COLLECTOR 3",
+    "CN": "合成小鼠3"
+  },
+  "achievement_name_224": {
+    "ID": "achievement_name_224",
+    "EN": "MOUSE COLLECTOR 4",
+    "CN": "合成小鼠4"
+  },
+  "achievement_name_225": {
+    "ID": "achievement_name_225",
+    "EN": "MOUSE COLLECTOR 5",
+    "CN": "合成小鼠5"
+  },
+  "achievement_des_221": {
+    "ID": "achievement_des_221",
+    "EN": "Get mouse {0} times",
+    "CN": "累计合成小鼠{0}次"
+  },
+  "achievement_des_222": {
+    "ID": "achievement_des_222",
+    "EN": "Get mouse {0} times",
+    "CN": "累计合成小鼠{0}次"
+  },
+  "achievement_des_223": {
+    "ID": "achievement_des_223",
+    "EN": "Get mouse {0} times",
+    "CN": "累计合成小鼠{0}次"
+  },
+  "achievement_des_224": {
+    "ID": "achievement_des_224",
+    "EN": "Get mouse {0} times",
+    "CN": "累计合成小鼠{0}次"
+  },
+  "achievement_des_225": {
+    "ID": "achievement_des_225",
+    "EN": "Get mouse {0} times",
+    "CN": "累计合成小鼠{0}次"
+  },
+  "achievement_name_231": {
+    "ID": "achievement_name_231",
+    "EN": "DUCKLING COLLECTOR 1",
+    "CN": "合成鸭子1"
+  },
+  "achievement_name_232": {
+    "ID": "achievement_name_232",
+    "EN": "DUCKLING COLLECTOR 2",
+    "CN": "合成鸭子2"
+  },
+  "achievement_name_233": {
+    "ID": "achievement_name_233",
+    "EN": "DUCKLING COLLECTOR 3",
+    "CN": "合成鸭子3"
+  },
+  "achievement_name_234": {
+    "ID": "achievement_name_234",
+    "EN": "DUCKLING COLLECTOR 4",
+    "CN": "合成鸭子4"
+  },
+  "achievement_name_235": {
+    "ID": "achievement_name_235",
+    "EN": "DUCKLING COLLECTOR 5",
+    "CN": "合成鸭子5"
+  },
+  "achievement_des_231": {
+    "ID": "achievement_des_231",
+    "EN": "Get duckling {0} times",
+    "CN": "累计合成鸭子{0}次"
+  },
+  "achievement_des_232": {
+    "ID": "achievement_des_232",
+    "EN": "Get duckling {0} times",
+    "CN": "累计合成鸭子{0}次"
+  },
+  "achievement_des_233": {
+    "ID": "achievement_des_233",
+    "EN": "Get duckling {0} times",
+    "CN": "累计合成鸭子{0}次"
+  },
+  "achievement_des_234": {
+    "ID": "achievement_des_234",
+    "EN": "Get duckling {0} times",
+    "CN": "累计合成鸭子{0}次"
+  },
+  "achievement_des_235": {
+    "ID": "achievement_des_235",
+    "EN": "Get duckling {0} times",
+    "CN": "累计合成鸭子{0}次"
+  },
+  "achievement_name_241": {
+    "ID": "achievement_name_241",
+    "EN": "RABBIT COLLECTOR 1",
+    "CN": "合成兔子1"
+  },
+  "achievement_name_242": {
+    "ID": "achievement_name_242",
+    "EN": "RABBIT COLLECTOR 2",
+    "CN": "合成兔子2"
+  },
+  "achievement_name_243": {
+    "ID": "achievement_name_243",
+    "EN": "RABBIT COLLECTOR 3",
+    "CN": "合成兔子3"
+  },
+  "achievement_name_244": {
+    "ID": "achievement_name_244",
+    "EN": "RABBIT COLLECTOR 4",
+    "CN": "合成兔子4"
+  },
+  "achievement_name_245": {
+    "ID": "achievement_name_245",
+    "EN": "RABBIT COLLECTOR 5",
+    "CN": "合成兔子5"
+  },
+  "achievement_des_241": {
+    "ID": "achievement_des_241",
+    "EN": "Get rabbit {0} times",
+    "CN": "累计合成兔子{0}次"
+  },
+  "achievement_des_242": {
+    "ID": "achievement_des_242",
+    "EN": "Get rabbit {0} times",
+    "CN": "累计合成兔子{0}次"
+  },
+  "achievement_des_243": {
+    "ID": "achievement_des_243",
+    "EN": "Get rabbit {0} times",
+    "CN": "累计合成兔子{0}次"
+  },
+  "achievement_des_244": {
+    "ID": "achievement_des_244",
+    "EN": "Get rabbit {0} times",
+    "CN": "累计合成兔子{0}次"
+  },
+  "achievement_des_245": {
+    "ID": "achievement_des_245",
+    "EN": "Get rabbit {0} times",
+    "CN": "累计合成兔子{0}次"
+  },
+  "achievement_name_251": {
+    "ID": "achievement_name_251",
+    "EN": "FOX COLLECTOR 1",
+    "CN": "合成狐狸1"
+  },
+  "achievement_name_252": {
+    "ID": "achievement_name_252",
+    "EN": "FOX COLLECTOR 2",
+    "CN": "合成狐狸2"
+  },
+  "achievement_name_253": {
+    "ID": "achievement_name_253",
+    "EN": "FOX COLLECTOR 3",
+    "CN": "合成狐狸3"
+  },
+  "achievement_name_254": {
+    "ID": "achievement_name_254",
+    "EN": "FOX COLLECTOR 4",
+    "CN": "合成狐狸4"
+  },
+  "achievement_name_255": {
+    "ID": "achievement_name_255",
+    "EN": "FOX COLLECTOR 5",
+    "CN": "合成狐狸5"
+  },
+  "achievement_des_251": {
+    "ID": "achievement_des_251",
+    "EN": "Get fox {0} times",
+    "CN": "累计合成狐狸{0}次"
+  },
+  "achievement_des_252": {
+    "ID": "achievement_des_252",
+    "EN": "Get fox {0} times",
+    "CN": "累计合成狐狸{0}次"
+  },
+  "achievement_des_253": {
+    "ID": "achievement_des_253",
+    "EN": "Get fox {0} times",
+    "CN": "累计合成狐狸{0}次"
+  },
+  "achievement_des_254": {
+    "ID": "achievement_des_254",
+    "EN": "Get fox {0} times",
+    "CN": "累计合成狐狸{0}次"
+  },
+  "achievement_des_255": {
+    "ID": "achievement_des_255",
+    "EN": "Get fox {0} times",
+    "CN": "累计合成狐狸{0}次"
+  },
+  "achievement_name_261": {
+    "ID": "achievement_name_261",
+    "EN": "KITTY COLLECTOR 1",
+    "CN": "合成蓝猫1"
+  },
+  "achievement_name_262": {
+    "ID": "achievement_name_262",
+    "EN": "KITTY COLLECTOR 2",
+    "CN": "合成蓝猫2"
+  },
+  "achievement_name_263": {
+    "ID": "achievement_name_263",
+    "EN": "KITTY COLLECTOR 3",
+    "CN": "合成蓝猫3"
+  },
+  "achievement_name_264": {
+    "ID": "achievement_name_264",
+    "EN": "KITTY COLLECTOR 4",
+    "CN": "合成蓝猫4"
+  },
+  "achievement_name_265": {
+    "ID": "achievement_name_265",
+    "EN": "KITTY COLLECTOR 5",
+    "CN": "合成蓝猫5"
+  },
+  "achievement_des_261": {
+    "ID": "achievement_des_261",
+    "EN": "Get kitty {0} times",
+    "CN": "累计合成蓝猫{0}次"
+  },
+  "achievement_des_262": {
+    "ID": "achievement_des_262",
+    "EN": "Get kitty {0} times",
+    "CN": "累计合成蓝猫{0}次"
+  },
+  "achievement_des_263": {
+    "ID": "achievement_des_263",
+    "EN": "Get kitty {0} times",
+    "CN": "累计合成蓝猫{0}次"
+  },
+  "achievement_des_264": {
+    "ID": "achievement_des_264",
+    "EN": "Get kitty {0} times",
+    "CN": "累计合成蓝猫{0}次"
+  },
+  "achievement_des_265": {
+    "ID": "achievement_des_265",
+    "EN": "Get kitty {0} times",
+    "CN": "累计合成蓝猫{0}次"
+  },
+  "achievement_name_271": {
+    "ID": "achievement_name_271",
+    "EN": "TURTLE COLLECTOR 1",
+    "CN": "合成大龟1"
+  },
+  "achievement_name_272": {
+    "ID": "achievement_name_272",
+    "EN": "TURTLE COLLECTOR 2",
+    "CN": "合成大龟2"
+  },
+  "achievement_name_273": {
+    "ID": "achievement_name_273",
+    "EN": "TURTLE COLLECTOR 3",
+    "CN": "合成大龟3"
+  },
+  "achievement_name_274": {
+    "ID": "achievement_name_274",
+    "EN": "TURTLE COLLECTOR 4",
+    "CN": "合成大龟4"
+  },
+  "achievement_name_275": {
+    "ID": "achievement_name_275",
+    "EN": "TURTLE COLLECTOR 5",
+    "CN": "合成大龟5"
+  },
+  "achievement_des_271": {
+    "ID": "achievement_des_271",
+    "EN": "Get tortoise {0} times",
+    "CN": "累计合成大龟{0}次"
+  },
+  "achievement_des_272": {
+    "ID": "achievement_des_272",
+    "EN": "Get tortoise {0} times",
+    "CN": "累计合成大龟{0}次"
+  },
+  "achievement_des_273": {
+    "ID": "achievement_des_273",
+    "EN": "Get tortoise {0} times",
+    "CN": "累计合成大龟{0}次"
+  },
+  "achievement_des_274": {
+    "ID": "achievement_des_274",
+    "EN": "Get tortoise {0} times",
+    "CN": "累计合成大龟{0}次"
+  },
+  "achievement_des_275": {
+    "ID": "achievement_des_275",
+    "EN": "Get tortoise {0} times",
+    "CN": "累计合成大龟{0}次"
+  },
+  "achievement_name_281": {
+    "ID": "achievement_name_281",
+    "EN": "SHEEP COLLECTOR 1",
+    "CN": "合成绵羊1"
+  },
+  "achievement_name_282": {
+    "ID": "achievement_name_282",
+    "EN": "SHEEP COLLECTOR 2",
+    "CN": "合成绵羊2"
+  },
+  "achievement_name_283": {
+    "ID": "achievement_name_283",
+    "EN": "SHEEP COLLECTOR 3",
+    "CN": "合成绵羊3"
+  },
+  "achievement_name_284": {
+    "ID": "achievement_name_284",
+    "EN": "SHEEP COLLECTOR 4",
+    "CN": "合成绵羊4"
+  },
+  "achievement_name_285": {
+    "ID": "achievement_name_285",
+    "EN": "SHEEP COLLECTOR 5",
+    "CN": "合成绵羊5"
+  },
+  "achievement_des_281": {
+    "ID": "achievement_des_281",
+    "EN": "Get sheep {0} times",
+    "CN": "累计合成绵羊{0}次"
+  },
+  "achievement_des_282": {
+    "ID": "achievement_des_282",
+    "EN": "Get sheep {0} times",
+    "CN": "累计合成绵羊{0}次"
+  },
+  "achievement_des_283": {
+    "ID": "achievement_des_283",
+    "EN": "Get sheep {0} times",
+    "CN": "累计合成绵羊{0}次"
+  },
+  "achievement_des_284": {
+    "ID": "achievement_des_284",
+    "EN": "Get sheep {0} times",
+    "CN": "累计合成绵羊{0}次"
+  },
+  "achievement_des_285": {
+    "ID": "achievement_des_285",
+    "EN": "Get sheep {0} times",
+    "CN": "累计合成绵羊{0}次"
+  },
+  "achievement_name_291": {
+    "ID": "achievement_name_291",
+    "EN": "PIGGY COLLECTOR 1",
+    "CN": "合成猪猪1"
+  },
+  "achievement_name_292": {
+    "ID": "achievement_name_292",
+    "EN": "PIGGY COLLECTOR 2",
+    "CN": "合成猪猪2"
+  },
+  "achievement_name_293": {
+    "ID": "achievement_name_293",
+    "EN": "PIGGY COLLECTOR 3",
+    "CN": "合成猪猪3"
+  },
+  "achievement_name_294": {
+    "ID": "achievement_name_294",
+    "EN": "PIGGY COLLECTOR 4",
+    "CN": "合成猪猪4"
+  },
+  "achievement_name_295": {
+    "ID": "achievement_name_295",
+    "EN": "PIGGY COLLECTOR 5",
+    "CN": "合成猪猪5"
+  },
+  "achievement_des_291": {
+    "ID": "achievement_des_291",
+    "EN": "Get piggy {0} times",
+    "CN": "累计合成猪猪{0}次"
+  },
+  "achievement_des_292": {
+    "ID": "achievement_des_292",
+    "EN": "Get piggy {0} times",
+    "CN": "累计合成猪猪{0}次"
+  },
+  "achievement_des_293": {
+    "ID": "achievement_des_293",
+    "EN": "Get piggy {0} times",
+    "CN": "累计合成猪猪{0}次"
+  },
+  "achievement_des_294": {
+    "ID": "achievement_des_294",
+    "EN": "Get piggy {0} times",
+    "CN": "累计合成猪猪{0}次"
+  },
+  "achievement_des_295": {
+    "ID": "achievement_des_295",
+    "EN": "Get piggy {0} times",
+    "CN": "累计合成猪猪{0}次"
+  },
+  "achievement_name_301": {
+    "ID": "achievement_name_301",
+    "EN": "COW COLLECTOR 1",
+    "CN": "合成奶牛1"
+  },
+  "achievement_name_302": {
+    "ID": "achievement_name_302",
+    "EN": "COW COLLECTOR 2",
+    "CN": "合成奶牛2"
+  },
+  "achievement_name_303": {
+    "ID": "achievement_name_303",
+    "EN": "COW COLLECTOR 3",
+    "CN": "合成奶牛3"
+  },
+  "achievement_name_304": {
+    "ID": "achievement_name_304",
+    "EN": "COW COLLECTOR 4",
+    "CN": "合成奶牛4"
+  },
+  "achievement_name_305": {
+    "ID": "achievement_name_305",
+    "EN": "COW COLLECTOR 5",
+    "CN": "合成奶牛5"
+  },
+  "achievement_des_301": {
+    "ID": "achievement_des_301",
+    "EN": "Get cow {0} times",
+    "CN": "累计合成奶牛{0}次"
+  },
+  "achievement_des_302": {
+    "ID": "achievement_des_302",
+    "EN": "Get cow {0} times",
+    "CN": "累计合成奶牛{0}次"
+  },
+  "achievement_des_303": {
+    "ID": "achievement_des_303",
+    "EN": "Get cow {0} times",
+    "CN": "累计合成奶牛{0}次"
+  },
+  "achievement_des_304": {
+    "ID": "achievement_des_304",
+    "EN": "Get cow {0} times",
+    "CN": "累计合成奶牛{0}次"
+  },
+  "achievement_des_305": {
+    "ID": "achievement_des_305",
+    "EN": "Get cow {0} times",
+    "CN": "累计合成奶牛{0}次"
+  },
+  "achievement_name_311": {
+    "ID": "achievement_name_311",
+    "EN": "BEAR COLLECTOR 1",
+    "CN": "合成熊熊1"
+  },
+  "achievement_name_312": {
+    "ID": "achievement_name_312",
+    "EN": "BEAR COLLECTOR 2",
+    "CN": "合成熊熊2"
+  },
+  "achievement_name_313": {
+    "ID": "achievement_name_313",
+    "EN": "BEAR COLLECTOR 3",
+    "CN": "合成熊熊3"
+  },
+  "achievement_name_314": {
+    "ID": "achievement_name_314",
+    "EN": "BEAR COLLECTOR 4",
+    "CN": "合成熊熊4"
+  },
+  "achievement_name_315": {
+    "ID": "achievement_name_315",
+    "EN": "BEAR COLLECTOR 5",
+    "CN": "合成熊熊5"
+  },
+  "achievement_des_311": {
+    "ID": "achievement_des_311",
+    "EN": "Get bear {0} times",
+    "CN": "累计合成熊熊{0}次"
+  },
+  "achievement_des_312": {
+    "ID": "achievement_des_312",
+    "EN": "Get bear {0} times",
+    "CN": "累计合成熊熊{0}次"
+  },
+  "achievement_des_313": {
+    "ID": "achievement_des_313",
+    "EN": "Get bear {0} times",
+    "CN": "累计合成熊熊{0}次"
+  },
+  "achievement_des_314": {
+    "ID": "achievement_des_314",
+    "EN": "Get bear {0} times",
+    "CN": "累计合成熊熊{0}次"
+  },
+  "achievement_des_315": {
+    "ID": "achievement_des_315",
+    "EN": "Get bear {0} times",
+    "CN": "累计合成熊熊{0}次"
+  },
+  "achievement_name_321": {
+    "ID": "achievement_name_321",
+    "EN": "COMBO EXPERT 1",
+    "CN": "4连达人1"
+  },
+  "achievement_name_322": {
+    "ID": "achievement_name_322",
+    "EN": "COMBO EXPERT 2",
+    "CN": "4连达人2"
+  },
+  "achievement_name_323": {
+    "ID": "achievement_name_323",
+    "EN": "COMBO EXPERT 3",
+    "CN": "4连达人3"
+  },
+  "achievement_name_324": {
+    "ID": "achievement_name_324",
+    "EN": "COMBO EXPERT 4",
+    "CN": "4连达人4"
+  },
+  "achievement_name_325": {
+    "ID": "achievement_name_325",
+    "EN": "COMBO EXPERT 5",
+    "CN": "4连达人5"
+  },
+  "achievement_des_321": {
+    "ID": "achievement_des_321",
+    "EN": "Get {0} Red Energy Boosters",
+    "CN": "累计生成红色能量瓶{0}个"
+  },
+  "achievement_des_322": {
+    "ID": "achievement_des_322",
+    "EN": "Get {0} Red Energy Boosters",
+    "CN": "累计生成红色能量瓶{0}个"
+  },
+  "achievement_des_323": {
+    "ID": "achievement_des_323",
+    "EN": "Get {0} Red Energy Boosters",
+    "CN": "累计生成红色能量瓶{0}个"
+  },
+  "achievement_des_324": {
+    "ID": "achievement_des_324",
+    "EN": "Get {0} Red Energy Boosters",
+    "CN": "累计生成红色能量瓶{0}个"
+  },
+  "achievement_des_325": {
+    "ID": "achievement_des_325",
+    "EN": "Get {0} Red Energy Boosters",
+    "CN": "累计生成红色能量瓶{0}个"
+  },
+  "achievement_name_331": {
+    "ID": "achievement_name_331",
+    "EN": "COMBO GENIUS 1",
+    "CN": "5连达人1"
+  },
+  "achievement_name_332": {
+    "ID": "achievement_name_332",
+    "EN": "COMBO GENIUS 2",
+    "CN": "5连达人2"
+  },
+  "achievement_name_333": {
+    "ID": "achievement_name_333",
+    "EN": "COMBO GENIUS 3",
+    "CN": "5连达人3"
+  },
+  "achievement_name_334": {
+    "ID": "achievement_name_334",
+    "EN": "COMBO GENIUS 4",
+    "CN": "5连达人4"
+  },
+  "achievement_name_335": {
+    "ID": "achievement_name_335",
+    "EN": "COMBO GENIUS 5",
+    "CN": "5连达人5"
+  },
+  "achievement_des_331": {
+    "ID": "achievement_des_331",
+    "EN": "Get {0} Blue Energy Boosters",
+    "CN": "累计生成蓝色能量瓶{0}个"
+  },
+  "achievement_des_332": {
+    "ID": "achievement_des_332",
+    "EN": "Get {0} Blue Energy Boosters",
+    "CN": "累计生成蓝色能量瓶{0}个"
+  },
+  "achievement_des_333": {
+    "ID": "achievement_des_333",
+    "EN": "Get {0} Blue Energy Boosters",
+    "CN": "累计生成蓝色能量瓶{0}个"
+  },
+  "achievement_des_334": {
+    "ID": "achievement_des_334",
+    "EN": "Get {0} Blue Energy Boosters",
+    "CN": "累计生成蓝色能量瓶{0}个"
+  },
+  "achievement_des_335": {
+    "ID": "achievement_des_335",
+    "EN": "Get {0} Blue Energy Boosters",
+    "CN": "累计生成蓝色能量瓶{0}个"
+  },
+  "achievement_name_341": {
+    "ID": "achievement_name_341",
+    "EN": "COMBO MASTER 1",
+    "CN": "6连达人1"
+  },
+  "achievement_name_342": {
+    "ID": "achievement_name_342",
+    "EN": "COMBO MASTER 2",
+    "CN": "6连达人2"
+  },
+  "achievement_name_343": {
+    "ID": "achievement_name_343",
+    "EN": "COMBO MASTER 3",
+    "CN": "6连达人3"
+  },
+  "achievement_name_344": {
+    "ID": "achievement_name_344",
+    "EN": "COMBO MASTER 4",
+    "CN": "6连达人4"
+  },
+  "achievement_name_345": {
+    "ID": "achievement_name_345",
+    "EN": "COMBO MASTER 5",
+    "CN": "6连达人5"
+  },
+  "achievement_des_341": {
+    "ID": "achievement_des_341",
+    "EN": "Get {0} Colour Energy Boosters",
+    "CN": "累计生成彩色能量瓶{0}个"
+  },
+  "achievement_des_342": {
+    "ID": "achievement_des_342",
+    "EN": "Get {0} Colour Energy Boosters",
+    "CN": "累计生成彩色能量瓶{0}个"
+  },
+  "achievement_des_343": {
+    "ID": "achievement_des_343",
+    "EN": "Get {0} Colour Energy Boosters",
+    "CN": "累计生成彩色能量瓶{0}个"
+  },
+  "achievement_des_344": {
+    "ID": "achievement_des_344",
+    "EN": "Get {0} Colour Energy Boosters",
+    "CN": "累计生成彩色能量瓶{0}个"
+  },
+  "achievement_des_345": {
+    "ID": "achievement_des_345",
+    "EN": "Get {0} Colour Energy Boosters",
+    "CN": "累计生成彩色能量瓶{0}个"
+  },
+  "achievement_name_351": {
+    "ID": "achievement_name_351",
+    "EN": "COMBO KING 1",
+    "CN": "连击圣手1"
+  },
+  "achievement_name_352": {
+    "ID": "achievement_name_352",
+    "EN": "COMBO KING 2",
+    "CN": "连击圣手2"
+  },
+  "achievement_name_353": {
+    "ID": "achievement_name_353",
+    "EN": "COMBO KING 3",
+    "CN": "连击圣手3"
+  },
+  "achievement_name_354": {
+    "ID": "achievement_name_354",
+    "EN": "COMBO KING 4",
+    "CN": "连击圣手4"
+  },
+  "achievement_name_355": {
+    "ID": "achievement_name_355",
+    "EN": "COMBO KING 5",
+    "CN": "连击圣手5"
+  },
+  "achievement_des_351": {
+    "ID": "achievement_des_351",
+    "EN": "Make Mega Combo {0} times",
+    "CN": "累计完成超过6连击{0}次"
+  },
+  "achievement_des_352": {
+    "ID": "achievement_des_352",
+    "EN": "Make Mega Combo {0} times",
+    "CN": "累计完成超过6连击{0}次"
+  },
+  "achievement_des_353": {
+    "ID": "achievement_des_353",
+    "EN": "Make Mega Combo {0} times",
+    "CN": "累计完成超过6连击{0}次"
+  },
+  "achievement_des_354": {
+    "ID": "achievement_des_354",
+    "EN": "Make Mega Combo {0} times",
+    "CN": "累计完成超过6连击{0}次"
+  },
+  "achievement_des_355": {
+    "ID": "achievement_des_355",
+    "EN": "Make Mega Combo {0} times",
+    "CN": "累计完成超过6连击{0}次"
+  },
+  "achievement_name_211": {
+    "ID": "achievement_name_211",
+    "EN": "STAR CATCHER 1",
+    "CN": "摘星小能手1"
+  },
+  "achievement_name_212": {
+    "ID": "achievement_name_212",
+    "EN": "STAR CATCHER 2",
+    "CN": "摘星小能手2"
+  },
+  "achievement_name_213": {
+    "ID": "achievement_name_213",
+    "EN": "STAR CATCHER 3",
+    "CN": "摘星小能手3"
+  },
+  "achievement_name_214": {
+    "ID": "achievement_name_214",
+    "EN": "STAR CATCHER 4",
+    "CN": "摘星小能手4"
+  },
+  "achievement_name_215": {
+    "ID": "achievement_name_215",
+    "EN": "STAR CATCHER 5",
+    "CN": "摘星小能手5"
+  },
+  "achievement_des_211": {
+    "ID": "achievement_des_211",
+    "EN": "Achieve all-star in {0} levels",
+    "CN": "3星关卡总数达到{0}"
+  },
+  "achievement_des_212": {
+    "ID": "achievement_des_212",
+    "EN": "Achieve all-star in {0} levels",
+    "CN": "3星关卡总数达到{0}"
+  },
+  "achievement_des_213": {
+    "ID": "achievement_des_213",
+    "EN": "Achieve all-star in {0} levels",
+    "CN": "3星关卡总数达到{0}"
+  },
+  "achievement_des_214": {
+    "ID": "achievement_des_214",
+    "EN": "Achieve all-star in {0} levels",
+    "CN": "3星关卡总数达到{0}"
+  },
+  "achievement_des_215": {
+    "ID": "achievement_des_215",
+    "EN": "Achieve all-star in {0} levels",
+    "CN": "3星关卡总数达到{0}"
+  },
+  "achievement_name_361": {
+    "ID": "achievement_name_361",
+    "EN": "WOODEN BOX DESTROYER 1",
+    "CN": "木箱拆除者1"
+  },
+  "achievement_name_362": {
+    "ID": "achievement_name_362",
+    "EN": "WOODEN BOX DESTROYER 2",
+    "CN": "木箱拆除者2"
+  },
+  "achievement_name_363": {
+    "ID": "achievement_name_363",
+    "EN": "WOODEN BOX DESTROYER 3",
+    "CN": "木箱拆除者3"
+  },
+  "achievement_name_364": {
+    "ID": "achievement_name_364",
+    "EN": "WOODEN BOX DESTROYER 4",
+    "CN": "木箱拆除者4"
+  },
+  "achievement_name_365": {
+    "ID": "achievement_name_365",
+    "EN": "WOODEN BOX DESTROYER 5",
+    "CN": "木箱拆除者5"
+  },
+  "achievement_des_361": {
+    "ID": "achievement_des_361",
+    "EN": "Eliminate {0} boxes",
+    "CN": "累计消除木箱{0}个"
+  },
+  "achievement_des_362": {
+    "ID": "achievement_des_362",
+    "EN": "Eliminate {0} boxes",
+    "CN": "累计消除木箱{0}个"
+  },
+  "achievement_des_363": {
+    "ID": "achievement_des_363",
+    "EN": "Eliminate {0} boxes",
+    "CN": "累计消除木箱{0}个"
+  },
+  "achievement_des_364": {
+    "ID": "achievement_des_364",
+    "EN": "Eliminate {0} boxes",
+    "CN": "累计消除木箱{0}个"
+  },
+  "achievement_des_365": {
+    "ID": "achievement_des_365",
+    "EN": "Eliminate {0} boxes",
+    "CN": "累计消除木箱{0}个"
+  },
+  "achievement_name_371": {
+    "ID": "achievement_name_371",
+    "EN": "EGG LOVER 1",
+    "CN": "鸡蛋爱好者1"
+  },
+  "achievement_name_372": {
+    "ID": "achievement_name_372",
+    "EN": "EGG LOVER 2",
+    "CN": "鸡蛋爱好者2"
+  },
+  "achievement_name_373": {
+    "ID": "achievement_name_373",
+    "EN": "EGG LOVER 3",
+    "CN": "鸡蛋爱好者3"
+  },
+  "achievement_name_374": {
+    "ID": "achievement_name_374",
+    "EN": "EGG LOVER 4",
+    "CN": "鸡蛋爱好者4"
+  },
+  "achievement_name_375": {
+    "ID": "achievement_name_375",
+    "EN": "EGG LOVER 5",
+    "CN": "鸡蛋爱好者5"
+  },
+  "achievement_des_371": {
+    "ID": "achievement_des_371",
+    "EN": "Collect {0} eggs",
+    "CN": "累计收集鸡蛋{0}个"
+  },
+  "achievement_des_372": {
+    "ID": "achievement_des_372",
+    "EN": "Collect {0} eggs",
+    "CN": "累计收集鸡蛋{0}个"
+  },
+  "achievement_des_373": {
+    "ID": "achievement_des_373",
+    "EN": "Collect {0} eggs",
+    "CN": "累计收集鸡蛋{0}个"
+  },
+  "achievement_des_374": {
+    "ID": "achievement_des_374",
+    "EN": "Collect {0} eggs",
+    "CN": "累计收集鸡蛋{0}个"
+  },
+  "achievement_des_375": {
+    "ID": "achievement_des_375",
+    "EN": "Collect {0} eggs",
+    "CN": "累计收集鸡蛋{0}个"
+  },
+  "achievement_name_381": {
+    "ID": "achievement_name_381",
+    "EN": "BUSY BAKER 1",
+    "CN": "草莓爱好者1"
+  },
+  "achievement_name_382": {
+    "ID": "achievement_name_382",
+    "EN": "BUSY BAKER 2",
+    "CN": "草莓爱好者2"
+  },
+  "achievement_name_383": {
+    "ID": "achievement_name_383",
+    "EN": "BUSY BAKER 3",
+    "CN": "草莓爱好者3"
+  },
+  "achievement_name_384": {
+    "ID": "achievement_name_384",
+    "EN": "BUSY BAKER 4",
+    "CN": "草莓爱好者4"
+  },
+  "achievement_name_385": {
+    "ID": "achievement_name_385",
+    "EN": "BUSY BAKER 5",
+    "CN": "草莓爱好者5"
+  },
+  "achievement_des_381": {
+    "ID": "achievement_des_381",
+    "EN": "Collet {0} strawberries",
+    "CN": "累积收集草莓{0}个"
+  },
+  "achievement_des_382": {
+    "ID": "achievement_des_382",
+    "EN": "Collet {0} strawberries",
+    "CN": "累积收集草莓{0}个"
+  },
+  "achievement_des_383": {
+    "ID": "achievement_des_383",
+    "EN": "Collet {0} strawberries",
+    "CN": "累积收集草莓{0}个"
+  },
+  "achievement_des_384": {
+    "ID": "achievement_des_384",
+    "EN": "Collet {0} strawberries",
+    "CN": "累积收集草莓{0}个"
+  },
+  "achievement_des_385": {
+    "ID": "achievement_des_385",
+    "EN": "Collet {0} strawberries",
+    "CN": "累积收集草莓{0}个"
+  },
+  "achievement_name_391": {
+    "ID": "achievement_name_391",
+    "EN": "BEES 1",
+    "CN": "我爱吃蜂蜜1"
+  },
+  "achievement_name_392": {
+    "ID": "achievement_name_392",
+    "EN": "BEES 2",
+    "CN": "我爱吃蜂蜜2"
+  },
+  "achievement_name_393": {
+    "ID": "achievement_name_393",
+    "EN": "BEES 3",
+    "CN": "我爱吃蜂蜜3"
+  },
+  "achievement_name_394": {
+    "ID": "achievement_name_394",
+    "EN": "BEES 4",
+    "CN": "我爱吃蜂蜜4"
+  },
+  "achievement_name_395": {
+    "ID": "achievement_name_395",
+    "EN": "BEES 5",
+    "CN": "我爱吃蜂蜜5"
+  },
+  "achievement_des_391": {
+    "ID": "achievement_des_391",
+    "EN": "Collet {0} honey pots",
+    "CN": "累积收集蜂蜜罐{0}个"
+  },
+  "achievement_des_392": {
+    "ID": "achievement_des_392",
+    "EN": "Collet {0} honey pots",
+    "CN": "累积收集蜂蜜罐{0}个"
+  },
+  "achievement_des_393": {
+    "ID": "achievement_des_393",
+    "EN": "Collet {0} honey pots",
+    "CN": "累积收集蜂蜜罐{0}个"
+  },
+  "achievement_des_394": {
+    "ID": "achievement_des_394",
+    "EN": "Collet {0} honey pots",
+    "CN": "累积收集蜂蜜罐{0}个"
+  },
+  "achievement_des_395": {
+    "ID": "achievement_des_395",
+    "EN": "Collet {0} honey pots",
+    "CN": "累积收集蜂蜜罐{0}个"
+  },
+  "achievement_name_401": {
+    "ID": "achievement_name_401",
+    "EN": "CRAZY FOR EYEGLASSES 1",
+    "CN": "眼镜收集家1"
+  },
+  "achievement_name_402": {
+    "ID": "achievement_name_402",
+    "EN": "CRAZY FOR EYEGLASSES 2",
+    "CN": "眼镜收集家2"
+  },
+  "achievement_name_403": {
+    "ID": "achievement_name_403",
+    "EN": "CRAZY FOR EYEGLASSES 3",
+    "CN": "眼镜收集家3"
+  },
+  "achievement_name_404": {
+    "ID": "achievement_name_404",
+    "EN": "CRAZY FOR EYEGLASSES 4",
+    "CN": "眼镜收集家4"
+  },
+  "achievement_name_405": {
+    "ID": "achievement_name_405",
+    "EN": "CRAZY FOR EYEGLASSES 5",
+    "CN": "眼镜收集家5"
+  },
+  "achievement_des_401": {
+    "ID": "achievement_des_401",
+    "EN": "Collet {0} eyeglasses",
+    "CN": "累积收集眼镜{0}个"
+  },
+  "achievement_des_402": {
+    "ID": "achievement_des_402",
+    "EN": "Collet {0} eyeglasses",
+    "CN": "累积收集眼镜{0}个"
+  },
+  "achievement_des_403": {
+    "ID": "achievement_des_403",
+    "EN": "Collet {0} eyeglasses",
+    "CN": "累积收集眼镜{0}个"
+  },
+  "achievement_des_404": {
+    "ID": "achievement_des_404",
+    "EN": "Collet {0} eyeglasses",
+    "CN": "累积收集眼镜{0}个"
+  },
+  "achievement_des_405": {
+    "ID": "achievement_des_405",
+    "EN": "Collet {0} eyeglasses",
+    "CN": "累积收集眼镜{0}个"
+  },
+  "achievement_name_411": {
+    "ID": "achievement_name_411",
+    "EN": "BRILLIANT WOODWORKING 1",
+    "CN": "超级小木工1"
+  },
+  "achievement_name_412": {
+    "ID": "achievement_name_412",
+    "EN": "BRILLIANT WOODWORKING 2",
+    "CN": "超级小木工2"
+  },
+  "achievement_name_413": {
+    "ID": "achievement_name_413",
+    "EN": "BRILLIANT WOODWORKING 3",
+    "CN": "超级小木工3"
+  },
+  "achievement_name_414": {
+    "ID": "achievement_name_414",
+    "EN": "BRILLIANT WOODWORKING 4",
+    "CN": "超级小木工4"
+  },
+  "achievement_name_415": {
+    "ID": "achievement_name_415",
+    "EN": "BRILLIANT WOODWORKING 5",
+    "CN": "超级小木工5"
+  },
+  "achievement_des_411": {
+    "ID": "achievement_des_411",
+    "EN": "Remove {0} grinders",
+    "CN": "累积消除锯木机{0}个"
+  },
+  "achievement_des_412": {
+    "ID": "achievement_des_412",
+    "EN": "Remove {0} grinders",
+    "CN": "累积消除锯木机{0}个"
+  },
+  "achievement_des_413": {
+    "ID": "achievement_des_413",
+    "EN": "Remove {0} grinders",
+    "CN": "累积消除锯木机{0}个"
+  },
+  "achievement_des_414": {
+    "ID": "achievement_des_414",
+    "EN": "Remove {0} grinders",
+    "CN": "累积消除锯木机{0}个"
+  },
+  "achievement_des_415": {
+    "ID": "achievement_des_415",
+    "EN": "Remove {0} grinders",
+    "CN": "累积消除锯木机{0}个"
+  },
+  "achievement_name_421": {
+    "ID": "achievement_name_421",
+    "EN": "LAWN PROFESSOR 1",
+    "CN": "除草小能手1"
+  },
+  "achievement_name_422": {
+    "ID": "achievement_name_422",
+    "EN": "LAWN PROFESSOR 2",
+    "CN": "除草小能手2"
+  },
+  "achievement_name_423": {
+    "ID": "achievement_name_423",
+    "EN": "LAWN PROFESSOR 3",
+    "CN": "除草小能手3"
+  },
+  "achievement_name_424": {
+    "ID": "achievement_name_424",
+    "EN": "LAWN PROFESSOR 4",
+    "CN": "除草小能手4"
+  },
+  "achievement_name_425": {
+    "ID": "achievement_name_425",
+    "EN": "LAWN PROFESSOR 5",
+    "CN": "除草小能手5"
+  },
+  "achievement_des_421": {
+    "ID": "achievement_des_421",
+    "EN": "Spread out {0} pieces of turf",
+    "CN": "累积铺开草皮{0}个"
+  },
+  "achievement_des_422": {
+    "ID": "achievement_des_422",
+    "EN": "Spread out {0} pieces of turf",
+    "CN": "累积铺开草皮{0}个"
+  },
+  "achievement_des_423": {
+    "ID": "achievement_des_423",
+    "EN": "Spread out {0} pieces of turf",
+    "CN": "累积铺开草皮{0}个"
+  },
+  "achievement_des_424": {
+    "ID": "achievement_des_424",
+    "EN": "Spread out {0} pieces of turf",
+    "CN": "累积铺开草皮{0}个"
+  },
+  "achievement_des_425": {
+    "ID": "achievement_des_425",
+    "EN": "Spread out {0} pieces of turf",
+    "CN": "累积铺开草皮{0}个"
+  },
+  "achievement_name_431": {
+    "ID": "achievement_name_431",
+    "EN": "MONSTER'S FRIEND 1",
+    "CN": "我爱交朋友1"
+  },
+  "achievement_name_432": {
+    "ID": "achievement_name_432",
+    "EN": "MONSTER'S FRIEND 2",
+    "CN": "我爱交朋友2"
+  },
+  "achievement_name_433": {
+    "ID": "achievement_name_433",
+    "EN": "MONSTER'S FRIEND 3",
+    "CN": "我爱交朋友3"
+  },
+  "achievement_name_434": {
+    "ID": "achievement_name_434",
+    "EN": "MONSTER'S FRIEND 4",
+    "CN": "我爱交朋友4"
+  },
+  "achievement_name_435": {
+    "ID": "achievement_name_435",
+    "EN": "MONSTER'S FRIEND 5",
+    "CN": "我爱交朋友5"
+  },
+  "achievement_des_431": {
+    "ID": "achievement_des_431",
+    "EN": "Fulfill {0} times of little monster's wish",
+    "CN": "累积完成小怪物{0}个"
+  },
+  "achievement_des_432": {
+    "ID": "achievement_des_432",
+    "EN": "Fulfill {0} times of little monster's wish",
+    "CN": "累积完成小怪物{0}个"
+  },
+  "achievement_des_433": {
+    "ID": "achievement_des_433",
+    "EN": "Fulfill {0} times of little monster's wish",
+    "CN": "累积完成小怪物{0}个"
+  },
+  "achievement_des_434": {
+    "ID": "achievement_des_434",
+    "EN": "Fulfill {0} times of little monster's wish",
+    "CN": "累积完成小怪物{0}个"
+  },
+  "achievement_des_435": {
+    "ID": "achievement_des_435",
+    "EN": "Fulfill {0} times of little monster's wish",
+    "CN": "累积完成小怪物{0}个"
+  },
+  "achievement_name_441": {
+    "ID": "achievement_name_441",
+    "EN": "SUN LOVER 1",
+    "CN": "阳光好明媚1"
+  },
+  "achievement_name_442": {
+    "ID": "achievement_name_442",
+    "EN": "SUN LOVER 2",
+    "CN": "阳光好明媚2"
+  },
+  "achievement_name_443": {
+    "ID": "achievement_name_443",
+    "EN": "SUN LOVER 3",
+    "CN": "阳光好明媚3"
+  },
+  "achievement_name_444": {
+    "ID": "achievement_name_444",
+    "EN": "SUN LOVER 4",
+    "CN": "阳光好明媚4"
+  },
+  "achievement_name_445": {
+    "ID": "achievement_name_445",
+    "EN": "SUN LOVER 5",
+    "CN": "阳光好明媚5"
+  },
+  "achievement_des_441": {
+    "ID": "achievement_des_441",
+    "EN": "Remove {0} curtains",
+    "CN": "累积消除窗帘{0}个"
+  },
+  "achievement_des_442": {
+    "ID": "achievement_des_442",
+    "EN": "Remove {0} curtains",
+    "CN": "累积消除窗帘{0}个"
+  },
+  "achievement_des_443": {
+    "ID": "achievement_des_443",
+    "EN": "Remove {0} curtains",
+    "CN": "累积消除窗帘{0}个"
+  },
+  "achievement_des_444": {
+    "ID": "achievement_des_444",
+    "EN": "Remove {0} curtains",
+    "CN": "累积消除窗帘{0}个"
+  },
+  "achievement_des_445": {
+    "ID": "achievement_des_445",
+    "EN": "Remove {0} curtains",
+    "CN": "累积消除窗帘{0}个"
+  },
+  "achievement_name_451": {
+    "ID": "achievement_name_451",
+    "EN": "STONE MINER 1",
+    "CN": "采石工人1"
+  },
+  "achievement_name_452": {
+    "ID": "achievement_name_452",
+    "EN": "STONE MINER 2",
+    "CN": "采石工人2"
+  },
+  "achievement_name_453": {
+    "ID": "achievement_name_453",
+    "EN": "STONE MINER 3",
+    "CN": "采石工人3"
+  },
+  "achievement_name_454": {
+    "ID": "achievement_name_454",
+    "EN": "STONE MINER 4",
+    "CN": "采石工人4"
+  },
+  "achievement_name_455": {
+    "ID": "achievement_name_455",
+    "EN": "STONE MINER 5",
+    "CN": "采石工人5"
+  },
+  "achievement_des_451": {
+    "ID": "achievement_des_451",
+    "EN": "Remove {0} stones",
+    "CN": "累积消除石头{0}个"
+  },
+  "achievement_des_452": {
+    "ID": "achievement_des_452",
+    "EN": "Remove {0} stones",
+    "CN": "累积消除石头{0}个"
+  },
+  "achievement_des_453": {
+    "ID": "achievement_des_453",
+    "EN": "Remove {0} stones",
+    "CN": "累积消除石头{0}个"
+  },
+  "achievement_des_454": {
+    "ID": "achievement_des_454",
+    "EN": "Remove {0} stones",
+    "CN": "累积消除石头{0}个"
+  },
+  "achievement_des_455": {
+    "ID": "achievement_des_455",
+    "EN": "Remove {0} stones",
+    "CN": "累积消除石头{0}个"
+  },
+  "achievement_name_461": {
+    "ID": "achievement_name_461",
+    "EN": "ARCHAEOLOGIST 1",
+    "CN": "考古学家1"
+  },
+  "achievement_name_462": {
+    "ID": "achievement_name_462",
+    "EN": "ARCHAEOLOGIST 2",
+    "CN": "考古学家2"
+  },
+  "achievement_name_463": {
+    "ID": "achievement_name_463",
+    "EN": "ARCHAEOLOGIST 3",
+    "CN": "考古学家3"
+  },
+  "achievement_name_464": {
+    "ID": "achievement_name_464",
+    "EN": "ARCHAEOLOGIST 4",
+    "CN": "考古学家4"
+  },
+  "achievement_name_465": {
+    "ID": "achievement_name_465",
+    "EN": "ARCHAEOLOGIST 5",
+    "CN": "考古学家5"
+  },
+  "achievement_des_461": {
+    "ID": "achievement_des_461",
+    "EN": "Remove {0} totems",
+    "CN": "累积消除图腾{0}个"
+  },
+  "achievement_des_462": {
+    "ID": "achievement_des_462",
+    "EN": "Remove {0} totems",
+    "CN": "累积消除图腾{0}个"
+  },
+  "achievement_des_463": {
+    "ID": "achievement_des_463",
+    "EN": "Remove {0} totems",
+    "CN": "累积消除图腾{0}个"
+  },
+  "achievement_des_464": {
+    "ID": "achievement_des_464",
+    "EN": "Remove {0} totems",
+    "CN": "累积消除图腾{0}个"
+  },
+  "achievement_des_465": {
+    "ID": "achievement_des_465",
+    "EN": "Remove {0} totems",
+    "CN": "累积消除图腾{0}个"
+  },
+  "achievement_name_471": {
+    "ID": "achievement_name_471",
+    "EN": "RGB LOVER 1",
+    "CN": "灯火阑珊1"
+  },
+  "achievement_name_472": {
+    "ID": "achievement_name_472",
+    "EN": "RGB LOVER 2",
+    "CN": "灯火阑珊2"
+  },
+  "achievement_name_473": {
+    "ID": "achievement_name_473",
+    "EN": "RGB LOVER 3",
+    "CN": "灯火阑珊3"
+  },
+  "achievement_name_474": {
+    "ID": "achievement_name_474",
+    "EN": "RGB LOVER 4",
+    "CN": "灯火阑珊4"
+  },
+  "achievement_name_475": {
+    "ID": "achievement_name_475",
+    "EN": "RGB LOVER 5",
+    "CN": "灯火阑珊5"
+  },
+  "achievement_des_471": {
+    "ID": "achievement_des_471",
+    "EN": "Remove {0} lights",
+    "CN": "累积消除灯{0}个"
+  },
+  "achievement_des_472": {
+    "ID": "achievement_des_472",
+    "EN": "Remove {0} lights",
+    "CN": "累积消除灯{0}个"
+  },
+  "achievement_des_473": {
+    "ID": "achievement_des_473",
+    "EN": "Remove {0} lights",
+    "CN": "累积消除灯{0}个"
+  },
+  "achievement_des_474": {
+    "ID": "achievement_des_474",
+    "EN": "Remove {0} lights",
+    "CN": "累积消除灯{0}个"
+  },
+  "achievement_des_475": {
+    "ID": "achievement_des_475",
+    "EN": "Remove {0} lights",
+    "CN": "累积消除灯{0}个"
+  },
+  "achievement_name_481": {
+    "ID": "achievement_name_481",
+    "EN": "FLASHMAN 1",
+    "CN": "玻璃破碎者1"
+  },
+  "achievement_name_482": {
+    "ID": "achievement_name_482",
+    "EN": "FLASHMAN 2",
+    "CN": "玻璃破碎者2"
+  },
+  "achievement_name_483": {
+    "ID": "achievement_name_483",
+    "EN": "FLASHMAN 3",
+    "CN": "玻璃破碎者3"
+  },
+  "achievement_name_484": {
+    "ID": "achievement_name_484",
+    "EN": "FLASHMAN 4",
+    "CN": "玻璃破碎者4"
+  },
+  "achievement_name_485": {
+    "ID": "achievement_name_485",
+    "EN": "FLASHMAN 5",
+    "CN": "玻璃破碎者5"
+  },
+  "achievement_des_481": {
+    "ID": "achievement_des_481",
+    "EN": "Remove {0} glasses",
+    "CN": "累积消除玻璃{0}个"
+  },
+  "achievement_des_482": {
+    "ID": "achievement_des_482",
+    "EN": "Remove {0} glasses",
+    "CN": "累积消除玻璃{0}个"
+  },
+  "achievement_des_483": {
+    "ID": "achievement_des_483",
+    "EN": "Remove {0} glasses",
+    "CN": "累积消除玻璃{0}个"
+  },
+  "achievement_des_484": {
+    "ID": "achievement_des_484",
+    "EN": "Remove {0} glasses",
+    "CN": "累积消除玻璃{0}个"
+  },
+  "achievement_des_485": {
+    "ID": "achievement_des_485",
+    "EN": "Remove {0} glasses",
+    "CN": "累积消除玻璃{0}个"
+  },
+  "achievement_name_491": {
+    "ID": "achievement_name_491",
+    "EN": "MORE KETCHUP 1",
+    "CN": "来点番茄酱1"
+  },
+  "achievement_name_492": {
+    "ID": "achievement_name_492",
+    "EN": "MORE KETCHUP 2",
+    "CN": "来点番茄酱2"
+  },
+  "achievement_name_493": {
+    "ID": "achievement_name_493",
+    "EN": "MORE KETCHUP 3",
+    "CN": "来点番茄酱3"
+  },
+  "achievement_name_494": {
+    "ID": "achievement_name_494",
+    "EN": "MORE KETCHUP 4",
+    "CN": "来点番茄酱4"
+  },
+  "achievement_name_495": {
+    "ID": "achievement_name_495",
+    "EN": "MORE KETCHUP 5",
+    "CN": "来点番茄酱5"
+  },
+  "achievement_des_491": {
+    "ID": "achievement_des_491",
+    "EN": "Collect {0} tomatoes",
+    "CN": "累积收集西红柿{0}个"
+  },
+  "achievement_des_492": {
+    "ID": "achievement_des_492",
+    "EN": "Collect {0} tomatoes",
+    "CN": "累积收集西红柿{0}个"
+  },
+  "achievement_des_493": {
+    "ID": "achievement_des_493",
+    "EN": "Collect {0} tomatoes",
+    "CN": "累积收集西红柿{0}个"
+  },
+  "achievement_des_494": {
+    "ID": "achievement_des_494",
+    "EN": "Collect {0} tomatoes",
+    "CN": "累积收集西红柿{0}个"
+  },
+  "achievement_des_495": {
+    "ID": "achievement_des_495",
+    "EN": "Collect {0} tomatoes",
+    "CN": "累积收集西红柿{0}个"
+  },
+  "achievement_name_501": {
+    "ID": "achievement_name_501",
+    "EN": "COOLDOWN MASTER 1",
+    "CN": "冷冻大师1"
+  },
+  "achievement_name_502": {
+    "ID": "achievement_name_502",
+    "EN": "COOLDOWN MASTER 2",
+    "CN": "冷冻大师2"
+  },
+  "achievement_name_503": {
+    "ID": "achievement_name_503",
+    "EN": "COOLDOWN MASTER 3",
+    "CN": "冷冻大师3"
+  },
+  "achievement_name_504": {
+    "ID": "achievement_name_504",
+    "EN": "COOLDOWN MASTER 4",
+    "CN": "冷冻大师4"
+  },
+  "achievement_name_505": {
+    "ID": "achievement_name_505",
+    "EN": "COOLDOWN MASTER 5",
+    "CN": "冷冻大师5"
+  },
+  "achievement_des_501": {
+    "ID": "achievement_des_501",
+    "EN": "Collect {0} ices",
+    "CN": "累积收集冰块{0}个"
+  },
+  "achievement_des_502": {
+    "ID": "achievement_des_502",
+    "EN": "Collect {0} ices",
+    "CN": "累积收集冰块{0}个"
+  },
+  "achievement_des_503": {
+    "ID": "achievement_des_503",
+    "EN": "Collect {0} ices",
+    "CN": "累积收集冰块{0}个"
+  },
+  "achievement_des_504": {
+    "ID": "achievement_des_504",
+    "EN": "Collect {0} ices",
+    "CN": "累积收集冰块{0}个"
+  },
+  "achievement_des_505": {
+    "ID": "achievement_des_505",
+    "EN": "Collect {0} ices",
+    "CN": "累积收集冰块{0}个"
+  },
+  "achievement_name_511": {
+    "ID": "achievement_name_511",
+    "EN": "FLORIST 1",
+    "CN": "花农1"
+  },
+  "achievement_name_512": {
+    "ID": "achievement_name_512",
+    "EN": "FLORIST 2",
+    "CN": "花农2"
+  },
+  "achievement_name_513": {
+    "ID": "achievement_name_513",
+    "EN": "FLORIST 3",
+    "CN": "花农3"
+  },
+  "achievement_name_514": {
+    "ID": "achievement_name_514",
+    "EN": "FLORIST 4",
+    "CN": "花农4"
+  },
+  "achievement_name_515": {
+    "ID": "achievement_name_515",
+    "EN": "FLORIST 5",
+    "CN": "花农5"
+  },
+  "achievement_des_511": {
+    "ID": "achievement_des_511",
+    "EN": "Collect {0} flowerpots",
+    "CN": "累积收集花盆{0}个"
+  },
+  "achievement_des_512": {
+    "ID": "achievement_des_512",
+    "EN": "Collect {0} flowerpots",
+    "CN": "累积收集花盆{0}个"
+  },
+  "achievement_des_513": {
+    "ID": "achievement_des_513",
+    "EN": "Collect {0} flowerpots",
+    "CN": "累积收集花盆{0}个"
+  },
+  "achievement_des_514": {
+    "ID": "achievement_des_514",
+    "EN": "Collect {0} flowerpots",
+    "CN": "累积收集花盆{0}个"
+  },
+  "achievement_des_515": {
+    "ID": "achievement_des_515",
+    "EN": "Collect {0} flowerpots",
+    "CN": "累积收集花盆{0}个"
+  },
+  "achievement_name_521": {
+    "ID": "achievement_name_521",
+    "EN": "BACKPACKER 1",
+    "CN": "背包客1"
+  },
+  "achievement_name_522": {
+    "ID": "achievement_name_522",
+    "EN": "BACKPACKER 2",
+    "CN": "背包客2"
+  },
+  "achievement_name_523": {
+    "ID": "achievement_name_523",
+    "EN": "BACKPACKER 3",
+    "CN": "背包客3"
+  },
+  "achievement_name_524": {
+    "ID": "achievement_name_524",
+    "EN": "BACKPACKER 4",
+    "CN": "背包客4"
+  },
+  "achievement_name_525": {
+    "ID": "achievement_name_525",
+    "EN": "BACKPACKER 5",
+    "CN": "背包客5"
+  },
+  "achievement_des_521": {
+    "ID": "achievement_des_521",
+    "EN": "Collect {0} clothes",
+    "CN": "累积收集衣服{0}件"
+  },
+  "achievement_des_522": {
+    "ID": "achievement_des_522",
+    "EN": "Collect {0} clothes",
+    "CN": "累积收集衣服{0}件"
+  },
+  "achievement_des_523": {
+    "ID": "achievement_des_523",
+    "EN": "Collect {0} clothes",
+    "CN": "累积收集衣服{0}件"
+  },
+  "achievement_des_524": {
+    "ID": "achievement_des_524",
+    "EN": "Collect {0} clothes",
+    "CN": "累积收集衣服{0}件"
+  },
+  "achievement_des_525": {
+    "ID": "achievement_des_525",
+    "EN": "Collect {0} clothes",
+    "CN": "累积收集衣服{0}件"
+  },
+  "achievement_name_531": {
+    "ID": "achievement_name_531",
+    "EN": "BUG CATCHER 1",
+    "CN": "捕虫人1"
+  },
+  "achievement_name_532": {
+    "ID": "achievement_name_532",
+    "EN": "BUG CATCHER 2",
+    "CN": "捕虫人2"
+  },
+  "achievement_name_533": {
+    "ID": "achievement_name_533",
+    "EN": "BUG CATCHER 3",
+    "CN": "捕虫人3"
+  },
+  "achievement_name_534": {
+    "ID": "achievement_name_534",
+    "EN": "BUG CATCHER 4",
+    "CN": "捕虫人4"
+  },
+  "achievement_name_535": {
+    "ID": "achievement_name_535",
+    "EN": "BUG CATCHER 5",
+    "CN": "捕虫人5"
+  },
+  "achievement_des_531": {
+    "ID": "achievement_des_531",
+    "EN": "Collect {0} ladybugs",
+    "CN": "累积收集虫子{0}只"
+  },
+  "achievement_des_532": {
+    "ID": "achievement_des_532",
+    "EN": "Collect {0} ladybugs",
+    "CN": "累积收集虫子{0}只"
+  },
+  "achievement_des_533": {
+    "ID": "achievement_des_533",
+    "EN": "Collect {0} ladybugs",
+    "CN": "累积收集虫子{0}只"
+  },
+  "achievement_des_534": {
+    "ID": "achievement_des_534",
+    "EN": "Collect {0} ladybugs",
+    "CN": "累积收集虫子{0}只"
+  },
+  "achievement_des_535": {
+    "ID": "achievement_des_535",
+    "EN": "Collect {0} ladybugs",
+    "CN": "累积收集虫子{0}只"
+  },
+  "achievement_name_1031": {
+    "ID": "achievement_name_1031",
+    "EN": "BULL's EYE 1",
+    "CN": "精准命中1"
+  },
+  "achievement_name_1032": {
+    "ID": "achievement_name_1032",
+    "EN": "BULL's EYE 2",
+    "CN": "精准命中2"
+  },
+  "achievement_name_1033": {
+    "ID": "achievement_name_1033",
+    "EN": "BULL's EYE 3",
+    "CN": "精准命中3"
+  },
+  "achievement_name_1034": {
+    "ID": "achievement_name_1034",
+    "EN": "BULL's EYE 4",
+    "CN": "精准命中4"
+  },
+  "achievement_name_1035": {
+    "ID": "achievement_name_1035",
+    "EN": "BULL's EYE 5",
+    "CN": "精准命中5"
+  },
+  "achievement_name_1036": {
+    "ID": "achievement_name_1036",
+    "EN": "BULL's EYE 6",
+    "CN": "精准命中6"
+  },
+  "achievement_des_1031": {
+    "ID": "achievement_des_1031",
+    "EN": "Use \"Bomblet\" {0} times",
+    "CN": "累计消耗{0}个小彩弹"
+  },
+  "achievement_des_1032": {
+    "ID": "achievement_des_1032",
+    "EN": "Use \"Bomblet\" {0} times",
+    "CN": "累计消耗{0}个小彩弹"
+  },
+  "achievement_des_1033": {
+    "ID": "achievement_des_1033",
+    "EN": "Use \"Bomblet\" {0} times",
+    "CN": "累计消耗{0}个小彩弹"
+  },
+  "achievement_des_1034": {
+    "ID": "achievement_des_1034",
+    "EN": "Use \"Bomblet\" {0} times",
+    "CN": "累计消耗{0}个小彩弹"
+  },
+  "achievement_des_1035": {
+    "ID": "achievement_des_1035",
+    "EN": "Use \"Bomblet\" {0} times",
+    "CN": "累计消耗{0}个小彩弹"
+  },
+  "achievement_des_1036": {
+    "ID": "achievement_des_1036",
+    "EN": "Use \"Bomblet\" {0} times",
+    "CN": "累计消耗{0}个小彩弹"
+  },
+  "achievement_name_1041": {
+    "ID": "achievement_name_1041",
+    "EN": "MARKSMAN 1",
+    "CN": "神射手1"
+  },
+  "achievement_name_1042": {
+    "ID": "achievement_name_1042",
+    "EN": "MARKSMAN 2",
+    "CN": "神射手2"
+  },
+  "achievement_name_1043": {
+    "ID": "achievement_name_1043",
+    "EN": "MARKSMAN 3",
+    "CN": "神射手3"
+  },
+  "achievement_name_1044": {
+    "ID": "achievement_name_1044",
+    "EN": "MARKSMAN 4",
+    "CN": "神射手4"
+  },
+  "achievement_name_1045": {
+    "ID": "achievement_name_1045",
+    "EN": "MARKSMAN 5",
+    "CN": "神射手5"
+  },
+  "achievement_name_1046": {
+    "ID": "achievement_name_1046",
+    "EN": "MARKSMAN 6",
+    "CN": "神射手6"
+  },
+  "achievement_des_1041": {
+    "ID": "achievement_des_1041",
+    "EN": "Use \"Rocket\" {0} times",
+    "CN": "累计消耗{0}个小火箭"
+  },
+  "achievement_des_1042": {
+    "ID": "achievement_des_1042",
+    "EN": "Use \"Rocket\" {0} times",
+    "CN": "累计消耗{0}个小火箭"
+  },
+  "achievement_des_1043": {
+    "ID": "achievement_des_1043",
+    "EN": "Use \"Rocket\" {0} times",
+    "CN": "累计消耗{0}个小火箭"
+  },
+  "achievement_des_1044": {
+    "ID": "achievement_des_1044",
+    "EN": "Use \"Rocket\" {0} times",
+    "CN": "累计消耗{0}个小火箭"
+  },
+  "achievement_des_1045": {
+    "ID": "achievement_des_1045",
+    "EN": "Use \"Rocket\" {0} times",
+    "CN": "累计消耗{0}个小火箭"
+  },
+  "achievement_des_1046": {
+    "ID": "achievement_des_1046",
+    "EN": "Use \"Rocket\" {0} times",
+    "CN": "累计消耗{0}个小火箭"
+  },
+  "achievement_name_1051": {
+    "ID": "achievement_name_1051",
+    "EN": "DEMOLITION MASTER 1",
+    "CN": "爆破大师1"
+  },
+  "achievement_name_1052": {
+    "ID": "achievement_name_1052",
+    "EN": "DEMOLITION MASTER 2",
+    "CN": "爆破大师2"
+  },
+  "achievement_name_1053": {
+    "ID": "achievement_name_1053",
+    "EN": "DEMOLITION MASTER 3",
+    "CN": "爆破大师3"
+  },
+  "achievement_name_1054": {
+    "ID": "achievement_name_1054",
+    "EN": "DEMOLITION MASTER 4",
+    "CN": "爆破大师4"
+  },
+  "achievement_name_1055": {
+    "ID": "achievement_name_1055",
+    "EN": "DEMOLITION MASTER 5",
+    "CN": "爆破大师5"
+  },
+  "achievement_name_1056": {
+    "ID": "achievement_name_1056",
+    "EN": "DEMOLITION MASTER 6",
+    "CN": "爆破大师6"
+  },
+  "achievement_des_1051": {
+    "ID": "achievement_des_1051",
+    "EN": "Use \"Dynamite\" {0} times",
+    "CN": "累计消耗{0}个小炸药"
+  },
+  "achievement_des_1052": {
+    "ID": "achievement_des_1052",
+    "EN": "Use \"Dynamite\" {0} times",
+    "CN": "累计消耗{0}个小炸药"
+  },
+  "achievement_des_1053": {
+    "ID": "achievement_des_1053",
+    "EN": "Use \"Dynamite\" {0} times",
+    "CN": "累计消耗{0}个小炸药"
+  },
+  "achievement_des_1054": {
+    "ID": "achievement_des_1054",
+    "EN": "Use \"Dynamite\" {0} times",
+    "CN": "累计消耗{0}个小炸药"
+  },
+  "achievement_des_1055": {
+    "ID": "achievement_des_1055",
+    "EN": "Use \"Dynamite\" {0} times",
+    "CN": "累计消耗{0}个小炸药"
+  },
+  "achievement_des_1056": {
+    "ID": "achievement_des_1056",
+    "EN": "Use \"Dynamite\" {0} times",
+    "CN": "累计消耗{0}个小炸药"
+  },
+  "achievement_name_1061": {
+    "ID": "achievement_name_1061",
+    "EN": "HAMMER EXPERT 1",
+    "CN": "锤子达人1"
+  },
+  "achievement_name_1062": {
+    "ID": "achievement_name_1062",
+    "EN": "HAMMER EXPERT 2",
+    "CN": "锤子达人2"
+  },
+  "achievement_name_1063": {
+    "ID": "achievement_name_1063",
+    "EN": "HAMMER EXPERT 3",
+    "CN": "锤子达人3"
+  },
+  "achievement_name_1064": {
+    "ID": "achievement_name_1064",
+    "EN": "HAMMER EXPERT 4",
+    "CN": "锤子达人4"
+  },
+  "achievement_name_1065": {
+    "ID": "achievement_name_1065",
+    "EN": "HAMMER EXPERT 5",
+    "CN": "锤子达人5"
+  },
+  "achievement_name_1066": {
+    "ID": "achievement_name_1066",
+    "EN": "HAMMER EXPERT 6",
+    "CN": "锤子达人6"
+  },
+  "achievement_des_1061": {
+    "ID": "achievement_des_1061",
+    "EN": "Use \"Hammer\" {0} times",
+    "CN": "累计消耗小锤子{0}个"
+  },
+  "achievement_des_1062": {
+    "ID": "achievement_des_1062",
+    "EN": "Use \"Hammer\" {0} times",
+    "CN": "累计消耗小锤子{0}个"
+  },
+  "achievement_des_1063": {
+    "ID": "achievement_des_1063",
+    "EN": "Use \"Hammer\" {0} times",
+    "CN": "累计消耗小锤子{0}个"
+  },
+  "achievement_des_1064": {
+    "ID": "achievement_des_1064",
+    "EN": "Use \"Hammer\" {0} times",
+    "CN": "累计消耗小锤子{0}个"
+  },
+  "achievement_des_1065": {
+    "ID": "achievement_des_1065",
+    "EN": "Use \"Hammer\" {0} times",
+    "CN": "累计消耗小锤子{0}个"
+  },
+  "achievement_des_1066": {
+    "ID": "achievement_des_1066",
+    "EN": "Use \"Hammer\" {0} times",
+    "CN": "累计消耗小锤子{0}个"
+  },
+  "achievement_name_1071": {
+    "ID": "achievement_name_1071",
+    "EN": "MAGICIAN 1",
+    "CN": "魔术大师1"
+  },
+  "achievement_name_1072": {
+    "ID": "achievement_name_1072",
+    "EN": "MAGICIAN 2",
+    "CN": "魔术大师2"
+  },
+  "achievement_name_1073": {
+    "ID": "achievement_name_1073",
+    "EN": "MAGICIAN 3",
+    "CN": "魔术大师3"
+  },
+  "achievement_name_1074": {
+    "ID": "achievement_name_1074",
+    "EN": "MAGICIAN 4",
+    "CN": "魔术大师4"
+  },
+  "achievement_name_1075": {
+    "ID": "achievement_name_1075",
+    "EN": "MAGICIAN 5",
+    "CN": "魔术大师5"
+  },
+  "achievement_name_1076": {
+    "ID": "achievement_name_1076",
+    "EN": "MAGICIAN 6",
+    "CN": "魔术大师6"
+  },
+  "achievement_des_1071": {
+    "ID": "achievement_des_1071",
+    "EN": "Use \"Magic Hat\" {0} times",
+    "CN": "累计消耗魔术帽{0}个"
+  },
+  "achievement_des_1072": {
+    "ID": "achievement_des_1072",
+    "EN": "Use \"Magic Hat\" {0} times",
+    "CN": "累计消耗魔术帽{0}个"
+  },
+  "achievement_des_1073": {
+    "ID": "achievement_des_1073",
+    "EN": "Use \"Magic Hat\" {0} times",
+    "CN": "累计消耗魔术帽{0}个"
+  },
+  "achievement_des_1074": {
+    "ID": "achievement_des_1074",
+    "EN": "Use \"Magic Hat\" {0} times",
+    "CN": "累计消耗魔术帽{0}个"
+  },
+  "achievement_des_1075": {
+    "ID": "achievement_des_1075",
+    "EN": "Use \"Magic Hat\" {0} times",
+    "CN": "累计消耗魔术帽{0}个"
+  },
+  "achievement_des_1076": {
+    "ID": "achievement_des_1076",
+    "EN": "Use \"Magic Hat\" {0} times",
+    "CN": "累计消耗魔术帽{0}个"
+  },
+  "achievement_name_1081": {
+    "ID": "achievement_name_1081",
+    "EN": "ENERGY SURGE 1",
+    "CN": "能量激增1"
+  },
+  "achievement_name_1082": {
+    "ID": "achievement_name_1082",
+    "EN": "ENERGY SURGE 2",
+    "CN": "能量激增2"
+  },
+  "achievement_name_1083": {
+    "ID": "achievement_name_1083",
+    "EN": "ENERGY SURGE 3",
+    "CN": "能量激增3"
+  },
+  "achievement_name_1084": {
+    "ID": "achievement_name_1084",
+    "EN": "ENERGY SURGE 4",
+    "CN": "能量激增4"
+  },
+  "achievement_name_1085": {
+    "ID": "achievement_name_1085",
+    "EN": "ENERGY SURGE 5",
+    "CN": "能量激增5"
+  },
+  "achievement_name_1086": {
+    "ID": "achievement_name_1086",
+    "EN": "ENERGY SURGE 6",
+    "CN": "能量激增6"
+  },
+  "achievement_des_1081": {
+    "ID": "achievement_des_1081",
+    "EN": "Use \"Flying Disc\" {0} times",
+    "CN": "累计消耗飞盘{0}个"
+  },
+  "achievement_des_1082": {
+    "ID": "achievement_des_1082",
+    "EN": "Use \"Flying Disc\" {0} times",
+    "CN": "累计消耗飞盘{0}个"
+  },
+  "achievement_des_1083": {
+    "ID": "achievement_des_1083",
+    "EN": "Use \"Flying Disc\" {0} times",
+    "CN": "累计消耗飞盘{0}个"
+  },
+  "achievement_des_1084": {
+    "ID": "achievement_des_1084",
+    "EN": "Use \"Flying Disc\" {0} times",
+    "CN": "累计消耗飞盘{0}个"
+  },
+  "achievement_des_1085": {
+    "ID": "achievement_des_1085",
+    "EN": "Use \"Flying Disc\" {0} times",
+    "CN": "累计消耗飞盘{0}个"
+  },
+  "achievement_des_1086": {
+    "ID": "achievement_des_1086",
+    "EN": "Use \"Flying Disc\" {0} times",
+    "CN": "累计消耗飞盘{0}个"
+  },
+  "achievement_name_1091": {
+    "ID": "achievement_name_1091",
+    "EN": "ENERGY BURST 1",
+    "CN": "能量爆炸1"
+  },
+  "achievement_name_1092": {
+    "ID": "achievement_name_1092",
+    "EN": "ENERGY BURST 2",
+    "CN": "能量爆炸2"
+  },
+  "achievement_name_1093": {
+    "ID": "achievement_name_1093",
+    "EN": "ENERGY BURST 3",
+    "CN": "能量爆炸3"
+  },
+  "achievement_name_1094": {
+    "ID": "achievement_name_1094",
+    "EN": "ENERGY BURST 4",
+    "CN": "能量爆炸4"
+  },
+  "achievement_name_1095": {
+    "ID": "achievement_name_1095",
+    "EN": "ENERGY BURST 5",
+    "CN": "能量爆炸5"
+  },
+  "achievement_name_1096": {
+    "ID": "achievement_name_1096",
+    "EN": "ENERGY BURST 6",
+    "CN": "能量爆炸6"
+  },
+  "achievement_des_1091": {
+    "ID": "achievement_des_1091",
+    "EN": "Use \"Dart\" {0} times",
+    "CN": "累计消耗飞镖{0}个"
+  },
+  "achievement_des_1092": {
+    "ID": "achievement_des_1092",
+    "EN": "Use \"Dart\" {0} times",
+    "CN": "累计消耗飞镖{0}个"
+  },
+  "achievement_des_1093": {
+    "ID": "achievement_des_1093",
+    "EN": "Use \"Dart\" {0} times",
+    "CN": "累计消耗飞镖{0}个"
+  },
+  "achievement_des_1094": {
+    "ID": "achievement_des_1094",
+    "EN": "Use \"Dart\" {0} times",
+    "CN": "累计消耗飞镖{0}个"
+  },
+  "achievement_des_1095": {
+    "ID": "achievement_des_1095",
+    "EN": "Use \"Dart\" {0} times",
+    "CN": "累计消耗飞镖{0}个"
+  },
+  "achievement_des_1096": {
+    "ID": "achievement_des_1096",
+    "EN": "Use \"Dart\" {0} times",
+    "CN": "累计消耗飞镖{0}个"
+  },
+  "achievement_name_1021": {
+    "ID": "achievement_name_1021",
+    "EN": "NEVER GIVE UP 1",
+    "CN": "永不言弃1"
+  },
+  "achievement_name_1022": {
+    "ID": "achievement_name_1022",
+    "EN": "NEVER GIVE UP 2",
+    "CN": "永不言弃2"
+  },
+  "achievement_name_1023": {
+    "ID": "achievement_name_1023",
+    "EN": "NEVER GIVE UP 3",
+    "CN": "永不言弃3"
+  },
+  "achievement_name_1024": {
+    "ID": "achievement_name_1024",
+    "EN": "NEVER GIVE UP 4",
+    "CN": "永不言弃4"
+  },
+  "achievement_name_1025": {
+    "ID": "achievement_name_1025",
+    "EN": "NEVER GIVE UP 5",
+    "CN": "永不言弃5"
+  },
+  "achievement_name_1026": {
+    "ID": "achievement_name_1026",
+    "EN": "NEVER GIVE UP 6",
+    "CN": "永不言弃6"
+  },
+  "achievement_des_1021": {
+    "ID": "achievement_des_1021",
+    "EN": "Revive {0} times",
+    "CN": "累计复活{0}次"
+  },
+  "achievement_des_1022": {
+    "ID": "achievement_des_1022",
+    "EN": "Revive {0} times",
+    "CN": "累计复活{0}次"
+  },
+  "achievement_des_1023": {
+    "ID": "achievement_des_1023",
+    "EN": "Revive {0} times",
+    "CN": "累计复活{0}次"
+  },
+  "achievement_des_1024": {
+    "ID": "achievement_des_1024",
+    "EN": "Revive {0} times",
+    "CN": "累计复活{0}次"
+  },
+  "achievement_des_1025": {
+    "ID": "achievement_des_1025",
+    "EN": "Revive {0} times",
+    "CN": "累计复活{0}次"
+  },
+  "achievement_des_1026": {
+    "ID": "achievement_des_1026",
+    "EN": "Revive {0} times",
+    "CN": "累计复活{0}次"
+  },
+  "achievement_name_931": {
+    "ID": "achievement_name_931",
+    "EN": "BOOSTER MANIA 1",
+    "CN": "道具使我快乐1"
+  },
+  "achievement_name_932": {
+    "ID": "achievement_name_932",
+    "EN": "BOOSTER MANIA 2",
+    "CN": "道具使我快乐2"
+  },
+  "achievement_name_933": {
+    "ID": "achievement_name_933",
+    "EN": "BOOSTER MANIA 3",
+    "CN": "道具使我快乐3"
+  },
+  "achievement_name_934": {
+    "ID": "achievement_name_934",
+    "EN": "BOOSTER MANIA 4",
+    "CN": "道具使我快乐4"
+  },
+  "achievement_name_935": {
+    "ID": "achievement_name_935",
+    "EN": "BOOSTER MANIA 5",
+    "CN": "道具使我快乐5"
+  },
+  "achievement_name_936": {
+    "ID": "achievement_name_936",
+    "EN": "BOOSTER MANIA 6",
+    "CN": "道具使我快乐6"
+  },
+  "achievement_des_931": {
+    "ID": "achievement_des_931",
+    "EN": "Use 3 boosters in a single level {0} times",
+    "CN": "在单个关卡内使用超过3次道具{0}次"
+  },
+  "achievement_des_932": {
+    "ID": "achievement_des_932",
+    "EN": "Use 3 boosters in a single level {0} times",
+    "CN": "在单个关卡内使用超过3次道具{0}次"
+  },
+  "achievement_des_933": {
+    "ID": "achievement_des_933",
+    "EN": "Use 3 boosters in a single level {0} times",
+    "CN": "在单个关卡内使用超过3次道具{0}次"
+  },
+  "achievement_des_934": {
+    "ID": "achievement_des_934",
+    "EN": "Use 3 boosters in a single level {0} times",
+    "CN": "在单个关卡内使用超过3次道具{0}次"
+  },
+  "achievement_des_935": {
+    "ID": "achievement_des_935",
+    "EN": "Use 3 boosters in a single level {0} times",
+    "CN": "在单个关卡内使用超过3次道具{0}次"
+  },
+  "achievement_des_936": {
+    "ID": "achievement_des_936",
+    "EN": "Use 3 boosters in a single level {0} times",
+    "CN": "在单个关卡内使用超过3次道具{0}次"
+  },
+  "achievement_name_1111": {
+    "ID": "achievement_name_1111",
+    "EN": "CHEST LOVER 1",
+    "CN": "宝箱达人1"
+  },
+  "achievement_name_1112": {
+    "ID": "achievement_name_1112",
+    "EN": "CHEST LOVER 2",
+    "CN": "宝箱达人2"
+  },
+  "achievement_name_1113": {
+    "ID": "achievement_name_1113",
+    "EN": "CHEST LOVER 3",
+    "CN": "宝箱达人3"
+  },
+  "achievement_name_1114": {
+    "ID": "achievement_name_1114",
+    "EN": "CHEST LOVER 4",
+    "CN": "宝箱达人4"
+  },
+  "achievement_name_1115": {
+    "ID": "achievement_name_1115",
+    "EN": "CHEST LOVER 5",
+    "CN": "宝箱达人5"
+  },
+  "achievement_name_1116": {
+    "ID": "achievement_name_1116",
+    "EN": "CHEST LOVER 6",
+    "CN": "宝箱达人6"
+  },
+  "achievement_des_1111": {
+    "ID": "achievement_des_1111",
+    "EN": "Open {0} chests",
+    "CN": "累计打开九个宝箱{0}个"
+  },
+  "achievement_des_1112": {
+    "ID": "achievement_des_1112",
+    "EN": "Open {0} chests",
+    "CN": "累计打开九个宝箱{0}个"
+  },
+  "achievement_des_1113": {
+    "ID": "achievement_des_1113",
+    "EN": "Open {0} chests",
+    "CN": "累计打开九个宝箱{0}个"
+  },
+  "achievement_des_1114": {
+    "ID": "achievement_des_1114",
+    "EN": "Open {0} chests",
+    "CN": "累计打开九个宝箱{0}个"
+  },
+  "achievement_des_1115": {
+    "ID": "achievement_des_1115",
+    "EN": "Open {0} chests",
+    "CN": "累计打开九个宝箱{0}个"
+  },
+  "achievement_des_1116": {
+    "ID": "achievement_des_1116",
+    "EN": "Open {0} chests",
+    "CN": "累计打开九个宝箱{0}个"
+  },
+  "achievement_name_1011": {
+    "ID": "achievement_name_1011",
+    "EN": "BIGSHOT 1",
+    "CN": "我是土豪1"
+  },
+  "achievement_name_1012": {
+    "ID": "achievement_name_1012",
+    "EN": "BIGSHOT 2",
+    "CN": "我是土豪2"
+  },
+  "achievement_name_1013": {
+    "ID": "achievement_name_1013",
+    "EN": "BIGSHOT 3",
+    "CN": "我是土豪3"
+  },
+  "achievement_name_1014": {
+    "ID": "achievement_name_1014",
+    "EN": "BIGSHOT 4",
+    "CN": "我是土豪4"
+  },
+  "achievement_name_1015": {
+    "ID": "achievement_name_1015",
+    "EN": "BIGSHOT 5",
+    "CN": "我是土豪5"
+  },
+  "achievement_name_1016": {
+    "ID": "achievement_name_1016",
+    "EN": "BIGSHOT 6",
+    "CN": "我是土豪6"
+  },
+  "achievement_des_1011": {
+    "ID": "achievement_des_1011",
+    "EN": "Spend {0} coins",
+    "CN": "消耗金币{0}个"
+  },
+  "achievement_des_1012": {
+    "ID": "achievement_des_1012",
+    "EN": "Spend {0} coins",
+    "CN": "消耗金币{0}个"
+  },
+  "achievement_des_1013": {
+    "ID": "achievement_des_1013",
+    "EN": "Spend {0} coins",
+    "CN": "消耗金币{0}个"
+  },
+  "achievement_des_1014": {
+    "ID": "achievement_des_1014",
+    "EN": "Spend {0} coins",
+    "CN": "消耗金币{0}个"
+  },
+  "achievement_des_1015": {
+    "ID": "achievement_des_1015",
+    "EN": "Spend {0} coins",
+    "CN": "消耗金币{0}个"
+  },
+  "achievement_des_1016": {
+    "ID": "achievement_des_1016",
+    "EN": "Spend {0} coins",
+    "CN": "消耗金币{0}个"
+  },
+  "achievement_name_921": {
+    "ID": "achievement_name_921",
+    "EN": "PINCH PENNIES 1",
+    "CN": "勤俭持家1"
+  },
+  "achievement_name_922": {
+    "ID": "achievement_name_922",
+    "EN": "PINCH PENNIES 2",
+    "CN": "勤俭持家2"
+  },
+  "achievement_name_923": {
+    "ID": "achievement_name_923",
+    "EN": "PINCH PENNIES 3",
+    "CN": "勤俭持家3"
+  },
+  "achievement_name_924": {
+    "ID": "achievement_name_924",
+    "EN": "PINCH PENNIES 4",
+    "CN": "勤俭持家4"
+  },
+  "achievement_name_925": {
+    "ID": "achievement_name_925",
+    "EN": "PINCH PENNIES 5",
+    "CN": "勤俭持家5"
+  },
+  "achievement_name_926": {
+    "ID": "achievement_name_926",
+    "EN": "PINCH PENNIES 6",
+    "CN": "勤俭持家6"
+  },
+  "achievement_des_921": {
+    "ID": "achievement_des_921",
+    "EN": "Pass {0} levels without booster",
+    "CN": "不使用道具累计通过{0}关"
+  },
+  "achievement_des_922": {
+    "ID": "achievement_des_922",
+    "EN": "Pass {0} levels without booster",
+    "CN": "不使用道具累计通过{0}关"
+  },
+  "achievement_des_923": {
+    "ID": "achievement_des_923",
+    "EN": "Pass {0} levels without booster",
+    "CN": "不使用道具累计通过{0}关"
+  },
+  "achievement_des_924": {
+    "ID": "achievement_des_924",
+    "EN": "Pass {0} levels without booster",
+    "CN": "不使用道具累计通过{0}关"
+  },
+  "achievement_des_925": {
+    "ID": "achievement_des_925",
+    "EN": "Pass {0} levels without booster",
+    "CN": "不使用道具累计通过{0}关"
+  },
+  "achievement_des_926": {
+    "ID": "achievement_des_926",
+    "EN": "Pass {0} levels without booster",
+    "CN": "不使用道具累计通过{0}关"
+  },
+  "achievement_name_941": {
+    "ID": "achievement_name_941",
+    "EN": "DROPS ELITE 1",
+    "CN": "天使眷顾1"
+  },
+  "achievement_name_942": {
+    "ID": "achievement_name_942",
+    "EN": "DROPS ELITE 2",
+    "CN": "天使眷顾2"
+  },
+  "achievement_name_943": {
+    "ID": "achievement_name_943",
+    "EN": "DROPS ELITE 3",
+    "CN": "天使眷顾3"
+  },
+  "achievement_name_944": {
+    "ID": "achievement_name_944",
+    "EN": "DROPS ELITE 4",
+    "CN": "天使眷顾4"
+  },
+  "achievement_name_945": {
+    "ID": "achievement_name_945",
+    "EN": "DROPS ELITE 5",
+    "CN": "天使眷顾5"
+  },
+  "achievement_name_946": {
+    "ID": "achievement_name_946",
+    "EN": "DROPS ELITE 6",
+    "CN": "天使眷顾6"
+  },
+  "achievement_des_941": {
+    "ID": "achievement_des_941",
+    "EN": "Pass {0} Hard Level on the first try",
+    "CN": "首次就完成困难关{0}关"
+  },
+  "achievement_des_942": {
+    "ID": "achievement_des_942",
+    "EN": "Pass {0} Hard Level on the first try",
+    "CN": "首次就完成困难关{0}关"
+  },
+  "achievement_des_943": {
+    "ID": "achievement_des_943",
+    "EN": "Pass {0} Hard Level on the first try",
+    "CN": "首次就完成困难关{0}关"
+  },
+  "achievement_des_944": {
+    "ID": "achievement_des_944",
+    "EN": "Pass {0} Hard Level on the first try",
+    "CN": "首次就完成困难关{0}关"
+  },
+  "achievement_des_945": {
+    "ID": "achievement_des_945",
+    "EN": "Pass {0} Hard Level on the first try",
+    "CN": "首次就完成困难关{0}关"
+  },
+  "achievement_des_946": {
+    "ID": "achievement_des_946",
+    "EN": "Pass {0} Hard Level on the first try",
+    "CN": "首次就完成困难关{0}关"
+  },
+  "achievement_name_951": {
+    "ID": "achievement_name_951",
+    "EN": "CERTIFICATED PRO 1",
+    "CN": "主角光环1"
+  },
+  "achievement_name_952": {
+    "ID": "achievement_name_952",
+    "EN": "CERTIFICATED PRO 2",
+    "CN": "主角光环2"
+  },
+  "achievement_name_953": {
+    "ID": "achievement_name_953",
+    "EN": "CERTIFICATED PRO 3",
+    "CN": "主角光环3"
+  },
+  "achievement_name_954": {
+    "ID": "achievement_name_954",
+    "EN": "CERTIFICATED PRO 4",
+    "CN": "主角光环4"
+  },
+  "achievement_name_955": {
+    "ID": "achievement_name_955",
+    "EN": "CERTIFICATED PRO 5",
+    "CN": "主角光环5"
+  },
+  "achievement_name_956": {
+    "ID": "achievement_name_956",
+    "EN": "CERTIFICATED PRO 6",
+    "CN": "主角光环6"
+  },
+  "achievement_des_951": {
+    "ID": "achievement_des_951",
+    "EN": "Pass {0} Super Hard Level on the first try",
+    "CN": "首次就完成超难关{0}关"
+  },
+  "achievement_des_952": {
+    "ID": "achievement_des_952",
+    "EN": "Pass {0} Super Hard Level on the first try",
+    "CN": "首次就完成超难关{0}关"
+  },
+  "achievement_des_953": {
+    "ID": "achievement_des_953",
+    "EN": "Pass {0} Super Hard Level on the first try",
+    "CN": "首次就完成超难关{0}关"
+  },
+  "achievement_des_954": {
+    "ID": "achievement_des_954",
+    "EN": "Pass {0} Super Hard Level on the first try",
+    "CN": "首次就完成超难关{0}关"
+  },
+  "achievement_des_955": {
+    "ID": "achievement_des_955",
+    "EN": "Pass {0} Super Hard Level on the first try",
+    "CN": "首次就完成超难关{0}关"
+  },
+  "achievement_des_956": {
+    "ID": "achievement_des_956",
+    "EN": "Pass {0} Super Hard Level on the first try",
+    "CN": "首次就完成超难关{0}关"
+  },
+  "achievement_name_911": {
+    "ID": "achievement_name_911",
+    "EN": "BREATHTAKING VICTORY 1",
+    "CN": "绝地求生1"
+  },
+  "achievement_name_912": {
+    "ID": "achievement_name_912",
+    "EN": "BREATHTAKING VICTORY 2",
+    "CN": "绝地求生2"
+  },
+  "achievement_name_913": {
+    "ID": "achievement_name_913",
+    "EN": "BREATHTAKING VICTORY 3",
+    "CN": "绝地求生3"
+  },
+  "achievement_name_914": {
+    "ID": "achievement_name_914",
+    "EN": "BREATHTAKING VICTORY 4",
+    "CN": "绝地求生4"
+  },
+  "achievement_name_915": {
+    "ID": "achievement_name_915",
+    "EN": "BREATHTAKING VICTORY 5",
+    "CN": "绝地求生5"
+  },
+  "achievement_name_916": {
+    "ID": "achievement_name_916",
+    "EN": "BREATHTAKING VICTORY 6",
+    "CN": "绝地求生6"
+  },
+  "achievement_des_911": {
+    "ID": "achievement_des_911",
+    "EN": "Pass with the last drop {0} times",
+    "CN": "剩余步数0时正好通关累计{0}次"
+  },
+  "achievement_des_912": {
+    "ID": "achievement_des_912",
+    "EN": "Pass with the last drop {0} times",
+    "CN": "剩余步数0时正好通关累计{0}次"
+  },
+  "achievement_des_913": {
+    "ID": "achievement_des_913",
+    "EN": "Pass with the last drop {0} times",
+    "CN": "剩余步数0时正好通关累计{0}次"
+  },
+  "achievement_des_914": {
+    "ID": "achievement_des_914",
+    "EN": "Pass with the last drop {0} times",
+    "CN": "剩余步数0时正好通关累计{0}次"
+  },
+  "achievement_des_915": {
+    "ID": "achievement_des_915",
+    "EN": "Pass with the last drop {0} times",
+    "CN": "剩余步数0时正好通关累计{0}次"
+  },
+  "achievement_des_916": {
+    "ID": "achievement_des_916",
+    "EN": "Pass with the last drop {0} times",
+    "CN": "剩余步数0时正好通关累计{0}次"
+  },
+  "achievement_name_1121": {
+    "ID": "achievement_name_1121",
+    "EN": "LUCKY YOU 1",
+    "CN": "欧皇1"
+  },
+  "achievement_name_1122": {
+    "ID": "achievement_name_1122",
+    "EN": "LUCKY YOU 2",
+    "CN": "欧皇2"
+  },
+  "achievement_name_1123": {
+    "ID": "achievement_name_1123",
+    "EN": "LUCKY YOU 3",
+    "CN": "欧皇3"
+  },
+  "achievement_name_1124": {
+    "ID": "achievement_name_1124",
+    "EN": "LUCKY YOU 4",
+    "CN": "欧皇4"
+  },
+  "achievement_name_1125": {
+    "ID": "achievement_name_1125",
+    "EN": "LUCKY YOU 5",
+    "CN": "欧皇5"
+  },
+  "achievement_des_1121": {
+    "ID": "achievement_des_1121",
+    "EN": "Get the best chest item earliest",
+    "CN": "第一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1122": {
+    "ID": "achievement_des_1122",
+    "EN": "Get the best chest item earliest",
+    "CN": "第一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1123": {
+    "ID": "achievement_des_1123",
+    "EN": "Get the best chest item earliest",
+    "CN": "第一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1124": {
+    "ID": "achievement_des_1124",
+    "EN": "Get the best chest item earliest",
+    "CN": "第一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1125": {
+    "ID": "achievement_des_1125",
+    "EN": "Get the best chest item earliest",
+    "CN": "第一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_name_1131": {
+    "ID": "achievement_name_1131",
+    "EN": "HARD-CHEESE 1",
+    "CN": "非洲酋长1"
+  },
+  "achievement_name_1132": {
+    "ID": "achievement_name_1132",
+    "EN": "HARD-CHEESE 2",
+    "CN": "非洲酋长2"
+  },
+  "achievement_name_1133": {
+    "ID": "achievement_name_1133",
+    "EN": "HARD-CHEESE 3",
+    "CN": "非洲酋长3"
+  },
+  "achievement_name_1134": {
+    "ID": "achievement_name_1134",
+    "EN": "HARD-CHEESE 4",
+    "CN": "非洲酋长4"
+  },
+  "achievement_name_1135": {
+    "ID": "achievement_name_1135",
+    "EN": "HARD-CHEESE 5",
+    "CN": "非洲酋长5"
+  },
+  "achievement_des_1131": {
+    "ID": "achievement_des_1131",
+    "EN": "Get the best chest item latest",
+    "CN": "最后一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1132": {
+    "ID": "achievement_des_1132",
+    "EN": "Get the best chest item latest",
+    "CN": "最后一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1133": {
+    "ID": "achievement_des_1133",
+    "EN": "Get the best chest item latest",
+    "CN": "最后一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1134": {
+    "ID": "achievement_des_1134",
+    "EN": "Get the best chest item latest",
+    "CN": "最后一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_des_1135": {
+    "ID": "achievement_des_1135",
+    "EN": "Get the best chest item latest",
+    "CN": "最后一轮开出九个宝箱中的最好物品{0}次"
+  },
+  "achievement_name_11": {
+    "ID": "achievement_name_11",
+    "EN": "LEVEL CLEARER 1",
+    "CN": "闯关达人1"
+  },
+  "achievement_name_12": {
+    "ID": "achievement_name_12",
+    "EN": "LEVEL CLEARER 2",
+    "CN": "闯关达人2"
+  },
+  "achievement_name_13": {
+    "ID": "achievement_name_13",
+    "EN": "LEVEL CLEARER 3",
+    "CN": "闯关达人3"
+  },
+  "achievement_name_14": {
+    "ID": "achievement_name_14",
+    "EN": "LEVEL CLEARER 4",
+    "CN": "闯关达人4"
+  },
+  "achievement_name_15": {
+    "ID": "achievement_name_15",
+    "EN": "LEVEL CLEARER 5",
+    "CN": "闯关达人5"
+  },
+  "achievement_name_16": {
+    "ID": "achievement_name_16",
+    "EN": "LEVEL CLEARER 6",
+    "CN": "闯关达人6"
+  },
+  "achievement_name_17": {
+    "ID": "achievement_name_17",
+    "EN": "LEVEL CLEARER 7",
+    "CN": "闯关达人7"
+  },
+  "achievement_name_18": {
+    "ID": "achievement_name_18",
+    "EN": "LEVEL CLEARER 8",
+    "CN": "闯关达人8"
+  },
+  "achievement_name_19": {
+    "ID": "achievement_name_19",
+    "EN": "LEVEL CLEARER 9",
+    "CN": "闯关达人9"
+  },
+  "achievement_name_110": {
+    "ID": "achievement_name_110",
+    "EN": "LEVEL CLEARER 10",
+    "CN": "闯关达人10"
+  },
+  "achievement_name_111": {
+    "ID": "achievement_name_111",
+    "EN": "LEVEL CLEARER 11",
+    "CN": "闯关达人11"
+  },
+  "achievement_name_112": {
+    "ID": "achievement_name_112",
+    "EN": "LEVEL CLEARER 12",
+    "CN": "闯关达人12"
+  },
+  "achievement_name_113": {
+    "ID": "achievement_name_113",
+    "EN": "LEVEL CLEARER 13",
+    "CN": "闯关达人13"
+  },
+  "achievement_name_114": {
+    "ID": "achievement_name_114",
+    "EN": "LEVEL CLEARER 14",
+    "CN": "闯关达人14"
+  },
+  "achievement_name_115": {
+    "ID": "achievement_name_115",
+    "EN": "LEVEL CLEARER 15",
+    "CN": "闯关达人15"
+  },
+  "achievement_name_116": {
+    "ID": "achievement_name_116",
+    "EN": "LEVEL CLEARER 16",
+    "CN": "闯关达人16"
+  },
+  "achievement_name_117": {
+    "ID": "achievement_name_117",
+    "EN": "LEVEL CLEARER 17",
+    "CN": "闯关达人17"
+  },
+  "achievement_name_118": {
+    "ID": "achievement_name_118",
+    "EN": "LEVEL CLEARER 18",
+    "CN": "闯关达人18"
+  },
+  "achievement_name_119": {
+    "ID": "achievement_name_119",
+    "EN": "LEVEL CLEARER 19",
+    "CN": "闯关达人19"
+  },
+  "achievement_name_120": {
+    "ID": "achievement_name_120",
+    "EN": "LEVEL CLEARER 20",
+    "CN": "闯关达人20"
+  },
+  "achievement_des_11": {
+    "ID": "achievement_des_11",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_12": {
+    "ID": "achievement_des_12",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_13": {
+    "ID": "achievement_des_13",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_14": {
+    "ID": "achievement_des_14",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_15": {
+    "ID": "achievement_des_15",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_16": {
+    "ID": "achievement_des_16",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_17": {
+    "ID": "achievement_des_17",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_18": {
+    "ID": "achievement_des_18",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_19": {
+    "ID": "achievement_des_19",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_110": {
+    "ID": "achievement_des_110",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_111": {
+    "ID": "achievement_des_111",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_112": {
+    "ID": "achievement_des_112",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_113": {
+    "ID": "achievement_des_113",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_114": {
+    "ID": "achievement_des_114",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_115": {
+    "ID": "achievement_des_115",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_116": {
+    "ID": "achievement_des_116",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_117": {
+    "ID": "achievement_des_117",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_118": {
+    "ID": "achievement_des_118",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_119": {
+    "ID": "achievement_des_119",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_des_120": {
+    "ID": "achievement_des_120",
+    "EN": "Complete Level {0}",
+    "CN": "通过第{0}关"
+  },
+  "achievement_name_1001": {
+    "ID": "achievement_name_1001",
+    "EN": "HARD-WORKING 1",
+    "CN": "勤劳的小蜜蜂1"
+  },
+  "achievement_name_1002": {
+    "ID": "achievement_name_1002",
+    "EN": "HARD-WORKING 2",
+    "CN": "勤劳的小蜜蜂2"
+  },
+  "achievement_name_1003": {
+    "ID": "achievement_name_1003",
+    "EN": "HARD-WORKING 3",
+    "CN": "勤劳的小蜜蜂3"
+  },
+  "achievement_name_1004": {
+    "ID": "achievement_name_1004",
+    "EN": "HARD-WORKING 4",
+    "CN": "勤劳的小蜜蜂4"
+  },
+  "achievement_name_1005": {
+    "ID": "achievement_name_1005",
+    "EN": "HARD-WORKING 5",
+    "CN": "勤劳的小蜜蜂5"
+  },
+  "achievement_name_1006": {
+    "ID": "achievement_name_1006",
+    "EN": "HARD-WORKING 6",
+    "CN": "勤劳的小蜜蜂6"
+  },
+  "achievement_name_1007": {
+    "ID": "achievement_name_1007",
+    "EN": "HARD-WORKING 7",
+    "CN": "勤劳的小蜜蜂7"
+  },
+  "achievement_name_1008": {
+    "ID": "achievement_name_1008",
+    "EN": "HARD-WORKING 8",
+    "CN": "勤劳的小蜜蜂8"
+  },
+  "achievement_name_1009": {
+    "ID": "achievement_name_1009",
+    "EN": "HARD-WORKING 9",
+    "CN": "勤劳的小蜜蜂9"
+  },
+  "achievement_name_10010": {
+    "ID": "achievement_name_10010",
+    "EN": "HARD-WORKING 10",
+    "CN": "勤劳的小蜜蜂10"
+  },
+  "achievement_des_1001": {
+    "ID": "achievement_des_1001",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1002": {
+    "ID": "achievement_des_1002",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1003": {
+    "ID": "achievement_des_1003",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1004": {
+    "ID": "achievement_des_1004",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1005": {
+    "ID": "achievement_des_1005",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1006": {
+    "ID": "achievement_des_1006",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1007": {
+    "ID": "achievement_des_1007",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1008": {
+    "ID": "achievement_des_1008",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_1009": {
+    "ID": "achievement_des_1009",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_des_10010": {
+    "ID": "achievement_des_10010",
+    "EN": "Log in to the game {0} days",
+    "CN": "累计登录{0}天"
+  },
+  "achievement_name_901": {
+    "ID": "achievement_name_901",
+    "EN": "BREEZE 1",
+    "CN": "小菜一碟1"
+  },
+  "achievement_name_902": {
+    "ID": "achievement_name_902",
+    "EN": "BREEZE 2",
+    "CN": "小菜一碟2"
+  },
+  "achievement_name_903": {
+    "ID": "achievement_name_903",
+    "EN": "BREEZE 3",
+    "CN": "小菜一碟3"
+  },
+  "achievement_name_904": {
+    "ID": "achievement_name_904",
+    "EN": "BREEZE 4",
+    "CN": "小菜一碟4"
+  },
+  "achievement_name_905": {
+    "ID": "achievement_name_905",
+    "EN": "BREEZE 5",
+    "CN": "小菜一碟5"
+  },
+  "achievement_name_906": {
+    "ID": "achievement_name_906",
+    "EN": "BREEZE 6",
+    "CN": "小菜一碟6"
+  },
+  "achievement_des_901": {
+    "ID": "achievement_des_901",
+    "EN": "Pass with over 10 drops left {0} times",
+    "CN": "累计{0}次通关且剩余步数大于10"
+  },
+  "achievement_des_902": {
+    "ID": "achievement_des_902",
+    "EN": "Pass with over 10 drops left {0} times",
+    "CN": "累计{0}次通关且剩余步数大于10"
+  },
+  "achievement_des_903": {
+    "ID": "achievement_des_903",
+    "EN": "Pass with over 10 drops left {0} times",
+    "CN": "累计{0}次通关且剩余步数大于10"
+  },
+  "achievement_des_904": {
+    "ID": "achievement_des_904",
+    "EN": "Pass with over 10 drops left {0} times",
+    "CN": "累计{0}次通关且剩余步数大于10"
+  },
+  "achievement_des_905": {
+    "ID": "achievement_des_905",
+    "EN": "Pass with over 10 drops left {0} times",
+    "CN": "累计{0}次通关且剩余步数大于10"
+  },
+  "achievement_des_906": {
+    "ID": "achievement_des_906",
+    "EN": "Pass with over 10 drops left {0} times",
+    "CN": "累计{0}次通关且剩余步数大于10"
+  },
+  "guide_dialog_105": {
+    "ID": "guide_dialog_105",
+    "EN": "Welcome to Ella's wondrous holiday, tap on the indicated area to drop the animal. The same kind will be merged.",
+    "CN": "欢迎来到小动物乐合合，点击指示区域放下小动物，相同的动物就会合成哦！"
+  },
+  "guide_dialog_109": {
+    "ID": "guide_dialog_109",
+    "EN": "Look, the level goal is in the top right corner. We can pass the level if we complete all the goals.",
+    "CN": "看，右上方是关卡目标。我们已经完成了一个，全部完成就过关了。"
+  },
+  "guide_dialog_301": {
+    "ID": "guide_dialog_301",
+    "EN": "Here are some old wooden boxes! They were used on the farm long ago. Let's take them down together.",
+    "CN": "这有些以前农场里装东西的废旧木箱，我们一起把它们拆除掉。"
+  },
+  "guide_dialog_302": {
+    "ID": "guide_dialog_302",
+    "EN": "We can tear down the wooden boxes by merging next to them.",
+    "CN": "在木箱旁合成可以把它拆除掉。"
+  },
+  "guide_dialog_501": {
+    "ID": "guide_dialog_501",
+    "EN": "New item unlocked! Hammer can clean animals or objects. Try it!",
+    "CN": "木锤子已解锁，它可以消除一个动物或物品，试试看。"
+  },
+  "guide_dialog_601": {
+    "ID": "guide_dialog_601",
+    "EN": "It's time to make omelets, but we don't have enough eggs. Let's get some more.",
+    "CN": "我想做一些蛋饼，但是屋里的鸡蛋用完了，我们得再去拿一些鸡蛋。"
+  },
+  "guide_dialog_602": {
+    "ID": "guide_dialog_602",
+    "EN": "When the eggs fall to the bottom border, we can take them away.",
+    "CN": "让鸡蛋掉到底部的边框，我们就可以拿走它们了。"
+  },
+  "guide_dialog_1001": {
+    "ID": "guide_dialog_1001",
+    "EN": "Grandpa wanna make honey cakes, but the honey pot is not in the kitchen. Go and fetch him some honey!",
+    "CN": "爷爷想做蜂蜜蛋糕给我们吃，可是蜂蜜罐不在厨房。帮他去拿几罐蜂蜜回来吧！"
+  },
+  "guide_dialog_1002": {
+    "ID": "guide_dialog_1002",
+    "EN": "Merge animals next to the honey pot can get them!",
+    "CN": "在蜂蜜罐旁合成可以获取蜂蜜罐。"
+  },
+  "guide_dialog_1401": {
+    "ID": "guide_dialog_1401",
+    "EN": "Oops, the grinder and the plank fell into the water! Ahhh... Let's figure it out.",
+    "CN": "我的碎木机和木板掉进了水里！啊…一起想想办法吧。"
+  },
+  "guide_dialog_1402": {
+    "ID": "guide_dialog_1402",
+    "EN": "See those empty bottles? Merge beside them to lower the water level.",
+    "CN": "看到那些空瓶子了吗？在它们旁边合成，就可以让水位降下来。"
+  },
+  "guide_dialog_1801": {
+    "ID": "guide_dialog_1801",
+    "EN": "Would you like some strawberry pie? I really love it! We need to pick some strawberries!",
+    "CN": "想不想尝尝祖父的草莓派？我们需要采一些草莓！"
+  },
+  "guide_dialog_1802": {
+    "ID": "guide_dialog_1802",
+    "EN": "Collect strawberries by merging next to the strawberry jelly. You can collect a lot at once!",
+    "CN": "在草莓果冻旁合成可以采集草莓，一次可以采集很多哦！"
+  },
+  "guide_dialog_1901": {
+    "ID": "guide_dialog_1901",
+    "EN": "Guess what accessories I bought for the animals? They're so cute, let me show you!",
+    "CN": "你猜猜我给小动物们新买了些什么小装饰？简直太可爱了，我带你去看看！"
+  },
+  "guide_dialog_1902": {
+    "ID": "guide_dialog_1902",
+    "EN": "Isn't it fun? Merge them to get the sunglasses.",
+    "CN": "是不是很好玩？合成它们，可以把小墨镜拿回来。"
+  },
+  "guide_dialog_2001": {
+    "ID": "guide_dialog_2001",
+    "EN": "Grandpa asked us to carry some grinders for making wood supplies. Let's speed up the processing of the plank.",
+    "CN": "祖父让我们帮他搬一些碎木机，他需要做一些木质用品。我们先加速把眼下的木板处理完。"
+  },
+  "guide_dialog_2002": {
+    "ID": "guide_dialog_2002",
+    "EN": "Merging next to the grinder and the plank can start the grinder to break the plank.",
+    "CN": "在碎木机和木板旁合成，可以让碎木机工作，把木板碎掉。"
+  },
+  "guide_dialog_2601": {
+    "ID": "guide_dialog_2601",
+    "EN": "The grass has been eaten up, let's seed a new lawn, haha!",
+    "CN": "有些草地被动物吃光了，我们试试搞点绿化工作，哈哈！"
+  },
+  "guide_dialog_2602": {
+    "ID": "guide_dialog_2602",
+    "EN": "The drops merge can spread out the turf!",
+    "CN": "合成可以让草皮逐渐铺开来！"
+  },
+  "guide_dialog_2801": {
+    "ID": "guide_dialog_2801",
+    "EN": "Wow, what's that? A...Cute little monster?",
+    "CN": "天哪，那是什么？一只...可爱的小怪兽？"
+  },
+  "guide_dialog_2802": {
+    "ID": "guide_dialog_2802",
+    "EN": "It wants us to create some drops generation for him.",
+    "CN": "它好像希望我们帮它合成一些动物，尽量满足它的愿望吧。"
+  },
+  "guide_dialog_2901": {
+    "ID": "guide_dialog_2901",
+    "EN": "What a lovely day! Come on, let's pull up the curtains.",
+    "CN": "这会儿阳光这么好，走，我们把窗帘都拉起来。"
+  },
+  "guide_dialog_2902": {
+    "ID": "guide_dialog_2902",
+    "EN": "The drops effect can roll up the curtains.",
+    "CN": "合成可以让窗帘逐步收起。"
+  },
+  "guide_dialog_2201": {
+    "ID": "guide_dialog_2201",
+    "EN": "The coin could buy the power booster, so let's find out where we can get more coins.",
+    "CN": "金币可以购买各种常用道具，我们去找找哪里能搞到更多金币。"
+  },
+  "guide_dialog_2204": {
+    "ID": "guide_dialog_2204",
+    "EN": "Wow, this looks like a good way to get coins! Take a chance!",
+    "CN": "哇哦，这个看起来能弄到不少金币，碰碰运气！"
+  },
+  "guide_dialog_2206": {
+    "ID": "guide_dialog_2206",
+    "EN": "You are so lucky! Check out more details here.",
+    "CN": "你果然是幸运体质！这里可以看到更多详细游戏规则。"
+  },
+  "guide_dialog_2301": {
+    "ID": "guide_dialog_2301",
+    "EN": "Happy people are always lucky. Let me show you something nice!",
+    "CN": "快乐的人的运气一般都很好，所以我想你帮我去看一个好东西！"
+  },
+  "guide_dialog_2304": {
+    "ID": "guide_dialog_2304",
+    "EN": "Spin to test your luck!",
+    "CN": "转一下，看看你的幸运女神还在不在身边。"
+  },
+  "guide_dialog_2306": {
+    "ID": "guide_dialog_2306",
+    "EN": "Winning again! Try it every 30 minutes. Good luck!",
+    "CN": "幸运体质！又中奖啦！每隔30分钟都可以来试一次，祝你好运哦！"
+  },
+  "guide_dialog_2605": {
+    "ID": "guide_dialog_2605",
+    "EN": "Tap here to get tips. Remember this order that will help you with coming level. (Tap anywhere to close the tips)",
+    "CN": "在这里我们可以查看小动物们的合成顺序哦，点击任意位置即可关闭气泡框。"
+  },
+  "guide_ball1": {
+    "ID": "guide_ball1",
+    "EN": "4 X COMBO generates the Red Energy Booster.",
+    "CN": "4连击可以生成红色能量瓶。"
+  },
+  "guide_ball2": {
+    "ID": "guide_ball2",
+    "EN": "The Red Energy Booster can level up the touched animal.",
+    "CN": "红色能量瓶可以让碰到的动物变高一级。"
+  },
+  "guide_ball3": {
+    "ID": "guide_ball3",
+    "EN": "5 X COMBO generates the Blue Energy Booster.",
+    "CN": "5连击可以生成蓝色能量瓶。"
+  },
+  "guide_ball4": {
+    "ID": "guide_ball4",
+    "EN": "The Blue Energy Booster can upgrade the animal at the bottom directly.",
+    "CN": "蓝色能量瓶可以直接升级最下方的动物，有时候比红色能量瓶更好用。"
+  },
+  "guide_ball5": {
+    "ID": "guide_ball5",
+    "EN": "6 X COMBO generates the Rainbow Energy Booster.",
+    "CN": "6连击可以生成彩色能量瓶。"
+  },
+  "guide_ball6": {
+    "ID": "guide_ball6",
+    "EN": "Rainbow Energy Booster can upgrade all animals of the selected one kind.",
+    "CN": "彩色能量瓶可以让所有同类动物都一起升级，是最珍贵的能量瓶。"
+  },
+  "guide_dialog_4001": {
+    "ID": "guide_dialog_4001",
+    "EN": "Stones and bombs. . . Any connection between them?",
+    "CN": "看到这些石头和炸弹没有，它们之间……好像有什么联系？"
+  },
+  "guide_dialog_4002": {
+    "ID": "guide_dialog_4002",
+    "EN": "You can destroy a random stone by merging next to the bomb! Try it!",
+    "CN": "在炸弹旁边合成，就可以随机炸毁一块石头哦，试试看。"
+  },
+  "guide_dialog_4101": {
+    "ID": "guide_dialog_4101",
+    "EN": "Lucky you! You met the legendary totem!",
+    "CN": "运气真好，竟然碰见了传说中的图腾！"
+  },
+  "guide_dialog_4102": {
+    "ID": "guide_dialog_4102",
+    "EN": "Merge beside the totem to split it. It can be split 2 times. Let's collect the smallest totem!",
+    "CN": "在图腾周围合成就可以分裂图腾，图腾一共可以分裂2次，让我们把最小的图腾收集起来吧。"
+  },
+  "guide_dialog_4201": {
+    "ID": "guide_dialog_4201",
+    "EN": "Grandpa asked us to decorate our home. Collect these lights to make our home more beautiful!",
+    "CN": "爷爷让我们为家里做些装饰，收集这些灯，来漂亮地装扮家吧。"
+  },
+  "guide_dialog_4202": {
+    "ID": "guide_dialog_4202",
+    "EN": "Merge beside the light to change its color. We can collect the lights when all of them become one color.",
+    "CN": "在灯旁边合成就能使它变色，当所有灯变为一个颜色的时候就能收集它们啦。"
+  },
+  "guide_dialog_4301": {
+    "ID": "guide_dialog_4301",
+    "EN": "Glass pieces are blocking the animals! Try to break the glass!",
+    "CN": "这些玻璃挡住了小动物们的脸，让我们来把它敲碎吧。"
+  },
+  "guide_dialog_4302": {
+    "ID": "guide_dialog_4302",
+    "EN": "The glass will shatter if you merge in the glass area.",
+    "CN": "在玻璃范围内合成玻璃就会破碎哦。"
+  },
+  "guide_dialog_4401": {
+    "ID": "guide_dialog_4401",
+    "EN": "These canned tomatoes look delicious. We can bring some back for Grandpa!",
+    "CN": "这些西红柿罐头看起来很好吃，我们给爷爷带一些回去。"
+  },
+  "guide_dialog_4402": {
+    "ID": "guide_dialog_4402",
+    "EN": "Merge around them to collect the tomatoes inside. There are 3 tomatoes in each can.",
+    "CN": "在它们周围发生合成就能收集里面的西红柿，每个罐头里都有3个西红柿哦。"
+  },
+  "guide_dialog_4501": {
+    "ID": "guide_dialog_4501",
+    "EN": "Wow! Puzzle pieces! It must be fun!",
+    "CN": "这里竟然有拼图，看起来很好玩？"
+  },
+  "guide_dialog_4502": {
+    "ID": "guide_dialog_4502",
+    "EN": "See the puzzle packs? Merge beside them to put the pieces together. Have fun!",
+    "CN": "看到那些拼图包没，在它们旁边合成就能把拼图拼起来，一起来玩吧！"
+  },
+  "RW": {
+    "ID": "RW",
+    "EN": "Rwanda",
+    "CN": "卢旺达"
+  },
+  "SO": {
+    "ID": "SO",
+    "EN": "Somalia",
+    "CN": "索马里"
+  },
+  "YE": {
+    "ID": "YE",
+    "EN": "Yemen",
+    "CN": "也门"
+  },
+  "IQ": {
+    "ID": "IQ",
+    "EN": "Iraq",
+    "CN": "伊拉克"
+  },
+  "SA": {
+    "ID": "SA",
+    "EN": "Saudi Arabia",
+    "CN": "沙特阿拉伯"
+  },
+  "IR": {
+    "ID": "IR",
+    "EN": "Iran",
+    "CN": "伊朗"
+  },
+  "CY": {
+    "ID": "CY",
+    "EN": "Cyprus",
+    "CN": "塞浦路斯"
+  },
+  "TZ": {
+    "ID": "TZ",
+    "EN": "Tanzania",
+    "CN": "坦桑尼亚"
+  },
+  "SY": {
+    "ID": "SY",
+    "EN": "Syria",
+    "CN": "叙利亚"
+  },
+  "AM": {
+    "ID": "AM",
+    "EN": "Armenia",
+    "CN": "亚美尼亚"
+  },
+  "KE": {
+    "ID": "KE",
+    "EN": "Kenya",
+    "CN": "肯尼亚"
+  },
+  "CD": {
+    "ID": "CD",
+    "EN": "DR Congo",
+    "CN": "扎伊尔"
+  },
+  "DJ": {
+    "ID": "DJ",
+    "EN": "Djibouti",
+    "CN": "吉布提"
+  },
+  "UG": {
+    "ID": "UG",
+    "EN": "Uganda",
+    "CN": "乌干达"
+  },
+  "CF": {
+    "ID": "CF",
+    "EN": "Central African Republic",
+    "CN": "中非"
+  },
+  "SC": {
+    "ID": "SC",
+    "EN": "Seychelles",
+    "CN": "塞舌尔"
+  },
+  "JO": {
+    "ID": "JO",
+    "EN": "Jordan",
+    "CN": "约旦"
+  },
+  "LB": {
+    "ID": "LB",
+    "EN": "Lebanon",
+    "CN": "黎巴嫩"
+  },
+  "KW": {
+    "ID": "KW",
+    "EN": "Kuwait",
+    "CN": "科威特"
+  },
+  "OM": {
+    "ID": "OM",
+    "EN": "Oman",
+    "CN": "阿曼"
+  },
+  "QA": {
+    "ID": "QA",
+    "EN": "Qatar",
+    "CN": "卡塔尔"
+  },
+  "BH": {
+    "ID": "BH",
+    "EN": "Bahrain",
+    "CN": "巴林"
+  },
+  "AE": {
+    "ID": "AE",
+    "EN": "United Arab Emirates",
+    "CN": "阿联酋"
+  },
+  "IL": {
+    "ID": "IL",
+    "EN": "Israel",
+    "CN": "以色列"
+  },
+  "TR": {
+    "ID": "TR",
+    "EN": "Turkey",
+    "CN": "土耳其"
+  },
+  "ET": {
+    "ID": "ET",
+    "EN": "Ethiopia",
+    "CN": "埃塞俄比亚"
+  },
+  "ER": {
+    "ID": "ER",
+    "EN": "Eritrea",
+    "CN": "厄立特里亚"
+  },
+  "EG": {
+    "ID": "EG",
+    "EN": "Egypt",
+    "CN": "埃及"
+  },
+  "SD": {
+    "ID": "SD",
+    "EN": "Sudan",
+    "CN": "苏丹"
+  },
+  "GR": {
+    "ID": "GR",
+    "EN": "Greece",
+    "CN": "希腊"
+  },
+  "BI": {
+    "ID": "BI",
+    "EN": "Burundi",
+    "CN": "布隆迪"
+  },
+  "EE": {
+    "ID": "EE",
+    "EN": "Estonia",
+    "CN": "爱沙尼亚"
+  },
+  "LV": {
+    "ID": "LV",
+    "EN": "Latvia",
+    "CN": "拉脱维亚"
+  },
+  "AZ": {
+    "ID": "AZ",
+    "EN": "Azerbaijan",
+    "CN": "阿塞拜疆"
+  },
+  "LT": {
+    "ID": "LT",
+    "EN": "Lithuania",
+    "CN": "立陶宛"
+  },
+  "SJ": {
+    "ID": "SJ",
+    "EN": "Svalbard and Jan Mayen",
+    "CN": "斯瓦尔巴岛和扬马延岛"
+  },
+  "GE": {
+    "ID": "GE",
+    "EN": "Georgia",
+    "CN": "格鲁吉亚"
+  },
+  "MD": {
+    "ID": "MD",
+    "EN": "Moldova",
+    "CN": "摩尔多瓦"
+  },
+  "BY": {
+    "ID": "BY",
+    "EN": "Belarus",
+    "CN": "白俄罗斯"
+  },
+  "FI": {
+    "ID": "FI",
+    "EN": "Finland",
+    "CN": "芬兰"
+  },
+  "AX": {
+    "ID": "AX",
+    "EN": "Åland",
+    "CN": "奥兰群岛"
+  },
+  "UA": {
+    "ID": "UA",
+    "EN": "Ukraine",
+    "CN": "乌克兰"
+  },
+  "MK": {
+    "ID": "MK",
+    "EN": "North Macedonia",
+    "CN": "前南马其顿"
+  },
+  "HU": {
+    "ID": "HU",
+    "EN": "Hungary",
+    "CN": "匈牙利"
+  },
+  "BG": {
+    "ID": "BG",
+    "EN": "Bulgaria",
+    "CN": "保加利亚"
+  },
+  "AL": {
+    "ID": "AL",
+    "EN": "Albania",
+    "CN": "阿尔巴尼亚"
+  },
+  "PL": {
+    "ID": "PL",
+    "EN": "Poland",
+    "CN": "波兰"
+  },
+  "RO": {
+    "ID": "RO",
+    "EN": "Romania",
+    "CN": "罗马尼亚"
+  },
+  "XK": {
+    "ID": "XK",
+    "EN": "Kosovo",
+    "CN": "科索沃"
+  },
+  "ZW": {
+    "ID": "ZW",
+    "EN": "Zimbabwe",
+    "CN": "津巴布韦"
+  },
+  "ZM": {
+    "ID": "ZM",
+    "EN": "Zambia",
+    "CN": "赞比亚"
+  },
+  "KM": {
+    "ID": "KM",
+    "EN": "Comoros",
+    "CN": "科摩罗"
+  },
+  "MW": {
+    "ID": "MW",
+    "EN": "Malawi",
+    "CN": "马拉维"
+  },
+  "LS": {
+    "ID": "LS",
+    "EN": "Lesotho",
+    "CN": "莱索托"
+  },
+  "BW": {
+    "ID": "BW",
+    "EN": "Botswana",
+    "CN": "博茨瓦纳"
+  },
+  "MU": {
+    "ID": "MU",
+    "EN": "Mauritius",
+    "CN": "毛里求斯"
+  },
+  "SZ": {
+    "ID": "SZ",
+    "EN": "Eswatini",
+    "CN": "斯威士兰"
+  },
+  "RE": {
+    "ID": "RE",
+    "EN": "Réunion",
+    "CN": "留尼汪"
+  },
+  "ZA": {
+    "ID": "ZA",
+    "EN": "South Africa",
+    "CN": "南非"
+  },
+  "YT": {
+    "ID": "YT",
+    "EN": "Mayotte",
+    "CN": "马约特"
+  },
+  "MZ": {
+    "ID": "MZ",
+    "EN": "Mozambique",
+    "CN": "莫桑比克"
+  },
+  "MG": {
+    "ID": "MG",
+    "EN": "Madagascar",
+    "CN": "马达加斯加"
+  },
+  "AF": {
+    "ID": "AF",
+    "EN": "Afghanistan",
+    "CN": "阿富汗"
+  },
+  "PK": {
+    "ID": "PK",
+    "EN": "Pakistan",
+    "CN": "巴基斯坦"
+  },
+  "BD": {
+    "ID": "BD",
+    "EN": "Bangladesh",
+    "CN": "孟加拉国"
+  },
+  "TM": {
+    "ID": "TM",
+    "EN": "Turkmenistan",
+    "CN": "土库曼斯坦"
+  },
+  "TJ": {
+    "ID": "TJ",
+    "EN": "Tajikistan",
+    "CN": "塔吉克斯坦"
+  },
+  "LK": {
+    "ID": "LK",
+    "EN": "Sri Lanka",
+    "CN": "斯里兰卡"
+  },
+  "BT": {
+    "ID": "BT",
+    "EN": "Bhutan",
+    "CN": "不丹"
+  },
+  "IN": {
+    "ID": "IN",
+    "EN": "India",
+    "CN": "印度"
+  },
+  "MV": {
+    "ID": "MV",
+    "EN": "Maldives",
+    "CN": "马尔代夫"
+  },
+  "IO": {
+    "ID": "IO",
+    "EN": "British Indian Ocean Territory",
+    "CN": "英属印度洋领地"
+  },
+  "NP": {
+    "ID": "NP",
+    "EN": "Nepal",
+    "CN": "尼泊尔"
+  },
+  "MM": {
+    "ID": "MM",
+    "EN": "Myanmar",
+    "CN": "缅甸"
+  },
+  "UZ": {
+    "ID": "UZ",
+    "EN": "Uzbekistan",
+    "CN": "乌兹别克斯坦"
+  },
+  "KZ": {
+    "ID": "KZ",
+    "EN": "Kazakhstan",
+    "CN": "哈萨克斯坦"
+  },
+  "KG": {
+    "ID": "KG",
+    "EN": "Kyrgyzstan",
+    "CN": "吉尔吉斯斯坦"
+  },
+  "TF": {
+    "ID": "TF",
+    "EN": "French Southern Territories",
+    "CN": "法属南部领地"
+  },
+  "HM": {
+    "ID": "HM",
+    "EN": "Heard Island and McDonald Islands",
+    "CN": "赫德岛和麦克唐纳岛"
+  },
+  "CC": {
+    "ID": "CC",
+    "EN": "Cocos [Keeling] Islands",
+    "CN": "科科斯（基林）群岛"
+  },
+  "PW": {
+    "ID": "PW",
+    "EN": "Palau",
+    "CN": "帕劳"
+  },
+  "VN": {
+    "ID": "VN",
+    "EN": "Vietnam",
+    "CN": "越南"
+  },
+  "TH": {
+    "ID": "TH",
+    "EN": "Thailand",
+    "CN": "泰国"
+  },
+  "ID": {
+    "ID": "ID",
+    "EN": "Indonesia",
+    "CN": "印度尼西亚"
+  },
+  "LA": {
+    "ID": "LA",
+    "EN": "Laos",
+    "CN": "老挝"
+  },
+  "TW": {
+    "ID": "TW",
+    "EN": "Taiwan",
+    "CN": "台湾"
+  },
+  "PH": {
+    "ID": "PH",
+    "EN": "Philippines",
+    "CN": "菲律宾"
+  },
+  "MY": {
+    "ID": "MY",
+    "EN": "Malaysia",
+    "CN": "马来西亚"
+  },
+  "CN": {
+    "ID": "CN",
+    "EN": "China",
+    "CN": "中国"
+  },
+  "HK": {
+    "ID": "HK",
+    "EN": "Hong Kong",
+    "CN": "香港"
+  },
+  "BN": {
+    "ID": "BN",
+    "EN": "Brunei",
+    "CN": "文莱"
+  },
+  "MO": {
+    "ID": "MO",
+    "EN": "Macao",
+    "CN": "澳门"
+  },
+  "KH": {
+    "ID": "KH",
+    "EN": "Cambodia",
+    "CN": "柬埔寨"
+  },
+  "KR": {
+    "ID": "KR",
+    "EN": "South Korea",
+    "CN": "韩国"
+  },
+  "JP": {
+    "ID": "JP",
+    "EN": "Japan",
+    "CN": "日本"
+  },
+  "KP": {
+    "ID": "KP",
+    "EN": "North Korea",
+    "CN": "朝鲜"
+  },
+  "SG": {
+    "ID": "SG",
+    "EN": "Singapore",
+    "CN": "新加坡"
+  },
+  "CK": {
+    "ID": "CK",
+    "EN": "Cook Islands",
+    "CN": "库克群岛"
+  },
+  "TL": {
+    "ID": "TL",
+    "EN": "East Timor",
+    "CN": "东帝汶"
+  },
+  "RU": {
+    "ID": "RU",
+    "EN": "Russia",
+    "CN": "俄罗斯联邦"
+  },
+  "MN": {
+    "ID": "MN",
+    "EN": "Mongolia",
+    "CN": "蒙古"
+  },
+  "AU": {
+    "ID": "AU",
+    "EN": "Australia",
+    "CN": "澳大利亚"
+  },
+  "CX": {
+    "ID": "CX",
+    "EN": "Christmas Island",
+    "CN": "圣诞岛"
+  },
+  "MH": {
+    "ID": "MH",
+    "EN": "Marshall Islands",
+    "CN": "马绍尔群岛"
+  },
+  "FM": {
+    "ID": "FM",
+    "EN": "Federated States of Micronesia",
+    "CN": "密克罗尼西亚联邦"
+  },
+  "PG": {
+    "ID": "PG",
+    "EN": "Papua New Guinea",
+    "CN": "巴布亚新几内亚"
+  },
+  "SB": {
+    "ID": "SB",
+    "EN": "Solomon Islands",
+    "CN": "所罗门群岛"
+  },
+  "TV": {
+    "ID": "TV",
+    "EN": "Tuvalu",
+    "CN": "图瓦卢"
+  },
+  "NR": {
+    "ID": "NR",
+    "EN": "Nauru",
+    "CN": "瑙鲁"
+  },
+  "VU": {
+    "ID": "VU",
+    "EN": "Vanuatu",
+    "CN": "瓦努阿图"
+  },
+  "NC": {
+    "ID": "NC",
+    "EN": "New Caledonia",
+    "CN": "新喀里多尼亚"
+  },
+  "NF": {
+    "ID": "NF",
+    "EN": "Norfolk Island",
+    "CN": "诺福克岛"
+  },
+  "NZ": {
+    "ID": "NZ",
+    "EN": "New Zealand",
+    "CN": "新西兰"
+  },
+  "FJ": {
+    "ID": "FJ",
+    "EN": "Fiji",
+    "CN": "斐济"
+  },
+  "LY": {
+    "ID": "LY",
+    "EN": "Libya",
+    "CN": "利比亚"
+  },
+  "CM": {
+    "ID": "CM",
+    "EN": "Cameroon",
+    "CN": "喀麦隆"
+  },
+  "SN": {
+    "ID": "SN",
+    "EN": "Senegal",
+    "CN": "塞内加尔"
+  },
+  "CG": {
+    "ID": "CG",
+    "EN": "Congo Republic",
+    "CN": "刚果"
+  },
+  "PT": {
+    "ID": "PT",
+    "EN": "Portugal",
+    "CN": "葡萄牙"
+  },
+  "LR": {
+    "ID": "LR",
+    "EN": "Liberia",
+    "CN": "利比里亚"
+  },
+  "CI": {
+    "ID": "CI",
+    "EN": "Ivory Coast",
+    "CN": "象牙海岸"
+  },
+  "GH": {
+    "ID": "GH",
+    "EN": "Ghana",
+    "CN": "加纳"
+  },
+  "GQ": {
+    "ID": "GQ",
+    "EN": "Equatorial Guinea",
+    "CN": "赤道几内亚"
+  },
+  "NG": {
+    "ID": "NG",
+    "EN": "Nigeria",
+    "CN": "尼日利亚"
+  },
+  "BF": {
+    "ID": "BF",
+    "EN": "Burkina Faso",
+    "CN": "布基纳法索"
+  },
+  "TG": {
+    "ID": "TG",
+    "EN": "Togo",
+    "CN": "多哥"
+  },
+  "GW": {
+    "ID": "GW",
+    "EN": "Guinea-Bissau",
+    "CN": "几内亚比绍"
+  },
+  "MR": {
+    "ID": "MR",
+    "EN": "Mauritania",
+    "CN": "毛利塔尼亚"
+  },
+  "BJ": {
+    "ID": "BJ",
+    "EN": "Benin",
+    "CN": "贝宁"
+  },
+  "GA": {
+    "ID": "GA",
+    "EN": "Gabon",
+    "CN": "加蓬"
+  },
+  "SL": {
+    "ID": "SL",
+    "EN": "Sierra Leone",
+    "CN": "塞拉利昂"
+  },
+  "ST": {
+    "ID": "ST",
+    "EN": "São Tomé and Príncipe",
+    "CN": "圣多美和普林西比"
+  },
+  "GI": {
+    "ID": "GI",
+    "EN": "Gibraltar",
+    "CN": "直布罗陀"
+  },
+  "GM": {
+    "ID": "GM",
+    "EN": "Gambia",
+    "CN": "冈比亚"
+  },
+  "GN": {
+    "ID": "GN",
+    "EN": "Guinea",
+    "CN": "几内亚"
+  },
+  "TD": {
+    "ID": "TD",
+    "EN": "Chad",
+    "CN": "乍得"
+  },
+  "NE": {
+    "ID": "NE",
+    "EN": "Niger",
+    "CN": "尼日尔"
+  },
+  "ML": {
+    "ID": "ML",
+    "EN": "Mali",
+    "CN": "马里"
+  },
+  "EH": {
+    "ID": "EH",
+    "EN": "Western Sahara",
+    "CN": "西撒哈拉"
+  },
+  "TN": {
+    "ID": "TN",
+    "EN": "Tunisia",
+    "CN": "突尼斯"
+  },
+  "ES": {
+    "ID": "ES",
+    "EN": "Spain",
+    "CN": "西班牙"
+  },
+  "MA": {
+    "ID": "MA",
+    "EN": "Morocco",
+    "CN": "摩洛哥"
+  },
+  "MT": {
+    "ID": "MT",
+    "EN": "Malta",
+    "CN": "马耳他"
+  },
+  "DZ": {
+    "ID": "DZ",
+    "EN": "Algeria",
+    "CN": "阿尔及利亚"
+  },
+  "FO": {
+    "ID": "FO",
+    "EN": "Faroe Islands",
+    "CN": "法罗群岛"
+  },
+  "DK": {
+    "ID": "DK",
+    "EN": "Denmark",
+    "CN": "丹麦"
+  },
+  "IS": {
+    "ID": "IS",
+    "EN": "Iceland",
+    "CN": "冰岛"
+  },
+  "GB": {
+    "ID": "GB",
+    "EN": "United Kingdom",
+    "CN": "英国"
+  },
+  "CH": {
+    "ID": "CH",
+    "EN": "Switzerland",
+    "CN": "瑞士"
+  },
+  "SE": {
+    "ID": "SE",
+    "EN": "Sweden",
+    "CN": "瑞典"
+  },
+  "NL": {
+    "ID": "NL",
+    "EN": "Netherlands",
+    "CN": "荷兰"
+  },
+  "AT": {
+    "ID": "AT",
+    "EN": "Austria",
+    "CN": "奥地利"
+  },
+  "BE": {
+    "ID": "BE",
+    "EN": "Belgium",
+    "CN": "比利时"
+  },
+  "DE": {
+    "ID": "DE",
+    "EN": "Germany",
+    "CN": "德国"
+  },
+  "LU": {
+    "ID": "LU",
+    "EN": "Luxembourg",
+    "CN": "卢森堡"
+  },
+  "IE": {
+    "ID": "IE",
+    "EN": "Ireland",
+    "CN": "爱尔兰"
+  },
+  "MC": {
+    "ID": "MC",
+    "EN": "Principality of Monaco",
+    "CN": "摩纳哥"
+  },
+  "FR": {
+    "ID": "FR",
+    "EN": "France",
+    "CN": "法国"
+  },
+  "AD": {
+    "ID": "AD",
+    "EN": "Andorra",
+    "CN": "安道尔"
+  },
+  "LI": {
+    "ID": "LI",
+    "EN": "Liechtenstein",
+    "CN": "列支敦士登"
+  },
+  "JE": {
+    "ID": "JE",
+    "EN": "Jersey",
+    "CN": "泽西岛"
+  },
+  "IM": {
+    "ID": "IM",
+    "EN": "Isle of Man",
+    "CN": "英国属地曼岛"
+  },
+  "GG": {
+    "ID": "GG",
+    "EN": "Guernsey",
+    "CN": "格恩西岛"
+  },
+  "SK": {
+    "ID": "SK",
+    "EN": "Slovakia",
+    "CN": "斯洛伐克"
+  },
+  "CZ": {
+    "ID": "CZ",
+    "EN": "Czechia",
+    "CN": "捷克"
+  },
+  "NO": {
+    "ID": "NO",
+    "EN": "Norway",
+    "CN": "挪威"
+  },
+  "VA": {
+    "ID": "VA",
+    "EN": "Vatican City",
+    "CN": "梵蒂冈"
+  },
+  "SM": {
+    "ID": "SM",
+    "EN": "San Marino",
+    "CN": "圣马力诺"
+  },
+  "IT": {
+    "ID": "IT",
+    "EN": "Italy",
+    "CN": "意大利"
+  },
+  "SI": {
+    "ID": "SI",
+    "EN": "Slovenia",
+    "CN": "斯洛文尼亚"
+  },
+  "ME": {
+    "ID": "ME",
+    "EN": "Montenegro",
+    "CN": "黑山"
+  },
+  "HR": {
+    "ID": "HR",
+    "EN": "Croatia",
+    "CN": "克罗地亚"
+  },
+  "BA": {
+    "ID": "BA",
+    "EN": "Bosnia and Herzegovina",
+    "CN": "波黑"
+  },
+  "AO": {
+    "ID": "AO",
+    "EN": "Angola",
+    "CN": "安哥拉"
+  },
+  "NA": {
+    "ID": "NA",
+    "EN": "Namibia",
+    "CN": "纳米比亚"
+  },
+  "SH": {
+    "ID": "SH",
+    "EN": "Saint Helena",
+    "CN": "圣赫勒拿"
+  },
+  "BV": {
+    "ID": "BV",
+    "EN": "Bouvet Island",
+    "CN": "布维岛"
+  },
+  "BB": {
+    "ID": "BB",
+    "EN": "Barbados",
+    "CN": "巴巴多斯"
+  },
+  "CV": {
+    "ID": "CV",
+    "EN": "Cabo Verde",
+    "CN": "佛得角"
+  },
+  "GY": {
+    "ID": "GY",
+    "EN": "Guyana",
+    "CN": "圭亚那"
+  },
+  "GF": {
+    "ID": "GF",
+    "EN": "French Guiana",
+    "CN": "法属圭亚那"
+  },
+  "SR": {
+    "ID": "SR",
+    "EN": "Suriname",
+    "CN": "苏里南"
+  },
+  "PM": {
+    "ID": "PM",
+    "EN": "Saint Pierre and Miquelon",
+    "CN": "圣皮埃尔和密克隆"
+  },
+  "GL": {
+    "ID": "GL",
+    "EN": "Greenland",
+    "CN": "格陵兰"
+  },
+  "PY": {
+    "ID": "PY",
+    "EN": "Paraguay",
+    "CN": "巴拉圭"
+  },
+  "UY": {
+    "ID": "UY",
+    "EN": "Uruguay",
+    "CN": "乌拉圭"
+  },
+  "BR": {
+    "ID": "BR",
+    "EN": "Brazil",
+    "CN": "巴西"
+  },
+  "FK": {
+    "ID": "FK",
+    "EN": "Falkland Islands",
+    "CN": "福克兰群岛（马尔维纳斯）"
+  },
+  "GS": {
+    "ID": "GS",
+    "EN": "South Georgia and the South Sandwich Islands",
+    "CN": "南乔治亚岛和南桑德韦奇岛"
+  },
+  "JM": {
+    "ID": "JM",
+    "EN": "Jamaica",
+    "CN": "牙买加"
+  },
+  "DO": {
+    "ID": "DO",
+    "EN": "Dominican Republic",
+    "CN": "多米尼加"
+  },
+  "CU": {
+    "ID": "CU",
+    "EN": "Cuba",
+    "CN": "古巴"
+  },
+  "MQ": {
+    "ID": "MQ",
+    "EN": "Martinique",
+    "CN": "马提尼克"
+  },
+  "BS": {
+    "ID": "BS",
+    "EN": "Bahamas",
+    "CN": "巴哈马"
+  },
+  "BM": {
+    "ID": "BM",
+    "EN": "Bermuda",
+    "CN": "百慕大"
+  },
+  "AI": {
+    "ID": "AI",
+    "EN": "Anguilla",
+    "CN": "安圭拉"
+  },
+  "TT": {
+    "ID": "TT",
+    "EN": "Trinidad and Tobago",
+    "CN": "特立尼达和多巴哥"
+  },
+  "KN": {
+    "ID": "KN",
+    "EN": "St Kitts and Nevis",
+    "CN": "圣基茨和尼维斯"
+  },
+  "DM": {
+    "ID": "DM",
+    "EN": "Dominica",
+    "CN": "多米尼加"
+  },
+  "AG": {
+    "ID": "AG",
+    "EN": "Antigua and Barbuda",
+    "CN": "安提瓜和巴布达"
+  },
+  "LC": {
+    "ID": "LC",
+    "EN": "Saint Lucia",
+    "CN": "圣卢西亚"
+  },
+  "TC": {
+    "ID": "TC",
+    "EN": "Turks and Caicos Islands",
+    "CN": "特克斯和凯科斯群岛"
+  },
+  "AW": {
+    "ID": "AW",
+    "EN": "Aruba",
+    "CN": "阿鲁巴"
+  },
+  "VG": {
+    "ID": "VG",
+    "EN": "British Virgin Islands",
+    "CN": "英属维尔京群岛"
+  },
+  "VC": {
+    "ID": "VC",
+    "EN": "Saint Vincent and the Grenadines",
+    "CN": "圣文森特和格林纳丁斯"
+  },
+  "MS": {
+    "ID": "MS",
+    "EN": "Montserrat",
+    "CN": "蒙特塞拉特"
+  },
+  "MF": {
+    "ID": "MF",
+    "EN": "Saint Martin",
+    "CN": "圣马丁"
+  },
+  "BL": {
+    "ID": "BL",
+    "EN": "Saint Barthélemy",
+    "CN": "圣巴泰勒米"
+  },
+  "GP": {
+    "ID": "GP",
+    "EN": "Guadeloupe",
+    "CN": "瓜德罗普"
+  },
+  "GD": {
+    "ID": "GD",
+    "EN": "Grenada",
+    "CN": "格林纳达"
+  },
+  "KY": {
+    "ID": "KY",
+    "EN": "Cayman Islands",
+    "CN": "开曼群岛"
+  },
+  "BZ": {
+    "ID": "BZ",
+    "EN": "Belize",
+    "CN": "伯利兹"
+  },
+  "SV": {
+    "ID": "SV",
+    "EN": "El Salvador",
+    "CN": "萨尔瓦多"
+  },
+  "GT": {
+    "ID": "GT",
+    "EN": "Guatemala",
+    "CN": "危地马拉"
+  },
+  "HN": {
+    "ID": "HN",
+    "EN": "Honduras",
+    "CN": "洪都拉斯"
+  },
+  "NI": {
+    "ID": "NI",
+    "EN": "Nicaragua",
+    "CN": "尼加拉瓜"
+  },
+  "CR": {
+    "ID": "CR",
+    "EN": "Costa Rica",
+    "CN": "哥斯达黎加"
+  },
+  "VE": {
+    "ID": "VE",
+    "EN": "Venezuela",
+    "CN": "委内瑞拉"
+  },
+  "EC": {
+    "ID": "EC",
+    "EN": "Ecuador",
+    "CN": "厄瓜多尔"
+  },
+  "CO": {
+    "ID": "CO",
+    "EN": "Colombia",
+    "CN": "哥伦比亚"
+  },
+  "PA": {
+    "ID": "PA",
+    "EN": "Panama",
+    "CN": "巴拿马"
+  },
+  "HT": {
+    "ID": "HT",
+    "EN": "Haiti",
+    "CN": "海地"
+  },
+  "AR": {
+    "ID": "AR",
+    "EN": "Argentina",
+    "CN": "阿根廷"
+  },
+  "CL": {
+    "ID": "CL",
+    "EN": "Chile",
+    "CN": "智利"
+  },
+  "BO": {
+    "ID": "BO",
+    "EN": "Bolivia",
+    "CN": "玻利维亚"
+  },
+  "PE": {
+    "ID": "PE",
+    "EN": "Peru",
+    "CN": "秘鲁"
+  },
+  "MX": {
+    "ID": "MX",
+    "EN": "Mexico",
+    "CN": "墨西哥"
+  },
+  "PF": {
+    "ID": "PF",
+    "EN": "French Polynesia",
+    "CN": "法属波利尼西亚"
+  },
+  "PN": {
+    "ID": "PN",
+    "EN": "Pitcairn Islands",
+    "CN": "皮特凯恩"
+  },
+  "KI": {
+    "ID": "KI",
+    "EN": "Kiribati",
+    "CN": "基里巴斯"
+  },
+  "TK": {
+    "ID": "TK",
+    "EN": "Tokelau",
+    "CN": "托克劳"
+  },
+  "TO": {
+    "ID": "TO",
+    "EN": "Tonga",
+    "CN": "汤加"
+  },
+  "WF": {
+    "ID": "WF",
+    "EN": "Wallis and Futuna",
+    "CN": "瓦利斯和富图纳"
+  },
+  "WS": {
+    "ID": "WS",
+    "EN": "Samoa",
+    "CN": "萨摩亚"
+  },
+  "NU": {
+    "ID": "NU",
+    "EN": "Niue",
+    "CN": "纽埃"
+  },
+  "MP": {
+    "ID": "MP",
+    "EN": "Northern Mariana Islands",
+    "CN": "北马里亚纳"
+  },
+  "GU": {
+    "ID": "GU",
+    "EN": "Guam",
+    "CN": "关岛"
+  },
+  "PR": {
+    "ID": "PR",
+    "EN": "Puerto Rico",
+    "CN": "波多黎各"
+  },
+  "VI": {
+    "ID": "VI",
+    "EN": "U.S. Virgin Islands",
+    "CN": "美属维尔京群岛"
+  },
+  "UM": {
+    "ID": "UM",
+    "EN": "U.S. Minor Outlying Islands",
+    "CN": "美国本土外小岛屿"
+  },
+  "AS": {
+    "ID": "AS",
+    "EN": "American Samoa",
+    "CN": "美属萨摩亚"
+  },
+  "CA": {
+    "ID": "CA",
+    "EN": "Canada",
+    "CN": "加拿大"
+  },
+  "US": {
+    "ID": "US",
+    "EN": "United States",
+    "CN": "美国"
+  },
+  "PS": {
+    "ID": "PS",
+    "EN": "Palestine",
+    "CN": "巴勒斯坦"
+  },
+  "RS": {
+    "ID": "RS",
+    "EN": "Serbia",
+    "CN": "塞尔维亚"
+  },
+  "AQ": {
+    "ID": "AQ",
+    "EN": "Antarctica",
+    "CN": "南极洲"
+  },
+  "SX": {
+    "ID": "SX",
+    "EN": "Sint Maarten",
+    "CN": "圣马丁岛"
+  },
+  "CW": {
+    "ID": "CW",
+    "EN": "Curaçao",
+    "CN": "库拉索"
+  },
+  "BQ": {
+    "ID": "BQ",
+    "EN": "Bonaire, Sint Eustatius, and Saba",
+    "CN": "博奈尔岛、圣尤斯达蒂斯和萨巴"
+  },
+  "SS": {
+    "ID": "SS",
+    "EN": "South Sudan",
+    "CN": "南苏丹"
+  },
+  "team_title": {
+    "ID": "team_title",
+    "EN": "Teams",
+    "CN": "队伍"
+  },
+  "team_unlock_des1": {
+    "ID": "team_unlock_des1",
+    "EN": "Reach     {0}      to join teams!",
+    "CN": "需通过                  即可加入队伍！"
+  },
+  "team_unlock_des2": {
+    "ID": "team_unlock_des2",
+    "EN": "When you join the team you'll get",
+    "CN": "当你加入队伍，你将获得"
+  },
+  "team_join_title1": {
+    "ID": "team_join_title1",
+    "EN": "Create",
+    "CN": "创建"
+  },
+  "team_join_title2": {
+    "ID": "team_join_title2",
+    "EN": "Join",
+    "CN": "加入"
+  },
+  "team_join_title3": {
+    "ID": "team_join_title3",
+    "EN": "Search",
+    "CN": "寻找"
+  },
+  "team_create_name": {
+    "ID": "team_create_name",
+    "EN": "Team Name",
+    "CN": "队伍名称"
+  },
+  "team_name_des": {
+    "ID": "team_name_des",
+    "EN": "Enter team name...",
+    "CN": "输入队伍名称…"
+  },
+  "team_create_description": {
+    "ID": "team_create_description",
+    "EN": "Description",
+    "CN": "队伍描述"
+  },
+  "team_description_des": {
+    "ID": "team_description_des",
+    "EN": "Enter team description…",
+    "CN": "输入队伍描述…"
+  },
+  "team_create_logo": {
+    "ID": "team_create_logo",
+    "EN": "Team Logo",
+    "CN": "队伍标志"
+  },
+  "team_create_type": {
+    "ID": "team_create_type",
+    "EN": "Team Type",
+    "CN": "队伍类型"
+  },
+  "team_type_open": {
+    "ID": "team_type_open",
+    "EN": "Open",
+    "CN": "开启"
+  },
+  "team_type_close": {
+    "ID": "team_type_close",
+    "EN": "Close",
+    "CN": "关闭"
+  },
+  "team_rsquiredLevel": {
+    "ID": "team_rsquiredLevel",
+    "EN": "Required Level",
+    "CN": "等级限制"
+  },
+  "team_capacity": {
+    "ID": "team_capacity",
+    "EN": "Capacity",
+    "CN": "人数"
+  },
+  "team_search_des": {
+    "ID": "team_search_des",
+    "EN": "Search for the right team for you",
+    "CN": "为你寻找一些合适的队伍"
+  },
+  "team_score": {
+    "ID": "team_score",
+    "EN": "Score",
+    "CN": "分数"
+  },
+  "team_weeklyhelps": {
+    "ID": "team_weeklyhelps",
+    "EN": "Weekly Helps",
+    "CN": "周帮助次数"
+  },
+  "team_level": {
+    "ID": "team_level",
+    "EN": "Level",
+    "CN": "关卡"
+  },
+  "team_leaveteam": {
+    "ID": "team_leaveteam",
+    "EN": "Leave Team?",
+    "CN": "离开队伍？"
+  },
+  "team_leaveteam_des": {
+    "ID": "team_leaveteam_des",
+    "EN": "Are you sure you want to leave the current team?",
+    "CN": "你确定要开当前队伍吗？"
+  },
+  "team_compile": {
+    "ID": "team_compile",
+    "EN": "Compile",
+    "CN": "编辑队伍"
+  },
+  "team_leader": {
+    "ID": "team_leader",
+    "EN": "Leader",
+    "CN": "队长"
+  },
+  "team_teamlogo": {
+    "ID": "team_teamlogo",
+    "EN": "Team Logo",
+    "CN": "队伍标志"
+  },
+  "team_bubble1": {
+    "ID": "team_bubble1",
+    "EN": "was accepted to the team by"
+  },
+  "team_bubble2": {
+    "ID": "team_bubble2",
+    "EN": "has been kicked out by"
+  },
+  "team_bubble3": {
+    "ID": "team_bubble3",
+    "EN": "joined the team!",
+    "CN": "加入了队伍！"
+  },
+  "team_bubble4": {
+    "ID": "team_bubble4",
+    "EN": "has left the team!",
+    "CN": "离开了队伍！"
+  },
+  "team_connect": {
+    "ID": "team_connect",
+    "EN": "Connection Lost",
+    "CN": "连接失败"
+  },
+  "team_connect_des": {
+    "ID": "team_connect_des",
+    "EN": "Please check your internet connection",
+    "CN": "请检查你的网络状态"
+  },
+  "team_live": {
+    "ID": "team_live",
+    "EN": "asking for lives!",
+    "CN": "正在请求体力！"
+  },
+  "team_apply": {
+    "ID": "team_apply",
+    "EN": "apply to join!",
+    "CN": "申请加入"
+  },
+  "team_time": {
+    "ID": "team_time",
+    "EN": "ago",
+    "CN": "之前"
+  },
+  "team_justnow": {
+    "ID": "team_justnow",
+    "EN": "now",
+    "CN": "刚刚"
+  },
+  "team_Min": {
+    "ID": "team_Min",
+    "EN": "m",
+    "CN": "分钟"
+  },
+  "team_Hour": {
+    "ID": "team_Hour",
+    "EN": "h",
+    "CN": "小时"
+  },
+  "team_Day": {
+    "ID": "team_Day",
+    "EN": "d",
+    "CN": "天"
+  },
+  "leaderboard_title": {
+    "ID": "leaderboard_title",
+    "EN": "Leaderboard",
+    "CN": "排行榜"
+  },
+  "team_leaderboard_title1": {
+    "ID": "team_leaderboard_title1",
+    "EN": "Friends",
+    "CN": "好友"
+  },
+  "team_leaderboard_title2": {
+    "ID": "team_leaderboard_title2",
+    "EN": "Players",
+    "CN": "玩家"
+  },
+  "team_leaderboard_title3": {
+    "ID": "team_leaderboard_title3",
+    "EN": "Teams",
+    "CN": "队伍"
+  },
+  "team_leaderboard_des": {
+    "ID": "team_leaderboard_des",
+    "EN": "Connect with your friends!",
+    "CN": "点击连接你的facebook好友！"
+  },
+  "team_world": {
+    "ID": "team_world",
+    "EN": "World",
+    "CN": "世界"
+  },
+  "home_todo": {
+    "ID": "home_todo",
+    "EN": "To Do",
+    "CN": "事件"
+  },
+  "home_leaderboard": {
+    "ID": "home_leaderboard",
+    "EN": "Leaderboard",
+    "CN": "排行榜"
+  },
+  "home_home": {
+    "ID": "home_home",
+    "EN": "Home",
+    "CN": "主页"
+  },
+  "home_team": {
+    "ID": "home_team",
+    "EN": "Teams",
+    "CN": "队伍"
+  },
+  "home_event": {
+    "ID": "home_event",
+    "EN": "Events",
+    "CN": "福利"
+  },
+  "mail_title1": {
+    "ID": "mail_title1",
+    "EN": "Free Lives",
+    "CN": "免费体力"
+  },
+  "mail_title2": {
+    "ID": "mail_title2",
+    "EN": "No More Lives!",
+    "CN": "体力不足！"
+  },
+  "mail_title3": {
+    "ID": "mail_title3",
+    "EN": "More Lives!",
+    "CN": "更多体力！"
+  },
+  "mail_live_des": {
+    "ID": "mail_live_des",
+    "EN": "Join a team to get free lives!",
+    "CN": "加入队伍获得免费体力！"
+  },
+  "mail_live_notfall": {
+    "ID": "mail_live_notfall",
+    "EN": "Total free lives:",
+    "CN": "体力总数为："
+  },
+  "mail_live_fall": {
+    "ID": "mail_live_fall",
+    "EN": "There are no lives in your inbox.",
+    "CN": "你的邮箱中已没有体力"
+  },
+  "mail_live_fall2": {
+    "ID": "mail_live_fall2",
+    "EN": "Ask your teammates!",
+    "CN": "向队友请求一些吧！"
+  },
+  "mail_live_next": {
+    "ID": "mail_live_next",
+    "EN": "Time to next life:",
+    "CN": "下一条体力剩余时间："
+  },
+  "mail_live_full": {
+    "ID": "mail_live_full",
+    "EN": "Full life",
+    "CN": "体力已满"
+  },
+  "beginner_des": {
+    "ID": "beginner_des",
+    "EN": "Get it now",
+    "CN": "立即获得"
+  },
+  "beginner_day1": {
+    "ID": "beginner_day1",
+    "EN": "Day 1",
+    "CN": "第一天"
+  },
+  "beginner_day2": {
+    "ID": "beginner_day2",
+    "EN": "Day 2",
+    "CN": "第二天"
+  },
+  "beginner_day3": {
+    "ID": "beginner_day3",
+    "EN": "Day 3",
+    "CN": "第三天"
+  },
+  "beginner_soldout": {
+    "ID": "beginner_soldout",
+    "EN": "Sold Out",
+    "CN": "售罄"
+  },
+  "setting_title": {
+    "ID": "setting_title",
+    "EN": "Setting",
+    "CN": "设置"
+  },
+  "setting_music": {
+    "ID": "setting_music",
+    "EN": "Music",
+    "CN": "音乐"
+  },
+  "setting_sound": {
+    "ID": "setting_sound",
+    "EN": "Sound",
+    "CN": "音效"
+  },
+  "setting_vibration": {
+    "ID": "setting_vibration",
+    "EN": "Vibration",
+    "CN": "振动"
+  },
+  "setting_restore": {
+    "ID": "setting_restore",
+    "EN": "Restore",
+    "CN": "恢复购买"
+  },
+  "setting_on": {
+    "ID": "setting_on",
+    "EN": "On",
+    "CN": "开"
+  },
+  "setting_off": {
+    "ID": "setting_off",
+    "EN": "Off",
+    "CN": "关"
+  },
+  "setting_name": {
+    "ID": "setting_name",
+    "EN": "Hey Drops",
+    "CN": "小动物乐合合"
+  },
+  "setting_picture_title": {
+    "ID": "setting_picture_title",
+    "EN": "Profile Picture",
+    "CN": "选择头像"
+  },
+  "setting_enter": {
+    "ID": "setting_enter",
+    "EN": "Enter your name",
+    "CN": "输入名称"
+  },
+  "setting_save_name": {
+    "ID": "setting_save_name",
+    "EN": "Save",
+    "CN": "保存"
+  },
+  "setting_save_Progress": {
+    "ID": "setting_save_Progress",
+    "EN": "Save Progress",
+    "CN": "保存进度"
+  },
+  "setting_save_des": {
+    "ID": "setting_save_des",
+    "EN": "Signin with Facebook and save your game.",
+    "CN": "连接你的facebook保存进度"
+  },
+  "setting_ConnetFailedTitle": {
+    "ID": "setting_ConnetFailedTitle",
+    "EN": "Failed",
+    "CN": "失败"
+  },
+  "setting_ConnetFailedDes": {
+    "ID": "setting_ConnetFailedDes",
+    "EN": "Connect failed!",
+    "CN": "链接失败"
+  },
+  "setting_signout_sure": {
+    "ID": "setting_signout_sure",
+    "EN": "Are You Sure?",
+    "CN": "你确定？"
+  },
+  "setting_disconnected": {
+    "ID": "setting_disconnected",
+    "EN": "Disconnected!",
+    "CN": "断开连接"
+  },
+  "setting_sign_out_faceBook": {
+    "ID": "setting_sign_out_faceBook",
+    "EN": "Do you want to sign out from Facebook?",
+    "CN": "你确定退出facebook？"
+  },
+  "setting_signed_out_faceBook": {
+    "ID": "setting_signed_out_faceBook",
+    "EN": "Sign out from FaceBook",
+    "CN": "已退出facebook"
+  },
+  "setting_signed_out_apple": {
+    "ID": "setting_signed_out_apple",
+    "EN": "Sign out from Apple",
+    "CN": "已退出Apple"
+  },
+  "give_five_starts": {
+    "ID": "give_five_starts",
+    "EN": "Do you like our game?",
+    "CN": "你喜欢我们的游戏吗？"
+  },
+  "loading": {
+    "ID": "loading",
+    "EN": "Loading...({0}%)",
+    "CN": "加载中...({0}%)"
+  },
+  "REST_BAD_TEAM_NAME": {
+    "ID": "REST_BAD_TEAM_NAME",
+    "EN": "Team name is invalid.",
+    "CN": "队伍名称包含敏感词汇。"
+  },
+  "REST_BAD_TEAM_DESC": {
+    "ID": "REST_BAD_TEAM_DESC",
+    "EN": "The description is invalid.",
+    "CN": "队伍描述包含敏感词汇。"
+  },
+  "REST_TEAM_NAME_NOTENOUGH": {
+    "ID": "REST_TEAM_NAME_NOTENOUGH",
+    "EN": "Please type at least three characters for Team Name.",
+    "CN": "请至少输入三个及以上字符作为队伍名称。"
+  },
+  "REST_TEAM_DESC_NOTENOUGH": {
+    "ID": "REST_TEAM_DESC_NOTENOUGH",
+    "EN": "Please type at least three characters for Team Description.",
+    "CN": "请至少输入三个及以上字符作为队伍描述。"
+  },
+  "REST_TEAM_LIMIT_LEVEL": {
+    "ID": "REST_TEAM_LIMIT_LEVEL",
+    "EN": "You do not meet the minimum level required to join the team.",
+    "CN": "您的等级未达到加入该队伍的最低等级。"
+  },
+  "REST_TEAM_FULL": {
+    "ID": "REST_TEAM_FULL",
+    "EN": "Team capacity is full.",
+    "CN": "当前队伍已满员。"
+  },
+  "REST_TEAM_JOIN_LEVEL": {
+    "ID": "REST_TEAM_JOIN_LEVEL",
+    "EN": "Reach {0} level to up the level limitation.",
+    "CN": "达到第 {0} 关提升等级限制"
+  },
+  "REST_TEAM_ENERGY_CD": {
+    "ID": "REST_TEAM_ENERGY_CD",
+    "EN": "You have to wait to request lives again.",
+    "CN": "你的体力请求正在冷却中。"
+  },
+  "REST_TEAM_HELP_YOURSELF": {
+    "ID": "REST_TEAM_HELP_YOURSELF",
+    "EN": "You cannot help your own lives request.",
+    "CN": "无法为自己求助"
+  },
+  "REST_TEAM_HELP_EXISTED": {
+    "ID": "REST_TEAM_HELP_EXISTED",
+    "EN": "You already helped with this request.",
+    "CN": "你已经帮助过该体力请求。"
+  },
+  "REST_TEAM_SEARCH": {
+    "ID": "REST_TEAM_SEARCH",
+    "EN": "Please type at least three characters.",
+    "CN": "请至少输入3个以上字符。"
+  },
+  "REST_TEAM_PAINDING": {
+    "ID": "REST_TEAM_PAINDING",
+    "EN": "You have sent the application.",
+    "CN": "你当前已申请该队伍，请耐心等待。"
+  },
+  "REST_TEAM_REFUSE": {
+    "ID": "REST_TEAM_REFUSE",
+    "EN": "You can not join this team.",
+    "CN": "无法加入该队伍。"
+  },
+  "REST_MAIL_LIVE_FULL": {
+    "ID": "REST_MAIL_LIVE_FULL",
+    "EN": "You already own 10 lives and cannot request more.",
+    "CN": "你已有10条免费体力，不能再次请求体力！"
+  },
+  "REST_MAIL_FULL": {
+    "ID": "REST_MAIL_FULL",
+    "EN": "Your lives are full.",
+    "CN": "你的体力已满。"
+  },
+  "REST_MAIL_LIVE_LOSE": {
+    "ID": "REST_MAIL_LIVE_LOSE",
+    "EN": "Free lives are not enough to obtain.",
+    "CN": "免费体力数量不足，无法获取。"
+  },
+  "REST_MAIL_LIVE_HOUR": {
+    "ID": "REST_MAIL_LIVE_HOUR",
+    "EN": "{0} m later you can request help again.",
+    "CN": "{0} 分钟后才可以再次帮助。"
+  },
+  "REST_SETTING_NAME_NOTENOUGH": {
+    "ID": "REST_SETTING_NAME_NOTENOUGH",
+    "EN": "Please type at least three characters for Name.",
+    "CN": "请至少输入三个及以上字符作为用户昵称。"
+  },
+  "REST_BAD_SETTING_NAME": {
+    "ID": "REST_BAD_SETTING_NAME",
+    "EN": "The name is invalid.",
+    "CN": "昵称包含敏感词汇。"
+  },
+  "REST_TEAM_JOIN_LEVELLIMIT": {
+    "ID": "REST_TEAM_JOIN_LEVELLIMIT",
+    "EN": "Reach level {0} to increase the Required Level limit.",
+    "CN": "达到{0}级后可提高相应等级限制"
+  },
+  "REST_TEAM_NOT": {
+    "ID": "REST_TEAM_NOT",
+    "EN": "Do not have this team.",
+    "CN": "你搜索的队伍不存在"
+  },
+  "REST_MESSAGE": {
+    "ID": "REST_MESSAGE",
+    "EN": "Chat content contains illegal words.",
+    "CN": "包含敏感词汇"
+  },
+  "REST_facebook": {
+    "ID": "REST_facebook",
+    "EN": "Cannot bind facebook account twice.",
+    "CN": "不能重复绑定facebook账户"
+  },
+  "REST_apple": {
+    "ID": "REST_apple",
+    "EN": "Cannot bind Apple ID account twice",
+    "CN": "不能重复绑定Apple账户"
+  },
+  "adventurepass_title": {
+    "ID": "adventurepass_title",
+    "EN": "Adventure Pass",
+    "CN": "冒险通行证"
+  },
+  "adventurepass_free": {
+    "ID": "adventurepass_free",
+    "EN": "Free",
+    "CN": "免费奖励"
+  },
+  "adventurepass_activated": {
+    "ID": "adventurepass_activated",
+    "EN": "Activated",
+    "CN": "已激活"
+  },
+  "adventurepass_bonus": {
+    "ID": "adventurepass_bonus",
+    "EN": "Bonus Bank",
+    "CN": "保险箱"
+  },
+  "adventurepass_bonus_des": {
+    "ID": "adventurepass_bonus_des",
+    "EN": "Activate the Adventure Pass to unlock the Bonus Bank at the end of the stages!",
+    "CN": "激活冒险通行证，在活动结束时领取保险箱！"
+  },
+  "adventurepass_tipes1": {
+    "ID": "adventurepass_tipes1",
+    "EN": "This reward has already been collected!",
+    "CN": "该奖励已领取！"
+  },
+  "adventurepass_tipes2": {
+    "ID": "adventurepass_tipes2",
+    "EN": "Activate the Adventure Pass to get this reward!",
+    "CN": "激活通行证来获得该奖励！"
+  },
+  "adventurepass_tipes3": {
+    "ID": "adventurepass_tipes3",
+    "EN": "Collect more lucky clovers to unlock this stage and get this reward!",
+    "CN": "收集更多幸运草来解锁该等级奖励！"
+  },
+  "adventurepass_tipes4": {
+    "ID": "adventurepass_tipes4",
+    "EN": "Unlock this stage and activate the Adventure Pass to get this reward!",
+    "CN": "解锁该等级，同时激活通行证来获得奖励！"
+  },
+  "adventurepass_tipes5": {
+    "ID": "adventurepass_tipes5",
+    "EN": "Collect more lucky clovers to unlock this stage!",
+    "CN": "收集更多幸运草来解锁该等级奖励！"
+  },
+  "adventurepass_rule1": {
+    "ID": "adventurepass_rule1",
+    "EN": "Beat Levels!",
+    "CN": "挑战关卡！"
+  },
+  "adventurepass_rule2": {
+    "ID": "adventurepass_rule2",
+    "EN": "Collect Lucky Clovers!",
+    "CN": "收集幸运草！"
+  },
+  "adventurepass_rule3": {
+    "ID": "adventurepass_rule3",
+    "EN": "Unlock Rewards!",
+    "CN": "解锁奖励！"
+  },
+  "adventurepass_rule4": {
+    "ID": "adventurepass_rule4",
+    "EN": "You can activate the <color=#ffd800>Adventure Pass</color> to get additional excliusive rewards!",
+    "CN": "通过激活 <color=#ffd800>冒险通行证</color>获得额外奖励！"
+  },
+  "adventurepass_rule5": {
+    "ID": "adventurepass_rule5",
+    "EN": "Tap to Continue",
+    "CN": "点击继续"
+  },
+  "adventurepass_buy1": {
+    "ID": "adventurepass_buy1",
+    "EN": "The <color=#ffec34>Adventure Pass</color> will give you a chance to get special rewards!",
+    "CN": "<color=#ffec34>冒险通行证</color>可以让你有机会获得特殊奖励！"
+  },
+  "adventurepass_buy2": {
+    "ID": "adventurepass_buy2",
+    "EN": "You will have exclusive bonuses until the event ends!",
+    "CN": "活动结束时，你将获得额外奖励！"
+  },
+  "adventurepass_buy3": {
+    "ID": "adventurepass_buy3",
+    "EN": "8 lives instead of 5",
+    "CN": "体力上限由5变成8"
+  },
+  "adventurepass_buy4": {
+    "ID": "adventurepass_buy4",
+    "EN": "10 drops instead of 5",
+    "CN": "步数不足时增加步数由5变成10"
+  },
+  "adventurepass_buy5": {
+    "ID": "adventurepass_buy5",
+    "EN": "Gift for your teammates",
+    "CN": "队友可获取神秘奖励"
+  },
+  "adventurepass_teamgift1": {
+    "ID": "adventurepass_teamgift1",
+    "EN": "got the",
+    "CN": "激活了"
+  },
+  "adventurepass_teamgift2": {
+    "ID": "adventurepass_teamgift2",
+    "EN": "Your gift",
+    "CN": "你的礼物"
+  },
+  "adventurepass_day": {
+    "ID": "adventurepass_day",
+    "EN": "{0} days",
+    "CN": "剩余 {0} 天"
+  },
+  "adventurepass_day_all": {
+    "ID": "adventurepass_day_all",
+    "EN": "30 days",
+    "CN": "30天"
+  },
+  "adventurefund_title": {
+    "ID": "adventurefund_title",
+    "EN": "Adventure Fund",
+    "CN": "冒险基金"
+  },
+  "adventurefund_level": {
+    "ID": "adventurefund_level",
+    "EN": "Level",
+    "CN": "关"
+  },
+  "adventurefund_pass": {
+    "ID": "adventurefund_pass",
+    "EN": "Pass",
+    "CN": "通过"
+  },
+  "adventurefund_coin": {
+    "ID": "adventurefund_coin",
+    "EN": "Coins",
+    "CN": "金币"
+  },
+  "adventurefund_activated": {
+    "ID": "adventurefund_activated",
+    "EN": "Beat more levels to unlock more Bonus!",
+    "CN": "挑战更多关卡解锁更多奖励！"
+  },
+  "adventurefund_buy1": {
+    "ID": "adventurefund_buy1",
+    "EN": "Purchase to receive                    Coins right now and beat more levels to to earn up to                       reward!",
+    "CN": "购买后立即获得                   金币，持续挑战关卡即可获得最高                     倍奖励！"
+  },
+  "adventurefund_buy2": {
+    "ID": "adventurefund_buy2",
+    "EN": "Total Rewards",
+    "CN": "全部奖励"
+  },
+  "adventurefund_buy3": {
+    "ID": "adventurefund_buy3",
+    "EN": "Coins",
+    "CN": "金币"
+  },
+  "adventurefund_buy4": {
+    "ID": "adventurefund_buy4",
+    "EN": "Props",
+    "CN": "道具"
+  },
+  "vip_title": {
+    "ID": "vip_title",
+    "EN": "VIP Card",
+    "CN": "黄金月卡"
+  },
+  "vip_openchest_tip": {
+    "ID": "vip_openchest_tip",
+    "EN": "Purchase <color=#e12061><size=54>VIP Card</size></color> to activate below benefits:",
+    "CN": "购买<color=#e12061><size=54>黄金月卡</size></color> 即可开启宝箱！"
+  },
+  "vip_des": {
+    "ID": "vip_des",
+    "EN": "Unlock following benefits",
+    "CN": "购买黄金月卡，在有效期内享受以下权益"
+  },
+  "vip_time_format": {
+    "ID": "vip_time_format",
+    "EN": "{0} days",
+    "CN": "剩余 {0} 天"
+  },
+  "vip_reward_coin": {
+    "ID": "vip_reward_coin",
+    "EN": "5 000 Coins",
+    "CN": "+5000"
+  },
+  "vip_reward_freeStep": {
+    "ID": "vip_reward_freeStep",
+    "EN": "Add-Drops FREE to use once a day",
+    "CN": "每日免费获得1次增加步数"
+  },
+  "vip_reward_fullHeart": {
+    "ID": "vip_reward_fullHeart",
+    "EN": "1-hour unlimited lives per day",
+    "CN": "每日免费获得1小时无限体力"
+  },
+  "vip_reward_rotateChest": {
+    "ID": "vip_reward_rotateChest",
+    "EN": "Extra reward in lucky wheel",
+    "CN": "解锁幸运转盘宝箱奖励"
+  },
+  "vip_reward_crystalball": {
+    "ID": "vip_reward_crystalball",
+    "EN": "Crystal Ball Unlocked",
+    "CN": "解锁关卡内动物预知功能"
+  },
+  "vip_reward_golden": {
+    "ID": "vip_reward_golden",
+    "EN": "Exclusive profile and team chat frame",
+    "CN": "解锁炫彩名称和队伍求助框"
+  },
+  "activate_fund1": {
+    "ID": "activate_fund1",
+    "EN": "You have activated the",
+    "CN": "你已经激活了"
+  },
+  "activate_fund2": {
+    "ID": "activate_fund2",
+    "EN": "Adventure Fund!",
+    "CN": "冒险基金！"
+  },
+  "activate_fund3": {
+    "ID": "activate_fund3",
+    "EN": "Challenge levels to earn up to",
+    "CN": "挑战关卡获得最高"
+  },
+  "activate_fund4": {
+    "ID": "activate_fund4",
+    "EN": "reward!",
+    "CN": "倍奖励！"
+  },
+  "activate_pass1": {
+    "ID": "activate_pass1",
+    "EN": "You have activated the",
+    "CN": "你已经激活了"
+  },
+  "activate_pass5": {
+    "ID": "activate_pass5",
+    "EN": "Adventure Pass!",
+    "CN": "冒险通行证！"
+  },
+  "activate_pass2": {
+    "ID": "activate_pass2",
+    "EN": "8 lives instead of 5",
+    "CN": "体力上限由5变成8！"
+  },
+  "activate_pass3": {
+    "ID": "activate_pass3",
+    "EN": "10 drops instead of 5",
+    "CN": "步数不足时增加步数由5变成10！"
+  },
+  "activate_pass4": {
+    "ID": "activate_pass4",
+    "EN": "Gift for your teammates",
+    "CN": "队友可获取神秘奖励！"
+  },
+  "activate_vip1": {
+    "ID": "activate_vip1",
+    "EN": "You have activated the",
+    "CN": "你已经激活了"
+  },
+  "activate_vip8": {
+    "ID": "activate_vip8",
+    "EN": "VIP Card!",
+    "CN": "黄金月卡！"
+  },
+  "activate_vip2": {
+    "ID": "activate_vip2",
+    "EN": "Get 5 000 Coins now!",
+    "CN": "立即获得5000金币！"
+  },
+  "activate_vip3": {
+    "ID": "activate_vip3",
+    "EN": "Add-Drops FREE to use once a day",
+    "CN": "每日免费获得1次增加步数！"
+  },
+  "activate_vip4": {
+    "ID": "activate_vip4",
+    "EN": "1-hour unlimited lives per day",
+    "CN": "每日免费获得1小时无限体力！"
+  },
+  "activate_vip5": {
+    "ID": "activate_vip5",
+    "EN": "Extra reward in lucky wheel",
+    "CN": "解锁幸运转盘宝箱奖励！"
+  },
+  "activate_vip6": {
+    "ID": "activate_vip6",
+    "EN": "Crystal Ball Unlocked",
+    "CN": "解锁关卡内动物预知功能！"
+  },
+  "activate_vip7": {
+    "ID": "activate_vip7",
+    "EN": "Exclusive profile and team chat frame",
+    "CN": "解锁炫彩名称和队伍求助框！"
+  },
+  "activate_claim": {
+    "ID": "activate_claim",
+    "EN": "Tap to Claim",
+    "CN": "点击领取"
+  },
+  "guide_dialog_5501": {
+    "ID": "guide_dialog_5501",
+    "EN": "Join a Team to get free lives!",
+    "CN": "加入一个队伍获取免费体力！"
+  },
+  "guide_team2": {
+    "ID": "guide_team2",
+    "EN": "Enter Name",
+    "CN": "输入昵称"
+  },
+  "guide_team3": {
+    "ID": "guide_team3",
+    "EN": "What is your name?",
+    "CN": "你的昵称是？"
+  },
+  "guide_team4": {
+    "ID": "guide_team4",
+    "EN": "Type your name…",
+    "CN": "输入你的昵称…"
+  },
+  "item_name_206": {
+    "ID": "item_name_206",
+    "EN": "BOMB",
+    "CN": "小彩弹"
+  },
+  "item_name_208": {
+    "ID": "item_name_208",
+    "EN": "Rocket",
+    "CN": "小火箭"
+  },
+  "item_name_207": {
+    "ID": "item_name_207",
+    "EN": "TNT",
+    "CN": "小炸药"
+  },
+  "item_name_308": {
+    "ID": "item_name_308",
+    "EN": "Frisbee",
+    "CN": "飞盘"
+  },
+  "item_name_309": {
+    "ID": "item_name_309",
+    "EN": "Dart",
+    "CN": "飞镖"
+  },
+  "item_des_206": {
+    "ID": "item_des_206",
+    "EN": "BOMB damages and pushes obstacles around it",
+    "CN": "彩弹合成后会爆炸，可以破坏或崩飞旁边的东西。"
+  },
+  "item_des_208": {
+    "ID": "item_des_208",
+    "EN": "The Rocket will find an obstacle to destroy",
+    "CN": "火箭合成后会引燃，可以精准寻找并破坏一个目标。"
+  },
+  "item_des_207": {
+    "ID": "item_des_207",
+    "EN": "TNT can make a cross-shaped explosion to blow up and destroy things around.",
+    "CN": "炸药合成后会爆炸，可以破坏横竖方向的东西。"
+  },
+  "item_des_308": {
+    "ID": "item_des_308",
+    "EN": "Frisbee can remove one layer of any obstacle on the selected row without using a move.",
+    "CN": "飞盘会命中指定横向范围内的所有物品"
+  },
+  "item_des_309": {
+    "ID": "item_des_309",
+    "EN": "Dart can remove one layer of any obstacle on the selected column without using a move.",
+    "CN": "飞镖会命中指定竖向范围内的所有物品"
+  },
+  "start_reward1": {
+    "ID": "start_reward1",
+    "EN": "Rewards",
+    "CN": "奖励"
+  },
+  "start_reward2": {
+    "ID": "start_reward2",
+    "EN": "Level rewards for events and tournaments will be multiplied by {0}!"
+  },
+  "fail_tipe1": {
+    "ID": "fail_tipe1",
+    "EN": "You will lose these rewards.",
+    "CN": "你将会失去以上所有东西。"
+  },
+  "fail_tipe2": {
+    "ID": "fail_tipe2",
+    "EN": "and {0}",
+    "CN": "和{0}"
+  },
+  "fail_des_key": {
+    "ID": "fail_des_key",
+    "EN": "<color=#ff0e30>Keys</color>",
+    "CN": "钥匙"
+  },
+  "fail_des_clover": {
+    "ID": "fail_des_clover",
+    "EN": "<color=#ff0e30>Lucky clovers</color>",
+    "CN": "幸运草"
+  },
+  "buy_title_adventurepass": {
+    "ID": "buy_title_adventurepass",
+    "EN": "Adventure Pass",
+    "CN": "冒险通行证"
+  },
+  "buy_title_vip": {
+    "ID": "buy_title_vip",
+    "EN": "VIP Card",
+    "CN": "黄金月卡"
+  },
+  "buy_des1": {
+    "ID": "buy_des1",
+    "EN": "FREE add drops this time!",
+    "CN": "复活免费增加步数！"
+  },
+  "buy_des2": {
+    "ID": "buy_des2",
+    "EN": "Fill up lives for FREE!",
+    "CN": "免费补满你的体力！"
+  },
+  "outnotice_title1": {
+    "ID": "outnotice_title1",
+    "EN": "The lucky wheel is ready!",
+    "CN": "幸运准盘已经准备好了！"
+  },
+  "outnotice_des1": {
+    "ID": "outnotice_des1",
+    "EN": "Claim your rewards!\\uD83D\\uD83D\\uD83C\\uDF81",
+    "CN": "快来领取你的幸运奖励吧！\\uD83D\\uDE06\\uD83C\\uDF81"
+  },
+  "outnotice_title2": {
+    "ID": "outnotice_title2",
+    "EN": "\\uD83D\\uDC97Don't forget the daily login!",
+    "CN": "\\uD83D\\uDC97别忘了每日签到！"
+  },
+  "outnotice_des2": {
+    "ID": "outnotice_des2",
+    "EN": "Just one step to earning the daily rewards!\\uD83C\\uDF1F",
+    "CN": "只需一步就可领取当日奖励！\\uD83C\\uDF1F"
+  },
+  "outnotice_title3": {
+    "ID": "outnotice_title3",
+    "EN": "\\uD83D\\uDE0BThe animals miss you so much!",
+    "CN": "\\uD83D\\uDE0B小动物们十分想念您！"
+  },
+  "outnotice_des3": {
+    "ID": "outnotice_des3",
+    "EN": "Join them on adventures!\\uD83C\\uDF81",
+    "CN": "快来和他们一起冒险吧！\\uD83C\\uDF81"
+  },
+  "outnotice_title4": {
+    "ID": "outnotice_title4",
+    "EN": "Your lives are full!\\uD83D\\uDC2D",
+    "CN": "体力已经补满啦！\\uD83D\\uDC2D"
+  },
+  "outnotice_des4": {
+    "ID": "outnotice_des4",
+    "EN": "Come and challenge the new levels!\\uD83D\\uDE3B",
+    "CN": "快来挑战新的关卡吧！\\uD83D\\uDE3B"
+  },
+  "guide1_booster1": {
+    "ID": "guide1_booster1",
+    "EN": "BOMB damages and pushes obstacles around it.",
+    "CN": "小彩弹合成后会爆炸，可以破坏或崩飞旁边的东西。"
+  },
+  "guide1_booster11": {
+    "ID": "guide1_booster11",
+    "EN": "Drop animals to touch the same color BOMB can explode the surroundings.",
+    "CN": "小彩弹可以被相同颜色的动物引爆"
+  },
+  "guide1_booster2": {
+    "ID": "guide1_booster2",
+    "EN": "Rocket will find an obstacle to destroy.",
+    "CN": "小火箭合成后会引燃，可以精准寻找并破坏一个目标。"
+  },
+  "guide1_booster3": {
+    "ID": "guide1_booster3",
+    "EN": "TNT can make a cross-shaped explosion to blow up and destroy things around.",
+    "CN": "小炸药合成后会爆炸，可以破坏横竖方向的东西。"
+  },
+  "guide_dialog_5701": {
+    "ID": "guide_dialog_5701",
+    "EN": "Touch to unlock the Energy ball.",
+    "CN": "能量球已解锁，每次合成动物都会增加能量哦，试试看。"
+  },
+  "guide1_booster5": {
+    "ID": "guide1_booster5",
+    "EN": "Energy balls to fill it up and get extra help!",
+    "CN": "能量球加满后会直接生成道具，使我们的游戏更轻松！"
+  },
+  "guide1_booster5_title": {
+    "ID": "guide1_booster5_title",
+    "EN": "Energy Balls",
+    "CN": "能量球"
+  },
+  "guide_dialog_701": {
+    "ID": "guide_dialog_701",
+    "EN": "You've unlocked the Magic Hat, and it can upgrade any animal directly.",
+    "CN": "魔术帽已解锁，它可以让任意一只动物直接升级。"
+  },
+  "guide_dialog_1601": {
+    "ID": "guide_dialog_1601",
+    "EN": "You've unlocked the Frisbee and Dart. Try the Frisbee, it can destroy the obstacles in a horizontal line.",
+    "CN": "飞盘和飞镖已解锁，先来试试飞盘，它可以破坏横向范围的所有物品。"
+  },
+  "guide_dialog_1605": {
+    "ID": "guide_dialog_1605",
+    "EN": "Then try the Dart, it can destroy all items in a vertical line.",
+    "CN": "再试试飞镖，它可以破坏竖向范围的所有物品。"
+  },
+  "guide1_booster9": {
+    "ID": "guide1_booster9",
+    "EN": "Crystal Ball's trial is over, you can continue to enjoy it by activating the VIP Card!",
+    "CN": "预知试用时间已结束，激活黄金月卡可以继续免费享受哦！"
+  },
+  "guide_dialog_401": {
+    "ID": "guide_dialog_401",
+    "EN": "Boosters have been unlocked, and they can help you!",
+    "CN": "战前道具已经解锁啦，它们可以助你一臂之力！"
+  },
+  "guide_dialog_5101": {
+    "ID": "guide_dialog_5101",
+    "EN": "Combo balls can produce unexpected effects with props!",
+    "CN": "COMBO球可以和道具产生意想不到的效果哦！"
+  },
+  "guide_dialog_801": {
+    "ID": "guide_dialog_801",
+    "EN": "You have got the Crystal Ball, now you can know exactly what's next drop.",
+    "CN": "你获得了限时预知效果，现在你可以预知到下一个掉落物是什么啦！"
+  },
+  "guide_dialog_106": {
+    "ID": "guide_dialog_106",
+    "EN": "There are wooden boxes. We can tear down the wooden boxes by merging animals next to them.",
+    "CN": "这里有一些木箱，我们可以在旁边合成打碎它们。"
+  },
+  "guide_dialog_1137": {
+    "ID": "guide_dialog_1137",
+    "EN": "The level goal is in the upper right corner.Now try to make it through by eliminating the remaining wooden boxes.",
+    "CN": "看，关卡目标在右上角。现在来尝试通过合成小动消除剩余木箱来通过关卡吧。"
+  },
+  "guide_dialog_001": {
+    "ID": "guide_dialog_001",
+    "EN": "Hi, I'm Ella! I live on a farm with my grandpa, Professor Stevenson.",
+    "CN": "Hi，我是Ella，我和我的外公Stevenson教授一起住在我们的农场里。"
+  },
+  "guide_dialog_002": {
+    "ID": "guide_dialog_002",
+    "EN": "Grandpa is a biologist, so we have many animal friends.",
+    "CN": "我外公是个生物学家，我们有很多动物伙伴。"
+  },
+  "guide_dialog_003": {
+    "ID": "guide_dialog_003",
+    "EN": "Hi, I am Stevenson. What's your name?",
+    "CN": "你好，我是Stevenson。你叫什么名字？"
+  },
+  "guide_dialog_004": {
+    "ID": "guide_dialog_004",
+    "EN": "Welcome, {username}. We've prepared an adventure trip this summer vacation. Let's go!",
+    "CN": "欢迎你，{username}。今年暑假我们准备了一次冒险旅行。"
+  },
+  "guide_dialog_0040": {
+    "ID": "guide_dialog_0040",
+    "EN": "Of course, we'll bring our animal friends. Let's meet them first!",
+    "CN": "当然，必须带上我们的动物伙伴们，让我们先来认识一下它们！"
+  },
+  "guide_dialog_005": {
+    "ID": "guide_dialog_005",
+    "EN": "You see, these are my animal friends! We just received 3 stars with their help!",
+    "CN": "是的，这就是我的动物伙伴，它们刚才帮我获得了3颗星星。"
+  },
+  "guide_dialog_006": {
+    "ID": "guide_dialog_006",
+    "EN": "Let's see what the stars do.",
+    "CN": "让我们看看星星有什么作用吧。"
+  },
+  "guide_dialog_007": {
+    "ID": "guide_dialog_007",
+    "EN": "Stars can light up a part of the postcard!",
+    "CN": "它可以点亮明信片！"
+  },
+  "guide_dialog_008": {
+    "ID": "guide_dialog_008",
+    "EN": "Wow! It's me! We need more stars to light up other parts of the postcard.",
+    "CN": "哇，这是我诶！我还需要更多星星！"
+  },
+  "guide_dialog_009": {
+    "ID": "guide_dialog_009",
+    "EN": "Let's continue collecting stars!",
+    "CN": "我们继续收集星星！"
+  },
+  "guide_dialog_010": {
+    "ID": "guide_dialog_010",
+    "EN": "Let's keep lighting up postcards!",
+    "CN": "我们继续揭晓明信片！"
+  },
+  "guide_dialog_011": {
+    "ID": "guide_dialog_011",
+    "EN": "Isn't my cat cute? She's listening to my song.",
+    "CN": "我的猫咪可爱吗？它在听我的音乐！"
+  },
+  "guide_dialog_012": {
+    "ID": "guide_dialog_012",
+    "EN": "We have enough stars again!",
+    "CN": "又有星星了！"
+  },
+  "guide_dialog_013": {
+    "ID": "guide_dialog_013",
+    "EN": "My sheep is here, there must be other friends.",
+    "CN": "我的羊也在，一定还有其他伙伴。"
+  },
+  "guide_dialog_014": {
+    "ID": "guide_dialog_014",
+    "EN": "Cool! We can light up a new part of the postcard now!",
+    "CN": "哇！我们可以点亮新的部分了！"
+  },
+  "guide_dialog_015": {
+    "ID": "guide_dialog_015",
+    "EN": "Who says cows don't listen to music? By the way, why is the background not colored?",
+    "CN": "谁说牛不听音乐的？对了，为什么背景不是彩色的？"
+  },
+  "guide_dialog_016": {
+    "ID": "guide_dialog_016",
+    "EN": "This time we've got enough stars, I guess.",
+    "CN": "这次星星应该足够了！"
+  },
+  "guide_dialog_017": {
+    "ID": "guide_dialog_017",
+    "EN": "A postcard with a gift! Awesome! Many postcards are waiting for us to find during the vacation!",
+    "CN": "明信片还附带礼物，太棒啦！还有好多明信片等着我们在旅途中发现！"
+  },
+  "guide_dialog_018": {
+    "ID": "guide_dialog_018",
+    "EN": "Ella, time to go now.",
+    "CN": "Ella，我们该出发了！"
+  },
+  "guide_dialog_019": {
+    "ID": "guide_dialog_019",
+    "EN": "Okay, let's start our trip. I'll collect a great many stars!",
+    "CN": "好的，让我们开始旅行吧，我会有很多很多星星的。"
+  },
+  "guide_dialog_020": {
+    "ID": "guide_dialog_020",
+    "EN": "Finally out of the farm, so where is our first stop.",
+    "CN": "终于走出农场了，那么我们第一次站是哪里呢。"
+  },
+  "guide_dialog_021": {
+    "ID": "guide_dialog_021",
+    "EN": "Desert!",
+    "CN": "沙漠！"
+  },
+  "guide_dialog_022": {
+    "ID": "guide_dialog_022",
+    "EN": "The pyramids are so mysterious, but it's a bit hot.",
+    "CN": "金字塔真是太神秘了，只是有点热。"
+  },
+  "guide_dialog_023": {
+    "ID": "guide_dialog_023",
+    "EN": "Then let's go to the beach next stop. I'll drop in on my old friend.",
+    "CN": "那么我们下一站就去海边吧，我顺便拜访一下我的老朋友。"
+  },
+  "guide_dialog_024": {
+    "ID": "guide_dialog_024",
+    "EN": "I love the sea. I wish I could live here forever",
+    "CN": "我好喜欢大海，能够永远住在这里就好了。"
+  },
+  "guide_dialog_025": {
+    "ID": "guide_dialog_025",
+    "EN": "As long as there's no storm…Do you wanna go somewhere colder?",
+    "CN": "只要没有暴风雨。想不想去冷一点的地方？"
+  },
+  "guide_dialog_026": {
+    "ID": "guide_dialog_026",
+    "EN": "A place with snow?",
+    "CN": "可以看到雪吗？"
+  },
+  "guide_dialog_027": {
+    "ID": "guide_dialog_027",
+    "EN": "Of course!",
+    "CN": "当然！"
+  },
+  "guide_dialog_028": {
+    "ID": "guide_dialog_028",
+    "EN": "Let's go!",
+    "CN": "让我们走吧！"
+  },
+  "guide_dialog_10500": {
+    "ID": "guide_dialog_10500",
+    "EN": "Tap on the indicated area to drop the animal. The same kind will be merged.",
+    "CN": "点击指示区域放下小动物，相同的动物就会合成哦！"
+  },
+  "animalfriend_title": {
+    "ID": "animalfriend_title",
+    "EN": "Animal Friends",
+    "CN": "动物伙伴"
+  },
+  "animalfriend_des": {
+    "ID": "animalfriend_des",
+    "EN": "Collect {0} animals to win the rewards! Complete all steps to win the Grand Prize!",
+    "CN": "收集{0}个动物赢得奖励，完成所有阶段还能获得大奖！"
+  },
+  "animalfriend_failed_des": {
+    "ID": "animalfriend_failed_des",
+    "EN": "You will lose the animal rewards collected this time!",
+    "CN": "你收集了足够多的动物获得奖励，你将会失去它们！"
+  },
+  "fail_des_animals": {
+    "ID": "fail_des_animals",
+    "EN": "<color=#ff0e30>Animals</color>",
+    "CN": "动物"
+  },
+  "booster_title": {
+    "ID": "booster_title",
+    "EN": "Booster Battle",
+    "CN": "技巧大师"
+  },
+  "booster_des": {
+    "ID": "booster_des",
+    "EN": "It's time to test your skills! Use boosters to improve rankings and get rewards!",
+    "CN": "使用道具冲刺排名，排名越高能获得的奖励越丰厚哦！"
+  },
+  "booster_player": {
+    "ID": "booster_player",
+    "EN": "Waiting for player…",
+    "CN": "等待加入…"
+  },
+  "fail_des_boosters": {
+    "ID": "fail_des_boosters",
+    "EN": "<color=#ff0e30>Boosters</color>",
+    "CN": "道具"
+  },
+  "guide_dialog_7501": {
+    "ID": "guide_dialog_7501",
+    "EN": "Let me give you some help!",
+    "CN": "让我给你一些帮助吧！"
+  },
+  "guide_dialog_7502": {
+    "ID": "guide_dialog_7502",
+    "EN": "See these gift boxes? Open them to get mysterious items!",
+    "CN": "看到这些礼物盒了吗？打开它们将会获得神秘道具！"
+  },
+  "guide_dialog_7601": {
+    "ID": "guide_dialog_7601",
+    "EN": "Some things are trapped in the iron cage, try to take them out.",
+    "CN": "有些东西被困在铁笼里了，想办法拿出来。"
+  },
+  "guide_dialog_7602": {
+    "ID": "guide_dialog_7602",
+    "EN": "Merge beside the iron cage to break it.",
+    "CN": "在铁笼旁边合成可以击破铁笼。"
+  },
+  "guide_dialog_7701": {
+    "ID": "guide_dialog_7701",
+    "EN": "The animals are frozen, help them out!",
+    "CN": "小动物们被冻住了，想办法帮帮它们！"
+  },
+  "guide_dialog_7702": {
+    "ID": "guide_dialog_7702",
+    "EN": "Merge beside frozen animals to unfreeze them.",
+    "CN": "在冻住的动物旁边合成可以解除冰冻。"
+  },
+  "guide_dialog_7801": {
+    "ID": "guide_dialog_7801",
+    "EN": "I need some ice cubes for shaved ice. But the ice machine sometimes goes wrong and freezes something else.",
+    "CN": "我想搞点冰块制作刨冰。但制冰机有时候会失灵，冻住一些东西。"
+  },
+  "guide_dialog_7802": {
+    "ID": "guide_dialog_7802",
+    "EN": "Merge beside the ice machine to collect the ice cubes inside.",
+    "CN": "在制冰机旁边合成可以收集里面的冰块。"
+  },
+  "guide_dialog_free": {
+    "ID": "guide_dialog_free",
+    "EN": "Free",
+    "CN": "免费"
+  },
+  "guide_dialog_7901": {
+    "ID": "guide_dialog_7901",
+    "EN": "Why not add more drops using your coins? Try it free this time!",
+    "CN": "花费金币可以增加步数，这次免费帮你加步数吧！"
+  },
+  "gift_1": {
+    "ID": "gift_1",
+    "EN": "Steven's Gift",
+    "CN": "爷爷的礼物"
+  },
+  "gift_2": {
+    "ID": "gift_2",
+    "EN": "Beat levels on your first try to earn grandpa's boosters!",
+    "CN": "一次通关获得神秘过关奖励！"
+  },
+  "guide_dialog_4601": {
+    "ID": "guide_dialog_4601",
+    "EN": "Grandpa brought some seeds. Let's plant beautiful flowers!",
+    "CN": "祖父带来了一些花朵种子，让我们来种植漂亮的花朵吧！"
+  },
+  "guide_dialog_4602": {
+    "ID": "guide_dialog_4602",
+    "EN": "Merge beside the flowerpots will help the flowers grow. Grow all connected flowers to take away these pots!",
+    "CN": "在花盆旁合成开始种植，当连在一起的花盆上的花全部盛开时这些花盆就会消失！"
+  },
+  "ellaguitar_title": {
+    "ID": "ellaguitar_title",
+    "EN": "Ella's Guitar",
+    "CN": "艾拉的吉他"
+  },
+  "ellaguitar_rule": {
+    "ID": "ellaguitar_rule",
+    "EN": "Beat one level and earn a note to participate in the competetion!",
+    "CN": "通过一个关卡，获得音符，即可参加比赛。"
+  },
+  "ellaguitar_rule1": {
+    "ID": "ellaguitar_rule1",
+    "EN": "Triple notes for beating a level on your first try!",
+    "CN": "第一次尝试就通过关卡，可以获得3倍音符奖励结算。"
+  },
+  "ellaguitar_rule2": {
+    "ID": "ellaguitar_rule2",
+    "EN": "Double notes for beating a level on your second tries!",
+    "CN": "第二次尝试通过关卡，可以获得2倍音符奖励结算。"
+  },
+  "ellaguitar_rule3": {
+    "ID": "ellaguitar_rule3",
+    "EN": "Regular notes for beating a level on your third or more tries!",
+    "CN": "第三次及以上尝试通过关卡，获得1倍音符奖励结算。"
+  },
+  "ellaguitar_rule_ingame": {
+    "ID": "ellaguitar_rule_ingame",
+    "EN": "Merge animals to get notes. Start your play now!",
+    "CN": "小动物合成即可获得音符，保持连胜！"
+  },
+  "ellaguitar_victory1": {
+    "ID": "ellaguitar_victory1",
+    "EN": "Congratulations! You have reached to a higher league! The rewards will be more generous next round!",
+    "CN": "祝贺你晋级更高联盟，接下来的比赛中，奖励会更加丰厚！"
+  },
+  "ellaguitar_victory2": {
+    "ID": "ellaguitar_victory2",
+    "EN": "Congratulations! Keep up with the race and get better rewards!",
+    "CN": "恭喜，继续参加比赛保持名次，获得更好的奖励！"
+  },
+  "ellaguitar_lose": {
+    "ID": "ellaguitar_lose",
+    "EN": "It's okay! cheer up next time!",
+    "CN": "别灰心，继续参加下次比赛，提升名次。"
+  },
+  "ellaguitar_continue": {
+    "ID": "ellaguitar_continue",
+    "EN": "Tap to Continue",
+    "CN": "点击继续"
+  },
+  "ellaguitar_rule4": {
+    "ID": "ellaguitar_rule4",
+    "EN": "Try reaching the higher league to get richer prizes. Players fall behind will be demoted to the lower league.",
+    "CN": "获得更多音符，在排行榜上名列前茅，即可升入更高联盟，获得更丰厚的奖品。排名靠后的玩家则会降低至更低的联盟。"
+  },
+  "ellaguitar_league": {
+    "ID": "ellaguitar_league",
+    "EN": "Your League",
+    "CN": "你的联盟"
+  },
+  "ellaguitar_leagueup": {
+    "ID": "ellaguitar_leagueup",
+    "EN": "Players above will raise to higher league",
+    "CN": "以上玩家升入更高联盟。"
+  },
+  "ellaguitar_leaguedown": {
+    "ID": "ellaguitar_leaguedown",
+    "EN": "Players below will fall to lower league",
+    "CN": "以下玩家降低至更低联盟。"
+  },
+  "ellaguitar_reward": {
+    "ID": "ellaguitar_reward",
+    "EN": "Reward",
+    "CN": "奖励"
+  },
+  "ellaguitar_rank": {
+    "ID": "ellaguitar_rank",
+    "EN": "Rank",
+    "CN": "排名"
+  },
+  "kite_title": {
+    "ID": "kite_title",
+    "EN": "Above the Clouds",
+    "CN": "风筝大赛"
+  },
+  "kite_noreward": {
+    "ID": "kite_noreward",
+    "EN": "Players below cannot get rewards",
+    "CN": "以下玩家无法获得奖励"
+  },
+  "kite_noteam": {
+    "ID": "kite_noteam",
+    "EN": "Join a team of more than 10 players to participate in Above the Clouds!",
+    "CN": "加入10人以上队伍，参与风筝大赛！"
+  },
+  "kite_noteammember": {
+    "ID": "kite_noteammember",
+    "EN": "Your team is less than 10 players! Gather 10 players to start the event!",
+    "CN": "你的队伍不足10人，集齐10名队员就能开启风筝大赛！"
+  },
+  "kite_start": {
+    "ID": "kite_start",
+    "EN": "Above the Clouds has begun! Beat a level to help your team fly a kite!",
+    "CN": "风筝大赛开始了！通关一关即可开启风筝大赛！"
+  },
+  "kite_nojoin": {
+    "ID": "kite_nojoin",
+    "EN": "You cannot get rewards of this round of Above the Clouds.",
+    "CN": "很遗憾，你将无法获得本次风筝大赛活动奖励。"
+  },
+  "kite_leave_team": {
+    "ID": "kite_leave_team",
+    "EN": "You won't be able to compete in Above the Clouds.",
+    "CN": "现在离开，你将失去参加风筝大赛的资格。"
+  },
+  "teamrace_title": {
+    "ID": "teamrace_title",
+    "EN": "Team Race",
+    "CN": "队伍大冒险"
+  },
+  "teamrace_noteam": {
+    "ID": "teamrace_noteam",
+    "EN": "Join a team of more than 10 players to participate in Team Race!",
+    "CN": "加入10人以上队伍，参与队伍大冒险！"
+  },
+  "teamrace_noteammember": {
+    "ID": "teamrace_noteammember",
+    "EN": "Your team is less than 10 players! Gather 10 players to start the event!",
+    "CN": "你的队伍不足10人，集齐10名队员就能开启队伍大冒险！"
+  },
+  "teamrace_start": {
+    "ID": "teamrace_start",
+    "EN": "Team Race has begun! Beat a level to join Team Race!",
+    "CN": "队伍大冒险开始了！通关一关即可开启队伍大冒险！"
+  },
+  "teamrace_nojoin": {
+    "ID": "teamrace_nojoin",
+    "EN": "You cannot get rewards of this round of Team Race.",
+    "CN": "很遗憾，你将无法获得本次队伍大冒险活动奖励。"
+  },
+  "teamrace_leave_team": {
+    "ID": "teamrace_leave_team",
+    "EN": "You won't be able to compete  in Team Race.",
+    "CN": "现在离开，你将失去参加队伍大冒险的资格。"
+  },
+  "btn_Battle": {
+    "ID": "btn_Battle",
+    "EN": "Battle",
+    "CN": "队伍排名"
+  },
+  "btn_myteam": {
+    "ID": "btn_myteam",
+    "EN": "My Team",
+    "CN": "我的队伍"
+  },
+  "diamondrush_title": {
+    "ID": "diamondrush_title",
+    "EN": "Diamond Rush",
+    "CN": "终极冒险"
+  },
+  "diamondrush_start": {
+    "ID": "diamondrush_start",
+    "EN": "Diamond Rush has begun! Beat a level to join Diamond Rush!",
+    "CN": "终极冒险开始了！通关一关即可闯入终极冒险排行榜！"
+  },
+  "diamondrush_rule": {
+    "ID": "diamondrush_rule",
+    "EN": "Beat a level to earn a diamond! The more diamonds, the higher your ranking!",
+    "CN": "通过一关即可收集一颗钻石！钻石越多，你的排名就越高！"
+  },
+  "diamondrush_update": {
+    "ID": "diamondrush_update",
+    "EN": "This round of Diamond Rush is over! Please update the game to continue playing the new levels and get your reward!",
+    "CN": "本轮终极冒险已经结束！请更新游戏版本以体验全新的关卡并领取你的奖励！"
+  },
+  "loading_update": {
+    "ID": "loading_update",
+    "EN": "Please update the game and continue playing the new levels!",
+    "CN": "请更新游戏版本以体验全新的关卡！"
+  },
+  "btn_rank": {
+    "ID": "btn_rank",
+    "EN": "Rank",
+    "CN": "等级"
+  },
+  "btn_update": {
+    "ID": "btn_update",
+    "EN": "Update",
+    "CN": "更新"
+  },
+  "btn_download": {
+    "ID": "btn_download",
+    "EN": "Download",
+    "CN": "下载"
+  },
+  "diamondrush_opening": {
+    "ID": "diamondrush_opening",
+    "EN": "Opening",
+    "CN": "开启中"
+  },
+  "diamondrush_ingame_level_title": {
+    "ID": "diamondrush_ingame_level_title",
+    "EN": "- <sprite=0>Rank {0} -"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "1": {
+    "ID": 1,
+    "Official": "小乞丐",
+    "Skin": "001",
+    "HouseName": "破茅屋",
+    "HousePath": "house001",
+    "LevelIndex": 1
+  },
+  "2": {
+    "ID": 2,
+    "Official": "伴读",
+    "Skin": "002",
+    "HouseName": "茅屋",
+    "HousePath": "house002",
+    "LevelIndex": 7
+  },
+  "3": {
+    "ID": 3,
+    "Official": "书生",
+    "Skin": "003",
+    "HouseName": "红砖瓦房",
+    "HousePath": "house003",
+    "LevelIndex": 16
+  },
+  "4": {
+    "ID": 4,
+    "Official": "秀才",
+    "Skin": "004",
+    "HouseName": "精修瓦房",
+    "HousePath": "house004",
+    "LevelIndex": 44
+  },
+  "5": {
+    "ID": 5,
+    "Official": "举人",
+    "Skin": "005",
+    "HouseName": "双层瓦房",
+    "HousePath": "house005",
+    "LevelIndex": 100
+  },
+  "6": {
+    "ID": 6,
+    "Official": "状元",
+    "Skin": "006",
+    "HouseName": "琉璃瓦房",
+    "HousePath": "house006",
+    "LevelIndex": 160
+  },
+  "7": {
+    "ID": 7,
+    "Official": "芝麻小官",
+    "Skin": "007",
+    "HouseName": "崇文门府",
+    "HousePath": "house007",
+    "LevelIndex": 220
+  },
+  "8": {
+    "ID": 8,
+    "Official": "司府厅",
+    "Skin": "008",
+    "HouseName": "司府厅府",
+    "HousePath": "house008",
+    "LevelIndex": 280
+  },
+  "9": {
+    "ID": 9,
+    "Official": "太常寺",
+    "Skin": "009",
+    "HouseName": "太常寺府",
+    "HousePath": "house009",
+    "LevelIndex": 340
+  },
+  "10": {
+    "ID": 10,
+    "Official": "典仪",
+    "Skin": "010",
+    "HouseName": "典仪府",
+    "HousePath": "house010",
+    "LevelIndex": 400
+  },
+  "11": {
+    "ID": 11,
+    "Official": "州学正",
+    "Skin": "011",
+    "HouseName": "州学正府",
+    "HousePath": "house011",
+    "LevelIndex": 460
+  },
+  "12": {
+    "ID": 12,
+    "Official": "中书科",
+    "Skin": "012",
+    "HouseName": "中书科府",
+    "HousePath": "house012",
+    "LevelIndex": 520
+  },
+  "13": {
+    "ID": 13,
+    "Official": "赞礼郎",
+    "Skin": "013",
+    "HouseName": "赞礼郎府",
+    "HousePath": "house013",
+    "LevelIndex": 580
+  },
+  "14": {
+    "ID": 14,
+    "Official": "卫千总",
+    "Skin": "014",
+    "HouseName": "卫千总府",
+    "HousePath": "house014",
+    "LevelIndex": 640
+  },
+  "15": {
+    "ID": 15,
+    "Official": "都司",
+    "Skin": "015",
+    "HouseName": "都司服",
+    "HousePath": "house015",
+    "LevelIndex": 700
+  },
+  "16": {
+    "ID": 16,
+    "Official": "顺天府尹",
+    "Skin": "016",
+    "HouseName": "顺天府",
+    "HousePath": "house016",
+    "LevelIndex": 760
+  },
+  "17": {
+    "ID": 17,
+    "Official": "宣慰",
+    "Skin": "017",
+    "HouseName": "宣慰府",
+    "HousePath": "house017",
+    "LevelIndex": 820
+  },
+  "18": {
+    "ID": 18,
+    "Official": "巡抚",
+    "Skin": "018",
+    "HouseName": "巡抚府",
+    "HousePath": "house018",
+    "LevelIndex": 880
+  },
+  "19": {
+    "ID": 19,
+    "Official": "少师",
+    "Skin": "019",
+    "HouseName": "少师府",
+    "HousePath": "house019",
+    "LevelIndex": 940
+  },
+  "20": {
+    "ID": 20,
+    "Official": "亲王",
+    "Skin": "020",
+    "HouseName": "亲王府",
+    "HousePath": "house020",
+    "LevelIndex": 1000
+  }
+}

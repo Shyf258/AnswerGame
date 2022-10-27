@@ -1,0 +1,706 @@
+{
+  "10001": {
+    "ID": 10001,
+    "Name": "上报关卡信息",
+    "Method": "POST",
+    "URL": 1,
+    "JointURL": "/api/v1/stages"
+  },
+  "20001": {
+    "ID": 20001,
+    "Name": "游客登录",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/user/flogin"
+  },
+  "20002": {
+    "ID": 20002,
+    "Name": "用户信息配置接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/config"
+  },
+  "20003": {
+    "ID": 20003,
+    "Name": "微信登录",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/user/wlogin"
+  },
+  "20004": {
+    "ID": 20004,
+    "Name": "应用配置接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/app/config"
+  },
+  "20005": {
+    "ID": 20005,
+    "Name": "微信注销接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/user/logout"
+  },
+  "30010": {
+    "ID": 30010,
+    "Name": "获得关卡",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/getLevel"
+  },
+  "30011": {
+    "ID": 30011,
+    "Name": "升级",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/uplevel",
+    "IsCheckSM": true,
+    "SMeventCode": "2000010",
+    "SMoptMsg": "通关页掉落"
+  },
+  "30012": {
+    "ID": 30012,
+    "Name": "升级多倍",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/doublelevelwin"
+  },
+  "30020": {
+    "ID": 30020,
+    "Name": "获得体力",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/getStrength"
+  },
+  "30021": {
+    "ID": 30021,
+    "Name": "赚取体力",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/earnStrength"
+  },
+  "30022": {
+    "ID": 30022,
+    "Name": "消耗体力",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/useStrength"
+  },
+  "30030": {
+    "ID": 30030,
+    "Name": "抽奖配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/draw/drawconfig"
+  },
+  "30031": {
+    "ID": 30031,
+    "Name": "抽奖奖励",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/draw/windraw"
+  },
+  "30032": {
+    "ID": 30032,
+    "Name": "抽奖红包配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/draw/redpacks"
+  },
+  "30033": {
+    "ID": 30033,
+    "Name": "开启抽奖红包",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/draw/openred"
+  },
+  "30034": {
+    "ID": 30034,
+    "Name": "每日任务配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/task/config"
+  },
+  "30035": {
+    "ID": 30035,
+    "Name": "领取每日任务奖励",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/task/accept",
+    "IsCheckSM": true,
+    "SMeventCode": "2000014",
+    "SMoptMsg": "任务页掉落"
+  },
+  "30036": {
+    "ID": 30036,
+    "Name": "下载其他游戏任务完成",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/task/compile"
+  },
+  "30040": {
+    "ID": 30040,
+    "Name": "红包雨配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/redrain/rainconfig"
+  },
+  "30041": {
+    "ID": 30041,
+    "Name": "红包雨奖励",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/redrain/winrain"
+  },
+  "30050": {
+    "ID": 30050,
+    "Name": "打开红包",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/redgroup/acceptred"
+  },
+  "30060": {
+    "ID": 30060,
+    "Name": "免费配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/freemoney/config"
+  },
+  "30061": {
+    "ID": 30061,
+    "Name": "免费领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/freemoney/acceptfree"
+  },
+  "30062": {
+    "ID": 30062,
+    "Name": "免费小额领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/freemoney/clickaccept"
+  },
+  "30070": {
+    "ID": 30070,
+    "Name": "等待配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/acceptred/config"
+  },
+  "30071": {
+    "ID": 30071,
+    "Name": "等待领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/acceptred/acceptfree"
+  },
+  "30080": {
+    "ID": 30080,
+    "Name": "漂浮红包配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/floatred/config"
+  },
+  "30081": {
+    "ID": 30081,
+    "Name": "漂浮红包",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/floatred/winfloatred"
+  },
+  "30090": {
+    "ID": 30090,
+    "Name": "免费提示配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/getfreeprompt"
+  },
+  "30091": {
+    "ID": 30091,
+    "Name": "使用免费提示",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/userstore/useprompt"
+  },
+  "30100": {
+    "ID": 30100,
+    "Name": "签到配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/sign/config"
+  },
+  "30101": {
+    "ID": 30101,
+    "Name": "签到",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/sign/sign"
+  },
+  "30102": {
+    "ID": 30102,
+    "Name": "签到免费领",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/sign/acceptfree"
+  },
+  "30103": {
+    "ID": 30103,
+    "Name": "每日打卡",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/clockin/config"
+  },
+  "30104": {
+    "ID": 30104,
+    "Name": "打卡领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/clockin/clockin"
+  },
+  "30110": {
+    "ID": 30110,
+    "Name": "提现配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/withdraw/config"
+  },
+  "30111": {
+    "ID": 30111,
+    "Name": "提现",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/withdraw/withdraw",
+    "IsCheckSM": true,
+    "SMeventCode": "2000011",
+    "SMoptMsg": "登录提现页提现"
+  },
+  "30120": {
+    "ID": 30120,
+    "Name": "新手配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/novicereward/config"
+  },
+  "30121": {
+    "ID": 30121,
+    "Name": "新手",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/novicereward/accepct"
+  },
+  "30130": {
+    "ID": 30130,
+    "Name": "提现记录",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/withdraw/withdrawhis"
+  },
+  "30140": {
+    "ID": 30140,
+    "Name": "看激励广告",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/viewad/viewad"
+  },
+  "30141": {
+    "ID": 30141,
+    "Name": "点击激励广告",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/viewad/clickad"
+  },
+  "40100": {
+    "ID": 40100,
+    "Name": "官职配置信息",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/position/config"
+  },
+  "40101": {
+    "ID": 40101,
+    "Name": "升级官职",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/position/upposition"
+  },
+  "40102": {
+    "ID": 40102,
+    "Name": "管制等级信息",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/position/levelconfig"
+  },
+  "40110": {
+    "ID": 40110,
+    "Name": "里程碑配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/milepost/config"
+  },
+  "40111": {
+    "ID": 40111,
+    "Name": "里程碑领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/milepost/winmilepost"
+  },
+  "40112": {
+    "ID": 40112,
+    "Name": "里程碑任务配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/milepost/taskconfig"
+  },
+  "40113": {
+    "ID": 40113,
+    "Name": "领取里程碑任务",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/milepost/wintask"
+  },
+  "40200": {
+    "ID": 40200,
+    "Name": "在线奖励配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/online/config"
+  },
+  "40201": {
+    "ID": 40201,
+    "Name": "领取在线奖励",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/online/accpet"
+  },
+  "50100": {
+    "ID": 50100,
+    "Name": "科举配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/examination/config"
+  },
+  "50101": {
+    "ID": 50101,
+    "Name": "科举消耗次数",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/examination/open"
+  },
+  "50102": {
+    "ID": 50102,
+    "Name": "科举领取奖励",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/examination/accept"
+  },
+  "60100": {
+    "ID": 60100,
+    "Name": "猜猜看配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/guess/config"
+  },
+  "60101": {
+    "ID": 60101,
+    "Name": "答题成功",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/guess/nextquestion"
+  },
+  "60102": {
+    "ID": 60102,
+    "Name": "领取宝箱",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/guess/acceptbox"
+  },
+  "60103": {
+    "ID": 60103,
+    "Name": "使用免费提示",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/guess/prompt"
+  },
+  "70001": {
+    "ID": 70001,
+    "Name": "广告配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/view/config"
+  },
+  "70100": {
+    "ID": 70100,
+    "Name": "存钱罐配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/goldenpig/config"
+  },
+  "70101": {
+    "ID": 70101,
+    "Name": "存钱罐提现",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/goldenpig/take"
+  },
+  "70201": {
+    "ID": 70201,
+    "Name": "假现金提现",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/withdraw//winBogusWithDraw"
+  },
+  "80100": {
+    "ID": 80100,
+    "Name": "邀请配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/inviteconfig"
+  },
+  "80101": {
+    "ID": 80101,
+    "Name": "填写邀请码",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/invite"
+  },
+  "80102": {
+    "ID": 80102,
+    "Name": "合伙人列表",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/partner"
+  },
+  "80103": {
+    "ID": 80103,
+    "Name": "我的好友列表",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/friends"
+  },
+  "80104": {
+    "ID": 80104,
+    "Name": "提现记录",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/withdrawhis"
+  },
+  "80105": {
+    "ID": 80105,
+    "Name": "合伙人提现",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/withdraw"
+  },
+  "80106": {
+    "ID": 80106,
+    "Name": "分红记录",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/dividendhis"
+  },
+  "80107": {
+    "ID": 80107,
+    "Name": "分红排行榜接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/dividendrank"
+  },
+  "80108": {
+    "ID": 80108,
+    "Name": "活跃配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/invite/activityconfig"
+  },
+  "80201": {
+    "ID": 80201,
+    "Name": "离线奖励配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/offline/config"
+  },
+  "80202": {
+    "ID": 80202,
+    "Name": "领取离线奖励接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/offline/accept"
+  },
+  "80301": {
+    "ID": 80301,
+    "Name": "百关闯关配置接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/hundredpass/config"
+  },
+  "80302": {
+    "ID": 80302,
+    "Name": "百关闯关升级接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/hundredpass/uplevel"
+  },
+  "80303": {
+    "ID": 80303,
+    "Name": "百关闯关领取接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/hundredpass/usestrength"
+  },
+  "80401": {
+    "ID": 80401,
+    "Name": "限时活动配置信息",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/timelimit/config"
+  },
+  "80402": {
+    "ID": 80402,
+    "Name": "领取加现金接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/timelimit/winbougs"
+  },
+  "80501": {
+    "ID": 80501,
+    "Name": "生产配置接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/massproduce/config"
+  },
+  "80502": {
+    "ID": 80502,
+    "Name": "提现接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/massproduce/withdraw",
+    "IsCheckSM": true,
+    "SMeventCode": "2000002",
+    "SMoptMsg": "全民大生产功能，点击提现按键"
+  },
+  "80503": {
+    "ID": 80503,
+    "Name": "本月工资条接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/massproduce/withdrawhis"
+  },
+  "80504": {
+    "ID": 80504,
+    "Name": "成员前一天的提现金额",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/massproduce/memberpayslip"
+  },
+  "80505": {
+    "ID": 80505,
+    "Name": "上小时收入排行",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/massproduce/revenueranking"
+  },
+  "80506": {
+    "ID": 80506,
+    "Name": "弹幕文字",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/massproduce/lastrevenueranking"
+  },
+  "80601": {
+    "ID": 80601,
+    "Name": "原生广告领奖配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/feed/config"
+  },
+  "80602": {
+    "ID": 80602,
+    "Name": "原生广告金币领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/feed/acceptfeed"
+  },
+  "80603": {
+    "ID": 80603,
+    "Name": "原生广告点击奖励接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/feed/feedconfig"
+  },
+  "80604": {
+    "ID": 80604,
+    "Name": "领奖广告接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/feed/clickfeed"
+  },
+  "80605": {
+    "ID": 80605,
+    "Name": "关卡信息流配置接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/feed/levelconfig"
+  },
+  "80606": {
+    "ID": 80606,
+    "Name": "领关卡信息流奖金币接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/feed/acceptlevel"
+  },
+  "80701": {
+    "ID": 80701,
+    "Name": "新视频红包配置接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/newvideored/config"
+  },
+  "80702": {
+    "ID": 80702,
+    "Name": "新视频红包领取接口",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/newvideored/win",
+    "IsCheckSM": true,
+    "SMeventCode": "2000018",
+    "SMoptMsg": "新视频红包领取"
+  },
+  "90001": {
+    "ID": 90001,
+    "Name": "通用玩法配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/gamecore/config"
+  },
+  "90002": {
+    "ID": 90002,
+    "Name": "通用玩法领取",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/gamecore/accept",
+    "IsCheckSM": true,
+    "SMeventCode": "2000015",
+    "SMoptMsg": "通用玩法领取"
+  },
+  "90101": {
+    "ID": 90101,
+    "Name": "云控配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/app/pc"
+  },
+  "90301": {
+    "ID": 90301,
+    "Name": "提现增幅配置",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/growth/config"
+  },
+  "90401": {
+    "ID": 90401,
+    "Name": "登录领钱",
+    "Method": "POST",
+    "URL": 2,
+    "JointURL": "/play/clockin/nconfig"
+  }
+}

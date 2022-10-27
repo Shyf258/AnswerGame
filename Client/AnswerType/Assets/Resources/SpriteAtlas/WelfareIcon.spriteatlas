@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WelfareIcon
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: cc8e2c1b6d67a3347be10ddd347d2e0a, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6a48d260007731143ae55865edcbf042, type: 3}
+  - {fileID: 21300000, guid: 705c5c33668b8e44485cf47c728303f0, type: 3}
+  - {fileID: 21300000, guid: a62610f4b855bea41acbb7ccdd49b107, type: 3}
+  - {fileID: 21300000, guid: a493f0b79632e6a4c98956a12e635662, type: 3}
+  - {fileID: 21300000, guid: 6dcaa6389d50c544b9b761b8e538fadd, type: 3}
+  - {fileID: 21300000, guid: f74dee9aaa9df2846a15f3d07be38594, type: 3}
+  - {fileID: 21300000, guid: 4ccaaecaf3428f745ba7ca514dc64dfe, type: 3}
+  - {fileID: 21300000, guid: 51e61b0c3665d6f4e9056c599494a583, type: 3}
+  - {fileID: 21300000, guid: 24501e3c9dddd8041a7905e4580144bf, type: 3}
+  - {fileID: 21300000, guid: 3d22315cce8f8cf42a9a32635b74216f, type: 3}
+  - {fileID: 21300000, guid: 8d917fdc6b6cbba4982c01623106e8dd, type: 3}
+  - {fileID: 21300000, guid: 280c725e56806454db03a7297c1cbc74, type: 3}
+  - {fileID: 21300000, guid: 8501d4ffef34ac742aede92180395cca, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Home_Bottom_4
+  - Home_icon_xiaojingling
+  - Home_icon_hongbao
+  - Home_icon_guanqia
+  - Home_icon_shizhong
+  - Home_icon_yingjia
+  - Home_icon_rensheng
+  - Home_icon_jinbi
+  - Home_icon_shipin
+  - Home_icon_daka
+  - Home_icon_qunlingqian
+  - Home_reward_bottom
+  - Home_icon_laizhaunqian
+  m_Tag: WelfareIcon
+  m_IsVariant: 0
+  m_IsPlaceholder: 0

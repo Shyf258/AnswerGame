@@ -1,0 +1,4671 @@
+{
+  "1": {
+    "ID": 1,
+    "TitleText": "冬奥会开幕是哪一天？",
+    "Select1": "44596",
+    "Select2": "44961",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "3": {
+    "ID": 3,
+    "TitleText": "下面是冬奥吉祥物的是？",
+    "Select1": "派大星",
+    "Select2": "冰墩墩",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "4": {
+    "ID": 4,
+    "TitleText": "图中为什么比赛项目？",
+    "Select1": "冰壶",
+    "Select2": "摔跤",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia4"
+  },
+  "2": {
+    "ID": 2,
+    "TitleText": "五环上黄环代表什么？",
+    "Select1": "通州",
+    "Select2": "亚洲",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "5": {
+    "ID": 5,
+    "TitleText": "我国2022的冬奥会是第几届?",
+    "Select1": "第一届",
+    "Select2": "第24届",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "6": {
+    "ID": 6,
+    "TitleText": "图中是什么比赛项目？",
+    "Select1": "搏击",
+    "Select2": "花样滑冰",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia6"
+  },
+  "8": {
+    "ID": 8,
+    "TitleText": "北京冬奥会一共有多少个项目？",
+    "Select1": "108个",
+    "Select2": "15个",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "9": {
+    "ID": 9,
+    "TitleText": "冬奥会的口号是什么？",
+    "Select1": "德玛西亚",
+    "Select2": "一起向未来",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "12": {
+    "ID": 12,
+    "TitleText": "吉祥物冰墩墩是根据什么动物设计的？",
+    "Select1": "老虎",
+    "Select2": "大熊猫",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia12"
+  },
+  "10": {
+    "ID": 10,
+    "TitleText": "2022年冬奥会在哪一个城市举办？",
+    "Select1": "墨尔本",
+    "Select2": "北京",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "11": {
+    "ID": 11,
+    "TitleText": "北京冬奥会的会徽是什么？",
+    "Select1": "春的微风",
+    "Select2": "冬梦",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "15": {
+    "ID": 15,
+    "TitleText": "下面哪个是冬奥吉祥物？",
+    "Select1": "海绵宝宝",
+    "Select2": "雪容融",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Material5"
+  },
+  "13": {
+    "ID": 13,
+    "TitleText": "第一次从手机上观看冬奥会在哪一年？",
+    "Select1": "2022年",
+    "Select2": "2006年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "14": {
+    "ID": 14,
+    "TitleText": "本届冬奥会共有多少女性参赛？",
+    "Select1": "520",
+    "Select2": "1314",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "7": {
+    "ID": 7,
+    "TitleText": "图中是什么比赛项目？",
+    "Select1": "举重",
+    "Select2": "短道速滑",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia7"
+  },
+  "16": {
+    "ID": 16,
+    "TitleText": "中国冬奥会第一个获得奖牌的是？",
+    "Select1": "杨利伟",
+    "Select2": "叶乔波",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "17": {
+    "ID": 17,
+    "TitleText": "北京冬奥会是和哪一个城市联合举行？",
+    "Select1": "新疆",
+    "Select2": "张家口",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "28": {
+    "ID": 28,
+    "TitleText": "图中是什么地方？",
+    "Select1": "上海外滩",
+    "Select2": "鸟巢",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia28"
+  },
+  "18": {
+    "ID": 18,
+    "TitleText": "冬奥会的火炬是什么颜色的？",
+    "Select1": "秋裤灰",
+    "Select2": "红色",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "19": {
+    "ID": 19,
+    "TitleText": "第一个滑雪俱乐部是在哪一个国家？",
+    "Select1": "赤道南非",
+    "Select2": "挪威",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "20": {
+    "ID": 20,
+    "TitleText": "吉祥物雪容融是以什么为原型设计的？",
+    "Select1": "葫芦",
+    "Select2": "灯笼",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia20"
+  },
+  "21": {
+    "ID": 21,
+    "TitleText": "冬奥会几年举办一次",
+    "Select1": "一甲子",
+    "Select2": "4年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "22": {
+    "ID": 22,
+    "TitleText": "第一届冬奥会是在法国的什么城市举行的？",
+    "Select1": "华盛顿",
+    "Select2": "夏慕尼",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "36": {
+    "ID": 36,
+    "TitleText": "图中是什么地方？",
+    "Select1": "国家图书馆",
+    "Select2": "冰立方",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia36"
+  },
+  "23": {
+    "ID": 23,
+    "TitleText": "第一届冬奥会是在哪一年举办的？",
+    "Select1": "2008年",
+    "Select2": "1924年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "24": {
+    "ID": 24,
+    "TitleText": "中国首次出征冬奥会是什么时候？",
+    "Select1": "2008年",
+    "Select2": "1980年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "42": {
+    "ID": 42,
+    "TitleText": "图中是什么地方？",
+    "Select1": "巴比伦酒店",
+    "Select2": "冰之帆",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia42"
+  },
+  "25": {
+    "ID": 25,
+    "TitleText": "2022年冬奥会的雪上项目在什么地方举办？",
+    "Select1": "赤道几内亚",
+    "Select2": "张家口",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "26": {
+    "ID": 26,
+    "TitleText": "冬奥会会徽以什么汉字为灵感创作的？",
+    "Select1": "冰",
+    "Select2": "冬",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "49": {
+    "ID": 49,
+    "TitleText": "图中是什么地方？",
+    "Select1": "世纪广场",
+    "Select2": "冰凌花",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia49"
+  },
+  "27": {
+    "ID": 27,
+    "TitleText": "Bing DwenDwen是指？",
+    "Select1": "冰墩墩",
+    "Select2": "冰雯雯",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "29": {
+    "ID": 29,
+    "TitleText": "冬奥火炬主要是以哪两个颜色为主？",
+    "Select1": "红和黑",
+    "Select2": "红和银",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "56": {
+    "ID": 56,
+    "TitleText": "图中是什么地方？",
+    "Select1": "宇宙飞船",
+    "Select2": "冰丝带",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia56"
+  },
+  "30": {
+    "ID": 30,
+    "TitleText": "火炬蕴含着中国的什么思想？",
+    "Select1": "道法自然，天人合一",
+    "Select2": "眼角珠泪，吻开笔墨",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "31": {
+    "ID": 31,
+    "TitleText": "此次冬奥会共几个赛区？",
+    "Select1": "3个",
+    "Select2": "108个",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "61": {
+    "ID": 61,
+    "TitleText": "图中是什么地方？",
+    "Select1": "宇宙飞船",
+    "Select2": "冰丝带",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia61"
+  },
+  "32": {
+    "ID": 32,
+    "TitleText": "此次冬奥会共多少个场馆？",
+    "Select1": "13个",
+    "Select2": "108个",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "33": {
+    "ID": 33,
+    "TitleText": "冬奥会开幕式和闭幕式在哪里举行？",
+    "Select1": "故宫",
+    "Select2": "鸟巢",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "66": {
+    "ID": 66,
+    "TitleText": "图中是什么地方？",
+    "Select1": "国家图书馆",
+    "Select2": "国家体育馆",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia66"
+  },
+  "34": {
+    "ID": 34,
+    "TitleText": "国家游泳中心又被叫什么？",
+    "Select1": "游立方",
+    "Select2": "冰立方",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "35": {
+    "ID": 35,
+    "TitleText": "此次冬奥会冰壶项目在哪里进行？",
+    "Select1": "故宫",
+    "Select2": "冰立方",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "71": {
+    "ID": 71,
+    "TitleText": "图中是什么地方？",
+    "Select1": "黑龙江滑雪场",
+    "Select2": "国家雪车雪橇中心",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia71"
+  },
+  "37": {
+    "ID": 37,
+    "TitleText": "此次冰球项目在哪里进行？",
+    "Select1": "故宫",
+    "Select2": "冰之帆",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "38": {
+    "ID": 38,
+    "TitleText": "冰之帆设计类似于中国折扇，绰号是？",
+    "Select1": "屏风",
+    "Select2": "扇子",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "75": {
+    "ID": 75,
+    "TitleText": "图中是什么地方？",
+    "Select1": "野营俱乐部",
+    "Select2": "国家越野滑雪中心",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Material1"
+  },
+  "39": {
+    "ID": 39,
+    "TitleText": "五棵松体育中心又叫什么？",
+    "Select1": "武松体育",
+    "Select2": "冰凌花",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "40": {
+    "ID": 40,
+    "TitleText": "此次冰球项目的另一个进行地方是?",
+    "Select1": "故宫",
+    "Select2": "冰菱花",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "82": {
+    "ID": 82,
+    "TitleText": "图中是什么地方？",
+    "Select1": "上海外滩",
+    "Select2": "首钢滑雪大跳台",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia82"
+  },
+  "41": {
+    "ID": 41,
+    "TitleText": "国家速滑馆是哪个公园？",
+    "Select1": "北海公园",
+    "Select2": "北京奥体公园",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "43": {
+    "ID": 43,
+    "TitleText": "国家速滑馆又叫什么？",
+    "Select1": "冰滑",
+    "Select2": "冰丝带",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "89": {
+    "ID": 89,
+    "TitleText": "图中是什么地方？",
+    "Select1": "黑龙江滑雪场",
+    "Select2": "国家高山滑雪中心",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia89"
+  },
+  "44": {
+    "ID": 44,
+    "TitleText": "国家速滑馆在哪里？",
+    "Select1": "北京",
+    "Select2": "成都",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "45": {
+    "ID": 45,
+    "TitleText": "首都体育馆承办什么项目？",
+    "Select1": "搏击",
+    "Select2": "短道速滑",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "96": {
+    "ID": 96,
+    "TitleText": "图中是什么地方？",
+    "Select1": "雪坛",
+    "Select2": "国家跳台滑雪中心",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia96"
+  },
+  "46": {
+    "ID": 46,
+    "TitleText": "首都体育馆承办什么项目？",
+    "Select1": "搏击",
+    "Select2": "花样滑冰",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "47": {
+    "ID": 47,
+    "TitleText": "世界上第一个永久性的大跳台赛场是？",
+    "Select1": "纽约跳台",
+    "Select2": "首钢滑雪大跳台",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "104": {
+    "ID": 104,
+    "TitleText": "图中是什么地方？",
+    "Select1": "空中酒店",
+    "Select2": "云顶滑雪公园",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia104"
+  },
+  "48": {
+    "ID": 48,
+    "TitleText": "下列哪个项目是首钢大跳台承办的赛事？",
+    "Select1": "自由搏击",
+    "Select2": "自由式滑雪大跳台",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "50": {
+    "ID": 50,
+    "TitleText": "中国第一个滑行运动赛道的是？",
+    "Select1": "延庆国家雪车雪橇中心",
+    "Select2": "海南雪橇中心",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "116": {
+    "ID": 116,
+    "TitleText": "下面谁是冰壶最伟大的运动员之一?",
+    "Select1": "安妮特诺贝里",
+    "Select2": "派大星",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia116"
+  },
+  "51": {
+    "ID": 51,
+    "TitleText": "延庆雪车雪橇中心是亚洲内第几赛道？",
+    "Select1": "第三",
+    "Select2": "第八十八",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "52": {
+    "ID": 52,
+    "TitleText": "国家高山滑雪承办什么项目？",
+    "Select1": "花样游泳",
+    "Select2": "高山滑雪",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "132": {
+    "ID": 132,
+    "TitleText": "大跳台高几米？",
+    "Select1": "2米",
+    "Select2": "10086米",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia132"
+  },
+  "53": {
+    "ID": 53,
+    "TitleText": "国家冬季两项中心承办什么项目？",
+    "Select1": "相扑",
+    "Select2": "冬季两项",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "54": {
+    "ID": 54,
+    "TitleText": "国家跳台滑雪中心承办什么项目？",
+    "Select1": "花样游泳",
+    "Select2": "跳台滑雪",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "138": {
+    "ID": 138,
+    "TitleText": "空中技巧有几个裁判？",
+    "Select1": "10086个",
+    "Select2": "5个",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia138"
+  },
+  "55": {
+    "ID": 55,
+    "TitleText": "国家跳台滑雪中心承办什么项目？",
+    "Select1": "马拉松",
+    "Select2": "北欧两项",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "57": {
+    "ID": 57,
+    "TitleText": "国家越野滑雪中心承办什么项目？",
+    "Select1": "竞走",
+    "Select2": "北欧两项",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "149": {
+    "ID": 149,
+    "TitleText": "自由式滑雪世锦赛冠军，斯坦福学霸是谁?",
+    "Select1": "谷爱凌",
+    "Select2": "江疏影",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia149"
+  },
+  "58": {
+    "ID": 58,
+    "TitleText": "云顶滑雪公园承办什么项目？",
+    "Select1": "110米跨栏",
+    "Select2": "单板滑雪",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "59": {
+    "ID": 59,
+    "TitleText": "云顶滑雪公园承办什么项目？",
+    "Select1": "400米接力",
+    "Select2": "自由式滑雪",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "162": {
+    "ID": 162,
+    "TitleText": "雪车距离出发点多远？",
+    "Select1": "1米",
+    "Select2": "15米",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia162"
+  },
+  "60": {
+    "ID": 60,
+    "TitleText": "北京冬奥会景愿是？",
+    "Select1": "纯洁的冰雪，激情的约会",
+    "Select2": "同一个世界，同一个梦想",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "62": {
+    "ID": 62,
+    "TitleText": "冬奥会奖牌反面是什么图形？",
+    "Select1": "冰雪世界",
+    "Select2": "冬奥会会徽",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "168": {
+    "ID": 168,
+    "TitleText": "雪车两边的杆是干什么用的？",
+    "Select1": "推车的",
+    "Select2": "美观的",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia168"
+  },
+  "63": {
+    "ID": 63,
+    "TitleText": "奖牌五环表达了什么内涵？",
+    "Select1": "天地合，人心同",
+    "Select2": "啊~五环",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "64": {
+    "ID": 64,
+    "TitleText": "国家体育馆又叫什么？",
+    "Select1": "运场",
+    "Select2": "冰之帆",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "180": {
+    "ID": 180,
+    "TitleText": "冰球有几个争球点？",
+    "Select1": "18个",
+    "Select2": "9个",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia180"
+  },
+  "65": {
+    "ID": 65,
+    "TitleText": "速度滑冰项目是在哪里进行？",
+    "Select1": "天坛",
+    "Select2": "奥体公园",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "67": {
+    "ID": 67,
+    "TitleText": "国家越野滑雪中心承办什么项目？",
+    "Select1": "短跑竞速",
+    "Select2": "越野滑雪",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "189": {
+    "ID": 189,
+    "TitleText": "冰球比赛可以打架吗？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia189"
+  },
+  "68": {
+    "ID": 68,
+    "TitleText": "冬奥会奖牌正面是什么图形？",
+    "Select1": "五环",
+    "Select2": "六环",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "69": {
+    "ID": 69,
+    "TitleText": "下列哪个项目是首钢大跳台承办的赛事？",
+    "Select1": "自由搏击",
+    "Select2": "单板滑雪大跳台",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "201": {
+    "ID": 201,
+    "TitleText": "这个会徽叫什么？",
+    "Select1": "冬梦",
+    "Select2": "飞跃",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia201"
+  },
+  "70": {
+    "ID": 70,
+    "TitleText": "冰墩墩象征什么？",
+    "Select1": "活泼可爱",
+    "Select2": "纯洁坚强",
+    "CorrectAnswer": [
+      1,
+      2
+    ]
+  },
+  "72": {
+    "ID": 72,
+    "TitleText": "下面谁是我国花滑男单选手？",
+    "Select1": "羽生结弦",
+    "Select2": "金博洋",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "214": {
+    "ID": 214,
+    "TitleText": "哪个雪场被评为“世界最佳滑雪场”",
+    "Select1": "南非滑雪场",
+    "Select2": "惠斯勒滑雪场",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia214"
+  },
+  "73": {
+    "ID": 73,
+    "TitleText": "短到速滑每个地区最多派出几名选手？",
+    "Select1": "1名",
+    "Select2": "3名",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "74": {
+    "ID": 74,
+    "TitleText": "短道速滑决赛是几名选手？",
+    "Select1": "3名",
+    "Select2": "4名",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "232": {
+    "ID": 232,
+    "TitleText": "“山地运动之都”是哪个雪地？",
+    "Select1": "圣安东",
+    "Select2": "霞慕尼",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia232"
+  },
+  "76": {
+    "ID": 76,
+    "TitleText": "被誉为冰上的“国际象棋”是指？",
+    "Select1": "短道速滑",
+    "Select2": "冰壶",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "77": {
+    "ID": 77,
+    "TitleText": "冬奥宣传片是什么？",
+    "Select1": "冰雪世界",
+    "Select2": "中国冰雪大扩列",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "244": {
+    "ID": 244,
+    "TitleText": "当坡度小于90大于60时应采用那种攀冰技术？",
+    "Select1": "德式",
+    "Select2": "狗爬式",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia244"
+  },
+  "78": {
+    "ID": 78,
+    "TitleText": "什么时候致函提名北京为冬奥会申办城市？",
+    "Select1": "2008年",
+    "Select2": "2013年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "79": {
+    "ID": 79,
+    "TitleText": "什么时候成立冬季奥利匹克申办委员会？",
+    "Select1": "2008年",
+    "Select2": "2014年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "254": {
+    "ID": 254,
+    "TitleText": "真伤者出现多块骨头移位会有什么后果？",
+    "Select1": "得道成仙",
+    "Select2": "瘫痪",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia254"
+  },
+  "80": {
+    "ID": 80,
+    "TitleText": "中国和哪一个管家先后提交了申办报告？",
+    "Select1": "伊拉克",
+    "Select2": "阿拉木图",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "81": {
+    "ID": 81,
+    "TitleText": "中国以多少票赢得举办权？",
+    "Select1": "108",
+    "Select2": "44",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "267": {
+    "ID": 267,
+    "TitleText": "被称为“现代冰川博物馆”的雪山是？",
+    "Select1": "玉龙雪山",
+    "Select2": "衡山",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia267"
+  },
+  "83": {
+    "ID": 83,
+    "TitleText": "雪容融象征什么？",
+    "Select1": "收获喜庆",
+    "Select2": "温暖阳光",
+    "CorrectAnswer": [
+      1,
+      2
+    ]
+  },
+  "84": {
+    "ID": 84,
+    "TitleText": "花样滑冰什么时候成为比赛项目的？",
+    "Select1": "2008年",
+    "Select2": "1924年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "275": {
+    "ID": 275,
+    "TitleText": "跳台滑雪的外文名称是什么？",
+    "Select1": "skijumping",
+    "Select2": "I love you",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia275"
+  },
+  "85": {
+    "ID": 85,
+    "TitleText": "花样滑冰分为单人，双人和什么？",
+    "Select1": "三人",
+    "Select2": "团体",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "86": {
+    "ID": 86,
+    "TitleText": "花样滑冰分为单人滑，双人滑和什么？",
+    "Select1": "团体滑",
+    "Select2": "冰舞",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "285": {
+    "ID": 285,
+    "TitleText": "冰壶投掷时，准备需要注意什么？",
+    "Select1": "手舞足蹈",
+    "Select2": "控制好平衡",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia285"
+  },
+  "87": {
+    "ID": 87,
+    "TitleText": "滑冰类项目有短节目的是什么项目？",
+    "Select1": "竞速滑冰",
+    "Select2": "花样滑冰",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "88": {
+    "ID": 88,
+    "TitleText": "单人滑对什么要求最高？",
+    "Select1": "人数要求",
+    "Select2": "跳跃高度",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "297": {
+    "ID": 297,
+    "TitleText": "第一个在比赛中获得“金冰刀”是谁？",
+    "Select1": "江疏影",
+    "Select2": "王曼丽",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia297"
+  },
+  "90": {
+    "ID": 90,
+    "TitleText": "日本最出名的花滑选手是？",
+    "Select1": "羽生结弦",
+    "Select2": "山本仙人",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "91": {
+    "ID": 91,
+    "TitleText": "俄罗斯最出名的花滑选手是？",
+    "Select1": "特朗普",
+    "Select2": "普鲁申科",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "312": {
+    "ID": 312,
+    "TitleText": "在2009年中国队赢得了哪项比赛的？",
+    "Select1": "U型池",
+    "Select2": "冰壶",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia312"
+  },
+  "92": {
+    "ID": 92,
+    "TitleText": "韩国最出名的花滑选手是？",
+    "Select1": "金贡",
+    "Select2": "金妍儿",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "93": {
+    "ID": 93,
+    "TitleText": "“速度与激情”说的是什么项目？",
+    "Select1": "短道速滑",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "319": {
+    "ID": 319,
+    "TitleText": "滑雪服的颜色应怎么样选择？",
+    "Select1": "白色",
+    "Select2": "醒目的颜色",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia319"
+  },
+  "94": {
+    "ID": 94,
+    "TitleText": "图中是什么地方？",
+    "Select1": "雪村",
+    "Select2": "国家冬季两项中心",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "95": {
+    "ID": 95,
+    "TitleText": "短到速滑每个地区最多派出几名选手？",
+    "Select1": "1名",
+    "Select2": "3名",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "328": {
+    "ID": 328,
+    "TitleText": "暴风雪的英文是？",
+    "Select1": "snowstorm",
+    "Select2": "I am fine",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia328"
+  },
+  "97": {
+    "ID": 97,
+    "TitleText": "短道速滑的标志线运动员可以进入吗？",
+    "Select1": "能",
+    "Select2": "不能",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "98": {
+    "ID": 98,
+    "TitleText": "短道速滑选手需要戴头盔吗？",
+    "Select1": "需要",
+    "Select2": "不需要",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "334": {
+    "ID": 334,
+    "TitleText": "五环由蓝，黄，黑，绿和什么色组成？",
+    "Select1": "紫",
+    "Select2": "红",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia334"
+  },
+  "99": {
+    "ID": 99,
+    "TitleText": "短道速滑是哪一年进入中国的？",
+    "Select1": "2008年",
+    "Select2": "1981年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "100": {
+    "ID": 100,
+    "TitleText": "中国短道速滑第一枚奥运奖牌得主是？",
+    "Select1": "杨洋",
+    "Select2": "李琰",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "347": {
+    "ID": 347,
+    "TitleText": "羽生结弦是什么运动的运动员？",
+    "Select1": "铅球",
+    "Select2": "花样滑冰",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia347"
+  },
+  "101": {
+    "ID": 101,
+    "TitleText": "中国第一位冬奥冠军是？",
+    "Select1": "秦仙儿",
+    "Select2": "杨杨",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "102": {
+    "ID": 102,
+    "TitleText": "奥运三金王是？",
+    "Select1": "绘梦",
+    "Select2": "王濛",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "357": {
+    "ID": 357,
+    "TitleText": "谁第二十届自由式滑雪女子中呼声最高却落败？",
+    "Select1": "杨幂",
+    "Select2": "李妮娜",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia357"
+  },
+  "103": {
+    "ID": 103,
+    "TitleText": "中国冬奥会项目首金得主是？",
+    "Select1": "武大郎",
+    "Select2": "武大靖",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "105": {
+    "ID": 105,
+    "TitleText": "中国男子冰壶队成立于哪一年？",
+    "Select1": "2008年",
+    "Select2": "2002年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "364": {
+    "ID": 364,
+    "TitleText": "8月19日英国冰上舞团在北京上演节目叫？",
+    "Select1": "《冰上天鹅湖》",
+    "Select2": "《白毛女》",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia364"
+  },
+  "106": {
+    "ID": 106,
+    "TitleText": "中国女子冰壶队成立于哪一年？",
+    "Select1": "2008年",
+    "Select2": "2003年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "107": {
+    "ID": 107,
+    "TitleText": "哪一年冰壶作为表演项目被纳入冬奥会？",
+    "Select1": "2008年",
+    "Select2": "1924年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "377": {
+    "ID": 377,
+    "TitleText": "第一任国际奥委会主席是？",
+    "Select1": "狗策划",
+    "Select2": "维凯拉斯",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia377"
+  },
+  "108": {
+    "ID": 108,
+    "TitleText": "冰壶项目每队有几名成员？",
+    "Select1": "108名",
+    "Select2": "4名",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "109": {
+    "ID": 109,
+    "TitleText": "冰壶每一局比赛共投多少球？",
+    "Select1": "108枚",
+    "Select2": "16枚",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "386": {
+    "ID": 386,
+    "TitleText": "“冰立方\"是由哪个奥运会场馆改造的？",
+    "Select1": "国家竞技中心",
+    "Select2": "国家游泳中心",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia386"
+  },
+  "110": {
+    "ID": 110,
+    "TitleText": "冰壶项目每次有多少局？",
+    "Select1": "1局",
+    "Select2": "10局",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "111": {
+    "ID": 111,
+    "TitleText": "冰壶项目每一石多少分？",
+    "Select1": "1分",
+    "Select2": "10086分",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "394": {
+    "ID": 394,
+    "TitleText": "第一个冬奥会的吉祥物形象是？",
+    "Select1": "半人半物的卡通人",
+    "Select2": "雪人",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia394"
+  },
+  "112": {
+    "ID": 112,
+    "TitleText": "中国冰壶队女队队长是？",
+    "Select1": "赵丽颖",
+    "Select2": "王冰玉",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "113": {
+    "ID": 113,
+    "TitleText": "王冰玉是在哪一年被授予运动健将称号的？",
+    "Select1": "2000年",
+    "Select2": "2010年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "403": {
+    "ID": 403,
+    "TitleText": "冰球运防守队员可以用什么进攻？",
+    "Select1": "头",
+    "Select2": "臀部",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia403"
+  },
+  "114": {
+    "ID": 114,
+    "TitleText": "第十届全国冬季运动会冠军是？",
+    "Select1": "范冰冰",
+    "Select2": "岳清爽",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "115": {
+    "ID": 115,
+    "TitleText": "俄罗斯冰壶女队队长是？",
+    "Select1": "安娜希多洛娃",
+    "Select2": "施瓦辛格",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "412": {
+    "ID": 412,
+    "TitleText": "哪一天定义为冬游爱好者的节日？",
+    "Select1": "中秋",
+    "Select2": "元旦",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia412"
+  },
+  "117": {
+    "ID": 117,
+    "TitleText": "自由式滑雪的工具是什么？",
+    "Select1": "滑雪板和滑雪杖",
+    "Select2": "无尽之刃",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "118": {
+    "ID": 118,
+    "TitleText": "下列哪个小项是滑雪里的？",
+    "Select1": "上勾拳",
+    "Select2": "空中技巧",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "422": {
+    "ID": 422,
+    "TitleText": "下列哪种行为不属于违规",
+    "Select1": "滑出赛道",
+    "Select2": "越过对手",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia422"
+  },
+  "119": {
+    "ID": 119,
+    "TitleText": "下列哪个小项是滑雪里的？",
+    "Select1": "鲤鱼打挺",
+    "Select2": "雪上芭蕾",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "120": {
+    "ID": 120,
+    "TitleText": "下列哪个小项是滑雪里的？",
+    "Select1": "认真一拳",
+    "Select2": "雪上技巧",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "434": {
+    "ID": 434,
+    "TitleText": "哪一位捐献了自己的场地区域作为比赛场地？",
+    "Select1": "顾拜旦",
+    "Select2": "戈尔雷杜威",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "121": {
+    "ID": 121,
+    "TitleText": "自由式滑雪起源于哪里？",
+    "Select1": "美国",
+    "Select2": "非洲",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "122": {
+    "ID": 122,
+    "TitleText": "自由式滑雪起源于什么年代？",
+    "Select1": "21世纪",
+    "Select2": "20世纪60年代",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "448": {
+    "ID": 448,
+    "TitleText": "奥运历史上首枚女子冰球金牌是哪个国家？",
+    "Select1": "南非",
+    "Select2": "美国",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia448"
+  },
+  "123": {
+    "ID": 123,
+    "TitleText": "哪一年雪上技巧被列为比赛项目？",
+    "Select1": "1992",
+    "Select2": "2021",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "124": {
+    "ID": 124,
+    "TitleText": "哪一年男子雪上技巧被列为冬奥会项目？",
+    "Select1": "2021年",
+    "Select2": "1988年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "459": {
+    "ID": 459,
+    "TitleText": "第二十一届冬奥会在什么国家举办？",
+    "Select1": "中国",
+    "Select2": "加拿大",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia459"
+  },
+  "125": {
+    "ID": 125,
+    "TitleText": "哪一年女子雪上技巧被列为冬奥会项目？",
+    "Select1": "2021年",
+    "Select2": "1992年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "126": {
+    "ID": 126,
+    "TitleText": "下列哪个是此次自由式滑雪的小项？",
+    "Select1": "大跳台",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "465": {
+    "ID": 465,
+    "TitleText": "奥林匹克五环是谁设计的？",
+    "Select1": "秦始皇",
+    "Select2": "顾拜旦",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia465"
+  },
+  "127": {
+    "ID": 127,
+    "TitleText": "下列哪个是此次自由式滑雪的小项？",
+    "Select1": "雪上技巧",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "128": {
+    "ID": 128,
+    "TitleText": "下列哪个是此次自由式滑雪的小项？",
+    "Select1": "空中技巧",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "474": {
+    "ID": 474,
+    "TitleText": "河北省拥有最多的滑雪场的城市是？",
+    "Select1": "张家口",
+    "Select2": "秦皇岛",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia474"
+  },
+  "129": {
+    "ID": 129,
+    "TitleText": "下列哪个是此次自由式滑雪的小项？",
+    "Select1": "U型场地技巧",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "130": {
+    "ID": 130,
+    "TitleText": "下列哪个是此次自由式滑雪的小项？",
+    "Select1": "障碍追逐",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "481": {
+    "ID": 481,
+    "TitleText": "首钢园区煤炭车间将改造成什么场馆？",
+    "Select1": "冰球",
+    "Select2": "羽毛球",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia481"
+  },
+  "131": {
+    "ID": 131,
+    "TitleText": "下列哪个是此次自由式滑雪的小项？",
+    "Select1": "坡面障碍技巧",
+    "Select2": "竞走",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "133": {
+    "ID": 133,
+    "TitleText": "跳台起跳角度是多少度？",
+    "Select1": "361度",
+    "Select2": "25度",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "489": {
+    "ID": 489,
+    "TitleText": "冬奥会期间那一场馆将承担女子冰球决赛？",
+    "Select1": "五棵松体育中心",
+    "Select2": "国家体育馆",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia489"
+  },
+  "134": {
+    "ID": 134,
+    "TitleText": "雪上技巧按照什么计算分数？",
+    "Select1": "滑行时间",
+    "Select2": "装备好坏",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "135": {
+    "ID": 135,
+    "TitleText": "雪上技巧按照什么计算分数？",
+    "Select1": "完成技巧难度系数",
+    "Select2": "装备美观",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "499": {
+    "ID": 499,
+    "TitleText": "有舵雪橇比赛时两队总时间相同该怎么判定？",
+    "Select1": "最少一次时间",
+    "Select2": "最后一次时间",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia499"
+  },
+  "136": {
+    "ID": 136,
+    "TitleText": "雪上技巧按照什么计算分数？",
+    "Select1": "2次跳跃动作",
+    "Select2": "滑雪板好不好看",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "137": {
+    "ID": 137,
+    "TitleText": "雪上技巧运动员需要完成几次跳跃动作？",
+    "Select1": "2次",
+    "Select2": "108次",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "139": {
+    "ID": 139,
+    "TitleText": "下列哪一个空中技巧打分项？",
+    "Select1": "眼睛美观程度",
+    "Select2": "起跳",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia139"
+  },
+  "140": {
+    "ID": 140,
+    "TitleText": "下列哪一个空中技巧打分项？",
+    "Select1": "眼睛美观程度",
+    "Select2": "空中分",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "141": {
+    "ID": 141,
+    "TitleText": "下列哪一个空中技巧打分项？",
+    "Select1": "眼睛美观程度",
+    "Select2": "落地分",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "142": {
+    "ID": 142,
+    "TitleText": "U型池场裁判根据什么打分？",
+    "Select1": "选手妆容",
+    "Select2": "腾空高度",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia142"
+  },
+  "143": {
+    "ID": 143,
+    "TitleText": "U型池场裁判根据什么打分？",
+    "Select1": "选手眼睛大小",
+    "Select2": "动作流畅性",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "144": {
+    "ID": 144,
+    "TitleText": "U型池场裁判根据什么打分？",
+    "Select1": "选手的国籍",
+    "Select2": "美观性",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "145": {
+    "ID": 145,
+    "TitleText": "障碍追逐赛道长多少米？",
+    "Select1": "10086米",
+    "Select2": "800-1300米",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia145"
+  },
+  "146": {
+    "ID": 146,
+    "TitleText": "障碍追逐赛预赛会选出多少名选手决赛？",
+    "Select1": "1-2人",
+    "Select2": "32-36人",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "147": {
+    "ID": 147,
+    "TitleText": "障碍追逐赛每组多少人？",
+    "Select1": "1314人",
+    "Select2": "4人",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "148": {
+    "ID": 148,
+    "TitleText": "障碍追逐赛前几名进入下一轮？",
+    "Select1": "2人",
+    "Select2": "520人",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia148"
+  },
+  "150": {
+    "ID": 150,
+    "TitleText": "被称为“有舵雪橇”的是？",
+    "Select1": "雪车",
+    "Select2": "狗拉车",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "151": {
+    "ID": 151,
+    "TitleText": "有舵雪橇起源于？",
+    "Select1": "非洲",
+    "Select2": "瑞士",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "152": {
+    "ID": 152,
+    "TitleText": "哪一年有舵雪橇问世并获得推广？",
+    "Select1": "1888年",
+    "Select2": "2021年",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia151"
+  },
+  "153": {
+    "ID": 153,
+    "TitleText": "哪一年第一个有舵雪橇俱乐部创立？",
+    "Select1": "1897年",
+    "Select2": "2021年",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "154": {
+    "ID": 154,
+    "TitleText": "哪一年决定将女子两人座纳入冬奥会的？",
+    "Select1": "2018年",
+    "Select2": "1998年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "155": {
+    "ID": 155,
+    "TitleText": "雪车项目有没有男子双人？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia154"
+  },
+  "156": {
+    "ID": 156,
+    "TitleText": "雪车项目有没有男子四人？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "157": {
+    "ID": 157,
+    "TitleText": "雪车项目有没有女子双人？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "158": {
+    "ID": 158,
+    "TitleText": "雪车项目每个国家限定报名几个队伍？",
+    "Select1": "1个",
+    "Select2": "2个",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia157"
+  },
+  "159": {
+    "ID": 159,
+    "TitleText": "雪车项目男子比赛共几轮？",
+    "Select1": "520轮",
+    "Select2": "4轮",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "160": {
+    "ID": 160,
+    "TitleText": "雪车项目女子比赛共几轮？",
+    "Select1": "520轮",
+    "Select2": "2轮",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "161": {
+    "ID": 161,
+    "TitleText": "雪车项目怎么计算成绩？",
+    "Select1": "整齐程度",
+    "Select2": "累积时间",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia160"
+  },
+  "163": {
+    "ID": 163,
+    "TitleText": "从起点到成员跃入车内的距离为多少米？",
+    "Select1": "10086米",
+    "Select2": "50米",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "164": {
+    "ID": 164,
+    "TitleText": "雪车比赛中如果车翻了是否可以继续比赛？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "165": {
+    "ID": 165,
+    "TitleText": "双人雪车中最大重量是多少？",
+    "Select1": "375千克",
+    "Select2": "3775千克",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia163"
+  },
+  "166": {
+    "ID": 166,
+    "TitleText": "四人雪车中最大重量是？",
+    "Select1": "630千克",
+    "Select2": "630吨",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "167": {
+    "ID": 167,
+    "TitleText": "雪车项目中，是否可以添加重力棒？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "169": {
+    "ID": 169,
+    "TitleText": "雪车的前部是由什么系统操作的？",
+    "Select1": "滑轮系统",
+    "Select2": "华为系统",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia166"
+  },
+  "170": {
+    "ID": 170,
+    "TitleText": "雪车运动员是否需要佩戴头盔？",
+    "Select1": "需要",
+    "Select2": "不需要",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "171": {
+    "ID": 171,
+    "TitleText": "雪车项目路线长多少米？",
+    "Select1": "10000米",
+    "Select2": "1300-2000米",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "172": {
+    "ID": 172,
+    "TitleText": "雪车项目弯道半径不得小于多少米？",
+    "Select1": "1米",
+    "Select2": "20米",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia169"
+  },
+  "173": {
+    "ID": 173,
+    "TitleText": "雪车项目起点到终点的垂直高度为？",
+    "Select1": "10000米",
+    "Select2": "100-150米",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "174": {
+    "ID": 174,
+    "TitleText": "雪车项目中最知名的选手是？",
+    "Select1": "成龙",
+    "Select2": "克里斯托佛兰根",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "175": {
+    "ID": 175,
+    "TitleText": "全球第一位雪车世锦赛四连冠的是？",
+    "Select1": "美国队长",
+    "Select2": "马丁斯杜库尔斯",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia172"
+  },
+  "176": {
+    "ID": 176,
+    "TitleText": "亚洲第一个雪橇世锦赛金牌的运动员是？",
+    "Select1": "尹成彬",
+    "Select2": "甄子丹",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "177": {
+    "ID": 177,
+    "TitleText": "冰球项目有没有女子冰球？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "178": {
+    "ID": 178,
+    "TitleText": "冰球项目起源于？",
+    "Select1": "加拿大",
+    "Select2": "非洲",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia175"
+  },
+  "179": {
+    "ID": 179,
+    "TitleText": "冰球项目在哪一年被列入比赛项目?",
+    "Select1": "1920年",
+    "Select2": "2008年",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "181": {
+    "ID": 181,
+    "TitleText": "中心争球点是什么颜色的？",
+    "Select1": "黑色",
+    "Select2": "蓝色",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "182": {
+    "ID": 182,
+    "TitleText": "其他争球点是什么颜色的？",
+    "Select1": "黑色",
+    "Select2": "红色",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia178"
+  },
+  "183": {
+    "ID": 183,
+    "TitleText": "冰球项目每队几个人？",
+    "Select1": "108个",
+    "Select2": "6人",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "184": {
+    "ID": 184,
+    "TitleText": "冰球项目每局多少分钟？",
+    "Select1": "60分钟",
+    "Select2": "20分钟",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "185": {
+    "ID": 185,
+    "TitleText": "冰球项目首轮比赛需要加时的话是几分钟？",
+    "Select1": "60分钟",
+    "Select2": "5分钟",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia181"
+  },
+  "186": {
+    "ID": 186,
+    "TitleText": "冰球加时赛各出场几个人？",
+    "Select1": "10个",
+    "Select2": "4个",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "187": {
+    "ID": 187,
+    "TitleText": "冰球金牌争夺战为多少分钟？",
+    "Select1": "1314分钟",
+    "Select2": "20分钟",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "188": {
+    "ID": 188,
+    "TitleText": "冰球比赛中途是否可以换人？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia184"
+  },
+  "190": {
+    "ID": 190,
+    "TitleText": "现代冬季两项是指什么？",
+    "Select1": "游泳滑冰",
+    "Select2": "滑雪射击",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "191": {
+    "ID": 191,
+    "TitleText": "现代两项是由什么演变而来的？",
+    "Select1": "芭蕾舞",
+    "Select2": "军队训练",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "192": {
+    "ID": 192,
+    "TitleText": "现代两项中男子比赛多少公里？",
+    "Select1": "100公里",
+    "Select2": "20公里",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia187"
+  },
+  "193": {
+    "ID": 193,
+    "TitleText": "现代两项中女子比赛多少公里？",
+    "Select1": "100公里",
+    "Select2": "15公里",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "194": {
+    "ID": 194,
+    "TitleText": "现代两项中每2个选手出发间隔为？",
+    "Select1": "30秒",
+    "Select2": "10086秒",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "195": {
+    "ID": 195,
+    "TitleText": "现代两项中男子每滑行几公里射击一次？",
+    "Select1": "100公里",
+    "Select2": "4公里",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia190"
+  },
+  "196": {
+    "ID": 196,
+    "TitleText": "现代两项中女子每滑行几公里射击一次？",
+    "Select1": "100公里",
+    "Select2": "3公里",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "197": {
+    "ID": 197,
+    "TitleText": "现代两项中如果拖把了会怎么样?",
+    "Select1": "取消比赛资格",
+    "Select2": "最终成绩+1分钟",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "198": {
+    "ID": 198,
+    "TitleText": "接力赛中，男子组需要比赛多远距离？",
+    "Select1": "1314公里",
+    "Select2": "7.5公里",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia193"
+  },
+  "199": {
+    "ID": 199,
+    "TitleText": "接力赛中，女子组需要比赛多远距离？",
+    "Select1": "1314公里",
+    "Select2": "6公里",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "200": {
+    "ID": 200,
+    "TitleText": "我国是什么时候开始参与的冬季两项？",
+    "Select1": "2021年",
+    "Select2": "1980年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "202": {
+    "ID": 202,
+    "TitleText": "冬奥会和夏奥会是什么时候分开的？",
+    "Select1": "2021年",
+    "Select2": "1994年",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia196"
+  },
+  "203": {
+    "ID": 203,
+    "TitleText": "北京冬奥会是第几届？",
+    "Select1": "1314届",
+    "Select2": "24届",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "204": {
+    "ID": 204,
+    "TitleText": "奥林匹克之父是谁？",
+    "Select1": "顾拜旦",
+    "Select2": "施瓦辛格",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "205": {
+    "ID": 205,
+    "TitleText": "历届主办城市都在经纬度多少的城市？",
+    "Select1": "北30-北60",
+    "Select2": "北0-南360",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia199"
+  },
+  "206": {
+    "ID": 206,
+    "TitleText": "举办最多的城市是哪里？",
+    "Select1": "圣莫里茨",
+    "Select2": "澳大利亚",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "207": {
+    "ID": 207,
+    "TitleText": "举办地气温在多少度最为理想？",
+    "Select1": "36度",
+    "Select2": "负17度-10度",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "208": {
+    "ID": 208,
+    "TitleText": "是谁实现了中国冬奥金牌0的突破？",
+    "Select1": "江疏影",
+    "Select2": "杨杨",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia202"
+  },
+  "209": {
+    "ID": 209,
+    "TitleText": "实现金牌0的突破是在哪一年？",
+    "Select1": "2008年",
+    "Select2": "2002年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "210": {
+    "ID": 210,
+    "TitleText": "实现金牌0的突破是什么比赛项目？",
+    "Select1": "自由搏击",
+    "Select2": "短道速滑",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "211": {
+    "ID": 211,
+    "TitleText": "越野滑雪的滑行方式中，哪一种方式最早？",
+    "Select1": "福尔摩斯式",
+    "Select2": "传统式",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia205"
+  },
+  "212": {
+    "ID": 212,
+    "TitleText": "女子射击每次间隔多久距离？",
+    "Select1": "至少100KM",
+    "Select2": "至少2KM",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "213": {
+    "ID": 213,
+    "TitleText": "无舵雪橇的长度大概是多少厘米？",
+    "Select1": "1314厘米",
+    "Select2": "70-140厘米",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "215": {
+    "ID": 215,
+    "TitleText": "2005-2007-2009年世锦赛女子技巧冠军的是？",
+    "Select1": "江疏影",
+    "Select2": "李妮娜",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia208"
+  },
+  "216": {
+    "ID": 216,
+    "TitleText": "2013.2015年世锦赛自由滑雪空中技巧的是？",
+    "Select1": "胡歌",
+    "Select2": "齐广璞",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "217": {
+    "ID": 217,
+    "TitleText": "日本粉雪场雪期多久？",
+    "Select1": "5个月",
+    "Select2": "13个月",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "218": {
+    "ID": 218,
+    "TitleText": "SSSS级雪场的高山单道长于多少米？",
+    "Select1": "1314米",
+    "Select2": "2000米",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia211"
+  },
+  "219": {
+    "ID": 219,
+    "TitleText": "到2018年为止，世界举办过多少次冬奥会?",
+    "Select1": "520次",
+    "Select2": "23次",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "220": {
+    "ID": 220,
+    "TitleText": "花样滑冰任何动作都是由几个步骤完成的？",
+    "Select1": "1314个",
+    "Select2": "4个",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "221": {
+    "ID": 221,
+    "TitleText": "申办奥运会是推动我国运动快速进步对吗？",
+    "Select1": "不知道",
+    "Select2": "不全面",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia214 (2)"
+  },
+  "222": {
+    "ID": 222,
+    "TitleText": "女子10公里滑雪爬坡的高度差不能超过多少？",
+    "Select1": "50米",
+    "Select2": "520米",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "223": {
+    "ID": 223,
+    "TitleText": "滑雪者遇到紧急情况需要补蜡时需要哪种蜡？",
+    "Select1": "液态喷雾蜡",
+    "Select2": "成都蜡",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "224": {
+    "ID": 224,
+    "TitleText": "SSS级滑雪场的技术指导需要掌握外语技能？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia217"
+  },
+  "225": {
+    "ID": 225,
+    "TitleText": "专项训练中造成的运动损伤主要原因是？",
+    "Select1": "长得好看",
+    "Select2": "局部分担过大",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "226": {
+    "ID": 226,
+    "TitleText": "全铁质冰刀，这是现代冰刀的起始？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "227": {
+    "ID": 227,
+    "TitleText": "2017年全国攀冰锦标赛主题是？",
+    "Select1": "勇往直前",
+    "Select2": "向上无所畏",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia220"
+  },
+  "228": {
+    "ID": 228,
+    "TitleText": "全国单板滑雪锦标赛属于？",
+    "Select1": "国际赛事",
+    "Select2": "国家赛事",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "229": {
+    "ID": 229,
+    "TitleText": "哪一个国家滑雪市场相当于全球市场10%？",
+    "Select1": "俄罗斯",
+    "Select2": "中国",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "230": {
+    "ID": 230,
+    "TitleText": "国家首家封闭式单板公园在？",
+    "Select1": "环北国际",
+    "Select2": "渔阳国际滑雪场",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia223"
+  },
+  "231": {
+    "ID": 231,
+    "TitleText": "滑冰式越野滑雪适用于什么情况？",
+    "Select1": "下坡",
+    "Select2": "上坡",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "233": {
+    "ID": 233,
+    "TitleText": "目前中国最大的综合性滑雪场是？",
+    "Select1": "亚布力新体委滑雪场",
+    "Select2": "非洲滑雪场",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "234": {
+    "ID": 234,
+    "TitleText": "SSS滑雪场的总长度应长于多少？",
+    "Select1": "10000米",
+    "Select2": "1米",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia226"
+  },
+  "235": {
+    "ID": 235,
+    "TitleText": "滑雪训练期可按年度分为几个阶段？",
+    "Select1": "1",
+    "Select2": "3",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "236": {
+    "ID": 236,
+    "TitleText": "北方地区可以提供四季滑雪的是？",
+    "Select1": "乔波冰雪世界",
+    "Select2": "黑河",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "237": {
+    "ID": 237,
+    "TitleText": "“一带一路”体育旅游发展行动的时间是？",
+    "Select1": "42922",
+    "Select2": "10100",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia229"
+  },
+  "238": {
+    "ID": 238,
+    "TitleText": "对冰雪项目造成的颅脑损伤应该怎么处理？",
+    "Select1": "不做处理",
+    "Select2": "保护好头部",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "239": {
+    "ID": 239,
+    "TitleText": "哪个滑雪场被评为最佳滑雪场？",
+    "Select1": "惠斯勒",
+    "Select2": "惠斯勒的弟弟",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "240": {
+    "ID": 240,
+    "TitleText": "大腿小腿部出血应该压迫止血点在何处？",
+    "Select1": "股动脉",
+    "Select2": "静脉",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia232 (2)"
+  },
+  "241": {
+    "ID": 241,
+    "TitleText": "滑雪板固定器的特殊之处在于？",
+    "Select1": "能将脚分开",
+    "Select2": "可以打人",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "242": {
+    "ID": 242,
+    "TitleText": "冰球比赛中，向什么方向发球？",
+    "Select1": "随意",
+    "Select2": "中心位置",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "243": {
+    "ID": 243,
+    "TitleText": "运动前不能吃太饱是因为？",
+    "Select1": "避免恶心反胃",
+    "Select2": "影响速度",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia235"
+  },
+  "245": {
+    "ID": 245,
+    "TitleText": "攀冰是哪一年与登山分开的？",
+    "Select1": "2021年",
+    "Select2": "1967年",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "246": {
+    "ID": 246,
+    "TitleText": "绍兴滑雪场积雪厚度为？",
+    "Select1": "50厘米左右",
+    "Select2": "500米左右",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "247": {
+    "ID": 247,
+    "TitleText": "滑雪时立刃角度越大，转弯半径越小？",
+    "Select1": "对",
+    "Select2": "错",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia238"
+  },
+  "248": {
+    "ID": 248,
+    "TitleText": "哪一项坡度满足5S滑雪场的要求？",
+    "Select1": "15度",
+    "Select2": "361度",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "249": {
+    "ID": 249,
+    "TitleText": "无舵雪橇的长度大概是多少厘米？",
+    "Select1": "70-140",
+    "Select2": "123-456",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "250": {
+    "ID": 250,
+    "TitleText": "“选拔营”产生的国字号队员是哪一年？",
+    "Select1": "2017",
+    "Select2": "1888",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia241"
+  },
+  "251": {
+    "ID": 251,
+    "TitleText": "冰雪运动造成的急性损伤有什么特点？",
+    "Select1": "一次作用而致伤",
+    "Select2": "长年累月",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "252": {
+    "ID": 252,
+    "TitleText": "用于专业国家和国际赛事的滑雪场等级几级",
+    "Select1": "1级",
+    "Select2": "100级",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "253": {
+    "ID": 253,
+    "TitleText": "第五届冬奥会又叫复兴运动？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia244 (2)"
+  },
+  "255": {
+    "ID": 255,
+    "TitleText": "大回转的路线特征是？",
+    "Select1": "多坡",
+    "Select2": "全是直线",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "256": {
+    "ID": 256,
+    "TitleText": "短道速滑起源于？",
+    "Select1": "加拿大",
+    "Select2": "非洲",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "257": {
+    "ID": 257,
+    "TitleText": "滑雪用的薄手套是用在什么季节？",
+    "Select1": "夏天",
+    "Select2": "初冬",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia247"
+  },
+  "258": {
+    "ID": 258,
+    "TitleText": "第十五届冬奥会圣火是否到达过北极？",
+    "Select1": "不是",
+    "Select2": "是",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "259": {
+    "ID": 259,
+    "TitleText": "中国有冰雪特色小镇吗？",
+    "Select1": "有",
+    "Select2": "没有",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "260": {
+    "ID": 260,
+    "TitleText": "想要吧河北建设成冰雪强省哪一项最关键？",
+    "Select1": "冰美人",
+    "Select2": "冰雪人才",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia250"
+  },
+  "261": {
+    "ID": 261,
+    "TitleText": "为了迎接冬奥会，鸟巢新增了什么项目？",
+    "Select1": "小鸟欣赏区",
+    "Select2": "冬奥会项目体验区",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "262": {
+    "ID": 262,
+    "TitleText": "滑雪自带的保温服长度有什么要求",
+    "Select1": "连头也盖住",
+    "Select2": "不过膝盖",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "263": {
+    "ID": 263,
+    "TitleText": "哪一类人比较合适冬游？",
+    "Select1": "12岁以下",
+    "Select2": "18-45岁",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia253"
+  },
+  "264": {
+    "ID": 264,
+    "TitleText": "速度过快，优先采用犁式滑降技术减速？",
+    "Select1": "正确",
+    "Select2": "我不需要减速",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "265": {
+    "ID": 265,
+    "TitleText": "南北方积雪的含水量相同吗？",
+    "Select1": "相同",
+    "Select2": "不同",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "266": {
+    "ID": 266,
+    "TitleText": "滑雪协会第一个认定的旅游滑雪场在哪个省？",
+    "Select1": "海南",
+    "Select2": "河北",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia256"
+  },
+  "268": {
+    "ID": 268,
+    "TitleText": "滑雪应该选择什么样的滑雪镜？",
+    "Select1": "五颜六色",
+    "Select2": "全封闭式滑雪镜",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "269": {
+    "ID": 269,
+    "TitleText": "北京2022年冬奥会成功纪念邮票一套几枚？",
+    "Select1": "10086",
+    "Select2": "1",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "270": {
+    "ID": 270,
+    "TitleText": "1988年第十五届冬奥会在哪里举行？",
+    "Select1": "卡尔加里",
+    "Select2": "圣地亚哥",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia259"
+  },
+  "271": {
+    "ID": 271,
+    "TitleText": "冰球运动中所有护具都应穿在何处最为安全？",
+    "Select1": "运动服外面",
+    "Select2": "运动服里面",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "272": {
+    "ID": 272,
+    "TitleText": "跳台滑雪起跳高度与到达高度相差多少？",
+    "Select1": "1314",
+    "Select2": "107",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "273": {
+    "ID": 273,
+    "TitleText": "1922年，施耐德在奥地利举办了滑雪学校？",
+    "Select1": "正常",
+    "Select2": "错误",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia262"
+  },
+  "274": {
+    "ID": 274,
+    "TitleText": "1月5日成为了哈尔滨人的盛大节日？",
+    "Select1": "正常",
+    "Select2": "错误",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "276": {
+    "ID": 276,
+    "TitleText": "河北省按照什么样的冬奥备战开始工作？",
+    "Select1": "一刻也不停歇",
+    "Select2": "爱怎么怎么滴",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "277": {
+    "ID": 277,
+    "TitleText": "中国女子跳台滑雪队成立于哪一年？",
+    "Select1": "2019年",
+    "Select2": "2021年",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia265"
+  },
+  "278": {
+    "ID": 278,
+    "TitleText": "第23届敖东辉代表团短道速滑领队是？",
+    "Select1": "江疏影",
+    "Select2": "杨占宇",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "279": {
+    "ID": 279,
+    "TitleText": "哪个国家创立阿尔卑斯滑雪俱乐部？",
+    "Select1": "英国",
+    "Select2": "澳大利亚",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "280": {
+    "ID": 280,
+    "TitleText": "冰壶赛道是U型的这么设计有什么好处？",
+    "Select1": "好看",
+    "Select2": "打出弧线球",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia268"
+  },
+  "281": {
+    "ID": 281,
+    "TitleText": "什么赛道可以帮助冰壶打出弧线？",
+    "Select1": "S型",
+    "Select2": "U型",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "282": {
+    "ID": 282,
+    "TitleText": "第18届冬奥会在哪里举行？",
+    "Select1": "日本",
+    "Select2": "南非",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "283": {
+    "ID": 283,
+    "TitleText": "成语滴水成冰的释义？",
+    "Select1": "非常寒冷",
+    "Select2": "烈日当头",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia271"
+  },
+  "284": {
+    "ID": 284,
+    "TitleText": "国际无舵雪橇联合会在哪一年成立？",
+    "Select1": "1957",
+    "Select2": "2021",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "286": {
+    "ID": 286,
+    "TitleText": "2015年国际古老滑雪文化交流会在哪里？",
+    "Select1": "南极",
+    "Select2": "阿勒泰",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "287": {
+    "ID": 287,
+    "TitleText": "第23届中国体育代表队跳台滑雪领队是？",
+    "Select1": "杨东",
+    "Select2": "江疏影",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia274"
+  },
+  "288": {
+    "ID": 288,
+    "TitleText": "哈尔滨冰雪节是第一个以冰雪为活动的节日？",
+    "Select1": "正常",
+    "Select2": "错误",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "289": {
+    "ID": 289,
+    "TitleText": "举报世界高山滑雪竞标赛是哪一年？",
+    "Select1": "1931年",
+    "Select2": "2021年",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "290": {
+    "ID": 290,
+    "TitleText": "跳台滑雪时哪一年被列为比赛项目的？",
+    "Select1": "1924年",
+    "Select2": "2021年",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia277"
+  },
+  "291": {
+    "ID": 291,
+    "TitleText": "记性闭合性软组织损伤后立刻采取什么措施？",
+    "Select1": "冷敷",
+    "Select2": "热敷",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "292": {
+    "ID": 292,
+    "TitleText": "第三届亚洲冬季运动会在哪里举办？",
+    "Select1": "亚布力滑雪场",
+    "Select2": "北京滑雪场",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "293": {
+    "ID": 293,
+    "TitleText": "哪一届冬奥会打造出一个双圣火台的构造？",
+    "Select1": "第99届",
+    "Select2": "第12届",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia280"
+  },
+  "294": {
+    "ID": 294,
+    "TitleText": "在雪场中，哪个位子不能停留？",
+    "Select1": "休息区",
+    "Select2": "山脊下方",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "295": {
+    "ID": 295,
+    "TitleText": "在滑雪事故中，占比重最高的是哪一项？",
+    "Select1": "外伤",
+    "Select2": "雪盲",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "296": {
+    "ID": 296,
+    "TitleText": "首个承受国家级陆地冰壶赛事的场馆是？",
+    "Select1": "冰缘冰壶俱乐部",
+    "Select2": "冰雪奇缘俱乐部",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia283"
+  },
+  "298": {
+    "ID": 298,
+    "TitleText": "北京冬奥会开始到结束的时间？",
+    "Select1": "2022.2.4-2022.2.20",
+    "Select2": "2022.2.4-2022.2.30",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "299": {
+    "ID": 299,
+    "TitleText": "与越野滑雪有关的比赛有多少项？",
+    "Select1": "1314项",
+    "Select2": "26项",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "300": {
+    "ID": 300,
+    "TitleText": "奥林匹克格言是谁提出的？",
+    "Select1": "狗策划",
+    "Select2": "亨利迪东",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia286"
+  },
+  "301": {
+    "ID": 301,
+    "TitleText": "国际滑雪联合会几年举办一次锦标赛？",
+    "Select1": "15",
+    "Select2": "2",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "302": {
+    "ID": 302,
+    "TitleText": "第十三届冬奥会在那个国家举办？",
+    "Select1": "美国",
+    "Select2": "南非",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "303": {
+    "ID": 303,
+    "TitleText": "速滑远动员的冰雪用什么材料缝制而成",
+    "Select1": "皮皮虾",
+    "Select2": "牛皮",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia289"
+  },
+  "304": {
+    "ID": 304,
+    "TitleText": "速度滑冰在追逐赛中首次冬奥会是哪一年？",
+    "Select1": "2021",
+    "Select2": "2006",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "305": {
+    "ID": 305,
+    "TitleText": "短道速滑中运动员抢跑几次会被罚下？",
+    "Select1": "20",
+    "Select2": "2",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "306": {
+    "ID": 306,
+    "TitleText": "奥运会首次对吉祥物进行全国投票是哪一次？",
+    "Select1": "第一届",
+    "Select2": "第二十二届",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia292"
+  },
+  "307": {
+    "ID": 307,
+    "TitleText": "滑冰中向前行走练习中基本姿势是什么？",
+    "Select1": "一字型",
+    "Select2": "八字形",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "308": {
+    "ID": 308,
+    "TitleText": "北京周期后，北京由规划转入什么阶段？",
+    "Select1": "全面建设",
+    "Select2": "测试",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "309": {
+    "ID": 309,
+    "TitleText": "双向飞碟中至少有几秒的停留时间？",
+    "Select1": "3",
+    "Select2": "520",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia295"
+  },
+  "310": {
+    "ID": 310,
+    "TitleText": "中国百分之多少的滑雪者为初学者？",
+    "Select1": "0.8",
+    "Select2": "0.02",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "311": {
+    "ID": 311,
+    "TitleText": "伤者身体收到伤害不严重应该用什么颜色？",
+    "Select1": "黄色",
+    "Select2": "绿色",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "313": {
+    "ID": 313,
+    "TitleText": "SSSS级滑雪场一个雪季接待人次大概为？",
+    "Select1": "12万以上",
+    "Select2": "1亿人次",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia298"
+  },
+  "314": {
+    "ID": 314,
+    "TitleText": "冰雪产业以什么为基础？",
+    "Select1": "场馆设施",
+    "Select2": "滑雪设施",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "315": {
+    "ID": 315,
+    "TitleText": "越野滑雪板板底中央凹槽有什么用？",
+    "Select1": "好看",
+    "Select2": "防止沾到滑雪板底",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "316": {
+    "ID": 316,
+    "TitleText": "室内比赛器材和室外不能相差多少度？",
+    "Select1": "100",
+    "Select2": "4",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia301"
+  },
+  "317": {
+    "ID": 317,
+    "TitleText": "唯一一箱同场竞技团体性比赛是？",
+    "Select1": "冰球",
+    "Select2": "射击",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "318": {
+    "ID": 318,
+    "TitleText": "国际冬季两项联盟与哪一年脱离？",
+    "Select1": "2021",
+    "Select2": "1993",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "320": {
+    "ID": 320,
+    "TitleText": "素有冰雪皇后的是挪威哪位运动员？",
+    "Select1": "云韵",
+    "Select2": "索尼娅海泥",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia304"
+  },
+  "321": {
+    "ID": 321,
+    "TitleText": "第二届冬奥会最年轻的冠军是那个项目？",
+    "Select1": "花样滑冰",
+    "Select2": "铁人两项",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "322": {
+    "ID": 322,
+    "TitleText": "冰壶赛道是什么形状的？",
+    "Select1": "S",
+    "Select2": "U",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "323": {
+    "ID": 323,
+    "TitleText": "二龙山滑雪场共有几条雪道？",
+    "Select1": "1314",
+    "Select2": "8",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia307"
+  },
+  "324": {
+    "ID": 324,
+    "TitleText": "滑雪索道距离下车站多少米将滑雪板脱离？",
+    "Select1": "10米",
+    "Select2": "520米",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "325": {
+    "ID": 325,
+    "TitleText": "弘扬志愿者精神何时在北京举行？",
+    "Select1": "2021",
+    "Select2": "2018",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "326": {
+    "ID": 326,
+    "TitleText": "第一届获得雪车比赛奖国家都是欧洲国家？",
+    "Select1": "是",
+    "Select2": "不是",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia310"
+  },
+  "327": {
+    "ID": 327,
+    "TitleText": "水温4度气温10度用一种泳姿游完50m属于？",
+    "Select1": "五段",
+    "Select2": "五十段",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "329": {
+    "ID": 329,
+    "TitleText": "二十世纪80年代相关部门提出什么战略？",
+    "Select1": "北冰南展",
+    "Select2": "南冰北展",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "330": {
+    "ID": 330,
+    "TitleText": "滑雪时换刃，可以再身体不稳时转弯吗？",
+    "Select1": "可以",
+    "Select2": "不可以",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia313"
+  },
+  "331": {
+    "ID": 331,
+    "TitleText": "滑雪造成的头部出血应如何处理？",
+    "Select1": "放任不管",
+    "Select2": "洁净布压迫止血",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "332": {
+    "ID": 332,
+    "TitleText": "中国自由式滑雪的第一个金牌获得者是？",
+    "Select1": "韩晓鹏",
+    "Select2": "胡歌",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "333": {
+    "ID": 333,
+    "TitleText": "初学者滑降时，固定器与鞋应如何连接？",
+    "Select1": "越松越好",
+    "Select2": "适中",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia316"
+  },
+  "335": {
+    "ID": 335,
+    "TitleText": "剪刀式滑雪板有什么优点？",
+    "Select1": "锋利",
+    "Select2": "边滑边加速",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "336": {
+    "ID": 336,
+    "TitleText": "绳子攀冰采用的动力绳直径要求？",
+    "Select1": "10mm以上",
+    "Select2": "1m以上",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "337": {
+    "ID": 337,
+    "TitleText": "冬泳的起点水温是?",
+    "Select1": "17",
+    "Select2": "1",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia319 (2)"
+  },
+  "338": {
+    "ID": 338,
+    "TitleText": "属于2010年冬奥短道速滑女子冠军的是？",
+    "Select1": "江疏影",
+    "Select2": "张会",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "339": {
+    "ID": 339,
+    "TitleText": "滑雪倒地时身体不能往那个方向坐下？",
+    "Select1": "前",
+    "Select2": "后",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "340": {
+    "ID": 340,
+    "TitleText": "冰蹴球比赛中，先满多少分为胜利？",
+    "Select1": "20分",
+    "Select2": "520分",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia322"
+  },
+  "341": {
+    "ID": 341,
+    "TitleText": "当出现外伤导致的血管损伤，应如何处理？",
+    "Select1": "放任不管",
+    "Select2": "立即止血",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "342": {
+    "ID": 342,
+    "TitleText": "SSS级滑雪场雪道总长应长于多少米？",
+    "Select1": "1米",
+    "Select2": "10000米以上",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "343": {
+    "ID": 343,
+    "TitleText": "速度滑冰中哪一道上的选手优先换道？",
+    "Select1": "内道",
+    "Select2": "外道",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia325"
+  },
+  "344": {
+    "ID": 344,
+    "TitleText": "俯式冰橇中预赛和比赛时必须同一辆雪橇吗？",
+    "Select1": "没必要",
+    "Select2": "必须是",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "345": {
+    "ID": 345,
+    "TitleText": "到2022年要实现什么多少人次参与冰雪运动？",
+    "Select1": "3亿人次参与",
+    "Select2": "5亿人次参与",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "346": {
+    "ID": 346,
+    "TitleText": "自由式滑雪中滑雪板不得短于多少厘米？",
+    "Select1": "180厘米",
+    "Select2": "18厘米",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia328 (2)"
+  },
+  "348": {
+    "ID": 348,
+    "TitleText": "北大湖滑雪场有哪个雪上项目？",
+    "Select1": "高山滑雪",
+    "Select2": "自由搏击",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "349": {
+    "ID": 349,
+    "TitleText": "怎么增加滑行时滑雪板的阻力？",
+    "Select1": "自由滑行",
+    "Select2": "呈一定的夹角",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "350": {
+    "ID": 350,
+    "TitleText": "首次女子10公里越野滑雪列入冬奥会是？",
+    "Select1": "第一届",
+    "Select2": "第六届",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia331"
+  },
+  "351": {
+    "ID": 351,
+    "TitleText": "滑过起伏不平的上坡时，运动轨迹是样子？",
+    "Select1": "一条直线",
+    "Select2": "一条曲线",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "352": {
+    "ID": 352,
+    "TitleText": "国家高山滑雪中心包括几天竞速赛道？",
+    "Select1": "3",
+    "Select2": "30",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "353": {
+    "ID": 353,
+    "TitleText": "国务院任命谁为2022年北京冬奥会主席？",
+    "Select1": "许勤",
+    "Select2": "徐琴琴",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia334 (2)"
+  },
+  "354": {
+    "ID": 354,
+    "TitleText": "冰壶比赛双方队员各几名？上场各几名？",
+    "Select1": "5.5",
+    "Select2": "5.4",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "355": {
+    "ID": 355,
+    "TitleText": "下面哪个是单板滑雪的器材装备？",
+    "Select1": "雪棍",
+    "Select2": "雪板",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "356": {
+    "ID": 356,
+    "TitleText": "以下哪项不是滑雪外伤的性质？",
+    "Select1": "可预见性",
+    "Select2": "突发性",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia337"
+  },
+  "358": {
+    "ID": 358,
+    "TitleText": "我国最早的宣传报道冬泳健身信息的杂志是？",
+    "Select1": "《健与美》",
+    "Select2": "《新体育》",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "359": {
+    "ID": 359,
+    "TitleText": "第一次为每一个比赛制作单独奖牌是在哪一届？",
+    "Select1": "第十届",
+    "Select2": "每一届",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "360": {
+    "ID": 360,
+    "TitleText": "下列哪种滑雪方式有止滑器？",
+    "Select1": "越野滑雪",
+    "Select2": "跳台滑雪",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia340"
+  },
+  "361": {
+    "ID": 361,
+    "TitleText": "下列哪个不属于冬奥自由式滑雪？",
+    "Select1": "雪上技巧",
+    "Select2": "冰上芭蕾",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "362": {
+    "ID": 362,
+    "TitleText": "首位获得冬奥会奖牌的男运动员是？",
+    "Select1": "胡歌",
+    "Select2": "李佳军",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "363": {
+    "ID": 363,
+    "TitleText": "滑跑练习对训练什么系统非常重要？",
+    "Select1": "无氧系统",
+    "Select2": "垃圾系统",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia343"
+  },
+  "365": {
+    "ID": 365,
+    "TitleText": "自由式滑雪比赛的前几名进入决赛？",
+    "Select1": "4",
+    "Select2": "6",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "366": {
+    "ID": 366,
+    "TitleText": "下列不属于短道速滑女子3000米接力冠军的是？",
+    "Select1": "杨幂",
+    "Select2": "陈露",
+    "CorrectAnswer": [
+      1,
+      2
+    ]
+  },
+  "367": {
+    "ID": 367,
+    "TitleText": "自由式滑雪空中技巧采用的是什么赛制？",
+    "Select1": "两跳决赛",
+    "Select2": "一跳递进淘汰",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia346"
+  },
+  "368": {
+    "ID": 368,
+    "TitleText": "奥林匹克最高领导机构是？",
+    "Select1": "国际奥委执行委员会",
+    "Select2": "国际奥林匹克委员会",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "369": {
+    "ID": 369,
+    "TitleText": "花样滑冰标准赛场长多少米？",
+    "Select1": "60",
+    "Select2": "66",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "370": {
+    "ID": 370,
+    "TitleText": "花样滑冰的奥运会比赛项目共有几个？",
+    "Select1": "1个",
+    "Select2": "4个",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia349"
+  },
+  "371": {
+    "ID": 371,
+    "TitleText": "北京8分钟五彩曲线时，并屏幕展示了什么？",
+    "Select1": "冬奥构想",
+    "Select2": "中国故事",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "372": {
+    "ID": 372,
+    "TitleText": "世界上第一个冰上溜石是那一个国家？",
+    "Select1": "苏格兰",
+    "Select2": "南非",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "373": {
+    "ID": 373,
+    "TitleText": "世界上第一个冰上溜石是那一年？",
+    "Select1": "2021",
+    "Select2": "1795",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia352"
+  },
+  "374": {
+    "ID": 374,
+    "TitleText": "用木板钉可以用带钉子的木棍滑行的工具是？",
+    "Select1": "冰车",
+    "Select2": "雪橇",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "375": {
+    "ID": 375,
+    "TitleText": "冬奥会吉祥物方案首位投稿人是什么职业？",
+    "Select1": "动漫制作人",
+    "Select2": "高中生",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "376": {
+    "ID": 376,
+    "TitleText": "冰雪活动中的“双万”是指？",
+    "Select1": "1万个家庭和学生",
+    "Select2": "1万个目标和器材",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia355"
+  },
+  "378": {
+    "ID": 378,
+    "TitleText": "雪上芭蕾场地宽度是多少？",
+    "Select1": "35-45米",
+    "Select2": "110-120米",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "379": {
+    "ID": 379,
+    "TitleText": "滑雪时雪仗应该是在什么位子？",
+    "Select1": "背在身上",
+    "Select2": "握在手里",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "380": {
+    "ID": 380,
+    "TitleText": "速度滑冰最为常用的起跑技术动作是什么？",
+    "Select1": "扭滑式",
+    "Select2": "蹲踞式",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia358"
+  },
+  "381": {
+    "ID": 381,
+    "TitleText": "国家体育总局官方标识由几种颜色组成？",
+    "Select1": "1",
+    "Select2": "5",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "382": {
+    "ID": 382,
+    "TitleText": "北京八分钟武器展示地球时展示了什么？",
+    "Select1": "五大洲儿童的笑脸",
+    "Select2": "贫苦老人",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "383": {
+    "ID": 383,
+    "TitleText": "残奥会冬季体育运动发展最快的项目是？",
+    "Select1": "轮椅冰壶",
+    "Select2": "轮椅赛跑",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia361"
+  },
+  "384": {
+    "ID": 384,
+    "TitleText": "首个举办冬奥会的社会主义国家是？",
+    "Select1": "南斯拉夫",
+    "Select2": "美国",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "385": {
+    "ID": 385,
+    "TitleText": "结伴滑行时，相互之间一定要拉开距离",
+    "Select1": "正确",
+    "Select2": "错误",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "387": {
+    "ID": 387,
+    "TitleText": "哪一年冬夏奥运分开举行？",
+    "Select1": "1924",
+    "Select2": "1888",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia364(2)"
+  },
+  "388": {
+    "ID": 388,
+    "TitleText": "为什么在广东，雪有狂犬的别称？",
+    "Select1": "因为雪很大",
+    "Select2": "因为雪非常罕见",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "389": {
+    "ID": 389,
+    "TitleText": "北京八分钟展示不包括？",
+    "Select1": "奥运五环",
+    "Select2": "冬残奥会会徽",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "390": {
+    "ID": 390,
+    "TitleText": "越野滑雪的雪仗比普通雪仗有什么特别？",
+    "Select1": "更加牢固",
+    "Select2": "更加长",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia367"
+  },
+  "391": {
+    "ID": 391,
+    "TitleText": "在哪次会议正式确定为第一届冬奥会？",
+    "Select1": "第99次会议",
+    "Select2": "第25次会议",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "392": {
+    "ID": 392,
+    "TitleText": "2018年加拿大举行短道速滑500米获冠军是？",
+    "Select1": "日本",
+    "Select2": "中国",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "393": {
+    "ID": 393,
+    "TitleText": "首次冰球比赛在加拿大的哪个城市举行？",
+    "Select1": "多伦多",
+    "Select2": "金斯顿",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia370"
+  },
+  "395": {
+    "ID": 395,
+    "TitleText": "自由式滑雪兴起于什么国家？",
+    "Select1": "美国",
+    "Select2": "南非",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "396": {
+    "ID": 396,
+    "TitleText": "中国第一位奥运冠军是？",
+    "Select1": "许海峰",
+    "Select2": "许三多",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "397": {
+    "ID": 397,
+    "TitleText": "2018年1月21日儿童户外冰雪节在哪里？",
+    "Select1": "崇礼",
+    "Select2": "南极",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia373"
+  },
+  "398": {
+    "ID": 398,
+    "TitleText": "2022年，北京冬奥会一共有几座竞赛场馆？",
+    "Select1": "1个",
+    "Select2": "5个",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "399": {
+    "ID": 399,
+    "TitleText": "冬奥会把什么作为首要目标促进运动员状态？",
+    "Select1": "鼓励服务员",
+    "Select2": "方便服务员",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "400": {
+    "ID": 400,
+    "TitleText": "冬奥会上首个冰壶混双冠军的是那个国家？",
+    "Select1": "美国",
+    "Select2": "加拿大",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia376"
+  },
+  "401": {
+    "ID": 401,
+    "TitleText": "同一届获得三块北欧两项金牌运动员是？",
+    "Select1": "摩根弗里曼",
+    "Select2": "桑帕拉尤男",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "402": {
+    "ID": 402,
+    "TitleText": "夏季奥运会上唯一一次的冰球比赛是？",
+    "Select1": "安特卫普",
+    "Select2": "南极",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "404": {
+    "ID": 404,
+    "TitleText": "滑雪杖的功能有？",
+    "Select1": "没什么功能",
+    "Select2": "引导变向",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia379"
+  },
+  "405": {
+    "ID": 405,
+    "TitleText": "滑雪中踏步转弯属于什么转弯？",
+    "Select1": "无弧迹转弯",
+    "Select2": "连续转弯",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "406": {
+    "ID": 406,
+    "TitleText": "第五届冬奥会被禁止参赛的国家是？",
+    "Select1": "中国",
+    "Select2": "日本",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "407": {
+    "ID": 407,
+    "TitleText": "第五届冬奥会被禁止参赛的国家是？",
+    "Select1": "中国",
+    "Select2": "德国",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia382"
+  },
+  "408": {
+    "ID": 408,
+    "TitleText": "在冰壁上设置保护点最少几个冰锥？",
+    "Select1": "0",
+    "Select2": "3",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "409": {
+    "ID": 409,
+    "TitleText": "第二届冰上运动会多少人打破记录？",
+    "Select1": "1314",
+    "Select2": "72",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "410": {
+    "ID": 410,
+    "TitleText": "第一届残奥会是哪一年召开的？",
+    "Select1": "2008",
+    "Select2": "1960",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia385"
+  },
+  "411": {
+    "ID": 411,
+    "TitleText": "太舞滑雪小镇位于河北省的哪个城市？",
+    "Select1": "秦皇岛",
+    "Select2": "张家口",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "413": {
+    "ID": 413,
+    "TitleText": "射击比赛共多少个项目？",
+    "Select1": "1",
+    "Select2": "17",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "414": {
+    "ID": 414,
+    "TitleText": "下列体现雪的白的特点是哪一项？",
+    "Select1": "梅须逊雪三分白",
+    "Select2": "巴山夜雨涨秋池",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia388"
+  },
+  "415": {
+    "ID": 415,
+    "TitleText": "试穿单板滑雪需要注意的是？",
+    "Select1": "没什么需要注意的",
+    "Select2": "脚后跟上提",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "416": {
+    "ID": 416,
+    "TitleText": "无舵雪橇的雪橇上能操纵制动器吗？",
+    "Select1": "当然可以",
+    "Select2": "当然不行",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "417": {
+    "ID": 417,
+    "TitleText": "冰球的特点是？",
+    "Select1": "容易入门但是难精通",
+    "Select2": "可以打架",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia391"
+  },
+  "418": {
+    "ID": 418,
+    "TitleText": "平昌冬奥会韩聪以235.47的成绩夺得？",
+    "Select1": "108名",
+    "Select2": "亚军",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "419": {
+    "ID": 419,
+    "TitleText": "北京冬奥会期间哪一场馆承担女子冰球？",
+    "Select1": "五棵松体育中心",
+    "Select2": "国家体育馆",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "420": {
+    "ID": 420,
+    "TitleText": "哪届奥运会首次研制成功并采用血检？",
+    "Select1": "南极",
+    "Select2": "斯德哥尔摩",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia394(2)"
+  },
+  "421": {
+    "ID": 421,
+    "TitleText": "踏雪无痕的意思是？",
+    "Select1": "雪太薄了",
+    "Select2": "速度很快",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "423": {
+    "ID": 423,
+    "TitleText": "攀冰影响最大的是？",
+    "Select1": "冰质",
+    "Select2": "冰镐大小",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "424": {
+    "ID": 424,
+    "TitleText": "冬奥会的推动下，首钢秀池将改造什么？",
+    "Select1": "观景湖",
+    "Select2": "新型水下车库",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia397"
+  },
+  "425": {
+    "ID": 425,
+    "TitleText": "申办冬奥成功后全国唯一体教结合学校是？",
+    "Select1": "南海第二中学",
+    "Select2": "张家口宣化第二中学",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "426": {
+    "ID": 426,
+    "TitleText": "中国滑雪协会第一个认定的旅游滑雪场在哪？",
+    "Select1": "河北",
+    "Select2": "河南",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "427": {
+    "ID": 427,
+    "TitleText": "单板滑雪什么时候流行于美国？",
+    "Select1": "20世纪80年代",
+    "Select2": "21世纪",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia400"
+  },
+  "428": {
+    "ID": 428,
+    "TitleText": "中国运动员更加擅长哪种滑雪运动？",
+    "Select1": "空中技巧",
+    "Select2": "单板滑雪",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "429": {
+    "ID": 429,
+    "TitleText": "雪上国际赛事不包括什么？",
+    "Select1": "滑雪世锦赛",
+    "Select2": "短道速滑世界杯",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "430": {
+    "ID": 430,
+    "TitleText": "滑雪前的准备需要活动肩关节吗？",
+    "Select1": "需要",
+    "Select2": "我很强不需要",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia403(2)"
+  },
+  "431": {
+    "ID": 431,
+    "TitleText": "首都体育馆为了冬奥会增加了几块冰面？",
+    "Select1": "0",
+    "Select2": "1",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "432": {
+    "ID": 432,
+    "TitleText": "曲棍球比赛是在2个多少人之间的队伍进行？",
+    "Select1": "11",
+    "Select2": "1",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "433": {
+    "ID": 433,
+    "TitleText": "冰蹴球每个参赛队伍有几个队员？",
+    "Select1": "1",
+    "Select2": "2",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia406"
+  },
+  "435": {
+    "ID": 435,
+    "TitleText": "蝉联2005.2007.2007世锦赛女子空中技巧的是？",
+    "Select1": "江疏影",
+    "Select2": "李妮娜",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "436": {
+    "ID": 436,
+    "TitleText": "下列哪项不属于冰球运动中的运球技术？",
+    "Select1": "滑球运动",
+    "Select2": "扣球运动",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia409"
+  },
+  "437": {
+    "ID": 437,
+    "TitleText": "亚洲选手第一次获得女子花样滑冰是？",
+    "Select1": "长野冬奥会",
+    "Select2": "都灵冬奥会",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "438": {
+    "ID": 438,
+    "TitleText": "第十九姐冬奥会举办国家是？",
+    "Select1": "中国",
+    "Select2": "美国",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "439": {
+    "ID": 439,
+    "TitleText": "冬奥会25个场馆中，有几个为计划建设？",
+    "Select1": "1",
+    "Select2": "6",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia412(2)"
+  },
+  "440": {
+    "ID": 440,
+    "TitleText": "第六届奥运会是在哪里举办的？",
+    "Select1": "挪威",
+    "Select2": "南极",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "441": {
+    "ID": 441,
+    "TitleText": "冰球运动中使用的球球重为？",
+    "Select1": "1吨",
+    "Select2": "156-170克",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "442": {
+    "ID": 442,
+    "TitleText": "滑雪中重摔通常由什么造成的？",
+    "Select1": "技术不够",
+    "Select2": "板刃卡雪",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia415"
+  },
+  "443": {
+    "ID": 443,
+    "TitleText": "哪一年雪橇被李伟首届冬奥会比赛项目？",
+    "Select1": "2008",
+    "Select2": "1924",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "444": {
+    "ID": 444,
+    "TitleText": "冰壶运动标准场地的宽度是多少米？",
+    "Select1": "100米",
+    "Select2": "4.32米",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "445": {
+    "ID": 445,
+    "TitleText": "祭祀太阳神阿波罗举行的竞技会是？",
+    "Select1": "英雄联盟竞技会",
+    "Select2": "皮西安竞技会",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia418"
+  },
+  "446": {
+    "ID": 446,
+    "TitleText": "国家体育馆将有多少空气净化能力？",
+    "Select1": "0.1",
+    "Select2": "0.9",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "447": {
+    "ID": 447,
+    "TitleText": "下列哪一项运动可以称为全身性运动？",
+    "Select1": "越野滑雪",
+    "Select2": "俯卧撑",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "449": {
+    "ID": 449,
+    "TitleText": "首届世界冰上溜石锦标赛开始哪一年？",
+    "Select1": "2022",
+    "Select2": "1959",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia421"
+  },
+  "450": {
+    "ID": 450,
+    "TitleText": "人类滑雪最早起源地是哪里？",
+    "Select1": "非洲",
+    "Select2": "阿勒泰",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "451": {
+    "ID": 451,
+    "TitleText": "滑雪时在雪地安全行走的关键是什么？",
+    "Select1": "体重够重",
+    "Select2": "手脚的协调配合能力",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "452": {
+    "ID": 452,
+    "TitleText": "半V型转弯技巧时地板承受多大的压力？",
+    "Select1": "0",
+    "Select2": "1吨",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia424"
+  },
+  "453": {
+    "ID": 453,
+    "TitleText": "雪花是什么形状的？",
+    "Select1": "圆形",
+    "Select2": "六角形",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "454": {
+    "ID": 454,
+    "TitleText": "滑冰时感觉冻脚的时候应该立即怎么样？",
+    "Select1": "坚持一下",
+    "Select2": "把鞋带松开让血液流通",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "455": {
+    "ID": 455,
+    "TitleText": "蹬冰脚穿的鞋底是什么材料？",
+    "Select1": "金属",
+    "Select2": "橡胶",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia427"
+  },
+  "456": {
+    "ID": 456,
+    "TitleText": "进行指压寻找压迫点时不能选用哪根手指？",
+    "Select1": "无名指",
+    "Select2": "大拇指",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "457": {
+    "ID": 457,
+    "TitleText": "北京八分钟表演的核心理念是？",
+    "Select1": "2022北京见",
+    "Select2": "2022北京最强",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "458": {
+    "ID": 458,
+    "TitleText": "人工冰场的冰面厚度为多少最佳",
+    "Select1": "1cm",
+    "Select2": "4cm",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia430"
+  },
+  "460": {
+    "ID": 460,
+    "TitleText": "雪结冰前和结冰后，那个更重？",
+    "Select1": "一样",
+    "Select2": "结冰后",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "461": {
+    "ID": 461,
+    "TitleText": "世界上第一部有关花样滑冰的著作是？",
+    "Select1": "冰雪运动",
+    "Select2": "论滑冰",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "462": {
+    "ID": 462,
+    "TitleText": "准备出发去滑雪前需要注意什么？",
+    "Select1": "拿好手机",
+    "Select2": "高能食品和饮料",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia433"
+  },
+  "463": {
+    "ID": 463,
+    "TitleText": "冬季运动管理中心综合训练馆的冰场在哪一层？",
+    "Select1": "负1层",
+    "Select2": "1层和3层",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "464": {
+    "ID": 464,
+    "TitleText": "个人大跳台赛中有多少次跳台的机会？",
+    "Select1": "无数次",
+    "Select2": "1次",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "466": {
+    "ID": 466,
+    "TitleText": "雪中雪上技巧女子的滑雪板不能短于多少厘米？",
+    "Select1": "10",
+    "Select2": "180",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia436"
+  },
+  "467": {
+    "ID": 467,
+    "TitleText": "到2020年我国体育旅游人口达到多少人？",
+    "Select1": "1亿",
+    "Select2": "10亿",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "468": {
+    "ID": 468,
+    "TitleText": "越野滑雪的比赛场地应该选择哪种地形？",
+    "Select1": "悬崖峭壁",
+    "Select2": "森林地带",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "469": {
+    "ID": 469,
+    "TitleText": "我国的冬泳运动潜在的发展能力在哪里？",
+    "Select1": "不存在",
+    "Select2": "长江以南地区",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia439"
+  },
+  "470": {
+    "ID": 470,
+    "TitleText": "澳大利亚首次获得冬奥会金牌是哪一次？",
+    "Select1": "没获得过",
+    "Select2": "盐湖城冬奥会",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "471": {
+    "ID": 471,
+    "TitleText": "从阿尔让提耶一直延伸到萨斯菲的极限赛道叫？",
+    "Select1": "终极赛道",
+    "Select2": "死亡之路",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "472": {
+    "ID": 472,
+    "TitleText": "横滑时，哪只脚负重大？",
+    "Select1": "一样大",
+    "Select2": "山下脚",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia442"
+  },
+  "473": {
+    "ID": 473,
+    "TitleText": "飞碟双向射击时，飞行的远距一般为？",
+    "Select1": "86至8",
+    "Select2": "1光年",
+    "CorrectAnswer": [
+      1
+    ]
+  },
+  "475": {
+    "ID": 475,
+    "TitleText": "5S级滑雪场滑雪赛道雪厚厚度不小于多少毫米",
+    "Select1": "10000",
+    "Select2": "300",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "476": {
+    "ID": 476,
+    "TitleText": "冬奥会首都体育馆总建筑面积约多少平方米",
+    "Select1": "1平方米",
+    "Select2": "20万平方米",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia445"
+  },
+  "477": {
+    "ID": 477,
+    "TitleText": "世界上首届自由式滑雪锦标赛在哪个国家？",
+    "Select1": "南极",
+    "Select2": "法国",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "478": {
+    "ID": 478,
+    "TitleText": "第十七届冬奥会的吉祥物是什么?",
+    "Select1": "娜娜，菲菲",
+    "Select2": "哈肯，克里斯丁",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "479": {
+    "ID": 479,
+    "TitleText": "越野滑雪板涂黏性蜡时涂在底板什么部分？",
+    "Select1": "中部",
+    "Select2": "凹底区",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia448(2)"
+  },
+  "480": {
+    "ID": 480,
+    "TitleText": "中国哪一年加入世界冰壶联合会？",
+    "Select1": "2022年",
+    "Select2": "2002年",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "482": {
+    "ID": 482,
+    "TitleText": "花样滑冰赛场宽度不小于多少米?",
+    "Select1": "1米",
+    "Select2": "26米",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "483": {
+    "ID": 483,
+    "TitleText": "自由式滑雪雪上技巧评分中，速度分占比是？",
+    "Select1": "1",
+    "Select2": "0.2",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia451"
+  },
+  "484": {
+    "ID": 484,
+    "TitleText": "北京市冬奥会赛区唯一一个新建的竞赛场馆是？",
+    "Select1": "云顶滑雪公园",
+    "Select2": "国家速滑馆",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "485": {
+    "ID": 485,
+    "TitleText": "无舵雪橇又叫？",
+    "Select1": "核潜艇",
+    "Select2": "短雪橇",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "486": {
+    "ID": 486,
+    "TitleText": "在陡坡上可不可以运用上体向前的前刃斜滑降？",
+    "Select1": "我想降就降",
+    "Select2": "不可以很危险",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia454"
+  },
+  "487": {
+    "ID": 487,
+    "TitleText": "下列哪个是冰车？",
+    "Select1": "无腿冰车",
+    "Select2": "双腿冰车",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "488": {
+    "ID": 488,
+    "TitleText": "下列哪个是冰车？",
+    "Select1": "无腿冰车",
+    "Select2": "单腿冰车",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "490": {
+    "ID": 490,
+    "TitleText": "第三届亚洲冬季运动会在哪一个滑雪场举办？",
+    "Select1": "南极滑雪场",
+    "Select2": "亚布力滑雪场",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia457"
+  },
+  "491": {
+    "ID": 491,
+    "TitleText": "滑有特殊保暖层，排汗效果好比赛专用的是？",
+    "Select1": "双板分体",
+    "Select2": "紧身衣",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "492": {
+    "ID": 492,
+    "TitleText": "做两头运动时身体需要同时做什么？",
+    "Select1": "什么都不做",
+    "Select2": "上举下压",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "493": {
+    "ID": 493,
+    "TitleText": "张家口气象局在赛区周边建多少套气象局？",
+    "Select1": "1套",
+    "Select2": "70套",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia460"
+  },
+  "494": {
+    "ID": 494,
+    "TitleText": "出发时，滑雪运动员是否可以串道滑行？",
+    "Select1": "是",
+    "Select2": "否",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "495": {
+    "ID": 495,
+    "TitleText": "哪一个属于高科技发展对冰雪运动的推动？",
+    "Select1": "全息投影",
+    "Select2": "人工造雪",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "496": {
+    "ID": 496,
+    "TitleText": "冬奥会竞赛场馆哪一年达到了奥委会标准的？",
+    "Select1": "2020年",
+    "Select2": "1988年",
+    "CorrectAnswer": [
+      1
+    ],
+    "Picture": "Materia463"
+  },
+  "497": {
+    "ID": 497,
+    "TitleText": "自由式滑雪空中技巧基本动作不包括？",
+    "Select1": "空中翻腾",
+    "Select2": "起跳入水",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "498": {
+    "ID": 498,
+    "TitleText": "滑雪图中感觉到累应该怎么做？",
+    "Select1": "立即停下来休息",
+    "Select2": "确认安全后停下来休息",
+    "CorrectAnswer": [
+      2
+    ]
+  },
+  "500": {
+    "ID": 500,
+    "TitleText": "2009年冰壶青年锦标赛，中国男队的成绩是？",
+    "Select1": "亚军",
+    "Select2": "冠军！",
+    "CorrectAnswer": [
+      2
+    ],
+    "Picture": "Materia466"
+  }
+}

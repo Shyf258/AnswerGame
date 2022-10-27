@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcef3f7982dfd54bbaf4d4f8211e95e, type: 3}
+  m_Name: AppSettingConfig
+  m_EditorClassIdentifier: 
+  _appLoadMode: 0
+  _serverType: 0
+  _isCloseGuide: 0
+  _isLog: 1
+  _isTestUnity: 1
+  _enterType: 0
+  _abTest: a
+  _isSkipAD: 1
+  _buildApp: 3
+  _check: 0
+  _skipWeChatLogin: 0
+  _buildTime: 0
+  _buildHour: 0
+  _isOpenSessId: 0

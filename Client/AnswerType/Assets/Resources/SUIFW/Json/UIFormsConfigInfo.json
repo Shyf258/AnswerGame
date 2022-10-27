@@ -1,0 +1,329 @@
+﻿{
+  "ConfigInfo": [
+    {
+      "Key": "Loading",
+      "Value": "SUIFW\\Prefab\\UI_IF_Loading"
+    },
+    {
+      "Key": "TurnTable",
+      "Value": "SUIFW\\Prefab\\UI_IF_TurnTable"
+    },
+    {
+      "Key": "AboutUS",
+      "Value": "SUIFW\\Prefab\\UI_IF_AboutUS"
+    },
+    {
+      "Key": "AnswerRight",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_AnswerRight"
+    },
+    {
+      "Key": "EventPage",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_EventPage"
+    },
+    {
+      "Key": "Check",
+      "Value": "SUIFW\\Prefab\\Agreement\\UI_IF_Check"
+    },
+    {
+      "Key": "DailyMoney",
+      "Value": "SUIFW\\Prefab\\DailyMoney\\UI_IF_DailyMoney"
+    },
+    {
+      "Key": "DictionaryPage",
+      "Value": "SUIFW\\Prefab\\Pure\\UI_IF_DictionaryPage"
+    },
+    {
+      "Key": "PureGame",
+      "Value": "SUIFW\\Prefab\\Pure\\UI_IF_PureGame"
+    },
+    {
+      "Key": "PureAnswer",
+      "Value": "SUIFW\\Prefab\\Pure\\UI_IF_PureAnswer"
+    },
+    {
+      "Key": "MainPage",
+      "Value": "SUIFW\\Prefab\\Pure\\UI_IF_PureMainPage"
+    },
+    {
+      "Key": "Arrive",
+      "Value": "SUIFW\\Prefab\\UI_IF_Arrive"
+    },
+    {
+      "Key": "RightReward",
+      "Value": "SUIFW\\Prefab\\UI_IF_RightReward"
+    },
+    {
+      "Key": "SignIn",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_SignIn"
+    },
+    {
+      "Key": "NewSignInPage",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewSignInPage"
+    },
+    {
+      "Key": "NewLogin",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewLogin"
+    },
+    {
+      "Key": "NewPlayerTips",
+      "Value": "SUIFW\\Prefab\\Sign\\UI_IF_NewPlayerTips"
+    },
+    {
+      "Key": "FeedBack",
+      "Value": "SUIFW\\Prefab\\UI_IF_FeedBack"
+    },
+    {
+      "Key": "Ranking",
+      "Value": "SUIFW\\Prefab\\Ranking\\UI_IF_Ranking"
+    },
+    {
+      "Key": "Task",
+      "Value": "SUIFW\\Prefab\\Task\\UI_IF_Task"
+    },
+    {
+      "Key": "RedRain",
+      "Value": "SUIFW\\Prefab\\RedRain\\UI_IF_RedRain"
+    },
+    {
+      "Key": "Splash",
+      "Value": "SUIFW\\Prefab\\UI_IF_Splash"
+    },
+    {
+      "Key": "Game",
+      "Value": "SUIFW\\Prefab\\Game\\UI_IF_Game",
+      "Package": 1
+    },
+    {
+      "Key": "Main",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_Main"
+    },
+	{
+      "Key": "MainUp",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_MainUp"
+    },
+	{
+      "Key": "PlayInfo",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_PlayInfo"
+    },
+    {
+      "Key": "GM",
+      "Value": "SUIFW\\Prefab\\UI_IF_GM"
+    },
+    {
+      "Key": "Setting",
+      "Value": "SUIFW\\Prefab\\UI_IF_Setting"
+    },
+    {
+      "Key": "GetResult",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_GetResult"
+    },
+    {
+      "Key": "GetReward",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_GetReward"
+    },
+    {
+      "Key": "GetNormal",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_GetNormal"
+    },
+    {
+      "Key": "Notice",
+      "Value": "SUIFW\\Prefab\\Agreement\\UI_IF_Notice"
+    },
+    {
+      "Key": "Agreement",
+      "Value": "SUIFW\\Prefab\\Agreement\\UI_IF_Agreement"
+    },
+    {
+      "Key": "Success",
+      "Value": "SUIFW\\Prefab\\Game\\UI_IF_Success"
+    },
+    {
+      "Key": "Fail",
+      "Value": "SUIFW\\Prefab\\Game\\UI_IF_Fail"
+    },
+    {
+      "Key": "NoEnergy",
+      "Value": "SUIFW\\Prefab\\Game\\UI_IF_NoEnergy"
+    },
+	{
+      "Key": "Withdraw",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_Withdraw"
+    },
+    {
+      "Key": "RedWithdraw",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_RedWithdraw"
+    },
+	{
+      "Key": "WeChatLogin",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WeChatLogin"
+    },
+	{
+      "Key": "WithdrawSuccess",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithdrawSuccess"
+    },{
+      "Key": "WechatWithdrawTip",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WechatWithdrawTip"
+    },
+    {
+      "Key": "DayGrow",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_DayGrow"
+    },
+    {
+      "Key": "WaitTips",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WaitTips"
+    },
+    {
+      "Key": "Date",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_Date"
+    },
+	{
+      "Key": "PositionDetail",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_PositionDetail"
+    },
+    {
+      "Key": "Cash",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_Cash"
+    },
+    {
+      "Key": "Share",
+      "Value": "SUIFW\\Prefab\\ShareActivity\\UI_IF_Share"
+    },
+    {
+      "Key": "ShareResult",
+      "Value": "SUIFW\\Prefab\\ShareActivity\\UI_IF_ShareResult"
+    },
+    {
+      "Key": "Production",
+      "Value": "SUIFW\\Prefab\\ShareActivity\\UI_IF_Production"
+    },
+    {
+      "Key": "Salary",
+      "Value": "SUIFW\\Prefab\\ShareActivity\\UI_IF_Salary"
+    },
+    {
+      "Key": "Description",
+      "Value": "SUIFW\\Prefab\\ShareActivity\\UI_IF_Description"
+    },
+    {
+      "Key": "Coin",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_Coin"
+    },
+    {
+      "Key": "OpenRedPack",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_OpenRedPack"
+    },
+	{
+	  "Key": "SurpriseRedpack",    
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_SurpriseRedpack"
+    },
+	{
+	  "Key": "LimitNewGift",    
+      "Value": "SUIFW\\Prefab\\NewGift\\UI_IF_LimitNewGift"
+    },
+    {
+      "Key": "ChangeSignType",
+      "Value": "SUIFW\\Prefab\\NewGift\\UI_IF_ChangeSignType"
+    },
+    {
+      "Key": "NewbieSign",
+      "Value": "SUIFW\\Prefab\\NewGift\\UI_IF_NewbieSign"
+    },
+    {
+      "Key": "Explain",
+      "Value": "SUIFW\\Prefab\\Game\\UI_IF_Explain"
+    },
+    {
+      "Key": "DragRedpack",
+      "Value": "SUIFW\\Prefab\\DragRedpack\\UI_IF_DragRedpack"
+    },
+    {
+      "Key": "CoinBox",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_CoinBox"
+    },
+    {
+      "Key": "Guide",
+      "Value": "SUIFW\\Prefab\\Guide\\UI_IF_Guide"
+    },
+	{
+      "Key": "GuideTip",
+      "Value": "SUIFW\\Prefab\\Guide\\UI_IF_GuideTip"
+    },
+    {
+      "Key": "NetLoading",
+      "Value": "SUIFW\\Prefab\\Common\\UI_IF_NetLoading"
+    },
+    {
+      "Key": "MoneyPool",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_MoneyPool"
+    },
+    {
+      "Key": "Goldenpig",
+      "Value": "SUIFW\\Prefab\\Main\\UI_IF_Goldenpig"
+    },
+    {
+      "Key": "GoldIngot",
+      "Value": "SUIFW\\Prefab\\GoldIngot\\UI_IF_GoldIngot"
+    },
+    {
+      "Key": "TipsADTimes",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_TipsADTimes"
+    },
+    {
+      "Key": "WithDrawJudge",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_WithDrawJudge"
+    },
+    {
+      "Key": "PlayAdWithDraw",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_PlayAdWithDraw"
+    },
+    {
+      "Key": "GrowMoneyPage",
+      "Value": "SUIFW\\Prefab\\Withdraw\\UI_IF_GrowMoneyPage"
+    },
+    {
+      "Key": "GetChips",
+      "Value": "SUIFW\\Prefab\\Common\\Dialog\\UI_IF_GetChips"
+    },
+    {
+      "Key": "ChipsPage",
+      "Value": "SUIFW\\Prefab\\UI_IF_ChipsPage"
+    },
+
+    {
+      "Key": "TimeActivity",
+      "Value": "SUIFW\\Prefab\\UI_IF_TimeActivity"
+    },
+    {
+      "Key": "GetCoin",
+      "Value": "SUIFW\\Prefab\\UI_IF_GetCoin"
+    },
+    {
+      "Key": "MyWithdrawRecord",
+      "Value": "SUIFW\\Prefab\\Main\\MyWithdraw\\UI_IF_MyWithdrawRecord"
+    },
+    {
+      "Key": "TipsPage",
+      "Value": "SUIFW\\Prefab\\UI_IF_TipsPage"
+    },
+    {
+      "Key": "NewWithdraw",
+      "Value": "SUIFW\\Prefab\\Main\\MyWithdraw\\UI_IF_NewWithdraw"
+	},
+    {
+      "Key": "Activity",
+      "Value": "SUIFW\\Prefab\\Activity\\UI_IF_Activity"
+    },
+    {
+      "Key": "ActivitySign",
+      "Value": "SUIFW\\Prefab\\Activity\\UI_IF_ActivitySign"
+    },
+    {
+      "Key": "RedGroup",
+      "Value": "SUIFW\\Prefab\\RedGroup\\UI_IF_RedGroup"
+    },
+    {
+      "Key": "RedGroupChat",
+      "Value": "SUIFW\\Prefab\\RedGroup\\UI_IF_RedGroupChat"
+    }
+  ]
+}

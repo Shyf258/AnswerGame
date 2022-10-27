@@ -1,0 +1,122 @@
+{
+  "1": {
+    "ID": 1,
+    "Description": "今日激励视频观看超过{0}次",
+    "FinishTips": "任务完成"
+  },
+  "2": {
+    "ID": 2,
+    "Description": "今日答题次数超过{0}次",
+    "FinishTips": "任务完成"
+  },
+  "3": {
+    "ID": 3,
+    "Description": "今日参与转盘{0}次",
+    "FinishTips": "任务完成"
+  },
+  "4": {
+    "ID": 4,
+    "Description": "今日完成红包雨{0}次",
+    "FinishTips": "任务完成"
+  },
+  "5": {
+    "ID": 5,
+    "Description": "今日领取可领红包{0}次",
+    "FinishTips": "任务完成"
+  },
+  "6": {
+    "ID": 6,
+    "Description": "今日成功领取体力{0}次",
+    "FinishTips": "任务完成"
+  },
+  "7": {
+    "ID": 7,
+    "Description": "今日领取飞行宝箱{0}次",
+    "FinishTips": "任务完成"
+  },
+  "8": {
+    "ID": 8,
+    "Description": "今日成功参与免费领钱{0}次",
+    "FinishTips": "任务完成"
+  },
+  "9": {
+    "ID": 9,
+    "Description": "完成{0}个任务",
+    "FinishTips": "任务完成"
+  },
+  "10": {
+    "ID": 10,
+    "Description": "今日完成签到{0}次",
+    "FinishTips": "任务完成"
+  },
+  "11": {
+    "ID": 11,
+    "Description": "完成任意视频游戏下载{0}次",
+    "FinishTips": "任务完成"
+  },
+  "12": {
+    "ID": 12,
+    "Description": "今日领取在线奖励{0}次",
+    "FinishTips": "任务完成"
+  },
+  "13": {
+    "ID": 13,
+    "Description": "新手提现福利{0}次",
+    "FinishTips": "任务完成"
+  },
+  "14": {
+    "ID": 14,
+    "Description": "0",
+    "FinishTips": "任务完成"
+  },
+  "15": {
+    "ID": 15,
+    "Description": "0",
+    "FinishTips": "任务完成"
+  },
+  "16": {
+    "ID": 16,
+    "Description": "0",
+    "FinishTips": "任务完成"
+  },
+  "17": {
+    "ID": 17,
+    "Description": "下載成语大元宝任务",
+    "FinishTips": "任务完成"
+  },
+  "18": {
+    "ID": 18,
+    "Description": "下載人生大赢家任务",
+    "FinishTips": "任务完成"
+  },
+  "19": {
+    "ID": 19,
+    "Description": "下載人生大赢家任务",
+    "FinishTips": "任务完成"
+  },
+  "20": {
+    "ID": 20,
+    "Description": "每日0点重置任务",
+    "FinishTips": "0"
+  },
+  "21": {
+    "ID": 21,
+    "Description": "领取条件不足！",
+    "FinishTips": "0"
+  },
+  "22": {
+    "ID": 22,
+    "Description": "{0}提现券",
+    "FinishTips": "0"
+  },
+  "23": {
+    "ID": 23,
+    "Description": "最高{0}元",
+    "FinishTips": "0"
+  },
+  "24": {
+    "ID": 24,
+    "Description": "{0}金币",
+    "FinishTips": "0"
+  }
+}

@@ -1,0 +1,1 @@
+{"idioms":[{"id":6288,"grids":[{"id":8,"space":false},{"id":14,"space":true},{"id":20,"space":false},{"id":26,"space":true}]}]}
