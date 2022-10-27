@@ -64,7 +64,8 @@ public class GL_Audio : GL_ObjectBase
 
     public void StopAudio()
     {
-         _source.Stop();    }
+         _source.Stop();
+    }
 
     public void PauseAudio()
     {
